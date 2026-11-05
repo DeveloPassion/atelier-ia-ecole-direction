@@ -17,6 +17,8 @@ Et qui vous appartient.
 - C'est votre **second cerveau**, digital
 - **Double gain**: vous vous déchargez aujourd'hui, et chaque note rend l'IA plus utile demain
 
+- Attention au revers: l'IA produit vite, et on peut **vite en faire trop**. Vous faites travailler l'IA, ou est-ce l'IA qui vous fait travailler?
+
 Note: Message clé: on ne note pas "pour l'IA". On note d'abord pour soi, pour se décharger. L'IA en profite en plus. Le plus simple pour commencer: tout noter dans le journal du jour, et ranger plus tard.
 
 ---

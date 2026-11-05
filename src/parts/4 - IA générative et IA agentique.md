@@ -22,6 +22,8 @@ Un bon prompt dit:
 4. Sous quelle forme (longueur, ton, liste ou texte)
 5. Un exemple, si vous en avez un
 
+Astuce: demandez-lui de **vous poser des questions** avant de commencer: "Pose-moi les questions qui te manquent." Il propose souvent des choix à cliquer: c'est très rapide.
+
 ---
 ## L'hallucination
 - Claude prédit ce qui est probable, **pas ce qui est vrai**
@@ -32,6 +34,15 @@ Un bon prompt dit:
 Une analogie: un stagiaire très cultivé, très rapide, qui ne vous connaît pas, et qui **n'ose jamais dire** "je ne sais pas".
 
 ---
+## La complaisance
+- Claude a tendance à **vous donner raison**: il flatte, il évite de vous contredire
+- Il a appris à plaire, pas à dire la vérité qui dérange
+- Le risque: il valide une mauvaise idée, un calcul faux, une décision fragile
+- La parade: demandez-lui de **critiquer**. "Qu'est-ce qui cloche dans ce plan?", "Joue l'avocat du diable", "Donne-moi les trois meilleures objections"
+
+Note: C'est le risque le plus utile à connaître pour une direction: on utilise Claude pour vérifier ses propres décisions, et il a tendance à les approuver. Le montrer en direct si le temps le permet: proposer une idée discutable, puis demander "Qu'est-ce qui cloche?".
+
+---
 ## Points forts, points faibles
 | Bon pour | Moins bon pour |
 |---|---|
@@ -40,7 +51,18 @@ Une analogie: un stagiaire très cultivé, très rapide, qui ne vous connaît pa
 | Structurer, trier | Les sources |
 | Trouver des idées | L'actualité, sans recherche web |
 
+Attention: il peut être brillant sur une tâche et rater la tâche voisine. **Testez-le sur vos vraies tâches**, et plus d'une fois.
+
 *À lire seul*
+
+---
+## Pas seulement du texte
+- **Lire des images**: une photo d'une page écrite à la main, une capture d'écran, un tableau photographié deviennent du texte ou un tableau
+- **Créer des visuels**: un schéma, une affiche simple, une infographie. Pour des images réalistes, d'autres outils existent (ChatGPT, Gemini)
+- **Créer des animations et des vidéos courtes**, à partir d'un texte ou d'un tableau
+- **Créer des petits jeux et des applications**: un quiz pour une classe, un jeu de calcul mental, un outil de tirage au sort, en quelques minutes
+
+Note: Exemple à dire: "Crée un jeu de calcul mental pour des élèves de 2e primaire, avec un score." Claude le construit dans un artefact, et on peut y jouer tout de suite. Pour les animations: Claude Motion existe sur Team et Enterprise, mais il est désactivé par défaut sur Enterprise.
 
 ---
 ## L'IA agentique

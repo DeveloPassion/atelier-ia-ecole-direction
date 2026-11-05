@@ -10,6 +10,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 deck_dir = os.path.join(ROOT, "src", "parts")
 outdir = ROOT
 meta = json.load(open(os.path.join(ROOT, "src", "parts.json"), encoding="utf-8"))
+MAIN = sum(1 for m in meta if not m.get("bonus"))
+BONUS = len(meta) - MAIN
 
 FONTS = """
 @font-face { font-family: "Noto Sans"; src: url("lib/fonts/NotoSans-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; }
@@ -120,14 +122,14 @@ def transform(md, part_no, part_name, dur):
     out = []
     for i, sl in enumerate(slides):
         s = sl.strip("\n")
-        m = re.match(r"## (\d)\. (.*)", s)
+        m = re.match(r"## (\d+)\. (.*)", s)
         if (part_no == 1 and i == 0) or m:
             head, _, rest = s.partition("\n")
             title = head[3:]
             words = title.split(" ")
             # gradient on the key word: the last word of the title
             title_html = " ".join(words[:-1]) + (" " if len(words) > 1 else "") + f'<span class="gradient">{words[-1]}</span>'
-            eyebrow = f"Partie {part_no} sur 9 · {dur}" if part_no > 1 or i > 0 else "Atelier IA · Direction d'école"
+            eyebrow = ("Bonus · à lire seul" if "bonus" in dur else f"Partie {part_no} sur {MAIN} · {dur}") if part_no > 1 or i > 0 else "Atelier IA · Direction d'école"
             s = f'<!-- .slide: class="hero" data-background-gradient="radial-gradient(1100px 560px at 85% 10%, rgba(168,85,247,0.20), transparent 60%), radial-gradient(900px 500px at 8% 92%, rgba(229,0,125,0.18), transparent 60%), #37404c" -->\n<p class="eyebrow">{eyebrow}</p>\n\n<h2>{title_html}</h2>\n\n{rest}'
         out.append(s)
     return "\n---\n".join(out)
@@ -191,6 +193,7 @@ for m in meta:
     out_name = m["html"]
     open(os.path.join(outdir, out_name), "w", encoding="utf-8").write(
         page(f"{m['n']}. {m['name']} - L'IA au service de l'école", transform(body, m["n"], m["name"], m["dur"]), m["n"]))
+    m["slides"] = body.count("\n---\n") + 1
     total += m["slides"]
     cards.append(f'<a class="card" href="{out_name}" target="_blank" rel="noopener"><span class="num">{m["n"]}</span>'
                  f'<span class="t">{html.escape(m["name"])}</span><span class="meta">{html.escape(m["dur"])} · {m["slides"]} slides</span></a>')
@@ -227,7 +230,7 @@ kbd {{ background: rgba(255,255,255,0.1); border-radius: 6px; padding: 1px 7px; 
 <span class="eyebrow">Atelier IA · Direction d'école</span>
 <h1>L'IA au service de <span class="gradient">l'école</span></h1>
 <div class="bar"></div>
-<p class="lead">Les personnes et les documents de démo sont fictifs: ce support sert à apprendre. 9 parties, {total} slides, environ 2 heures. Chaque partie s'ouvre dans un nouvel onglet.</p>
+<p class="lead">Les personnes et les documents de démo sont fictifs: ce support sert à apprendre. {MAIN} parties et {BONUS} bonus, {total} slides, environ 2 heures. Chaque partie s'ouvre dans un nouvel onglet.</p>
 <div class="grid">
 {chr(10).join(cards)}
 </div>

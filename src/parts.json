@@ -27,7 +27,7 @@
   "n": 4,
   "name": "IA générative et IA agentique",
   "dur": "15 min",
-  "slides": 11,
+  "slides": 13,
   "file": "4 - IA générative et IA agentique.md",
   "html": "04-ia-generative-et-ia-agentique.html"
  },
@@ -43,7 +43,7 @@
   "n": 6,
   "name": "Démos, fichiers, dossier, navigateur",
   "dur": "20 min",
-  "slides": 7,
+  "slides": 8,
   "file": "6 - Démos, fichiers, dossier, navigateur.md",
   "html": "06-demos-fichiers-dossier-navigateur.html"
  },
@@ -59,7 +59,7 @@
   "n": 8,
   "name": "Prudence et règles d'usage",
   "dur": "5 min",
-  "slides": 4,
+  "slides": 5,
   "file": "8 - Prudence et règles d'usage.md",
   "html": "08-prudence-et-regles-d-usage.html"
  },
@@ -70,5 +70,23 @@
   "slides": 6,
   "file": "9 - Démarrer demain.md",
   "html": "09-demarrer-demain.html"
+ },
+ {
+  "n": 10,
+  "name": "Trucs et astuces",
+  "dur": "bonus, à lire seul",
+  "slides": 6,
+  "file": "10 - Trucs et astuces.md",
+  "html": "10-trucs-et-astuces.html",
+  "bonus": true
+ },
+ {
+  "n": 11,
+  "name": "Bonus, l'IA et les élèves",
+  "dur": "bonus, à lire seul",
+  "slides": 5,
+  "file": "11 - Bonus, l'IA et les élèves.md",
+  "html": "11-bonus-l-ia-et-les-eleves.html",
+  "bonus": true
  }
 ]

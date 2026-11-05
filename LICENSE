@@ -1,0 +1,12 @@
+Copyright (c) 2026 Sébastien Dubois / DeveloPassion. All rights reserved.
+
+The course content of this repository (slides, speaker notes, documents and demo files) is published for reading and
+for learning. No permission is granted to copy, modify, distribute or sell it, in whole or in part, without the prior
+written permission of the copyright holder.
+
+Contact: https://www.dsebastien.net
+
+Third-party components in lib/ keep their own licenses:
+- reveal.js 5.2.1, MIT License (lib/reveal/LICENSE)
+- Pele 1.13.0, MIT License (lib/pele-LICENSE)
+- Noto Sans, SIL Open Font License 1.1 (lib/fonts/OFL.txt)

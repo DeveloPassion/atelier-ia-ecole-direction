@@ -1,0 +1,58 @@
+FICHIERS DE DÉMO - formation IA (tout est fictif: aucune personne réelle, aucune donnée d'élève)
+École fictive: École fondamentale Saint-Exemple. Année scolaire 2026-2027.
+Travailler TOUJOURS sur une copie de ce dossier.
+
+Démo 1 - lire une circulaire et en tirer les actions pour le primaire, avec les dates
+  Circulaire 9847 - Organisation de l'année scolaire 2026-2027.pdf (20 pages, primaire et secondaire mélangés)
+
+Démo 2 - créer des fichiers
+  Notes réunion équipe 2026-11-03 (brut).txt / .docx  -> compte rendu Word et liste des actions
+  Sorties pédagogiques 2026-2027 (liste).txt / .docx  -> tableau Excel des sorties (classe, date, lieu, prix, réservé, payé, encodé IT School)
+
+Démo 3 - ranger un dossier (Cowork)
+  Activités de P1 à P6 (copie en désordre)/ : 36 fichiers. Doublons (v1/v2/FINAL/FINAL2), noms et dates dans tous les formats,
+  classe parfois seulement dans le contenu, fichiers mal rangés (garderie, budget fournitures), une sortie de l'an passé.
+
+Démo 4 - utiliser le navigateur (Claude in Chrome): pas de fichier.
+
+Démo 5 - créer une présentation (Slides, export PowerPoint)
+  Texte réunion de parents de rentrée.docx
+
+Démo 6 - utiliser l'ordinateur (computer use): peut reprendre le tableau Excel des sorties créé à la démo 2.
+
+Pour continuer seuls, exercice 3 (préparer une réunion): Notes réunion équipe 2026-11-03 (brut).txt / .docx
+
+CIRCULAIRES RÉELLES (FWB) - documents publics, non copiés ici
+  Circulaire 9757 du 03/07/2026 - Conseiller en prévention et DPO 2026-2027 (démo 1, version réelle):
+    https://gallilex.cfwb.be/sites/default/files/circulaires/2026-07/53257_0001.pdf
+  Circulaire 9692 du 26/03/2026 - Gratuité scolaire dans le fondamental (question libre sur le coût d'une sortie):
+    https://gallilex.cfwb.be/sites/default/files/circulaires/2026-03/53192_0000.pdf
+
+PLAN B - dossier "Plan B - résultats attendus/"
+Le résultat que chaque démo doit produire, à montrer si le wifi ou une fonction de Claude ne marche pas.
+Données fictives, cohérentes avec les fichiers ci-dessus.
+Démo 1 - lire une circulaire
+  Démo 1 - Actions primaire circulaire 9847.xlsx / .pdf (27 actions avec date, qui, § et page; feuilles "Changements" et "Pièges écartés (secondaire)")
+Démo 2 - créer des fichiers
+  Démo 2 - Compte rendu réunion équipe 2026-11-03.docx (participants, points, décisions, tableau des actions, points pas clairs)
+  Démo 2 - Sorties pédagogiques 2026-2027.xlsx (16 sorties triées par date; rouge = pas payé ou pas réservé; vide = inconnu)
+Démo 3 - ranger un dossier
+  Démo 3 - Dossier rangé (résultat)/ (les 36 fichiers rangés en P1 à P6 et Divers, renommés AAAA-MM-JJ - classe - activité, plus INDEX.txt et INDEX.pdf)
+Démo 4 - utiliser le navigateur
+  Démo 4 - Comparaison lieux d'excursion (exemple).pdf (trois lieux près de Binche; prix et horaires = exemples à vérifier)
+Démo 5 - créer une présentation
+  Démo 5 - Réunion de parents de rentrée.pptx / .pdf (12 slides)
+Démo 6 - utiliser l'ordinateur: pas de plan B, expliquer avec la slide.
+
+SYSTÈME DE DÉMO - "Système Direction Saint-Exemple - notes seules (démo).zip"
+Bloc 7 (un système qui vous connaît). Les notes fictives d'un système construit sur AI Kit for Obsidian (produit de DeveloPassion, non inclus ici).
+Dézipper sur le PC, hors OneDrive. Ouvrir le dossier dans Claude (ou dans Obsidian).
+Les 5 demandes à faire et les réponses attendues: "DEMO - À demander.txt", à la racine du système.
+
+DOCUMENTS (dossier "documents" du dépôt)
+  Fiche de contexte pour l'IA.pdf (2 pages, 13 questions, champs à remplir)
+  Projet de règles d'usage de l'IA.pdf (1 page, à compléter par l'établissement)
+
+SYSTÈME EN VRAC - "Système Direction Saint-Exemple en vrac (démo).zip"
+Bloc 7, démo "en vrac ou organisé". Les mêmes faits que le système organisé, dans 7 fichiers texte sans types, sans statuts, sans liens.
+Dézipper à côté du système organisé. Question et corrigé: question 6 de "DEMO - À demander.txt" (dans le système organisé).

@@ -1,0 +1,104 @@
+INDEX - Activités de P1 à P6 (rangé). Résultat attendu de la démo 3 (plan B). Données fictives.
+
+Règles: un dossier par classe (P1 à P6) et un dossier Divers. Nom: AAAA-MM-JJ - classe - activité (date de l'activité;
+AAAA-MM ou AAAA si le jour n'est pas connu). Les activités de deux classes sont dans le dossier de la première classe.
+Aucun fichier supprimé: les doublons et les anciennes versions sont gardés et signalés.
+
+== P1
+  2026-12-03 - P1-P2 - théâtre au centre culturel (infos).docx
+      Spectacle pour P1 et P2, séance de 10h, 5 €, à pied. (ancien nom: doc1.docx)
+  2026-12-03 - P1-P2 - théâtre (lettre aux parents).docx
+      Lettre et talon pour le théâtre du 3 décembre. (ancien nom: lettre parents théâtre.docx)
+  2027-04-23 - P1-P2 - ferme de la Hulotte (confirmation).pdf
+      Confirmation de réservation de la ferme pour P1 et P2. (ancien nom: ferme pédagogique P1 P2.pdf)
+  2027-04-23 - P1-P2 - ferme de la Hulotte (mail).txt
+      Échange de mails avec la ferme, réservation pour le 23/04. (ancien nom: Re_ Réservation ferme - confirmation.txt)
+  2027-06 - P1 - excursion de fin d'année (idée parc animalier).docx
+      Idée à discuter en janvier, environ 22 € + car. Date à fixer. (ancien nom: excursion fin d'année P1 - parc animalier ?.docx)
+
+== P2
+  2027-04-23 - P2 - ferme de la Hulotte (autorisation parentale).pdf
+      Autorisation pour la ferme. Elle annonce 12 €, la confirmation 9,50 €: à vérifier. (ancien nom: autorisation_parents.pdf)
+  2026-10-02 - P2 - sortie forêt (photo 1).jpg
+      Photo de groupe au Bois de la Garenne. (ancien nom: IMG_20261002_101532.jpg)
+  2026-10-02 - P2 - sortie forêt (photo 2).jpg
+      Photo du pique-nique. (ancien nom: IMG_20261002_101547.jpg)
+  2026-10-02 - P2 - sortie forêt (post-it paiement du bus).jpg
+      Bus payé le 02/10 (facture 2026-118), pas encore encodé sur IT School. (ancien nom: IMG_4471.JPG)
+
+== P3
+  2026-11-12 - P3 - musée des Sciences naturelles (brouillon).docx
+      Premier brouillon de la lettre, à 8 €. [version ancienne] (ancien nom: sortie musée P3.docx)
+  2026-11-12 - P3 - musée (lettre à 8 €, remplacée).docx
+      Lettre envoyée à 8 €, remplacée par la version à 9 €. [version ancienne] (ancien nom: sortie musee P3 FINAL.docx)
+  2026-11-12 - P3 - musée (lettre à 9 €, à jour).docx
+      Lettre corrigée à 9 €: c'est la version à garder. (ancien nom: sortie musee P3 FINAL2.docx)
+  2026-11-12 - P3 - musée (relevé des paiements).pdf
+      32 élèves sur 41 ont payé, calcul à 8 €. (ancien nom: Scan_0034.pdf)
+  2026-11-12 - P3 - musée (rappel IT School et car).txt
+      Rappel: encoder la sortie sur IT School et payer le car. (ancien nom: Nouveau document texte.txt)
+  2026-11-17 - P3-P4 - bibliothèque communale (calendrier).xlsx
+      Calendrier des visites P3 et P4 (17/11, 08/12, 19/01, 09/02). (ancien nom: bibliotheque communale calendrier P3-P4.xlsx)
+
+== P4
+  2026-10-15 - P4 - piscine (planning complet).xlsx
+      Planning des séances de piscine P4. (ancien nom: 2026-10-15 piscine P4.xlsx)
+  2026-10-15 - P4 - piscine (planning partiel).xlsx
+      Les 4 premières lignes du planning complet. [doublon partiel] (ancien nom: piscine P4 2026-2027.xlsx)
+  2027-01-26 - P4 - Préhistosite de Ramioul.docx
+      Organisation de la visite, 11 € + car. (ancien nom: P4 - visite Préhistosite.docx)
+  2027-01-26 - P4 - Préhistosite de Ramioul (copie partielle).docx
+      Copie partielle du document précédent. [doublon partiel] (ancien nom: sortie P4 ramioul.docx)
+
+== P5
+  2026-11-30 - P5 - bibliothèque (question à poser).txt
+      Demander si la P5 peut aussi venir le jeudi, avant fin novembre. (ancien nom: biblio.txt)
+  2027-01-11 - P5 - piscine (autorisation parentale).pdf
+      Autorisation piscine P5, à rendre pour le 18/12. (ancien nom: Copie de autorisation_parents (2).pdf)
+  2027-03-06 - P5 - classes de neige (réunion d'information).docx
+      Infos pratiques, 690 €, réunion le 03/12 à 19h30. (ancien nom: classes de neige P5 2027 - réunion info.docx)
+  2027-03-06 - P5 - classes de neige (liste du matériel).pdf
+      Liste du matériel à prévoir. (ancien nom: Classes de neige P5 - liste matériel.pdf)
+
+== P6
+  2027-05-17 - P6 - classes vertes Ovifat (v1, remplacée).docx
+      Première version, prix environ 175 €. [version ancienne] (ancien nom: 15.10.26 classes vertes P6 v1.docx)
+  2027-05-17 - P6 - classes vertes Ovifat (v2, à jour).docx
+      Version à garder. (ancien nom: 15.10.26 classes vertes P6 v2.docx)
+  2027-05-17 - P6 - classes vertes (budget).xlsx
+      Budget des classes vertes. (ancien nom: classes vertes budget.xlsx)
+
+== Divers
+  2026-12-04 - toutes classes - Saint-Nicolas (organisation).docx
+      Organisation de la Saint-Nicolas, budget 1,80 € par enfant. (ancien nom: Document sans titre.docx)
+  2027-06-11 - toutes classes - journée sportive (affiche).jpeg
+      Affiche de la journée sportive. (ancien nom: WhatsApp Image 2026-09-29 at 14.12.03.jpeg)
+  2027-06-11 - toutes classes - journée sportive.docx
+      Organisation de la journée sportive 2027. (ancien nom: journée sportive 2027.docx)
+  2026-06-12 - toutes classes - journée sportive (année passée).docx
+      Bilan de l'an passé. À archiver. [année passée] (ancien nom: journee sportive OLD.docx)
+  2026-10-05 - plusieurs classes - devis car Fictibus.pdf
+      Devis pour le musée P3, la piscine P5 et la ferme P1-P2. (ancien nom: devis car Autocars Fictibus.pdf)
+  2026-10-05 - plusieurs classes - devis car Fictibus (copie).pdf
+      Copie identique du devis. [doublon exact] (ancien nom: devis car (1).pdf)
+  2026-09 - toutes classes - planning des sorties du 1er trimestre.xlsx
+      Planning partiel du 1er trimestre. (ancien nom: planning sorties 1er trimestre.xlsx)
+  2026-2027 - toutes classes - récapitulatif des activités (à compléter).xlsx
+      Récapitulatif incomplet. Remplacé par le tableau des sorties de la démo 2. (ancien nom: activités P1-P6 2026-2027 récap (à compléter).xlsx)
+  2026-09 - garderie - présences de septembre (pas une activité).xlsx
+      Mal rangé: à déplacer dans le dossier Garderie. (ancien nom: garderie septembre.xlsx)
+  2026 - budget - fournitures (pas une activité).xlsx
+      Mal rangé: à déplacer dans le dossier Budget. (ancien nom: Budget 2026 fournitures.xlsx)
+
+== Doublons et anciennes versions (gardés, à trier par une personne)
+  P3/2026-11-12 - P3 - musée des Sciences naturelles (brouillon).docx: version ancienne
+  P3/2026-11-12 - P3 - musée (lettre à 8 €, remplacée).docx: version ancienne
+  P4/2026-10-15 - P4 - piscine (planning partiel).xlsx: doublon partiel
+  P4/2027-01-26 - P4 - Préhistosite de Ramioul (copie partielle).docx: doublon partiel
+  P6/2027-05-17 - P6 - classes vertes Ovifat (v1, remplacée).docx: version ancienne
+  Divers/2026-06-12 - toutes classes - journée sportive (année passée).docx: année passée
+  Divers/2026-10-05 - plusieurs classes - devis car Fictibus (copie).pdf: doublon exact
+
+== À faire
+  Déplacer la garderie et le budget hors de ce dossier.
+  Vérifier le prix de la ferme (9,50 € ou 12 €).

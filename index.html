@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'IA au service de l'école - Sommaire</title>
+<style>
+@font-face { font-family: "Noto Sans"; src: url("lib/fonts/NotoSans-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Noto Sans"; src: url("lib/fonts/NotoSans-Bold.ttf") format("truetype"); font-weight: 700 900; font-style: normal; }
+@font-face { font-family: "Noto Sans"; src: url("lib/fonts/NotoSans-Italic.ttf") format("truetype"); font-weight: 400; font-style: italic; }
+
+:root { --m: #e5007d; --p: #ff1493; --v: #a855f7; --s: #37404c; --c: #3f4957; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: "Noto Sans", "Segoe UI", system-ui, sans-serif; color: #fff;
+  background: radial-gradient(1200px 600px at 85% 0%, rgba(168,85,247,0.16), transparent 60%), radial-gradient(900px 500px at 0% 100%, rgba(229,0,125,0.14), transparent 60%), var(--s); }
+main { max-width: 1100px; margin: 0 auto; padding: 56px 28px; }
+.eyebrow { display: inline-block; border-radius: 999px; background: rgba(229,0,125,0.12); border: 1px solid rgba(229,0,125,0.35);
+  color: #ffd1e8; font-size: 14px; font-weight: 700; padding: 5px 14px; }
+h1 { font-size: 52px; font-weight: 800; margin: 18px 0 6px; line-height: 1.1; }
+.gradient { background: linear-gradient(90deg, #ff1493, #e5007d, #a855f7); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 18px rgba(255,20,147,0.35)); }
+.bar { width: 64px; height: 5px; border-radius: 999px; background: var(--m); margin: 14px 0 18px; }
+p.lead { color: rgba(255,255,255,0.64); font-size: 18px; margin: 0 0 30px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+.card { display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: #fff; background: var(--c); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px; padding: 20px 22px; transition: transform .15s, box-shadow .15s; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
+.num { font-size: 40px; font-weight: 800; color: var(--p); line-height: 1; }
+.t { font-size: 20px; font-weight: 700; }
+.meta { color: rgba(255,255,255,0.6); font-size: 14px; }
+footer { margin-top: 36px; color: rgba(255,255,255,0.5); font-size: 14px; }
+kbd { background: rgba(255,255,255,0.1); border-radius: 6px; padding: 1px 7px; font-family: inherit; }
+.sec { font-size: 22px; font-weight: 800; margin: 40px 0 14px; } .sec::after { content: ''; display: block; width: 48px; height: 4px; border-radius: 999px; background: #e5007d; margin-top: 8px; }
+</style></head>
+<body><main>
+<span class="eyebrow">Atelier IA · Collège de Bonne-Espérance</span>
+<h1>L'IA au service de <span class="gradient">l'école</span></h1>
+<div class="bar"></div>
+<p class="lead">Les personnes et les documents de démo sont fictifs: ce support sert à apprendre. 9 parties, 79 slides, environ 2 heures. Chaque partie s'ouvre dans un nouvel onglet.</p>
+<div class="grid">
+<a class="card" href="01-introduction-et-accroche.html" target="_blank" rel="noopener"><span class="num">1</span><span class="t">Introduction et accroche</span><span class="meta">5 min + prérequis · 8 slides</span></a>
+<a class="card" href="02-prise-en-main-de-claude.html" target="_blank" rel="noopener"><span class="num">2</span><span class="t">Prise en main de Claude</span><span class="meta">10 min · 7 slides</span></a>
+<a class="card" href="03-premiere-demo-la-circulaire.html" target="_blank" rel="noopener"><span class="num">3</span><span class="t">Première démo, la circulaire</span><span class="meta">10 min · 2 slides</span></a>
+<a class="card" href="04-ia-generative-et-ia-agentique.html" target="_blank" rel="noopener"><span class="num">4</span><span class="t">IA générative et IA agentique</span><span class="meta">15 min · 11 slides</span></a>
+<a class="card" href="05-le-contexte-et-sa-gestion.html" target="_blank" rel="noopener"><span class="num">5</span><span class="t">Le contexte et sa gestion</span><span class="meta">15 min + pause · 15 slides</span></a>
+<a class="card" href="06-demos-fichiers-dossier-navigateur.html" target="_blank" rel="noopener"><span class="num">6</span><span class="t">Démos, fichiers, dossier, navigateur</span><span class="meta">20 min · 7 slides</span></a>
+<a class="card" href="07-un-systeme-qui-vous-connait.html" target="_blank" rel="noopener"><span class="num">7</span><span class="t">Un système qui vous connaît</span><span class="meta">25 min · 19 slides</span></a>
+<a class="card" href="08-prudence-et-regles-d-usage.html" target="_blank" rel="noopener"><span class="num">8</span><span class="t">Prudence et règles d&#x27;usage</span><span class="meta">5 min · 4 slides</span></a>
+<a class="card" href="09-demarrer-demain.html" target="_blank" rel="noopener"><span class="num">9</span><span class="t">Démarrer demain</span><span class="meta">5 min · 6 slides</span></a>
+</div>
+<h2 class="sec">Documents</h2>
+<div class="grid docs">
+<a class="card" href="documents/Fiche%20de%20contexte%20pour%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Fiche de contexte pour l'IA</span><span class="meta">PDF, 2 pages, champs à remplir</span></a>
+<a class="card" href="documents/Projet%20de%20r%C3%A8gles%20d%27usage%20de%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Projet de règles d'usage de l'IA</span><span class="meta">PDF, 1 page, à compléter</span></a>
+<a class="card" href="https://github.com/DeveloPassion/atelier-ia-ecole-direction/tree/main/fichiers-de-demo" target="_blank" rel="noopener"><span class="t">Fichiers de démo</span><span class="meta">Tous fictifs, avec un LISEZ-MOI</span></a>
+</div>
+<footer>Dans une partie: <kbd>S</kbd> notes de l'orateur · <kbd>F</kbd> plein écran · <kbd>Échap</kbd> vue d'ensemble. © 2026 Sébastien Dubois · DeveloPassion. Tous droits réservés.</footer>
+</main></body></html>

@@ -1,0 +1,281 @@
+/*
+ * Knowii reveal.js theme
+ *
+ * Author: Sébastien Dubois / DeveloPassion / Knowii
+ * Used by: osk-media-slides-convert-reveal --theme <path-to-this-file>
+ *
+ * Unified web brand (matches dsebastien.net store + ai-wiki-template `knowii` theme):
+ *   --knowii-primary    : hot pink (primary action accent)
+ *   --knowii-accent     : pink text (titles, links)
+ *   --knowii-bg-dark    : cool slate background
+ *   --knowii-bg-light   : neutral light background
+ *   --knowii-text-dark  : near-black ink
+ *   --knowii-text-light : pure white ink for dark surfaces
+ *   --knowii-muted      : low-opacity white for secondary copy
+ *   --knowii-success    : confident green for positive callouts
+ *
+ * Typography: Noto Sans for everything, system monospace for code.
+ */
+
+:root {
+  --knowii-primary: #e5007d;
+  --knowii-accent: #ff1493;
+  --knowii-bg-dark: #37404c;
+  --knowii-bg-light: #f5f7fa;
+  --knowii-text-dark: #1a1a2e;
+  --knowii-text-light: #ffffff;
+  --knowii-muted: rgba(255, 255, 255, 0.6);
+  --knowii-success: #4ade80;
+}
+
+/* Base reveal styling */
+.reveal {
+  font-family: "Noto Sans", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--knowii-text-light);
+}
+
+.reveal-viewport,
+.reveal .slides {
+  background: var(--knowii-bg-dark);
+}
+
+/* Headings */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: "Noto Sans", "Inter", "Segoe UI", system-ui, sans-serif;
+  font-weight: 700;
+  color: var(--knowii-text-light);
+  text-transform: none;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.6em 0;
+  line-height: 1.15;
+}
+
+.reveal h1 { font-size: 2.2em; }
+.reveal h2 { font-size: 1.7em; }
+.reveal h3 { font-size: 1.3em; color: var(--knowii-accent); }
+.reveal h4 { font-size: 1.1em; color: var(--knowii-accent); }
+
+/* Section title accent bar */
+.reveal h2::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--knowii-accent);
+  margin-bottom: 0.4em;
+}
+
+/* Paragraphs + lists */
+.reveal p,
+.reveal li {
+  line-height: 1.4;
+  margin-bottom: 0.4em;
+}
+
+.reveal ul,
+.reveal ol {
+  display: block;
+  margin-left: 1em;
+  text-align: left;
+}
+
+.reveal ul li::marker {
+  color: var(--knowii-accent);
+}
+
+/* Links */
+.reveal a {
+  color: var(--knowii-accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 20, 147, 0.4);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.reveal a:hover {
+  color: var(--knowii-text-light);
+  border-bottom-color: var(--knowii-text-light);
+}
+
+/* Inline code */
+.reveal code {
+  font-family: "JetBrains Mono", "Fira Code", "SF Mono", Consolas, monospace;
+  font-size: 0.85em;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--knowii-accent);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+}
+
+/* Code blocks */
+.reveal pre {
+  width: 90%;
+  margin: 0.8em auto;
+  font-size: 0.65em;
+  line-height: 1.4;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.reveal pre code {
+  display: block;
+  padding: 1em;
+  background: #2a323d;
+  color: var(--knowii-text-light);
+  border-radius: 6px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* Blockquotes (callouts) */
+.reveal blockquote {
+  display: block;
+  width: 80%;
+  margin: 1em auto;
+  padding: 1em 1.5em;
+  background: rgba(229, 0, 125, 0.12);
+  border-left: 4px solid var(--knowii-primary);
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: var(--knowii-text-light);
+  font-size: 0.9em;
+}
+
+.reveal blockquote p {
+  margin: 0;
+}
+
+/* Tables */
+.reveal table {
+  margin: 0.8em auto;
+  border-collapse: collapse;
+  font-size: 0.75em;
+}
+
+.reveal table th {
+  background: var(--knowii-primary);
+  color: var(--knowii-text-light);
+  padding: 0.6em 1em;
+  text-align: left;
+  font-weight: 600;
+  border: none;
+}
+
+.reveal table td {
+  padding: 0.5em 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.reveal table tr:hover td {
+  background: rgba(240, 138, 62, 0.08);
+}
+
+/* Images */
+.reveal section img {
+  margin: 1em 0;
+  background: transparent;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  max-height: 60vh;
+  width: auto;
+}
+
+/* Strong + emphasis */
+.reveal strong { color: var(--knowii-accent); }
+.reveal em { color: var(--knowii-text-light); }
+
+/* Slide numbers */
+.reveal .slide-number {
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--knowii-muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+/* Progress bar */
+.reveal .progress {
+  color: var(--knowii-accent);
+  height: 4px;
+}
+
+/* Controls (arrows) */
+.reveal .controls {
+  color: var(--knowii-accent);
+}
+
+/* Speaker notes panel (when open in `s` view) */
+.reveal aside.notes {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Cover slide treatment: first slide gets extra spacing */
+.reveal .slides section:first-child h1 {
+  font-size: 2.8em;
+  margin-top: 0;
+}
+
+.reveal .slides section:first-child {
+  text-align: center;
+}
+
+.reveal .slides section:first-child h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: var(--knowii-accent);
+  margin: 0.4em auto 0;
+}
+
+/* "Big text" slide pattern: single h2 centered */
+.reveal section.big-text h2 {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.reveal section.big-text h2::before {
+  margin: 0 auto 0.4em;
+}
+
+/* Light variant: add `<body class="knowii-light">` or wrap deck */
+body.knowii-light .reveal-viewport,
+body.knowii-light .reveal .slides {
+  background: var(--knowii-bg-light);
+}
+
+body.knowii-light .reveal,
+body.knowii-light .reveal h1,
+body.knowii-light .reveal h2,
+body.knowii-light .reveal h4 {
+  color: var(--knowii-text-dark);
+}
+
+body.knowii-light .reveal h3,
+body.knowii-light .reveal h4 {
+  color: var(--knowii-primary);
+}
+
+body.knowii-light .reveal blockquote {
+  background: rgba(42, 58, 138, 0.08);
+  color: var(--knowii-text-dark);
+}
+
+body.knowii-light .reveal pre code {
+  background: #f0e9dd;
+  color: var(--knowii-text-dark);
+}

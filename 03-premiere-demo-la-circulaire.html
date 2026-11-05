@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3. Première démo, la circulaire - L&#x27;IA au service de l&#x27;école</title>
+  <link rel="stylesheet" href="lib/reveal/dist/reset.css">
+  <link rel="stylesheet" href="lib/reveal/dist/reveal.css">
+  <link rel="stylesheet" href="theme.css">
+  <style>
+@font-face { font-family: "Noto Sans"; src: url("lib/fonts/NotoSans-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Noto Sans"; src: url("lib/fonts/NotoSans-Bold.ttf") format("truetype"); font-weight: 700 900; font-style: normal; }
+@font-face { font-family: "Noto Sans"; src: url("lib/fonts/NotoSans-Italic.ttf") format("truetype"); font-weight: 400; font-style: italic; }
+
+:root { --dp-magenta: #e5007d; --dp-pink: #ff1493; --dp-purple: #a855f7; --dp-slate: #37404c;
+  --dp-surface: #3f4957; --dp-surface-2: #475363; --dp-well: #2b323c; --dp-green: #4ade80; --dp-yellow: #fbbf24; }
+html, body, .reveal-viewport { background: var(--dp-slate); }
+.reveal { font-size: 30px; }
+.reveal .slides section { text-align: left; }
+.reveal h2 { font-size: 1.45em; font-weight: 800; }
+.reveal h2::before { width: 48px; height: 4px; border-radius: 999px; background: var(--dp-magenta); }
+.reveal p, .reveal li { color: rgba(255,255,255,0.92); }
+.reveal li::marker, .reveal ol li::marker { color: var(--dp-pink); font-weight: 700; }
+.reveal table { font-size: 0.72em; }
+.reveal table td { color: rgba(255,255,255,0.9); }
+.reveal table tr:hover td { background: rgba(229,0,125,0.08); }
+.reveal blockquote { font-style: normal; width: 88%; }
+.gradient { background: linear-gradient(90deg, #ff1493, #e5007d, #a855f7); -webkit-background-clip: text; background-clip: text;
+  color: transparent !important; filter: drop-shadow(0 0 18px rgba(255,20,147,0.35)); }
+.reveal .eyebrow { display: inline-block; border-radius: 999px; background: rgba(229,0,125,0.12); border: 1px solid rgba(229,0,125,0.35);
+  color: #ffd1e8; font-size: 0.5em; font-weight: 700; padding: 0.25em 0.9em; margin: 0 0 0.8em 0; letter-spacing: 0.02em; }
+/* Section and cover slides: hero wash + particles */
+.reveal .slides section.hero, .reveal .slides section:first-child { text-align: left !important; }
+.reveal .slides section:first-child h1::after { display: none; }
+.loop-step { font-size: 0.85em; }
+.reveal .slides section.hero h2 { font-size: 2.3em; line-height: 1.1; }
+.reveal .slides section.hero h2::before { display: none; }
+.reveal .slides section.hero h2::after { content: ""; display: block; width: 64px; height: 5px; border-radius: 999px; background: var(--dp-magenta); margin-top: 0.35em; }
+.reveal .slides section.hero p { color: rgba(255,255,255,0.64); font-size: 1.05em; }
+.reveal .backgrounds .slide-background.hero, .slide-background.hero {
+  background: radial-gradient(1200px 600px at 85% 10%, rgba(168,85,247,0.18), transparent 60%),
+              radial-gradient(900px 500px at 10% 90%, rgba(229,0,125,0.16), transparent 60%), var(--dp-slate) !important; }
+.particles { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+.particles i { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: var(--dp-pink); opacity: 0.35; animation: float 9s ease-in-out infinite; }
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-18px); } }
+@media (prefers-reduced-motion: reduce) { .particles i, .loop-step, .loop::after { animation: none !important; } }
+/* "À lire seul" chip and system callout */
+.reveal p.chip { display: inline-block; margin-top: 0.6em; border-radius: 8px; background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.7);
+  font-size: 0.55em; font-weight: 600; padding: 0.2em 0.8em; }
+.reveal p.system { border-left: 4px solid var(--dp-magenta); background: rgba(229,0,125,0.10); border-radius: 0 10px 10px 0;
+  padding: 0.5em 0.9em; font-size: 0.8em; margin-top: 0.8em; }
+.reveal p.system b { color: var(--dp-pink); }
+/* Nav pill */
+.nav-home { position: fixed; top: 14px; left: 16px; z-index: 30; font: 600 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
+  background: rgba(255,255,255,0.1); border-radius: 8px; padding: 6px 12px; }
+.nav-home:hover { background: var(--dp-magenta); }
+/* Diagrams (Pele) */
+.reveal .diagram { text-align: center; margin: 0.4em auto; }
+.reveal .diagram svg { max-width: 92%; max-height: 330px; height: auto; }
+.pele { --pele-bg: transparent; --pele-fg: #ffffff; --pele-surface: #3f4957; --pele-surface-alt: #475363; --pele-border: rgba(255,255,255,0.28);
+  --pele-line: #ff1493; --pele-muted: rgba(255,255,255,0.6); --pele-font: "Noto Sans", sans-serif; }
+/* Agentic loop animation */
+.loop { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 90px; width: 80%; margin: 30px auto; position: relative; }
+.loop-step { border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 18px; text-align: center; background: var(--dp-surface);
+  color: #fff; font-weight: 700; animation: lit 8s infinite; }
+.loop .s1 { grid-column: 1; grid-row: 1; animation-delay: 0s; }
+.loop .s2 { grid-column: 2; grid-row: 1; animation-delay: 2s; }
+.loop .s3 { grid-column: 2; grid-row: 2; animation-delay: 4s; }
+.loop .s4 { grid-column: 1; grid-row: 2; animation-delay: 6s; }
+.loop::after { content: "\21BB"; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 2.6em; color: var(--dp-pink);
+  animation: spin 8s linear infinite; }
+@keyframes lit { 0%, 24% { background: var(--dp-magenta); box-shadow: 0 0 24px rgba(229,0,125,0.45); transform: scale(1.05); }
+  25%, 100% { background: var(--dp-surface); box-shadow: none; transform: scale(1); } }
+@keyframes spin { from { transform: translate(-50%,-50%) rotate(0deg); } to { transform: translate(-50%,-50%) rotate(360deg); } }
+/* Lethal trifecta */
+.trifecta { display: flex; justify-content: center; margin-top: 10px; }
+.trifecta span { width: 210px; height: 210px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center;
+  font-size: 0.66em; font-weight: 700; color: #fff; margin: 0 -28px; padding: 30px; box-sizing: border-box; mix-blend-mode: screen; }
+.trifecta span:nth-child(1) { background: rgba(229,0,125,0.55); }
+.trifecta span:nth-child(2) { background: rgba(168,85,247,0.55); }
+.trifecta span:nth-child(3) { background: rgba(255,20,147,0.40); }
+</style>
+</head>
+<body>
+  <div class="particles"><i style="left:8%;top:18%;animation-delay:0s"></i><i style="left:22%;top:72%;animation-delay:1.5s"></i><i style="left:40%;top:12%;animation-delay:3s"></i><i style="left:63%;top:80%;animation-delay:0.8s"></i><i style="left:78%;top:30%;animation-delay:2.2s"></i><i style="left:90%;top:62%;animation-delay:4s"></i><i style="left:52%;top:46%;animation-delay:5s"></i></div>
+  <a class="nav-home" href="index.html">&#8592; Sommaire</a>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown data-separator="^---$" data-separator-vertical="^----$" data-separator-notes="^Note:">
+        <textarea data-template>
+<!-- .slide: class="hero" data-background-gradient="radial-gradient(1100px 560px at 85% 10%, rgba(168,85,247,0.20), transparent 60%), radial-gradient(900px 500px at 8% 92%, rgba(229,0,125,0.18), transparent 60%), #37404c" -->
+<p class="eyebrow">Partie 3 sur 9 · 10 min</p>
+
+<h2>3. Première démo: la <span class="gradient">circulaire</span></h2>
+Chacun la même circulaire, chacun sa question.
+
+- Isabelle (direction du primaire): les actions pour le primaire
+- Marc (direction du secondaire): les actions pour le secondaire
+- Secrétariat: ce qui touche le secrétariat
+- Le résultat: un tableau à vérifier, pas à recopier
+
+Note: DÉMO CIRCULAIRE (10 min), chacun sur son PC. D'abord la fictive: "Circulaire 9847 - Organisation de l'année scolaire 2026-2027.pdf" (20 pages, des actions claires pour chaque niveau, avec des pièges). Ensuite, 2 minutes, "essayons une vraie": la circulaire 9757 (document public sur gallilex.cfwb.be, lien dans fichiers-de-demo/LISEZ-MOI.txt). Elle est adressée aux pouvoirs organisateurs: la bonne réponse est "presque rien ici n'est pour vous". Leçon: savoir en une minute qu'une circulaire ne vous concerne pas, c'est déjà du temps gagné.
+1. Nouvelle conversation, modèle Opus 5.5. Joindre le PDF.
+2. Taper (adapter le niveau): "Je suis à la direction du primaire. Lis cette circulaire et fais-moi un tableau des actions qui concernent le fondamental ou le primaire: action, date limite, qui doit le faire, page. Ignore ce qui concerne seulement le secondaire. Signale les dates déjà passées."
+3. Comparer les trois tableaux. Vérifier deux lignes dans le PDF (page citée).
+4. Refaire en effort haut avec "Vérifie chaque date dans le texte". Comparer.
+5. Joindre la circulaire 9757 dans une nouvelle conversation, même demande. Claude doit dire que presque rien ne concerne la direction.
+Corrigé 9847: CEB dans CEBSI le 05/03/2027 (piège: l'ancienne date 19/02 est reportée); FUI aux parents de 6e du 11/01 au 22/01/2027; liste au centre PSE le 30/11/2026; EENC 3e et 5e primaire le 20/11/2026. Pièges secondaires: CE1D et CESS le 26/02/2027, relevé mensuel des absences le 10, section 14 et annexe 2.
+Corrigé 9757: moyens 2025-2026 à dépenser avant le 31/12/2026; moyens 2026-2027 avant le 31/12/2027; annexe de rachat de périodes pour le 24/08/2026 (date passée, Claude doit le signaler); périodes valables du 24/08/2026 au 02/07/2027; subvention fin janvier ou début février 2027; une période en primaire coûte 2.641,53 euros; identification dans PRIMVER (section 6). Pièges: GOSS (secondaire), SPES (spécialisé), règles des 3%. Pour Marc (secondaire): section 8 (GOSS) et règles des 3%.
+Plan B: "Plan B - résultats attendus/Démo 1 - Actions primaire circulaire 9847.pdf".
+---
+## Ce qu'on vient de voir
+- Claude a lu 20 pages, trié par niveau, et fait un tableau
+- Et il sait dire quand une circulaire ne vous concerne presque pas
+- Il a cité les pages: vous vérifiez vite
+- Il peut se tromper: les dates se vérifient toujours
+- Avec plus d'effort, il vérifie plus
+
+<p class="system"><b>Pour un système qui vous connaît:</b> il sait déjà quel est votre niveau et vos projets, et il relie chaque action à la bonne tâche.</p>
+        </textarea>
+      </section>
+    </div>
+  </div>
+  <script src="lib/reveal/dist/reveal.js"></script>
+  <script src="lib/reveal/plugin/markdown/markdown.js"></script>
+  <script src="lib/reveal/plugin/notes/notes.js"></script>
+  <script src="lib/pele.iife.js"></script>
+  <script>
+    const render = (window.Pele && window.Pele.render) || null;
+    function drawDiagrams() {
+      if (!render) return;
+      document.querySelectorAll('.reveal pre code.mermaid, .reveal pre code.language-mermaid').forEach((code) => {
+        const pre = code.closest('pre');
+        try { const { svg } = render(code.textContent); const d = document.createElement('div'); d.className = 'diagram pele'; d.innerHTML = svg; pre.replaceWith(d); }
+        catch (e) { console.warn('Diagram failed', e); }
+      });
+    }
+    Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06,
+      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); Reveal.layout(); });
+  </script>
+</body>
+</html>

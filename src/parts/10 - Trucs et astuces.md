@@ -18,6 +18,8 @@ Pour obtenir de bons résultats, plus vite.
 - Demandez **les sources**, ou **la page** du document: vous vérifiez en un coup d'œil
 - Demandez ce dont il **n'est pas sûr**: "Signale ce que tu ne sais pas au lieu de deviner"
 - Demandez **une critique**: "Qu'est-ce qui cloche?", "Joue l'avocat du diable"
+- Faites **vérifier par un autre agent**: "Demande à un autre agent de relire ton travail et d'y chercher les erreurs." Un regard neuf voit ce que le premier a raté
+- Demandez une **vérification adversariale**: "Essaie de démolir ta propre réponse: quelles sont les failles, les dates fausses, les oublis?"
 - Commencez par les tâches **faciles à vérifier**: un tableau à partir d'un document, un résumé que vous pouvez relire
 - Pour ce qui doit être juste: **effort haut**, et une deuxième lecture par vous
 

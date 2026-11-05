@@ -130,6 +130,8 @@ flowchart LR
 - Chacun refait le sien, rien n'est partagé
 - C'est un **contexte loué**
 
+Mon conseil: **désactivez la mémoire de Claude**, et gardez ce qui doit durer dans votre fiche de contexte et vos projets Claude (voir le bonus 12).
+
 ---
 ## Plus n'est pas toujours mieux
 - **Le contexte est fini**

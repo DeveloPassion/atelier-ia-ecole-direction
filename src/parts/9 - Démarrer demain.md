@@ -41,7 +41,7 @@ Refaites aussi les démos: les étapes sont dans les notes des slides.
 ## Et après?
 - Une question pour vous: quelles **tâches répétitives** vous prennent le plus de temps?
 - Vos réponses servent à la phase 2
-- Une deuxième séance est possible: pratique guidée, la feuille "parking", les projets Claude et les skills de l'école, les connecteurs Microsoft 365
+- Une deuxième séance est possible: pratique guidée, les questions notées pendant la séance, les projets Claude et les skills de l'école, les connecteurs Microsoft 365
 
 ---
 ## Merci

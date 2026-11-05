@@ -38,6 +38,14 @@ Note: DÉMO DOSSIER (6 min), à l'écran. Fichier: le dossier "Activités de P1 
 Plan B: "Démo 3 - Dossier rangé (résultat)/" avec INDEX.pdf.
 
 ---
+## Le navigateur de Claude, ou le vôtre
+- L'application Claude a **son propre navigateur**, et elle l'utilise souvent toute seule pour lire une page
+- Mon conseil: utilisez plutôt **votre navigateur**, avec l'extension Claude in Chrome
+- L'avantage: Claude y retrouve **les sites où vous êtes déjà connecté** (Outlook, OneDrive, l'intranet, les applications de la fédération)
+- Il suffit de le dire: "Utilise mon navigateur pour...", "Utilise Edge pour...", "Utilise Chrome pour..."
+
+Note: Si le collège utilise Microsoft Edge: Edge est basé sur Chromium et peut installer les extensions du Chrome Web Store (accepter "Autoriser les extensions d'autres magasins"). Tester l'extension dans Edge avant la séance; si elle ne marche pas, installer Chrome. Prudence: dans votre navigateur, Claude voit des sites connectés, donc des données privées. C'est la triple menace de la partie 8: regarder ce qu'il fait, et lire chaque demande de permission.
+---
 ## Démo 4: le navigateur
 Claude in Chrome: Claude lit des pages web et agit dans le navigateur.
 

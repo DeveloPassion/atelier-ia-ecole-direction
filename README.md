@@ -11,6 +11,7 @@ Les personnes et les documents de démo sont fictifs: ce support sert à apprend
 
 - `index.html` et `01-...html` à `09-...html`: les slides (reveal.js), qui marchent aussi hors ligne
 - `documents/`: la fiche de contexte (PDF à remplir) et un projet de règles d'usage de l'IA
+- `fichiers-de-demo.zip`: les mêmes fichiers de démo, en un seul zip à télécharger (https://developassion.github.io/atelier-ia-ecole-direction/fichiers-de-demo.zip)
 - `fichiers-de-demo/`: les fichiers des démos, tous fictifs (voir `LISEZ-MOI.txt`), les résultats attendus (plan B) et deux dossiers de démo: "en vrac" et "notes seules"
 
 ## Licence

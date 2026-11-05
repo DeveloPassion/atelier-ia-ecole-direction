@@ -1,0 +1,74 @@
+[
+ {
+  "n": 1,
+  "name": "Introduction et accroche",
+  "dur": "5 min + prérequis",
+  "slides": 8,
+  "file": "1 - Introduction et accroche.md",
+  "html": "01-introduction-et-accroche.html"
+ },
+ {
+  "n": 2,
+  "name": "Prise en main de Claude",
+  "dur": "10 min",
+  "slides": 7,
+  "file": "2 - Prise en main de Claude.md",
+  "html": "02-prise-en-main-de-claude.html"
+ },
+ {
+  "n": 3,
+  "name": "Première démo, la circulaire",
+  "dur": "10 min",
+  "slides": 2,
+  "file": "3 - Première démo, la circulaire.md",
+  "html": "03-premiere-demo-la-circulaire.html"
+ },
+ {
+  "n": 4,
+  "name": "IA générative et IA agentique",
+  "dur": "15 min",
+  "slides": 11,
+  "file": "4 - IA générative et IA agentique.md",
+  "html": "04-ia-generative-et-ia-agentique.html"
+ },
+ {
+  "n": 5,
+  "name": "Le contexte et sa gestion",
+  "dur": "15 min + pause",
+  "slides": 15,
+  "file": "5 - Le contexte et sa gestion.md",
+  "html": "05-le-contexte-et-sa-gestion.html"
+ },
+ {
+  "n": 6,
+  "name": "Démos, fichiers, dossier, navigateur",
+  "dur": "20 min",
+  "slides": 7,
+  "file": "6 - Démos, fichiers, dossier, navigateur.md",
+  "html": "06-demos-fichiers-dossier-navigateur.html"
+ },
+ {
+  "n": 7,
+  "name": "Un système qui vous connaît",
+  "dur": "25 min",
+  "slides": 19,
+  "file": "7 - Un système qui vous connaît.md",
+  "html": "07-un-systeme-qui-vous-connait.html"
+ },
+ {
+  "n": 8,
+  "name": "Prudence et règles d'usage",
+  "dur": "5 min",
+  "slides": 4,
+  "file": "8 - Prudence et règles d'usage.md",
+  "html": "08-prudence-et-regles-d-usage.html"
+ },
+ {
+  "n": 9,
+  "name": "Démarrer demain",
+  "dur": "5 min",
+  "slides": 6,
+  "file": "9 - Démarrer demain.md",
+  "html": "09-demarrer-demain.html"
+ }
+]

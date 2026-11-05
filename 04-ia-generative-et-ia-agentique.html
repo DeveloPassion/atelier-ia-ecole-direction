@@ -44,6 +44,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 .reveal table td { color: rgba(255,255,255,0.9); }
 .reveal table tr:hover td { background: rgba(229,0,125,0.08); }
 .reveal blockquote { font-style: normal; width: 88%; }
+.reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .gradient { background: linear-gradient(90deg, #ff1493, #e5007d, #a855f7); -webkit-background-clip: text; background-clip: text;
   color: transparent !important; filter: drop-shadow(0 0 18px rgba(255,20,147,0.35)); }
 .reveal .eyebrow { display: inline-block; border-radius: 999px; background: rgba(229,0,125,0.12); border: 1px solid rgba(229,0,125,0.35);
@@ -101,7 +102,6 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 </style>
 </head>
 <body>
-  <div class="particles"><i style="left:8%;top:18%;animation-delay:0s"></i><i style="left:22%;top:72%;animation-delay:1.5s"></i><i style="left:40%;top:12%;animation-delay:3s"></i><i style="left:63%;top:80%;animation-delay:0.8s"></i><i style="left:78%;top:30%;animation-delay:2.2s"></i><i style="left:90%;top:62%;animation-delay:4s"></i><i style="left:52%;top:46%;animation-delay:5s"></i></div>
   <a class="nav-home" href="index.html">&#8592; Sommaire</a>
   <div class="reveal">
     <div class="slides">
@@ -112,16 +112,16 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 
 <h2>4. Comprendre ce qu'on vient de <span class="gradient">voir</span></h2>
 
-L'IA générative: une IA qui crée du contenu (texte, image, son, vidéo, code), au lieu de seulement classer des données.
+L'IA générative: une IA qui **crée du contenu** (texte, image, son, vidéo, code), au lieu de seulement classer des données.
 ---
 ## Comment ça marche, sans maths
-- Un LLM (grand modèle de langage) prédit la suite la plus probable d'un texte
-- Il écrit morceau par morceau. Ces morceaux s'appellent des tokens (environ trois quarts d'un mot)
+- Un LLM (grand modèle de langage) **prédit la suite la plus probable** d'un texte
+- Il écrit morceau par morceau. Ces morceaux s'appellent des **tokens** (environ trois quarts d'un mot)
 - Il a appris sur une énorme quantité de textes, jusqu'à une date limite
-- Il ne "sait" rien de votre école, sauf ce que vous lui donnez
+- Il ne "sait" rien de votre école, **sauf ce que vous lui donnez**
 ---
 ## Le prompt
-Le prompt, c'est la demande que vous écrivez. C'est une partie du contexte, pas tout le contexte.
+Le prompt, c'est la demande que vous écrivez. C'est **une partie du contexte**, pas tout le contexte.
 
 Un bon prompt dit:
 1. Qui vous êtes
@@ -131,12 +131,12 @@ Un bon prompt dit:
 5. Un exemple, si vous en avez un
 ---
 ## L'hallucination
-- Claude prédit ce qui est probable, pas ce qui est vrai
+- Claude prédit ce qui est probable, **pas ce qui est vrai**
 - Il peut donc inventer un fait, une date, une source, avec aplomb
-- C'est une hallucination
-- Règle: les faits, les chiffres et les sources se vérifient toujours
+- C'est une **hallucination**
+- Règle: les faits, les chiffres et les sources **se vérifient toujours**
 
-Une analogie: un stagiaire très cultivé, très rapide, qui ne vous connaît pas, et qui n'ose jamais dire "je ne sais pas".
+Une analogie: un stagiaire très cultivé, très rapide, qui ne vous connaît pas, et qui **n'ose jamais dire** "je ne sais pas".
 ---
 ## Points forts, points faibles
 | Bon pour | Moins bon pour |
@@ -149,7 +149,7 @@ Une analogie: un stagiaire très cultivé, très rapide, qui ne vous connaît pa
 <p class="chip">À lire seul</p>
 ---
 ## L'IA agentique
-Un chatbot répond. Un agent agit.
+Un chatbot répond. Un agent **agit**.
 ---
 ## La boucle d'un agent
 <div class="loop">
@@ -171,10 +171,10 @@ Note: Laisser l'animation tourner une fois. Exemple parlé avec la circulaire: p
 - Les connecteurs: Microsoft 365, Google Drive, etc.
 ---
 ## Les connecteurs et MCP
-- MCP (Model Context Protocol) est une prise standard entre une IA et un autre outil
+- MCP (Model Context Protocol) est une **prise standard** entre une IA et un autre outil
 - Un connecteur, c'est un serveur MCP: il donne à l'IA l'accès à un outil (agenda, mails, fichiers)
 - Le même standard marche pour Claude, ChatGPT et d'autres
-- Chaque connecteur ajoute des possibilités, et aussi des risques: n'activez que ce qui sert
+- Chaque connecteur ajoute des possibilités, et aussi des risques: **n'activez que ce qui sert**
 
 ```mermaid
 flowchart LR
@@ -184,7 +184,7 @@ flowchart LR
 ```
 ---
 ## Les skills
-- Une skill, c'est une façon de faire, écrite une fois, que Claude suit chaque fois
+- Une skill, c'est **une façon de faire**, écrite une fois, que Claude suit chaque fois
 - Exemples pour l'école
     - "Comment j'écris aux parents": le ton, la longueur, la signature
     - "Comment je trie une circulaire": ce qui concerne mon niveau, le format du tableau
@@ -195,7 +195,7 @@ flowchart LR
 ---
 ## L'humain reste dans la boucle
 - Claude demande la permission avant les actions importantes
-- Envoyer, supprimer, payer, publier: c'est vous qui validez
+- Envoyer, supprimer, payer, publier: **c'est vous qui validez**
 - Lisez la demande de permission avant de dire oui
         </textarea>
       </section>

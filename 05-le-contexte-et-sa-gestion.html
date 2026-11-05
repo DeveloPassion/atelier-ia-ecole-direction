@@ -44,6 +44,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 .reveal table td { color: rgba(255,255,255,0.9); }
 .reveal table tr:hover td { background: rgba(229,0,125,0.08); }
 .reveal blockquote { font-style: normal; width: 88%; }
+.reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .gradient { background: linear-gradient(90deg, #ff1493, #e5007d, #a855f7); -webkit-background-clip: text; background-clip: text;
   color: transparent !important; filter: drop-shadow(0 0 18px rgba(255,20,147,0.35)); }
 .reveal .eyebrow { display: inline-block; border-radius: 999px; background: rgba(229,0,125,0.12); border: 1px solid rgba(229,0,125,0.35);
@@ -101,7 +102,6 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 </style>
 </head>
 <body>
-  <div class="particles"><i style="left:8%;top:18%;animation-delay:0s"></i><i style="left:22%;top:72%;animation-delay:1.5s"></i><i style="left:40%;top:12%;animation-delay:3s"></i><i style="left:63%;top:80%;animation-delay:0.8s"></i><i style="left:78%;top:30%;animation-delay:2.2s"></i><i style="left:90%;top:62%;animation-delay:4s"></i><i style="left:52%;top:46%;animation-delay:5s"></i></div>
   <a class="nav-home" href="index.html">&#8592; Sommaire</a>
   <div class="reveal">
     <div class="slides">
@@ -112,31 +112,31 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 
 <h2>5. Le <span class="gradient">contexte</span></h2>
 
-Le contexte, c'est tout ce que Claude voit au moment de répondre.
+Le contexte, c'est **tout ce que Claude voit** au moment de répondre.
 
 - Vos instructions et votre prompt
 - La conversation jusqu'ici
 - Les documents joints
 - Les résultats des outils (une page web, un fichier lu)
-- Le reste, il ne le connaît pas
+- Le reste, **il ne le connaît pas**
 ---
 ## La session
 - Une session, c'est une conversation
-- À chaque message, Claude relit toute la conversation depuis le début
-- Entre deux conversations, il ne se souvient de rien
+- À chaque message, Claude **relit toute la conversation** depuis le début
+- Entre deux conversations, **il ne se souvient de rien**
 - Sauf ce qui est dans un projet Claude ou dans sa mémoire
 ---
 ## La fenêtre de contexte
 - C'est la quantité maximum de texte que Claude lit en une fois
 - Elle est grande: environ un million de tokens, quelques gros livres
-- Mais elle n'est pas infinie
-- Et plus elle est pleine, moins il fait attention à chaque détail
+- Mais elle n'est **pas infinie**
+- Et plus elle est pleine, **moins il fait attention** à chaque détail
 ---
 ## Le cache
 - Claude garde le début de la conversation pendant quelques minutes
 - Il ne relit donc pas tout à chaque message: c'est plus rapide et moins cher
 - Après une longue pause, il doit tout relire
-- Conséquence: une très longue conversation reprise le lendemain coûte plus et répond moins bien
+- Conséquence: une très longue conversation reprise le lendemain **coûte plus et répond moins bien**
 
 <p class="chip">À lire seul</p>
 ---
@@ -163,7 +163,7 @@ flowchart TD
 2. Du contexte dans la demande: mieux, mais on se répète
 3. La mémoire de Claude: il retient quelques éléments, de façon peu fiable
 4. Les projets Claude: des instructions et des documents permanents
-5. Une base de connaissances à vous, que l'IA utilise
+5. Une base de connaissances **à vous**, que l'IA utilise
 
 ```mermaid
 flowchart LR
@@ -171,50 +171,50 @@ flowchart LR
 ```
 ---
 ## Les projets Claude
-- Un projet Claude garde des instructions et des documents pour toutes ses conversations
+- Un projet Claude garde des instructions et des documents **pour toutes ses conversations**
 - Exemple: un projet Claude "Direction primaire" avec le ton de l'école, le règlement, le calendrier
 - Vous ne réexpliquez plus rien: chaque nouvelle conversation part de là
-- Un projet Claude par grand sujet, pas un pour tout
+- Un projet Claude **par grand sujet**, pas un pour tout
 ---
 ## La limite des niveaux 3 et 4
-- La mémoire et les projets Claude vivent chez Anthropic
+- La mémoire et les projets Claude **vivent chez Anthropic**
 - Ils ne passent pas dans un autre outil
 - On voit mal ce qu'ils contiennent
 - Chacun refait le sien, rien n'est partagé
-- C'est un contexte loué
+- C'est un **contexte loué**
 ---
 ## Plus n'est pas toujours mieux
-- Le contexte est fini
+- **Le contexte est fini**
 - Chaque document ajouté rapporte un peu moins que le précédent
 - Un document inutile peut même faire baisser la qualité
-- Donnez ce qui sert à la tâche, pas tout ce que vous avez
+- Donnez **ce qui sert à la tâche**, pas tout ce que vous avez
 ---
 ## Une longue conversation se dégrade
 - Claude se perd et mélange les sujets
 - Il oublie des consignes du début
 - Les réponses deviennent moins précises
-- Ce n'est pas vous: c'est la limite du contexte
+- Ce n'est pas vous: c'est **la limite du contexte**
 ---
 ## La compaction
-- Quand une conversation devient trop longue, Claude résume le début
+- Quand une conversation devient trop longue, Claude **résume le début**
 - Il continue à partir de ce résumé
-- Les détails du début peuvent se perdre
+- Les détails du début **peuvent se perdre**
 - Si une consigne compte, redites-la, ou mettez-la dans votre fiche de contexte
 
 Note: La compaction existe aussi dans l'application Claude (Claude Desktop). Montrer une longue conversation déjà compactée, préparée avant la séance. Image utile: un PV de réunion garde les décisions et perd les détails.
 ---
 ## Quatre règles pratiques
-1. Une conversation = un sujet
+1. **Une conversation = un sujet**
 2. Nouvelle conversation quand vous changez de sujet, ou quand les réponses se dégradent
-3. Ce qui doit durer va dans un fichier à vous (la fiche de contexte) et dans un projet Claude
-4. Avant de fermer une longue conversation, demandez un résumé et gardez-le
+3. Ce qui doit durer va **dans un fichier à vous** (la fiche de contexte) et dans un projet Claude
+4. Avant de fermer une longue conversation, **demandez un résumé** et gardez-le
 ---
 ## L'idée centrale
-Résultat = modèle × contexte
+**Résultat = modèle × contexte**
 
 - Le modèle est le même pour vous trois: Claude Entreprise
 - Le contexte, c'est vous qui le donnez
-- C'est le seul facteur que vous contrôlez
+- C'est **le seul facteur que vous contrôlez**
 
 <p class="system"><b>Pour un système qui vous connaît:</b> il choisit le bon contexte pour chaque demande, au lieu de tout mettre. Et ce contexte est à vous.</p>
 ---

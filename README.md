@@ -14,6 +14,12 @@ Les personnes et les documents de démo sont fictifs: ce support sert à apprend
 - `fichiers-de-demo.zip`: les mêmes fichiers de démo, en un seul zip à télécharger (https://developassion.github.io/atelier-ia-ecole-direction/fichiers-de-demo.zip)
 - `fichiers-de-demo/`: les fichiers des démos, tous fictifs (voir `LISEZ-MOI.txt`), les résultats attendus (plan B) et deux dossiers de démo: "en vrac" et "notes seules"
 
+## Modifier le cours
+
+- Les textes des slides sont dans `src/parts/` (un fichier Markdown par partie; `---` sépare les slides, `Note:` commence les notes de l'orateur). L'ordre, les durées et les noms des fichiers HTML sont dans `src/parts.json`
+- Reconstruire le site: `python3 tools/build.py`, depuis la racine du dépôt. Le script régénère `index.html` et les 9 fichiers `01-...html` à `09-...html`. `lib/` et `theme.css` ne changent pas
+- Publier: commit, puis push sur `main`. GitHub Pages met le site à jour en une minute environ
+
 ## Licence
 
 © 2026 Sébastien Dubois / DeveloPassion. Tous droits réservés. Voir [LICENSE](LICENSE).

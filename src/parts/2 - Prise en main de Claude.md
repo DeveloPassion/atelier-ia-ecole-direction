@@ -10,13 +10,14 @@ Claude est l'IA de la société Anthropic. Le collège l'utilise en abonnement E
 
 ---
 ## L'application Claude
-- À gauche: vos conversations et vos projets Claude
+- À gauche: vos conversations et vos projets
 - Au centre: la conversation
-- En bas: la zone de saisie, pour écrire, joindre un fichier, **choisir le modèle et l'effort**
+- En bas: la zone de saisie, pour écrire ou **dicter** (le micro), joindre un fichier, **choisir le modèle et l'effort**
+- Mon conseil: **dictez**. On parle bien plus vite qu'on écrit, et on donne naturellement plus de contexte
 - À droite: **les artefacts**, ce que Claude crée pour vous (document, présentation, tableau)
 - Dans les paramètres: les connecteurs, les skills, la mémoire
 
-Note: TOUR DE L'APPLICATION (4 min), chacun sur son PC. Montrer chaque zone en une phrase. Ouvrir les paramètres et montrer Connecteurs et Skills sans rien changer. Montrer aussi l'extension Claude in Chrome dans Chrome.
+Note: TOUR DE L'APPLICATION (4 min), chacun sur son PC. Montrer chaque zone en une phrase. Montrer le micro de la zone de saisie et dicter une demande en direct: c'est souvent ce qui surprend le plus. Ouvrir les paramètres et montrer Connecteurs et Skills sans rien changer. Montrer aussi l'extension Claude in Chrome dans Chrome.
 
 ---
 ## Un seul Claude

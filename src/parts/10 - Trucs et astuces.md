@@ -7,6 +7,7 @@ Pour obtenir de bons résultats, plus vite.
 ---
 ## Bien demander
 - **Dictez** au lieu d'écrire: vous donnez plus de contexte, plus vite
+- En dictant, **n'hésitez pas à en dire beaucoup**, quitte à vous répéter ou à vous corriger en cours de route: Claude fait le tri
 - Dites **qui vous êtes**, **pour qui** c'est, et **sous quelle forme** (longueur, ton, liste ou tableau)
 - Donnez **un exemple**: "écris comme ce mot-ci"
 - Demandez-lui de **vous poser des questions** avant de commencer. Il propose souvent des choix à cliquer

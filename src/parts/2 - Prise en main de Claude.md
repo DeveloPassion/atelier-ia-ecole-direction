@@ -20,8 +20,7 @@ Claude est l'IA de la société Anthropic. Le collège l'utilise en abonnement E
 Note: TOUR DE L'APPLICATION (4 min), chacun sur son PC. Montrer chaque zone en une phrase. Montrer le micro de la zone de saisie et dicter une demande en direct: c'est souvent ce qui surprend le plus. Ouvrir les paramètres et montrer Connecteurs et Skills sans rien changer. Montrer aussi l'extension Claude in Chrome dans Chrome.
 
 ---
-## Un seul Claude
-- Depuis septembre 2026, le chat et Cowork sont réunis
+## Claude s'adapte à la tâche
 - Vous écrivez ce que vous voulez. **Claude choisit**: répondre vite, ou faire un travail plus long
 - Vous pouvez l'arrêter, le corriger, ou changer l'effort à tout moment
 - Il peut continuer une tâche longue pendant que vous faites autre chose

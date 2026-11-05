@@ -88,5 +88,14 @@
   "file": "11 - Bonus, l'IA et les élèves.md",
   "html": "11-bonus-l-ia-et-les-eleves.html",
   "bonus": true
+ },
+ {
+  "n": 12,
+  "name": "Bonus, pour aller plus loin",
+  "dur": "bonus, à lire seul",
+  "slides": 3,
+  "file": "12 - Bonus, pour aller plus loin.md",
+  "html": "12-bonus-pour-aller-plus-loin.html",
+  "bonus": true
  }
 ]

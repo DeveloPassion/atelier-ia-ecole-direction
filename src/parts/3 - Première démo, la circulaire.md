@@ -9,7 +9,7 @@ Chacun la même circulaire, chacun sa question.
 - Secrétariat: ce qui touche le secrétariat
 - Le résultat: un tableau **à vérifier, pas à recopier**
 
-Note: DÉMO CIRCULAIRE (10 min), chacun sur son PC. D'abord la fictive: "Circulaire 9847 - Organisation de l'année scolaire 2026-2027.pdf" (20 pages, des actions claires pour chaque niveau, avec des pièges). Ensuite, 2 minutes, "essayons une vraie": la circulaire 9757 (document public sur gallilex.cfwb.be, lien dans fichiers-de-demo/LISEZ-MOI.txt). Elle est adressée aux pouvoirs organisateurs: la bonne réponse est "presque rien ici n'est pour vous". Leçon: savoir en une minute qu'une circulaire ne vous concerne pas, c'est déjà du temps gagné.
+Note: DÉMO CIRCULAIRE (10 min), chacun sur son PC. D'abord la fictive: "Circulaire 9847 - Organisation de l'année scolaire 2026-2027.pdf" (20 pages, des actions claires pour chaque niveau, avec des pièges). Ensuite, 2 minutes, "essayons une vraie": la circulaire 9757 (document public: [gallilex.cfwb.be](https://gallilex.cfwb.be/sites/default/files/circulaires/2026-07/53257_0001.pdf)). Elle est adressée aux pouvoirs organisateurs: la bonne réponse est "presque rien ici n'est pour vous". Leçon: savoir en une minute qu'une circulaire ne vous concerne pas, c'est déjà du temps gagné.
 1. Nouvelle conversation, modèle Opus 5.5. Joindre le PDF.
 2. Taper (adapter le niveau): "Je suis à la direction du primaire. Lis cette circulaire et fais-moi un tableau des actions qui concernent le fondamental ou le primaire: action, date limite, qui doit le faire, page. Ignore ce qui concerne seulement le secondaire. Signale les dates déjà passées."
 3. Comparer les trois tableaux. Vérifier deux lignes dans le PDF (page citée).

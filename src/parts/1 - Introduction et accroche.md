@@ -42,16 +42,16 @@ Note: Poser une feuille sur la table pour noter les questions à reprendre à la
 
 ---
 ## Avant de commencer: les prérequis
-1. **L'application Claude** (Claude Desktop), installée sur votre PC: claude.ai/download
-2. **L'extension Claude in Chrome**, ajoutée à Chrome: claude.com/chrome
+1. **L'application Claude** (Claude Desktop), installée sur votre PC: [claude.ai/download](https://claude.ai/download)
+2. **L'extension Claude in Chrome**, ajoutée à Chrome: [claude.com/chrome](https://claude.com/chrome)
 3. **Le même compte**, connecté dans les deux: votre compte Claude Entreprise du collège
 4. Le dossier "Fichiers de démo", copié sur votre PC, **hors OneDrive**
 
 Note: VÉRIFICATION DES PRÉREQUIS (10 minutes avant le début, ou la veille par mail).
-Claude Desktop: 1) Aller sur claude.ai/download et choisir Windows (ou Mac). 2) Lancer l'installateur. 3) Ouvrir Claude, cliquer sur "Se connecter", et choisir la connexion du collège (connexion unique si l'admin l'a activée, sinon l'adresse mail du collège). 4) En bas à gauche, vérifier le nom et l'organisation du collège: pas un compte personnel.
-Claude in Chrome: 1) Dans Chrome, aller sur claude.com/chrome et cliquer sur "Ajouter à Chrome" (Chrome Web Store). 2) Épingler l'extension: icône en forme de pièce de puzzle, puis la punaise à côté de Claude. 3) Cliquer sur l'icône Claude et se connecter avec le même compte. 4) Accepter les permissions demandées. Si l'extension est bloquée, l'admin doit l'activer pour l'organisation.
+Claude Desktop: 1) Aller sur [claude.ai/download](https://claude.ai/download) et choisir Windows (ou Mac). 2) Lancer l'installateur. 3) Ouvrir Claude, cliquer sur "Se connecter", et choisir la connexion du collège (connexion unique si l'admin l'a activée, sinon l'adresse mail du collège). 4) En bas à gauche, vérifier le nom et l'organisation du collège: pas un compte personnel.
+Claude in Chrome: 1) Dans Chrome, aller sur [claude.com/chrome](https://claude.com/chrome) et cliquer sur "Ajouter à Chrome" (Chrome Web Store). 2) Épingler l'extension: icône en forme de pièce de puzzle, puis la punaise à côté de Claude. 3) Cliquer sur l'icône Claude et se connecter avec le même compte. 4) Accepter les permissions demandées. Si l'extension est bloquée, l'admin doit l'activer pour l'organisation.
 Test rapide: dans l'application, "Bonjour, dis-moi en une phrase ce que tu peux faire". Dans Chrome, ouvrir une page web et demander "Résume cette page en trois points".
-Si un PC bloque l'installation: travailler à deux sur un PC, ou utiliser claude.ai dans le navigateur (sans les démos sur un dossier).
+Si un PC bloque l'installation: travailler à deux sur un PC, ou utiliser [claude.ai](https://claude.ai) dans le navigateur (sans les démos sur un dossier).
 ---
 ## 1. Le même Claude, deux réponses
 Même machine, même question. **Une seule différence**.

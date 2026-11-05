@@ -174,7 +174,7 @@ def page(title, body_md, part_no):
       }});
     }}
     Reveal.initialize({{ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
-      plugins: [ RevealMarkdown, RevealNotes ] }}).then(() => {{ drawDiagrams(); Reveal.layout(); }});
+      plugins: [ RevealMarkdown, RevealNotes ] }}).then(() => {{ drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => {{ a.target = '_blank'; a.rel = 'noopener'; }}); Reveal.layout(); }});
   </script>
 </body>
 </html>

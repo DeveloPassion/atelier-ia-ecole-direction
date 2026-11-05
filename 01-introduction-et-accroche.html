@@ -148,16 +148,16 @@ Note: Timing visé: 0:15 fin de la partie 2, 0:25 fin de la circulaire, 0:55 fin
 Note: Poser une feuille sur la table pour noter les questions à reprendre à la fin, ou par la suite (par mail ou en séance 2). Vérifier que chacun a ouvert l'application Claude et le dossier "Fichiers de démo".
 ---
 ## Avant de commencer: les prérequis
-1. **L'application Claude** (Claude Desktop), installée sur votre PC: claude.ai/download
-2. **L'extension Claude in Chrome**, ajoutée à Chrome: claude.com/chrome
+1. **L'application Claude** (Claude Desktop), installée sur votre PC: [claude.ai/download](https://claude.ai/download)
+2. **L'extension Claude in Chrome**, ajoutée à Chrome: [claude.com/chrome](https://claude.com/chrome)
 3. **Le même compte**, connecté dans les deux: votre compte Claude Entreprise du collège
 4. Le dossier "Fichiers de démo", copié sur votre PC, **hors OneDrive**
 
 Note: VÉRIFICATION DES PRÉREQUIS (10 minutes avant le début, ou la veille par mail).
-Claude Desktop: 1) Aller sur claude.ai/download et choisir Windows (ou Mac). 2) Lancer l'installateur. 3) Ouvrir Claude, cliquer sur "Se connecter", et choisir la connexion du collège (connexion unique si l'admin l'a activée, sinon l'adresse mail du collège). 4) En bas à gauche, vérifier le nom et l'organisation du collège: pas un compte personnel.
-Claude in Chrome: 1) Dans Chrome, aller sur claude.com/chrome et cliquer sur "Ajouter à Chrome" (Chrome Web Store). 2) Épingler l'extension: icône en forme de pièce de puzzle, puis la punaise à côté de Claude. 3) Cliquer sur l'icône Claude et se connecter avec le même compte. 4) Accepter les permissions demandées. Si l'extension est bloquée, l'admin doit l'activer pour l'organisation.
+Claude Desktop: 1) Aller sur [claude.ai/download](https://claude.ai/download) et choisir Windows (ou Mac). 2) Lancer l'installateur. 3) Ouvrir Claude, cliquer sur "Se connecter", et choisir la connexion du collège (connexion unique si l'admin l'a activée, sinon l'adresse mail du collège). 4) En bas à gauche, vérifier le nom et l'organisation du collège: pas un compte personnel.
+Claude in Chrome: 1) Dans Chrome, aller sur [claude.com/chrome](https://claude.com/chrome) et cliquer sur "Ajouter à Chrome" (Chrome Web Store). 2) Épingler l'extension: icône en forme de pièce de puzzle, puis la punaise à côté de Claude. 3) Cliquer sur l'icône Claude et se connecter avec le même compte. 4) Accepter les permissions demandées. Si l'extension est bloquée, l'admin doit l'activer pour l'organisation.
 Test rapide: dans l'application, "Bonjour, dis-moi en une phrase ce que tu peux faire". Dans Chrome, ouvrir une page web et demander "Résume cette page en trois points".
-Si un PC bloque l'installation: travailler à deux sur un PC, ou utiliser claude.ai dans le navigateur (sans les démos sur un dossier).
+Si un PC bloque l'installation: travailler à deux sur un PC, ou utiliser [claude.ai](https://claude.ai) dans le navigateur (sans les démos sur un dossier).
 ---
 <!-- .slide: class="hero" data-background-gradient="radial-gradient(1100px 560px at 85% 10%, rgba(168,85,247,0.20), transparent 60%), radial-gradient(900px 500px at 8% 92%, rgba(229,0,125,0.18), transparent 60%), #37404c" -->
 <p class="eyebrow">Partie 1 sur 9 · 5 min + prérequis</p>
@@ -199,7 +199,7 @@ Note: Chacun remplace les crochets par ses propres informations: c'est déjà do
       });
     }
     Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
-      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); Reveal.layout(); });
+      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); Reveal.layout(); });
   </script>
 </body>
 </html>

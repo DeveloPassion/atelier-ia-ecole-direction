@@ -35,10 +35,10 @@ Note: Timing visé: 0:15 fin de la partie 2, 0:25 fin de la circulaire, 0:55 fin
 ## Comment on travaille
 - **Chacun sur son PC**: vous faites les démos avec moi
 - Le dossier "Fichiers de démo" est sur votre PC. **Tout y est fictif**
-- **N'hésitez pas à m'interrompre.** Si une réponse prend trop de temps, on la note, et j'y reviens à la fin
+- **N'hésitez pas à m'interrompre.** Si une réponse prend trop de temps, on la note, et j'y reviens à la fin ou par la suite
 - L'AI Act (article 4, depuis février 2025) demande de former le personnel qui utilise l'IA. Cet atelier y contribue
 
-Note: Poser une feuille sur la table pour noter les questions à reprendre à la fin. Vérifier que chacun a ouvert l'application Claude et le dossier "Fichiers de démo".
+Note: Poser une feuille sur la table pour noter les questions à reprendre à la fin, ou par la suite (par mail ou en séance 2). Vérifier que chacun a ouvert l'application Claude et le dossier "Fichiers de démo".
 
 ---
 ## Avant de commencer: les prérequis

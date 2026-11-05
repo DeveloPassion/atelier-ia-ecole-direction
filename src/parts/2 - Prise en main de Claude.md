@@ -53,10 +53,11 @@ L'effort dit **combien de travail** Claude met dans une tâche.
 
 - **Effort bas**: rapide. Une première version, à corriger ensemble
 - **Effort haut**: plus long. Il vérifie, il teste, il décide plus de choses seul
+- Sur une grosse tâche, Claude peut **travailler des heures sans s'arrêter**: il lit, essaie, vérifie et recommence, pendant que vous faites autre chose
 - Plus d'effort prend plus de temps et plus de **tokens**, donc plus de budget (voir la partie 5)
 - On donne 1 heure pour une tâche: on rend une première version. On donne 12 heures: on vérifie tout. Claude lit l'effort de la même façon
 
-Note: Analogie de Thariq Shihipar (Anthropic), article "Spending your effort", 2026-09-25.
+Note: Analogie de Thariq Shihipar (Anthropic), article "Spending your effort", 2026-09-25. Dans ses tests, une même demande a pris 1 minute et demie en effort bas, et plus d'une heure en effort maximum.
 
 ---
 ## Quel effort choisir

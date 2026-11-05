@@ -15,10 +15,29 @@
 :root { --dp-magenta: #e5007d; --dp-pink: #ff1493; --dp-purple: #a855f7; --dp-slate: #37404c;
   --dp-surface: #3f4957; --dp-surface-2: #475363; --dp-well: #2b323c; --dp-green: #4ade80; --dp-yellow: #fbbf24; }
 html, body, .reveal-viewport { background: var(--dp-slate); }
+.reveal .slides { background: transparent !important; }
 .reveal { font-size: 30px; }
 .reveal .slides section { text-align: left; }
 .reveal h2 { font-size: 1.45em; font-weight: 800; }
-.reveal h2::before { width: 48px; height: 4px; border-radius: 999px; background: var(--dp-magenta); }
+/* Titles: the magenta bar goes UNDER the title (brand underline bar), not above it */
+.reveal h2::before { display: none !important; }
+.reveal h2 { margin: 0 0 0.75em 0; }
+.reveal .slides section:not(.hero) h2::after { content: ""; display: block; width: 56px; height: 4px; border-radius: 999px;
+  background: var(--dp-magenta); margin-top: 0.32em; }
+/* Same top position on every slide (center: false) */
+.reveal .slides > section, .reveal .slides > section > section { padding-top: 54px !important; box-sizing: border-box; }
+.reveal .slides section.hero { padding-top: 170px !important; }
+/* Rhythm between paragraphs and lists */
+.reveal p { margin: 0 0 0.6em 0; }
+.reveal ul, .reveal ol { margin: 0 0 0 1.15em; padding: 0; }
+.reveal li { margin: 0 0 0.38em 0; padding-left: 0.3em; }
+.reveal li > ul, .reveal li > ol { margin-top: 0.35em; margin-bottom: 0.1em; font-size: 0.92em; }
+.reveal p + ul, .reveal p + ol { margin-top: 0.55em; }
+.reveal ul + p, .reveal ol + p, .reveal ul + blockquote, .reveal ol + blockquote, .reveal table + p,
+.reveal ul + .diagram, .reveal ol + .diagram, .reveal p + .diagram, .reveal ul + div, .reveal ol + div { margin-top: 1.0em; }
+.reveal ul + p.system, .reveal ol + p.system, .reveal p + p.system { margin-top: 1.1em; }
+.reveal blockquote { margin: 0.8em 0; }
+.reveal table { margin: 0.4em 0 0.6em 0; }
 .reveal p, .reveal li { color: rgba(255,255,255,0.92); }
 .reveal li::marker, .reveal ol li::marker { color: var(--dp-pink); font-weight: 700; }
 .reveal table { font-size: 0.72em; }
@@ -92,6 +111,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 <p class="eyebrow">Partie 2 sur 9 · 10 min</p>
 
 <h2>2. Prise en <span class="gradient">main</span></h2>
+
 Claude est l'IA de la société Anthropic. Le collège l'utilise en abonnement Entreprise.
 
 - D'autres IA existent: ChatGPT, Gemini, Mistral, Copilot
@@ -168,7 +188,7 @@ Note: Analogie de Thariq Shihipar (Anthropic), article "Spending your effort", 2
         catch (e) { console.warn('Diagram failed', e); }
       });
     }
-    Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06,
+    Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
       plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); Reveal.layout(); });
   </script>
 </body>

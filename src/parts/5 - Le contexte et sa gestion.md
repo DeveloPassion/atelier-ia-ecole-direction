@@ -28,11 +28,19 @@ Note: Le montrer en direct: lancer une tâche longue (par exemple ranger le doss
 
 ---
 ## La fenêtre de contexte
-- C'est la quantité maximum de texte que Claude lit en une fois
-- Elle est grande: environ un million de tokens, quelques gros livres
-- Mais elle n'est **pas infinie**
-- Et plus elle est pleine, **moins il fait attention** à chaque détail
+- C'est la quantité maximum de texte que Claude **lit en une fois**: tout ce qu'il a sous les yeux pendant la conversation
+- Elle est grande: environ **un million de tokens**, soit plusieurs centaines de milliers de mots
+- Mais elle n'est **pas infinie**, et tout y compte: vos messages, ses réponses, les documents, les pages lues
+- Ce qui tient dans la fenêtre **n'est pas forcément bien lu**
 
+---
+## Quand ça devient moins fiable
+- La fiabilité **baisse peu à peu** quand la conversation s'allonge, bien avant que la fenêtre soit pleine
+- Ce qui est **au milieu** d'un long contexte est moins bien utilisé que le début et la fin
+- Il n'y a **pas de seuil précis**: cela dépend de la tâche
+- Les signes: il **oublie une consigne**, il **se répète**, il **se contredit**, il **invente**. Alors: nouvelle conversation
+
+Note: Sources: l'étude "Context Rot" de Chroma (2025): pour la même question, la qualité baisse quand le texte autour s'allonge; et "Lost in the Middle" (2023): le début et la fin d'un long texte sont mieux utilisés que le milieu. La phrase à retenir: la taille de la fenêtre dit combien de texte tient, pas comment il est lu.
 ---
 ## Le cache
 - Claude garde le début de la conversation pendant quelques minutes

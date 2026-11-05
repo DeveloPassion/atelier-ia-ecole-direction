@@ -18,6 +18,15 @@ Le contexte, c'est **tout ce que Claude voit** au moment de répondre.
 - Sauf ce qui est dans un projet Claude ou dans sa mémoire
 
 ---
+## Plusieurs conversations en parallèle
+- Vous pouvez donner **plusieurs tâches en même temps**: une conversation par tâche
+- Par exemple: le tableau des sorties dans l'une, la circulaire dans une autre, un mail aux parents dans une troisième
+- Chaque conversation **avance à son rythme**, et vous passez de l'une à l'autre
+- Vous relisez et vous corrigez quand une tâche est prête
+
+Note: Le montrer en direct: lancer une tâche longue (par exemple ranger le dossier), puis ouvrir une nouvelle conversation pour un mail court pendant que la première travaille. C'est aussi une bonne raison de faire des conversations courtes: une tâche, une conversation.
+
+---
 ## La fenêtre de contexte
 - C'est la quantité maximum de texte que Claude lit en une fois
 - Elle est grande: environ un million de tokens, quelques gros livres
@@ -109,8 +118,20 @@ flowchart LR
 ## Une longue conversation se dégrade
 - Claude se perd et mélange les sujets
 - Il oublie des consignes du début
-- Les réponses deviennent moins précises
+- Il **invente davantage**: les hallucinations augmentent
+- Chaque message coûte plus, parce qu'il relit tout
 - Ce n'est pas vous: c'est **la limite du contexte**
+
+---
+## Des conversations courtes, sur un seul point
+**Évitez à tout prix les conversations longues et "fourre-tout".**
+
+- Une conversation = **un point précis**: un mail, un tableau, une circulaire
+- Dévier un peu, c'est permis. Changer de sujet: **nouvelle conversation**
+- Besoin de garder la suite? Demandez **un résumé**, et collez-le dans une nouvelle conversation
+- Mieux vaut **dix conversations courtes** qu'une seule longue
+
+Note: C'est la règle la plus importante de la partie: la dire avec force. Les longues conversations sont la cause la plus fréquente des mauvaises réponses et des inventions.
 
 ---
 ## La compaction
@@ -123,10 +144,10 @@ Note: La compaction existe aussi dans l'application Claude (Claude Desktop). Mon
 
 ---
 ## Quatre règles pratiques
-1. **Une conversation = un sujet**
+1. **Une conversation = un sujet**, et une conversation courte
 2. Nouvelle conversation quand vous changez de sujet, ou quand les réponses se dégradent
 3. Ce qui doit durer va **dans un fichier à vous** (la fiche de contexte) et dans un projet Claude
-4. Avant de fermer une longue conversation, **demandez un résumé** et gardez-le
+4. Pour garder la suite d'un travail, **demandez un résumé**, et repartez de ce résumé dans une nouvelle conversation
 
 ---
 ## L'idée centrale

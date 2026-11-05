@@ -53,7 +53,7 @@ L'effort dit **combien de travail** Claude met dans une tâche.
 
 - **Effort bas**: rapide. Une première version, à corriger ensemble
 - **Effort haut**: plus long. Il vérifie, il teste, il décide plus de choses seul
-- Plus d'effort prend plus de temps, et coûte plus: avec Claude Entreprise, le collège paie aussi selon la quantité de travail que Claude fait
+- Plus d'effort prend plus de temps et plus de **tokens**, donc plus de budget (voir la partie 5)
 - On donne 1 heure pour une tâche: on rend une première version. On donne 12 heures: on vérifie tout. Claude lit l'effort de la même façon
 
 Note: Analogie de Thariq Shihipar (Anthropic), article "Spending your effort", 2026-09-25.

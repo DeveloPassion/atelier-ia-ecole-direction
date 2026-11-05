@@ -34,6 +34,23 @@ Le contexte, c'est **tout ce que Claude voit** au moment de répondre.
 *À lire seul*
 
 ---
+## Le coût d'une demande
+- L'IA se paie en **tokens**: tout ce que Claude lit, plus tout ce qu'il écrit
+- À chaque message, il **relit toute la conversation**: plus elle est longue, plus chaque message coûte
+- Les documents joints et les pages web lues comptent aussi
+- Un gros modèle (Opus) et un effort haut coûtent plus qu'un modèle plus léger (Sonnet) et un effort bas
+
+Note: Ordre de grandeur pour la salle, sans chiffres précis: une question courte coûte très peu; une circulaire de 20 pages lue en effort haut coûte bien plus. Le message: ce n'est pas cher pour une vraie tâche, mais les longues conversations qui traînent coûtent sans rien rapporter.
+
+---
+## Budget et limites
+- Avec Claude Entreprise, le collège paie un abonnement, et aussi **selon les tokens utilisés**
+- Il peut y avoir **une limite par personne** ou un budget pour le collège: c'est l'admin qui les règle
+- Si une limite est atteinte, Claude le dit: attendre, ou demander à l'admin
+- Les bons réflexes: **une conversation par sujet**, joindre seulement ce qui sert, Sonnet pour le simple, l'effort haut seulement quand il le faut
+
+Note: À vérifier avec l'admin avant la séance: le contrat exact (abonnement seul, ou abonnement plus l'usage), les limites par personne, et où chacun voit sa consommation dans l'application. Si le contrat est un forfait sans usage, adapter la première ligne: "les tokens comptent dans votre quota".
+---
 ## L'entonnoir du contexte
 ```mermaid
 flowchart TD

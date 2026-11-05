@@ -31,7 +31,7 @@ Une copie du dossier "Activités de P1 à P6", en désordre. Claude renomme, tri
 - Claude **montre son plan** avant de déplacer quoi que ce soit
 
 Note: DÉMO DOSSIER (6 min), à l'écran. Fichier: le dossier "Activités de P1 à P6 (copie en désordre)" (36 fichiers: doublons v1/v2/FINAL, dates dans tous les formats, une classe parfois seulement dans le contenu, une garderie et un budget mal rangés, une sortie de l'an passé).
-1. Dans Claude, donner accès à la copie du dossier uniquement.
+1. Dans Claude, choisir la copie du dossier comme dossier de travail, et passer en mode Plan.
 2. Taper: "Range ce dossier. Crée un sous-dossier par classe (P1 à P6) et un dossier 'Divers'. Renomme chaque fichier au format AAAA-MM-JJ - classe - activité. Signale les doublons sans les supprimer. Montre-moi d'abord ton plan, et attends mon accord."
 3. Lire le plan à voix haute. Dire oui.
 4. Montrer le résultat et l'index: un doublon signalé, la garderie dans "Divers", la sortie de l'an passé.

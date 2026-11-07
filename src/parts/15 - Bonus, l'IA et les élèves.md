@@ -1,7 +1,7 @@
-# 11 - Bonus, l'IA et les élèves
+# 15 - Bonus, l'IA et les élèves
 
 ---
-## 11. Bonus: l'IA et les élèves
+## 15. Bonus: l'IA et les élèves
 Des idées pour la suite. Ce n'est pas le sujet de cet atelier.
 
 ---

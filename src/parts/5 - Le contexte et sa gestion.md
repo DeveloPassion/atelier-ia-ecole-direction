@@ -4,6 +4,8 @@
 ## 5. Le contexte
 Le contexte, c'est **tout ce que Claude voit** au moment de répondre.
 
+---
+## Ce que Claude voit
 - Vos instructions et votre prompt
 - La conversation jusqu'ici
 - Les documents joints

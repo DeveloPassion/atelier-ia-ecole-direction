@@ -20,6 +20,9 @@ Pour obtenir de bons résultats, plus vite.
 - Demandez-lui de **vérifier les informations et les sources**, et d'**évaluer son niveau de confiance** pour chaque résultat
 - Demandez ce dont il **n'est pas sûr**: "Signale ce que tu ne sais pas au lieu de deviner"
 - Demandez **une critique**: "Qu'est-ce qui cloche?", "Joue l'avocat du diable"
+
+---
+## Vérifier sans y passer des heures
 - Faites **vérifier par un autre agent**: "Demande à un autre agent de relire ton travail et d'y chercher les erreurs." Un regard neuf voit ce que le premier a raté
 - Demandez une **vérification adversariale**: "Essaie de démolir ta propre réponse: quelles sont les failles, les dates fausses, les oublis?"
 - Commencez par les tâches **faciles à vérifier**: un tableau à partir d'un document, un résumé que vous pouvez relire

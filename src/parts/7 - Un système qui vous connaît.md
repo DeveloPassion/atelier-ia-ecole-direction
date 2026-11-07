@@ -59,7 +59,7 @@ Note: Dans la démo Saint-Exemple, montrer la note du jour du 09/11. Avant la ph
 - Ce sont des fichiers texte, chez vous: ils fonctionnent avec **n'importe quelle IA**. Obsidian sert à les lire et à les écrire
 
 ```mermaid
-flowchart TB
+flowchart LR
   IA[L'IA: elle comprend le système et agit avec vous]
   S[Votre système: structure, types de notes, journal, projets, tâches]
   IA --> S

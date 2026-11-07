@@ -2,7 +2,10 @@
 
 ---
 ## 9. Démarrer demain
-À retenir:
+Ce qu'il faut retenir, et quoi faire dès demain.
+
+---
+## À retenir
 
 1. L'IA prédit, elle ne sait pas: **vérifiez**
 2. La qualité de la réponse dépend du **contexte** que vous donnez

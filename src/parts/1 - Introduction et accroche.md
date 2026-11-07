@@ -30,7 +30,7 @@ Note: Se présenter en une phrase. Dire que le support est fait pour continuer s
 8. Prudence et règles d'usage
 9. Démarrer demain
 
-En bonus: des trucs et astuces, les techniques de prompting, plusieurs agents qui travaillent ensemble, les connecteurs, les skills, l'IA avec les élèves, et des fonctions avancées (dont Claude sur le téléphone).
+Et 7 parties bonus, à parcourir après la séance.
 
 Note: Timing visé (début à 10h): 0:08 fin de la partie 1, 0:18 fin de la partie 2, 0:28 fin de la circulaire, 0:40 fin de la partie 4, 0:55 fin de la partie 5, pause jusqu'à 1:05, 1:23 fin des démos, 1:48 fin de la partie 7, 1:52 fin de la partie 8, 1:57 fin. Trois minutes de marge. Toutes les slides restent: je choisis en direct ce que je passe, et ils parcourent le reste après la séance.
 

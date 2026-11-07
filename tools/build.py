@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import html, json, os, re, shutil, sys
 
-"""Build the course site: src/parts/*.md -> 01-...html to 12-...html and index.html (reveal.js, offline).
+"""Build the course site: src/parts/*.md -> one NN-...html per part (src/parts.json) and index.html (reveal.js, offline).
 
 Usage, from the repository root:  python3 tools/build.py
 lib/ (reveal.js 5.2.1, Pele 1.13.0, Noto Sans) and theme.css (DeveloPassion theme) are committed and not rebuilt.

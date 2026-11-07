@@ -36,14 +36,15 @@ GAP = 10
 TOP = 58          # header band height
 BOTTOM = 26
 COLS = 3
+PAGES = 2
 CW = (W - 2 * M - (COLS - 1) * GAP) / COLS
 
-H3 = ParagraphStyle("h3", fontName="NSB", fontSize=9.6, leading=11.5, textColor=MAGENTA, spaceBefore=0, spaceAfter=2.5)
-BODY = ParagraphStyle("body", fontName="NS", fontSize=7.35, leading=9.1, textColor=INK, spaceAfter=1.6)
+H3 = ParagraphStyle("h3", fontName="NSB", fontSize=9.0, leading=10.8, textColor=MAGENTA, spaceBefore=0, spaceAfter=2.5)
+BODY = ParagraphStyle("body", fontName="NS", fontSize=6.95, leading=8.45, textColor=INK, spaceAfter=1.6)
 BUL = ParagraphStyle("bul", parent=BODY, leftIndent=8, bulletIndent=0, spaceAfter=1.3)
 QUOTE = ParagraphStyle("quote", parent=BODY, fontName="NSI", leftIndent=8, bulletIndent=0, textColor=HexColor("#2b2f36"), spaceAfter=1.4)
 SMALL = ParagraphStyle("small", parent=BODY, fontSize=6.6, leading=8.2, textColor=GREY)
-CELL = ParagraphStyle("cell", parent=BODY, fontSize=6.9, leading=8.4, spaceAfter=0)
+CELL = ParagraphStyle("cell", parent=BODY, fontSize=6.6, leading=7.9, spaceAfter=0)
 CELLB = ParagraphStyle("cellb", parent=CELL, fontName="NSB")
 
 
@@ -61,7 +62,7 @@ def p(text, style=BODY):
 
 def box(title, items):
     """A titled block that never splits across columns."""
-    return KeepTogether([Paragraph(title, H3)] + items + [Spacer(0, 6)])
+    return KeepTogether([Paragraph(title, H3)] + items + [Spacer(0, 4.5)])
 
 
 def table(rows, widths):
@@ -91,8 +92,8 @@ def decorate(c, doc):
     c.setFillColor(GREY)
     c.setFont("NS", 6.8)
     c.drawString(M, 15, "Novembre 2026: l'IA change vite. Le cours complet: developassion.github.io/atelier-ia-ecole-direction")
-    c.drawString(M, 7, "© 2026 Sébastien Dubois · DeveloPassion · Tous droits réservés")
-    c.drawRightString(W - M, 11, f"Page {doc.page} sur 2")
+    c.drawString(M, 7, "© 2026 Sébastien Dubois · DeveloPassion · Tous droits réservés · dsebastien.net · youtube.com/@dsebastien")
+    c.drawRightString(W - M, 11, f"Page {doc.page} sur {PAGES}")
     c.restoreState()
 
 
@@ -102,7 +103,7 @@ story = [
         b("<b>Le contexte fait la qualité.</b> Résultat = modèle × contexte. Le contexte est le seul facteur que vous contrôlez."),
         b("<b>Une conversation = un sujet</b>, et une conversation courte."),
         b("<b>Elle propose, vous décidez.</b> Envoyer, supprimer, payer, publier: c'est vous qui validez."),
-        b("<b>Votre contexte est votre actif.</b> Gardez-le dans un fichier à vous, pas seulement chez Anthropic."),
+        b("<b>Votre contexte est votre actif.</b> Gardez-le dans votre base de connaissances, à vous, et sauvegardée."),
     ]),
     box("La recette d'une bonne demande", [
         p("Dites, dans cet ordre si possible:"),
@@ -112,12 +113,16 @@ story = [
         b("<b>Sous quelle forme</b>: longueur, ton, liste, tableau, Word, Excel."),
         b("<b>Un exemple</b>: « écris comme ce mot-ci »."),
         b("<b>Les limites</b>: ce qu'il ne doit pas faire, ce qu'il doit signaler."),
+        b("<b>Les critères d'un bon résultat</b>: comment vous allez juger la réponse."),
+        p("Mettez <b>les informations et les règles importantes à la fin</b>: la fin d'un long texte est mieux lue que le milieu."),
         p("<b>Dictez</b> (le micro de la zone de saisie): on parle plus vite qu'on écrit, et on donne plus de contexte. Dites beaucoup, quitte à vous répéter: Claude fait le tri."),
     ]),
     box("Des phrases à réutiliser", [
         q("Pose-moi les questions qui te manquent avant de commencer."),
         q("Signale ce que tu ne sais pas au lieu de deviner."),
         q("Pour chaque information, cite la page du document."),
+        q("Vérifie tes informations et tes sources, et donne ton niveau de confiance pour chaque résultat."),
+        q("Améliore ma demande avant de la faire: qu'est-ce qui manque?"),
         q("Montre-moi d'abord ton plan, et attends mon accord."),
         q("Qu'est-ce qui cloche dans ce plan? Donne-moi les trois meilleures objections."),
         q("Joue l'avocat du diable."),
@@ -127,7 +132,8 @@ story = [
         q("Garde le début, refais seulement la fin."),
         q("Plus court. Moins formel. Coupe la slide 4 en deux."),
         q("Donne-moi deux autres versions, très différentes."),
-        q("Fais un résumé de cette conversation pour que je reparte dans une nouvelle."),
+        q("Donne-moi un prompt que je peux passer à un autre agent pour continuer."),
+        q("Évalue ta réponse selon ces critères: oui ou non, et pourquoi."),
         q("Utilise mon navigateur Chrome pour..."),
         q("Remplis ce formulaire, mais n'envoie pas."),
     ]),
@@ -136,7 +142,7 @@ story = [
             ["Sonnet 5.5", "Le simple: un mail, une reformulation, un résumé court."],
             ["Opus 5.5", "Le gros du travail: une circulaire, un tableau, un dossier."],
             ["Haiku", "Rapide et léger."],
-            ["Fable", "Le plus puissant, et le plus coûteux."],
+            ["Fable", "Le plus puissant, mais très coûteux. Données gardées au moins 30 jours, sans zéro conservation: jamais de données personnelles."],
         ], [CW * 0.27, CW * 0.73]),
         p("De nouveaux modèles sortent très souvent: cette liste date de novembre 2026.", SMALL),
     ]),
@@ -151,15 +157,15 @@ story = [
         b("<b>Accepter les modifications</b>: il modifie les fichiers du dossier sans demander chaque fois."),
         b("<b>Plan</b>: il lit et propose un plan, sans rien changer. Vous validez, puis il travaille."),
         b("<b>Auto</b>: il avance seul, et ne demande que pour les actions risquées."),
-        p("Conseil: <b>Plan</b> pour une grosse tâche, <b>Manuel</b> au début, <b>Auto</b> seulement sur une copie. Choisissez un <b>dossier de travail précis</b>, jamais tout votre OneDrive."),
+        p("Conseil: <b>Plan</b> pour une grosse tâche, <b>Manuel</b> au début, <b>Auto</b> seulement sur une copie. Dossier de travail: <b>votre base de connaissances</b> (une copie pour les essais), jamais tout votre OneDrive."),
     ]),
     box("Le contexte, sans se piéger", [
         b("Le contexte, c'est <b>tout ce que Claude voit</b>: vos instructions, la conversation, les documents joints, les pages lues. Le reste, il ne le connaît pas."),
-        b("À chaque message, il <b>relit toute la conversation</b>. Entre deux conversations, il ne se souvient de rien, sauf ce qui est dans un projet Claude."),
+        b("À chaque message, il <b>relit toute la conversation</b>. Entre deux conversations, il ne se souvient de rien, sauf ce qu'il relit: <b>les fichiers de votre base</b>."),
         b("La fenêtre est grande (environ un million de tokens; un token vaut environ trois quarts d'un mot), mais <b>ce qui y tient n'est pas forcément bien lu</b>. Le milieu d'un long texte est moins bien utilisé que le début et la fin."),
-        b("Donnez <b>ce qui sert à la tâche</b>, pas tout ce que vous avez: un document inutile peut faire baisser la qualité."),
-        b("<b>Signes qu'il faut repartir</b>: il oublie une consigne, se répète, se contredit, invente. Alors: un résumé, puis une nouvelle conversation."),
-        b("<b>La compaction</b>: quand une conversation est trop longue, Claude résume le début. Les détails peuvent se perdre: redites ce qui compte."),
+        b("Le contexte est <b>limité</b>. Donnez <b>ce qui sert à la tâche</b>, pas tout ce que vous avez: un document inutile peut faire baisser la qualité."),
+        b("<b>Signes qu'il faut repartir</b>: il oublie une consigne, se répète, se contredit, invente. Alors: un prompt de passage pour un autre agent, puis une nouvelle conversation."),
+        b("<b>La compaction</b> (Claude résume le début d'une conversation trop longue) est <b>peu fiable</b>: beaucoup d'informations se perdent, et les erreurs augmentent. Repartez avant. Ce qui compte va dans votre base."),
         b("Mieux vaut <b>dix conversations courtes</b> qu'une seule longue. Vous pouvez en mener <b>plusieurs en parallèle</b>, une par tâche."),
     ]),
     box("Le coût et les limites", [
@@ -177,18 +183,48 @@ story = [
         b("<b>Des artefacts</b> (ce que Claude crée, à droite): un schéma, une affiche simple, un quiz, un petit jeu pour une classe."),
         b("<b>Des connecteurs</b> (MCP, une prise standard entre l'IA et un outil): agenda, mails, fichiers. N'activez que ce qui sert."),
     ]),
-    box("Projets, skills, commandes, styles", [
-        b("<b>Un projet Claude</b> garde des instructions et des documents pour toutes ses conversations. Un projet par grand sujet (« Direction primaire »), avec votre fiche de contexte, le règlement et le calendrier."),
-        b("<b>Une skill</b> est une façon de faire écrite une fois, que Claude suit chaque fois (« comment j'écris aux parents »). Les tâches de chaque semaine deviennent des skills."),
-        b("<b>Tapez « / »</b> dans la zone de saisie: la liste des skills et des commandes s'ouvre."),
-        b("<b>Un style</b> d'écriture: choisissez ou créez-en un, pour que Claude écrive dans votre ton."),
-        b("<b>La mémoire de Claude</b>: conseil, <b>désactivez-la</b>. Elle vit chez Anthropic, on voit mal ce qu'elle contient, et elle mélange les sujets. Gardez votre contexte dans vos fichiers et vos projets Claude."),
+    box("Votre base de connaissances", [
+        b("<b>Un seul dossier de travail</b> pour l'IA: votre base de connaissances. Des <b>fichiers texte</b> (Markdown: du texte simple, avec # pour les titres)."),
+        b("<b>Démarrez chaque conversation</b> dans ce dossier. Pas de projet Claude: tout ce qui doit durer va dans la base. <b>Une seule source de vérité</b>."),
+        b("Elle contient le contexte de vos <b>rôles</b>, <b>projets</b>, <b>personnes</b> et <b>processus</b>. La fiche de contexte sert juste de point de départ."),
+        b("<b>D'abord pour vous</b>, en bonus pour l'IA: c'est votre second cerveau digital. L'organiser est un travail de long terme, le cœur du système."),
+        b("<b>Capturez partout</b> (bureau, téléphone, dictée), puis rangez dans la base. Un journal du jour: un fichier texte par jour."),
+        b("<b>La mémoire de Claude: à proscrire.</b> Elle ne vous appartient pas vraiment, elle est peu fiable, et elle retient et ressort des choses un peu au hasard. Désactivez-la."),
+    ]),
+    box("Sauvegardes", [
+        b("<b>Au moins deux copies</b> de la base, dont une hors du PC."),
+        b("La synchronisation <b>n'est pas une sauvegarde</b>: une suppression se synchronise aussi."),
+        b("Une sauvegarde récente <b>avant</b> de laisser un agent travailler seul. Testez une restauration de temps en temps."),
+    ]),
+    box("Skills, commandes, styles", [
+        b("<b>Une skill</b> est une recette écrite une fois: quand l'utiliser, les étapes, les règles, un exemple, les critères. Claude la suit chaque fois."),
+        b("Cherchez les tâches <b>répétitives et fréquentes</b>: mot aux parents, tri des circulaires, revue du lundi, compte rendu."),
+        b("Créez-les avec <b>la skill de création de skills</b> (skill-creator). Corrigez la skill, pas seulement la réponse. Gardez son texte dans votre base."),
+        b("<b>Documentez vos processus</b>: l'IA ne fait bien que ce qui est bien décrit."),
+        b("<b>Tapez « / »</b> pour la liste des skills et des commandes. Un <b>style</b> d'écriture garde votre ton."),
+    ]),
+    box("Plusieurs agents, plusieurs regards", [
+        b("<b>Diverger, puis converger</b>: « 20 idées, sans juger », puis « classe-les selon ces trois critères, garde les trois meilleures »."),
+        b("<b>Débat</b>: un agent défend, un autre attaque, un troisième tranche. Vous décidez."),
+        b("<b>Panel</b>: « Relis comme un parent pressé, un parent qui lit mal le français, l'inspection »."),
+        b("<b>L'IA comme juge</b>: un agent note le travail d'un autre avec votre grille. Il préfère les réponses longues: gardez le dernier mot."),
     ]),
     box("Prudence: les données de l'école", [
         b("<b>Jamais d'outil gratuit ou personnel</b> (ChatGPT, Gemini, Claude gratuit) pour un document de l'école: aucun contrat, et les données peuvent servir à entraîner les modèles. C'est une fuite de données (RGPD)."),
         b("Seulement <b>le compte Claude du collège</b>. Vérifiez le nom de l'organisation en bas à gauche de l'application."),
         b("<b>Interdit sans accord</b>: la santé des élèves, les dossiers DACCE, les données des parents. Le DPO du pouvoir organisateur valide les usages avec des données personnelles."),
         b("<b>Les biais</b>: les réponses reflètent les préjugés des textes d'entraînement. Prudence avec tout ce qui juge une personne (un élève, un candidat)."),
+    ]),
+    box("Vos données chez le fournisseur", [
+        b("Chez Anthropic, les données sont <b>stockées aux États-Unis</b>; pas d'option Europe dans l'abonnement Entreprise, selon sa documentation."),
+        b("Le <b>DPA</b> (accord de traitement des données, RGPD) encadre ce que le fournisseur fait des données. Le <b>ZDR</b> (zéro conservation) existe pour certains usages, pas avec Fable."),
+        b("Le collège reste <b>responsable</b> (RGPD). L'<b>AI Act</b> impose la formation du personnel et encadre les usages à haut risque."),
+        b("Un <b>pouce levé ou baissé</b> peut autoriser une conservation plus longue: évitez-le avec des données sensibles."),
+    ]),
+    box("Claude sur le téléphone", [
+        b("Le même compte, les mêmes conversations. Idéal pour <b>capturer</b> en dictant."),
+        b("Le téléphone <b>n'a pas accès à votre base</b> sur le PC: capturez, puis rangez au bureau. Ou donnez la tâche à Claude sur le PC (Dispatch, selon l'abonnement; le PC reste allumé)."),
+        b("<b>Compte du collège</b>, code de verrouillage, pas de photo de documents d'élèves, pas de documents sensibles enregistrés."),
     ]),
     box("Prudence: les agents", [
         b("<b>La triple menace</b>: un agent devient dangereux quand il a les trois en même temps: des <b>données privées</b>, du <b>contenu non fiable</b> (page web, mail reçu, PDF inconnu) et un moyen d'<b>envoyer dehors</b> (mail, formulaire). Ne donnez jamais les trois sans regarder."),
@@ -214,10 +250,10 @@ story = [
         b("Vous décidez <b>quand vous arrêtez</b>: l'IA produit vite, on peut vite en faire trop."),
     ]),
     box("Démarrer dès demain (15 minutes)", [
-        Paragraph("Remplir la <b>fiche de contexte</b> (le PDF), puis copier les réponses dans un Word à vous.", BUL, bulletText="1."),
-        Paragraph("Créer un <b>projet Claude</b> « Direction » (ou « Secrétariat ») avec la fiche, le règlement et le calendrier.", BUL, bulletText="2."),
-        Paragraph("Faire une <b>vraie tâche</b> de la semaine avec ce projet: un mail, un tableau, une circulaire.", BUL, bulletText="3."),
-        p("Puis chaque jour, 2 minutes: le <b>journal du jour</b>. Un document « Journal » dans votre OneDrive, une date par jour. Tout y va: appels, idées, décisions, choses à faire. Une fois par semaine, on relit et on range."),
+        Paragraph("Créer le dossier de <b>votre base de connaissances</b>, sauvegardé. Y mettre vos réponses à la fiche de contexte, le règlement, le calendrier.", BUL, bulletText="1."),
+        Paragraph("Ouvrir Claude <b>sur ce dossier</b> (le dossier de travail).", BUL, bulletText="2."),
+        Paragraph("Faire une <b>vraie tâche</b> de la semaine dans ce dossier: un mail, un tableau, une circulaire.", BUL, bulletText="3."),
+        p("Puis chaque jour, 2 minutes: le <b>journal du jour</b>, un fichier texte par jour dans la base. Tout y va: appels, idées, décisions, choses à faire. Une fois par semaine, on relit et on range."),
     ]),
     box("L'habitude de noter", [
         b("Noter <b>tout de suite</b>: une idée, une décision, un appel, une chose à faire."),
@@ -239,15 +275,14 @@ story = [
     box("Les réglages à faire une fois", [
         b("Vérifier que l'application est connectée au <b>compte du collège</b> (nom de l'organisation en bas à gauche)."),
         b("<b>Désactiver la mémoire</b> de Claude dans les paramètres."),
-        b("Créer un <b>projet Claude</b> par grand sujet, avec la fiche de contexte."),
+        b("Créer le dossier de <b>votre base de connaissances</b>, et le choisir comme <b>dossier de travail</b>. Mettre en place sa <b>sauvegarde</b>."),
         b("Choisir ou créer un <b>style</b> d'écriture à votre ton."),
         b("Installer <b>Google Chrome</b> (même si vous utilisez Edge: l'extension ne marche officiellement que dans Chrome), puis l'extension Claude in Chrome, <b>épinglée</b> et connectée au <b>même compte</b>."),
-        b("Créer un dossier de travail pour Claude, avec des <b>copies</b>, hors du OneDrive partagé."),
     ]),
     box("Quand ça ne va pas", [
         b("<b>Réponse générique</b>: il manque du contexte. Dites qui, pour qui, quelle forme, avec un exemple."),
         b("<b>Une erreur</b>: demandez la page ou la source, passez en effort haut, faites relire par un autre agent."),
-        b("<b>Il tourne en rond</b>: demandez un résumé, puis une nouvelle conversation."),
+        b("<b>Il tourne en rond</b>: demandez un prompt de passage pour un autre agent, puis une nouvelle conversation."),
         b("<b>Trop long, trop formel</b>: « plus court », « moins formel », « en trois points »."),
         b("<b>Il vous donne raison sur tout</b>: demandez les objections, ou de jouer l'avocat du diable."),
         b("<b>Limite atteinte</b>: attendez, ou demandez à l'admin. Puis des conversations plus courtes."),
@@ -279,7 +314,10 @@ story = [
             ["Connecteur", "Un accès à un autre outil (agenda, mails), par MCP."],
             ["Fenêtre", "La fenêtre de contexte: le maximum de texte lu en une fois (environ un million de tokens)."],
             ["Effort", "Combien de travail Claude met dans une tâche: bas, moyen, haut."],
-            ["Projet Claude", "Des instructions et des documents gardés pour toutes ses conversations."],
+            ["Base de connaissances", "Votre dossier de fichiers texte: la source unique de contexte, pour vous et pour l'IA."],
+            ["Markdown", "Du texte simple, avec # pour les titres. Lisible par vous et par toutes les IA."],
+            ["DPA", "L'accord de traitement des données entre le collège et le fournisseur (RGPD)."],
+            ["ZDR", "Zéro conservation: le fournisseur ne garde rien après la réponse."],
             ["Skill", "Une façon de faire écrite une fois, que Claude suit chaque fois."],
             ["LLM", "Grand modèle de langage: il prédit la suite la plus probable d'un texte."],
         ], [CW * 0.33, CW * 0.67]),
@@ -301,6 +339,6 @@ def build():
 
 pages = build()
 print(f"{OUT} pages={pages}")
-if pages != 2:
-    print("WARNING: the cheat sheet must fit on two pages", file=sys.stderr)
+if pages != PAGES:
+    print(f"WARNING: the cheat sheet must fit on {PAGES} pages, it has {pages}", file=sys.stderr)
     sys.exit(1)

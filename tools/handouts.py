@@ -97,12 +97,12 @@ def fiche(path):
     header(c, "Ma fiche de contexte pour l'IA", "Formation IA, Collège de Bonne-Espérance. Ce document vous appartient.")
     y = H - 105
     y = para(c, "À quoi sert cette fiche", M, y, W - 2 * M, BOLD, 11, NAVY)
-    y = para(c, "Une IA ne sait rien de vous. Cette fiche lui donne l'essentiel une fois pour toutes. "
-             "Remplissez-la sur votre PC (les champs se remplissent et s'enregistrent) ou à la main. "
-             "Ensuite, copiez vos réponses dans un document Word à vous, dans votre OneDrive. Certains lecteurs de PDF perdent ce que vous avez tapé: le document Word est la version sûre.", M, y - 2, W - 2 * M)
-    y = para(c, "Elle sert trois fois: 1) tout de suite, comme instructions d'un projet Claude; "
-             "2) avec n'importe quelle autre IA (ChatGPT, Mistral...), sans rien changer; "
-             "3) pour la phase 2: le système lit d'abord cette fiche, et ne pose que les questions qui restent.", M, y - 4, W - 2 * M)
+    y = para(c, "Une IA ne sait rien de vous. Cette fiche sert juste de point de départ: elle initialise votre base de connaissances, "
+             "le dossier de fichiers texte où vous garderez ensuite tout ce qui compte (vos rôles, vos projets, vos personnes, vos processus). "
+             "Remplissez-la sur votre PC (les champs se remplissent et s'enregistrent) ou à la main.", M, y - 2, W - 2 * M)
+    y = para(c, "Ensuite, copiez vos réponses dans un fichier texte de votre base de connaissances (par exemple \"À propos de moi.md\"). "
+             "Certains lecteurs de PDF perdent ce que vous avez tapé: le fichier texte est la version sûre. "
+             "Il fonctionne avec n'importe quelle IA, et en phase 2 le système le lit d'abord, puis ne pose que les questions qui restent.", M, y - 4, W - 2 * M)
     y = para(c, "Écrivez comme vous parlez. Des phrases courtes suffisent. Ne mettez aucune donnée d'élève.", M, y - 4, W - 2 * M, BOLD, 10, ORANGE)
     y -= 8
     form = c.acroForm
@@ -147,6 +147,7 @@ RULES = [
     ("La prudence avec les agents", "Ne jamais donner en même temps à un agent l'accès à des données privées, du contenu non fiable (pages web, mails reçus) et un moyen d'envoyer des données dehors. Lire chaque demande de permission avant de dire oui."),
 ]
 TODO = [
+    "Vérifier le contrat avec Anthropic: l'accord de traitement des données (DPA), le lieu de traitement et de stockage (États-Unis), la durée de conservation, et les modèles à éviter avec des données personnelles (Fable: 30 jours de conservation au moins).",
     "Choisir la base légale de chaque traitement de données personnelles (RGPD).",
     "Faire une analyse d'impact (AIPD) avant tout usage avec des données sensibles.",
     "Décider s'il faut informer les parents, et comment.",

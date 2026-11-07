@@ -92,7 +92,7 @@ def decorate(c, doc):
     c.setFillColor(GREY)
     c.setFont("NS", 6.8)
     c.drawString(M, 15, "Novembre 2026: l'IA change vite. Le cours complet: developassion.github.io/atelier-ia-ecole-direction")
-    c.drawString(M, 7, "© 2026 Sébastien Dubois · DeveloPassion · Tous droits réservés · dsebastien.net · youtube.com/@dsebastien")
+    c.drawString(M, 7, "© 2026 Sébastien Dubois · DeveloPassion · Tous droits réservés · seb@dsebastien.net · dsebastien.net · youtube.com/@dsebastien")
     c.drawRightString(W - M, 11, f"Page {doc.page} sur {PAGES}")
     c.restoreState()
 

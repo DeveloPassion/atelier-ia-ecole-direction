@@ -52,5 +52,6 @@ Questions?
 
 Sébastien Dubois
 
+- Mon adresse mail: [seb@dsebastien.net](mailto:seb@dsebastien.net)
 - Mon site: [dsebastien.net](https://www.dsebastien.net), du contenu en français arrive bientôt
 - Ma chaîne YouTube: [youtube.com/@dsebastien](https://www.youtube.com/@dsebastien)

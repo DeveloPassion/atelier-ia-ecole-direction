@@ -50,6 +50,8 @@ Dézipper sur le PC, hors OneDrive. Ouvrir le dossier dans Claude (ou dans Obsid
 Les 5 demandes à faire et les réponses attendues: "DEMO - À demander.txt", à la racine du système.
 
 DOCUMENTS (dossier "documents" du dépôt)
+  Aide-mémoire - Claude au quotidien.pdf (2 pages, à imprimer)
+  Avant l'atelier - les prérequis.pdf (1 page: l'application Claude, Chrome et l'extension, les fichiers de démo)
   Fiche de contexte pour l'IA.pdf (2 pages, 13 questions, champs à remplir)
   Projet de règles d'usage de l'IA.pdf (1 page, à compléter par l'établissement)
 

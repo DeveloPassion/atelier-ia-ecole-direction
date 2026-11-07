@@ -35,7 +35,7 @@ Note: Document: "Documents à remettre/Fiche de contexte pour l'IA.pdf" (les cha
 2. Votre projet Claude: des instructions (l'école, votre rôle, votre ton, ce que Claude ne doit jamais faire) et deux documents. Posez-lui trois questions de votre semaine
 3. Préparer une réunion: joignez "Notes réunion équipe 2026-11-03 (brut)", demandez un ordre du jour et les points d'action, puis ce qui manque pour que chaque action soit claire
 
-Refaites aussi les démos: les étapes sont dans les notes des slides.
+Refaites aussi les démos: les étapes sont dans les notes des slides. Et gardez **l'aide-mémoire** (PDF de deux pages, à imprimer) à côté de votre PC.
 
 ---
 ## Et après?

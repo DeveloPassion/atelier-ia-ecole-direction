@@ -40,11 +40,12 @@ Plan B: "Démo 3 - Dossier rangé (résultat)/" avec INDEX.pdf.
 ---
 ## Le navigateur de Claude, ou le vôtre
 - L'application Claude a **son propre navigateur**, et elle l'utilise souvent toute seule pour lire une page
-- Mon conseil: utilisez plutôt **votre navigateur**, avec l'extension Claude in Chrome
+- Mon conseil: utilisez plutôt **votre navigateur Chrome**, avec l'extension Claude in Chrome
 - L'avantage: Claude y retrouve **les sites où vous êtes déjà connecté** (Outlook, OneDrive, l'intranet, les applications de la fédération)
-- Il suffit de le dire: "Utilise mon navigateur pour...", "Utilise Edge pour...", "Utilise Chrome pour..."
+- Il suffit de le dire: "Utilise mon navigateur pour...", "Utilise Chrome pour..."
+- **Chrome, pas Edge**: l'extension ne marche officiellement que dans Chrome. Si vous travaillez dans Edge, connectez-vous une fois dans Chrome aux sites utiles
 
-Note: Si le collège utilise Microsoft Edge: Edge est basé sur Chromium et peut installer les extensions du Chrome Web Store (accepter "Autoriser les extensions d'autres magasins"). Tester l'extension dans Edge avant la séance; si elle ne marche pas, installer Chrome. Prudence: dans votre navigateur, Claude voit des sites connectés, donc des données privées. C'est la triple menace de la partie 8: regarder ce qu'il fait, et lire chaque demande de permission.
+Note: Vérifié le 07/11/2026: le centre d'aide d'Anthropic ("Getting started with Claude in Chrome") dit que Claude in Chrome n'est pas pris en charge dans les autres navigateurs Chromium. Edge peut installer l'extension depuis le Chrome Web Store, mais des utilisateurs signalent que l'application Claude (Cowork) ne se connecte qu'à Chrome. Seul Claude Code, l'outil des développeurs, accepte officiellement Edge. Donc: installer Chrome, même si le collège utilise Edge. Prudence: dans votre navigateur, Claude voit des sites connectés, donc des données privées. C'est la triple menace de la partie 8: regarder ce qu'il fait, et lire chaque demande de permission.
 ---
 ## Démo 4: le navigateur
 Claude in Chrome: Claude lit des pages web et agit dans le navigateur.

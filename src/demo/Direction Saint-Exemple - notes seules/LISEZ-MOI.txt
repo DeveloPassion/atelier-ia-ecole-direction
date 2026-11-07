@@ -1,0 +1,5 @@
+DIRECTION SAINT-EXEMPLE - NOTES SEULES (tout est fictif)
+Les notes du système de démo: projets, tâches, personnes, outils, processus, journal et réunion d'une direction d'école fictive.
+Chaque note a un type, des propriétés (statut, dates) et des liens. Ouvrir le dossier dans Claude, ou dans Obsidian.
+Le système complet de la formation est construit sur AI Kit for Obsidian (un produit de DeveloPassion), qui n'est pas inclus ici.
+Les questions de la démo et les réponses attendues sont dans "DEMO - À demander.txt".

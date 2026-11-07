@@ -1,0 +1,64 @@
+DÉMO - CE QU'ON DEMANDE AU SYSTÈME (tout est fictif)
+Ouvrir ce dossier dans Claude (Cowork ou Claude Code), ou dans un autre outil d'IA, puis poser les questions une par une.
+
+1. "Prépare la sortie P4 du 26 novembre."
+   Réponse attendue: le point sur le projet (musée réservé, devis du car attendu, 22 élèves et 3 adultes), les tâches qui restent
+   (mot aux parents avant le 12/11, car, 2 parents accompagnateurs, encodage IT School), et un brouillon du mot aux parents.
+   Pourquoi un chat ou un projet Claude ne fait pas aussi bien: il ne connaît ni la classe, ni l'état du projet, ni les étapes
+   de l'école. Il faut tout réexpliquer, et il ne sait pas ce qui manque.
+
+2. "Fais ma revue du lundi."
+   Réponse attendue: elle suit le processus "Revue du lundi": GEDI-PRO (1 dossier à corriger), RAVEL (3 demandes),
+   les sorties des 3 semaines à venir, les dates proches (EENC et Saint-Nicolas le 20/11), les relances de "En attente",
+   et 3 priorités proposées.
+   Pourquoi: la mémoire de Claude retient quelques faits, pas un processus ni l'état de chaque projet.
+
+3. "Écris aux parents de P4 que le paiement est attendu avant le 19/11."
+   Réponse attendue: un mot de moins de 150 mots, vouvoiement, date complète, montant (12 euros), moyen de paiement,
+   signature de la directrice. Il suit "Écrire aux parents" et le profil d'écriture.
+   Pourquoi: un projet Claude peut garder le ton, mais pas le montant, la classe et le moyen de paiement de cette sortie.
+
+4. "Qu'est-ce que j'attends des autres, et qui dois-je relancer cette semaine?"
+   Réponse attendue: le tableau de "En attente", trié par date de relance: le devis Fictibus (10/11), le ticket de la
+   photocopieuse (12/11), les résultats EENC de P5 (12/11), le PO pour les bancs et pour la décision sur les classes de neige (16/11).
+   Souvent en plus: ce que la réunion du 3/11 attend de Sophie, Grégory et Martine, et qui n'est pas encore dans "En attente".
+   Pourquoi: cette information n'existe dans aucune conversation. Elle vit dans une note à moi.
+
+5. "Quelles actions de la circulaire 9847 touchent mes projets?" (joindre le PDF de la circulaire)
+   Réponse attendue: le nouveau plafond de 485 euros (les classes de neige P5 à 690 euros le dépassent), la déclaration
+   des classes de neige avant le 23/01/2027, la sortie P4 (information aux parents 1 semaine avant), les formations
+   (15/12), le CEB reporté au 05/03/2027. Avec une proposition de tâches à créer.
+   Pourquoi: un chat lit la circulaire, mais il ne sait pas quels projets elle touche.
+
+6. EN VRAC CONTRE ORGANISÉ (à faire sur les deux dossiers: celui-ci, puis "Direction Saint-Exemple en vrac")
+   Question: "Liste mes projets en cours, avec leur statut et leur prochaine action. Lequel est bloqué?"
+   Réponse attendue (corrigé):
+   - Sortie P4 au musée du 26/11: actif (50 %). Prochaine action: écrire le mot aux parents avant le 12/11, puis confirmer le car Fictibus avant le 13/11.
+   - Plan de pilotage 2026-2027: actif. Prochaine action: valider les inscriptions aux formations interréseaux avant le 15/12.
+   - Classes de neige P5 de mars 2027: EN PAUSE, donc bloqué. Raison: 690 euros par élève dépassent le plafond de 485 euros
+     (pour les six années). On attend la décision du PO sur deux options (relance le 16/11). Ensuite: le coût estimé aux parents
+     avant le 30/11, la réunion des parents le 3/12, la déclaration au plus tard le vendredi 22/01/2027.
+   - PAS en cours: les photos de classe d'octobre (terminé le 23/10).
+   Pièges du dossier en vrac: "c'est réglé" pour les photos est caché dans le journal; "à faire.txt" garde "réserver le photographe"
+   (déjà fait); "Projets 2025-2026.txt" liste quatre projets de l'an passé comme "en cours"; le mot aux parents est en double;
+   les bancs de la cour sont une relance, pas un projet.
+   Ce que le test du 05/11 a montré (Claude Opus 5.5): sur le dossier en vrac, Claude trouve le projet bloqué et évite la plupart
+   des pièges. Mais il le dit lui-même: "aucun fichier ne donne de statut, c'est moi qui les ai déduits". Il mélange projets et
+   tâches (les bancs, la photocopieuse), il lit tout, sa réponse est longue, et deux essais ne donnent pas la même liste
+   (5 "projets", puis 6). Sur le dossier organisé: trois projets en cours, un terminé, les statuts lus dans les notes, une
+   réponse courte. Le message: en vrac, l'IA devine bien, mais elle devine. Organisé, elle sait.
+   Pourquoi: dans le système, chaque projet est une note de projet avec un statut et des tâches datées. L'IA lit ces champs.
+   Dans le dossier en vrac, elle doit tout lire et deviner.
+
+COMPARAISON
+                      Chat seul        projet Claude       Mémoire Claude      Ce système
+Ce qu'il sait de moi  Rien             Ce que j'y ai mis    Quelques faits      Mon rôle, mes projets, mes tâches,
+                                                                                mes personnes, mes outils, mes processus
+À qui sont les        Au fournisseur   Au fournisseur       Au fournisseur      À moi: des fichiers texte sur mon PC
+données
+Changer d'IA          Tout est perdu   Tout est à refaire   Tout est perdu      Le même dossier marche avec une autre IA
+Personnel ou partagé  Personnel        Partageable dans     Personnel           Personnel, ou un dossier partagé avec
+                                       le même compte                           l'équipe (au choix, dossier par dossier)
+Se met à jour         Non              À la main            Au hasard           À chaque note, tâche ou réunion
+
+LIMITE À DIRE: le modèle (Claude) tourne toujours chez Anthropic. Ce qui m'appartient, c'est le contexte et les connaissances.

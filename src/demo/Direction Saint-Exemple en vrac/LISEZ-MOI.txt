@@ -1,0 +1,4 @@
+DIRECTION SAINT-EXEMPLE, EN VRAC (tout est fictif)
+Les mêmes faits que le système "Direction Saint-Exemple", mais comme on les note souvent: des fichiers texte,
+sans types, sans statuts, sans liens. Sert à la démo "En vrac contre organisé" (bloc 7 de la formation).
+Ouvrir ce dossier dans Claude, poser la question, puis la même question sur le système organisé.

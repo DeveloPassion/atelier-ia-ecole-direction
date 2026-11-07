@@ -14,7 +14,7 @@ Et qui vous appartient.
 ## Décharger son cerveau
 - Tout ce que vous gardez en tête **vous pèse**: le car à confirmer, le parent à rappeler, le dossier à corriger
 - Écrit dans un endroit fiable, ça ne vous pèse plus: **votre tête se libère**
-- C'est votre **second cerveau**, digital
+- C'est votre **second cerveau digital**: d'abord pour vous, et en bonus pour l'IA
 - **Double gain**: vous vous déchargez aujourd'hui, et chaque note rend l'IA plus utile demain
 
 - Attention au revers: l'IA produit vite, et on peut **vite en faire trop**. Vous faites travailler l'IA, ou est-ce l'IA qui vous fait travailler?
@@ -39,16 +39,24 @@ Le plus simple pour commencer: **une seule note par jour**.
 - Tout y va: les appels, les idées, les décisions, les choses à faire
 - **Rien à décider** sur le moment: pas de titre, pas de dossier
 - Une fois par semaine, **on range**: une tâche, un projet, une note sur une personne
-- Pour l'IA, c'est **une mine**: "Qu'est-ce que j'ai promis cette semaine?", "Qu'est-ce qui est resté en suspens?"
+- Pour l'IA, c'est **une mine d'or**: "Qu'est-ce que j'ai promis cette semaine?", "Qu'est-ce qui est resté en suspens?"
 
-Note: Dans la démo Saint-Exemple, montrer la note du jour du 09/11. Avant la phase 2, un seul document Word "Journal" dans le OneDrive suffit, avec une date en titre pour chaque jour.
+Note: Dans la démo Saint-Exemple, montrer la note du jour du 09/11. Avant la phase 2: un dossier "Journal" dans votre base de connaissances, avec un fichier texte par jour (2026-11-17.md).
+
+---
+## Capturer partout, une seule source de vérité
+- Un système pour **toujours pouvoir capturer** une information ou une idée, vite: au bureau, sur le téléphone, en dictant
+- Tout finit au même endroit: **votre base de connaissances**. Une seule source de vérité
+- Plus de post-it, de mails à soi-même et de carnets dispersés
+- **Organiser la base** est un objectif à très long terme: c'est **le cœur du système**. On commence simple, on range un peu chaque semaine
 
 ---
 ## Deux couches
-- En bas: un système qui marche pour vous, **même sans IA**. Une structure claire, des types de notes, un journal, des projets et des tâches
+- En bas: un système qui fonctionne pour vous, **même sans IA**. Une structure claire, des types de notes, un journal, des projets et des tâches
 - Au-dessus: une IA qui **comprend tout ce système**, et qui travaille avec vous
 - L'IA ne vaut que ce que vaut **la couche du dessous**
-- Ce sont des fichiers texte, chez vous: ils marchent avec **n'importe quelle IA**. Obsidian sert à les lire et à les écrire
+- **D'abord pour vous, en bonus pour l'IA**: c'est votre second cerveau digital, pas juste une base de connaissances au service de l'IA
+- Ce sont des fichiers texte, chez vous: ils fonctionnent avec **n'importe quelle IA**. Obsidian sert à les lire et à les écrire
 
 ```mermaid
 flowchart TB
@@ -131,6 +139,14 @@ La sortie de P4 au musée, le 26 novembre.
 5. **Vous décidez** ce que l'IA voit, dossier par dossier
 
 ---
+## Sauvegardez votre base
+- Votre base de connaissances devient **précieuse**: des années de travail
+- **Au moins deux copies**, dont une hors de votre PC (un disque externe, un autre cloud)
+- La synchronisation n'est pas une sauvegarde: une erreur ou une suppression se synchronise aussi
+- Avant de laisser un agent travailler seul dans la base: **une sauvegarde récente**
+- Testez de temps en temps: **savez-vous restaurer** un fichier?
+
+---
 ## Ce qu'il faut savoir
 - Le modèle reste un **service externe**
 - Chaque demande passe chez le fournisseur choisi
@@ -171,8 +187,8 @@ Vos notes deviennent le contexte de l'IA. Ses réponses deviennent de nouvelles 
 
 ---
 ## Le chemin
-1. **La clarté**: votre rôle, vos priorités, vos objectifs (la fiche de contexte)
-2. **Le système**: un endroit fiable, à côté de votre OneDrive
+1. **La clarté**: votre rôle, vos priorités, vos objectifs (la fiche de contexte sert de point de départ)
+2. **Le système**: votre base de connaissances, un endroit fiable et sauvegardé
 3. **L'habitude de noter**: d'abord le journal du jour
 4. **Les projets et les tâches**
 5. Le reste, une étape à la fois

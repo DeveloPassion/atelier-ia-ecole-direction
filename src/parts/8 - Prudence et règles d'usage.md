@@ -13,6 +13,16 @@ L'IA est un outil puissant. Quelques règles évitent les vrais problèmes.
 
 Note: Court mais important. C'est le risque le plus fréquent dans les écoles: quelqu'un colle un document dans l'outil gratuit qu'il a sur son téléphone.
 ---
+## Où vont vos données
+- Chaque demande est **traitée et stockée** chez le fournisseur. Chez Anthropic, le stockage est **aux États-Unis**; pas d'option Europe dans l'abonnement Entreprise, selon sa documentation
+- Le **DPA** (accord de traitement des données, RGPD article 28): le contrat qui encadre ce que le fournisseur fait de vos données. À demander au collège
+- La **durée de conservation**: le ZDR (zéro conservation) existe pour certains usages. **Fable**: au moins 30 jours de conservation, sans ZDR possible
+- Le **RGPD** s'applique toujours: le collège reste responsable. L'**AI Act** ajoute la formation du personnel et des règles pour les usages à haut risque (évaluer des élèves)
+- Un pouce levé ou baissé sur une réponse peut **autoriser une conservation plus longue**: évitez-le avec des données sensibles
+
+Note: Vérifié le 07/11/2026 dans la documentation d'Anthropic: "workspace geo" (stockage) n'existe qu'en "us"; le traitement ("inference geo") est "global" par défaut ou "us". Les options en Europe passent par AWS Bedrock (Francfort) ou Google Cloud, hors abonnement Claude Enterprise. Fable 5 et 5.1 sont des "Covered Models": 30 jours de conservation minimum, revue automatique de sécurité, pas de ZDR pour Enterprise. À dire simplement: ce n'est pas une raison de ne pas utiliser Claude, mais une raison de ne pas y mettre n'importe quelle donnée, et de faire valider par le DPO. Questions à poser au collège: le DPA est-il signé? Qui est l'admin? Quelles données sont permises?
+
+---
 ## La triple menace
 Un agent devient dangereux quand il a **les trois en même temps**:
 

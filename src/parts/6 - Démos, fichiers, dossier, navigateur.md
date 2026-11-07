@@ -4,11 +4,12 @@
 ## 6. Démos
 Ce qu'un bon système IA peut faire pour vous.
 
-- Quatre cas réels de l'école
+- La démo 1, la circulaire, c'était la partie 3. Voici les démos 2 à 6
+- Des cas réels de l'école
 - Vous suivez sur votre PC quand c'est court. Je montre à l'écran quand c'est long
 - Les étapes sont dans les notes de ces slides: vous pouvez les refaire seuls
 
-Note: 20 minutes. Ordre: fichiers (8 min), dossier (6 min), navigateur (4 min), présentation (2 min). Si le temps manque, garder fichiers et dossier, et montrer le résultat du plan B pour les deux autres. Plan B: le dossier "Plan B - résultats attendus".
+Note: 18 minutes. Ordre: fichiers (8 min), dossier (6 min), navigateur (4 min). Ensuite, s'il reste du temps: la photo (3 min) ou la présentation (2 min). Si le temps manque, garder fichiers et dossier, et montrer le résultat du plan B pour les autres. Plan B: le dossier "Plan B - résultats attendus".
 
 ---
 ## Démo 2: créer des fichiers

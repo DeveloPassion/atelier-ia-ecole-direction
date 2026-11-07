@@ -15,7 +15,7 @@ Le contexte, c'est **tout ce que Claude voit** au moment de répondre.
 - Une session, c'est une conversation
 - À chaque message, Claude **relit toute la conversation** depuis le début
 - Entre deux conversations, **il ne se souvient de rien**
-- Sauf ce qui est dans un projet Claude ou dans sa mémoire
+- Sauf ce qu'il relit à chaque fois: **les fichiers de votre base de connaissances** (ou un projet Claude, ou sa mémoire)
 
 ---
 ## Plusieurs conversations en parallèle
@@ -115,8 +115,8 @@ flowchart LR
 ## Les projets Claude
 - Un projet Claude garde des instructions et des documents **pour toutes ses conversations**
 - Exemple: un projet Claude "Direction primaire" avec le ton de l'école, le règlement, le calendrier
-- Vous ne réexpliquez plus rien: chaque nouvelle conversation part de là
-- Un projet Claude **par grand sujet**, pas un pour tout
+- Pratique, mais tout reste **chez Anthropic**, et chaque projet est une île
+- Mon conseil: **pas de projet Claude**, mais **un seul dossier de travail** pour l'IA: votre base de connaissances (slide suivante)
 
 ---
 ## La limite des niveaux 3 et 4
@@ -126,11 +126,21 @@ flowchart LR
 - Chacun refait le sien, rien n'est partagé
 - C'est un **contexte loué**
 
-Mon conseil: **désactivez la mémoire de Claude**, et gardez ce qui doit durer dans votre fiche de contexte et vos projets Claude (voir le bonus 12).
+La mémoire de Claude est **à proscrire**: elle ne vous appartient pas vraiment, elle est peu fiable, elle retient des choses un peu au hasard, et elle s'en sert un peu au hasard aussi. **Désactivez-la.**
+
+---
+## Le niveau 5: votre base de connaissances
+- Une **source de contexte** facile d'accès, pour vous et pour l'IA
+- L'idéal: des **fichiers texte** (Markdown: du texte simple, avec # pour les titres), dans un dossier à vous
+- Elle contient le contexte de **vos rôles, vos projets, vos personnes, vos processus**
+- L'idéal: **démarrer chaque conversation dans le dossier** de votre base de connaissances
+- Tout ce qui doit durer y va. **Une seule source de vérité**
+
+Note: C'est le fil rouge de la suite: la partie 7 montre à quoi ressemble cette base. Dans l'application Claude, "démarrer dans le dossier" = choisir ce dossier comme dossier de travail.
 
 ---
 ## Plus n'est pas toujours mieux
-- **Le contexte est fini**
+- **Le contexte est limité**
 - Chaque document ajouté rapporte un peu moins que le précédent
 - Un document inutile peut même faire baisser la qualité
 - Donnez **ce qui sert à la tâche**, pas tout ce que vous avez
@@ -149,7 +159,7 @@ Mon conseil: **désactivez la mémoire de Claude**, et gardez ce qui doit durer 
 
 - Une conversation = **un point précis**: un mail, un tableau, une circulaire
 - Dévier un peu, c'est permis. Changer de sujet: **nouvelle conversation**
-- Besoin de garder la suite? Demandez **un résumé**, et collez-le dans une nouvelle conversation
+- Besoin de garder la suite? Demandez: **"Donne-moi un prompt que je peux passer à un autre agent pour continuer."** Collez-le dans une nouvelle conversation
 - Mieux vaut **dix conversations courtes** qu'une seule longue
 
 Note: C'est la règle la plus importante de la partie: la dire avec force. Les longues conversations sont la cause la plus fréquente des mauvaises réponses et des inventions.
@@ -158,8 +168,9 @@ Note: C'est la règle la plus importante de la partie: la dire avec force. Les l
 ## La compaction
 - Quand une conversation devient trop longue, Claude **résume le début**
 - Il continue à partir de ce résumé
-- Les détails du début **peuvent se perdre**
-- Si une consigne compte, redites-la, ou mettez-la dans votre fiche de contexte
+- C'est **peu fiable**: énormément d'informations se perdent, et le risque d'erreurs augmente
+- N'attendez pas la compaction: repartez avant, avec un prompt de passage
+- Si une consigne compte, mettez-la **dans votre base de connaissances**
 
 Note: La compaction existe aussi dans l'application Claude (Claude Desktop). Montrer une longue conversation déjà compactée, préparée avant la séance. Image utile: un PV de réunion garde les décisions et perd les détails.
 
@@ -167,8 +178,8 @@ Note: La compaction existe aussi dans l'application Claude (Claude Desktop). Mon
 ## Quatre règles pratiques
 1. **Une conversation = un sujet**, et une conversation courte
 2. Nouvelle conversation quand vous changez de sujet, ou quand les réponses se dégradent
-3. Ce qui doit durer va **dans un fichier à vous** (la fiche de contexte) et dans un projet Claude
-4. Pour garder la suite d'un travail, **demandez un résumé**, et repartez de ce résumé dans une nouvelle conversation
+3. Ce qui doit durer va **dans votre base de connaissances**
+4. Pour garder la suite d'un travail, demandez **un prompt de passage pour un autre agent**, et repartez de là dans une nouvelle conversation
 
 ---
 ## L'idée centrale

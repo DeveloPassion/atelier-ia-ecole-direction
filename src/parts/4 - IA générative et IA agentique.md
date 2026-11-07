@@ -21,8 +21,13 @@ Un bon prompt dit:
 3. Pour qui
 4. Sous quelle forme (longueur, ton, liste ou texte)
 5. Un exemple, si vous en avez un
+6. Les règles à suivre, et **les critères d'un bon résultat**
 
-Astuce: demandez-lui de **vous poser des questions** avant de commencer: "Pose-moi les questions qui te manquent." Il propose souvent des choix à cliquer: c'est très rapide.
+---
+## Deux astuces pour vos demandes
+- Mettez **les informations et les règles importantes à la fin**: la fin d'un long texte est mieux lue que le milieu
+- Demandez-lui de **vous poser des questions** avant de commencer: "Pose-moi les questions qui te manquent." Il propose souvent des choix à cliquer: c'est très rapide
+- Les techniques de prompting (exemples, rôles, étapes, critères): **bonus 11**
 
 ---
 ## L'hallucination
@@ -30,6 +35,7 @@ Astuce: demandez-lui de **vous poser des questions** avant de commencer: "Pose-m
 - Il peut donc inventer un fait, une date, une source, avec aplomb
 - C'est une **hallucination**
 - Règle: les faits, les chiffres et les sources **se vérifient toujours**
+- Demandez-lui de **vérifier ses informations et ses sources**, et de donner **son niveau de confiance** pour chaque résultat
 
 Une analogie: un stagiaire très cultivé, très rapide, qui ne vous connaît pas, et qui **n'ose jamais dire** "je ne sais pas".
 
@@ -98,6 +104,7 @@ Note: Laisser l'animation tourner une fois. Exemple parlé avec la circulaire: p
 - Un connecteur, c'est un serveur MCP: il donne à l'IA l'accès à un outil (agenda, mails, fichiers)
 - Le même standard marche pour Claude, ChatGPT et d'autres
 - Chaque connecteur ajoute des possibilités, et aussi des risques: **n'activez que ce qui sert**
+- Le détail: bonus 13
 
 ```mermaid
 flowchart LR
@@ -115,7 +122,7 @@ flowchart LR
 - Claude charge une skill seulement quand il en a besoin
 - On l'appelle avec "/", ou Claude la choisit seul
 
-Pour un système qui vous connaît: les skills sont vos processus écrits. C'est le cœur d'un système qui vous connaît.
+Pour un système qui vous connaît: les skills sont vos processus écrits. C'est le cœur d'un système qui vous connaît. Le détail: bonus 14.
 
 ---
 ## L'humain reste dans la boucle

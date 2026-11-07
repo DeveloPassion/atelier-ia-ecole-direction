@@ -34,8 +34,6 @@ Note: Concept de Simon Willison (2025), "the lethal trifecta". Exemple: Claude l
 6. Copier-coller sans relire: **c'est vous qui signez**
 7. Oublier les biais: les réponses reflètent les préjugés des textes d'entraînement. Prudence avec tout ce qui juge une personne (un élève, un candidat)
 
-*À lire seul*
-
 ---
 ## Des règles d'usage pour le collège
 Un projet, à compléter par le collège (PDF d'une page, à garder):

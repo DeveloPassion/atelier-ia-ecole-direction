@@ -113,9 +113,6 @@ La sortie de P4 au musée, le 26 novembre.
 - Il connaît la classe, l'institutrice, le budget, le plafond des frais, le modèle de mot aux parents
 - Il ajoute l'encodage sur IT School à vos tâches
 
-
-*À lire seul*
-
 ---
 ## Quatre façons de travailler
 | | Le chat seul | Un projet Claude | La mémoire de Claude | Votre base |
@@ -161,9 +158,6 @@ Note: DÉMO SYSTÈME (5 min), à l'écran. Ouvrir le dossier "Système Direction
 - Exemple, la revue du lundi: "Deux dossiers GEDI-PRO à corriger, la déclaration des classes de neige avant le 23 janvier, la sortie P4 pas encore payée. Je prépare le rappel aux parents?"
 - **Elle propose, vous décidez**
 
-
-*À lire seul*
-
 ---
 ## Le cercle vertueux
 ```mermaid
@@ -174,9 +168,6 @@ flowchart LR
 ```
 
 Vos notes deviennent le contexte de l'IA. Ses réponses deviennent de nouvelles notes.
-
-
-*À lire seul*
 
 ---
 ## Le chemin

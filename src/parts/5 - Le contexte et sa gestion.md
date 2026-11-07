@@ -62,8 +62,6 @@ Note: Ce schéma n'est pas un résultat de benchmark: Anthropic n'a pas publié 
 - Après une longue pause, il doit tout relire
 - Conséquence: une très longue conversation reprise le lendemain **coûte plus et répond moins bien**
 
-*À lire seul*
-
 ---
 ## Le coût d'une demande
 - L'IA se paie en **tokens**: tout ce que Claude lit, plus tout ce qu'il écrit
@@ -99,8 +97,6 @@ flowchart TD
 3. Les connaissances: le règlement, le calendrier
 4. La mémoire: ce que Claude retient de vous
 5. Les outils: ce que Claude peut aller chercher
-
-*À lire seul*
 
 ---
 ## Cinq niveaux

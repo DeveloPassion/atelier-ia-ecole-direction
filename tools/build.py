@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import html, json, os, re, shutil, sys
 
-"""Build the course site: src/parts/*.md -> 01-...html to 09-...html and index.html (reveal.js, offline).
+"""Build the course site: src/parts/*.md -> 01-...html to 12-...html and index.html (reveal.js, offline).
 
 Usage, from the repository root:  python3 tools/build.py
 lib/ (reveal.js 5.2.1, Pele 1.13.0, Noto Sans) and theme.css (DeveloPassion theme) are committed and not rebuilt.
@@ -74,9 +74,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 .particles i { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: var(--dp-pink); opacity: 0.35; animation: float 9s ease-in-out infinite; }
 @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-18px); } }
 @media (prefers-reduced-motion: reduce) { .particles i, .loop-step, .loop::after { animation: none !important; } }
-/* "À lire seul" chip and system callout */
-.reveal p.chip { display: inline-block; margin-top: 0.6em; border-radius: 8px; background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.7);
-  font-size: 0.55em; font-weight: 600; padding: 0.2em 0.8em; }
+/* System callout */
 .reveal p.system { border-left: 4px solid var(--dp-magenta); background: rgba(229,0,125,0.10); border-radius: 0 10px 10px 0;
   padding: 0.5em 0.9em; font-size: 0.8em; margin-top: 0.8em; }
 .reveal p.system b { color: var(--dp-pink); }
@@ -117,7 +115,6 @@ def transform(md, part_no, part_name, dur):
     md = re.sub(r"!\[\[([^\]|]+)(?:\|[^\]]*)?\]\]", r"![](\1)", md)
     md = re.sub(r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", md)
     md = re.sub(r"\[\[([^\]]+)\]\]", r"\1", md)
-    md = md.replace("*À lire seul*", '<p class="chip">À lire seul</p>')
     md = re.sub(r"^Pour un système qui vous connaît: (.*)$",
                 lambda m: '<p class="system"><b>Pour un système qui vous connaît:</b> ' + html.escape(m.group(1), quote=False) + "</p>", md, flags=re.M)
     slides = md.split("\n---\n")
@@ -131,7 +128,7 @@ def transform(md, part_no, part_name, dur):
             words = title.split(" ")
             # gradient on the key word: the last word of the title
             title_html = " ".join(words[:-1]) + (" " if len(words) > 1 else "") + f'<span class="gradient">{words[-1]}</span>'
-            eyebrow = ("Bonus · à lire seul" if "bonus" in dur else f"Partie {part_no} sur {MAIN} · {dur}") if part_no > 1 or i > 0 else "Atelier IA · Direction d'école"
+            eyebrow = ("Bonus" if "bonus" in dur else f"Partie {part_no} sur {MAIN} · {dur}") if part_no > 1 or i > 0 else "Atelier IA · Direction d'école"
             s = f'<!-- .slide: class="hero" data-background-gradient="radial-gradient(1100px 560px at 85% 10%, rgba(168,85,247,0.20), transparent 60%), radial-gradient(900px 500px at 8% 92%, rgba(229,0,125,0.18), transparent 60%), #37404c" -->\n<p class="eyebrow">{eyebrow}</p>\n\n<h2>{title_html}</h2>\n\n{rest}'
         out.append(s)
     return "\n---\n".join(out)

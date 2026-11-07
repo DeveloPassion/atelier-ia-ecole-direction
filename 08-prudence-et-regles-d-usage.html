@@ -66,9 +66,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 .particles i { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: var(--dp-pink); opacity: 0.35; animation: float 9s ease-in-out infinite; }
 @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-18px); } }
 @media (prefers-reduced-motion: reduce) { .particles i, .loop-step, .loop::after { animation: none !important; } }
-/* "À lire seul" chip and system callout */
-.reveal p.chip { display: inline-block; margin-top: 0.6em; border-radius: 8px; background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.7);
-  font-size: 0.55em; font-weight: 600; padding: 0.2em 0.8em; }
+/* System callout */
 .reveal p.system { border-left: 4px solid var(--dp-magenta); background: rgba(229,0,125,0.10); border-radius: 0 10px 10px 0;
   padding: 0.5em 0.9em; font-size: 0.8em; margin-top: 0.8em; }
 .reveal p.system b { color: var(--dp-pink); }
@@ -143,8 +141,6 @@ Note: Concept de Simon Willison (2025), "the lethal trifecta". Exemple: Claude l
 5. Laisser un agent agir sur un site web **sans regarder**
 6. Copier-coller sans relire: **c'est vous qui signez**
 7. Oublier les biais: les réponses reflètent les préjugés des textes d'entraînement. Prudence avec tout ce qui juge une personne (un élève, un candidat)
-
-<p class="chip">À lire seul</p>
 ---
 ## Des règles d'usage pour le collège
 Un projet, à compléter par le collège (PDF d'une page, à garder):

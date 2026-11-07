@@ -53,8 +53,6 @@ Note: C'est le risque le plus utile à connaître pour une direction: on utilise
 
 Attention: il peut être brillant sur une tâche et rater la tâche voisine. **Testez-le sur vos vraies tâches**, et plus d'une fois.
 
-*À lire seul*
-
 ---
 ## Pas seulement du texte
 - **Lire des images**: une photo d'une page écrite à la main, une capture d'écran, un tableau photographié deviennent du texte ou un tableau

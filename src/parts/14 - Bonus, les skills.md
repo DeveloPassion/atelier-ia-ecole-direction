@@ -34,11 +34,13 @@ La question à se poser: **qu'est-ce que je refais chaque semaine**, de la même
 
 ---
 ## Créer une skill avec Claude
-1. Utilisez **la skill de création de skills** (skill-creator): "Aide-moi à créer une skill pour écrire aux parents. Pose-moi des questions sur ma façon de faire"
+1. Utilisez **la skill de création de skills** (skill-creator): "Aide-moi à créer une skill pour écrire aux parents, en respectant la spécification des skills IA: https://agentskills.io/specification.md. Pose-moi des questions sur ma façon de faire"
 2. Donnez un ou deux **exemples réussis**
 3. **Testez** la skill sur un vrai cas
 4. **Corrigez la skill**, pas seulement la réponse
 5. Gardez une copie du texte **dans votre base de connaissances**: elle vous appartient
+
+Avec le système de la phase 2: "Crée-moi une skill pour...", ou "skillify" après une conversation réussie.
 
 ---
 ## Exemple: écrire aux parents

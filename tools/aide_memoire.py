@@ -199,7 +199,7 @@ story = [
     box("Skills, commandes, styles", [
         b("<b>Une skill</b> est une recette écrite une fois: quand l'utiliser, les étapes, les règles, un exemple, les critères. Claude la suit chaque fois."),
         b("Cherchez les tâches <b>répétitives et fréquentes</b>: mot aux parents, tri des circulaires, revue du lundi, compte rendu."),
-        b("Créez-les avec <b>la skill de création de skills</b> (skill-creator). Corrigez la skill, pas seulement la réponse. Gardez son texte dans votre base."),
+        b("Créez-les avec <b>la skill de création de skills</b> (skill-creator), <b>selon la spécification</b> agentskills.io/specification.md: un dossier, un fichier SKILL.md (nom, description, puis les étapes). Corrigez la skill, pas seulement la réponse. Gardez son texte dans votre base."),
         b("<b>Documentez vos processus</b>: l'IA ne fait bien que ce qui est bien décrit."),
         b("<b>Tapez « / »</b> pour la liste des skills et des commandes. Un <b>style</b> d'écriture garde votre ton."),
     ]),

@@ -108,7 +108,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
       <section data-markdown data-separator="^---$" data-separator-vertical="^----$" data-separator-notes="^Note:">
         <textarea data-template>
 <!-- .slide: class="hero" data-background-gradient="radial-gradient(1100px 560px at 85% 10%, rgba(168,85,247,0.20), transparent 60%), radial-gradient(900px 500px at 8% 92%, rgba(229,0,125,0.18), transparent 60%), #37404c" -->
-<p class="eyebrow">Partie 7 sur 9 · 25 min</p>
+<p class="eyebrow">Partie 7 sur 9 · 26 min</p>
 
 <h2>7. Un système qui vous <span class="gradient">connaît</span></h2>
 
@@ -259,6 +259,30 @@ Un système construit sur AI Kit for Obsidian, avec une direction fictive.
 - Puis la même question dans un chat vide, pour comparer
 
 Note: DÉMO SYSTÈME (5 min), à l'écran. Ouvrir le dossier "Système Direction Saint-Exemple - notes seules (démo)" (dézippé avant la séance) dans Obsidian, et Claude sur ce dossier. Les demandes et les réponses attendues sont dans "DEMO - À demander.txt", à la racine du système. Pour chaque demande, montrer la réponse, puis poser la même question dans un chat vide. Les cinq demandes: 1) "Prépare la sortie P4 du 26 novembre." 2) "Fais ma revue du lundi." 3) "Écris aux parents de P4 que le paiement est attendu avant le 19/11." 4) "Qu'est-ce que j'attends des autres, et qui dois-je relancer cette semaine?" 5) "Quelles actions de la circulaire 9847 touchent mes projets?" (joindre le PDF). En 5 minutes: faire 1 et 2. Les autres si le temps le permet. Le fichier finit par un tableau qui compare le chat, un projet Claude, la mémoire de Claude et ce système. Si le temps le permet, 2 minutes dans mon propre système: le genre de demandes que je lui fais chaque jour.
+---
+## Démo: créer une skill ensemble
+Notre première recette: **écrire aux parents**.
+
+> Aide-moi à créer une skill pour écrire les mots aux parents de mon école, en respectant la spécification des skills IA: https://agentskills.io/specification.md. Pose-moi d'abord des questions sur ma façon de faire. Enregistre la skill dans le dossier "Skills" de ma base de connaissances.
+
+Puis on la teste: "Écris le mot aux parents pour la sortie P4 du 26 novembre."
+
+Note: DÉMO SKILL (5 min), à l'écran, Claude ouvert sur une copie de base de connaissances (par exemple le dossier "Direction Saint-Exemple"). 1) Coller la demande. 2) Répondre à ses questions à voix haute avec la salle: ton, longueur, talon-réponse, signature, ce qu'il ne doit jamais faire. 3) Montrer le résultat: un dossier "ecrire-aux-parents" avec un fichier SKILL.md (name, description, puis les étapes). 4) Tester avec la sortie P4. 5) Corriger la skill, pas la réponse, si quelque chose ne va pas. Pour l'utiliser dans l'application: l'ajouter dans les paramètres, rubrique Skills (nom exact à vérifier). La spécification vient de agentskills.io, un format ouvert que d'autres outils IA lisent aussi.
+---
+## Une skill bien construite
+Toujours **selon la spécification** (https://agentskills.io/specification.md):
+
+- **Un dossier** au nom de la skill, en minuscules et avec des tirets: `ecrire-aux-parents`
+- Dedans, **un fichier SKILL.md**: en haut, le **nom** et une **description** (ce qu'elle fait, et quand l'utiliser)
+- Puis **les instructions**: les étapes, les règles, un exemple, les critères
+- Si besoin, des dossiers à côté: des documents de référence, des modèles
+- Court: **moins de 500 lignes**. Le détail va dans les documents de référence
+---
+## Avec votre système, une phrase suffit
+- Le système de la phase 2 **connaît déjà la spécification** et l'endroit où ranger vos skills
+- Vous dites simplement: **"Crée-moi une skill pour..."**
+- Ou, après une conversation réussie: **"skillify"**. Il transforme ce que vous venez de faire en skill
+- Vos recettes s'accumulent dans **votre base de connaissances**: elles vous appartiennent
 ---
 ## L'IA qui prend l'initiative
 - Aujourd'hui: vous allez vers l'IA, et vous lui réexpliquez tout

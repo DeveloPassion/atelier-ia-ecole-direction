@@ -10,7 +10,7 @@ Les personnes et les documents de démo sont fictifs: ce support sert à apprend
 ## Contenu
 
 - `index.html` et `01-...html` à `17-...html`: les slides (reveal.js), qui marchent aussi hors ligne
-- `documents/`: l'aide-mémoire à imprimer, les prérequis, la fiche de contexte (PDF à remplir) et un projet de règles d'usage de l'IA
+- `documents/`: l'aide-mémoire à imprimer, la feuille de route de l'animateur, les prérequis, la fiche de contexte (PDF à remplir) et un projet de règles d'usage de l'IA
 - `fichiers-de-demo.zip`: les mêmes fichiers de démo, en un seul zip à télécharger (https://developassion.github.io/atelier-ia-ecole-direction/fichiers-de-demo.zip)
 - `fichiers-de-demo/`: les fichiers des démos, tous fictifs (voir `LISEZ-MOI.txt`), les résultats attendus (plan B) et deux dossiers de démo: "en vrac" et "notes seules"
 
@@ -21,7 +21,7 @@ Les personnes et les documents de démo sont fictifs: ce support sert à apprend
 - `tools/build.py`: les slides et `index.html`. `lib/` et `theme.css` ne changent pas
 - `tools/handouts.py`: les PDF de `documents/` (prérequis, fiche de contexte, règles d'usage)
 - `tools/aide_memoire.py`: l'aide-mémoire (deux pages, à garder en phase avec les slides)
-- `tools/feuille_de_route.py`: la feuille de route de l'animateur (quelle démo, quand, avec quels fichiers). Elle lit les slides; on l'écrit hors du dépôt, elle n'est pas publiée
+- `tools/feuille_de_route.py`: la feuille de route de l'animateur dans `documents/` (quelle démo, quand, avec quels fichiers). Elle lit les slides et leurs notes: la reconstruire après chaque changement des slides
 - `tools/build_demo.py`: les zips des systèmes de démo et `fichiers-de-demo.zip`. Le système complet (avec AI Kit for Obsidian, un produit payant) n'est pas dans ce dépôt: `--private-dir` met à jour sa copie privée
 
 ## Reconstruire
@@ -32,6 +32,7 @@ Depuis la racine du dépôt:
 python3 tools/build.py
 uv run --with reportlab python tools/handouts.py
 uv run --with reportlab python tools/aide_memoire.py
+uv run --with reportlab python tools/feuille_de_route.py
 python3 tools/build_demo.py
 ```
 

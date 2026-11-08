@@ -1,12 +1,12 @@
 """Build the presenter's run sheet: which demo, when, where in the slides, which files, what to type, what to check.
 
 Usage, from the repository root:
-    uv run --with reportlab python tools/feuille_de_route.py OUTPUT_FOLDER [START_TIME]
+    uv run --with reportlab python tools/feuille_de_route.py [OUTPUT_FOLDER] [START_TIME]
 
-START_TIME defaults to 10:00. The run sheet is for the presenter only: write it OUTSIDE the repository
-(for example next to the course plan) and do not publish it. It only uses what the slides and their
-speaker notes already say, so it stays in step with src/parts/: slide numbers and demo prompts are read
-from the Markdown, and the script stops if a slide title it needs is missing.
+OUTPUT_FOLDER defaults to documents/ (published on the site). START_TIME defaults to 10:00.
+It only uses what the slides and their speaker notes already say, so it stays in step with src/parts/:
+slide numbers and demo prompts are read from the Markdown, and the script stops if a slide title it
+needs is missing.
 """
 import json
 import os
@@ -21,11 +21,8 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle, KeepTogether
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if len(sys.argv) < 2:
-    sys.exit(__doc__)
-OUT_DIR = os.path.abspath(sys.argv[1])
-if OUT_DIR == ROOT or OUT_DIR.startswith(ROOT + os.sep):
-    sys.exit("Write the run sheet outside the repository: it is for the presenter only.")
+OUT_DIR = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.join(ROOT, "documents")
+os.makedirs(OUT_DIR, exist_ok=True)
 START = sys.argv[2] if len(sys.argv) > 2 else "10:00"
 OUT = os.path.join(OUT_DIR, "Feuille de route de l'animateur.pdf")
 
@@ -196,7 +193,7 @@ def b(t):
 before = KeepTogether([
     Paragraph("Où trouver quoi", H2),
     b("<b>Les étapes de chaque démo</b>: les notes de l'orateur de la slide (touche <b>S</b> dans la partie). Cette feuille en reprend l'essentiel."),
-    b("<b>Les fichiers</b>: le dossier « Fichiers de démo », copié hors OneDrive (aussi sur le site: fichiers-de-demo.zip). Les résultats attendus: « Plan B - résultats attendus ». Le système complet (avec AI Kit for Obsidian) est dans la copie privée de « Fichiers de démo »."),
+    b("<b>Les fichiers</b>: le dossier « Fichiers de démo », copié hors OneDrive (aussi sur le site: fichiers-de-demo.zip). Les résultats attendus: « Plan B - résultats attendus ». Les systèmes de démo: les zips «\u00a0notes seules\u00a0» et «\u00a0en vrac\u00a0» (le système complet avec AI Kit for Obsidian, un produit payant, n'est pas public)."),
     b("<b>Les corrigés</b>: « DEMO - À demander.txt » à la racine du système Saint-Exemple, et les sections « Corrigé » du plan de cours."),
     b("<b>Les slides</b>: le sommaire (index.html) de la copie locale, hors ligne. Toutes les slides restent: je choisis en direct ce que je passe."),
     Paragraph("La veille et le matin", H2),
@@ -217,7 +214,7 @@ def decorate(c, d):
     c.setFont("NSB", 13)
     c.drawString(M, H - 20, "Feuille de route de l'animateur: quelle démo, quand, avec quoi")
     c.setFont("NS", 7.5)
-    c.drawString(M, H - 33, f"Début à {START}. Heures indicatives, d'après le timing de la partie 1. Document privé, à ne pas distribuer.")
+    c.drawString(M, H - 33, f"Début à {START}. Heures indicatives, d'après le timing de la partie 1. Pour l'animateur; les étapes complètes sont dans les notes de l'orateur.")
     c.setFillColor(GREY)
     c.setFont("NS", 7)
     c.drawRightString(W - M, 12, f"Page {d.page}")

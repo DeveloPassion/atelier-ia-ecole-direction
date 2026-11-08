@@ -175,7 +175,7 @@ Notre première recette: **écrire aux parents**.
 
 Puis on la teste: "Écris le mot aux parents pour la sortie P4 du 26 novembre."
 
-Note: DÉMO SKILL (5 min), à l'écran, Claude ouvert sur une copie de base de connaissances (par exemple le dossier "Direction Saint-Exemple"). 1) Coller la demande. 2) Répondre à ses questions à voix haute avec la salle: ton, longueur, talon-réponse, signature, ce qu'il ne doit jamais faire. 3) Montrer le résultat: un dossier "ecrire-aux-parents" avec un fichier SKILL.md (name, description, puis les étapes). 4) Tester avec la sortie P4. 5) Corriger la skill, pas la réponse, si quelque chose ne va pas. Pour l'utiliser dans l'application: l'ajouter dans les paramètres, rubrique Skills (nom exact à vérifier). La spécification vient de agentskills.io, un format ouvert que d'autres outils IA lisent aussi.
+Note: DÉMO SKILL (5 min), à l'écran, Claude ouvert sur une copie de base de connaissances (par exemple le dossier "Direction Saint-Exemple"). 1) Coller la demande. 2) Répondre à ses questions à voix haute avec la salle: ton, longueur, talon-réponse, signature, ce qu'il ne doit jamais faire. 3) Montrer le résultat: un dossier "ecrire-aux-parents" avec un fichier SKILL.md (name, description, puis les étapes). 4) Tester avec la sortie P4. 5) Corriger la skill, pas la réponse, si quelque chose ne va pas. La skill vit dans le dossier de travail (la base de connaissances): rien à installer dans l'application. Pour s'en servir, Claude ouvert sur ce dossier: "Utilise la skill ecrire-aux-parents pour...". La spécification vient de agentskills.io, un format ouvert que d'autres outils IA lisent aussi.
 
 ---
 ## Une skill bien construite

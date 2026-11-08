@@ -152,7 +152,7 @@ rows = [
     (99, where(7, "Démo: créer une skill"), "<b>Démo: créer une skill ensemble</b> (écran, 5 min)",
      "Claude ouvert sur une copie de base de connaissances (par exemple le dossier «\u00a0Direction Saint-Exemple\u00a0»)",
      q([skill_q]) + "<br/>Puis: «\u00a0Écris le mot aux parents pour la sortie P4 du 26 novembre.\u00a0»",
-     "Répondre à ses questions avec la salle (ton, longueur, talon-réponse, signature, interdits). Résultat: un dossier «\u00a0ecrire-aux-parents\u00a0» avec SKILL.md (name, description, étapes). Corriger la skill, pas la réponse. Dire: avec leur système, «\u00a0Crée-moi une skill...\u00a0» ou «\u00a0skillify\u00a0» suffit"),
+     "Répondre à ses questions avec la salle (ton, longueur, talon-réponse, signature, interdits). Résultat: un dossier «\u00a0ecrire-aux-parents\u00a0» avec SKILL.md (name, description, étapes). Corriger la skill, pas la réponse. Elle reste dans le dossier: rien à installer. Dire: avec leur système, «\u00a0Crée-moi une skill...\u00a0» ou «\u00a0skillify\u00a0» suffit"),
     (104, where(8, "Des règles d'usage"), "<b>Partie 8: le projet de règles d'usage</b>",
      "Documents à remettre/Projet de règles d'usage de l'IA.pdf", "",
      "Si le collège a déjà une politique, partir de la sienne"),

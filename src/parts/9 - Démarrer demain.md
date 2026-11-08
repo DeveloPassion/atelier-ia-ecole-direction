@@ -24,6 +24,17 @@ Ce qu'il faut retenir, et quoi faire dès demain.
 Et chaque jour, 2 minutes: noter dans le **journal du jour**. Un dossier "Journal" dans votre base, un fichier texte par jour.
 
 ---
+## Maintenant: votre vraie tâche
+La tâche que vous avez choisie avant l'atelier. **Sans données sensibles.**
+
+1. Ouvrez Claude sur une copie des fichiers utiles
+2. Écrivez la demande avec la recette: **qui vous êtes, ce que vous voulez, pour qui, la forme, les critères**, et les règles importantes **à la fin**
+3. Demandez-lui de vous **poser ses questions** d'abord
+4. Relisez, corrigez par petites phrases, et **vérifiez**
+
+Note: VRAIE TÂCHE (6 min), chacun sur son PC. Leurs tâches sont dans leurs réponses aux trois questions (envoyées avant l'atelier, avec les prérequis). Passer de l'un à l'autre. Si une tâche est trop grosse: la couper et faire la première étape. Si quelqu'un n'a rien apporté: refaire le mot aux parents de la partie 1 pour sa propre classe, ou trier une vraie circulaire de la semaine. Finir par: "Gardez cette demande: c'est peut-être votre première skill."
+
+---
 ## La fiche de contexte
 - Un PDF de deux pages, avec 13 questions en quatre parties: qui je suis, mes objectifs, mon environnement, mes processus et mes règles
 - Elle sert **juste de point de départ**, pour initialiser votre base de connaissances (et le système de la phase 2)
@@ -42,8 +53,8 @@ Refaites aussi les démos: les étapes sont dans les notes des slides. Et gardez
 
 ---
 ## Et après?
-- Une question pour vous: quelles **tâches répétitives** vous prennent le plus de temps?
-- Vos réponses servent à la phase 2
+- Vos réponses aux **trois questions** d'avant l'atelier servent à la phase 2
+- Ce qui vous a manqué aujourd'hui: dites-le-moi, par mail ou en séance 2
 - Une deuxième séance est possible: pratique guidée, les questions notées pendant la séance, la base de connaissances et les skills de l'école, les connecteurs Microsoft 365
 
 ---

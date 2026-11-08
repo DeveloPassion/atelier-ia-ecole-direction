@@ -26,7 +26,7 @@
  {
   "n": 4,
   "name": "IA générative et IA agentique",
-  "dur": "12 min",
+  "dur": "10 min",
   "slides": 13,
   "file": "4 - IA générative et IA agentique.md",
   "html": "04-ia-generative-et-ia-agentique.html"
@@ -34,7 +34,7 @@
  {
   "n": 5,
   "name": "Le contexte et sa gestion",
-  "dur": "15 min + pause",
+  "dur": "12 min + pause",
   "slides": 17,
   "file": "5 - Le contexte et sa gestion.md",
   "html": "05-le-contexte-et-sa-gestion.html"
@@ -50,7 +50,7 @@
  {
   "n": 7,
   "name": "Un système qui vous connaît",
-  "dur": "25 min",
+  "dur": "26 min",
   "slides": 19,
   "file": "7 - Un système qui vous connaît.md",
   "html": "07-un-systeme-qui-vous-connait.html"
@@ -66,7 +66,7 @@
  {
   "n": 9,
   "name": "Démarrer demain",
-  "dur": "5 min",
+  "dur": "10 min",
   "slides": 6,
   "file": "9 - Démarrer demain.md",
   "html": "09-demarrer-demain.html"
@@ -132,6 +132,15 @@
   "slides": 0,
   "file": "16 - Bonus, pour aller plus loin.md",
   "html": "16-bonus-pour-aller-plus-loin.html",
+  "bonus": true
+ },
+ {
+  "n": 17,
+  "name": "Bonus, questions fréquentes",
+  "dur": "bonus",
+  "slides": 0,
+  "file": "17 - Bonus, questions fréquentes.md",
+  "html": "17-bonus-questions-frequentes.html",
   "bonus": true
  }
 ]

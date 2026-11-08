@@ -234,8 +234,20 @@ def prerequis(path):
                     c.linkURL(url, (M + 28, y + 6, W - M, top), relative=0, thickness=0)
         y -= 8
     c.setStrokeColor(NAVY); c.setLineWidth(1); c.line(M, y + 4, W - M, y + 4)
+    y = para(c, "Trois questions, avant l'atelier", M, y - 12, W - 2 * M, BOLD, 12, NAVY) - 2
+    y = para(c, "Répondez en quelques lignes par mail à seb@dsebastien.net. Vos réponses rendent l'atelier plus utile pour vous.",
+             M + 6, y, W - 2 * M - 6, REG, 10) - 2
+    top = y + 22
+    c.linkURL("mailto:seb@dsebastien.net", (M + 6, y + 4, W - M, top), relative=0, thickness=0)
+    for k, it in enumerate(["Quelle tâche répétitive vous prend le plus de temps? Choisissez-en une, sans données sensibles: on la fera ensemble à la fin de l'atelier.",
+                            "Qu'avez-vous déjà essayé avec l'IA, et qu'en avez-vous pensé?",
+                            "Qu'est-ce qui vous inquiète ou vous freine avec l'IA?"], 1):
+        y = para(c, f"{k}.  " + it, M + 6, y, W - 2 * M - 6, REG, 10) - 2
+    y -= 6
+    c.line(M, y + 4, W - M, y + 4)
     y = para(c, "Le jour même", M, y - 12, W - 2 * M, BOLD, 12, NAVY) - 2
     for it in ["Votre PC, chargé, avec son chargeur.", "Chrome et l'application Claude ouverts, et connectés.",
+               "Les fichiers de votre vraie tâche, copiés dans un dossier à part (sans données sensibles).",
                "Vos questions: notez-les, on les regarde ensemble."]:
         y = para(c, "\u2022  " + it, M + 6, y, W - 2 * M - 6, REG, 10) - 2
     footer(c, "Avant l'atelier IA du mardi 17 novembre", 1)

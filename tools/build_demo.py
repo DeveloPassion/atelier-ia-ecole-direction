@@ -8,7 +8,7 @@ Usage, from the repository root:
 Public output (committed):
 - fichiers-de-demo/Système Direction Saint-Exemple - notes seules (démo).zip  <- src/demo/Direction Saint-Exemple - notes seules/
 - fichiers-de-demo/Système Direction Saint-Exemple en vrac (démo).zip         <- src/demo/Direction Saint-Exemple en vrac/
-- fichiers-de-demo.zip: the whole fichiers-de-demo/ folder, under "Fichiers de démo/"
+- documents/fichiers-de-demo.zip: the whole fichiers-de-demo/ folder, under "Fichiers de démo/"
 
 Private output (never committed): the full demo system is the same notes inside an install of
 AI Kit for Obsidian, a paid product that must not be published. With --private-dir, the script
@@ -103,7 +103,7 @@ def main():
 
     for folder, name in ZIPS.items():
         write_zip(os.path.join(OUT, name), os.path.join(SRC, folder), folder)
-    write_zip(os.path.join(ROOT, "fichiers-de-demo.zip"), OUT, "Fichiers de démo")
+    write_zip(os.path.join(ROOT, "documents", "fichiers-de-demo.zip"), OUT, "Fichiers de démo")
 
     if args.private_dir:
         d = os.path.abspath(args.private_dir)

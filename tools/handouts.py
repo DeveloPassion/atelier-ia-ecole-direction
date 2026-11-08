@@ -200,7 +200,7 @@ STEPS = [
         "Dans Chrome, connectez-vous une fois aux sites que vous utilisez avec Claude (Outlook, OneDrive).",
     ]),
     ("Les fichiers de démo", [
-        "Téléchargez le zip: developassion.github.io/atelier-ia-ecole-direction/fichiers-de-demo.zip",
+        "Téléchargez le zip: developassion.github.io/atelier-ia-ecole-direction/documents/fichiers-de-demo.zip",
         "Dézippez-le sur le Bureau, pas dans OneDrive. Tous les fichiers sont fictifs.",
     ]),
     ("Un test de deux minutes", [
@@ -212,7 +212,7 @@ STEPS = [
 
 LINKS = [("claude.ai/download", "https://claude.ai/download"), ("claude.com/chrome", "https://claude.com/chrome"),
          ("google.com/chrome", "https://www.google.com/chrome/"),
-         ("fichiers-de-demo.zip", "https://developassion.github.io/atelier-ia-ecole-direction/fichiers-de-demo.zip")]
+         ("fichiers-de-demo.zip", "https://developassion.github.io/atelier-ia-ecole-direction/documents/fichiers-de-demo.zip")]
 
 
 def prerequis(path):

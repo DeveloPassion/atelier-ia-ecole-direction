@@ -240,7 +240,7 @@ kbd {{ background: rgba(255,255,255,0.1); border-radius: 6px; padding: 1px 7px; 
 <a class="card" href="documents/Feuille%20de%20route%20de%20l%27animateur.pdf" target="_blank" rel="noopener"><span class="t">Feuille de route de l'animateur</span><span class="meta">PDF, 3 pages: quelle démo, quand, avec quels fichiers</span></a>
 <a class="card" href="documents/Fiche%20de%20contexte%20pour%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Fiche de contexte pour l'IA</span><span class="meta">PDF, 2 pages, champs à remplir</span></a>
 <a class="card" href="documents/Projet%20de%20r%C3%A8gles%20d%27usage%20de%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Projet de règles d'usage de l'IA</span><span class="meta">PDF, 1 page, à compléter</span></a>
-<a class="card" href="fichiers-de-demo.zip"><span class="t">Fichiers de démo</span><span class="meta">Un zip à télécharger, tous fictifs, avec un LISEZ-MOI</span></a>
+<a class="card" href="documents/fichiers-de-demo.zip"><span class="t">Fichiers de démo</span><span class="meta">Un zip à télécharger, tous fictifs, avec un LISEZ-MOI</span></a>
 </div>
 <footer>Dans une partie: <kbd>S</kbd> notes de l'orateur · <kbd>F</kbd> plein écran · <kbd>Échap</kbd> vue d'ensemble. © 2026 Sébastien Dubois · DeveloPassion. Tous droits réservés.</footer>
 </main></body></html>

@@ -119,7 +119,7 @@ flowchart LR
 - Claude charge une skill seulement quand il en a besoin
 - On l'appelle avec "/", ou Claude la choisit seul
 
-Pour un système qui vous connaît: les skills sont vos processus écrits. C'est le cœur d'un système qui vous connaît. Le détail: bonus 14.
+Pour un système qui vous connaît: les skills appliquent vos processus écrits. C'est le cœur d'un système qui vous connaît. Le détail: bonus 14.
 
 ---
 ## L'humain reste dans la boucle

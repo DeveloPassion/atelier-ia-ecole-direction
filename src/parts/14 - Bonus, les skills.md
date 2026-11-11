@@ -21,6 +21,18 @@ Une façon de faire, écrite une fois.
 - Vos processus écrits sont une partie de **votre base de connaissances**
 
 ---
+## Le processus et la skill: deux choses
+- **Le processus**: la description de votre façon de faire. Les étapes, les critères, vos préférences. Écrit pour vous et pour votre équipe
+- **La skill**: les instructions pour l'IA. Quand l'utiliser, quoi lire, quoi vérifier, quoi ne jamais faire
+
+Deux façons de les relier:
+
+1. **Tout dans la skill**: la skill contient le processus. Plus simple pour commencer
+2. **Séparés**: le processus est une note de votre base, et la skill dit "**lis d'abord** la note du processus, puis suis-la"
+
+En pratique, le résultat est presque le même. Séparés, le processus est **plus facile à modifier**: il n'est pas emmêlé avec les instructions pour l'IA.
+
+---
 ## Trouver vos skills
 Cherchez les tâches **répétitives et fréquentes**:
 
@@ -55,7 +67,9 @@ Critères: la date, le prix et l'échéance sont exacts et visibles.
 ```
 
 ---
-## Une skill vit
+## Une skill vit, le processus aussi
 - Un résultat ne va pas? **Corrigez la recette**, pour que l'erreur ne revienne pas
+- Les deux s'améliorent avec le temps: **le processus** (votre façon de faire) et **la skill** (les instructions pour l'IA)
+- Après une utilisation: "**Qu'est-ce qu'on améliore**, dans le processus ou dans la skill? Mets à jour". Vous relisez, vous validez
 - Relisez vos skills **une fois par trimestre**
 - Une bonne skill fait gagner du temps **à chaque fois**, et à toute l'équipe si vous la partagez

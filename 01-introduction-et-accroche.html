@@ -44,6 +44,13 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 .reveal table td { color: rgba(255,255,255,0.9); }
 .reveal table tr:hover td { background: rgba(229,0,125,0.08); }
 .reveal blockquote { font-style: normal; width: 88%; }
+/* Prompts are blockquotes: a copy button in the top right corner */
+.reveal blockquote { position: relative; padding-right: 3.6em; box-sizing: border-box; }
+.reveal blockquote .copy-btn { position: absolute; top: 0.45em; right: 0.45em; font: 600 0.5em 'Noto Sans', sans-serif;
+  color: #fff; background: var(--dp-magenta); border: 0; border-radius: 999px; padding: 0.35em 0.9em; cursor: pointer; }
+.reveal blockquote .copy-btn:hover { background: var(--dp-pink); }
+.reveal blockquote .copy-btn.done { background: #16a34a; }
+@media print { .reveal blockquote .copy-btn { display: none; } }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
 .reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
@@ -169,9 +176,11 @@ Si un PC bloque l'installation: travailler à deux sur un PC, ou utiliser [claud
 
 Même machine, même question. **Une seule différence**.
 
-Faites-le sur votre PC:
-1. Nouvelle conversation: "Écris un mot aux parents pour la sortie scolaire."
-2. Nouvelle conversation: le texte de la slide suivante, copié tel quel
+Faites-le sur votre PC, dans une nouvelle conversation:
+
+> Écris un mot aux parents pour la sortie scolaire.
+
+Puis, dans une autre nouvelle conversation, le texte de la slide suivante.
 ---
 ## Avec contexte
 > Je suis Hélène Dufour, directrice de la section primaire de l'École fondamentale Saint-Exemple, une école fondamentale libre en Belgique. Écris un mot aux parents des 22 élèves de 4e primaire (classe de M. Marchal) pour la sortie au musée des Sciences naturelles, à Bruxelles, le jeudi 26 novembre. Départ de l'école en car à 8h30, retour vers 15h30. Prix: 12 euros par enfant, à payer avant le 19 novembre par virement, avec en communication le nom de l'enfant et "musée P4". Prévoir un pique-nique, une boisson et des vêtements selon la météo. Ton chaleureux mais court, 120 mots maximum, vouvoiement, signé "Hélène Dufour, directrice". Ajoute un talon-réponse à rendre à l'enseignant.
@@ -201,8 +210,27 @@ Note: Chacun copie le texte tel quel, sans rien modifier: l'école et les person
         catch (e) { console.warn('Diagram failed', e); }
       });
     }
+    async function copyText(text) {
+      try { await navigator.clipboard.writeText(text); return; } catch (e) {}
+      const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select();
+      document.execCommand('copy'); t.remove();
+    }
+    function addCopyButtons() {
+      document.querySelectorAll('.reveal .slides blockquote').forEach((bq) => {
+        if (bq.closest('aside')) return;
+        const text = bq.innerText.trim();
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'copy-btn'; b.textContent = 'Copier'; b.title = 'Copier la demande';
+        b.addEventListener('click', async (ev) => {
+          ev.stopPropagation(); await copyText(text);
+          b.textContent = 'Copié'; b.classList.add('done');
+          setTimeout(() => { b.textContent = 'Copier'; b.classList.remove('done'); }, 2000);
+        });
+        bq.appendChild(b);
+      });
+    }
     Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
-      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); Reveal.layout(); });
+      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); Reveal.layout(); });
   </script>
 </body>
 </html>

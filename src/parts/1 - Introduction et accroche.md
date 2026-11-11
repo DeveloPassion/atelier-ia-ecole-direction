@@ -59,9 +59,11 @@ Si un PC bloque l'installation: travailler à deux sur un PC, ou utiliser [claud
 ## 1. Le même Claude, deux réponses
 Même machine, même question. **Une seule différence**.
 
-Faites-le sur votre PC:
-1. Nouvelle conversation: "Écris un mot aux parents pour la sortie scolaire."
-2. Nouvelle conversation: le texte de la slide suivante, copié tel quel
+Faites-le sur votre PC, dans une nouvelle conversation:
+
+> Écris un mot aux parents pour la sortie scolaire.
+
+Puis, dans une autre nouvelle conversation, le texte de la slide suivante.
 
 ---
 ## Avec contexte

@@ -52,6 +52,13 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 .reveal table td { color: rgba(255,255,255,0.9); }
 .reveal table tr:hover td { background: rgba(229,0,125,0.08); }
 .reveal blockquote { font-style: normal; width: 88%; }
+/* Prompts are blockquotes: a copy button in the top right corner */
+.reveal blockquote { position: relative; padding-right: 3.6em; box-sizing: border-box; }
+.reveal blockquote .copy-btn { position: absolute; top: 0.45em; right: 0.45em; font: 600 0.5em 'Noto Sans', sans-serif;
+  color: #fff; background: var(--dp-magenta); border: 0; border-radius: 999px; padding: 0.35em 0.9em; cursor: pointer; }
+.reveal blockquote .copy-btn:hover { background: var(--dp-pink); }
+.reveal blockquote .copy-btn.done { background: #16a34a; }
+@media print { .reveal blockquote .copy-btn { display: none; } }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
 .reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
@@ -174,8 +181,27 @@ def page(title, body_md, part_no):
         catch (e) {{ console.warn('Diagram failed', e); }}
       }});
     }}
+    async function copyText(text) {{
+      try {{ await navigator.clipboard.writeText(text); return; }} catch (e) {{}}
+      const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select();
+      document.execCommand('copy'); t.remove();
+    }}
+    function addCopyButtons() {{
+      document.querySelectorAll('.reveal .slides blockquote').forEach((bq) => {{
+        if (bq.closest('aside')) return;
+        const text = bq.innerText.trim();
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'copy-btn'; b.textContent = 'Copier'; b.title = 'Copier la demande';
+        b.addEventListener('click', async (ev) => {{
+          ev.stopPropagation(); await copyText(text);
+          b.textContent = 'Copié'; b.classList.add('done');
+          setTimeout(() => {{ b.textContent = 'Copier'; b.classList.remove('done'); }}, 2000);
+        }});
+        bq.appendChild(b);
+      }});
+    }}
     Reveal.initialize({{ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
-      plugins: [ RevealMarkdown, RevealNotes ] }}).then(() => {{ drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => {{ a.target = '_blank'; a.rel = 'noopener'; }}); Reveal.layout(); }});
+      plugins: [ RevealMarkdown, RevealNotes ] }}).then(() => {{ drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => {{ a.target = '_blank'; a.rel = 'noopener'; }}); addCopyButtons(); Reveal.layout(); }});
   </script>
 </body>
 </html>
@@ -238,7 +264,8 @@ kbd {{ background: rgba(255,255,255,0.1); border-radius: 6px; padding: 1px 7px; 
 <a class="card" href="documents/Aide-m%C3%A9moire%20-%20Claude%20au%20quotidien.pdf" target="_blank" rel="noopener"><span class="t">Aide-mémoire: Claude au quotidien</span><span class="meta">PDF, 2 pages, à imprimer</span></a>
 <a class="card" href="documents/Avant%20l%27atelier%20-%20les%20pr%C3%A9requis.pdf" target="_blank" rel="noopener"><span class="t">Avant l'atelier: les prérequis</span><span class="meta">PDF, 1 page: Claude, Chrome, fichiers de démo</span></a>
 <a class="card" href="documents/Feuille%20de%20route%20de%20l%27animateur.pdf" target="_blank" rel="noopener"><span class="t">Feuille de route de l'animateur</span><span class="meta">PDF, 3 pages: quelle démo, quand, avec quels fichiers</span></a>
-<a class="card" href="documents/Fiche%20de%20contexte%20pour%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Fiche de contexte pour l'IA</span><span class="meta">PDF, 2 pages, champs à remplir</span></a>
+<a class="card" href="documents/Fiche%20de%20contexte%20pour%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Fiche de contexte pour l'IA</span><span class="meta">PDF, 2 pages: les questions, à remplir ou à imprimer</span></a>
+<a class="card" href="documents/%C3%80%20propos%20de%20moi.txt" download><span class="t">À propos de moi (fichier texte)</span><span class="meta">Les mêmes questions dans un fichier texte: vos réponses, à donner à l'IA</span></a>
 <a class="card" href="documents/Projet%20de%20r%C3%A8gles%20d%27usage%20de%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Projet de règles d'usage de l'IA</span><span class="meta">PDF, 1 page, à compléter</span></a>
 <a class="card" href="documents/fichiers-de-demo.zip"><span class="t">Fichiers de démo</span><span class="meta">Un zip à télécharger, tous fictifs, avec un LISEZ-MOI</span></a>
 </div>

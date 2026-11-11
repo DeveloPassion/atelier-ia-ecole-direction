@@ -261,11 +261,12 @@ main { max-width: 860px; margin: 0 auto; padding: 18px 16px 80px; }
 h1 { font-size: 1.5em; font-weight: 800; margin: 0 0 4px; }
 .lead { color: rgba(255,255,255,0.75); font-size: 0.9em; margin: 0 0 6px; }
 #wake { color: #4ade80; font-size: 0.8em; min-height: 1.2em; margin: 0 0 8px; }
-nav { position: sticky; top: 0; z-index: 5; background: var(--well); margin: 0 -16px 8px; padding: 8px 16px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none;
+nav { position: sticky; top: 0; z-index: 5; align-items: center; background: var(--well); margin: 0 -16px 8px; padding: 8px 16px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none;
   border-bottom: 2px solid var(--magenta); }
 nav a { flex: 0 0 auto; min-width: 38px; text-align: center; padding: 5px 9px; border-radius: 999px; background: var(--surface); color: #fff;
   text-decoration: none; font-weight: 700; font-size: 0.85em; }
 nav a.bonus { background: transparent; border: 1px solid rgba(255,255,255,0.3); font-weight: 400; }
+nav a.on, nav a.bonus.on { background: var(--magenta); border-color: var(--magenta); font-weight: 800; box-shadow: 0 0 0 2px #fff; }
 h2 { font-size: 1.2em; font-weight: 800; margin: 34px 0 2px; padding-top: 10px; border-top: 3px solid var(--magenta); }
 .pm { color: rgba(255,255,255,0.7); font-size: 0.8em; margin: 0 0 12px; }
 .pm a, .n a { color: var(--pink); }
@@ -298,6 +299,21 @@ async function keepAwake() {
   try { lock = await navigator.wakeLock.request('screen'); document.getElementById('wake').textContent = "L'écran reste allumé tant que cette page est ouverte."; }
   catch (e) { document.getElementById('wake').textContent = ''; }
 }
+// highlight the part that is on screen, and keep its button visible in the bar
+const bar = document.querySelector('nav');
+const heads = Array.from(document.querySelectorAll('h2[id]'));
+let current = null;
+function spy() {
+  const line = bar.getBoundingClientRect().bottom + 24;
+  let h = heads[0];
+  for (const x of heads) { if (x.getBoundingClientRect().top <= line) h = x; else break; }
+  if (h === current) return;
+  current = h;
+  bar.querySelectorAll('a').forEach((a) => a.classList.toggle('on', a.getAttribute('href') === '#' + h.id));
+  const a = bar.querySelector('a.on');
+  if (a) bar.scrollTo({ left: a.offsetLeft - bar.clientWidth / 2 + a.offsetWidth / 2, behavior: 'smooth' });
+}
+window.addEventListener('scroll', spy, { passive: true }); window.addEventListener('resize', spy); spy();
 if ('wakeLock' in navigator) { keepAwake(); document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') keepAwake(); }); }
 """
 

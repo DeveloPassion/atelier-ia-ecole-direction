@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import html, json, os, re, shutil, sys
 
-"""Build the course site: src/parts/*.md -> one NN-...html per part (src/parts.json) and index.html (reveal.js, offline).
+"""Build the course site: src/parts/*.md -> one NN-...html per part (src/parts.json), index.html and notes.html (reveal.js, offline).
 
 Usage, from the repository root:  python3 tools/build.py
 lib/ (reveal.js 5.2.1, Pele 1.13.0, Noto Sans) and theme.css (DeveloPassion theme) are committed and not rebuilt.
@@ -251,7 +251,91 @@ def page(title, body_md, part_no):
 """
 
 
+# ---------- notes.html: every speaker note on one page (phone, tablet or paper), for when the presenter view is not available
+NOTES_CSS = FONTS + """
+:root { --magenta: #e5007d; --pink: #ff4fa8; --slate: #37404c; --surface: #3f4957; --well: #2b323c; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body { margin: 0; background: var(--slate); color: rgba(255,255,255,0.93); font: 18px/1.5 'Noto Sans', sans-serif; -webkit-text-size-adjust: 100%; }
+main { max-width: 860px; margin: 0 auto; padding: 18px 16px 80px; }
+h1 { font-size: 1.5em; font-weight: 800; margin: 0 0 4px; }
+.lead { color: rgba(255,255,255,0.75); font-size: 0.9em; margin: 0 0 6px; }
+#wake { color: #4ade80; font-size: 0.8em; min-height: 1.2em; margin: 0 0 8px; }
+nav { position: sticky; top: 0; z-index: 5; background: var(--well); margin: 0 -16px 8px; padding: 8px 16px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none;
+  border-bottom: 2px solid var(--magenta); }
+nav a { flex: 0 0 auto; min-width: 38px; text-align: center; padding: 5px 9px; border-radius: 999px; background: var(--surface); color: #fff;
+  text-decoration: none; font-weight: 700; font-size: 0.85em; }
+nav a.bonus { background: transparent; border: 1px solid rgba(255,255,255,0.3); font-weight: 400; }
+h2 { font-size: 1.2em; font-weight: 800; margin: 34px 0 2px; padding-top: 10px; border-top: 3px solid var(--magenta); }
+.pm { color: rgba(255,255,255,0.7); font-size: 0.8em; margin: 0 0 12px; }
+.pm a, .n a { color: var(--pink); }
+.sl { margin: 0 0 10px; padding: 10px 12px; border-radius: 10px; background: var(--surface); }
+.sl.none { background: transparent; padding: 2px 12px; margin: 0 0 4px; color: rgba(255,255,255,0.55); font-size: 0.85em; }
+.k { display: inline-block; min-width: 1.9em; margin-right: 6px; padding: 0 6px; border-radius: 6px; background: var(--magenta); color: #fff; font-weight: 700;
+  text-align: center; font-size: 0.85em; }
+.sl.none .k { background: rgba(255,255,255,0.16); }
+.t { font-weight: 700; }
+.sl.none .t { font-weight: 400; }
+.n { margin-top: 6px; overflow-wrap: anywhere; }
+.n p { margin: 0 0 7px; }
+.n p.step { padding-left: 1.5em; text-indent: -1.5em; }
+.n b { color: var(--pink); }
+@media print {
+  body { background: #fff; color: #000; font-size: 10.5pt; }
+  nav, #wake { display: none; }
+  h2 { break-after: avoid; }
+  .sl { background: #fff; border: 1px solid #bbb; break-inside: avoid; }
+  .sl.none { border: 0; color: #555; }
+  .k { background: #b3005f; color: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .sl.none .k { background: #888; }
+  .n b, .pm a, .n a { color: #b3005f; }
+  .lead, .pm { color: #333; }
+}
+"""
+NOTES_JS = """
+let lock = null;
+async function keepAwake() {
+  try { lock = await navigator.wakeLock.request('screen'); document.getElementById('wake').textContent = "L'écran reste allumé tant que cette page est ouverte."; }
+  catch (e) { document.getElementById('wake').textContent = ''; }
+}
+if ('wakeLock' in navigator) { keepAwake(); document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') keepAwake(); }); }
+"""
+
+
+def note_html(text):
+    """The Markdown of a speaker note, as simple HTML: links, bold, one paragraph per line."""
+    out = []
+    for line in text.strip().split("\n"):
+        line = line.strip()
+        if not line:
+            continue
+        t = html.escape(line, quote=False)
+        t = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2" target="_blank" rel="noopener">\1</a>', t)
+        t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
+        out.append(f'<p class="step">{t}</p>' if re.match(r"\d+\. ", line) else f"<p>{t}</p>")
+    return "".join(out)
+
+
+def notes_page(parts):
+    """parts: [(meta, [(slide number, title, note or '')])]"""
+    nav = "".join(f'<a href="#p{m["n"]}"' + (' class="bonus"' if m.get("bonus") else "") + f'>{m["n"]}</a>' for m, _ in parts)
+    body = []
+    for m, slides in parts:
+        body.append(f'<h2 id="p{m["n"]}">{m["n"]}. {html.escape(m["name"])}</h2>'
+                    f'<p class="pm">{html.escape(m["dur"])} · {len(slides)} slides · <a href="{m["html"]}" target="_blank" rel="noopener">ouvrir les slides</a></p>')
+        for k, title, note in slides:
+            head = f'<span class="k">{k}</span><span class="t">{html.escape(title)}</span>'
+            body.append(f'<div class="sl"><div>{head}</div><div class="n">{note_html(note)}</div></div>' if note else f'<div class="sl none">{head}</div>')
+    return ('<!doctype html>\n<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
+            "<title>Notes de l'orateur - L'IA au service de l'école</title>\n<style>" + NOTES_CSS + "</style></head>\n<body><main>\n"
+            "<h1>Notes de l'orateur</h1>\n"
+            '<p class="lead">Le plan B quand l\'écran d\'orateur ne marche pas: cette page sur un téléphone ou une tablette, à côté du PC. Ou imprimée. '
+            "Le numéro est celui de la slide dans sa partie, comme en bas à droite des slides.</p>\n"
+            '<p id="wake"></p>\n<nav>' + nav + "</nav>\n" + "\n".join(body) + "\n</main>\n<script>" + NOTES_JS + "</script>\n</body></html>\n")
+
+
 cards = []
+notes_parts = []
 total = 0
 for m in meta:
     src = open(os.path.join(deck_dir, m["file"]), encoding="utf-8").read()
@@ -262,6 +346,12 @@ for m in meta:
     open(os.path.join(outdir, out_name), "w", encoding="utf-8").write(
         page(f"{m['n']}. {m['name']} - L'IA au service de l'école", transform(body, m["n"], m["name"], m["dur"]), m["n"]))
     m["slides"] = body.count("\n---\n") + 1
+    rows = []
+    for k, sl in enumerate(body.split("\n---\n"), 1):
+        vis, _, note = sl.partition("\nNote:")
+        t = re.search(r"^## (.+)$", vis, re.M)
+        rows.append((k, t.group(1).strip() if t else "(sans titre)", re.sub(r"\[\[(?:[^\]|]+\|)?([^\]]+)\]\]", r"\1", note)))
+    notes_parts.append((m, rows))
     total += m["slides"]
     cards.append(f'<a class="card" href="{out_name}" target="_blank" rel="noopener"><span class="num">{m["n"]}</span>'
                  f'<span class="t">{html.escape(m["name"])}</span><span class="meta">{html.escape(m["dur"])} · {m["slides"]} slides</span></a>')
@@ -307,6 +397,7 @@ kbd {{ background: rgba(255,255,255,0.1); border-radius: 6px; padding: 1px 7px; 
 <a class="card" href="documents/Aide-m%C3%A9moire%20-%20Claude%20au%20quotidien.pdf" target="_blank" rel="noopener"><span class="t">Aide-mémoire: Claude au quotidien</span><span class="meta">PDF, 2 pages, à imprimer</span></a>
 <a class="card" href="documents/Avant%20l%27atelier%20-%20les%20pr%C3%A9requis.pdf" target="_blank" rel="noopener"><span class="t">Avant l'atelier: les prérequis</span><span class="meta">PDF, 1 page: Claude, Chrome, fichiers de démo</span></a>
 <a class="card" href="documents/Feuille%20de%20route%20de%20l%27animateur.pdf" target="_blank" rel="noopener"><span class="t">Feuille de route de l'animateur</span><span class="meta">PDF, 3 pages: quelle démo, quand, avec quels fichiers</span></a>
+<a class="card" href="notes.html" target="_blank" rel="noopener"><span class="t">Notes de l'orateur</span><span class="meta">Toutes les notes sur une page, pour téléphone, tablette ou papier: le plan B sans écran d'orateur</span></a>
 <a class="card" href="documents/Fiche%20de%20contexte%20pour%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Fiche de contexte pour l'IA</span><span class="meta">PDF, 2 pages: les questions, à remplir ou à imprimer</span></a>
 <a class="card" href="documents/%C3%80%20propos%20de%20moi.txt" download><span class="t">À propos de moi (fichier texte)</span><span class="meta">Les mêmes questions dans un fichier texte: vos réponses, à donner à l'IA</span></a>
 <a class="card" href="documents/Projet%20de%20r%C3%A8gles%20d%27usage%20de%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Projet de règles d'usage de l'IA</span><span class="meta">PDF, 1 page, à compléter</span></a>
@@ -316,4 +407,5 @@ kbd {{ background: rgba(255,255,255,0.1); border-radius: 6px; padding: 1px 7px; 
 </main></body></html>
 """
 open(os.path.join(outdir, "index.html"), "w", encoding="utf-8").write(index)
+open(os.path.join(outdir, "notes.html"), "w", encoding="utf-8").write(notes_page(notes_parts))
 print(f"parts={len(meta)} slides={total} out={outdir}")

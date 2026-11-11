@@ -192,6 +192,7 @@ def b(t):
 before = KeepTogether([
     Paragraph("Où trouver quoi", H2),
     b("<b>Les étapes de chaque démo</b>: les notes de l'orateur de la slide (touche <b>S</b> dans la partie). Cette feuille en reprend l'essentiel."),
+    b("<b>Plan B sans écran d'orateur</b> (projecteur en mode dupliqué): la page « Notes de l'orateur » (notes.html, sur le sommaire) sur le téléphone ou la tablette, ou imprimée."),
     b("<b>Les fichiers</b>: le dossier « Fichiers de démo », copié hors OneDrive (aussi sur le site: documents/fichiers-de-demo.zip). Les résultats attendus: « Plan B - résultats attendus ». Les systèmes de démo: les zips «\u00a0notes seules\u00a0» et «\u00a0en vrac\u00a0» (le système complet avec AI Kit for Obsidian, un produit payant, n'est pas public)."),
     b("<b>Les corrigés</b>: « DEMO - À demander.txt » à la racine du système Saint-Exemple, et les sections « Corrigé » du plan de cours."),
     b("<b>Les slides</b>: le sommaire (index.html) de la copie locale, hors ligne. Toutes les slides restent: je choisis en direct ce que je passe."),

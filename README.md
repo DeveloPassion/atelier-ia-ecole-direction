@@ -9,7 +9,7 @@ Les personnes et les documents de démo sont fictifs: ce support sert à apprend
 
 ## Contenu
 
-- `index.html` et `01-...html` à `17-...html`: les slides (reveal.js), qui marchent aussi hors ligne
+- `index.html` et `01-...html` à `17-...html`: les slides (reveal.js), qui marchent aussi hors ligne. `notes.html`: toutes les notes de l'orateur sur une page (téléphone, tablette ou papier), le plan B sans écran d'orateur
 - `documents/`: l'aide-mémoire à imprimer, la feuille de route de l'animateur, les prérequis, la fiche de contexte (PDF à remplir) et un projet de règles d'usage de l'IA
 - `documents/fichiers-de-demo.zip`: les mêmes fichiers de démo, en un seul zip à télécharger (https://developassion.github.io/atelier-ia-ecole-direction/documents/fichiers-de-demo.zip)
 - `fichiers-de-demo/`: les fichiers des démos, tous fictifs (voir `LISEZ-MOI.txt`), les résultats attendus (plan B) et deux dossiers de démo: "en vrac" et "notes seules"

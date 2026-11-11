@@ -77,3 +77,12 @@ Vous **vérifiez entre deux étapes**: une erreur ne passe pas à la suite.
 - Puis: "**Évalue ta réponse** selon ces critères. Pour chaque critère: oui ou non, et pourquoi"
 - Demandez **le niveau de confiance**: "Pour chaque information, dis si tu es sûr, assez sûr, ou pas sûr, et pourquoi"
 - Un critère écrit une fois sert à chaque demande: il va **dans une skill** (bonus 14)
+
+---
+## Ce qui a une vraie valeur: vos processus écrits
+- Les techniques de prompting aident. Ce qui fait **la vraie différence**, c'est **décrire vos processus**
+- Écrivez **les étapes**, **les critères** d'un bon résultat, **vos préférences** (ton, longueur, forme), **les règles** et **un exemple** réussi
+- À chaque utilisation, l'IA suit **votre** façon de faire, sans tout réexpliquer
+- Après chaque utilisation: "**Qu'est-ce qu'on améliore dans ce processus?** Mets-le à jour". Vous relisez, vous validez
+- Le processus **s'améliore à chaque usage**. Il reste utile quand le modèle change: il vous appartient
+- Un processus écrit pour l'IA, c'est **une skill** (bonus 14)

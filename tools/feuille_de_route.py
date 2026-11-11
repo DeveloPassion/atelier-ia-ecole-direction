@@ -97,7 +97,7 @@ rows = [
      q(["Bonjour, dis-moi en une phrase ce que tu peux faire.", "Résume cette page en trois points."]),
      "Si un PC bloque: à deux sur un PC, ou claude.ai dans le navigateur. Feuille « parking » sur la table"),
     (0, where(1, "1. Le même Claude, deux réponses"), "<b>Exercice: le même Claude, deux réponses</b> (leur PC, 2 min par demande)",
-     "Aucun fichier. Le texte « avec contexte » est sur la slide suivante (crochets à remplir)",
+     "Aucun fichier. Le texte « avec contexte » est sur la slide suivante (à copier tel quel)",
      q(["Écris un mot aux parents pour la sortie scolaire."]) + "<br/>puis le texte de la slide « Avec contexte »",
      "Mettre les deux réponses côte à côte: laquelle est utilisable telle quelle?"),
     (8, where(2, "L'application Claude"), "<b>Tour de l'application</b> (leur PC, 4 min)",

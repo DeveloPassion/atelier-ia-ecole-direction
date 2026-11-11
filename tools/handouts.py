@@ -90,22 +90,23 @@ SECTIONS = [
 ]
 
 
-STARTER_NAME = "À propos de moi.md"
+STARTER_NAME = "À propos de moi.txt"
 STARTER_URL_TEXT = "developassion.github.io/atelier-ia-ecole-direction/documents/" + STARTER_NAME
 STARTER_URL = "https://developassion.github.io/atelier-ia-ecole-direction/documents/" + quote(STARTER_NAME)
 
 
 def starter(path):
-    """Starter text file with the same questions as the context sheet."""
-    out = ["# À propos de moi", "",
-           "Ma fiche de contexte pour l'IA. Formation IA, Collège de Bonne-Espérance.", "",
-           "Répondez sous chaque question. Écrivez comme vous parlez: des phrases courtes suffisent. "
+    """Starter text file with the same questions as the context sheet.
+    Plain text, not Markdown: the participants are not technical. Windows line ends and a BOM so Notepad opens it well."""
+    out = ["À PROPOS DE MOI", "",
+           "Ma fiche de contexte pour l'IA. Formation IA, Collège de Bonne-Espérance.",
+           "Écrivez votre réponse sous chaque question. Écrivez comme vous parlez: des phrases courtes suffisent.",
            "Ne mettez aucune donnée d'élève. Ensuite, donnez ce fichier à l'IA au début d'une conversation.", ""]
     for title, questions in SECTIONS:
-        out += [f"## {title[3:]}", ""]
+        out += ["", title.upper(), "=" * len(title), ""]
         for _, q, _ in questions:
-            out += [f"**{q}**", "", "", ""]
-    with open(path, "w", encoding="utf-8", newline="\n") as f:
+            out += [q, "", "", ""]
+    with open(path, "w", encoding="utf-8-sig", newline="\r\n") as f:
         f.write("\n".join(out).rstrip() + "\n")
 
 

@@ -61,13 +61,13 @@ Même machine, même question. **Une seule différence**.
 
 Faites-le sur votre PC:
 1. Nouvelle conversation: "Écris un mot aux parents pour la sortie scolaire."
-2. Nouvelle conversation: le texte de la slide suivante
+2. Nouvelle conversation: le texte de la slide suivante, copié tel quel
 
 ---
 ## Avec contexte
-> Je suis [prénom], [directrice ou directeur] de [nom de l'école], une école fondamentale libre à [ville], en Belgique. Écris un mot aux parents des 22 élèves de 4e primaire (classe de [prénom de l'enseignant]) pour la sortie au musée des Sciences naturelles, à Bruxelles, le jeudi 26 novembre. Départ de l'école en car à 8h30, retour vers 15h30. Prix: 12 euros par enfant, à payer avant le 19 novembre par virement, avec en communication le nom de l'enfant et "musée P4". Prévoir un pique-nique, une boisson et des vêtements selon la météo. Ton chaleureux mais court, 120 mots maximum, vouvoiement, signé "[prénom], [directrice ou directeur]". Ajoute un talon-réponse à rendre à l'enseignant.
+> Je suis Hélène Dufour, directrice de la section primaire de l'École fondamentale Saint-Exemple, une école fondamentale libre en Belgique. Écris un mot aux parents des 22 élèves de 4e primaire (classe de M. Marchal) pour la sortie au musée des Sciences naturelles, à Bruxelles, le jeudi 26 novembre. Départ de l'école en car à 8h30, retour vers 15h30. Prix: 12 euros par enfant, à payer avant le 19 novembre par virement, avec en communication le nom de l'enfant et "musée P4". Prévoir un pique-nique, une boisson et des vêtements selon la météo. Ton chaleureux mais court, 120 mots maximum, vouvoiement, signé "Hélène Dufour, directrice". Ajoute un talon-réponse à rendre à l'enseignant.
 
-Note: Chacun remplace les crochets par ses propres informations: c'est déjà donner du contexte. Laisser 2 minutes. Pour la direction du secondaire: remplacer par une classe de 2e secondaire. Puis mettre les deux réponses côte à côte: laquelle est utilisable telle quelle?
+Note: Chacun copie le texte tel quel, sans rien modifier: l'école et les personnes sont fictives. Laisser 2 minutes. Pour la direction du secondaire: remplacer par une classe de 2e secondaire. Puis mettre les deux réponses côte à côte: laquelle est utilisable telle quelle?
 
 ---
 ## Ce qu'on vient de voir

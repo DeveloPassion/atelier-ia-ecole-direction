@@ -60,12 +60,6 @@ def note(text):
     return text.split("\nNote:", 1)[1] if "\nNote:" in text else ""
 
 
-def typed(n, title):
-    """The prompts the speaker notes tell the presenter to type."""
-    _, s = find(n, title)
-    return re.findall(r'Taper[^:"\n]*: "(.+?)"', note(s))
-
-
 def quoted(n, title):
     """The prompts a slide shows in a box (blockquote lines), ready to copy."""
     return re.findall(r"^> (.+?)\r?$", find(n, title)[1], re.M)
@@ -138,7 +132,7 @@ rows = [
      "Cliquer un lien pour vérifier un prix. Musée du Carnaval: animations peut-être dès la 5e seulement. Formulaire rempli, <b>pas envoyé</b>.<br/>Plan B: Démo 4 - Comparaison lieux d'excursion (exemple).pdf"),
     (78, where(6, "Démo 6: une photo"), "<b>Démo 6: la photo</b> (écran, 3 min) <i>ou</i> <b>démo 5: la présentation</b> (2 min), s'il reste du temps",
      "La photo prise sur place. Ou " + FD + "Texte réunion de parents de rentrée.docx",
-     q(typed(6, "Démo 6: une photo") + quoted(6, "Démo 5: les demandes à copier")[:1]),
+     q(quoted(6, "Démo 6: la demande à copier") + quoted(6, "Démo 5: les demandes à copier")[:1]) + "<br/>(slides suivantes, bouton « Copier »)",
      "Sinon, plan B: Démo 5 - Réunion de parents de rentrée (pptx). Puis 1 min sur « Et l'ordinateur » (slide)"),
     (83, where(7, "Le journal du jour"), "<b>Montrer le journal du jour</b> (écran, 1 min)",
      "Système Saint-Exemple dans Obsidian: Journal/Quotidien/2026/46/2026-11-09.md",

@@ -66,6 +66,11 @@ def typed(n, title):
     return re.findall(r'Taper[^:"\n]*: "(.+?)"', note(s))
 
 
+def quoted(n, title):
+    """The prompts a slide shows in a box (blockquote lines), ready to copy."""
+    return re.findall(r"^> (.+?)\r?$", find(n, title)[1], re.M)
+
+
 def where(n, title):
     k, _ = find(n, title)
     return f"Partie {n}, slide {k}<br/><i>{title}</i>"
@@ -106,7 +111,7 @@ rows = [
      "Montrer aussi l'extension Claude in Chrome dans Chrome"),
     (18, where(3, "3. Première démo"), "<b>Démo 1: la circulaire</b> (leur PC, 10 min, Opus 5.5)",
      FD + "Circulaire 9847 - Organisation de l'année scolaire 2026-2027.pdf<br/>Puis la vraie: circulaire 9757 (lien dans les notes de la slide)",
-     q(typed(3, "3. Première démo")[:1]) + "<br/>Puis en effort haut: « Vérifie chaque date dans le texte. »",
+     q(quoted(3, "La circulaire: la demande à copier")[:1]) + "<br/>(slide suivante: une demande par rôle, bouton « Copier »)<br/>Puis en effort haut: « Vérifie chaque date dans le texte. »",
      "9847: CEB dans CEBSI le 05/03/2027 (piège: le 19/02 est reporté); FUI aux parents de 6e du 11/01 au 22/01/2027; liste PSE le 30/11/2026; EENC le 20/11/2026. 9757: « presque rien n'est pour vous », 24/08/2026 déjà passé.<br/>Plan B: " + PB + "Démo 1 - Actions primaire circulaire 9847.pdf. Corrigés complets: notes de la slide, plan de cours"),
     (28, where(4, "La complaisance"), "<b>Option: la complaisance</b> (écran, 1 min)",
      "Aucun fichier",
@@ -121,7 +126,7 @@ rows = [
      "", "Prendre une page écrite à la main (sans données d'élèves) pour la démo photo"),
     (60, where(6, "Démo 2: créer des fichiers"), "<b>Démo 2: créer des fichiers</b> (leur PC, 8 min)",
      FD + "Notes réunion équipe 2026-11-03 (brut).docx<br/>" + FD + "Sorties pédagogiques 2026-2027 (liste).docx",
-     q(typed(6, "Démo 2: créer des fichiers")),
+     q(quoted(6, "Démo 2: les demandes à copier")) + "<br/>(slide suivante, bouton « Copier »)",
      "Ouvrir le Word et la liste « pas clair ». Excel: la sortie à la ferme en P2 a deux prix (12 et 9,50 euros).<br/>Plan B: Démo 2 - Compte rendu (docx), Démo 2 - Sorties (xlsx)"),
     (68, where(6, "Démo 3: ranger un dossier"), "<b>Démo 3: ranger un dossier</b> (écran, 6 min, mode Plan)",
      "Dossier de travail: " + FD + "Activités de P1 à P6 (copie en désordre)/ (36 fichiers)",

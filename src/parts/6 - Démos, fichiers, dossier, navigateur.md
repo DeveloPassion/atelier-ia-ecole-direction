@@ -18,11 +18,21 @@ Note: 18 minutes. Ordre: fichiers (8 min), dossier (6 min), navigateur (4 min). 
 - Le tableau remplace le cahier, et il se met à jour en une phrase
 
 Note: DÉMO FICHIERS (8 min), chacun sur son PC.
-1. Joindre "Notes réunion équipe 2026-11-03 (brut).docx". Taper: "Fais un compte rendu Word propre de cette réunion: participants, points discutés, décisions, puis un tableau des actions (quoi, qui, pour quand). Signale ce qui n'est pas clair au lieu de l'inventer."
+1. Joindre "Notes réunion équipe 2026-11-03 (brut).docx". Chacun copie la première demande de la slide suivante ("Démo 2: les demandes à copier").
 2. Ouvrir le Word créé. Montrer la liste "pas clair": c'est le bon réflexe.
-3. Nouvelle conversation. Joindre "Sorties pédagogiques 2026-2027 (liste).docx" (16 sorties en désordre). Taper: "Fais un tableau Excel des sorties pédagogiques: date, classe, lieu, prix par élève, payé, réservé, encodé sur IT School, remarques. Une ligne par sortie, triée par date. Mets en rouge ce qui n'est pas encore payé ou réservé, et laisse vide ce que tu ne sais pas."
+3. Nouvelle conversation. Joindre "Sorties pédagogiques 2026-2027 (liste).docx" (16 sorties en désordre). Chacun copie la deuxième demande de la slide suivante.
 4. Ouvrir le fichier Excel. Point à remarquer: la sortie à la ferme en P2 a deux prix (12 euros sur l'autorisation, 9,50 euros sur la confirmation). Un bon tableau le signale.
 Plan B: "Démo 2 - Compte rendu réunion équipe 2026-11-03.docx" et "Démo 2 - Sorties pédagogiques 2026-2027.xlsx".
+
+---
+## Démo 2: les demandes à copier
+D'abord, joignez "Notes réunion équipe 2026-11-03 (brut).docx" (dossier "Fichiers de démo"):
+
+> Fais un compte rendu Word propre de cette réunion: participants, points discutés, décisions, puis un tableau des actions (quoi, qui, pour quand). Signale ce qui n'est pas clair au lieu de l'inventer.
+
+Puis, dans une nouvelle conversation, joignez "Sorties pédagogiques 2026-2027 (liste).docx":
+
+> Fais un tableau Excel des sorties pédagogiques: date, classe, lieu, prix par élève, payé, réservé, encodé sur IT School, remarques. Une ligne par sortie, triée par date. Mets en rouge ce qui n'est pas encore payé ou réservé, et laisse vide ce que tu ne sais pas.
 
 ---
 ## Démo 3: ranger un dossier
@@ -94,5 +104,5 @@ Note: Une minute, avec cette slide. Le montrer seulement s'il reste du temps et 
 ## Une ligne au lieu de dix
 - Chaque démo demandait plusieurs lignes d'explication
 - Avec un système qui vous connaît, la même demande **tient en une ligne**
-- "Fais le tableau des sorties". "Range le dossier de P4". "Quelles actions de cette circulaire me concernent?"
+- "Fais le tableau des sorties"{copy}. "Range le dossier de P4"{copy}. "Quelles actions de cette circulaire me concernent?"{copy}
 - On verra ça dans la partie suivante

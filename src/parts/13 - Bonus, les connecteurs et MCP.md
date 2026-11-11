@@ -19,7 +19,7 @@ flowchart LR
 ---
 ## Ce qu'un connecteur permet
 - **Lire**: vos mails, votre agenda, vos fichiers en ligne
-- **Chercher**: "Retrouve le dernier mail de l'inspection sur le CEB"
+- **Chercher**: "Retrouve le dernier mail de l'inspection sur le CEB"{copy}
 - **Agir**: créer un rendez-vous, préparer un brouillon de mail, ajouter une ligne dans un tableau
 - Exemples pour l'école: Microsoft 365 (Outlook, OneDrive, Teams), Google Drive, un agenda
 
@@ -28,7 +28,7 @@ flowchart LR
 - Dans les **paramètres** de l'application, rubrique des connecteurs
 - Sur Entreprise, **l'admin** choisit les connecteurs permis pour le collège
 - À la connexion, lisez **les autorisations demandées**: lecture seule, ou aussi écriture et envoi?
-- Testez d'abord sur une demande simple: "Quels sont mes rendez-vous demain?"
+- Testez d'abord sur une demande simple: "Quels sont mes rendez-vous demain?"{copy}
 
 Note: Les noms exacts des menus dépendent de la version de l'application: vérifier avant la séance 2.
 

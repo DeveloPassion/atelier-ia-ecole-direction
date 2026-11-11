@@ -50,7 +50,21 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
   color: #fff; background: var(--dp-magenta); border: 0; border-radius: 999px; padding: 0.35em 0.9em; cursor: pointer; }
 .reveal blockquote .copy-btn:hover { background: var(--dp-pink); }
 .reveal blockquote .copy-btn.done { background: #16a34a; }
-@media print { .reveal blockquote .copy-btn { display: none; } }
+/* A short prompt inside a line of text: click the text or its icon to copy it */
+.reveal .cp { cursor: pointer; border-radius: 6px; transition: background 0.15s; }
+.reveal .cp:hover { background: rgba(229,0,125,0.22); }
+.reveal .cp .copy-ico { display: inline-block; vertical-align: -0.12em; font: inherit; width: 0.95em; height: 0.95em; margin-left: 0.2em; padding: 0.16em;
+  box-sizing: border-box; border: 0; border-radius: 5px; background: rgba(255,255,255,0.14); color: #fff; cursor: pointer; line-height: 0; }
+.reveal .cp .tail { white-space: nowrap; }
+.reveal .cp .copy-ico svg { width: 100%; height: 100%; display: block; }
+.reveal .cp:hover .copy-ico { background: var(--dp-magenta); }
+.reveal .cp.done .copy-ico { background: #16a34a; }
+/* A slide with several boxed prompts */
+.reveal section.prompts p { font-size: 0.74em; margin: 0 0 0.25em 0; }
+.reveal section.prompts blockquote { font-size: 0.62em; width: 96%; margin: 0 0 0.9em 0; padding: 0.7em 5.2em 0.7em 1.2em; }
+.reveal section.prompts blockquote p { font-size: 1em; margin: 0; }
+.reveal section.prompts blockquote .copy-btn { font-size: 0.78em; }
+@media print { .reveal blockquote .copy-btn, .reveal .cp .copy-ico { display: none; } }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
 .reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
@@ -122,7 +136,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 Demander mieux, pour obtenir mieux.
 ---
 ## Les pièces d'une bonne demande
-1. **Une approche**, si utile: "Aborde ce travail comme le ferait une directrice expérimentée"
+1. **Une approche**, si utile: <span class="cp">"Aborde ce travail comme le ferait une directrice expérimentée"</span>
 2. **Le contexte**: l'école, la classe, la situation
 3. **Les données**: le document, le texte, le tableau à traiter
 4. **La tâche**: ce que vous voulez, avec un verbe clair (résume, compare, rédige, classe)
@@ -133,8 +147,8 @@ Demander mieux, pour obtenir mieux.
 Mettez **les informations et les règles importantes à la fin**: la fin d'un long texte est mieux lue que le milieu.
 ---
 ## Sans exemple, ou avec quelques exemples
-- **Sans exemple**: pour les tâches simples. "Résume ce mail en trois points"
-- **Avec deux ou trois exemples**: quand la forme compte. "Voici deux mots aux parents de l'an passé. Écris celui de la sortie P4 dans le même style"
+- **Sans exemple**: pour les tâches simples. <span class="cp">"Résume ce mail en trois points"</span>
+- **Avec deux ou trois exemples**: quand la forme compte. <span class="cp">"Voici deux mots aux parents de l'an passé. Écris celui de la sortie P4 dans le même style"</span>
 - Les exemples valent souvent mieux qu'une longue explication
 - Attention: il copie **trop** les exemples. Variez-les, et dites ce qui doit changer
 ---
@@ -142,8 +156,8 @@ Mettez **les informations et les règles importantes à la fin**: la fin d'un lo
 - Un rôle **ne rend pas l'IA meilleure**: "Tu es un juriste" ne lui donne pas de compétences en droit
 - Sans rôle, le résultat est **aussi bon**, parfois **meilleur**
 - Un rôle oriente surtout **le vocabulaire, les outils, le niveau et le point de vue**
-- Utile pour **une manière de travailler**: "Aborde ce dossier comme un conseiller pédagogique le ferait"
-- Utile aussi **pour relire**: "Lis ce mot comme un parent pressé, sur son téléphone. Qu'est-ce qui n'est pas clair?"
+- Utile pour **une manière de travailler**: <span class="cp">"Aborde ce dossier comme un conseiller pédagogique le ferait"</span>
+- Utile aussi **pour relire**: <span class="cp">"Lis ce mot comme un parent pressé, sur son téléphone. Qu'est-ce qui n'est pas clair?"</span>
 - Le contexte compte bien plus que le rôle. Et les faits se vérifient toujours
 ---
 ## Les modèles ont besoin de moins en moins d'aide
@@ -154,8 +168,8 @@ Mettez **les informations et les règles importantes à la fin**: la fin d'un lo
 - Une technique qui marchait l'an passé peut **gêner** aujourd'hui: testez avec et sans
 ---
 ## Raisonner étape par étape
-- Pour une tâche compliquée: "**Réfléchis étape par étape** avant de répondre"
-- Mieux: **donnez vous-même les étapes**. "1. Trouve les dates. 2. Garde celles du primaire. 3. Vérifie chaque date dans le texte. 4. Fais le tableau"
+- Pour une tâche compliquée: <span class="cp">"**Réfléchis étape par étape** avant de répondre"</span>
+- Mieux: **donnez vous-même les étapes**. <span class="cp">"1. Trouve les dates. 2. Garde celles du primaire. 3. Vérifie chaque date dans le texte. 4. Fais le tableau"</span>
 - Les modèles récents raisonnent déjà seuls (c'est l'effort): les étapes servent surtout à **imposer votre méthode**
 - Demandez à voir le raisonnement: vous **vérifiez pourquoi** il arrive à sa réponse
 ---
@@ -169,28 +183,28 @@ Une grosse tâche = **plusieurs petites demandes**, chacune avec son résultat.
 Vous **vérifiez entre deux étapes**: une erreur ne passe pas à la suite.
 ---
 ## Régler la longueur et le ton
-- Longueur: "en un mot", "en une phrase", "en trois points", "en 120 mots maximum", "une analyse détaillée"
+- Longueur: <span class="cp">"en un mot"</span>, <span class="cp">"en une phrase"</span>, <span class="cp">"en trois points"</span>, <span class="cp">"en 120 mots maximum"</span>, <span class="cp">"une analyse détaillée"</span>
 - Ton: formel, chaleureux, ferme mais bienveillant, simple
-- Niveau: "explique comme à un élève de 10 ans", "pour un parent qui lit mal le français"
+- Niveau: <span class="cp">"explique comme à un élève de 10 ans"</span>, <span class="cp">"pour un parent qui lit mal le français"</span>
 - Structure: un tableau, une liste numérotée, un mail prêt à copier
 ---
 ## Faire travailler l'IA sur la demande elle-même
-- "**Pose-moi les questions** qui te manquent avant de commencer"
-- "**Améliore ma demande** avant de la faire: qu'est-ce qui manque?"
-- Après un bon résultat: "**Quelle demande** t'aurait permis de faire ça du premier coup?" Gardez-la
-- Pour continuer ailleurs: "Donne-moi **un prompt que je peux passer à un autre agent** pour continuer"
+- <span class="cp">"**Pose-moi les questions** qui te manquent avant de commencer"</span>
+- <span class="cp">"**Améliore ma demande** avant de la faire: qu'est-ce qui manque?"</span>
+- Après un bon résultat: <span class="cp">"**Quelle demande** t'aurait permis de faire ça du premier coup?"</span> Gardez-la
+- Pour continuer ailleurs: <span class="cp">"Donne-moi **un prompt que je peux passer à un autre agent** pour continuer"</span>
 ---
 ## Juger le résultat avec des critères
-- Donnez **vos critères** avant: "Un bon mot aux parents: moins de 120 mots, la date, le prix, l'échéance, un talon-réponse"
-- Puis: "**Évalue ta réponse** selon ces critères. Pour chaque critère: oui ou non, et pourquoi"
-- Demandez **le niveau de confiance**: "Pour chaque information, dis si tu es sûr, assez sûr, ou pas sûr, et pourquoi"
+- Donnez **vos critères** avant: <span class="cp">"Un bon mot aux parents: moins de 120 mots, la date, le prix, l'échéance, un talon-réponse"</span>
+- Puis: <span class="cp">"**Évalue ta réponse** selon ces critères. Pour chaque critère: oui ou non, et pourquoi"</span>
+- Demandez **le niveau de confiance**: <span class="cp">"Pour chaque information, dis si tu es sûr, assez sûr, ou pas sûr, et pourquoi"</span>
 - Un critère écrit une fois sert à chaque demande: il va **dans une skill** (bonus 14)
 ---
 ## Ce qui a une vraie valeur: vos processus écrits
 - Les techniques de prompting aident. Ce qui fait **la vraie différence**, c'est **décrire vos processus**
 - Écrivez **les étapes**, **les critères** d'un bon résultat, **vos préférences** (ton, longueur, forme), **les règles** et **un exemple** réussi
 - À chaque utilisation, l'IA suit **votre** façon de faire, sans tout réexpliquer
-- Après chaque utilisation: "**Qu'est-ce qu'on améliore dans ce processus?** Mets-le à jour". Vous relisez, vous validez
+- Après chaque utilisation: <span class="cp">"**Qu'est-ce qu'on améliore dans ce processus?** Mets-le à jour"</span>. Vous relisez, vous validez
 - Le processus **s'améliore à chaque usage**. Il reste utile quand le modèle change: il vous appartient
 - **Une skill** dit à l'IA comment suivre ce processus: elle le contient, ou elle le lit (bonus 14)
         </textarea>
@@ -216,18 +230,39 @@ Vous **vérifiez entre deux étapes**: une erreur ne passe pas à la suite.
       const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select();
       document.execCommand('copy'); t.remove();
     }
+    const ICON_COPY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';
+    const ICON_DONE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>';
     function addCopyButtons() {
+      // boxed prompts: a "Copier" button in the corner
       document.querySelectorAll('.reveal .slides blockquote').forEach((bq) => {
         if (bq.closest('aside')) return;
         const text = bq.innerText.trim();
         const b = document.createElement('button');
         b.type = 'button'; b.className = 'copy-btn'; b.textContent = 'Copier'; b.title = 'Copier la demande';
         b.addEventListener('click', async (ev) => {
-          ev.stopPropagation(); await copyText(text);
+          ev.stopPropagation(); await copyText(text); b.blur();
           b.textContent = 'Copié'; b.classList.add('done');
           setTimeout(() => { b.textContent = 'Copier'; b.classList.remove('done'); }, 2000);
         });
         bq.appendChild(b);
+      });
+      // short prompts inside the text: click the text or the icon
+      document.querySelectorAll('.reveal .slides .cp').forEach((sp) => {
+        if (sp.closest('aside')) return;
+        const text = sp.innerText.trim().replace(/^"|"$/g, '');
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'copy-ico'; b.innerHTML = ICON_COPY; b.setAttribute('aria-label', 'Copier la demande');
+        sp.title = 'Cliquer pour copier';
+        // keep the icon on the same line as the last word
+        const w = document.createTreeWalker(sp, NodeFilter.SHOW_TEXT); let last = null; while (w.nextNode()) last = w.currentNode;
+        const tail = document.createElement('span'); tail.className = 'tail';
+        if (last) { const end = last.splitText(last.data.lastIndexOf(' ') + 1); end.parentNode.replaceChild(tail, end); tail.appendChild(end); } else sp.appendChild(tail);
+        tail.appendChild(b);
+        sp.addEventListener('click', async (ev) => {
+          ev.stopPropagation(); await copyText(text); b.blur();
+          b.innerHTML = ICON_DONE; sp.classList.add('done');
+          setTimeout(() => { b.innerHTML = ICON_COPY; sp.classList.remove('done'); }, 2000);
+        });
       });
     }
     Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,

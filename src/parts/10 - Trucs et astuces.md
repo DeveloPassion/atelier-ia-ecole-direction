@@ -9,7 +9,7 @@ Pour obtenir de bons résultats, plus vite.
 - **Dictez** au lieu d'écrire: vous donnez plus de contexte, plus vite
 - En dictant, **n'hésitez pas à en dire beaucoup**, quitte à vous répéter ou à vous corriger en cours de route: Claude fait le tri
 - Dites **qui vous êtes**, **pour qui** c'est, et **sous quelle forme** (longueur, ton, liste ou tableau)
-- Donnez **un exemple**: "écris comme ce mot-ci"
+- Donnez **un exemple**: "écris comme ce mot-ci"{copy}
 - Demandez-lui de **vous poser des questions** avant de commencer. Il propose souvent des choix à cliquer
 - Pour une grosse tâche: demandez d'abord **un plan**, validez-le, puis lancez le travail
 - Donnez **des règles et des critères d'évaluation clairs**, et mettez **les règles importantes à la fin** de la demande
@@ -18,22 +18,22 @@ Pour obtenir de bons résultats, plus vite.
 ## Obtenir du juste
 - Demandez **les sources**, ou **la page** du document: vous vérifiez en un coup d'œil
 - Demandez-lui de **vérifier les informations et les sources**, et d'**évaluer son niveau de confiance** pour chaque résultat
-- Demandez ce dont il **n'est pas sûr**: "Signale ce que tu ne sais pas au lieu de deviner"
-- Demandez **une critique**: "Qu'est-ce qui cloche?", "Joue l'avocat du diable"
+- Demandez ce dont il **n'est pas sûr**: "Signale ce que tu ne sais pas au lieu de deviner"{copy}
+- Demandez **une critique**: "Qu'est-ce qui cloche?"{copy}, "Joue l'avocat du diable"{copy}
 
 ---
 ## Vérifier sans y passer des heures
-- Faites **vérifier par un autre agent**: "Demande à un autre agent de relire ton travail et d'y chercher les erreurs." Un regard neuf voit ce que le premier a raté
-- Demandez une **vérification adversariale**: "Essaie de démolir ta propre réponse: quelles sont les failles, les dates fausses, les oublis?"
+- Faites **vérifier par un autre agent**: "Demande à un autre agent de relire ton travail et d'y chercher les erreurs."{copy} Un regard neuf voit ce que le premier a raté
+- Demandez une **vérification adversariale**: "Essaie de démolir ta propre réponse: quelles sont les failles, les dates fausses, les oublis?"{copy}
 - Commencez par les tâches **faciles à vérifier**: un tableau à partir d'un document, un résumé que vous pouvez relire
 - Pour ce qui doit être juste: **effort haut**, et une deuxième lecture par vous
 
 ---
 ## Corriger sans recommencer
-- Corrigez par petites phrases: "plus court", "moins formel", "coupe la slide 4 en deux"
-- Gardez ce qui va: "garde le début, refais seulement la fin"
+- Corrigez par petites phrases: "plus court"{copy}, "moins formel"{copy}, "coupe la slide 4 en deux"{copy}
+- Gardez ce qui va: "garde le début, refais seulement la fin"{copy}
 - Si ça part mal: **nouvelle conversation**, avec une demande plus précise
-- Si la conversation devient longue: "Donne-moi **un prompt que je peux passer à un autre agent** pour continuer", puis repartez de là dans une nouvelle conversation
+- Si la conversation devient longue: "Donne-moi **un prompt que je peux passer à un autre agent** pour continuer"{copy}, puis repartez de là dans une nouvelle conversation
 
 ---
 ## Gagner du temps chaque semaine

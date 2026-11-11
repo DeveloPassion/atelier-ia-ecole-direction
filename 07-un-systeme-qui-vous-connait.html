@@ -50,7 +50,21 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
   color: #fff; background: var(--dp-magenta); border: 0; border-radius: 999px; padding: 0.35em 0.9em; cursor: pointer; }
 .reveal blockquote .copy-btn:hover { background: var(--dp-pink); }
 .reveal blockquote .copy-btn.done { background: #16a34a; }
-@media print { .reveal blockquote .copy-btn { display: none; } }
+/* A short prompt inside a line of text: click the text or its icon to copy it */
+.reveal .cp { cursor: pointer; border-radius: 6px; transition: background 0.15s; }
+.reveal .cp:hover { background: rgba(229,0,125,0.22); }
+.reveal .cp .copy-ico { display: inline-block; vertical-align: -0.12em; font: inherit; width: 0.95em; height: 0.95em; margin-left: 0.2em; padding: 0.16em;
+  box-sizing: border-box; border: 0; border-radius: 5px; background: rgba(255,255,255,0.14); color: #fff; cursor: pointer; line-height: 0; }
+.reveal .cp .tail { white-space: nowrap; }
+.reveal .cp .copy-ico svg { width: 100%; height: 100%; display: block; }
+.reveal .cp:hover .copy-ico { background: var(--dp-magenta); }
+.reveal .cp.done .copy-ico { background: #16a34a; }
+/* A slide with several boxed prompts */
+.reveal section.prompts p { font-size: 0.74em; margin: 0 0 0.25em 0; }
+.reveal section.prompts blockquote { font-size: 0.62em; width: 96%; margin: 0 0 0.9em 0; padding: 0.7em 5.2em 0.7em 1.2em; }
+.reveal section.prompts blockquote p { font-size: 1em; margin: 0; }
+.reveal section.prompts blockquote .copy-btn { font-size: 0.78em; }
+@media print { .reveal blockquote .copy-btn, .reveal .cp .copy-ico { display: none; } }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
 .reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
@@ -152,7 +166,7 @@ Le plus simple pour commencer: **une seule note par jour**.
 - Tout y va: les appels, les idées, les décisions, les choses à faire
 - **Rien à décider** sur le moment: pas de titre, pas de dossier
 - Une fois par semaine, **on range**: une tâche, un projet, une note sur une personne
-- Pour l'IA, c'est **une mine d'or**: "Qu'est-ce que j'ai promis cette semaine?", "Qu'est-ce qui est resté en suspens?"
+- Pour l'IA, c'est **une mine d'or**: <span class="cp">"Qu'est-ce que j'ai promis cette semaine?"</span>, <span class="cp">"Qu'est-ce qui est resté en suspens?"</span>
 
 Note: Dans la démo Saint-Exemple, montrer la note du jour du 09/11. Avant la phase 2: un dossier "Journal" dans votre base de connaissances, avec un fichier texte par jour (2026-11-17.md).
 ---
@@ -207,7 +221,7 @@ Les mêmes faits, dans deux dossiers:
 
 - **En vrac**: des fichiers texte, comme on les note souvent
 - **Organisé**: des notes de projet, avec un statut et des tâches datées
-- La même question aux deux: "Liste mes projets en cours, avec leur statut et leur prochaine action. Lequel est bloqué?"
+- La même question aux deux: <span class="cp">"Liste mes projets en cours, avec leur statut et leur prochaine action. Lequel est bloqué?"</span>
 
 Note: DÉMO EN VRAC OU ORGANISÉ (5 min), à l'écran. Dézipper avant la séance "Système Direction Saint-Exemple en vrac (démo).zip" et "Système Direction Saint-Exemple - notes seules (démo).zip".
 1. Ouvrir Claude sur le dossier en vrac. Poser la question.
@@ -223,7 +237,7 @@ Le corrigé complet est la question 6 de "DEMO - À demander.txt".
 La sortie de P4 au musée, le 26 novembre.
 
 - Sans système: **dix lignes de contexte** à chaque demande, et des oublis
-- Avec un système: "Prépare la sortie P4 du 26 novembre"
+- Avec un système: <span class="cp">"Prépare la sortie P4 du 26 novembre"</span>
 - Il connaît la classe, l'institutrice, le budget, le plafond des frais, le modèle de mot aux parents
 - Il ajoute l'encodage sur IT School à vos tâches
 ---
@@ -272,7 +286,7 @@ Notre première recette: **écrire aux parents**.
 
 > Aide-moi à créer une skill pour écrire les mots aux parents de mon école, en respectant la spécification des skills IA: https://agentskills.io/specification.md. Pose-moi d'abord des questions sur ma façon de faire. Enregistre la skill dans le dossier "Skills" de ma base de connaissances.
 
-Puis on la teste: "Écris le mot aux parents pour la sortie P4 du 26 novembre."
+Puis on la teste: <span class="cp">"Écris le mot aux parents pour la sortie P4 du 26 novembre."</span>
 
 Note: DÉMO SKILL (5 min), à l'écran, Claude ouvert sur une copie de base de connaissances (par exemple le dossier "Direction Saint-Exemple"). 1) Coller la demande. 2) Répondre à ses questions à voix haute avec la salle: ton, longueur, talon-réponse, signature, ce qu'il ne doit jamais faire. 3) Montrer le résultat: un dossier "ecrire-aux-parents" avec un fichier SKILL.md (name, description, puis les étapes). 4) Tester avec la sortie P4. 5) Corriger la skill, pas la réponse, si quelque chose ne va pas. La skill vit dans le dossier de travail (la base de connaissances): rien à installer dans l'application. Pour s'en servir, Claude ouvert sur ce dossier: "Utilise la skill ecrire-aux-parents pour...". La spécification vient de agentskills.io, un format ouvert que d'autres outils IA lisent aussi.
 ---
@@ -342,18 +356,39 @@ Note: D'abord une carte du dossier OneDrive, sans rien déplacer. La nouvelle in
       const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select();
       document.execCommand('copy'); t.remove();
     }
+    const ICON_COPY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';
+    const ICON_DONE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>';
     function addCopyButtons() {
+      // boxed prompts: a "Copier" button in the corner
       document.querySelectorAll('.reveal .slides blockquote').forEach((bq) => {
         if (bq.closest('aside')) return;
         const text = bq.innerText.trim();
         const b = document.createElement('button');
         b.type = 'button'; b.className = 'copy-btn'; b.textContent = 'Copier'; b.title = 'Copier la demande';
         b.addEventListener('click', async (ev) => {
-          ev.stopPropagation(); await copyText(text);
+          ev.stopPropagation(); await copyText(text); b.blur();
           b.textContent = 'Copié'; b.classList.add('done');
           setTimeout(() => { b.textContent = 'Copier'; b.classList.remove('done'); }, 2000);
         });
         bq.appendChild(b);
+      });
+      // short prompts inside the text: click the text or the icon
+      document.querySelectorAll('.reveal .slides .cp').forEach((sp) => {
+        if (sp.closest('aside')) return;
+        const text = sp.innerText.trim().replace(/^"|"$/g, '');
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'copy-ico'; b.innerHTML = ICON_COPY; b.setAttribute('aria-label', 'Copier la demande');
+        sp.title = 'Cliquer pour copier';
+        // keep the icon on the same line as the last word
+        const w = document.createTreeWalker(sp, NodeFilter.SHOW_TEXT); let last = null; while (w.nextNode()) last = w.currentNode;
+        const tail = document.createElement('span'); tail.className = 'tail';
+        if (last) { const end = last.splitText(last.data.lastIndexOf(' ') + 1); end.parentNode.replaceChild(tail, end); tail.appendChild(end); } else sp.appendChild(tail);
+        tail.appendChild(b);
+        sp.addEventListener('click', async (ev) => {
+          ev.stopPropagation(); await copyText(text); b.blur();
+          b.innerHTML = ICON_DONE; sp.classList.add('done');
+          setTimeout(() => { b.innerHTML = ICON_COPY; sp.classList.remove('done'); }, 2000);
+        });
       });
     }
     Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,

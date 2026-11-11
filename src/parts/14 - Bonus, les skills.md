@@ -46,7 +46,7 @@ La question à se poser: **qu'est-ce que je refais chaque semaine**, de la même
 
 ---
 ## Créer une skill avec Claude
-1. Utilisez **la skill de création de skills** (skill-creator): "Aide-moi à créer une skill pour écrire aux parents, en respectant la spécification des skills IA: https://agentskills.io/specification.md. Pose-moi des questions sur ma façon de faire"
+1. Utilisez **la skill de création de skills** (skill-creator): "Aide-moi à créer une skill pour écrire aux parents, en respectant la spécification des skills IA: https://agentskills.io/specification.md. Pose-moi des questions sur ma façon de faire"{copy}
 2. Donnez un ou deux **exemples réussis**
 3. **Testez** la skill sur un vrai cas
 4. **Corrigez la skill**, pas seulement la réponse
@@ -70,6 +70,6 @@ Critères: la date, le prix et l'échéance sont exacts et visibles.
 ## Une skill vit, le processus aussi
 - Un résultat ne va pas? **Corrigez la recette**, pour que l'erreur ne revienne pas
 - Les deux s'améliorent avec le temps: **le processus** (votre façon de faire) et **la skill** (les instructions pour l'IA)
-- Après une utilisation: "**Qu'est-ce qu'on améliore**, dans le processus ou dans la skill? Mets à jour". Vous relisez, vous validez
+- Après une utilisation: "**Qu'est-ce qu'on améliore**, dans le processus ou dans la skill? Mets à jour"{copy}. Vous relisez, vous validez
 - Relisez vos skills **une fois par trimestre**
 - Une bonne skill fait gagner du temps **à chaque fois**, et à toute l'équipe si vous la partagez

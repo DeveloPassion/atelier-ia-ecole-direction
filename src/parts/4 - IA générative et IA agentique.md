@@ -26,7 +26,7 @@ Un bon prompt dit:
 ---
 ## Deux astuces pour vos demandes
 - Mettez **les informations et les règles importantes à la fin**: la fin d'un long texte est mieux lue que le milieu
-- Demandez-lui de **vous poser des questions** avant de commencer: "Pose-moi les questions qui te manquent." Il propose souvent des choix à cliquer: c'est très rapide
+- Demandez-lui de **vous poser des questions** avant de commencer: "Pose-moi les questions qui te manquent."{copy} Il propose souvent des choix à cliquer: c'est très rapide
 - Les techniques de prompting (exemples, rôles, étapes, critères): **bonus 11**
 
 ---
@@ -44,7 +44,7 @@ Une analogie: un stagiaire très cultivé, très rapide, qui ne vous connaît pa
 - Claude a tendance à **vous donner raison**: il flatte, il évite de vous contredire
 - Il a appris à plaire, pas à dire la vérité qui dérange
 - Le risque: il valide une mauvaise idée, un calcul faux, une décision fragile
-- La parade: demandez-lui de **critiquer**. "Qu'est-ce qui cloche dans ce plan?", "Joue l'avocat du diable", "Donne-moi les trois meilleures objections"
+- La parade: demandez-lui de **critiquer**. "Qu'est-ce qui cloche dans ce plan?"{copy}, "Joue l'avocat du diable"{copy}, "Donne-moi les trois meilleures objections"{copy}
 
 Note: C'est le risque le plus utile à connaître pour une direction: on utilise Claude pour vérifier ses propres décisions, et il a tendance à les approuver. Le montrer en direct si le temps le permet: proposer une idée discutable, puis demander "Qu'est-ce qui cloche?".
 

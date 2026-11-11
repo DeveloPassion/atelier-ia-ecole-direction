@@ -50,7 +50,21 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
   color: #fff; background: var(--dp-magenta); border: 0; border-radius: 999px; padding: 0.35em 0.9em; cursor: pointer; }
 .reveal blockquote .copy-btn:hover { background: var(--dp-pink); }
 .reveal blockquote .copy-btn.done { background: #16a34a; }
-@media print { .reveal blockquote .copy-btn { display: none; } }
+/* A short prompt inside a line of text: click the text or its icon to copy it */
+.reveal .cp { cursor: pointer; border-radius: 6px; transition: background 0.15s; }
+.reveal .cp:hover { background: rgba(229,0,125,0.22); }
+.reveal .cp .copy-ico { display: inline-block; vertical-align: -0.12em; font: inherit; width: 0.95em; height: 0.95em; margin-left: 0.2em; padding: 0.16em;
+  box-sizing: border-box; border: 0; border-radius: 5px; background: rgba(255,255,255,0.14); color: #fff; cursor: pointer; line-height: 0; }
+.reveal .cp .tail { white-space: nowrap; }
+.reveal .cp .copy-ico svg { width: 100%; height: 100%; display: block; }
+.reveal .cp:hover .copy-ico { background: var(--dp-magenta); }
+.reveal .cp.done .copy-ico { background: #16a34a; }
+/* A slide with several boxed prompts */
+.reveal section.prompts p { font-size: 0.74em; margin: 0 0 0.25em 0; }
+.reveal section.prompts blockquote { font-size: 0.62em; width: 96%; margin: 0 0 0.9em 0; padding: 0.7em 5.2em 0.7em 1.2em; }
+.reveal section.prompts blockquote p { font-size: 1em; margin: 0; }
+.reveal section.prompts blockquote .copy-btn { font-size: 0.78em; }
+@media print { .reveal blockquote .copy-btn, .reveal .cp .copy-ico { display: none; } }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
 .reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
@@ -134,11 +148,21 @@ Note: 18 minutes. Ordre: fichiers (8 min), dossier (6 min), navigateur (4 min). 
 - Le tableau remplace le cahier, et il se met à jour en une phrase
 
 Note: DÉMO FICHIERS (8 min), chacun sur son PC.
-1. Joindre "Notes réunion équipe 2026-11-03 (brut).docx". Taper: "Fais un compte rendu Word propre de cette réunion: participants, points discutés, décisions, puis un tableau des actions (quoi, qui, pour quand). Signale ce qui n'est pas clair au lieu de l'inventer."
+1. Joindre "Notes réunion équipe 2026-11-03 (brut).docx". Chacun copie la première demande de la slide suivante ("Démo 2: les demandes à copier").
 2. Ouvrir le Word créé. Montrer la liste "pas clair": c'est le bon réflexe.
-3. Nouvelle conversation. Joindre "Sorties pédagogiques 2026-2027 (liste).docx" (16 sorties en désordre). Taper: "Fais un tableau Excel des sorties pédagogiques: date, classe, lieu, prix par élève, payé, réservé, encodé sur IT School, remarques. Une ligne par sortie, triée par date. Mets en rouge ce qui n'est pas encore payé ou réservé, et laisse vide ce que tu ne sais pas."
+3. Nouvelle conversation. Joindre "Sorties pédagogiques 2026-2027 (liste).docx" (16 sorties en désordre). Chacun copie la deuxième demande de la slide suivante.
 4. Ouvrir le fichier Excel. Point à remarquer: la sortie à la ferme en P2 a deux prix (12 euros sur l'autorisation, 9,50 euros sur la confirmation). Un bon tableau le signale.
 Plan B: "Démo 2 - Compte rendu réunion équipe 2026-11-03.docx" et "Démo 2 - Sorties pédagogiques 2026-2027.xlsx".
+---
+<!-- .slide: class="prompts" -->
+## Démo 2: les demandes à copier
+D'abord, joignez "Notes réunion équipe 2026-11-03 (brut).docx" (dossier "Fichiers de démo"):
+
+> Fais un compte rendu Word propre de cette réunion: participants, points discutés, décisions, puis un tableau des actions (quoi, qui, pour quand). Signale ce qui n'est pas clair au lieu de l'inventer.
+
+Puis, dans une nouvelle conversation, joignez "Sorties pédagogiques 2026-2027 (liste).docx":
+
+> Fais un tableau Excel des sorties pédagogiques: date, classe, lieu, prix par élève, payé, réservé, encodé sur IT School, remarques. Une ligne par sortie, triée par date. Mets en rouge ce qui n'est pas encore payé ou réservé, et laisse vide ce que tu ne sais pas.
 ---
 ## Démo 3: ranger un dossier
 Une copie du dossier "Activités de P1 à P6", en désordre. Claude renomme, trie par classe et par date, et écrit un index.
@@ -204,7 +228,7 @@ Note: Une minute, avec cette slide. Le montrer seulement s'il reste du temps et 
 ## Une ligne au lieu de dix
 - Chaque démo demandait plusieurs lignes d'explication
 - Avec un système qui vous connaît, la même demande **tient en une ligne**
-- "Fais le tableau des sorties". "Range le dossier de P4". "Quelles actions de cette circulaire me concernent?"
+- <span class="cp">"Fais le tableau des sorties"</span>. <span class="cp">"Range le dossier de P4"</span>. <span class="cp">"Quelles actions de cette circulaire me concernent?"</span>
 - On verra ça dans la partie suivante
         </textarea>
       </section>
@@ -229,18 +253,39 @@ Note: Une minute, avec cette slide. Le montrer seulement s'il reste du temps et 
       const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select();
       document.execCommand('copy'); t.remove();
     }
+    const ICON_COPY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';
+    const ICON_DONE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>';
     function addCopyButtons() {
+      // boxed prompts: a "Copier" button in the corner
       document.querySelectorAll('.reveal .slides blockquote').forEach((bq) => {
         if (bq.closest('aside')) return;
         const text = bq.innerText.trim();
         const b = document.createElement('button');
         b.type = 'button'; b.className = 'copy-btn'; b.textContent = 'Copier'; b.title = 'Copier la demande';
         b.addEventListener('click', async (ev) => {
-          ev.stopPropagation(); await copyText(text);
+          ev.stopPropagation(); await copyText(text); b.blur();
           b.textContent = 'Copié'; b.classList.add('done');
           setTimeout(() => { b.textContent = 'Copier'; b.classList.remove('done'); }, 2000);
         });
         bq.appendChild(b);
+      });
+      // short prompts inside the text: click the text or the icon
+      document.querySelectorAll('.reveal .slides .cp').forEach((sp) => {
+        if (sp.closest('aside')) return;
+        const text = sp.innerText.trim().replace(/^"|"$/g, '');
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'copy-ico'; b.innerHTML = ICON_COPY; b.setAttribute('aria-label', 'Copier la demande');
+        sp.title = 'Cliquer pour copier';
+        // keep the icon on the same line as the last word
+        const w = document.createTreeWalker(sp, NodeFilter.SHOW_TEXT); let last = null; while (w.nextNode()) last = w.currentNode;
+        const tail = document.createElement('span'); tail.className = 'tail';
+        if (last) { const end = last.splitText(last.data.lastIndexOf(' ') + 1); end.parentNode.replaceChild(tail, end); tail.appendChild(end); } else sp.appendChild(tail);
+        tail.appendChild(b);
+        sp.addEventListener('click', async (ev) => {
+          ev.stopPropagation(); await copyText(text); b.blur();
+          b.innerHTML = ICON_DONE; sp.classList.add('done');
+          setTimeout(() => { b.innerHTML = ICON_COPY; sp.classList.remove('done'); }, 2000);
+        });
       });
     }
     Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,

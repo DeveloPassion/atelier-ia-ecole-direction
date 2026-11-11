@@ -16,7 +16,7 @@ Les personnes et les documents de démo sont fictifs: ce support sert à apprend
 
 ## Les sources
 
-- `src/parts/`: les textes des slides, un fichier Markdown par partie (`---` sépare les slides, `Note:` commence les notes de l'orateur). L'ordre, les durées et les noms des fichiers HTML sont dans `src/parts.json`
+- `src/parts/`: les textes des slides, un fichier Markdown par partie (`---` sépare les slides, `Note:` commence les notes de l'orateur). Une demande à copier: une ligne `> ...` donne un encadré avec un bouton "Copier", et `"..."{copy}` dans une phrase donne une icône de copie. L'ordre, les durées et les noms des fichiers HTML sont dans `src/parts.json`
 - `src/demo/`: les deux systèmes de démo, "notes seules" et "en vrac", en clair. Les dossiers vides gardent un fichier `.gitkeep`
 - `tools/build.py`: les slides et `index.html`. `lib/` et `theme.css` ne changent pas
 - `tools/handouts.py`: les PDF de `documents/` (prérequis, fiche de contexte, règles d'usage)

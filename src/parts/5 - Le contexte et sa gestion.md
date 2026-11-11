@@ -161,7 +161,7 @@ Note: C'est le fil rouge de la suite: la partie 7 montre à quoi ressemble cette
 
 - Une conversation = **un point précis**: un mail, un tableau, une circulaire
 - Dévier un peu, c'est permis. Changer de sujet: **nouvelle conversation**
-- Besoin de garder la suite? Demandez: **"Donne-moi un prompt que je peux passer à un autre agent pour continuer."** Collez-le dans une nouvelle conversation
+- Besoin de garder la suite? Demandez: **"Donne-moi un prompt que je peux passer à un autre agent pour continuer."{copy}** Collez-le dans une nouvelle conversation
 - Mieux vaut **dix conversations courtes** qu'une seule longue
 
 Note: C'est la règle la plus importante de la partie: la dire avec force. Les longues conversations sont la cause la plus fréquente des mauvaises réponses et des inventions.

@@ -39,7 +39,7 @@ Le plus simple pour commencer: **une seule note par jour**.
 - Tout y va: les appels, les idées, les décisions, les choses à faire
 - **Rien à décider** sur le moment: pas de titre, pas de dossier
 - Une fois par semaine, **on range**: une tâche, un projet, une note sur une personne
-- Pour l'IA, c'est **une mine d'or**: "Qu'est-ce que j'ai promis cette semaine?", "Qu'est-ce qui est resté en suspens?"
+- Pour l'IA, c'est **une mine d'or**: "Qu'est-ce que j'ai promis cette semaine?"{copy}, "Qu'est-ce qui est resté en suspens?"{copy}
 
 Note: Dans la démo Saint-Exemple, montrer la note du jour du 09/11. Avant la phase 2: un dossier "Journal" dans votre base de connaissances, avec un fichier texte par jour (2026-11-17.md).
 
@@ -100,7 +100,7 @@ Les mêmes faits, dans deux dossiers:
 
 - **En vrac**: des fichiers texte, comme on les note souvent
 - **Organisé**: des notes de projet, avec un statut et des tâches datées
-- La même question aux deux: "Liste mes projets en cours, avec leur statut et leur prochaine action. Lequel est bloqué?"
+- La même question aux deux: "Liste mes projets en cours, avec leur statut et leur prochaine action. Lequel est bloqué?"{copy}
 
 Note: DÉMO EN VRAC OU ORGANISÉ (5 min), à l'écran. Dézipper avant la séance "Système Direction Saint-Exemple en vrac (démo).zip" et "Système Direction Saint-Exemple - notes seules (démo).zip".
 1. Ouvrir Claude sur le dossier en vrac. Poser la question.
@@ -117,7 +117,7 @@ Le corrigé complet est la question 6 de "DEMO - À demander.txt".
 La sortie de P4 au musée, le 26 novembre.
 
 - Sans système: **dix lignes de contexte** à chaque demande, et des oublis
-- Avec un système: "Prépare la sortie P4 du 26 novembre"
+- Avec un système: "Prépare la sortie P4 du 26 novembre"{copy}
 - Il connaît la classe, l'institutrice, le budget, le plafond des frais, le modèle de mot aux parents
 - Il ajoute l'encodage sur IT School à vos tâches
 
@@ -173,7 +173,7 @@ Notre première recette: **écrire aux parents**.
 
 > Aide-moi à créer une skill pour écrire les mots aux parents de mon école, en respectant la spécification des skills IA: https://agentskills.io/specification.md. Pose-moi d'abord des questions sur ma façon de faire. Enregistre la skill dans le dossier "Skills" de ma base de connaissances.
 
-Puis on la teste: "Écris le mot aux parents pour la sortie P4 du 26 novembre."
+Puis on la teste: "Écris le mot aux parents pour la sortie P4 du 26 novembre."{copy}
 
 Note: DÉMO SKILL (5 min), à l'écran, Claude ouvert sur une copie de base de connaissances (par exemple le dossier "Direction Saint-Exemple"). 1) Coller la demande. 2) Répondre à ses questions à voix haute avec la salle: ton, longueur, talon-réponse, signature, ce qu'il ne doit jamais faire. 3) Montrer le résultat: un dossier "ecrire-aux-parents" avec un fichier SKILL.md (name, description, puis les étapes). 4) Tester avec la sortie P4. 5) Corriger la skill, pas la réponse, si quelque chose ne va pas. La skill vit dans le dossier de travail (la base de connaissances): rien à installer dans l'application. Pour s'en servir, Claude ouvert sur ce dossier: "Utilise la skill ecrire-aux-parents pour...". La spécification vient de agentskills.io, un format ouvert que d'autres outils IA lisent aussi.
 

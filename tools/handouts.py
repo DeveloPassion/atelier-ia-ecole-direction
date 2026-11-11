@@ -1,4 +1,4 @@
-"""Build the handouts (A4 PDF) in documents/: the fillable context sheet, the draft AI usage rules and the prerequisites.
+"""Build the handouts in documents/: the fillable context sheet (A4 PDF) and its starter text file, the draft AI usage rules and the prerequisites.
 
 Usage, from the repository root:  uv run --with reportlab python tools/handouts.py [output folder]
 The default output folder is documents/. The cheat sheet has its own script: tools/aide_memoire.py.
@@ -11,6 +11,7 @@ from reportlab.lib.colors import HexColor, white
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.utils import simpleSplit
+from urllib.parse import quote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 out_dir = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "documents")
@@ -89,6 +90,25 @@ SECTIONS = [
 ]
 
 
+STARTER_NAME = "À propos de moi.md"
+STARTER_URL_TEXT = "developassion.github.io/atelier-ia-ecole-direction/documents/" + STARTER_NAME
+STARTER_URL = "https://developassion.github.io/atelier-ia-ecole-direction/documents/" + quote(STARTER_NAME)
+
+
+def starter(path):
+    """Starter text file with the same questions as the context sheet."""
+    out = ["# À propos de moi", "",
+           "Ma fiche de contexte pour l'IA. Formation IA, Collège de Bonne-Espérance.", "",
+           "Répondez sous chaque question. Écrivez comme vous parlez: des phrases courtes suffisent. "
+           "Ne mettez aucune donnée d'élève. Ensuite, donnez ce fichier à l'IA au début d'une conversation.", ""]
+    for title, questions in SECTIONS:
+        out += [f"## {title[3:]}", ""]
+        for _, q, _ in questions:
+            out += [f"**{q}**", "", "", ""]
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n".join(out).rstrip() + "\n")
+
+
 def fiche(path):
     c = canvas.Canvas(path, pagesize=A4)
     c.setTitle("Ma fiche de contexte pour l'IA")
@@ -97,12 +117,22 @@ def fiche(path):
     header(c, "Ma fiche de contexte pour l'IA", "Formation IA, Collège de Bonne-Espérance. Ce document vous appartient.")
     y = H - 105
     y = para(c, "À quoi sert cette fiche", M, y, W - 2 * M, BOLD, 11, NAVY)
-    y = para(c, "Une IA ne sait rien de vous. Cette fiche sert juste de point de départ: elle initialise votre base de connaissances, "
-             "le dossier de fichiers texte où vous garderez ensuite tout ce qui compte (vos rôles, vos projets, vos personnes, vos processus). "
+    y = para(c, "Une IA ne sait rien de vous. Cette fiche vous donne un petit point de départ: qui vous êtes, ce que vous faites, "
+             "comment vous travaillez. Avec ce contexte, l'IA comprend mieux ce que vous lui demandez, et ses réponses sont mieux alignées sur votre réalité. "
              "Remplissez-la sur votre PC (les champs se remplissent et s'enregistrent) ou à la main.", M, y - 2, W - 2 * M)
-    y = para(c, "Ensuite, copiez vos réponses dans un fichier texte de votre base de connaissances (par exemple \"À propos de moi.md\"). "
-             "Certains lecteurs de PDF perdent ce que vous avez tapé: le fichier texte est la version sûre. "
-             "Il fonctionne avec n'importe quelle IA, et en phase 2 le système le lit d'abord, puis ne pose que les questions qui restent.", M, y - 4, W - 2 * M)
+    y = para(c, "Ensuite, copiez vos réponses dans le fichier texte de départ (lien ci-dessous). Il contient les mêmes questions. "
+             "C'est la version texte que vous donnerez à l'IA: elle lit un fichier texte beaucoup plus facilement qu'un PDF. "
+             "Certains lecteurs de PDF perdent aussi ce que vous avez tapé: le fichier texte est la version sûre. "
+             "Il fonctionne avec n'importe quelle IA: donnez-le-lui au début d'une conversation. "
+             "Plus tard, il vous permettra aussi d'initialiser votre système IA beaucoup plus facilement.", M, y - 4, W - 2 * M)
+    c.setFont(BOLD, 9.5); c.setFillColor(NAVY)
+    label = "Fichier de départ: "
+    c.drawString(M, y - 2, label)
+    lx = M + c.stringWidth(label, BOLD, 9.5)
+    c.setFont(REG, 9.5); c.setFillColor(ORANGE)
+    c.drawString(lx, y - 2, STARTER_URL_TEXT)
+    c.linkURL(STARTER_URL, (lx, y - 5, lx + c.stringWidth(STARTER_URL_TEXT, REG, 9.5), y + 8), relative=0)
+    y -= 2 + 9.5 * 1.35
     y = para(c, "Écrivez comme vous parlez. Des phrases courtes suffisent. Ne mettez aucune donnée d'élève.", M, y - 4, W - 2 * M, BOLD, 10, ORANGE)
     y -= 8
     form = c.acroForm
@@ -178,6 +208,7 @@ def regles(path):
 
 
 p = fiche(os.path.join(out_dir, "Fiche de contexte pour l'IA.pdf"))
+starter(os.path.join(out_dir, STARTER_NAME))
 regles(os.path.join(out_dir, "Projet de règles d'usage de l'IA.pdf"))
 print("fiche pages", p, "font", REG)
 

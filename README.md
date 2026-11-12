@@ -22,6 +22,7 @@ Les personnes et les documents de démo sont fictifs: ce support sert à apprend
 - `tools/handouts.py`: les PDF de `documents/` (prérequis, fiche de contexte, règles d'usage)
 - `tools/aide_memoire.py`: l'aide-mémoire (deux pages, à garder en phase avec les slides)
 - `tools/notes_orateur.py`: les notes de l'orateur en PDF dans `documents/`, à imprimer (le plan B sur papier). Il lit les slides: le reconstruire après chaque changement des notes
+- `tools/slides_pdf.py`: toutes les slides en PDF à imprimer dans `documents/` (fond clair, deux slides par page A4; `--per-page 1` ou `4` pour changer). Il pilote Chrome ou Edge sans fenêtre: à relancer après `tools/build.py`
 - `tools/feuille_de_route.py`: la feuille de route de l'animateur dans `documents/` (quelle démo, quand, avec quels fichiers). Elle lit les slides et leurs notes: la reconstruire après chaque changement des slides
 - `tools/build_demo.py`: les zips des systèmes de démo et `documents/fichiers-de-demo.zip`. Le système complet (avec AI Kit for Obsidian, un produit payant) n'est pas dans ce dépôt: `--private-dir` met à jour sa copie privée
 
@@ -35,6 +36,7 @@ uv run --with reportlab python tools/handouts.py
 uv run --with reportlab python tools/aide_memoire.py
 uv run --with reportlab python tools/feuille_de_route.py
 uv run --with reportlab python tools/notes_orateur.py
+uv run --with websocket-client --with pypdf python tools/slides_pdf.py
 python3 tools/build_demo.py
 ```
 

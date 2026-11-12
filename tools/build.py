@@ -74,6 +74,22 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 .reveal section.prompts p a { color: #ff4fa8; text-decoration: underline; }
 .reveal section.prompts blockquote .copy-btn { font-size: 0.78em; }
 @media print { .reveal blockquote .copy-btn, .reveal .cp .copy-ico { display: none; } }
+/* Print view (?print-pdf, used by tools/slides_pdf.py): light pages to save ink, the visuals keep a dark card */
+html.print-pdf, html.print-pdf body, html.print-pdf .reveal-viewport { background: #fff !important; }
+html.print-pdf * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+html.print-pdf .nav-home, html.print-pdf .particles, html.print-pdf .reveal blockquote .copy-btn, html.print-pdf .reveal .cp .copy-ico { display: none !important; }
+html.print-pdf .reveal .slides .pdf-page { background: #fff; box-shadow: inset 0 0 0 2px #cfd4da; }
+html.print-pdf .reveal .slide-background, html.print-pdf .reveal .slide-background-content { background: none !important; }
+html.print-pdf .reveal, html.print-pdf .reveal p, html.print-pdf .reveal li, html.print-pdf .reveal h1, html.print-pdf .reveal h2,
+html.print-pdf .reveal table td, html.print-pdf .reveal blockquote { color: #1f2329 !important; }
+html.print-pdf .reveal strong, html.print-pdf .reveal a, html.print-pdf .reveal .eyebrow { color: #c4006a !important; }
+html.print-pdf .reveal p.caption { color: #4b5563 !important; } html.print-pdf .reveal p.caption .tag { background: #e5e7eb; }
+html.print-pdf .reveal table tr:hover td { background: none; }
+html.print-pdf .reveal .chart, html.print-pdf .reveal .diagram, html.print-pdf .reveal .loop, html.print-pdf .reveal .trifecta {
+  background: #37404c; border-radius: 14px; padding: 14px 18px; box-sizing: border-box; }
+html.print-pdf .reveal .chart.strip { padding: 8px 18px; }
+html.print-pdf .reveal .chart .fr { opacity: 0 !important; } html.print-pdf .reveal .chart .fr:last-of-type { opacity: 1 !important; }
+html.print-pdf .reveal .slide-number { color: #4b5563 !important; background: none !important; }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
 .reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart.strip { margin: 0 0 0.5em 0; } .reveal .chart.strip svg { max-height: 172px; } .reveal .chart .fr { opacity: 0; } .reveal .chart .fr.f1 { opacity: 1; } @media print { .reveal .chart .fr { opacity: 0 !important; } .reveal .chart .fr:last-of-type { opacity: 1 !important; } } .reveal .chart.tall svg { max-height: 520px; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
@@ -424,6 +440,7 @@ kbd {{ background: rgba(255,255,255,0.1); border-radius: 6px; padding: 1px 7px; 
 <a class="card" href="documents/Feuille%20de%20route%20de%20l%27animateur.pdf" target="_blank" rel="noopener"><span class="t">Feuille de route de l'animateur</span><span class="meta">PDF, 3 pages: quelle démo, quand, avec quels fichiers</span></a>
 <a class="card" href="notes.html" target="_blank" rel="noopener"><span class="t">Notes de l'orateur</span><span class="meta">Toutes les notes sur une page, pour téléphone ou tablette: le plan B sans écran d'orateur</span></a>
 <a class="card" href="documents/Notes%20de%20l%27orateur.pdf" target="_blank" rel="noopener"><span class="t">Notes de l'orateur (PDF)</span><span class="meta">PDF à imprimer: le plan B sur papier</span></a>
+<a class="card" href="documents/Slides%20%C3%A0%20imprimer.pdf" target="_blank" rel="noopener"><span class="t">Slides à imprimer</span><span class="meta">PDF: toutes les slides, deux par page A4, sur fond clair pour économiser l'encre</span></a>
 <a class="card" href="documents/Fiche%20de%20contexte%20pour%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Fiche de contexte pour l'IA</span><span class="meta">PDF, 2 pages: les questions, à remplir ou à imprimer</span></a>
 <a class="card" href="documents/%C3%80%20propos%20de%20moi.txt" download><span class="t">À propos de moi (fichier texte)</span><span class="meta">Les mêmes questions dans un fichier texte: vos réponses, à donner à l'IA</span></a>
 <a class="card" href="documents/Projet%20de%20r%C3%A8gles%20d%27usage%20de%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Projet de règles d'usage de l'IA</span><span class="meta">PDF, 1 page, à compléter</span></a>

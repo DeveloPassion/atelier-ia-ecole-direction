@@ -269,7 +269,7 @@ nav a.bonus { background: transparent; border: 1px solid rgba(255,255,255,0.3); 
 nav a.on, nav a.bonus.on { background: var(--magenta); border-color: var(--magenta); font-weight: 800; box-shadow: 0 0 0 2px #fff; }
 h2 { font-size: 1.2em; font-weight: 800; margin: 34px 0 2px; padding-top: 10px; border-top: 3px solid var(--magenta); }
 .pm { color: rgba(255,255,255,0.7); font-size: 0.8em; margin: 0 0 12px; }
-.pm a, .n a { color: var(--pink); }
+.pm a, .n a, .lead a { color: var(--pink); }
 .sl { margin: 0 0 10px; padding: 10px 12px; border-radius: 10px; background: var(--surface); }
 .sl.none { background: transparent; padding: 2px 12px; margin: 0 0 4px; color: rgba(255,255,255,0.55); font-size: 0.85em; }
 .k { display: inline-block; min-width: 1.9em; margin-right: 6px; padding: 0 6px; border-radius: 6px; background: var(--magenta); color: #fff; font-weight: 700;
@@ -345,7 +345,7 @@ def notes_page(parts):
     return ('<!doctype html>\n<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
             "<title>Notes de l'orateur - L'IA au service de l'école</title>\n<style>" + NOTES_CSS + "</style></head>\n<body><main>\n"
             "<h1>Notes de l'orateur</h1>\n"
-            '<p class="lead">Le plan B quand l\'écran d\'orateur ne marche pas: cette page sur un téléphone ou une tablette, à côté du PC. Ou imprimée. '
+            '<p class="lead">Le plan B quand l\'écran d\'orateur ne marche pas: cette page sur un téléphone ou une tablette, à côté du PC. Pour le papier: <a href="documents/Notes%20de%20l%27orateur.pdf" target="_blank" rel="noopener">la version PDF à imprimer</a>. '
             "Le numéro est celui de la slide dans sa partie, comme en bas à droite des slides.</p>\n"
             '<p id="wake"></p>\n<nav>' + nav + "</nav>\n" + "\n".join(body) + "\n</main>\n<script>" + NOTES_JS + "</script>\n</body></html>\n")
 
@@ -413,7 +413,8 @@ kbd {{ background: rgba(255,255,255,0.1); border-radius: 6px; padding: 1px 7px; 
 <a class="card" href="documents/Aide-m%C3%A9moire%20-%20Claude%20au%20quotidien.pdf" target="_blank" rel="noopener"><span class="t">Aide-mémoire: Claude au quotidien</span><span class="meta">PDF, 2 pages, à imprimer</span></a>
 <a class="card" href="documents/Avant%20l%27atelier%20-%20les%20pr%C3%A9requis.pdf" target="_blank" rel="noopener"><span class="t">Avant l'atelier: les prérequis</span><span class="meta">PDF, 1 page: Claude, Chrome, fichiers de démo</span></a>
 <a class="card" href="documents/Feuille%20de%20route%20de%20l%27animateur.pdf" target="_blank" rel="noopener"><span class="t">Feuille de route de l'animateur</span><span class="meta">PDF, 3 pages: quelle démo, quand, avec quels fichiers</span></a>
-<a class="card" href="notes.html" target="_blank" rel="noopener"><span class="t">Notes de l'orateur</span><span class="meta">Toutes les notes sur une page, pour téléphone, tablette ou papier: le plan B sans écran d'orateur</span></a>
+<a class="card" href="notes.html" target="_blank" rel="noopener"><span class="t">Notes de l'orateur</span><span class="meta">Toutes les notes sur une page, pour téléphone ou tablette: le plan B sans écran d'orateur</span></a>
+<a class="card" href="documents/Notes%20de%20l%27orateur.pdf" target="_blank" rel="noopener"><span class="t">Notes de l'orateur (PDF)</span><span class="meta">PDF à imprimer: le plan B sur papier</span></a>
 <a class="card" href="documents/Fiche%20de%20contexte%20pour%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Fiche de contexte pour l'IA</span><span class="meta">PDF, 2 pages: les questions, à remplir ou à imprimer</span></a>
 <a class="card" href="documents/%C3%80%20propos%20de%20moi.txt" download><span class="t">À propos de moi (fichier texte)</span><span class="meta">Les mêmes questions dans un fichier texte: vos réponses, à donner à l'IA</span></a>
 <a class="card" href="documents/Projet%20de%20r%C3%A8gles%20d%27usage%20de%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Projet de règles d'usage de l'IA</span><span class="meta">PDF, 1 page, à compléter</span></a>

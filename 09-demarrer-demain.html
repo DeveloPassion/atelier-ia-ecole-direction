@@ -68,7 +68,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 @media print { .reveal blockquote .copy-btn, .reveal .cp .copy-ico { display: none; } }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
-.reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart.tall svg { max-height: 520px; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
+.reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart.strip { margin: 0 0 0.5em 0; } .reveal .chart.strip svg { max-height: 172px; } .reveal .chart .fr { opacity: 0; } .reveal .chart .fr.f1 { opacity: 1; } @media print { .reveal .chart .fr { opacity: 0 !important; } .reveal .chart .fr:last-of-type { opacity: 1 !important; } } .reveal .chart.tall svg { max-height: 520px; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
 .gradient { background: linear-gradient(90deg, #ff1493, #e5007d, #a855f7); -webkit-background-clip: text; background-clip: text;
   color: transparent !important; filter: drop-shadow(0 0 18px rgba(255,20,147,0.35)); }
 .reveal .eyebrow { display: inline-block; border-radius: 999px; background: rgba(229,0,125,0.12); border: 1px solid rgba(229,0,125,0.35);
@@ -255,8 +255,16 @@ Sébastien Dubois
         });
       });
     }
+    // a chart with several frames (class "fr") shows them one after the other, three seconds each
+    function animateFrames() {
+      const charts = Array.from(document.querySelectorAll('.reveal .chart')).filter((c) => c.querySelector('.fr'));
+      if (!charts.length) return;
+      let step = 0;
+      const show = () => charts.forEach((c) => { const fr = c.querySelectorAll('.fr'); fr.forEach((g, i) => { g.style.opacity = i === step % fr.length ? 1 : 0; }); });
+      show(); setInterval(() => { step += 1; show(); }, 3000);
+    }
     Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
-      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); Reveal.layout(); });
+      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); animateFrames(); Reveal.layout(); });
   </script>
 </body>
 </html>

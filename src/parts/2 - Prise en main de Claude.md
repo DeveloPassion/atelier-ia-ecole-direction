@@ -9,14 +9,59 @@ Claude est l'IA de la société Anthropic. Le collège l'utilise en abonnement E
 
 ---
 ## L'application Claude
-- À gauche: vos conversations et vos projets
-- Au centre: la conversation
-- En bas: la zone de saisie, pour écrire ou **dicter** (le micro), joindre un fichier, et ses **réglages** (slide suivante)
-- Mon conseil: **dictez**. On parle bien plus vite qu'on écrit, et on donne naturellement plus de contexte
-- À droite: **les artefacts**, ce que Claude crée pour vous (document, présentation, tableau)
-- Dans les paramètres: les connecteurs, les skills, la mémoire
+<div class="chart tall"><svg viewBox="0 0 960 342" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma de l'application: les conversations à gauche, la conversation au centre, la zone de saisie en bas, les artefacts à droite">
+<rect x="20" y="10" width="920" height="322" rx="12" fill="#2b323c" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+<rect x="20" y="10" width="200" height="322" rx="12" fill="#333b47"/>
+<rect x="680" y="10" width="260" height="322" rx="12" fill="#333b47"/>
+<circle cx="46" cy="42" r="11" fill="#e5007d"/><text x="46" y="46.5" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">1</text>
+<text x="64" y="47" font-size="15" fill="#fff" font-weight="700" text-anchor="start">Vos conversations</text>
+<text x="64" y="66" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">et vos projets</text>
+<rect x="40" y="88" width="150" height="10" rx="5" fill="rgba(255,255,255,0.15)"/>
+<rect x="40" y="110" width="120" height="10" rx="5" fill="rgba(255,255,255,0.15)"/>
+<rect x="40" y="132" width="140" height="10" rx="5" fill="rgba(255,255,255,0.15)"/>
+<rect x="40" y="154" width="100" height="10" rx="5" fill="rgba(255,255,255,0.15)"/>
+<circle cx="46" cy="282" r="11" fill="#e5007d"/><text x="46" y="286.5" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">5</text>
+<text x="64" y="287" font-size="15" fill="#fff" font-weight="700" text-anchor="start">Les paramètres</text>
+<text x="40" y="307" font-size="12.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">connecteurs · skills · mémoire</text>
+<circle cx="256" cy="42" r="11" fill="#e5007d"/><text x="256" y="46.5" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">2</text>
+<text x="274" y="47" font-size="15" fill="#fff" font-weight="700" text-anchor="start">La conversation</text>
+<rect x="450" y="62" width="210" height="30" rx="14" fill="rgba(229,0,125,0.6)"/>
+<rect x="240" y="102" width="330" height="62" rx="14" fill="#475363"/>
+<rect x="256" y="118" width="250" height="9" rx="4" fill="rgba(255,255,255,0.3)"/>
+<rect x="256" y="136" width="200" height="9" rx="4" fill="rgba(255,255,255,0.3)"/>
+<rect x="240" y="196" width="420" height="120" rx="12" fill="#3f4957" stroke="#ff4fa8" stroke-width="2"/>
+<circle cx="266" cy="222" r="11" fill="#e5007d"/><text x="266" y="226.5" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">3</text>
+<text x="284" y="227" font-size="15" fill="#fff" font-weight="700" text-anchor="start">La zone de saisie</text>
+<text x="256" y="250" font-size="13.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">écrire · dicter au micro · joindre un fichier</text>
+<rect x="256" y="264" width="90" height="32" rx="16" fill="#2b323c" stroke="rgba(255,255,255,0.3)"/>
+<text x="301" y="285" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">Dossier</text>
+<rect x="354" y="264" width="90" height="32" rx="16" fill="#2b323c" stroke="rgba(255,255,255,0.3)"/>
+<text x="399" y="285" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">Modèle</text>
+<rect x="452" y="264" width="90" height="32" rx="16" fill="#2b323c" stroke="rgba(255,255,255,0.3)"/>
+<text x="497" y="285" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">Effort</text>
+<rect x="550" y="264" width="90" height="32" rx="16" fill="#2b323c" stroke="rgba(255,255,255,0.3)"/>
+<text x="595" y="285" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">Mode</text>
+<circle cx="706" cy="42" r="11" fill="#e5007d"/><text x="706" y="46.5" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">4</text>
+<text x="724" y="47" font-size="15" fill="#fff" font-weight="700" text-anchor="start">Les artefacts</text>
+<text x="700" y="66" font-size="13.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">ce que Claude crée pour vous</text>
+<rect x="700" y="84" width="220" height="230" rx="6" fill="#f5f5f5"/>
+<rect x="716" y="102" width="130" height="12" rx="3" fill="#37404c"/>
+<rect x="716" y="128" width="188" height="7" rx="3" fill="#b8bec6"/>
+<rect x="716" y="144" width="170" height="7" rx="3" fill="#b8bec6"/>
+<rect x="716" y="160" width="188" height="7" rx="3" fill="#b8bec6"/>
+<rect x="716" y="176" width="120" height="7" rx="3" fill="#b8bec6"/>
+<rect x="716" y="202" width="188" height="96" rx="4" fill="#fff" stroke="#b8bec6"/>
+<rect x="716" y="202" width="188" height="20" rx="4" fill="#e5007d"/>
+<line x1="716" y1="241" x2="904" y2="241" stroke="#b8bec6"/>
+<line x1="716" y1="260" x2="904" y2="260" stroke="#b8bec6"/>
+<line x1="716" y1="279" x2="904" y2="279" stroke="#b8bec6"/>
+<line x1="779" y1="202" x2="779" y2="298" stroke="#b8bec6"/>
+<line x1="842" y1="202" x2="842" y2="298" stroke="#b8bec6"/>
+</svg></div>
 
-Note: TOUR DE L'APPLICATION (4 min), chacun sur son PC. Montrer chaque zone en une phrase. Montrer le micro de la zone de saisie et dicter une demande en direct: c'est souvent ce qui surprend le plus. Ouvrir les paramètres et montrer Connecteurs et Skills sans rien changer. Montrer aussi l'extension Claude in Chrome dans Chrome.
+Mon conseil: **dictez**. On parle bien plus vite qu'on écrit, et on donne naturellement plus de contexte.
+
+Note: TOUR DE L'APPLICATION (4 min), chacun sur son PC. Suivre les numéros du dessin, et montrer chaque zone en une phrase: 1) les conversations et les projets, 2) la conversation, 3) la zone de saisie, pour écrire, dicter, joindre un fichier, avec ses réglages (slide suivante), 4) les artefacts: un document, une présentation, un tableau, 5) les paramètres: les connecteurs, les skills, la mémoire. Le dessin est un plan: l'écran réel change un peu selon la version. Montrer le micro de la zone de saisie et dicter une demande en direct: c'est souvent ce qui surprend le plus. Ouvrir les paramètres et montrer Connecteurs et Skills sans rien changer. Montrer aussi l'extension Claude in Chrome dans Chrome.
 
 ---
 ## Les réglages sous la zone de saisie

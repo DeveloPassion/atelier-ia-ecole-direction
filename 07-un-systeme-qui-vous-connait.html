@@ -68,7 +68,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 @media print { .reveal blockquote .copy-btn, .reveal .cp .copy-ico { display: none; } }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
-.reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart.tall svg { max-height: 520px; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
+.reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart.strip { margin: 0 0 0.5em 0; } .reveal .chart.strip svg { max-height: 172px; } .reveal .chart .fr { opacity: 0; } .reveal .chart .fr.f1 { opacity: 1; } @media print { .reveal .chart .fr { opacity: 0 !important; } .reveal .chart .fr:last-of-type { opacity: 1 !important; } } .reveal .chart.tall svg { max-height: 520px; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
 .gradient { background: linear-gradient(90deg, #ff1493, #e5007d, #a855f7); -webkit-background-clip: text; background-clip: text;
   color: transparent !important; filter: drop-shadow(0 0 18px rgba(255,20,147,0.35)); }
 .reveal .eyebrow { display: inline-block; border-radius: 999px; background: rgba(229,0,125,0.12); border: 1px solid rgba(229,0,125,0.35);
@@ -206,22 +206,64 @@ Note: ESSENTIEL.
 Note: À PASSER si le temps manque.
 ---
 ## Une note, un type, une place
-- Chaque note a **un seul type**: une sortie, une réunion, une personne, un projet, une tâche
-- Le type dit où la note est rangée: les sorties avec les sorties, les réunions avec les réunions
-- Le type dit aussi ce qu'elle contient: une sortie a une date, une classe, un prix, "payé" oui ou non
-- Une note peut être liée à beaucoup de choses (la classe, le budget, l'institutrice), mais elle n'a **qu'une place**
+<div class="chart"><svg viewBox="0 0 960 282" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: une note de type sortie, rangée à une seule place, avec ses propriétés et ses liens">
+<rect x="40" y="12" width="150" height="44" rx="8" fill="#475363"/>
+<text x="115" y="36" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">Sorties</text>
+<text x="204" y="36" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">une seule place</text>
+<rect x="40" y="44" width="430" height="226" rx="12" fill="#2b323c" stroke="rgba(255,255,255,0.45)" stroke-width="2"/>
+<text x="62" y="82" font-size="20" fill="#fff" font-weight="700" text-anchor="start">Sortie P4 au musée</text>
+<rect x="62" y="96" width="126" height="28" rx="14" fill="#e5007d"/>
+<text x="125" y="115" font-size="13.5" fill="#fff" font-weight="700" text-anchor="middle">type: sortie</text>
+<text x="200" y="115" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">un seul type</text>
+<text x="62" y="156" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">date</text>
+<text x="150" y="156" font-size="15" fill="#fff" font-weight="700" text-anchor="start">26 novembre 2026</text>
+<text x="62" y="183" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">classe</text>
+<text x="150" y="183" font-size="15" fill="#fff" font-weight="700" text-anchor="start">P4</text>
+<text x="62" y="210" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">prix</text>
+<text x="150" y="210" font-size="15" fill="#fff" font-weight="700" text-anchor="start">12 € par enfant</text>
+<text x="62" y="237" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">payé</text>
+<text x="150" y="237" font-size="15" fill="#fbbf24" font-weight="700" text-anchor="start">non</text>
+<text x="750" y="30" font-size="14" fill="#ff4fa8" font-weight="700" text-anchor="middle">LIÉE À</text>
+<line x1="470" y1="157" x2="600" y2="71" stroke="#ff4fa8" stroke-width="2"/>
+<rect x="600" y="50" width="300" height="42" rx="21" fill="#475363"/>
+<text x="750" y="77" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">La classe de P4</text>
+<line x1="470" y1="157" x2="600" y2="139" stroke="#ff4fa8" stroke-width="2"/>
+<rect x="600" y="118" width="300" height="42" rx="21" fill="#475363"/>
+<text x="750" y="145" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">Thibault Marchal, instituteur</text>
+<line x1="470" y1="157" x2="600" y2="207" stroke="#ff4fa8" stroke-width="2"/>
+<rect x="600" y="186" width="300" height="42" rx="21" fill="#475363"/>
+<text x="750" y="213" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">Le budget des sorties</text>
+<text x="750" y="262" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">des liens, autant qu'on veut</text>
+</svg></div>
+
+- Le type dit **où la note est rangée** et **ce qu'elle contient**
 - La liste "toutes les sorties de P4" **se fait toute seule**: pas besoin d'un dossier par classe
 
 Note: À PASSER si le temps manque. Lien avec la démo 3: on a rangé des fichiers existants par classe. Pour des documents, c'est très bien, et la plupart ne doivent plus bouger. Dans le système, chaque sortie est une note de type "sortie" avec "classe: P4". On n'a plus à choisir un dossier: la liste par classe, par mois ou "pas encore payé" se fait toute seule. Et l'IA sait où chercher et ce qu'elle va trouver.
 ---
 ## Ce que l'IA lit d'abord
-**La note de projet**. En une page:
+**La note de projet**, en une page:
 
-1. Ce que c'est, et pourquoi
-2. Où on en est: un statut (actif, en pause, terminé)
-3. La prochaine action: les tâches, avec leurs dates
-4. Les décisions prises
-5. Les personnes et les documents
+<div class="chart"><svg viewBox="0 0 960 316" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: une note de projet en une page, avec cinq rubriques numérotées">
+<rect x="140" y="8" width="680" height="300" rx="10" fill="#f7f7f5"/>
+<text x="170" y="42" font-size="18" fill="#1f2329" font-weight="700" text-anchor="start">Sortie P4 au musée des Sciences naturelles</text>
+<text x="170" y="62" font-size="13" fill="#6b7480" font-weight="400" text-anchor="start">Note de projet</text>
+<circle cx="182" cy="92" r="11" fill="#e5007d"/><text x="182" y="96.5" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">1</text>
+<text x="202" y="97" font-size="15" fill="#1f2329" font-weight="700" text-anchor="start">Ce que c'est, et pourquoi</text>
+<text x="202" y="116" font-size="13.5" fill="#4b5563" font-weight="400" text-anchor="start">La visite du musée pour les 22 élèves de 4e primaire</text>
+<circle cx="182" cy="136" r="11" fill="#e5007d"/><text x="182" y="140.5" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">2</text>
+<text x="202" y="141" font-size="15" fill="#1f2329" font-weight="700" text-anchor="start">Où on en est</text>
+<text x="202" y="160" font-size="13.5" fill="#4b5563" font-weight="400" text-anchor="start">Statut: actif</text>
+<circle cx="182" cy="180" r="11" fill="#e5007d"/><text x="182" y="184.5" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">3</text>
+<text x="202" y="185" font-size="15" fill="#1f2329" font-weight="700" text-anchor="start">La prochaine action</text>
+<text x="202" y="204" font-size="13.5" fill="#4b5563" font-weight="400" text-anchor="start">Le mot aux parents avant le 12/11, puis le car avant le 13/11</text>
+<circle cx="182" cy="224" r="11" fill="#e5007d"/><text x="182" y="228.5" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">4</text>
+<text x="202" y="229" font-size="15" fill="#1f2329" font-weight="700" text-anchor="start">Les décisions</text>
+<text x="202" y="248" font-size="13.5" fill="#4b5563" font-weight="400" text-anchor="start">12 euros par enfant, à payer avant le 19/11</text>
+<circle cx="182" cy="268" r="11" fill="#e5007d"/><text x="182" y="272.5" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">5</text>
+<text x="202" y="273" font-size="15" fill="#1f2329" font-weight="700" text-anchor="start">Les personnes et les documents</text>
+<text x="202" y="292" font-size="13.5" fill="#4b5563" font-weight="400" text-anchor="start">Thibault Marchal, instituteur · le devis du car</text>
+</svg></div>
 
 Pour l'IA, ce sont des informations à lire, **pas un texte à deviner**.
 
@@ -247,10 +289,38 @@ Le corrigé complet est la question 6 de "DEMO - À demander.txt".
 ## Avant et après
 La sortie de P4 au musée, le 26 novembre.
 
-- Sans système: **dix lignes de contexte** à chaque demande, et des oublis
-- Avec un système: <span class="cp">"Prépare la sortie P4 du 26 novembre"</span>
-- Il connaît la classe, l'institutrice, le budget, le plafond des frais, le modèle de mot aux parents
-- Il ajoute l'encodage sur IT School à vos tâches
+<div class="chart"><svg viewBox="0 0 960 258" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: sans système, dix lignes de contexte à chaque demande; avec un système, une seule ligne">
+<text x="230" y="24" font-size="15" fill="#fbbf24" font-weight="700" text-anchor="middle">SANS SYSTÈME</text>
+<rect x="30" y="38" width="400" height="184" rx="14" fill="#475363"/>
+<rect x="50" y="56" width="340" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="74" width="360" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="92" width="300" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="110" width="350" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="128" width="330" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="146" width="360" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="164" width="280" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="182" width="345" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="200" width="220" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<text x="230" y="246" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">dix lignes de contexte, à chaque demande</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(462,112) scale(1.0)" fill="#e5007d"/>
+<text x="730" y="24" font-size="15" fill="#4ade80" font-weight="700" text-anchor="middle">AVEC UN SYSTÈME</text>
+<rect x="520" y="38" width="420" height="46" rx="14" fill="#e5007d"/>
+<text x="730" y="67" font-size="16.5" fill="#fff" font-weight="700" text-anchor="middle">Prépare la sortie P4 du 26 novembre</text>
+<text x="730" y="114" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Il connaît déjà:</text>
+<rect x="528" y="126" width="112" height="32" rx="16" fill="#475363"/>
+<text x="584.0" y="147" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">la classe</text>
+<rect x="650" y="126" width="130" height="32" rx="16" fill="#475363"/>
+<text x="715.0" y="147" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">l'instituteur</text>
+<rect x="790" y="126" width="142" height="32" rx="16" fill="#475363"/>
+<text x="861.0" y="147" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">le budget</text>
+<rect x="545" y="166" width="190" height="32" rx="16" fill="#475363"/>
+<text x="640.0" y="187" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">le plafond des frais</text>
+<rect x="745" y="166" width="170" height="32" rx="16" fill="#475363"/>
+<text x="830.0" y="187" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">le modèle de mot</text>
+<text x="730" y="246" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">et il ajoute l'encodage sur IT School à vos tâches</text>
+</svg></div>
+
+Avec un système, la demande tient en une ligne: <span class="cp">"Prépare la sortie P4 du 26 novembre"</span>
 
 Note: ESSENTIEL.
 ---
@@ -291,8 +361,23 @@ Note: À PASSER si le temps manque.
 Note: À PASSER si le temps manque.
 ---
 ## Louer ou posséder
-- Les projets Claude et la mémoire de Claude: **un meublé loué**. Pratique, mais rien n'est à vous
-- Votre base de connaissances: **une maison à vous**. Vous la meublez une fois, et vous la gardez
+<div class="chart"><svg viewBox="0 0 960 284" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: un meublé loué chez Anthropic, ou une maison à vous, votre base de connaissances">
+<polygon points="80,112 230,36 380,112" fill="none" stroke="rgba(255,255,255,0.65)" stroke-width="3" stroke-dasharray="9 7"/>
+<rect x="96" y="112" width="268" height="124" rx="0" fill="none" stroke="rgba(255,255,255,0.65)" stroke-width="3" stroke-dasharray="9 7"/>
+<text x="230" y="96" font-size="14.5" fill="#a855f7" font-weight="700" text-anchor="middle">chez Anthropic</text>
+<text x="230" y="150" font-size="21" fill="#fff" font-weight="700" text-anchor="middle">Un meublé loué</text>
+<text x="230" y="180" font-size="15.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">les projets Claude</text>
+<text x="230" y="203" font-size="15.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">la mémoire de Claude</text>
+<text x="230" y="268" font-size="15.5" fill="#fbbf24" font-weight="700" text-anchor="middle">Pratique, mais rien n'est à vous.</text>
+<text x="480" y="172" font-size="22" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">ou</text>
+<polygon points="580,112 730,36 880,112" fill="#e5007d"/>
+<rect x="596" y="112" width="268" height="124" rx="0" fill="#e5007d"/>
+<text x="730" y="96" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">chez vous</text>
+<text x="730" y="150" font-size="21" fill="#fff" font-weight="700" text-anchor="middle">Une maison à vous</text>
+<text x="730" y="180" font-size="15.5" fill="#fff" font-weight="400" text-anchor="middle">votre base de connaissances</text>
+<text x="730" y="203" font-size="15.5" fill="#fff" font-weight="400" text-anchor="middle">des fichiers texte, sur votre PC</text>
+<text x="730" y="268" font-size="15.5" fill="#ff4fa8" font-weight="700" text-anchor="middle">Meublée une fois, et vous la gardez.</text>
+</svg></div>
 
 Note: ESSENTIEL.
 ---
@@ -424,8 +509,16 @@ Note: ESSENTIEL. D'abord une carte du dossier OneDrive, sans rien déplacer. La 
         });
       });
     }
+    // a chart with several frames (class "fr") shows them one after the other, three seconds each
+    function animateFrames() {
+      const charts = Array.from(document.querySelectorAll('.reveal .chart')).filter((c) => c.querySelector('.fr'));
+      if (!charts.length) return;
+      let step = 0;
+      const show = () => charts.forEach((c) => { const fr = c.querySelectorAll('.fr'); fr.forEach((g, i) => { g.style.opacity = i === step % fr.length ? 1 : 0; }); });
+      show(); setInterval(() => { step += 1; show(); }, 3000);
+    }
     Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
-      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); Reveal.layout(); });
+      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); animateFrames(); Reveal.layout(); });
   </script>
 </body>
 </html>

@@ -13,6 +13,38 @@ L'IA est un outil puissant. Quelques règles évitent les vrais problèmes.
 
 Note: Court mais important. C'est le risque le plus fréquent dans les écoles: quelqu'un colle un document dans l'outil gratuit qu'il a sur son téléphone.
 ---
+## Le chemin de vos données
+<div class="chart"><svg viewBox="0 0 960 264" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: votre demande, les documents joints et les fichiers lus partent de votre PC vers le fournisseur, aux États-Unis">
+<rect x="20" y="20" width="300" height="228" rx="14" fill="rgba(74,222,128,0.10)" stroke="#4ade80" stroke-width="2"/>
+<text x="170" y="48" font-size="15" fill="#4ade80" font-weight="700" text-anchor="middle">CHEZ VOUS</text>
+<text x="170" y="78" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">Votre PC</text>
+<rect x="42" y="94" width="256" height="36" rx="10" fill="#475363"/>
+<text x="170" y="118" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Votre base de connaissances</text>
+<rect x="42" y="138" width="256" height="36" rx="10" fill="#475363"/>
+<text x="170" y="162" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Vos dossiers, votre OneDrive</text>
+<text x="170" y="204" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Claude ne voit que le dossier</text>
+<text x="170" y="223" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">que vous lui ouvrez</text>
+<text x="470" y="62" font-size="15" fill="#ff4fa8" font-weight="700" text-anchor="middle">CE QUI PART</text>
+<text x="470" y="94" font-size="15.5" fill="#fff" font-weight="400" text-anchor="middle">votre demande</text>
+<text x="470" y="119" font-size="15.5" fill="#fff" font-weight="400" text-anchor="middle">les documents joints</text>
+<text x="470" y="144" font-size="15.5" fill="#fff" font-weight="400" text-anchor="middle">les fichiers que Claude lit</text>
+<line x1="340" y1="178" x2="586" y2="178" stroke="#e5007d" stroke-width="6" stroke-linecap="round"/>
+<polygon points="584,164 610,178 584,192" fill="#e5007d"/>
+<rect x="630" y="20" width="310" height="228" rx="14" fill="rgba(229,0,125,0.14)" stroke="#ff4fa8" stroke-width="2"/>
+<text x="785" y="48" font-size="15" fill="#ff4fa8" font-weight="700" text-anchor="middle">CHEZ LE FOURNISSEUR</text>
+<text x="785" y="78" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">Anthropic, aux États-Unis</text>
+<text x="785" y="110" font-size="15" fill="#fff" font-weight="400" text-anchor="middle">traité et stocké là-bas</text>
+<text x="785" y="135" font-size="15" fill="#fff" font-weight="400" text-anchor="middle">encadré par un contrat: le DPA</text>
+<text x="785" y="160" font-size="15" fill="#fff" font-weight="400" text-anchor="middle">gardé un certain temps</text>
+<text x="785" y="180" font-size="13.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">(Fable: au moins 30 jours)</text>
+<text x="785" y="222" font-size="14" fill="#fbbf24" font-weight="700" text-anchor="middle">Le collège reste responsable (RGPD)</text>
+</svg></div>
+
+Vous choisissez ce qui part: **le dossier de travail**, et **ce que vous joignez**.
+
+Note: Lire le dessin de gauche à droite. À gauche, ce qui reste chez vous: Claude ne voit que le dossier que vous lui ouvrez. Au milieu, ce qui part à chaque demande. À droite, où cela arrive, et sous quelles règles. Le détail est sur la slide suivante.
+
+---
 ## Où vont vos données
 - Chaque demande est **traitée et stockée** chez le fournisseur. Chez Anthropic, le stockage est **aux États-Unis**; pas d'option Europe dans l'abonnement Entreprise, selon sa documentation
 - Le **DPA** (accord de traitement des données, RGPD article 28): le contrat qui encadre ce que le fournisseur fait de vos données. À demander au collège
@@ -20,7 +52,7 @@ Note: Court mais important. C'est le risque le plus fréquent dans les écoles: 
 - Le **RGPD** s'applique toujours: le collège reste responsable. L'**AI Act** ajoute la formation du personnel et des règles pour les usages à haut risque (évaluer des élèves)
 - Un pouce levé ou baissé sur une réponse peut **autoriser une conservation plus longue**: évitez-le avec des données sensibles
 
-Note: Vérifié le 07/11/2026 dans la documentation d'Anthropic: "workspace geo" (stockage) n'existe qu'en "us"; le traitement ("inference geo") est "global" par défaut ou "us". Les options en Europe passent par AWS Bedrock (Francfort) ou Google Cloud, hors abonnement Claude Enterprise. Fable 5 et 5.1 sont des "Covered Models": 30 jours de conservation minimum, revue automatique de sécurité, pas de ZDR pour Enterprise. À dire simplement: ce n'est pas une raison de ne pas utiliser Claude, mais une raison de ne pas y mettre n'importe quelle donnée, et de faire valider par le DPO. Questions à poser au collège: le DPA est-il signé? Qui est l'admin? Quelles données sont permises?
+Note: Vérifié le 07/11/2026 dans la documentation d'Anthropic: "workspace geo" (stockage) n'existe qu'en "us"; le traitement ("inference geo") est "global" par défaut ou "us". Les options en Europe passent par AWS Bedrock (Francfort) ou Google Cloud, hors abonnement Claude Enterprise. Fable 5, 5.1 et 5.2 sont des "Covered Models": 30 jours de conservation minimum, revue automatique de sécurité, pas de ZDR pour Enterprise. À dire simplement: ce n'est pas une raison de ne pas utiliser Claude, mais une raison de ne pas y mettre n'importe quelle donnée, et de faire valider par le DPO. Questions à poser au collège: le DPA est-il signé? Qui est l'admin? Quelles données sont permises?
 
 ---
 ## La triple menace

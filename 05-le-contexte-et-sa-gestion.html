@@ -68,7 +68,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 @media print { .reveal blockquote .copy-btn, .reveal .cp .copy-ico { display: none; } }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
-.reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart.tall svg { max-height: 520px; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
+.reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart.strip { margin: 0 0 0.5em 0; } .reveal .chart.strip svg { max-height: 172px; } .reveal .chart .fr { opacity: 0; } .reveal .chart .fr.f1 { opacity: 1; } @media print { .reveal .chart .fr { opacity: 0 !important; } .reveal .chart .fr:last-of-type { opacity: 1 !important; } } .reveal .chart.tall svg { max-height: 520px; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
 .gradient { background: linear-gradient(90deg, #ff1493, #e5007d, #a855f7); -webkit-background-clip: text; background-clip: text;
   color: transparent !important; filter: drop-shadow(0 0 18px rgba(255,20,147,0.35)); }
 .reveal .eyebrow { display: inline-block; border-radius: 999px; background: rgba(229,0,125,0.12); border: 1px solid rgba(229,0,125,0.35);
@@ -137,11 +137,34 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 Le contexte, c'est **tout ce que Claude voit** au moment de répondre.
 ---
 ## Ce que Claude voit
-- Vos instructions et votre prompt
-- La conversation jusqu'ici
-- Les documents joints
-- Les résultats des outils (une page web, un fichier lu)
-- Le reste, **il ne le connaît pas**
+<div class="chart"><svg viewBox="0 0 960 284" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: Claude voit vos instructions, la conversation, les documents joints et les résultats des outils. Le reste est hors de sa vue">
+<rect x="250" y="16" width="460" height="252" rx="18" fill="rgba(229,0,125,0.14)" stroke="#ff4fa8" stroke-width="3"/>
+<text x="480" y="46" font-size="15" fill="#ff4fa8" font-weight="700" text-anchor="middle">CE QUE CLAUDE VOIT</text>
+<text x="125" y="46" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="700" text-anchor="middle">HORS DE SA VUE</text>
+<text x="835" y="46" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="700" text-anchor="middle">HORS DE SA VUE</text>
+<rect x="276" y="62" width="408" height="40" rx="10" fill="#475363"/>
+<text x="480" y="88" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Vos instructions et votre demande</text>
+<rect x="276" y="112" width="408" height="40" rx="10" fill="#475363"/>
+<text x="480" y="138" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">La conversation jusqu'ici</text>
+<rect x="276" y="162" width="408" height="40" rx="10" fill="#475363"/>
+<text x="480" y="188" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Les documents joints</text>
+<rect x="276" y="212" width="408" height="40" rx="10" fill="#475363"/>
+<text x="480" y="238" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Les résultats des outils (une page, un fichier)</text>
+<rect x="20" y="72" width="210" height="40" rx="10" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="125" y="97" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Ce que vous avez en tête</text>
+<rect x="20" y="132" width="210" height="40" rx="10" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="125" y="157" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Vos mails</text>
+<rect x="20" y="192" width="210" height="40" rx="10" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="125" y="217" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">La réunion d'hier</text>
+<rect x="730" y="72" width="210" height="40" rx="10" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="835" y="97" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Les habitudes de l'école</text>
+<rect x="730" y="132" width="210" height="40" rx="10" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="835" y="157" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Vos autres conversations</text>
+<rect x="730" y="192" width="210" height="40" rx="10" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="835" y="217" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Vos autres dossiers</text>
+</svg></div>
+
+Le reste, **il ne le connaît pas**. Sauf si vous le lui donnez.
 
 Note: ESSENTIEL.
 ---
@@ -318,14 +341,25 @@ Note: À PASSER si le temps manque. Ce schéma n'est pas un résultat de benchma
 
 Note: À PASSER si le temps manque, sauf l'écran de l'utilisation: le montrer en direct (dans les paramètres; la documentation en anglais dit "Settings > Usage", le nom exact dépend de la version et de la langue). À vérifier avec l'admin avant la séance: le contrat exact (usage au volume, ou ancien contrat avec un quota inclus), les limites par personne, et si chacun voit bien sa consommation. Si le contrat est un ancien contrat avec quota, adapter la deuxième ligne: "les tokens comptent dans votre quota". Ordre de grandeur pour la salle, sans chiffres précis: une question courte coûte très peu; une circulaire de 20 pages lue en effort haut coûte bien plus.
 ---
-## L'entonnoir du contexte
-```mermaid
-flowchart TD
-  A[Pas de contexte] --> A2[Réponse générique]
-  B[Trop peu] --> B2[Réponse vague]
-  C[Le bon contexte] --> C2[Réponse précise et utile]
-  D[Trop de contexte] --> D2[Confusion et erreurs]
-```
+## Le bon dosage de contexte
+<div class="chart"><svg viewBox="0 0 960 296" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: la qualité de la réponse monte avec le contexte, puis baisse quand il y en a trop">
+<rect x="80" y="30" width="210" height="220" rx="0" fill="rgba(255,255,255,0.05)"/>
+<rect x="290" y="30" width="420" height="220" rx="0" fill="rgba(74,222,128,0.12)"/>
+<rect x="710" y="30" width="190" height="220" rx="0" fill="rgba(255,20,147,0.13)"/>
+<line x1="80" y1="250" x2="900" y2="250" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+<line x1="80" y1="30" x2="80" y2="250" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+<path d="M80,236 C240,232 320,64 500,58 C690,54 780,150 900,214" fill="none" stroke="#ff4fa8" stroke-width="5" stroke-linecap="round"/>
+<text x="185" y="110" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">Trop peu</text>
+<text x="185" y="134" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">réponse générique</text>
+<text x="185" y="152" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">ou vague</text>
+<text x="500" y="150" font-size="21" fill="#4ade80" font-weight="700" text-anchor="middle">Le bon contexte</text>
+<text x="500" y="176" font-size="15" fill="#fff" font-weight="400" text-anchor="middle">réponse précise et utile</text>
+<text x="805" y="76" font-size="18" fill="#ff4fa8" font-weight="700" text-anchor="middle">Trop</text>
+<text x="805" y="98" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">confusion,</text>
+<text x="805" y="116" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">erreurs</text>
+<text x="490" y="284" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Quantité de contexte</text>
+<text x="46" y="140" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle" transform="rotate(-90 46 140)">Qualité de la réponse</text>
+</svg></div>
 
 Note: À PASSER si le temps manque.
 ---
@@ -339,16 +373,30 @@ Note: À PASSER si le temps manque.
 Note: À PASSER si le temps manque.
 ---
 ## Cinq niveaux
-1. Rien: on pose une question
-2. Du contexte dans la demande: mieux, mais on se répète
-3. La mémoire de Claude: il retient quelques éléments, de façon peu fiable
-4. Les projets Claude: des instructions et des documents permanents
-5. Une base de connaissances **à vous**, que l'IA utilise
-
-```mermaid
-flowchart LR
-  N1[1. Rien] --> N2[2. Dans la demande] --> N3[3. Mémoire] --> N4[4. Projets Claude] --> N5[5. Votre base]
-```
+<div class="chart"><svg viewBox="0 0 960 334" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: cinq niveaux de contexte en escalier, de rien jusqu'à votre base de connaissances">
+<rect x="20" y="248" width="176" height="52" rx="8" fill="#475363"/>
+<text x="108" y="276" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">1. Rien</text>
+<text x="108" y="220" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">on pose</text>
+<text x="108" y="238" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">une question</text>
+<rect x="206" y="206" width="176" height="94" rx="8" fill="#475363"/>
+<text x="294" y="234" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">2. Dans la demande</text>
+<text x="294" y="178" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">mieux, mais</text>
+<text x="294" y="196" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">on se répète</text>
+<rect x="392" y="164" width="176" height="136" rx="8" fill="rgba(168,85,247,0.38)"/>
+<text x="480" y="192" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">3. La mémoire</text>
+<text x="480" y="136" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">peu fiable,</text>
+<text x="480" y="154" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">un peu au hasard</text>
+<rect x="578" y="122" width="176" height="178" rx="8" fill="rgba(168,85,247,0.38)"/>
+<text x="666" y="150" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">4. Les projets Claude</text>
+<text x="666" y="94" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">permanents, mais</text>
+<text x="666" y="112" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">chez Anthropic</text>
+<rect x="764" y="80" width="176" height="220" rx="8" fill="#e5007d"/>
+<text x="852" y="108" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">5. Votre base</text>
+<text x="852" y="52" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">à vous, et</text>
+<text x="852" y="70" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">pour toute IA</text>
+<text x="573" y="324" font-size="15" fill="#a855f7" font-weight="700" text-anchor="middle">un contexte loué</text>
+<text x="852" y="324" font-size="15" fill="#ff4fa8" font-weight="700" text-anchor="middle">un contexte à vous</text>
+</svg></div>
 
 Note: ESSENTIEL.
 ---
@@ -379,6 +427,58 @@ Note: ESSENTIEL. C'est ici qu'on le dit avec force, une seule fois: la mémoire 
 - Tout ce qui doit durer y va. **Une seule source de vérité**
 
 Note: ESSENTIEL. C'est le fil rouge de la suite: la partie 7 montre à quoi ressemble cette base. Dans l'application Claude, "démarrer dans le dossier" = choisir ce dossier comme dossier de travail.
+---
+## Une longue conversation, ou dix courtes
+<div class="chart tall"><svg viewBox="0 0 960 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: une longue conversation mélange les sujets, des conversations courtes gardent un sujet chacune">
+<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0.25" stop-color="#37404c" stop-opacity="0"/><stop offset="1" stop-color="#b3003c" stop-opacity="0.55"/></linearGradient></defs>
+<text x="230" y="28" font-size="15" fill="#fbbf24" font-weight="700" text-anchor="middle">UNE LONGUE CONVERSATION</text>
+<line x1="480" y1="14" x2="480" y2="322" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+<rect x="70" y="44" width="160" height="23" rx="11" fill="#60a5fa" opacity="0.8"/>
+<text x="150" y="60" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">le mail</text>
+<rect x="230" y="72" width="160" height="23" rx="11" fill="#4ade80" opacity="0.8"/>
+<text x="310" y="88" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">le tableau</text>
+<rect x="70" y="100" width="160" height="23" rx="11" fill="#60a5fa" opacity="0.8"/>
+<text x="150" y="116" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">encore le mail</text>
+<rect x="230" y="128" width="160" height="23" rx="11" fill="#a855f7" opacity="0.8"/>
+<text x="310" y="144" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">la circulaire</text>
+<rect x="70" y="156" width="160" height="23" rx="11" fill="#4ade80" opacity="0.8"/>
+<text x="150" y="172" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">le tableau?</text>
+<rect x="230" y="184" width="160" height="23" rx="11" fill="#60a5fa" opacity="0.8"/>
+<text x="310" y="200" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">le mail, version 4</text>
+<rect x="70" y="212" width="160" height="23" rx="11" fill="#a855f7" opacity="0.8"/>
+<text x="150" y="228" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">et la circulaire</text>
+<rect x="230" y="240" width="160" height="23" rx="11" fill="#4ade80" opacity="0.8"/>
+<text x="310" y="256" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">quel tableau?</text>
+<rect x="70" y="268" width="160" height="23" rx="11" fill="#60a5fa" opacity="0.8"/>
+<text x="150" y="284" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">...</text>
+<rect x="50" y="40" width="360" height="256" rx="12" fill="url(#fade)"/>
+<text x="230" y="318" font-size="14.5" fill="#fbbf24" font-weight="700" text-anchor="middle">tout se mélange, tout est relu, il invente</text>
+<text x="730" y="28" font-size="15" fill="#4ade80" font-weight="700" text-anchor="middle">DES CONVERSATIONS COURTES</text>
+<text x="590" y="60" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Le mail</text>
+<rect x="530" y="70" width="120" height="23" rx="11" fill="#60a5fa" opacity="0.9"/>
+<rect x="530" y="98" width="120" height="23" rx="11" fill="#60a5fa" opacity="0.9"/>
+<rect x="530" y="126" width="120" height="23" rx="11" fill="#60a5fa" opacity="0.9"/>
+<text x="590" y="180" font-size="24" fill="#4ade80" font-weight="700" text-anchor="middle">✓</text>
+<text x="730" y="60" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Le tableau</text>
+<rect x="670" y="70" width="120" height="23" rx="11" fill="#4ade80" opacity="0.9"/>
+<rect x="670" y="98" width="120" height="23" rx="11" fill="#4ade80" opacity="0.9"/>
+<rect x="670" y="126" width="120" height="23" rx="11" fill="#4ade80" opacity="0.9"/>
+<text x="730" y="180" font-size="24" fill="#4ade80" font-weight="700" text-anchor="middle">✓</text>
+<text x="870" y="60" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">La circulaire</text>
+<rect x="810" y="70" width="120" height="23" rx="11" fill="#a855f7" opacity="0.9"/>
+<rect x="810" y="98" width="120" height="23" rx="11" fill="#a855f7" opacity="0.9"/>
+<rect x="810" y="126" width="120" height="23" rx="11" fill="#a855f7" opacity="0.9"/>
+<text x="870" y="180" font-size="24" fill="#4ade80" font-weight="700" text-anchor="middle">✓</text>
+<text x="730" y="222" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Pour continuer un travail:</text>
+<rect x="530" y="236" width="210" height="36" rx="18" fill="none" stroke="#ff4fa8" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="635" y="259" font-size="14.5" fill="#ff4fa8" font-weight="700" text-anchor="middle">un prompt de passage</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(748,238) scale(1.0)" fill="#e5007d"/>
+<rect x="782" y="236" width="150" height="36" rx="18" fill="#a855f7"/>
+<text x="857" y="259" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">nouvelle conversation</text>
+<text x="730" y="318" font-size="14.5" fill="#4ade80" font-weight="700" text-anchor="middle">un sujet, un résultat, puis on repart</text>
+</svg></div>
+
+Note: ESSENTIEL. À gauche, une seule conversation pour tout: les sujets se mélangent, Claude relit tout à chaque message, et il finit par inventer. À droite, une conversation par sujet: elle est courte, elle donne un résultat, et on repart. Pour continuer un travail ailleurs: un prompt de passage. Les règles sont sur la slide suivante.
 ---
 ## Des conversations courtes, sur un seul point
 **Évitez à tout prix les conversations longues et "fourre-tout".**
@@ -464,8 +564,16 @@ Note: Pendant la pause, ouvrir les fichiers des démos et le dossier "Plan B - r
         });
       });
     }
+    // a chart with several frames (class "fr") shows them one after the other, three seconds each
+    function animateFrames() {
+      const charts = Array.from(document.querySelectorAll('.reveal .chart')).filter((c) => c.querySelector('.fr'));
+      if (!charts.length) return;
+      let step = 0;
+      const show = () => charts.forEach((c) => { const fr = c.querySelectorAll('.fr'); fr.forEach((g, i) => { g.style.opacity = i === step % fr.length ? 1 : 0; }); });
+      show(); setInterval(() => { step += 1; show(); }, 3000);
+    }
     Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
-      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); Reveal.layout(); });
+      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); animateFrames(); Reveal.layout(); });
   </script>
 </body>
 </html>

@@ -68,7 +68,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 @media print { .reveal blockquote .copy-btn, .reveal .cp .copy-ico { display: none; } }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
-.reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart.tall svg { max-height: 520px; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
+.reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart.strip { margin: 0 0 0.5em 0; } .reveal .chart.strip svg { max-height: 172px; } .reveal .chart .fr { opacity: 0; } .reveal .chart .fr.f1 { opacity: 1; } @media print { .reveal .chart .fr { opacity: 0 !important; } .reveal .chart .fr:last-of-type { opacity: 1 !important; } } .reveal .chart.tall svg { max-height: 520px; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
 .gradient { background: linear-gradient(90deg, #ff1493, #e5007d, #a855f7); -webkit-background-clip: text; background-clip: text;
   color: transparent !important; filter: drop-shadow(0 0 18px rgba(255,20,147,0.35)); }
 .reveal .eyebrow { display: inline-block; border-radius: 999px; background: rgba(229,0,125,0.12); border: 1px solid rgba(229,0,125,0.35);
@@ -186,8 +186,61 @@ L'IA générative: une IA qui **crée du contenu** (texte, image, son, vidéo, c
 Note: À PASSER si le temps manque. Quatre idées en une image. La demande: vos instructions, plus le contexte. Le fournisseur: la société qui fait tourner le modèle (ici Anthropic); c'est par lui que passent votre compte, vos données et la facture. Le modèle: des milliards de paramètres, réglés pendant l'entraînement; il calcule la suite la plus probable, donc il ne donne pas deux fois exactement la même réponse. La réponse: du texte, mais aussi une image, du code, une vidéo. Les tailles sont des ordres de grandeur, d'un petit modèle qui tourne sur un PC aux plus gros modèles.
 ---
 ## Comment ça marche, sans maths
-- Un LLM (grand modèle de langage) **prédit la suite la plus probable** d'un texte
-- Il écrit morceau par morceau. Ces morceaux s'appellent des **tokens** (environ trois quarts d'un mot)
+<div class="chart"><svg viewBox="0 0 960 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animation: le modèle ajoute le morceau le plus probable, puis il recommence">
+<text x="740" y="138" font-size="19" fill="#ff4fa8" font-weight="700" text-anchor="start">Il choisit,</text>
+<text x="740" y="166" font-size="19" fill="#ff4fa8" font-weight="700" text-anchor="start">il ajoute,</text>
+<text x="740" y="194" font-size="19" fill="#ff4fa8" font-weight="700" text-anchor="start">il recommence.</text>
+<g class="fr f1">
+<text x="20" y="44" font-size="25" fill="#fff" font-weight="700">Chers parents, la sortie aura lieu le<tspan fill="#ff4fa8"></tspan><tspan fill="rgba(255,255,255,0.74)"> ▌</tspan></text>
+<text x="20" y="92" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">Le morceau suivant, du plus probable au moins probable:</text>
+<text x="150" y="124" font-size="17" fill="#fff" font-weight="700" text-anchor="end">jeudi</text>
+<rect x="165" y="108" width="239.20000000000002" height="21" rx="5" fill="#ff4fa8"/>
+<text x="414.20000000000005" y="124" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">46 %</text>
+<text x="150" y="156" font-size="17" fill="#fff" font-weight="400" text-anchor="end">vendredi</text>
+<rect x="165" y="140" width="114.4" height="21" rx="5" fill="#475363"/>
+<text x="289.4" y="156" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">22 %</text>
+<text x="150" y="188" font-size="17" fill="#fff" font-weight="400" text-anchor="end">mardi</text>
+<rect x="165" y="172" width="78.0" height="21" rx="5" fill="#475363"/>
+<text x="253.0" y="188" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">15 %</text>
+<text x="150" y="220" font-size="17" fill="#fff" font-weight="400" text-anchor="end">lundi</text>
+<rect x="165" y="204" width="46.800000000000004" height="21" rx="5" fill="#475363"/>
+<text x="221.8" y="220" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">9 %</text>
+</g>
+<g class="fr f2">
+<text x="20" y="44" font-size="25" fill="#fff" font-weight="700">Chers parents, la sortie aura lieu le<tspan fill="#ff4fa8"> jeudi</tspan><tspan fill="rgba(255,255,255,0.74)"> ▌</tspan></text>
+<text x="20" y="92" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">Le morceau suivant, du plus probable au moins probable:</text>
+<text x="150" y="124" font-size="17" fill="#fff" font-weight="700" text-anchor="end">26</text>
+<rect x="165" y="108" width="301.6" height="21" rx="5" fill="#ff4fa8"/>
+<text x="476.6" y="124" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">58 %</text>
+<text x="150" y="156" font-size="17" fill="#fff" font-weight="400" text-anchor="end">19</text>
+<rect x="165" y="140" width="88.4" height="21" rx="5" fill="#475363"/>
+<text x="263.4" y="156" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">17 %</text>
+<text x="150" y="188" font-size="17" fill="#fff" font-weight="400" text-anchor="end">12</text>
+<rect x="165" y="172" width="57.2" height="21" rx="5" fill="#475363"/>
+<text x="232.2" y="188" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">11 %</text>
+<text x="150" y="220" font-size="17" fill="#fff" font-weight="400" text-anchor="end">5</text>
+<rect x="165" y="204" width="31.200000000000003" height="21" rx="5" fill="#475363"/>
+<text x="206.2" y="220" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">6 %</text>
+</g>
+<g class="fr f3">
+<text x="20" y="44" font-size="25" fill="#fff" font-weight="700">Chers parents, la sortie aura lieu le<tspan fill="#ff4fa8"> jeudi 26</tspan><tspan fill="rgba(255,255,255,0.74)"> ▌</tspan></text>
+<text x="20" y="92" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">Le morceau suivant, du plus probable au moins probable:</text>
+<text x="150" y="124" font-size="17" fill="#fff" font-weight="700" text-anchor="end">novembre</text>
+<rect x="165" y="108" width="473.2" height="21" rx="5" fill="#ff4fa8"/>
+<text x="648.2" y="124" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">91 %</text>
+<text x="150" y="156" font-size="17" fill="#fff" font-weight="400" text-anchor="end">décembre</text>
+<rect x="165" y="140" width="20.8" height="21" rx="5" fill="#475363"/>
+<text x="195.8" y="156" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">4 %</text>
+<text x="150" y="188" font-size="17" fill="#fff" font-weight="400" text-anchor="end">mars</text>
+<rect x="165" y="172" width="10.4" height="21" rx="5" fill="#475363"/>
+<text x="185.4" y="188" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">2 %</text>
+<text x="150" y="220" font-size="17" fill="#fff" font-weight="400" text-anchor="end">juin</text>
+<rect x="165" y="204" width="6" height="21" rx="5" fill="#475363"/>
+<text x="181" y="220" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">1 %</text>
+</g>
+</svg></div>
+
+- Un LLM (grand modèle de langage) **prédit la suite la plus probable**, un morceau à la fois: un **token** (environ trois quarts d'un mot)
 - Il a appris sur une énorme quantité de textes, jusqu'à une date limite
 - Il ne "sait" rien de votre école, **sauf ce que vous lui donnez**
 
@@ -215,12 +268,23 @@ Note: ESSENTIEL. C'est la même recette partout dans le cours: ici, dans "votre 
 Note: À PASSER si le temps manque.
 ---
 ## L'hallucination
-- Claude prédit ce qui est probable, **pas ce qui est vrai**
-- Il peut donc inventer un fait, une date, une source, avec aplomb
-- C'est une **hallucination**
-- Règle: les faits, les chiffres et les sources **se vérifient toujours**
-- Demandez-lui de **citer la phrase exacte et la page** de chaque information: vous vérifiez en un coup d'œil
-- Son **niveau de confiance** est un indice, **pas une preuve**: il peut être sûr de lui et se tromper
+<div class="chart"><svg viewBox="0 0 960 168" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: trois dates probables, le modèle choisit la plus probable, qui n'est pas forcément la vraie">
+<text x="20" y="40" font-size="23" fill="#fff" font-weight="700">La circulaire a été publiée le<tspan fill="#ff4fa8"> 3 juillet 2026</tspan><tspan fill="#fbbf24"> ?</tspan></text>
+<text x="210" y="82" font-size="16" fill="#fff" font-weight="700" text-anchor="end">3 juillet 2026</text>
+<rect x="225" y="66" width="306" height="21" rx="5" fill="#ff4fa8"/>
+<text x="541" y="82" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">34 %</text>
+<text x="210" y="114" font-size="16" fill="#fff" font-weight="400" text-anchor="end">24 août 2026</text>
+<rect x="225" y="98" width="279" height="21" rx="5" fill="#475363"/>
+<text x="514" y="114" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">31 %</text>
+<text x="210" y="146" font-size="16" fill="#fff" font-weight="400" text-anchor="end">1er septembre 2026</text>
+<rect x="225" y="130" width="243" height="21" rx="5" fill="#475363"/>
+<text x="478" y="146" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">27 %</text>
+<text x="690" y="98" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Probable.</text>
+<text x="690" y="128" font-size="22" fill="#fbbf24" font-weight="700" text-anchor="start">Pas forcément vrai.</text>
+</svg></div>
+
+- Claude prédit ce qui est probable, **pas ce qui est vrai**. Il peut inventer un fait, une date, une source, avec aplomb: c'est une **hallucination**
+- Règle: les faits, les chiffres et les sources **se vérifient toujours**. Demandez **la phrase exacte et la page**: son niveau de confiance est un indice, pas une preuve
 
 Une analogie: un stagiaire très cultivé, très rapide, qui ne vous connaît pas, et qui **n'ose jamais dire** "je ne sais pas".
 
@@ -436,8 +500,16 @@ Note: ESSENTIEL.
         });
       });
     }
+    // a chart with several frames (class "fr") shows them one after the other, three seconds each
+    function animateFrames() {
+      const charts = Array.from(document.querySelectorAll('.reveal .chart')).filter((c) => c.querySelector('.fr'));
+      if (!charts.length) return;
+      let step = 0;
+      const show = () => charts.forEach((c) => { const fr = c.querySelectorAll('.fr'); fr.forEach((g, i) => { g.style.opacity = i === step % fr.length ? 1 : 0; }); });
+      show(); setInterval(() => { step += 1; show(); }, 3000);
+    }
     Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
-      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); Reveal.layout(); });
+      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); animateFrames(); Reveal.layout(); });
   </script>
 </body>
 </html>

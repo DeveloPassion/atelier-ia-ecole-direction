@@ -37,6 +37,30 @@ Secrétariat:
 
 ---
 ## Ce qu'on vient de voir
+<div class="chart strip"><svg viewBox="0 0 960 136" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: une circulaire de 20 pages devient un tableau des actions">
+<rect x="328" y="8" width="62" height="80" rx="6" fill="#f7f7f5"/>
+<rect x="336" y="20" width="46" height="6" rx="3" fill="#9aa3ad"/>
+<rect x="336" y="33" width="46" height="6" rx="3" fill="#9aa3ad"/>
+<rect x="336" y="46" width="46" height="6" rx="3" fill="#9aa3ad"/>
+<rect x="336" y="59" width="46" height="6" rx="3" fill="#9aa3ad"/>
+<rect x="336" y="72" width="30" height="6" rx="3" fill="#9aa3ad"/>
+<rect x="334" y="64" width="34" height="18" rx="4" fill="#e5007d"/>
+<text x="351" y="77" font-size="10.5" fill="#fff" font-weight="700" text-anchor="middle">PDF</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(466,32) scale(1.0)" fill="#e5007d"/>
+<rect x="540" y="8" width="96" height="80" rx="5" fill="#fff"/>
+<rect x="540" y="8" width="96" height="18" rx="5" fill="#e5007d"/>
+<rect x="540" y="18" width="96" height="8" rx="0" fill="#e5007d"/>
+<line x1="540" y1="41.5" x2="636" y2="41.5" stroke="#9aa3ad"/>
+<line x1="540" y1="57.0" x2="636" y2="57.0" stroke="#9aa3ad"/>
+<line x1="540" y1="72.5" x2="636" y2="72.5" stroke="#9aa3ad"/>
+<line x1="572" y1="8" x2="572" y2="88" stroke="#9aa3ad"/>
+<line x1="604" y1="8" x2="604" y2="88" stroke="#9aa3ad"/>
+<text x="350" y="110" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Une circulaire</text>
+<text x="588" y="110" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Vos actions</text>
+<text x="350" y="128" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">20 pages</text>
+<text x="588" y="128" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">quoi, pour quand, qui, page</text>
+</svg></div>
+
 - Claude a lu 20 pages, trié par niveau, et fait un tableau
 - Et il sait dire quand une circulaire **ne vous concerne presque pas**
 - Il a cité les pages: **vous vérifiez vite**

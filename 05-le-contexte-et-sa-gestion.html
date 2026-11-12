@@ -68,7 +68,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 @media print { .reveal blockquote .copy-btn, .reveal .cp .copy-ico { display: none; } }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
-.reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
+.reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart.tall svg { max-height: 520px; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
 .gradient { background: linear-gradient(90deg, #ff1493, #e5007d, #a855f7); -webkit-background-clip: text; background-clip: text;
   color: transparent !important; filter: drop-shadow(0 0 18px rgba(255,20,147,0.35)); }
 .reveal .eyebrow { display: inline-block; border-radius: 999px; background: rgba(229,0,125,0.12); border: 1px solid rgba(229,0,125,0.35);
@@ -154,6 +154,60 @@ Note: ESSENTIEL.
 
 Note: ESSENTIEL. Précision utile si la question vient: Claude ne charge pas toute la base à chaque conversation. Il cherche et il ouvre les fichiers dont il a besoin. D'où l'intérêt d'une base bien rangée, avec des noms clairs.
 ---
+## La conversation grandit à chaque tour
+<div class="chart tall"><svg viewBox="0 0 960 346" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: à chaque tour, Claude relit tous les messages et toutes les réponses d'avant, et la conversation remplit la fenêtre">
+<line x1="150" y1="40" x2="940" y2="40" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="20" y="45" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">0 token</text>
+<line x1="150" y1="328" x2="940" y2="328" stroke="#fbbf24" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="20" y="322" font-size="14" fill="#fbbf24" font-weight="700" text-anchor="start">La limite de</text>
+<text x="20" y="341" font-size="14" fill="#fbbf24" font-weight="700" text-anchor="start">la fenêtre</text>
+<text x="295" y="26" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Tour 1</text>
+<rect x="208" y="50" width="174" height="42" rx="10" fill="rgba(255,255,255,0.07)"/>
+<text x="196" y="71.0" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="700" text-anchor="middle" transform="rotate(-90 196 71.0)">lu</text>
+<rect x="220" y="57" width="150" height="28" rx="7" fill="rgba(229,0,125,0.78)" stroke="#fff" stroke-width="2"/>
+<text x="295" y="76.0" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">Votre message</text>
+<rect x="208" y="100" width="174" height="50" rx="10" fill="rgba(74,222,128,0.10)" stroke="rgba(74,222,128,0.6)" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="196" y="125.0" font-size="14" fill="#4ade80" font-weight="700" text-anchor="middle" transform="rotate(-90 196 125.0)">écrit</text>
+<rect x="220" y="107" width="150" height="36" rx="7" fill="#5a6678"/>
+<text x="295" y="130.0" font-size="14" fill="#fff" font-weight="400" text-anchor="middle">Sa réponse</text>
+<text x="555" y="26" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Tour 2</text>
+<rect x="468" y="50" width="174" height="116" rx="10" fill="rgba(255,255,255,0.07)"/>
+<text x="456" y="108.0" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="700" text-anchor="middle" transform="rotate(-90 456 108.0)">relu</text>
+<rect x="480" y="57" width="150" height="28" rx="7" fill="rgba(229,0,125,0.78)"/>
+<text x="555" y="76.0" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">Votre message</text>
+<rect x="480" y="90" width="150" height="36" rx="7" fill="#5a6678"/>
+<text x="555" y="113.0" font-size="14" fill="#fff" font-weight="400" text-anchor="middle">Sa réponse</text>
+<rect x="480" y="131" width="150" height="28" rx="7" fill="rgba(229,0,125,0.78)" stroke="#fff" stroke-width="2"/>
+<text x="555" y="150.0" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">Votre message</text>
+<rect x="468" y="174" width="174" height="50" rx="10" fill="rgba(74,222,128,0.10)" stroke="rgba(74,222,128,0.6)" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="456" y="199.0" font-size="14" fill="#4ade80" font-weight="700" text-anchor="middle" transform="rotate(-90 456 199.0)">écrit</text>
+<rect x="480" y="181" width="150" height="36" rx="7" fill="#5a6678"/>
+<text x="555" y="204.0" font-size="14" fill="#fff" font-weight="400" text-anchor="middle">Sa réponse</text>
+<text x="815" y="26" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Tour 3</text>
+<rect x="728" y="50" width="174" height="190" rx="10" fill="rgba(255,255,255,0.07)"/>
+<text x="716" y="145.0" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="700" text-anchor="middle" transform="rotate(-90 716 145.0)">relu</text>
+<rect x="740" y="57" width="150" height="28" rx="7" fill="rgba(229,0,125,0.78)"/>
+<text x="815" y="76.0" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">Votre message</text>
+<rect x="740" y="90" width="150" height="36" rx="7" fill="#5a6678"/>
+<text x="815" y="113.0" font-size="14" fill="#fff" font-weight="400" text-anchor="middle">Sa réponse</text>
+<rect x="740" y="131" width="150" height="28" rx="7" fill="rgba(229,0,125,0.78)"/>
+<text x="815" y="150.0" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">Votre message</text>
+<rect x="740" y="164" width="150" height="36" rx="7" fill="#5a6678"/>
+<text x="815" y="187.0" font-size="14" fill="#fff" font-weight="400" text-anchor="middle">Sa réponse</text>
+<rect x="740" y="205" width="150" height="28" rx="7" fill="rgba(229,0,125,0.78)" stroke="#fff" stroke-width="2"/>
+<text x="815" y="224.0" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">Votre message</text>
+<rect x="728" y="248" width="174" height="50" rx="10" fill="rgba(74,222,128,0.10)" stroke="rgba(74,222,128,0.6)" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="716" y="273.0" font-size="14" fill="#4ade80" font-weight="700" text-anchor="middle" transform="rotate(-90 716 273.0)">écrit</text>
+<rect x="740" y="255" width="150" height="36" rx="7" fill="#5a6678"/>
+<text x="815" y="278.0" font-size="14" fill="#fff" font-weight="400" text-anchor="middle">Sa réponse</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(398,76)" fill="rgba(255,255,255,0.5)"/>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(658,110)" fill="rgba(255,255,255,0.5)"/>
+</svg></div>
+
+À chaque tour, Claude **relit tout**, puis il écrit. La fenêtre se remplit, et chaque message **coûte plus** que le précédent.
+
+Note: ESSENTIEL. Montrer les trois colonnes de gauche à droite. Tour 1: il lit votre message, il écrit sa réponse. Tour 2: il relit le premier message et sa première réponse, plus le nouveau message. Tour 3: il relit tout, encore. Deux conséquences, qui reviennent dans toute la partie: la conversation finit par remplir la fenêtre (la ligne du bas), et chaque message coûte plus cher que le précédent.
+---
 ## Plusieurs conversations en parallèle
 - Vous pouvez donner **plusieurs tâches en même temps**: une conversation par tâche
 - Par exemple: le tableau des sorties dans l'une, la circulaire dans une autre, un mail aux parents dans une troisième
@@ -169,6 +223,66 @@ Note: À PASSER si le temps manque. Le montrer en direct: lancer une tâche long
 - Ce qui tient dans la fenêtre **n'est pas forcément bien lu**
 
 Note: ESSENTIEL.
+---
+## Des mots aux tokens, des tokens au coût
+<div class="chart tall"><svg viewBox="0 0 960 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: ce qui entre devient des tokens, remplit la fenêtre de contexte, et le coût dépend des tokens lus et écrits">
+<text x="20" y="24" font-size="14" fill="#ff4fa8" font-weight="700" text-anchor="start">CE QUI ENTRE</text>
+<text x="245" y="24" font-size="14" fill="#ff4fa8" font-weight="700" text-anchor="start">EN TOKENS</text>
+<text x="486" y="24" font-size="14" fill="#ff4fa8" font-weight="700" text-anchor="start">LA FENÊTRE DE CONTEXTE</text>
+<text x="780" y="24" font-size="14" fill="#ff4fa8" font-weight="700" text-anchor="start">CE QUI SORT</text>
+<text x="20" y="60" font-size="16" fill="#fff" font-weight="700" text-anchor="start">La demande</text>
+<text x="20" y="85" font-size="16" fill="#fff" font-weight="700" text-anchor="start">La conversation</text>
+<text x="20" y="110" font-size="16" fill="#fff" font-weight="700" text-anchor="start">Les fichiers</text>
+<text x="20" y="135" font-size="16" fill="#fff" font-weight="700" text-anchor="start">Les résultats d'outils</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(208,78) scale(1.0)" fill="#e5007d"/>
+<rect x="245" y="50" width="36" height="34" rx="6" fill="#475363" stroke="rgba(255,255,255,0.3)"/>
+<text x="263.0" y="73" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Un</text>
+<rect x="285" y="50" width="52" height="34" rx="6" fill="#475363" stroke="rgba(255,255,255,0.3)"/>
+<text x="311.0" y="73" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">petit</text>
+<rect x="341" y="50" width="44" height="34" rx="6" fill="#475363" stroke="rgba(255,255,255,0.3)"/>
+<text x="363.0" y="73" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">mor</text>
+<rect x="389" y="50" width="50" height="34" rx="6" fill="#475363" stroke="rgba(255,255,255,0.3)"/>
+<text x="414.0" y="73" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">ceau</text>
+<text x="245" y="112" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">Un mot peut faire</text>
+<text x="245" y="131" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">plusieurs tokens</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(448,78) scale(1.0)" fill="#e5007d"/>
+<path d="M494,34 h-8 v160 h8" fill="none" stroke="#fff" stroke-width="3"/>
+<path d="M720,34 h8 v160 h-8" fill="none" stroke="#fff" stroke-width="3"/>
+<rect x="498" y="40" width="218" height="25" rx="4" fill="rgba(96,165,250,0.38)"/>
+<text x="607" y="58" font-size="14" fill="#fff" font-weight="400" text-anchor="middle">Les instructions</text>
+<rect x="498" y="70" width="218" height="25" rx="4" fill="rgba(74,222,128,0.30)"/>
+<text x="607" y="88" font-size="14" fill="#fff" font-weight="400" text-anchor="middle">L'historique utile</text>
+<rect x="498" y="100" width="218" height="25" rx="4" fill="rgba(251,191,36,0.30)"/>
+<text x="607" y="118" font-size="14" fill="#fff" font-weight="400" text-anchor="middle">Les fichiers</text>
+<rect x="498" y="130" width="218" height="25" rx="4" fill="rgba(168,85,247,0.40)"/>
+<text x="607" y="148" font-size="14" fill="#fff" font-weight="400" text-anchor="middle">Les résultats d'outils</text>
+<rect x="498" y="160" width="218" height="25" rx="4" fill="rgba(255,255,255,0.15)"/>
+<text x="607" y="178" font-size="14" fill="#fff" font-weight="400" text-anchor="middle">Le bruit, le contexte périmé</text>
+<text x="607" y="216" font-size="14" fill="#ff4fa8" font-weight="700" text-anchor="middle">200 000 → 1 million de tokens</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(738,78) scale(1.0)" fill="#e5007d"/>
+<text x="780" y="62" font-size="17" fill="#fff" font-weight="700" text-anchor="start">Les tokens</text>
+<text x="780" y="85" font-size="17" fill="#fff" font-weight="700" text-anchor="start">de la réponse</text>
+<text x="780" y="124" font-size="14" fill="#fbbf24" font-weight="700" text-anchor="start">Session longue:</text>
+<text x="780" y="143" font-size="14" fill="#fbbf24" font-weight="400" text-anchor="start">moins fiable</text>
+<text x="780" y="172" font-size="14" fill="#fbbf24" font-weight="700" text-anchor="start">Fenêtre pleine:</text>
+<text x="780" y="191" font-size="14" fill="#fbbf24" font-weight="400" text-anchor="start">la compaction</text>
+<line x1="20" y1="240" x2="940" y2="240" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+<text x="20" y="277" font-size="14" fill="#ff4fa8" font-weight="700" text-anchor="start">LE COÛT</text>
+<text x="140" y="278" font-size="19" fill="#fff" font-weight="700" text-anchor="start">tokens lus × prix d'entrée  +  tokens écrits × prix de sortie</text>
+<text x="940" y="277" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="end">selon le modèle</text>
+<line x1="20" y1="302" x2="940" y2="302" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+<text x="20" y="342" font-size="14" fill="#ff4fa8" font-weight="700" text-anchor="start">GÉRER LE CONTEXTE</text>
+<text x="250" y="343" font-size="18" fill="#fff" font-weight="700" text-anchor="start">Choisir</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(334,322) scale(0.85)" fill="#e5007d"/>
+<text x="380" y="343" font-size="18" fill="#fff" font-weight="700" text-anchor="start">Structurer</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(494,322) scale(0.85)" fill="#e5007d"/>
+<text x="540" y="343" font-size="18" fill="#fff" font-weight="700" text-anchor="start">Résumer</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(630,322) scale(0.85)" fill="#e5007d"/>
+<text x="680" y="343" font-size="18" fill="#fff" font-weight="700" text-anchor="start">Rafraîchir</text>
+<text x="480" y="386" font-size="17" fill="#fff" font-weight="700" text-anchor="middle">La bonne information, au bon moment.</text>
+</svg></div>
+
+Note: À PASSER si le temps manque. Lire l'image de gauche à droite. Tout ce qui entre (la demande, la conversation, les fichiers, les résultats des outils) est coupé en tokens. Ces tokens remplissent la fenêtre de contexte: on y trouve l'utile, et aussi du bruit et du contexte périmé. Le modèle écrit ensuite sa réponse, en tokens aussi. Le coût: les tokens lus et les tokens écrits, chacun à son prix, et ce prix dépend du modèle (bonus 18). Gérer le contexte, c'est choisir ce qui entre, le structurer, le résumer, et le rafraîchir: donner au modèle la bonne information, au bon moment. C'est ce que fait une base de connaissances bien rangée.
 ---
 ## Plus c'est long, moins c'est fiable
 - La fiabilité **baisse peu à peu** quand la conversation s'allonge, bien avant que la fenêtre soit pleine

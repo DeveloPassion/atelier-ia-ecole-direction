@@ -142,5 +142,14 @@
   "file": "17 - Bonus, questions fréquentes.md",
   "html": "17-bonus-questions-frequentes.html",
   "bonus": true
+ },
+ {
+  "n": 18,
+  "name": "Bonus, gérer les coûts",
+  "dur": "bonus",
+  "slides": 0,
+  "file": "18 - Bonus, gérer les coûts.md",
+  "html": "18-bonus-gerer-les-couts.html",
+  "bonus": true
  }
 ]

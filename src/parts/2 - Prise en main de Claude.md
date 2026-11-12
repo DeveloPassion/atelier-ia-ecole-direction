@@ -64,7 +64,7 @@ Note: Montrer le menu "/" en direct. Si aucune skill n'est installée sur leur c
 
 **Ça bouge très vite**: de nouveaux modèles sortent **toutes les semaines**. Cette recommandation date de novembre 2026.
 
-Note: Sur Entreprise, l'usage se paie au volume. Vérifier avant la séance que l'admin autorise Sonnet 5.5 et Opus 5.5. Fable 5 et 5.1 sont des "Covered Models" chez Anthropic: conservation des données d'au moins 30 jours, examinées par des systèmes de sécurité automatiques, et pas de zéro conservation (ZDR) pour les organisations Claude Enterprise (centre d'aide d'Anthropic, article "Covered Models", vérifié le 07/11/2026). Conseil: Fable seulement pour une tâche qui le justifie, et jamais avec des données personnelles.
+Note: Sur Entreprise, l'usage se paie au volume (bonus 18). Vérifier avant la séance que l'admin autorise Sonnet 5.5 et Opus 5.5. Fable 5, 5.1 et 5.2 (la version actuelle, ajoutée à la liste le 09/11/2026) sont des "Covered Models" chez Anthropic: conservation des données d'au moins 30 jours, examinées par des systèmes de sécurité automatiques, et pas de zéro conservation (ZDR) pour les organisations Claude Enterprise (centre d'aide d'Anthropic, article "Covered Models", vérifié le 12/11/2026). L'article parle d'une option ZDR limitée dans le temps pour certains clients: à voir avec Anthropic, ne pas compter dessus. Conseil: Fable seulement pour une tâche qui le justifie, et jamais avec des données personnelles.
 
 ---
 ## Le niveau d'effort

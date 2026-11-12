@@ -65,6 +65,11 @@ def quoted(n, title):
     return re.findall(r"^> (.+?)\r?$", find(n, title)[1], re.M)
 
 
+def skippable(n):
+    """Numbers of the slides of part n whose notes start with the mark 'À PASSER'."""
+    return [str(i + 1) for i, sl in enumerate(slides(n)) if note(sl).lstrip().startswith("À PASSER")]
+
+
 def where(n, title):
     k, _ = find(n, title)
     return f"Partie {n}, slide {k}<br/><i>{title}</i>"
@@ -105,16 +110,16 @@ rows = [
      "Montrer aussi l'extension Claude in Chrome dans Chrome"),
     (18, where(3, "3. Première démo"), "<b>Démo 1: la circulaire</b> (leur PC, 10 min, Opus 5.5)",
      FD + "Circulaire 9847 - Organisation de l'année scolaire 2026-2027.pdf<br/>Puis la vraie: circulaire 9757 (lien dans les notes de la slide)",
-     q(quoted(3, "La circulaire: la demande à copier")[:1]) + "<br/>(slide suivante: une demande par rôle, bouton « Copier »)<br/>Puis en effort haut: « Vérifie chaque date dans le texte. »",
+     q(quoted(3, "La circulaire: la demande à copier")[:1]) + "<br/>(slide suivante: une demande par rôle, bouton « Copier »)<br/>Effort haut: pas en direct, montrer le plan B. Toujours faire la 2e circulaire",
      "9847: CEB dans CEBSI le 05/03/2027 (piège: le 19/02 est reporté); FUI aux parents de 6e du 11/01 au 22/01/2027; liste PSE le 30/11/2026; EENC le 20/11/2026. 9757: « presque rien n'est pour vous », 24/08/2026 déjà passé.<br/>Plan B: " + PB + "Démo 1 - Actions primaire circulaire 9847.pdf. Corrigés complets: notes de la slide, plan de cours"),
     (28, where(4, "La complaisance"), "<b>Option: la complaisance</b> (écran, 1 min)",
      "Aucun fichier",
      "Proposer une idée discutable, puis: « Qu'est-ce qui cloche? » Option « Pas seulement du texte »: « Crée un jeu de calcul mental pour des élèves de 2e primaire, avec un score. »",
      "Seulement si le temps le permet"),
-    (38, where(5, "Plusieurs conversations en parallèle"), "<b>Partie 5: trois gestes en direct</b>",
-     "Conversations en parallèle; slide « La compaction »: la longue conversation compactée préparée avant; slide « Budget et limites »: l'écran de consommation",
+    (38, where(5, "Plusieurs conversations en parallèle"), "<b>Partie 5: deux gestes en direct</b>",
+     "Conversations en parallèle; slide « Le coût, en bref »: l'écran de l'utilisation, dans les paramètres. Option, slide « Des conversations courtes »: la longue conversation compactée préparée avant",
      "Lancer une tâche longue (ranger le dossier), puis un mail court dans une nouvelle conversation",
-     "La conversation compactée est optionnelle: sinon, la slide suffit"),
+     "La conversation compactée est optionnelle. Le détail des coûts, du cache et de la compaction: bonus 18"),
     (50, "Pause (10 min)", "<b>Préparer les démos</b>",
      "Ouvrir « Fichiers de démo » et le dossier « Plan B ». Chrome avec l'extension. Le dossier « Activités de P1 à P6 (copie en désordre) »",
      "", "Prendre une page écrite à la main (sans données d'élèves) pour la démo photo"),
@@ -127,9 +132,9 @@ rows = [
      q(quoted(6, "Démo 3: la demande à copier")) + "<br/>(slide suivante, bouton « Copier »)",
      "Lire le plan à voix haute, dire oui. Résultat: un doublon signalé, la garderie dans Divers, la sortie de l'an passé.<br/>Plan B: Démo 3 - Dossier rangé (résultat)/ avec INDEX.pdf"),
     (74, where(6, "Démo 4: le navigateur"), "<b>Démo 4: le navigateur</b> (écran, 4 min, Chrome)",
-     "Aucun fichier. Un formulaire de réservation de groupe d'un site de confiance",
+     "Aucun fichier. La page fictive de la ferme de la Hulotte (lien sur la slide « à copier »): son formulaire n'envoie rien, et elle cache une instruction pour l'IA",
      q(quoted(6, "Démo 4: les demandes à copier")) + "<br/>(slide suivante, bouton « Copier »)",
-     "Cliquer un lien pour vérifier un prix. Musée du Carnaval: animations peut-être dès la 5e seulement. Formulaire rempli, <b>pas envoyé</b>.<br/>Plan B: Démo 4 - Comparaison lieux d'excursion (exemple).pdf"),
+     "Cliquer un lien pour vérifier un prix. Musée du Carnaval: animations peut-être dès la 5e seulement. Formulaire rempli, <b>pas envoyé</b>. Injection de prompt: l'a-t-il suivie ou signalée? Bouton « Afficher » en bas de la page.<br/>Plan B: Démo 4 - Comparaison lieux d'excursion (exemple).pdf"),
     (78, where(6, "Démo 6: une photo"), "<b>Démo 6: la photo</b> (écran, 3 min) <i>ou</i> <b>démo 5: la présentation</b> (2 min), s'il reste du temps",
      "La photo prise sur place. Ou " + FD + "Texte réunion de parents de rentrée.docx",
      q(quoted(6, "Démo 6: la demande à copier") + quoted(6, "Démo 5: les demandes à copier")[:1]) + "<br/>(slides suivantes, bouton « Copier »)",
@@ -146,9 +151,9 @@ rows = [
      q(system_q[:2]) + "<br/>Les autres demandes s'il reste du temps. Puis la même question dans un chat vide",
      "Réponses attendues: « DEMO - À demander.txt », à la racine du système. Montrer le début et une ou deux trouvailles"),
     (99, where(7, "Démo: créer une skill"), "<b>Démo: créer une skill ensemble</b> (écran, 5 min)",
-     "Claude ouvert sur une copie de base de connaissances (par exemple le dossier «\u00a0Direction Saint-Exemple\u00a0»)",
+     "Claude ouvert sur une copie du dossier «\u00a0Direction Saint-Exemple\u00a0». La note «\u00a0Écrire aux parents (Processus)\u00a0», dossier Actions/Processus",
      q([skill_q]) + "<br/>Puis: «\u00a0Écris le mot aux parents pour la sortie P4 du 26 novembre.\u00a0»",
-     "Répondre à ses questions avec la salle (ton, longueur, talon-réponse, signature, interdits). Résultat: un dossier «\u00a0ecrire-aux-parents\u00a0» avec SKILL.md (name, description, étapes). Corriger la skill, pas la réponse. Elle reste dans le dossier: rien à installer. Dire: avec leur système, «\u00a0Crée-moi une skill...\u00a0» ou «\u00a0skillify\u00a0» suffit"),
+     "Résultat: un dossier «\u00a0ecrire-aux-parents\u00a0» avec SKILL.md (name, description, puis «\u00a0lis la note du processus\u00a0»). Puis changer «\u00a0150 mots\u00a0» en «\u00a080 mots\u00a0» dans le processus, et relancer: le mot change, pas la skill. Elle reste dans le dossier: rien à installer. Dire: avec leur système, «\u00a0Crée-moi une skill...\u00a0» ou «\u00a0skillify\u00a0» suffit"),
     (104, where(8, "Des règles d'usage"), "<b>Partie 8: le projet de règles d'usage</b>",
      "Documents à remettre/Projet de règles d'usage de l'IA.pdf", "",
      "Si le collège a déjà une politique, partir de la sienne"),
@@ -158,10 +163,10 @@ rows = [
      "Leurs réponses aux trois questions (avant l'atelier) servent à la phase 2"),
     (110, where(9, "Maintenant: votre vraie tâche"), "<b>Leur vraie tâche</b> (leur PC, 6 min)",
      "Leurs fichiers, copiés dans un dossier à part. Leurs tâches: dans leurs réponses aux trois questions (mails)",
-     "Leur demande, écrite avec la recette (qui, quoi, pour qui, forme, critères, règles à la fin), et «\u00a0Pose-moi d'abord tes questions\u00a0»",
+     "Leur demande, écrite avec la recette (qui, quoi, pour qui, forme, exemple, règles et critères), et «\u00a0Pose-moi d'abord tes questions\u00a0». À la fin: «\u00a0Quelle demande t'aurait permis de faire ça du premier coup?\u00a0»",
      "Passer de l'un à l'autre. Tâche trop grosse: faire la première étape. Rien apporté: le mot aux parents pour sa classe, ou une vraie circulaire. Finir: «\u00a0Gardez cette demande: c'est peut-être votre première skill\u00a0»"),
     (118, "Fin", "<b>Marge (2 min), feuille « parking »</b>", "", "",
-     "Questions probables: réponses prêtes dans le bonus 17 (fiabilité, remplacement, coût, données, téléphone, ChatGPT ou Copilot, triche, énergie, responsabilité)"),
+     "Questions probables: réponses prêtes dans le bonus 17 (fiabilité, remplacement, coût, données, téléphone, ChatGPT ou Copilot, triche, énergie, responsabilité). Coûts: bonus 18"),
 ]
 
 header = [Paragraph(h, HEAD) for h in ["Heure", "Où dans les slides", "Quoi", "Fichiers et lieu", "Demande à taper", "À vérifier, corrigé, plan B"]]
@@ -196,6 +201,9 @@ before = KeepTogether([
     b("<b>Les fichiers</b>: le dossier « Fichiers de démo », copié hors OneDrive (aussi sur le site: documents/fichiers-de-demo.zip). Les résultats attendus: « Plan B - résultats attendus ». Les systèmes de démo: les zips «\u00a0notes seules\u00a0» et «\u00a0en vrac\u00a0» (le système complet avec AI Kit for Obsidian, un produit payant, n'est pas public)."),
     b("<b>Les corrigés</b>: « DEMO - À demander.txt » à la racine du système Saint-Exemple, et les sections « Corrigé » du plan de cours."),
     b("<b>Les slides</b>: le sommaire (index.html) de la copie locale, hors ligne. Toutes les slides restent: je choisis en direct ce que je passe."),
+    Paragraph("Si le temps manque: les slides à passer", H2),
+    b("Les notes des parties 4, 5 et 7 marquent chaque slide «\u00a0ESSENTIEL\u00a0» ou «\u00a0À PASSER\u00a0». À passer: "
+      + " ".join(f"<b>partie {n}</b>, slides {', '.join(skippable(n))}." for n in (4, 5, 7))),
     Paragraph("La veille et le matin", H2),
     b("Dézipper les deux systèmes de démo, ouvrir « Direction Saint-Exemple » dans Obsidian, ouvrir une fois les slides sans internet."),
     b("Imprimer l'aide-mémoire (un par personne). Préparer la feuille « parking ». Option: une longue conversation compactée."),

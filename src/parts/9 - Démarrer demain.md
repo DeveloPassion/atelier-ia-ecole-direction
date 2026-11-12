@@ -12,10 +12,11 @@ Ce qu'il faut retenir, et quoi faire dès demain.
 3. **Une conversation = un sujet**
 4. **Elle propose, vous décidez**
 5. Votre contexte est **votre actif**: gardez-le dans **votre base de connaissances**, et sauvegardez-la
+6. **Écrivez vos processus**, et laissez l'IA les améliorer avec vous
 
 ---
 ## Trois actions pour demain
-15 minutes en tout.
+15 minutes, sans la fiche de contexte: la remplir demande plus de temps.
 
 1. Créer le dossier de **votre base de connaissances**, sur votre PC, sauvegardé. Y mettre votre fichier **"À propos de moi.txt"** (vos réponses à la fiche de contexte), le règlement et le calendrier
 2. Ouvrir Claude **sur ce dossier** (le dossier de travail)
@@ -28,11 +29,12 @@ Et chaque jour, 2 minutes: noter dans le **journal du jour**. Un dossier "Journa
 La tâche que vous avez choisie avant l'atelier. **Sans données sensibles.**
 
 1. Ouvrez Claude sur une copie des fichiers utiles
-2. Écrivez la demande avec la recette: **qui vous êtes, ce que vous voulez, pour qui, la forme, les critères**, et les règles importantes **à la fin**
+2. Écrivez la demande avec la recette: **qui vous êtes, ce que vous voulez, pour qui, la forme, un exemple, les règles et les critères**. Les règles importantes vont **à la fin**
 3. Demandez-lui de vous **poser ses questions** d'abord
 4. Relisez, corrigez par petites phrases, et **vérifiez**
+5. À la fin: "Quelle demande t'aurait permis de faire ça du premier coup?"{copy} **Gardez-la**
 
-Note: VRAIE TÂCHE (6 min), chacun sur son PC. Leurs tâches sont dans leurs réponses aux trois questions (envoyées avant l'atelier, avec les prérequis). Passer de l'un à l'autre. Si une tâche est trop grosse: la couper et faire la première étape. Si quelqu'un n'a rien apporté: refaire le mot aux parents de la partie 1 pour sa propre classe, ou trier une vraie circulaire de la semaine. Finir par: "Gardez cette demande: c'est peut-être votre première skill."
+Note: VRAIE TÂCHE (6 min), chacun sur son PC. Leurs tâches sont dans leurs réponses aux trois questions (envoyées avant l'atelier, avec les prérequis). Passer de l'un à l'autre. Si une tâche est trop grosse: la couper et faire la première étape. Si quelqu'un n'a rien apporté: refaire le mot aux parents de la partie 1 pour sa propre classe, ou trier une vraie circulaire de la semaine. Finir par l'étape 5, et dire: "Gardez cette demande: c'est peut-être votre première skill."
 
 ---
 ## La fiche de contexte
@@ -48,9 +50,12 @@ Note: Documents: "Fiche de contexte pour l'IA.pdf" (les champs se remplissent, l
 ## Pour continuer seuls
 1. Le mot aux parents: sans contexte, puis avec contexte. Comparez
 2. Votre base de connaissances: le fichier "À propos de moi.txt" (l'école, votre rôle, votre ton, ce que Claude ne doit jamais faire) et deux documents. Ouvrez Claude sur ce dossier, et posez-lui trois questions de votre semaine
-3. Préparer une réunion: joignez "Notes réunion équipe 2026-11-03 (brut)", demandez un ordre du jour et les points d'action, puis ce qui manque pour que chaque action soit claire
+3. Claude ne lit pas ce fichier tout seul. Commencez chaque conversation par: "Lis d'abord le fichier À propos de moi.txt."{copy}
+4. Préparer une réunion: joignez "Notes réunion équipe 2026-11-03 (brut)", demandez un ordre du jour et les points d'action, puis ce qui manque pour que chaque action soit claire
 
-Refaites aussi les démos: les étapes sont dans les notes des slides. Et gardez **l'aide-mémoire** (PDF de deux pages, à imprimer) à côté de votre PC.
+Refaites aussi les démos: les demandes à copier sont sur les slides des parties 3 et 6. Et gardez **l'aide-mémoire** (PDF de deux pages, à imprimer) à côté de votre PC.
+
+Note: Pour le fichier "À propos de moi": l'application peut aussi lire seule un fichier d'instructions placé dans le dossier de travail. Le nom et le réglage dépendent de la version: à vérifier sur leur PC avant d'en parler. La phrase "Lis d'abord..." marche toujours. En phase 2, le système s'en occupe.
 
 ---
 ## Et après?

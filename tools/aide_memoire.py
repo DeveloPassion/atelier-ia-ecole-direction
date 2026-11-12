@@ -112,16 +112,15 @@ story = [
         b("<b>Pour qui</b>: des parents, l'équipe, le pouvoir organisateur."),
         b("<b>Sous quelle forme</b>: longueur, ton, liste, tableau, Word, Excel."),
         b("<b>Un exemple</b>: « écris comme ce mot-ci »."),
-        b("<b>Les limites</b>: ce qu'il ne doit pas faire, ce qu'il doit signaler."),
-        b("<b>Les critères d'un bon résultat</b>: comment vous allez juger la réponse."),
-        p("Mettez <b>les informations et les règles importantes à la fin</b>: la fin d'un long texte est mieux lue que le milieu."),
+        b("<b>Les règles et les critères</b>: ce qu'il ne doit pas faire, et comment vous allez juger la réponse."),
+        p("Mettez <b>les règles importantes à la fin</b>. <b>Commencez simple</b>: les modèles ont besoin de moins en moins d'aide, et un rôle ne les rend pas meilleurs."),
         p("<b>Dictez</b> (le micro de la zone de saisie): on parle plus vite qu'on écrit, et on donne plus de contexte. Dites beaucoup, quitte à vous répéter: Claude fait le tri."),
     ]),
     box("Des phrases à réutiliser", [
         q("Pose-moi les questions qui te manquent avant de commencer."),
         q("Signale ce que tu ne sais pas au lieu de deviner."),
-        q("Pour chaque information, cite la page du document."),
-        q("Vérifie tes informations et tes sources, et donne ton niveau de confiance pour chaque résultat."),
+        q("Pour chaque information, cite la phrase exacte et la page."),
+        q("Qu'est-ce qu'on améliore dans ce processus? Mets-le à jour."),
         q("Améliore ma demande avant de la faire: qu'est-ce qui manque?"),
         q("Montre-moi d'abord ton plan, et attends mon accord."),
         q("Qu'est-ce qui cloche dans ce plan? Donne-moi les trois meilleures objections."),
@@ -161,7 +160,7 @@ story = [
     ]),
     box("Le contexte, sans se piéger", [
         b("Le contexte, c'est <b>tout ce que Claude voit</b>: vos instructions, la conversation, les documents joints, les pages lues. Le reste, il ne le connaît pas."),
-        b("À chaque message, il <b>relit toute la conversation</b>. Entre deux conversations, il ne se souvient de rien, sauf ce qu'il relit: <b>les fichiers de votre base</b>."),
+        b("À chaque message, il <b>relit toute la conversation</b>. Entre deux conversations, il ne se souvient de rien, sauf ce qu'il va lire: <b>les fichiers de votre base</b>."),
         b("La fenêtre est grande (environ un million de tokens; un token vaut environ trois quarts d'un mot), mais <b>ce qui y tient n'est pas forcément bien lu</b>. Le milieu d'un long texte est moins bien utilisé que le début et la fin."),
         b("Le contexte est <b>limité</b>. Donnez <b>ce qui sert à la tâche</b>, pas tout ce que vous avez: un document inutile peut faire baisser la qualité."),
         b("<b>Signes qu'il faut repartir</b>: il oublie une consigne, se répète, se contredit, invente. Alors: un prompt de passage pour un autre agent, puis une nouvelle conversation."),
@@ -169,10 +168,10 @@ story = [
         b("Mieux vaut <b>dix conversations courtes</b> qu'une seule longue. Vous pouvez en mener <b>plusieurs en parallèle</b>, une par tâche."),
     ]),
     box("Le coût et les limites", [
-        b("On paie en <b>tokens</b>: tout ce que Claude lit, plus tout ce qu'il écrit. Une longue conversation coûte plus à chaque message."),
+        b("On paie <b>l'usage</b>, en <b>tokens</b>: tout ce que Claude lit, plus tout ce qu'il écrit. Une longue conversation coûte plus à chaque message."),
         b("Opus et l'effort haut coûtent plus que Sonnet et l'effort bas. Le mode rapide aussi."),
-        b("Une conversation reprise après une longue pause doit tout relire: elle coûte plus et répond moins bien."),
-        b("Regardez votre <b>consommation</b> de temps en temps (dans les paramètres). Si une limite est atteinte, Claude le dit: attendez, ou demandez à l'admin."),
+        b("Une conversation reprise après une longue pause doit tout relire: elle coûte plus."),
+        b("Regardez votre <b>consommation</b> de temps en temps (dans les paramètres). Si une limite est atteinte, Claude s'arrête: demandez plus à l'admin, ou attendez."),
     ]),
     box("Ce que Claude peut faire pour vous", [
         b("<b>Lire</b>: une circulaire de 20 pages, un PDF, une photo d'une page écrite à la main, une capture d'écran."),
@@ -249,7 +248,7 @@ story = [
         b("<b>Tâches planifiées</b> (selon la version): une seule pour commencer, par exemple la revue du lundi à 7h. Relisez ses résultats."),
         b("Vous décidez <b>quand vous arrêtez</b>: l'IA produit vite, on peut vite en faire trop."),
     ]),
-    box("Démarrer dès demain (15 minutes)", [
+    box("Dès demain (15 min, sans la fiche)", [
         Paragraph("Créer le dossier de <b>votre base de connaissances</b>, sauvegardé. Y mettre votre fichier « À propos de moi.txt » (vos réponses à la fiche de contexte), le règlement, le calendrier.", BUL, bulletText="1."),
         Paragraph("Ouvrir Claude <b>sur ce dossier</b> (le dossier de travail).", BUL, bulletText="2."),
         Paragraph("Faire une <b>vraie tâche</b> de la semaine dans ce dossier: un mail, un tableau, une circulaire.", BUL, bulletText="3."),
@@ -262,7 +261,7 @@ story = [
         b("Questions utiles au journal: « Qu'est-ce que j'ai promis cette semaine? », « Qu'est-ce qui est resté en suspens? »"),
     ]),
     box("Des demandes prêtes pour l'école", [
-        p("À copier telles quelles: Claude vous demande ce qui manque. Ajoutez votre rôle si le projet Claude ne le dit pas déjà.", SMALL),
+        p("À copier telles quelles: Claude vous demande ce qui manque. Ajoutez votre rôle si votre base ne le dit pas déjà.", SMALL),
         q("Lis cette circulaire et fais un tableau des actions pour mon niveau (demande-le-moi si tu ne le sais pas): action, date limite, qui, page. Signale les dates déjà passées."),
         q("Fais un compte rendu Word de ces notes de réunion: participants, décisions, puis un tableau des actions (quoi, qui, pour quand)."),
         q("Fais un tableau Excel de ces sorties: date, classe, lieu, prix, payé, réservé. Laisse vide ce que tu ne sais pas."),

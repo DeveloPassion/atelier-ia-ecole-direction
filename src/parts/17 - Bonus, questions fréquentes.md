@@ -8,7 +8,7 @@ Les questions qui reviennent, et mes réponses.
 ## Peut-on se fier à ses réponses?
 - Souvent très bonnes, **jamais garanties**: l'IA prédit ce qui est probable, pas ce qui est vrai
 - Les dates, les chiffres et les sources **se vérifient toujours**
-- Demandez **les pages** et **son niveau de confiance**
+- Demandez **la phrase exacte et la page**. Son niveau de confiance est un indice, **pas une preuve**
 - Commencez par des tâches **faciles à vérifier** (parties 4 et 10)
 
 ---
@@ -20,9 +20,10 @@ Les questions qui reviennent, et mes réponses.
 
 ---
 ## Combien ça coûte?
-- L'abonnement Entreprise du collège, et peut-être **l'usage en plus** (à confirmer avec l'admin)
-- Ce qui coûte: les longues conversations, les gros documents, Opus et l'effort haut. **Fable** coûte très cher
-- Les bons réflexes: conversations courtes, Sonnet pour le simple, regarder sa consommation (partie 5)
+- Un siège par personne, et **l'usage en plus**, au volume (à confirmer avec l'admin: les anciens contrats incluent un quota)
+- Ce qui coûte: les tâches d'agent, les longues conversations, Opus et l'effort haut. **Fable** coûte très cher
+- L'admin peut mettre **une limite par personne** et pour le collège
+- Les bons réflexes: conversations courtes, Sonnet pour le simple, regarder sa consommation. Le détail: **bonus 18**
 
 ---
 ## Où vont nos données? Et les données d'élèves?
@@ -64,9 +65,13 @@ Les questions qui reviennent, et mes réponses.
 
 ---
 ## L'IA consomme-t-elle beaucoup d'énergie?
-- **Oui**, bien plus qu'une recherche web, surtout avec les gros modèles et l'effort haut
+- **Cela dépend de la tâche**
+- Une question courte consomme peu: environ **0,3 Wh**, selon les chiffres publiés en 2025 par Google et OpenAI
+- Une longue tâche d'agent, un gros modèle ou l'effort haut consomment **bien plus**: l'IA lit et écrit beaucoup plus
 - Les mêmes réflexes que pour le coût: **le bon modèle**, des conversations courtes, pas de demandes inutiles
 - La question est légitime: utilisez l'IA **là où elle vous fait vraiment gagner** quelque chose
+
+Note: Sources: Google (août 2025): 0,24 Wh pour une demande de texte médiane à Gemini. OpenAI (juin 2025): 0,34 Wh pour une demande moyenne à ChatGPT. Ce sont les chiffres des fournisseurs eux-mêmes, pour leurs propres modèles, pas pour Claude. Ils valent pour une question courte: une tâche d'agent de plusieurs minutes fait des dizaines ou des centaines de demandes.
 
 ---
 ## Qui est responsable en cas d'erreur?

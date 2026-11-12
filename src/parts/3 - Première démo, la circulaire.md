@@ -13,8 +13,8 @@ Note: DÉMO CIRCULAIRE (10 min), chacun sur son PC. D'abord la fictive: "Circula
 1. Nouvelle conversation, modèle Opus 5.5. Joindre le PDF.
 2. Chacun copie la demande de son rôle sur la slide suivante ("La circulaire: la demande à copier"): un clic sur "Copier", puis coller dans Claude.
 3. Comparer les trois tableaux. Vérifier deux lignes dans le PDF (page citée).
-4. Refaire en effort haut avec "Vérifie chaque date dans le texte". Comparer.
-5. Joindre la circulaire 9757 dans une nouvelle conversation, même demande. Claude doit dire que presque rien ne concerne la direction.
+4. L'effort haut: ne pas le refaire en direct, c'est trop long. Montrer à la place le plan B (27 actions, la feuille "Changements", la feuille "Pièges écartés"): c'est le niveau de vérification que l'effort haut vise, avec la demande "Vérifie chaque date dans le texte".
+5. Toujours faire la deuxième circulaire, même si le temps est court: joindre la circulaire 9757 dans une nouvelle conversation, même demande. Claude doit dire que presque rien ne concerne la direction.
 Corrigé 9847: CEB dans CEBSI le 05/03/2027 (piège: l'ancienne date 19/02 est reportée); FUI aux parents de 6e du 11/01 au 22/01/2027; liste au centre PSE le 30/11/2026; EENC 3e et 5e primaire le 20/11/2026. Pièges secondaires: CE1D et CESS le 26/02/2027, relevé mensuel des absences le 10, section 14 et annexe 2.
 Corrigé 9757: moyens 2025-2026 à dépenser avant le 31/12/2026; moyens 2026-2027 avant le 31/12/2027; annexe de rachat de périodes pour le 24/08/2026 (date passée, Claude doit le signaler); périodes valables du 24/08/2026 au 02/07/2027; subvention fin janvier ou début février 2027; une période en primaire coûte 2.641,53 euros; identification dans PRIMVER (section 6). Pièges: GOSS (secondaire), SPES (spécialisé), règles des 3%. Pour la direction du secondaire: section 8 (GOSS) et règles des 3%.
 Plan B: "Plan B - résultats attendus/Démo 1 - Actions primaire circulaire 9847.pdf".

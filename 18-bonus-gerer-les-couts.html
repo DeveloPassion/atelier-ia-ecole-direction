@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>18. Bonus, gérer les coûts - L&#x27;IA au service de l&#x27;école</title>
+  <link rel="stylesheet" href="lib/reveal/dist/reset.css">
+  <link rel="stylesheet" href="lib/reveal/dist/reveal.css">
+  <link rel="stylesheet" href="theme.css">
+  <style>
+@font-face { font-family: "Noto Sans"; src: url("lib/fonts/NotoSans-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Noto Sans"; src: url("lib/fonts/NotoSans-Bold.ttf") format("truetype"); font-weight: 700 900; font-style: normal; }
+@font-face { font-family: "Noto Sans"; src: url("lib/fonts/NotoSans-Italic.ttf") format("truetype"); font-weight: 400; font-style: italic; }
+
+:root { --dp-magenta: #e5007d; --dp-pink: #ff1493; --dp-purple: #a855f7; --dp-slate: #37404c;
+  --dp-surface: #3f4957; --dp-surface-2: #475363; --dp-well: #2b323c; --dp-green: #4ade80; --dp-yellow: #fbbf24; }
+html, body, .reveal-viewport { background: var(--dp-slate); }
+.reveal .slides { background: transparent !important; }
+.reveal { font-size: 30px; }
+.reveal .slides section { text-align: left; }
+.reveal h2 { font-size: 1.45em; font-weight: 800; }
+/* Titles: the magenta bar goes UNDER the title (brand underline bar), not above it */
+.reveal h2::before { display: none !important; }
+.reveal h2 { margin: 0 0 0.75em 0; }
+.reveal .slides section:not(.hero) h2::after { content: ""; display: block; width: 56px; height: 4px; border-radius: 999px;
+  background: var(--dp-magenta); margin-top: 0.32em; }
+/* Same top position on every slide (center: false) */
+.reveal .slides > section, .reveal .slides > section > section { padding-top: 54px !important; box-sizing: border-box; }
+.reveal .slides section.hero { padding-top: 170px !important; }
+/* Rhythm between paragraphs and lists */
+.reveal p { margin: 0 0 0.6em 0; }
+.reveal ul, .reveal ol { margin: 0 0 0 1.15em; padding: 0; }
+.reveal li { margin: 0 0 0.38em 0; padding-left: 0.3em; }
+.reveal li > ul, .reveal li > ol { margin-top: 0.35em; margin-bottom: 0.1em; font-size: 0.92em; }
+.reveal p + ul, .reveal p + ol { margin-top: 0.55em; }
+.reveal ul + p, .reveal ol + p, .reveal ul + blockquote, .reveal ol + blockquote, .reveal table + p,
+.reveal ul + .diagram, .reveal ol + .diagram, .reveal p + .diagram, .reveal ul + div, .reveal ol + div { margin-top: 1.0em; }
+.reveal ul + p.system, .reveal ol + p.system, .reveal p + p.system { margin-top: 1.1em; }
+.reveal blockquote { margin: 0.8em 0; }
+.reveal table { margin: 0.4em 0 0.6em 0; }
+.reveal p, .reveal li { color: rgba(255,255,255,0.92); }
+.reveal li::marker, .reveal ol li::marker { color: var(--dp-pink); font-weight: 700; }
+.reveal table { font-size: 0.72em; }
+.reveal table td { color: rgba(255,255,255,0.9); }
+.reveal table tr:hover td { background: rgba(229,0,125,0.08); }
+.reveal blockquote { font-style: normal; width: 88%; }
+/* Prompts are blockquotes: a copy button in the top right corner */
+.reveal blockquote { position: relative; padding-right: 3.6em; box-sizing: border-box; }
+.reveal blockquote .copy-btn { position: absolute; top: 0.45em; right: 0.45em; font: 600 0.5em 'Noto Sans', sans-serif;
+  color: #fff; background: var(--dp-magenta); border: 0; border-radius: 999px; padding: 0.35em 0.9em; cursor: pointer; }
+.reveal blockquote .copy-btn:hover { background: var(--dp-pink); }
+.reveal blockquote .copy-btn.done { background: #16a34a; }
+/* A short prompt inside a line of text: click the text or its icon to copy it */
+.reveal .cp { cursor: pointer; border-radius: 6px; transition: background 0.15s; }
+.reveal .cp:hover { background: rgba(229,0,125,0.22); }
+.reveal .cp .copy-ico { display: inline-block; vertical-align: -0.12em; font: inherit; width: 0.95em; height: 0.95em; margin-left: 0.2em; padding: 0.16em;
+  box-sizing: border-box; border: 0; border-radius: 5px; background: rgba(255,255,255,0.14); color: #fff; cursor: pointer; line-height: 0; }
+.reveal .cp .tail { white-space: nowrap; }
+.reveal .cp .copy-ico svg { width: 100%; height: 100%; display: block; }
+.reveal .cp:hover .copy-ico { background: var(--dp-magenta); }
+.reveal .cp.done .copy-ico { background: #16a34a; }
+/* A slide with several boxed prompts */
+.reveal section.prompts p { font-size: 0.74em; margin: 0 0 0.25em 0; }
+.reveal section.prompts blockquote { font-size: 0.62em; width: 96%; margin: 0 0 0.9em 0; padding: 0.7em 5.2em 0.7em 1.2em; }
+.reveal section.prompts blockquote p { font-size: 1em; margin: 0; }
+.reveal section.prompts p a { color: #ff4fa8; text-decoration: underline; }
+.reveal section.prompts blockquote .copy-btn { font-size: 0.78em; }
+@media print { .reveal blockquote .copy-btn, .reveal .cp .copy-ico { display: none; } }
+.reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
+.reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
+.reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
+.gradient { background: linear-gradient(90deg, #ff1493, #e5007d, #a855f7); -webkit-background-clip: text; background-clip: text;
+  color: transparent !important; filter: drop-shadow(0 0 18px rgba(255,20,147,0.35)); }
+.reveal .eyebrow { display: inline-block; border-radius: 999px; background: rgba(229,0,125,0.12); border: 1px solid rgba(229,0,125,0.35);
+  color: #ffd1e8; font-size: 0.5em; font-weight: 700; padding: 0.25em 0.9em; margin: 0 0 0.8em 0; letter-spacing: 0.02em; }
+/* Section and cover slides: hero wash + particles */
+.reveal .slides section.hero, .reveal .slides section:first-child { text-align: left !important; }
+.reveal .slides section:first-child h1::after { display: none; }
+.loop-step { font-size: 0.85em; }
+.reveal .slides section.hero h2 { font-size: 2.3em; line-height: 1.1; }
+.reveal .slides section.hero h2::before { display: none; }
+.reveal .slides section.hero h2::after { content: ""; display: block; width: 64px; height: 5px; border-radius: 999px; background: var(--dp-magenta); margin-top: 0.35em; }
+.reveal .slides section.hero p { color: rgba(255,255,255,0.64); font-size: 1.05em; }
+.reveal .backgrounds .slide-background.hero, .slide-background.hero {
+  background: radial-gradient(1200px 600px at 85% 10%, rgba(168,85,247,0.18), transparent 60%),
+              radial-gradient(900px 500px at 10% 90%, rgba(229,0,125,0.16), transparent 60%), var(--dp-slate) !important; }
+.particles { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+.particles i { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: var(--dp-pink); opacity: 0.35; animation: float 9s ease-in-out infinite; }
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-18px); } }
+@media (prefers-reduced-motion: reduce) { .particles i, .loop-step, .loop::after { animation: none !important; } }
+/* System callout */
+.reveal p.system { border-left: 4px solid var(--dp-magenta); background: rgba(229,0,125,0.10); border-radius: 0 10px 10px 0;
+  padding: 0.5em 0.9em; font-size: 0.8em; margin-top: 0.8em; }
+.reveal p.system b { color: var(--dp-pink); }
+/* Nav pill */
+.nav-home { position: fixed; top: 14px; left: 16px; z-index: 30; font: 600 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
+  background: rgba(255,255,255,0.1); border-radius: 8px; padding: 6px 12px; }
+.nav-home:hover { background: var(--dp-magenta); }
+/* Diagrams (Pele) */
+.reveal .diagram { text-align: center; margin: 0.4em auto; }
+.reveal .diagram svg { max-width: 92%; max-height: 330px; height: auto; }
+.pele { --pele-bg: transparent; --pele-fg: #ffffff; --pele-surface: #3f4957; --pele-surface-alt: #475363; --pele-border: rgba(255,255,255,0.28);
+  --pele-line: #ff1493; --pele-muted: rgba(255,255,255,0.6); --pele-font: "Noto Sans", sans-serif; }
+/* Agentic loop animation */
+.loop { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 90px; width: 80%; margin: 30px auto; position: relative; }
+.loop-step { border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 18px; text-align: center; background: var(--dp-surface);
+  color: #fff; font-weight: 700; animation: lit 8s infinite; }
+.loop .s1 { grid-column: 1; grid-row: 1; animation-delay: 0s; }
+.loop .s2 { grid-column: 2; grid-row: 1; animation-delay: 2s; }
+.loop .s3 { grid-column: 2; grid-row: 2; animation-delay: 4s; }
+.loop .s4 { grid-column: 1; grid-row: 2; animation-delay: 6s; }
+.loop::after { content: "\21BB"; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 2.6em; color: var(--dp-pink);
+  animation: spin 8s linear infinite; }
+@keyframes lit { 0%, 24% { background: var(--dp-magenta); box-shadow: 0 0 24px rgba(229,0,125,0.45); transform: scale(1.05); }
+  25%, 100% { background: var(--dp-surface); box-shadow: none; transform: scale(1); } }
+@keyframes spin { from { transform: translate(-50%,-50%) rotate(0deg); } to { transform: translate(-50%,-50%) rotate(360deg); } }
+/* Lethal trifecta */
+.trifecta { display: flex; justify-content: center; margin-top: 10px; }
+.trifecta span { width: 210px; height: 210px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center;
+  font-size: 0.66em; font-weight: 700; color: #fff; margin: 0 -28px; padding: 30px; box-sizing: border-box; mix-blend-mode: screen; }
+.trifecta span:nth-child(1) { background: rgba(229,0,125,0.55); }
+.trifecta span:nth-child(2) { background: rgba(168,85,247,0.55); }
+.trifecta span:nth-child(3) { background: rgba(255,20,147,0.40); }
+</style>
+</head>
+<body>
+  <a class="nav-home" href="index.html">&#8592; Sommaire</a>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown data-separator="^---$" data-separator-vertical="^----$" data-separator-notes="^Note:">
+        <textarea data-template>
+<!-- .slide: class="hero" data-background-gradient="radial-gradient(1100px 560px at 85% 10%, rgba(168,85,247,0.20), transparent 60%), radial-gradient(900px 500px at 8% 92%, rgba(229,0,125,0.18), transparent 60%), #37404c" -->
+<p class="eyebrow">Bonus</p>
+
+<h2>18. Bonus: gérer les <span class="gradient">coûts</span></h2>
+
+Suivre les dépenses, mettre des limites, éviter les mauvaises surprises.
+
+Note: Tout ce bonus vient du centre d'aide d'Anthropic, lu le 12/11/2026 (articles "Claude Enterprise plan overview", "Usage-based Enterprise plans", "Claude Enterprise consumption guide", "Usage analytics for Enterprise plans", "Manage model access for your organization"). La documentation est en anglais: les noms des menus peuvent être différents dans l'application en français. À revérifier dans la console avec l'admin du collège avant d'en parler: le contrat du collège peut être différent.
+---
+## Comment Claude Entreprise se paie
+- **Un siège par personne**: il donne l'accès. Il n'inclut pas d'usage
+- **L'usage en plus**, au volume: chaque token lu ou écrit, dans le chat, dans Cowork, dans Claude in Chrome
+- Le prix dépend **du modèle et de la tâche**
+- Les anciens contrats sont différents: un forfait par siège, avec un quota d'usage inclus
+- Donc la première question à l'admin: **quel est notre contrat?**
+
+Note: Source: "the seat fee covers access only, and all usage is billed separately at API rates" (article "Claude Enterprise plan overview"). La page des prix d'Anthropic annonce 20 dollars par siège et par mois, avec un minimum de 20 sièges, plus l'usage: à confirmer, le collège a peut-être d'autres conditions. Les sièges "Standard" et "Premium" sont les anciens types de sièges: ils ne sont plus vendus pour les nouveaux contrats.
+---
+## Le coût d'une demande
+- L'IA se paie en **tokens**: tout ce que Claude lit, plus tout ce qu'il écrit
+- À chaque message, il **relit toute la conversation**: plus elle est longue, plus chaque message coûte
+- Les documents joints et les pages web lues comptent aussi
+- Un gros modèle (Opus) et un effort haut coûtent plus qu'un modèle plus léger (Sonnet) et un effort bas
+
+Note: Ordre de grandeur pour la salle, sans chiffres précis: une question courte coûte très peu; une circulaire de 20 pages lue en effort haut coûte bien plus. Le message: ce n'est pas cher pour une vraie tâche, mais les longues conversations qui traînent coûtent sans rien rapporter.
+---
+## Ce qui coûte le plus
+- **Les tâches d'agent** (Cowork, Claude in Chrome): beaucoup d'étapes, donc beaucoup de tokens que vous ne voyez pas
+- **Le modèle**: Fable consomme énormément, Opus beaucoup, Sonnet moins, Haiku peu. Et l'effort haut consomme plus
+- **Les longues conversations**: chaque message relit tout l'historique
+- **Plusieurs agents** en même temps: chacun fait ses propres demandes
+- **Une tâche planifiée oubliée**: elle tourne même quand personne ne regarde
+
+Note: Les trois premières lignes viennent du guide de consommation d'Anthropic pour Claude Entreprise (Fable "Very High", Opus "High", Sonnet "Moderate", Haiku "Low"). Les deux dernières viennent de la documentation de Claude Code, l'outil des développeurs: la logique est la même, mais ce n'est pas écrit pour l'application de bureau.
+---
+## Sous le capot: le cache
+- Claude garde le début de la conversation pendant quelques minutes
+- Il ne retraite donc pas tout à chaque message: c'est plus rapide et moins cher
+- Après une longue pause, il doit tout relire
+- Conséquence: une très longue conversation reprise le lendemain **coûte plus**
+- Le cache change **le coût et la vitesse**, pas la qualité des réponses
+
+Note: Le cache est documenté pour Claude Code. Je n'ai rien trouvé d'officiel pour l'application de bureau: le principe est le même, les détails peuvent être différents.
+---
+## Sous le capot: la compaction
+- Quand une conversation devient trop longue, Claude **résume le début**
+- Il continue à partir de ce résumé
+- C'est **peu fiable**: énormément d'informations se perdent, et le risque d'erreurs augmente
+- N'attendez pas la compaction: repartez avant, avec un prompt de passage
+- Si une consigne compte, mettez-la **dans votre base de connaissances**
+
+Note: La compaction existe aussi dans l'application Claude (Claude Desktop). Montrer une longue conversation déjà compactée, préparée avant la séance. Image utile: un PV de réunion garde les décisions et perd les détails.
+---
+## Ce que chacun fait
+1. **Une conversation par sujet**, et courte
+2. **Le bon modèle**: Sonnet pour le simple, Opus pour le gros travail. Fable seulement pour une tâche qui le justifie
+3. **Le bon effort**: bas ou moyen pour le travail courant, haut pour ce qui doit être juste
+4. Joindre **seulement ce qui sert** à la tâche
+5. **Arrêter** un agent qui tourne en rond, au lieu de le laisser continuer
+6. Regarder **sa consommation** de temps en temps: dans les paramètres, la page de l'utilisation
+
+Note: Chaque membre voit sa propre consommation si les propriétaires de l'organisation ont activé le réglage "Member analytics" (activé par défaut depuis juillet 2026 sur les contrats à l'usage, selon la documentation). Chemin dans la documentation en anglais: "Settings > Usage".
+---
+## Ce que l'admin règle
+- **Une limite pour le collège**: la dépense maximum pour toute l'organisation
+- **Une limite par personne**, ou par groupe. La plus basse des deux s'applique
+- Ce sont des limites **dures**: quand elle est atteinte, l'usage s'arrête
+- **Des alertes** préviennent l'admin à 75% et à 90% de la limite du collège
+- **Les modèles autorisés** et le modèle par défaut: on peut retirer Fable, et plafonner l'effort
+- **Les fonctions**: Cowork, Claude in Chrome et la recherche web peuvent être coupés
+
+Note: Dans la documentation en anglais: les limites sont dans "Organization settings > Usage", les modèles dans "Organization settings > Models", et les rôles dans "Organization settings > Roles". Attention: selon la documentation, la restriction des modèles n'est pas encore appliquée dans Claude in Chrome. Une personne peut dépasser un peu sa limite: l'usage est compté après chaque demande.
+---
+## Suivre les dépenses
+- L'admin voit la dépense **par personne, par modèle et par produit**, avec un export en tableau (CSV)
+- Il voit aussi qui est **bloqué** et qui est **proche de sa limite**
+- Chaque personne voit **sa propre consommation**, si l'admin l'a permis
+- Les chiffres ont **un jour de retard**: on ne voit pas la dépense de la dernière heure
+
+Note: Dans la documentation en anglais: "Analytics" (initiales en bas à gauche), et "Settings > Analytics > Export spend report" pour le fichier CSV (une ligne par personne et par modèle). La page "Usage" de l'organisation montre "Blocked right now" et "Near their limit". Tous les admins ne voient pas la dépense: certains rôles voient les statistiques, pas les montants.
+---
+## Quand une limite est atteinte
+- Claude **s'arrête**, et il le dit
+- Vous pouvez **demander plus d'usage**: l'admin accepte ou refuse
+- Sinon, les limites repartent à zéro **le 1er du mois**
+- Ensuite, cherchez la cause: une conversation interminable? Fable? Un agent laissé seul?
+
+Note: Le bouton s'appelle "Request more usage" dans la documentation en anglais. Remise à zéro: le 1er du mois à minuit, heure UTC. Sur un ancien contrat avec quota, c'est différent: des limites par session de quelques heures et par semaine.
+---
+## Les réglages du premier jour
+Pour la direction et l'admin:
+
+1. **Une limite pour le collège**, et **une limite par personne**
+2. Savoir **qui reçoit les alertes** à 75% et à 90%
+3. **Le modèle par défaut**: Sonnet ou Opus. Fable retiré, ou réservé à quelques personnes
+4. **La consommation visible** pour chacun
+5. Une personne qui regarde la dépense **une fois par mois**: par personne, par modèle, et ce qui a changé
+---
+## À demander à l'admin du collège
+- Quel est notre contrat: **l'usage au volume**, ou un ancien contrat avec un quota?
+- Quel est **le budget**, et quelles limites sont déjà en place?
+- Qui est l'admin, et **qui reçoit les alertes**?
+- Quels **modèles** sont autorisés? Fable l'est-il?
+- Où chacun voit-il **sa consommation**?
+
+Note: Tant que ces réponses manquent, rester prudent dans la séance: dire "le collège paie selon l'usage, l'admin peut mettre des limites, regardez votre consommation", sans chiffres.
+        </textarea>
+      </section>
+    </div>
+  </div>
+  <script src="lib/reveal/dist/reveal.js"></script>
+  <script src="lib/reveal/plugin/markdown/markdown.js"></script>
+  <script src="lib/reveal/plugin/notes/notes.js"></script>
+  <script src="lib/pele.iife.js"></script>
+  <script>
+    const render = (window.Pele && window.Pele.render) || null;
+    function drawDiagrams() {
+      if (!render) return;
+      document.querySelectorAll('.reveal pre code.mermaid, .reveal pre code.language-mermaid').forEach((code) => {
+        const pre = code.closest('pre');
+        try { const { svg } = render(code.textContent); const d = document.createElement('div'); d.className = 'diagram pele'; d.innerHTML = svg; pre.replaceWith(d); }
+        catch (e) { console.warn('Diagram failed', e); }
+      });
+    }
+    async function copyText(text) {
+      try { await navigator.clipboard.writeText(text); return; } catch (e) {}
+      const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select();
+      document.execCommand('copy'); t.remove();
+    }
+    const ICON_COPY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';
+    const ICON_DONE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>';
+    function addCopyButtons() {
+      // boxed prompts: a "Copier" button in the corner
+      document.querySelectorAll('.reveal .slides blockquote').forEach((bq) => {
+        if (bq.closest('aside')) return;
+        const text = bq.innerText.trim();
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'copy-btn'; b.textContent = 'Copier'; b.title = 'Copier la demande';
+        b.addEventListener('click', async (ev) => {
+          ev.stopPropagation(); await copyText(text); b.blur();
+          b.textContent = 'Copié'; b.classList.add('done');
+          setTimeout(() => { b.textContent = 'Copier'; b.classList.remove('done'); }, 2000);
+        });
+        bq.appendChild(b);
+      });
+      // short prompts inside the text: click the text or the icon
+      document.querySelectorAll('.reveal .slides .cp').forEach((sp) => {
+        if (sp.closest('aside')) return;
+        const text = sp.innerText.trim().replace(/^"|"$/g, '');
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'copy-ico'; b.innerHTML = ICON_COPY; b.setAttribute('aria-label', 'Copier la demande');
+        sp.title = 'Cliquer pour copier';
+        // keep the icon on the same line as the last word
+        const w = document.createTreeWalker(sp, NodeFilter.SHOW_TEXT); let last = null; while (w.nextNode()) last = w.currentNode;
+        const tail = document.createElement('span'); tail.className = 'tail';
+        if (last) { const end = last.splitText(last.data.lastIndexOf(' ') + 1); end.parentNode.replaceChild(tail, end); tail.appendChild(end); } else sp.appendChild(tail);
+        tail.appendChild(b);
+        sp.addEventListener('click', async (ev) => {
+          ev.stopPropagation(); await copyText(text); b.blur();
+          b.innerHTML = ICON_DONE; sp.classList.add('done');
+          setTimeout(() => { b.innerHTML = ICON_COPY; sp.classList.remove('done'); }, 2000);
+        });
+      });
+    }
+    Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
+      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); Reveal.layout(); });
+  </script>
+</body>
+</html>

@@ -5,16 +5,17 @@
 Demander mieux, pour obtenir mieux.
 
 ---
-## Les pièces d'une bonne demande
-1. **Une approche**, si utile: "Aborde ce travail comme le ferait une directrice expérimentée"{copy}
-2. **Le contexte**: l'école, la classe, la situation
-3. **Les données**: le document, le texte, le tableau à traiter
-4. **La tâche**: ce que vous voulez, avec un verbe clair (résume, compare, rédige, classe)
-5. **Des exemples**, si la forme compte
-6. **Les contraintes et le format**: longueur, ton, structure, ce qu'il ne doit pas faire
-7. **Les critères d'un bon résultat**: comment vous allez juger la réponse
+## La recette d'une bonne demande, en détail
+La même recette que dans la partie 4, en six points:
 
-Mettez **les informations et les règles importantes à la fin**: la fin d'un long texte est mieux lue que le milieu.
+1. **Qui vous êtes**: votre rôle, l'école, la classe, la situation
+2. **Ce que vous voulez**: un verbe clair (résume, compare, rédige, classe), et le document à traiter
+3. **Pour qui**: des parents, l'équipe, le pouvoir organisateur
+4. **Sous quelle forme**: longueur, ton, structure
+5. **Un exemple**, si la forme compte
+6. **Les règles et les critères**: ce qu'il ne doit pas faire, et comment vous allez juger la réponse
+
+Mettez **les règles importantes à la fin**. En option, une approche: "Aborde ce travail comme le ferait une directrice expérimentée"{copy}
 
 ---
 ## Sans exemple, ou avec quelques exemples
@@ -35,17 +36,11 @@ Mettez **les informations et les règles importantes à la fin**: la fin d'un lo
 ---
 ## Les modèles ont besoin de moins en moins d'aide
 - Chaque nouvelle version **comprend mieux** une demande simple et claire
-- Beaucoup d'astuces d'hier (rôles, formules magiques, "réfléchis étape par étape") servent **de moins en moins**
-- Ce qui reste utile: **le contexte**, un objectif clair, vos critères, et vos exemples si la forme compte
+- Beaucoup d'astuces d'hier (rôles, formules magiques) servent **de moins en moins**, et peuvent même **gêner**: testez avec et sans
+- Exemple: "réfléchis étape par étape". Les modèles récents raisonnent déjà seuls: c'est **l'effort**
+- Ce qui reste utile: **donner vous-même les étapes**, pour imposer votre méthode. "1. Trouve les dates. 2. Garde celles du primaire. 3. Vérifie chaque date dans le texte. 4. Fais le tableau"{copy}
+- Et toujours: **le contexte**, un objectif clair, vos critères, vos exemples si la forme compte
 - Commencez **simple**. Ajoutez des consignes seulement quand le résultat ne convient pas
-- Une technique qui marchait l'an passé peut **gêner** aujourd'hui: testez avec et sans
-
----
-## Raisonner étape par étape
-- Pour une tâche compliquée: "**Réfléchis étape par étape** avant de répondre"{copy}
-- Mieux: **donnez vous-même les étapes**. "1. Trouve les dates. 2. Garde celles du primaire. 3. Vérifie chaque date dans le texte. 4. Fais le tableau"{copy}
-- Les modèles récents raisonnent déjà seuls (c'est l'effort): les étapes servent surtout à **imposer votre méthode**
-- Demandez à voir le raisonnement: vous **vérifiez pourquoi** il arrive à sa réponse
 
 ---
 ## Enchaîner les demandes
@@ -75,7 +70,7 @@ Vous **vérifiez entre deux étapes**: une erreur ne passe pas à la suite.
 ## Juger le résultat avec des critères
 - Donnez **vos critères** avant: "Un bon mot aux parents: moins de 120 mots, la date, le prix, l'échéance, un talon-réponse"{copy}
 - Puis: "**Évalue ta réponse** selon ces critères. Pour chaque critère: oui ou non, et pourquoi"{copy}
-- Demandez **le niveau de confiance**: "Pour chaque information, dis si tu es sûr, assez sûr, ou pas sûr, et pourquoi"{copy}
+- Pour les faits: "Pour chaque information, cite la phrase exacte et la page"{copy}. Son **niveau de confiance** est un indice, **pas une preuve**
 - Un critère écrit une fois sert à chaque demande: il va **dans une skill** (bonus 14)
 
 ---

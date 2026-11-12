@@ -19,7 +19,7 @@ Note: Disponible dans l'application Claude selon la version et l'abonnement (Cow
 - Mais cette mémoire est **chez Anthropic**: on voit mal ce qu'elle contient, et elle ne passe pas dans un autre outil
 - Elle peut aussi **mélanger les sujets**: une information d'une conversation revient là où elle n'a rien à faire
 - Elle retient des choses **un peu au hasard**, et s'en sert un peu au hasard aussi
-- Mon conseil: **à proscrire**. Désactivez-la, et gardez votre contexte dans **votre base de connaissances**, où vous gardez le contrôle
+- Mon conseil, comme dans la partie 5: **désactivez-la**, et gardez votre contexte dans **votre base de connaissances**, où vous gardez le contrôle
 
 Note: Le réglage se trouve dans les paramètres de l'application (le nom exact dépend de la version). Lien avec la partie 7: la mémoire est un contexte loué; votre base de connaissances est un contexte à vous.
 

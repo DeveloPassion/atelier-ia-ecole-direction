@@ -11,17 +11,22 @@ L'IA générative: une IA qui **crée du contenu** (texte, image, son, vidéo, c
 - Il a appris sur une énorme quantité de textes, jusqu'à une date limite
 - Il ne "sait" rien de votre école, **sauf ce que vous lui donnez**
 
+Note: ESSENTIEL.
+
 ---
 ## Le prompt
-Le prompt, c'est la demande que vous écrivez. C'est **une partie du contexte**, pas tout le contexte.
+Le prompt, c'est la demande que vous écrivez: **une partie du contexte**, pas tout. La recette, en six points:
 
-Un bon prompt dit:
-1. Qui vous êtes
-2. Ce que vous voulez
-3. Pour qui
-4. Sous quelle forme (longueur, ton, liste ou texte)
-5. Un exemple, si vous en avez un
-6. Les règles à suivre, et **les critères d'un bon résultat**
+1. **Qui vous êtes**
+2. **Ce que vous voulez**
+3. **Pour qui**
+4. **Sous quelle forme** (longueur, ton, liste ou texte)
+5. **Un exemple**, si vous en avez un
+6. **Les règles et les critères** d'un bon résultat
+
+**Commencez simple**: ajoutez des consignes seulement si le résultat ne convient pas.
+
+Note: ESSENTIEL. C'est la même recette partout dans le cours: ici, dans "votre vraie tâche" (partie 9), dans le bonus 11 et sur l'aide-mémoire. Pourquoi commencer simple: les modèles ont besoin de moins en moins d'aide (bonus 11).
 
 ---
 ## Deux astuces pour vos demandes
@@ -29,15 +34,20 @@ Un bon prompt dit:
 - Demandez-lui de **vous poser des questions** avant de commencer: "Pose-moi les questions qui te manquent."{copy} Il propose souvent des choix à cliquer: c'est très rapide
 - Les techniques de prompting (exemples, rôles, étapes, critères): **bonus 11**
 
+Note: À PASSER si le temps manque.
+
 ---
 ## L'hallucination
 - Claude prédit ce qui est probable, **pas ce qui est vrai**
 - Il peut donc inventer un fait, une date, une source, avec aplomb
 - C'est une **hallucination**
 - Règle: les faits, les chiffres et les sources **se vérifient toujours**
-- Demandez-lui de **vérifier ses informations et ses sources**, et de donner **son niveau de confiance** pour chaque résultat
+- Demandez-lui de **citer la phrase exacte et la page** de chaque information: vous vérifiez en un coup d'œil
+- Son **niveau de confiance** est un indice, **pas une preuve**: il peut être sûr de lui et se tromper
 
 Une analogie: un stagiaire très cultivé, très rapide, qui ne vous connaît pas, et qui **n'ose jamais dire** "je ne sais pas".
+
+Note: ESSENTIEL.
 
 ---
 ## La complaisance
@@ -46,7 +56,7 @@ Une analogie: un stagiaire très cultivé, très rapide, qui ne vous connaît pa
 - Le risque: il valide une mauvaise idée, un calcul faux, une décision fragile
 - La parade: demandez-lui de **critiquer**. "Qu'est-ce qui cloche dans ce plan?"{copy}, "Joue l'avocat du diable"{copy}, "Donne-moi les trois meilleures objections"{copy}
 
-Note: C'est le risque le plus utile à connaître pour une direction: on utilise Claude pour vérifier ses propres décisions, et il a tendance à les approuver. Le montrer en direct si le temps le permet: proposer une idée discutable, puis demander "Qu'est-ce qui cloche?".
+Note: ESSENTIEL. C'est le risque le plus utile à connaître pour une direction: on utilise Claude pour vérifier ses propres décisions, et il a tendance à les approuver. Le montrer en direct si le temps le permet: proposer une idée discutable, puis demander "Qu'est-ce qui cloche?".
 
 ---
 ## Points forts, points faibles
@@ -59,6 +69,8 @@ Note: C'est le risque le plus utile à connaître pour une direction: on utilise
 
 Attention: il peut être brillant sur une tâche et rater la tâche voisine. **Testez-le sur vos vraies tâches**, et plus d'une fois.
 
+Note: À PASSER si le temps manque.
+
 ---
 ## Pas seulement du texte
 - **Lire des images**: une photo d'une page écrite à la main, une capture d'écran, un tableau photographié deviennent du texte ou un tableau
@@ -66,11 +78,13 @@ Attention: il peut être brillant sur une tâche et rater la tâche voisine. **T
 - **Créer des animations et des vidéos courtes**, à partir d'un texte ou d'un tableau
 - **Créer des petits jeux et des applications**: un quiz pour une classe, un jeu de calcul mental, un outil de tirage au sort, en quelques minutes
 
-Note: Exemple à dire: "Crée un jeu de calcul mental pour des élèves de 2e primaire, avec un score." Claude le construit dans un artefact, et on peut y jouer tout de suite. Pour les animations: Claude Motion existe sur Team et Enterprise, mais il est désactivé par défaut sur Enterprise.
+Note: À PASSER si le temps manque. Exemple à dire: "Crée un jeu de calcul mental pour des élèves de 2e primaire, avec un score." Claude le construit dans un artefact, et on peut y jouer tout de suite. Pour les animations: Claude Motion existe sur Team et Enterprise, mais il est désactivé par défaut sur Enterprise.
 
 ---
 ## L'IA agentique
 Un chatbot répond. Un agent **agit**.
+
+Note: ESSENTIEL.
 
 ---
 ## Tout ce que vous faites sur votre PC, Claude peut le faire
@@ -84,7 +98,7 @@ Ce que vous pouvez faire sur votre ordinateur, dans le navigateur ou sur le rés
 
 La limite n'est plus ce que l'IA sait faire, mais **ce que vous lui permettez** de faire.
 
-Note: Dire que c'est le grand changement de 2025-2026: on passe d'une IA qui répond à une IA qui fait. Donner un exemple de la matinée: la circulaire, Claude l'a lue et en a fait un tableau. Annoncer les démos de la partie 6 (fichiers, dossier, navigateur, présentation). Faire le lien avec la partie 8: plus un agent peut faire, plus il faut choisir ce qu'on lui permet.
+Note: ESSENTIEL. Dire que c'est le grand changement de 2025-2026: on passe d'une IA qui répond à une IA qui fait. Donner un exemple de la matinée: la circulaire, Claude l'a lue et en a fait un tableau. Annoncer les démos de la partie 6 (fichiers, dossier, navigateur, présentation). Faire le lien avec la partie 8: plus un agent peut faire, plus il faut choisir ce qu'on lui permet.
 ---
 ## La boucle d'un agent
 <div class="loop">
@@ -96,7 +110,7 @@ Note: Dire que c'est le grand changement de 2025-2026: on passe d'une IA qui ré
 
 C'est ce qu'il a fait avec la circulaire: lire, trier, vérifier, faire le tableau.
 
-Note: Laisser l'animation tourner une fois. Exemple parlé avec la circulaire: plan (lire les sections), action (lire le PDF), observation (des actions pour plusieurs niveaux), recommencer (trier, vérifier les dates), fini (le tableau).
+Note: À PASSER si le temps manque. Laisser l'animation tourner une fois. Exemple parlé avec la circulaire: plan (lire les sections), action (lire le PDF), observation (des actions pour plusieurs niveaux), recommencer (trier, vérifier les dates), fini (le tableau).
 
 ---
 ## Les connecteurs et MCP
@@ -110,6 +124,8 @@ flowchart LR
   C[Claude] --- M[Connecteurs MCP] --- O[Outlook, OneDrive, agenda]
 ```
 
+Note: À PASSER si le temps manque.
+
 ---
 ## Les skills
 - Une skill, c'est **une façon de faire**, écrite une fois, que Claude suit chaque fois
@@ -121,8 +137,12 @@ flowchart LR
 
 Pour un système qui vous connaît: les skills appliquent vos processus écrits. C'est le cœur d'un système qui vous connaît. Le détail: bonus 14.
 
+Note: ESSENTIEL.
+
 ---
 ## L'humain reste dans la boucle
 - Claude demande la permission avant les actions importantes
 - Envoyer, supprimer, payer, publier: **c'est vous qui validez**
 - Lisez la demande de permission avant de dire oui
+
+Note: ESSENTIEL.

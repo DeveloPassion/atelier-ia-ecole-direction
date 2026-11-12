@@ -16,8 +16,8 @@ Pour obtenir de bons résultats, plus vite.
 
 ---
 ## Obtenir du juste
-- Demandez **les sources**, ou **la page** du document: vous vérifiez en un coup d'œil
-- Demandez-lui de **vérifier les informations et les sources**, et d'**évaluer son niveau de confiance** pour chaque résultat
+- Demandez **la phrase exacte et la page** du document: "Pour chaque information, cite la phrase exacte et la page"{copy}. Vous vérifiez en un coup d'œil
+- Son **niveau de confiance** est un indice, **pas une preuve**: il peut être sûr de lui et se tromper
 - Demandez ce dont il **n'est pas sûr**: "Signale ce que tu ne sais pas au lieu de deviner"{copy}
 - Demandez **une critique**: "Qu'est-ce qui cloche?"{copy}, "Joue l'avocat du diable"{copy}
 

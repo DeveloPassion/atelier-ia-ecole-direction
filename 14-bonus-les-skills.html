@@ -63,6 +63,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 .reveal section.prompts p { font-size: 0.74em; margin: 0 0 0.25em 0; }
 .reveal section.prompts blockquote { font-size: 0.62em; width: 96%; margin: 0 0 0.9em 0; padding: 0.7em 5.2em 0.7em 1.2em; }
 .reveal section.prompts blockquote p { font-size: 1em; margin: 0; }
+.reveal section.prompts p a { color: #ff4fa8; text-decoration: underline; }
 .reveal section.prompts blockquote .copy-btn { font-size: 0.78em; }
 @media print { .reveal blockquote .copy-btn, .reveal .cp .copy-ico { display: none; } }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
@@ -171,14 +172,25 @@ Cherchez les tâches **répétitives et fréquentes**:
 
 La question à se poser: **qu'est-ce que je refais chaque semaine**, de la même façon?
 ---
-## Créer une skill avec Claude
-1. Utilisez **la skill de création de skills** (skill-creator): <span class="cp">"Aide-moi à créer une skill pour écrire aux parents, en respectant la spécification des skills IA: https://agentskills.io/specification.md. Pose-moi des questions sur ma façon de faire"</span>
-2. Donnez un ou deux **exemples réussis**
-3. **Testez** la skill sur un vrai cas
-4. **Corrigez la skill**, pas seulement la réponse
-5. Gardez une copie du texte **dans votre base de connaissances**: elle vous appartient
+## Créer une skill en cinq étapes
+1. **Faire**: faites la tâche une fois avec Claude, pas à pas
+2. **Écrire**: <span class="cp">"Écris la marche à suivre de ce qu'on vient de faire: les étapes, les règles, les critères."</span> Vous relisez
+3. **Tester**, dans une **nouvelle conversation**, sans contexte: <span class="cp">"Lis ce processus et exécute-le."</span> La conversation d'origine cache les trous (partie 5)
+4. **Corriger** le texte, pas seulement la réponse. Puis retester
+5. **Transformer en skill**, avec la skill de création de skills: <span class="cp">"Transforme ce processus en skill, en respectant la spécification des skills IA: https://agentskills.io/specification.md"</span>
 
-Avec le système de la phase 2: "Crée-moi une skill pour...", ou "skillify" après une conversation réussie.
+La spécification sert à ceci: la skill marche avec **d'autres outils d'IA**, sans dépendre d'un fournisseur.
+
+Note: Pourquoi faire d'abord: les petites décisions qu'on prend sans y penser ne sortent pas d'une page blanche, ni d'un entretien. La skill de création de skills s'appelle skill-creator dans l'application. Les quatre premières étapes (faire, écrire, tester, corriger) viennent d'Evelyn Chapman. La cinquième est mon ajout: voir mon article "How I Build AI Skills That Actually Work" (https://www.dsebastien.net/how-i-build-ai-skills-that-actually-work). Un exemple concret pour la salle: plus de 375 skills dans mon système, utilisées chaque jour. Et les skills s'appellent entre elles: la revue du lundi appelle le tri de la circulaire. Avec le système de la phase 2, une phrase suffit: "Crée-moi une skill pour...", ou "skillify" après une conversation réussie.
+---
+## Les erreurs du premier essai sont utiles
+- Au premier test, l'IA **se trompe**. C'est normal, et c'est ce qu'on cherche
+- Chaque erreur montre **une chose qui n'est pas écrite**: une étape sautée, une valeur par défaut, un choix que vous faites sans y penser
+- Quand l'IA se trompe, on **corrige le texte**. On n'accuse pas l'IA
+- **3 à 5 essais** suffisent en général
+- Un chemin plus court existe: demander à Claude de **vous poser des questions** sur votre façon de faire. C'est la démo de la partie 7
+
+Note: La demande du chemin court: "Aide-moi à créer une skill pour écrire aux parents, en respectant la spécification des skills IA: https://agentskills.io/specification.md. Pose-moi des questions sur ma façon de faire." Elle marche, mais elle oublie plus de choses: on ne pense pas à dire ce qu'on fait sans y penser.
 ---
 ## Exemple: écrire aux parents
 ```
@@ -195,8 +207,15 @@ Critères: la date, le prix et l'échéance sont exacts et visibles.
 - Un résultat ne va pas? **Corrigez la recette**, pour que l'erreur ne revienne pas
 - Les deux s'améliorent avec le temps: **le processus** (votre façon de faire) et **la skill** (les instructions pour l'IA)
 - Après une utilisation: <span class="cp">"**Qu'est-ce qu'on améliore**, dans le processus ou dans la skill? Mets à jour"</span>. Vous relisez, vous validez
+- Un changement peut **casser** une skill qui marchait: gardez **la version d'avant** (une copie datée, dans votre base de connaissances), et retestez après chaque changement
 - Relisez vos skills **une fois par trimestre**
 - Une bonne skill fait gagner du temps **à chaque fois**, et à toute l'équipe si vous la partagez
+---
+## Commencez par une seule skill
+- **Une seule** skill cette semaine: celle de la tâche que vous refaites le plus
+- Utilisez-la plusieurs fois, et corrigez-la
+- Puis une autre, la semaine suivante
+- Une skill est **un outil**. Vingt skills sont **un système**
         </textarea>
       </section>
     </div>

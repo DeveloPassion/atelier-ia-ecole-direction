@@ -155,10 +155,35 @@ Note: Source: "the seat fee covers access only, and all usage is billed separate
 
 Note: Ordre de grandeur pour la salle, sans chiffres précis: une question courte coûte très peu; une circulaire de 20 pages lue en effort haut coûte bien plus. Le message: ce n'est pas cher pour une vraie tâche, mais les longues conversations qui traînent coûtent sans rien rapporter.
 ---
+## Le modèle change tout
+Le prix d'un token, comparé à Sonnet 5.5:
+
+| Modèle | Prix | Pour quoi |
+|---|---|---|
+| Haiku 5.5 | **20 fois moins** | Le très simple, très vite |
+| **Sonnet 5.5** | la référence | Le simple: un mail, une reformulation, un résumé court |
+| **Opus 5.5** | **2 fois plus** | Le gros du travail: une circulaire, un tableau, un dossier |
+| Fable 5.2 | **4 fois plus** | Seulement une tâche qui le justifie |
+
+- En pratique, l'écart est **plus grand**: un gros modèle réfléchit et écrit davantage
+- Le bon modèle pour la tâche est **le premier levier**. Il se choisit **à chaque conversation**
+
+Note: Les prix publics d'Anthropic, par million de tokens lus et par million de tokens écrits (page "Pricing" de la documentation, lue le 12/11/2026): Haiku 5.5: 0,10 et 0,50 dollar (pour les demandes de moins de 100 000 tokens). Sonnet 5.5: 2 et 10 dollars. Opus 5.5: 4 et 20 dollars. Fable 5.2: 8 et 40 dollars. Selon la documentation, un contrat Entreprise à l'usage paie ces tarifs: à confirmer pour le collège. Le message: un mauvais choix se paie à chaque message. Tout faire avec Fable coûte au moins quatre fois plus que tout faire avec Sonnet, pour un résultat souvent identique sur une tâche simple. Mais l'inverse coûte aussi: un modèle trop léger sur une tâche difficile, et on recommence. L'effort haut et le mode rapide augmentent encore la facture.
+---
+## Une longue conversation coûte de plus en plus
+- À chaque message, Claude **relit tout** ce qui précède: vos messages, ses réponses, les documents, les pages lues
+- Le premier message lit quelques lignes. Le quarantième relit **les 39 échanges d'avant**
+- Le coût ne grandit donc pas en ligne droite: une conversation deux fois plus longue coûte **bien plus que deux fois plus**
+- Avec un agent, c'est plus fort encore: chaque étape (un fichier lu, une page ouverte) **s'ajoute au contexte**, et tout est relu à l'étape suivante
+- Et la fiabilité baisse en même temps (partie 5): on paie **plus** pour **moins bien**
+- La parade: **une conversation par sujet**, et un prompt de passage pour continuer ailleurs
+
+Note: Un calcul simple pour la salle: dix conversations de 10 messages font relire environ neuf fois moins de texte qu'une seule conversation de 100 messages. Le cache réduit le prix de ce qui est relu, mais il expire après quelques minutes, et il ne change pas la logique: plus c'est long, plus chaque message coûte.
+---
 ## Ce qui coûte le plus
-- **Les tâches d'agent** (Cowork, Claude in Chrome): beaucoup d'étapes, donc beaucoup de tokens que vous ne voyez pas
 - **Le modèle**: Fable consomme énormément, Opus beaucoup, Sonnet moins, Haiku peu. Et l'effort haut consomme plus
 - **Les longues conversations**: chaque message relit tout l'historique
+- **Les tâches d'agent** (Cowork, Claude in Chrome): beaucoup d'étapes, donc beaucoup de tokens que vous ne voyez pas
 - **Plusieurs agents** en même temps: chacun fait ses propres demandes
 - **Une tâche planifiée oubliée**: elle tourne même quand personne ne regarde
 
@@ -183,8 +208,8 @@ Note: Le cache est documenté pour Claude Code. Je n'ai rien trouvé d'officiel 
 Note: La compaction existe aussi dans l'application Claude (Claude Desktop). Montrer une longue conversation déjà compactée, préparée avant la séance. Image utile: un PV de réunion garde les décisions et perd les détails.
 ---
 ## Ce que chacun fait
-1. **Une conversation par sujet**, et courte
-2. **Le bon modèle**: Sonnet pour le simple, Opus pour le gros travail. Fable seulement pour une tâche qui le justifie
+1. **Le bon modèle pour la tâche**, choisi à chaque conversation: Sonnet pour le simple, Opus pour le gros travail. Fable seulement pour une tâche qui le justifie
+2. **Une conversation par sujet**, et courte: une longue conversation coûte de plus en plus à chaque message
 3. **Le bon effort**: bas ou moyen pour le travail courant, haut pour ce qui doit être juste
 4. Joindre **seulement ce qui sert** à la tâche
 5. **Arrêter** un agent qui tourne en rond, au lieu de le laisser continuer
@@ -226,6 +251,8 @@ Pour la direction et l'admin:
 3. **Le modèle par défaut**: Sonnet ou Opus. Fable retiré, ou réservé à quelques personnes
 4. **La consommation visible** pour chacun
 5. Une personne qui regarde la dépense **une fois par mois**: par personne, par modèle, et ce qui a changé
+
+Une limite n'est pas une punition: c'est **une ceinture de sécurité**. Elle arrête un agent qui tourne seul, ou une tâche oubliée, avant la facture.
 ---
 ## À demander à l'admin du collège
 - Quel est notre contrat: **l'usage au volume**, ou un ancien contrat avec un quota?

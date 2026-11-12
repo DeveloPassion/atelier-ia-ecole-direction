@@ -69,12 +69,13 @@ Note: À PASSER si le temps manque. Ce schéma n'est pas un résultat de benchma
 
 ---
 ## Le coût, en bref
-- L'IA se paie en **tokens**: tout ce que Claude lit, plus tout ce qu'il écrit. Une longue conversation coûte plus **à chaque message**
+- L'IA se paie en **tokens**: tout ce que Claude lit, plus tout ce qu'il écrit
 - Avec Claude Entreprise, le collège paie **un siège par personne, plus l'usage**
 - **Voir sa consommation**: dans les paramètres de l'application, la page de l'utilisation. Regardez-la de temps en temps
 - Si une limite est atteinte, Claude s'arrête et le dit: **demander plus à l'admin**, ou attendre
-- Les bons réflexes: **une conversation par sujet**, Sonnet pour le simple, l'effort haut seulement quand il le faut
-- Le détail (les limites, le suivi, ce qui coûte le plus): **bonus 18**
+- Premier levier: **le bon modèle pour la tâche**. Opus coûte 2 fois plus que Sonnet, et Fable 4 fois plus
+- Deuxième levier: **des conversations courtes**. Claude relit tout à chaque message: une longue conversation coûte de plus en plus
+- Le détail (les prix, les limites, le suivi): **bonus 18**
 
 Note: À PASSER si le temps manque, sauf l'écran de l'utilisation: le montrer en direct (dans les paramètres; la documentation en anglais dit "Settings > Usage", le nom exact dépend de la version et de la langue). À vérifier avec l'admin avant la séance: le contrat exact (usage au volume, ou ancien contrat avec un quota inclus), les limites par personne, et si chacun voit bien sa consommation. Si le contrat est un ancien contrat avec quota, adapter la deuxième ligne: "les tokens comptent dans votre quota". Ordre de grandeur pour la salle, sans chiffres précis: une question courte coûte très peu; une circulaire de 20 pages lue en effort haut coûte bien plus.
 

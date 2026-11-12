@@ -169,7 +169,7 @@ story = [
     ]),
     box("Le coût et les limites", [
         b("On paie <b>l'usage</b>, en <b>tokens</b>: tout ce que Claude lit, plus tout ce qu'il écrit. Une longue conversation coûte plus à chaque message."),
-        b("Opus et l'effort haut coûtent plus que Sonnet et l'effort bas. Le mode rapide aussi."),
+        b("<b>Le modèle d'abord</b>: Opus coûte 2 fois plus que Sonnet, Fable 4 fois plus. L'effort haut et le mode rapide aussi."),
         b("Une conversation reprise après une longue pause doit tout relire: elle coûte plus."),
         b("Regardez votre <b>consommation</b> de temps en temps (dans les paramètres). Si une limite est atteinte, Claude s'arrête: demandez plus à l'admin, ou attendez."),
     ]),

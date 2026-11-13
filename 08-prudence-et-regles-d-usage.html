@@ -198,10 +198,32 @@ Note: ESSENTIEL. Lire le dessin de gauche à droite. À gauche, ce qui reste che
 - Chez Anthropic, vos données sont **stockées aux États-Unis**, et elles peuvent être traitées dans d'autres régions aussi. Pas d'option Europe dans l'abonnement Entreprise, selon sa documentation
 - Le **DPA** (accord de traitement des données, RGPD article 28) est le contrat qui encadre ce que le fournisseur en fait. À demander au collège
 - Une conversation est gardée **tant que vous ne la supprimez pas**. Supprimée, elle quitte les systèmes d'Anthropic dans les 30 jours. Avec **Fable**: 30 jours au moins, dans tous les cas
-- Un pouce levé ou baissé fait garder les données de cet échange **pendant 5 ans**: jamais avec des données personnelles
+- Un pouce levé ou baissé envoie **toute la conversation** à Anthropic. Elle est gardée 5 ans, et elle peut servir à l'entraînement: **n'en donnez pas**
 - Le **RGPD** s'applique toujours: le collège reste responsable
 
 Note: À PASSER si le temps manque. Vérifié le 07/11/2026 dans la documentation d'Anthropic: "workspace geo" (stockage) n'existe qu'en "us"; le traitement ("inference geo") est "global" par défaut ou "us". Les options en Europe passent par AWS Bedrock (Francfort) ou Google Cloud, hors abonnement Claude Enterprise. Fable 5, 5.1 et 5.2 sont des "Covered Models": 30 jours de conservation minimum, revue automatique de sécurité, pas de ZDR pour Enterprise. À dire simplement: ce n'est pas une raison de ne pas utiliser Claude, mais une raison de ne pas y mettre n'importe quelle donnée, et de faire valider par le DPO. Questions à poser au collège: le DPA est-il signé? Qui est l'admin? Quelles données sont permises? Durées lues le 13/11/2026 dans le centre de confidentialité d'Anthropic ("How long do you store my organization's data?"). L'AI Act: l'article 4, modifié en 2026, demande au collège de prendre des mesures pour développer la culture IA du personnel; il n'impose pas une formation obligatoire. Évaluer des élèves peut être un usage à haut risque.
+---
+## Pour l'admin: les réglages de confidentialité
+Par un propriétaire de l'organisation, dans **Paramètres de l'organisation > Données et confidentialité**:
+
+1. **Couper les pouces**: le réglage **"Évaluer les conversations"**, sur arrêt
+2. **Fixer une durée de conservation**: sans réglage, les conversations sont gardées **sans limite**. Le minimum est de 30 jours
+3. Ailleurs dans les réglages de l'organisation: **couper la mémoire**, et retirer ce qui ne sert pas (les connecteurs non utilisés, le modèle Fable)
+
+La télémétrie de l'application (rapports de plantage, statistiques d'usage): **pas de réglage documenté** sur votre abonnement.
+
+<p class="doc"><b>Documentation:</b> <a href="https://support.claude.com/fr/articles/10504844">Gérer les paramètres de retours utilisateur</a> · <a href="https://support.claude.com/fr/articles/10440198">Configurer la durée de conservation</a></p>
+
+Note: À PASSER si le temps manque. Lu le 13/11/2026 dans le centre d'aide en français et dans le centre de confidentialité d'Anthropic. Les retours: par défaut, les données d'un compte Entreprise ne servent pas à l'entraînement des modèles. L'exception, ce sont les retours envoyés avec les pouces: toute la conversation est gardée jusqu'à 5 ans, et elle peut servir à l'entraînement. La durée de conservation: quand on la raccourcit, ce qui dépasse est supprimé pour de bon, sans retour possible. La décider avec le collège avant de la régler. La télémétrie: la documentation décrit deux réglages qui la coupent (disableEssentialTelemetry et disableNonessentialTelemetry), mais seulement pour Claude Desktop déployé sur une plateforme tierce (Amazon Bedrock, Google Cloud, Microsoft Foundry), pas pour un compte Entreprise normal. Selon cette même page, ces rapports contiennent des données techniques (version, système, type d'erreur) et jamais le contenu des demandes ni des réponses. Si le collège veut aller plus loin: le demander à Anthropic.
+---
+## Pour chacun: trois gestes de confidentialité
+1. **Pas de pouce**, ni levé ni baissé. Si une réponse est mauvaise, dites-le à Claude dans la conversation
+2. **Coupez votre mémoire**: Paramètres > Votre Claude (partie 5)
+3. **Supprimez** les conversations dont vous n'avez plus besoin. Une conversation supprimée quitte les systèmes d'Anthropic dans les 30 jours
+
+Ce qui doit durer est **dans votre base de connaissances**, pas dans une vieille conversation.
+
+Note: ESSENTIEL. Trois gestes simples, à faire dès aujourd'hui. Le premier ne dépend pas de l'admin: même si le réglage des pouces n'est pas encore coupé, on n'en donne pas.
 ---
 ## La triple menace
 Un agent devient dangereux quand il a **les trois en même temps**:
@@ -251,7 +273,7 @@ Note: ESSENTIEL. Document: "Documents à remettre/Projet de règles d'usage de l
 
 1. Utiliser **le compte Claude du collège**, et lui seulement
 2. **Relire et vérifier** avant d'envoyer ou de signer
-3. Lire **chaque demande de permission**
+3. Lire **chaque demande de permission**, et ne pas donner de pouce
 
 À ne pas faire:
 

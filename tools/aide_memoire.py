@@ -217,7 +217,7 @@ story = [
         b("Chez Anthropic, les données sont <b>stockées aux États-Unis</b>; pas d'option Europe dans l'abonnement Entreprise, selon sa documentation."),
         b("Le <b>DPA</b> (accord de traitement des données, RGPD) encadre ce que le fournisseur fait des données. Le <b>ZDR</b> (zéro conservation) existe pour certains usages, pas avec Fable."),
         b("Le collège reste <b>responsable</b> (RGPD). L'<b>AI Act</b> demande de développer la culture IA du personnel, et encadre les usages à haut risque."),
-        b("Un <b>pouce levé ou baissé</b> fait garder l'échange 5 ans: jamais avec des données personnelles."),
+        b("Un <b>pouce levé ou baissé</b> envoie toute la conversation, gardée 5 ans: n'en donnez pas. L'admin peut les couper."),
     ]),
     box("Prudence: les agents", [
         b("<b>La triple menace</b>: un agent devient dangereux quand il a les trois en même temps: des <b>données privées</b>, du <b>contenu non fiable</b> (page web, mail reçu, PDF inconnu) et un moyen d'<b>envoyer dehors</b> (mail, formulaire). Ne donnez jamais les trois sans regarder."),

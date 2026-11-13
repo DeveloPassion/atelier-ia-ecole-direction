@@ -81,7 +81,7 @@ html.print-pdf .reveal .chart, html.print-pdf .reveal .diagram, html.print-pdf .
   background: #37404c; border-radius: 14px; padding: 14px 18px; box-sizing: border-box; }
 html.print-pdf .reveal .chart.strip { padding: 8px 18px; }
 html.print-pdf .reveal .chart .fr { opacity: 0 !important; } html.print-pdf .reveal .chart .fr:last-of-type { opacity: 1 !important; }
-html.print-pdf .reveal .slide-number { color: #4b5563 !important; background: none !important; }
+html.print-pdf .reveal .slide-number { color: #4b5563 !important; background: none !important; font-size: 20px !important; right: 20px !important; bottom: 12px !important; }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
 .reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart.strip { margin: 0 0 0.5em 0; } .reveal .chart.strip svg { max-height: 172px; } .reveal .chart .fr { opacity: 0; } .reveal .chart .fr.f1 { opacity: 1; } @media print { .reveal .chart .fr { opacity: 0 !important; } .reveal .chart .fr:last-of-type { opacity: 1 !important; } } .reveal .chart.tall svg { max-height: 520px; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
@@ -114,7 +114,7 @@ html.print-pdf .reveal .slide-number { color: #4b5563 !important; background: no
 .nav-home:hover { background: var(--dp-magenta); }
 /* Diagrams (Pele) */
 .reveal .diagram { text-align: center; margin: 0.4em auto; }
-.reveal .diagram svg { max-width: 92%; max-height: 330px; height: auto; }
+.reveal .diagram svg { width: 86%; max-width: 92%; max-height: 150px; height: auto; }
 .pele { --pele-bg: transparent; --pele-fg: #ffffff; --pele-surface: #3f4957; --pele-surface-alt: #475363; --pele-border: rgba(255,255,255,0.28);
   --pele-line: #ff1493; --pele-muted: rgba(255,255,255,0.6); --pele-font: "Noto Sans", sans-serif; }
 /* Agentic loop animation */
@@ -222,6 +222,27 @@ D'abord, joignez "Notes réunion équipe 2026-11-03 (brut).docx" (dossier "Fichi
 Puis, dans une nouvelle conversation, joignez "Sorties pédagogiques 2026-2027 (liste).docx":
 
 > Fais un tableau Excel des sorties pédagogiques: date, classe, lieu, prix par élève, payé, réservé, encodé sur IT School, remarques. Une ligne par sortie, triée par date. Mets en rouge ce qui n'est pas encore payé ou réservé, et laisse vide ce que tu ne sais pas.
+---
+## Un artefact, ou un fichier?
+<div class="chart"><svg viewBox="0 0 960 222" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: un artefact reste dans l'application, chez Anthropic; un fichier est sur votre PC, à vous">
+<rect x="20" y="10" width="430" height="200" rx="16" fill="none" stroke="rgba(255,255,255,0.65)" stroke-width="3" stroke-dasharray="9 7"/>
+<text x="235" y="46" font-size="16" fill="#fbbf24" font-weight="700" text-anchor="middle">UN ARTEFACT</text>
+<text x="235" y="80" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">dans l'application, chez Anthropic</text>
+<text x="235" y="114" font-size="15.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">un essai, un brouillon, un quiz, un schéma</text>
+<text x="235" y="138" font-size="15.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">pratique, et jetable</text>
+<text x="235" y="182" font-size="16" fill="#fbbf24" font-weight="700" text-anchor="middle">Il n'est pas chez vous.</text>
+<text x="480" y="118" font-size="22" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">ou</text>
+<rect x="510" y="10" width="430" height="200" rx="16" fill="#e5007d"/>
+<text x="725" y="46" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">UN FICHIER</text>
+<text x="725" y="80" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">sur votre PC, dans votre base</text>
+<text x="725" y="114" font-size="15.5" fill="#fff" font-weight="400" text-anchor="middle">il dure, il se sauvegarde</text>
+<text x="725" y="138" font-size="15.5" fill="#fff" font-weight="400" text-anchor="middle">toute IA peut le lire</text>
+<text x="725" y="182" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Il est à vous.</text>
+</svg></div>
+
+Pour ce qui doit durer, demandez un fichier: <span class="cp">"Enregistre le résultat dans un fichier de mon dossier de travail."</span>
+
+Note: Un artefact, c'est ce que Claude affiche à droite de la conversation. Il vit dans la conversation, chez Anthropic. On peut le télécharger, mais tant qu'on ne le fait pas, il n'est pas sur le PC: il n'est pas à vous, il n'est pas sauvegardé avec le reste, et il n'entre pas dans votre base de connaissances. Les artefacts sont très utiles pour ce qui est jetable: un essai, un brouillon, un quiz pour demain. Pour le reste, demander directement un fichier dans le dossier de travail, de préférence dans la base de connaissances. C'est une façon simple de rester souverain (partie 7).
 ---
 ## Démo 3: ranger un dossier
 <div class="chart strip"><svg viewBox="0 0 960 136" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: 36 fichiers en désordre deviennent un dossier par classe, avec un index">

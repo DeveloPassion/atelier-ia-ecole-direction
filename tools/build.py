@@ -89,7 +89,7 @@ html.print-pdf .reveal .chart, html.print-pdf .reveal .diagram, html.print-pdf .
   background: #37404c; border-radius: 14px; padding: 14px 18px; box-sizing: border-box; }
 html.print-pdf .reveal .chart.strip { padding: 8px 18px; }
 html.print-pdf .reveal .chart .fr { opacity: 0 !important; } html.print-pdf .reveal .chart .fr:last-of-type { opacity: 1 !important; }
-html.print-pdf .reveal .slide-number { color: #4b5563 !important; background: none !important; }
+html.print-pdf .reveal .slide-number { color: #4b5563 !important; background: none !important; font-size: 20px !important; right: 20px !important; bottom: 12px !important; }
 .reveal strong { font-weight: 700 !important; color: #ff4fa8 !important; }
 .reveal p.caption { font-size: 0.72em; color: rgba(255,255,255,0.75); margin-top: 0.3em; } .reveal p.caption .tag { border-radius: 8px; background: rgba(255,255,255,0.1); padding: 0.15em 0.6em; margin-right: 0.4em; font-weight: 600; }
 .reveal .chart { margin: 0.2em 0 0.4em 0; } .reveal .chart.strip { margin: 0 0 0.5em 0; } .reveal .chart.strip svg { max-height: 172px; } .reveal .chart .fr { opacity: 0; } .reveal .chart .fr.f1 { opacity: 1; } @media print { .reveal .chart .fr { opacity: 0 !important; } .reveal .chart .fr:last-of-type { opacity: 1 !important; } } .reveal .chart.tall svg { max-height: 520px; } .reveal .chart svg { width: 100%; max-height: 400px; font-family: 'Noto Sans', sans-serif; }
@@ -122,7 +122,7 @@ html.print-pdf .reveal .slide-number { color: #4b5563 !important; background: no
 .nav-home:hover { background: var(--dp-magenta); }
 /* Diagrams (Pele) */
 .reveal .diagram { text-align: center; margin: 0.4em auto; }
-.reveal .diagram svg { max-width: 92%; max-height: 330px; height: auto; }
+.reveal .diagram svg { width: 86%; max-width: 92%; max-height: 150px; height: auto; }
 .pele { --pele-bg: transparent; --pele-fg: #ffffff; --pele-surface: #3f4957; --pele-surface-alt: #475363; --pele-border: rgba(255,255,255,0.28);
   --pele-line: #ff1493; --pele-muted: rgba(255,255,255,0.6); --pele-font: "Noto Sans", sans-serif; }
 /* Agentic loop animation */

@@ -77,6 +77,28 @@ Puis, dans une nouvelle conversation, joignez "Sorties pédagogiques 2026-2027 (
 > Fais un tableau Excel des sorties pédagogiques: date, classe, lieu, prix par élève, payé, réservé, encodé sur IT School, remarques. Une ligne par sortie, triée par date. Mets en rouge ce qui n'est pas encore payé ou réservé, et laisse vide ce que tu ne sais pas.
 
 ---
+## Un artefact, ou un fichier?
+<div class="chart"><svg viewBox="0 0 960 222" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: un artefact reste dans l'application, chez Anthropic; un fichier est sur votre PC, à vous">
+<rect x="20" y="10" width="430" height="200" rx="16" fill="none" stroke="rgba(255,255,255,0.65)" stroke-width="3" stroke-dasharray="9 7"/>
+<text x="235" y="46" font-size="16" fill="#fbbf24" font-weight="700" text-anchor="middle">UN ARTEFACT</text>
+<text x="235" y="80" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">dans l'application, chez Anthropic</text>
+<text x="235" y="114" font-size="15.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">un essai, un brouillon, un quiz, un schéma</text>
+<text x="235" y="138" font-size="15.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">pratique, et jetable</text>
+<text x="235" y="182" font-size="16" fill="#fbbf24" font-weight="700" text-anchor="middle">Il n'est pas chez vous.</text>
+<text x="480" y="118" font-size="22" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">ou</text>
+<rect x="510" y="10" width="430" height="200" rx="16" fill="#e5007d"/>
+<text x="725" y="46" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">UN FICHIER</text>
+<text x="725" y="80" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">sur votre PC, dans votre base</text>
+<text x="725" y="114" font-size="15.5" fill="#fff" font-weight="400" text-anchor="middle">il dure, il se sauvegarde</text>
+<text x="725" y="138" font-size="15.5" fill="#fff" font-weight="400" text-anchor="middle">toute IA peut le lire</text>
+<text x="725" y="182" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Il est à vous.</text>
+</svg></div>
+
+Pour ce qui doit durer, demandez un fichier: "Enregistre le résultat dans un fichier de mon dossier de travail."{copy}
+
+Note: Un artefact, c'est ce que Claude affiche à droite de la conversation. Il vit dans la conversation, chez Anthropic. On peut le télécharger, mais tant qu'on ne le fait pas, il n'est pas sur le PC: il n'est pas à vous, il n'est pas sauvegardé avec le reste, et il n'entre pas dans votre base de connaissances. Les artefacts sont très utiles pour ce qui est jetable: un essai, un brouillon, un quiz pour demain. Pour le reste, demander directement un fichier dans le dossier de travail, de préférence dans la base de connaissances. C'est une façon simple de rester souverain (partie 7).
+
+---
 ## Démo 3: ranger un dossier
 <div class="chart strip"><svg viewBox="0 0 960 136" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: 36 fichiers en désordre deviennent un dossier par classe, avec un index">
 <rect x="316" y="16" width="33.6" height="14" rx="4" fill="#fbbf24"/>

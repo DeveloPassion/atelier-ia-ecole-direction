@@ -179,7 +179,7 @@ story = [
         b("<b>Ranger un dossier</b>: renommer, trier, écrire un index. Toujours sur une copie, avec le mode Plan."),
         b("<b>Le navigateur</b> (Claude in Chrome): comparer des sites, lire des pages, remplir un formulaire sans l'envoyer."),
         b("<b>L'ordinateur</b>: cliquer et taper dans une application sans connecteur. Plus lent, à surveiller."),
-        b("<b>Des artefacts</b> (ce que Claude crée, à droite): un schéma, une affiche simple, un quiz, un petit jeu pour une classe."),
+        b("<b>Des artefacts</b> (ce que Claude crée, à droite): un schéma, un quiz, un petit jeu. Ils restent chez Anthropic: ce qui doit durer devient un fichier dans votre base."),
         b("<b>Des connecteurs</b> (MCP, une prise standard entre l'IA et un outil): agenda, mails, fichiers. N'activez que ce qui sert."),
     ]),
     box("Votre base de connaissances", [

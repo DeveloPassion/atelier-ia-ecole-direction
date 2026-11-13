@@ -92,7 +92,7 @@ class Tab:
         return self.call("Runtime.evaluate", expression=expr, returnByValue=True)["result"].get("value")
 
 
-def print_part(tab, html_file):
+def print_part(tab, html_file, first, total):
     url = "file:///" + os.path.join(ROOT, html_file).replace("\\", "/") + "?print-pdf"
     tab.call("Page.navigate", url=url)
     deadline = time.time() + 40
@@ -102,6 +102,13 @@ def print_part(tab, html_file):
             sys.exit(f"The print view of {html_file} did not load.")
         time.sleep(0.25)
     time.sleep(0.8)  # the diagrams are drawn just after
+    # one numbering for the whole deck: "23 / 186", at the bottom right of each slide
+    tab.js("""document.querySelectorAll('.reveal .pdf-page').forEach((page, i) => {
+      let n = page.querySelector('.slide-number');
+      if (!n) { n = document.createElement('div'); n.className = 'slide-number slide-number-pdf'; page.appendChild(n); }
+      n.style.position = 'absolute'; n.style.display = 'block';
+      n.textContent = (%d + i) + ' / ' + %d;
+    })""" % (first, total))
     pdf = tab.call("Page.printToPDF", printBackground=True, preferCSSPageSize=True, paperWidth=SLIDE_W / 96, paperHeight=SLIDE_H / 96,
                    marginTop=0, marginBottom=0, marginLeft=0, marginRight=0)
     return PdfReader(io.BytesIO(base64.b64decode(pdf["data"])))
@@ -142,9 +149,15 @@ try:
     tab = Tab(port)
     tab.call("Page.enable")
     meta = json.load(open(os.path.join(ROOT, "src", "parts.json"), encoding="utf-8"))
-    pages = []
+    # the number of slides of each part, counted in the sources like tools/build.py does
+    counts = []
     for m in meta:
-        part = print_part(tab, m["html"])
+        src = open(os.path.join(ROOT, "src", "parts", m["file"]), encoding="utf-8").read()
+        counts.append(src[src.index("\n---\n") + 5:].count("\n---\n") + 1)
+    pages = []
+    for m, count in zip(meta, counts):
+        part = print_part(tab, m["html"], len(pages) + 1, sum(counts))
+        assert len(part.pages) == count, (m["html"], len(part.pages), count)
         pages += list(part.pages)
         print(f'{m["n"]:>2}. {m["name"]}: {len(part.pages)} slides')
 finally:

@@ -221,6 +221,7 @@ Note: À PASSER si le temps manque.
 3. **Personnelle et partagée**: chaque direction a la sienne, et une partie commune peut servir à toute l'école
 4. **Libre de changer de fournisseur**: la même base sert avec Claude aujourd'hui, et avec un autre demain
 5. **Vous décidez** ce que l'IA voit, dossier par dossier
+6. **Des fichiers, plutôt que des artefacts**: un artefact reste chez Anthropic. Ce qui doit durer devient un fichier, chez vous
 
 Note: ESSENTIEL.
 

@@ -89,7 +89,9 @@ Note: La compaction existe aussi dans l'application Claude (Claude Desktop). Mon
 3. **Le bon effort**: bas ou moyen pour le travail courant, haut pour ce qui doit être juste
 4. Joindre **seulement ce qui sert** à la tâche
 5. **Arrêter** un agent qui tourne en rond, au lieu de le laisser continuer
-6. Regarder **sa consommation** de temps en temps: dans les paramètres, la page de l'utilisation
+6. Regarder **sa consommation** de temps en temps: **Paramètres > Utilisation**
+
+Documentation: [Bonnes pratiques pour les limites d'utilisation](https://support.claude.com/fr/articles/9797557)
 
 Note: Chaque membre voit sa propre consommation si les propriétaires de l'organisation ont activé le réglage "Member analytics" (activé par défaut depuis juillet 2026 sur les contrats à l'usage, selon la documentation). Chemin dans la documentation en anglais: "Settings > Usage".
 

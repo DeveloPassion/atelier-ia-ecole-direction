@@ -108,6 +108,9 @@ html.print-pdf .reveal .slide-number { color: #4b5563 !important; background: no
 .reveal p.system { border-left: 4px solid var(--dp-magenta); background: rgba(229,0,125,0.10); border-radius: 0 10px 10px 0;
   padding: 0.5em 0.9em; font-size: 0.8em; margin-top: 0.8em; }
 .reveal p.system b { color: var(--dp-pink); }
+.reveal p.doc { font-size: 0.62em; margin-top: 1.1em; padding-top: 0.55em; border-top: 1px solid rgba(255,255,255,0.22); color: rgba(255,255,255,0.8); }
+.reveal p.doc b { color: var(--dp-pink); } .reveal a { color: #ff4fa8; }
+html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reveal p.doc b { color: #c4006a; }
 /* Nav pill */
 .nav-home { position: fixed; top: 14px; left: 16px; z-index: 30; font: 600 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
   background: rgba(255,255,255,0.1); border-radius: 8px; padding: 6px 12px; }
@@ -240,9 +243,11 @@ Puis, dans une nouvelle conversation, joignez "Sorties pédagogiques 2026-2027 (
 <text x="725" y="182" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Il est à vous.</text>
 </svg></div>
 
-Pour ce qui doit durer, demandez un fichier: <span class="cp">"Enregistre le résultat dans un fichier de mon dossier de travail."</span>
+Pour ce qui doit durer, demandez un fichier: <span class="cp">"Enregistre le résultat dans un fichier de mon dossier de travail."</span> Ou sortez l'artefact de l'application avec son bouton **"Exporter"**.
 
-Note: Un artefact, c'est ce que Claude affiche à droite de la conversation. Il vit dans la conversation, chez Anthropic. On peut le télécharger, mais tant qu'on ne le fait pas, il n'est pas sur le PC: il n'est pas à vous, il n'est pas sauvegardé avec le reste, et il n'entre pas dans votre base de connaissances. Les artefacts sont très utiles pour ce qui est jetable: un essai, un brouillon, un quiz pour demain. Pour le reste, demander directement un fichier dans le dossier de travail, de préférence dans la base de connaissances. C'est une façon simple de rester souverain (partie 7).
+<p class="doc"><b>Documentation:</b> <a href="https://support.claude.com/fr/articles/17153992">Que sont les artefacts et comment les utiliser?</a></p>
+
+Note: Un artefact, c'est ce que Claude affiche à droite de la conversation. Il vit dans la conversation, chez Anthropic. On peut le télécharger, mais tant qu'on ne le fait pas, il n'est pas sur le PC: il n'est pas à vous, il n'est pas sauvegardé avec le reste, et il n'entre pas dans votre base de connaissances. Les artefacts sont très utiles pour ce qui est jetable: un essai, un brouillon, un quiz pour demain. Pour le reste, demander directement un fichier dans le dossier de travail, de préférence dans la base de connaissances. C'est une façon simple de rester souverain (partie 7). Le bouton "Exporter" d'un artefact donne un fichier Word, PDF, PowerPoint ou Markdown, selon le type d'artefact (centre d'aide, lu le 13/11/2026).
 ---
 ## Démo 3: ranger un dossier
 <div class="chart strip"><svg viewBox="0 0 960 136" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: 36 fichiers en désordre deviennent un dossier par classe, avec un index">
@@ -496,8 +501,11 @@ Vérifiez ce qu'il signale comme illisible.
 - Claude peut aussi voir l'écran et agir à votre place: ouvrir une application, cliquer, remplir des champs
 - Utile pour les applications **sans connecteur**
 - Plus lent qu'un connecteur, et **à surveiller**
+- **Pas encore sur l'abonnement Entreprise**: c'est un test, sur les abonnements personnels
 
-Note: Une minute, avec cette slide. Le montrer seulement s'il reste du temps et si c'est disponible dans leur version. Exemple: "Ouvre le tableau des sorties et ajoute la sortie théâtre P2 du 10 décembre."
+<p class="doc"><b>Documentation:</b> <a href="https://support.claude.com/fr/articles/14128542">Laisser Claude utiliser votre ordinateur dans Cowork</a></p>
+
+Note: Une minute, avec cette slide. Selon le centre d'aide (lu le 13/11/2026), l'utilisation de l'ordinateur est en bêta sur les abonnements Pro, Max et Ultra, et pas sur Team ni Entreprise: on ne peut donc pas le montrer sur leur compte. Le dire, et montrer sur mon compte seulement s'il reste du temps. Exemple: "Ouvre le tableau des sorties et ajoute la sortie théâtre P2 du 10 décembre."
 ---
 ## Une ligne au lieu de dix
 - Chaque démo demandait plusieurs lignes d'explication

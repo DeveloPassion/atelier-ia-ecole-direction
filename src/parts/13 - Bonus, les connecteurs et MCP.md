@@ -25,12 +25,16 @@ flowchart LR
 
 ---
 ## Ajouter un connecteur
-- Dans les **paramètres** de l'application, rubrique des connecteurs
-- Sur Entreprise, **l'admin** choisit les connecteurs permis pour le collège
-- À la connexion, lisez **les autorisations demandées**: lecture seule, ou aussi écriture et envoi?
-- Testez d'abord sur une demande simple: "Quels sont mes rendez-vous demain?"{copy}
+1. D'abord **l'admin**: il ajoute le connecteur pour le collège, dans les paramètres de l'organisation
+2. Vous: **Personnaliser > Connecteurs**. Trouvez le service (par exemple Microsoft 365), et cliquez sur **"Connecter"**
+3. Choisissez **"Compte professionnel ou scolaire"**, et connectez-vous avec votre compte du collège
+4. Lisez **les autorisations demandées**: lecture seule, ou aussi écriture et envoi?
+5. Dans une conversation: **"+"** ou **"/"**, puis "Connecteurs", et activez le service
+6. Testez sur une demande simple: "Quels sont mes rendez-vous demain?"{copy}
 
-Note: Les noms exacts des menus dépendent de la version de l'application: vérifier avant la séance 2.
+Documentation: [Utiliser les connecteurs](https://support.claude.com/fr/articles/11176164) · [Configurer le connecteur Microsoft 365](https://support.claude.com/fr/articles/12542951)
+
+Note: Étapes lues le 13/11/2026 dans le centre d'aide, en français: à vérifier sur leur PC avant la séance 2. Côté admin (propriétaire de l'organisation): "Paramètres de l'organisation > Connecteurs", puis "Parcourir les connecteurs", choisir Microsoft 365, et "Ajouter à votre équipe". Pour Microsoft 365, un administrateur général du collège (Microsoft Entra) doit aussi donner son accord une fois. Ajouter un connecteur pour le collège ne donne pas l'accès: chaque personne se connecte elle-même. Sur Entreprise, un membre ne peut demander un connecteur que si un propriétaire a activé cette possibilité.
 
 ---
 ## Les risques d'un connecteur
@@ -43,4 +47,4 @@ Note: Les noms exacts des menus dépendent de la version de l'application: véri
 ## Connecteur, navigateur ou ordinateur?
 1. **Le connecteur**: le plus rapide et le plus fiable. Le premier choix quand il existe
 2. **Le navigateur** (Claude in Chrome): pour les sites sans connecteur
-3. **L'ordinateur**: Claude clique à votre place. Le dernier recours: plus lent, à surveiller
+3. **L'ordinateur**: Claude clique à votre place. Le dernier recours: plus lent, à surveiller, et pas encore sur l'abonnement Entreprise

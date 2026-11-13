@@ -38,7 +38,7 @@ Pour obtenir de bons résultats, plus vite.
 ---
 ## Gagner du temps chaque semaine
 - **Toujours le même dossier de travail**: votre base de connaissances
-- Un **style** d'écriture: dans l'application, vous pouvez choisir ou créer un style, pour que Claude écrive dans votre ton
+- **Votre ton**: décrivez-le une fois, dans un fichier de votre base ("Mon profil d'écriture") ou dans une skill. Claude écrit alors comme vous, sans le redire
 - Gardez vos **meilleures demandes** dans un document, et réutilisez-les
 - Les tâches **répétitives et fréquentes** deviennent des **skills**: une façon de faire, écrite une fois. Utilisez **la skill de création de skills** (bonus 14)
 - **Le modèle**: Sonnet pour le simple, Opus pour le gros travail

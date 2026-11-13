@@ -241,7 +241,7 @@ Ce que vous pouvez faire sur votre ordinateur, dans le navigateur ou sur le rés
 - **Documents**: créer des Word, des Excel, des PDF, des présentations
 - **Web**: ouvrir des pages, les lire, chercher, remplir un formulaire
 - **Messages**: préparer et envoyer des mails, lire un agenda (avec un connecteur)
-- **Applications**: cliquer et taper dans une application, comme vous
+- **Applications**: cliquer et taper dans une application, comme vous (pas encore sur l'abonnement Entreprise)
 
 La limite n'est plus ce que l'IA sait faire, mais **ce que vous lui permettez** de faire.
 

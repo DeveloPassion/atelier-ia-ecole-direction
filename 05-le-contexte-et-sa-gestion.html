@@ -108,6 +108,9 @@ html.print-pdf .reveal .slide-number { color: #4b5563 !important; background: no
 .reveal p.system { border-left: 4px solid var(--dp-magenta); background: rgba(229,0,125,0.10); border-radius: 0 10px 10px 0;
   padding: 0.5em 0.9em; font-size: 0.8em; margin-top: 0.8em; }
 .reveal p.system b { color: var(--dp-pink); }
+.reveal p.doc { font-size: 0.62em; margin-top: 1.1em; padding-top: 0.55em; border-top: 1px solid rgba(255,255,255,0.22); color: rgba(255,255,255,0.8); }
+.reveal p.doc b { color: var(--dp-pink); } .reveal a { color: #ff4fa8; }
+html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reveal p.doc b { color: #c4006a; }
 /* Nav pill */
 .nav-home { position: fixed; top: 14px; left: 16px; z-index: 30; font: 600 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
   background: rgba(255,255,255,0.1); border-radius: 8px; padding: 6px 12px; }
@@ -349,7 +352,7 @@ Note: À PASSER si le temps manque. Ce schéma n'est pas un résultat de benchma
 ## Le coût, en bref
 - L'IA se paie en **tokens**: tout ce que Claude lit, plus tout ce qu'il écrit
 - Avec Claude Entreprise, le collège paie **un siège par personne, plus l'usage**
-- **Voir sa consommation**: dans les paramètres de l'application, la page de l'utilisation. Regardez-la de temps en temps
+- **Voir sa consommation**: **Paramètres > Utilisation**. Regardez-la de temps en temps
 - Si une limite est atteinte, Claude s'arrête et le dit: **demander plus à l'admin**, ou attendre
 - Premier levier: **le bon modèle pour la tâche**. Opus coûte 2 fois plus que Sonnet, et Fable 4 fois plus
 - Deuxième levier: **des conversations courtes**. Claude relit tout à chaque message: une longue conversation coûte de plus en plus

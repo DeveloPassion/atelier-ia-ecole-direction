@@ -210,7 +210,7 @@ Note: À PASSER si le temps manque. Ce schéma n'est pas un résultat de benchma
 ## Le coût, en bref
 - L'IA se paie en **tokens**: tout ce que Claude lit, plus tout ce qu'il écrit
 - Avec Claude Entreprise, le collège paie **un siège par personne, plus l'usage**
-- **Voir sa consommation**: dans les paramètres de l'application, la page de l'utilisation. Regardez-la de temps en temps
+- **Voir sa consommation**: **Paramètres > Utilisation**. Regardez-la de temps en temps
 - Si une limite est atteinte, Claude s'arrête et le dit: **demander plus à l'admin**, ou attendre
 - Premier levier: **le bon modèle pour la tâche**. Opus coûte 2 fois plus que Sonnet, et Fable 4 fois plus
 - Deuxième levier: **des conversations courtes**. Claude relit tout à chaque message: une longue conversation coûte de plus en plus

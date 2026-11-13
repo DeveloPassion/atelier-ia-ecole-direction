@@ -178,7 +178,7 @@ story = [
         b("<b>Créer des fichiers</b>: un compte rendu Word, un tableau Excel, une présentation PowerPoint, un PDF."),
         b("<b>Ranger un dossier</b>: renommer, trier, écrire un index. Toujours sur une copie, avec le mode Plan."),
         b("<b>Le navigateur</b> (Claude in Chrome): comparer des sites, lire des pages, remplir un formulaire sans l'envoyer."),
-        b("<b>L'ordinateur</b>: cliquer et taper dans une application sans connecteur. Plus lent, à surveiller."),
+        b("<b>L'ordinateur</b>: cliquer et taper dans une application. Pas encore sur l'abonnement Entreprise."),
         b("<b>Des artefacts</b> (ce que Claude crée, à droite): un schéma, un quiz, un petit jeu. Ils restent chez Anthropic: ce qui doit durer devient un fichier dans votre base."),
         b("<b>Des connecteurs</b> (MCP, une prise standard entre l'IA et un outil): agenda, mails, fichiers. N'activez que ce qui sert."),
     ]),
@@ -200,7 +200,7 @@ story = [
         b("Cherchez les tâches <b>répétitives et fréquentes</b>: mot aux parents, tri des circulaires, revue du lundi, compte rendu."),
         b("Créez-les avec <b>la skill de création de skills</b> (skill-creator), <b>selon la spécification</b> agentskills.io/specification.md: un dossier, un fichier SKILL.md (nom, description, puis les étapes). Corrigez la skill, pas seulement la réponse. Gardez son texte dans votre base."),
         b("<b>Documentez vos processus</b>: l'IA ne fait bien que ce qui est bien décrit."),
-        b("<b>Tapez « / »</b> pour la liste des skills et des commandes. Un <b>style</b> d'écriture garde votre ton."),
+        b("<b>Tapez « / »</b> pour la liste des skills et des commandes. En français: « compétences »."),
     ]),
     box("Plusieurs agents, plusieurs regards", [
         b("<b>Diverger, puis converger</b>: « 20 idées, sans juger », puis « classe-les selon ces trois critères, garde les trois meilleures »."),
@@ -245,7 +245,7 @@ story = [
         b("Pour une grosse tâche: <b>d'abord un plan</b>, validez-le, puis lancez le travail. Faites autre chose pendant qu'il travaille."),
         b("Commencez par les tâches <b>faciles à vérifier</b>: un tableau tiré d'un document, un résumé que vous pouvez relire."),
         b("Corrigez par <b>petites phrases</b> au lieu de tout réécrire. Si ça part mal: nouvelle conversation, avec une demande plus précise."),
-        b("<b>Tâches planifiées</b> (selon la version): une seule pour commencer, par exemple la revue du lundi à 7h. Relisez ses résultats."),
+        b("<b>Tâches planifiées</b> (« Planifiées »): une seule pour commencer, par exemple la revue du lundi à 7h. Relisez ses résultats."),
         b("Vous décidez <b>quand vous arrêtez</b>: l'IA produit vite, on peut vite en faire trop."),
     ]),
     box("Dès demain (15 min, sans la fiche)", [
@@ -273,9 +273,9 @@ story = [
     ]),
     box("Les réglages à faire une fois", [
         b("Vérifier que l'application est connectée au <b>compte du collège</b> (nom de l'organisation en bas à gauche)."),
-        b("<b>Désactiver la mémoire</b> de Claude dans les paramètres."),
+        b("<b>Désactiver la mémoire</b> de Claude: Paramètres &gt; Votre Claude."),
         b("Créer le dossier de <b>votre base de connaissances</b>, et le choisir comme <b>dossier de travail</b>. Mettre en place sa <b>sauvegarde</b>."),
-        b("Choisir ou créer un <b>style</b> d'écriture à votre ton."),
+        b("Décrire <b>votre ton</b>, une fois, dans votre base."),
         b("Installer <b>Google Chrome</b> (même si vous utilisez Edge: l'extension ne marche officiellement que dans Chrome), puis l'extension Claude in Chrome, <b>épinglée</b> et connectée au <b>même compte</b>."),
     ]),
     box("Quand ça ne va pas", [

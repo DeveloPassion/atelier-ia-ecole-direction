@@ -67,6 +67,19 @@ Note: Pourquoi faire d'abord: les petites décisions qu'on prend sans y penser n
 Note: La demande du chemin court: "Aide-moi à créer une skill pour écrire aux parents, en respectant la spécification des skills IA: https://agentskills.io/specification.md. Pose-moi des questions sur ma façon de faire." Elle marche, mais elle oublie plus de choses: on ne pense pas à dire ce qu'on fait sans y penser.
 
 ---
+## Une skill dans l'application: comment faire
+Dans l'application en français, les skills s'appellent des **"compétences"**.
+
+1. **Personnaliser > Compétences**: la liste de vos skills. Vous les activez ou vous les coupez
+2. Pour en ajouter une: **"+"**, puis **"Créer une compétence"**, puis **"Télécharger une compétence"**, et choisissez le dossier de la skill, en fichier ZIP
+3. Deux conditions: la **création de fichiers** est activée (Paramètres > Capacités), et l'admin permet les skills créées par les membres
+4. Avec votre base, c'est plus simple: la skill reste **un dossier de votre base de connaissances**. Dans ce dossier de travail, dites: "Utilise la skill ecrire-aux-parents pour la sortie P4."{copy}
+
+Documentation: [Utiliser les compétences dans Claude](https://support.claude.com/fr/articles/12512180) · [Créer des compétences personnalisées](https://support.claude.com/fr/articles/12512198)
+
+Note: Étapes lues le 13/11/2026 dans le centre d'aide: les noms des boutons sont à vérifier sur leur PC. "Télécharger une compétence" veut dire l'envoyer dans l'application, pas la récupérer. Côté admin: "Paramètres de l'organisation > Plugins et compétences", onglet "Politique". Le centre d'aide ne parle ni de la skill de création de skills (skill-creator), ni des skills gardées dans le dossier de travail: pour le point 4, Claude lit simplement le fichier SKILL.md du dossier, comme n'importe quel fichier. C'est la voie de la démo de la partie 7, et celle qui garde vos skills chez vous.
+
+---
 ## Exemple: écrire aux parents
 ```
 Quand: pour tout mot aux parents.

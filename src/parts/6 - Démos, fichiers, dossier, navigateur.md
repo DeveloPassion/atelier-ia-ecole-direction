@@ -94,9 +94,11 @@ Puis, dans une nouvelle conversation, joignez "Sorties pédagogiques 2026-2027 (
 <text x="725" y="182" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Il est à vous.</text>
 </svg></div>
 
-Pour ce qui doit durer, demandez un fichier: "Enregistre le résultat dans un fichier de mon dossier de travail."{copy}
+Pour ce qui doit durer, demandez un fichier: "Enregistre le résultat dans un fichier de mon dossier de travail."{copy} Ou sortez l'artefact de l'application avec son bouton **"Exporter"**.
 
-Note: Un artefact, c'est ce que Claude affiche à droite de la conversation. Il vit dans la conversation, chez Anthropic. On peut le télécharger, mais tant qu'on ne le fait pas, il n'est pas sur le PC: il n'est pas à vous, il n'est pas sauvegardé avec le reste, et il n'entre pas dans votre base de connaissances. Les artefacts sont très utiles pour ce qui est jetable: un essai, un brouillon, un quiz pour demain. Pour le reste, demander directement un fichier dans le dossier de travail, de préférence dans la base de connaissances. C'est une façon simple de rester souverain (partie 7).
+Documentation: [Que sont les artefacts et comment les utiliser?](https://support.claude.com/fr/articles/17153992)
+
+Note: Un artefact, c'est ce que Claude affiche à droite de la conversation. Il vit dans la conversation, chez Anthropic. On peut le télécharger, mais tant qu'on ne le fait pas, il n'est pas sur le PC: il n'est pas à vous, il n'est pas sauvegardé avec le reste, et il n'entre pas dans votre base de connaissances. Les artefacts sont très utiles pour ce qui est jetable: un essai, un brouillon, un quiz pour demain. Pour le reste, demander directement un fichier dans le dossier de travail, de préférence dans la base de connaissances. C'est une façon simple de rester souverain (partie 7). Le bouton "Exporter" d'un artefact donne un fichier Word, PDF, PowerPoint ou Markdown, selon le type d'artefact (centre d'aide, lu le 13/11/2026).
 
 ---
 ## Démo 3: ranger un dossier
@@ -358,8 +360,11 @@ Vérifiez ce qu'il signale comme illisible.
 - Claude peut aussi voir l'écran et agir à votre place: ouvrir une application, cliquer, remplir des champs
 - Utile pour les applications **sans connecteur**
 - Plus lent qu'un connecteur, et **à surveiller**
+- **Pas encore sur l'abonnement Entreprise**: c'est un test, sur les abonnements personnels
 
-Note: Une minute, avec cette slide. Le montrer seulement s'il reste du temps et si c'est disponible dans leur version. Exemple: "Ouvre le tableau des sorties et ajoute la sortie théâtre P2 du 10 décembre."
+Documentation: [Laisser Claude utiliser votre ordinateur dans Cowork](https://support.claude.com/fr/articles/14128542)
+
+Note: Une minute, avec cette slide. Selon le centre d'aide (lu le 13/11/2026), l'utilisation de l'ordinateur est en bêta sur les abonnements Pro, Max et Ultra, et pas sur Team ni Entreprise: on ne peut donc pas le montrer sur leur compte. Le dire, et montrer sur mon compte seulement s'il reste du temps. Exemple: "Ouvre le tableau des sorties et ajoute la sortie théâtre P2 du 10 décembre."
 
 ---
 ## Une ligne au lieu de dix

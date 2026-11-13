@@ -61,7 +61,7 @@ Claude est l'IA de la société Anthropic. Le collège l'utilise en abonnement E
 
 Mon conseil: **dictez**. On parle bien plus vite qu'on écrit, et on donne naturellement plus de contexte.
 
-Note: TOUR DE L'APPLICATION (4 min), chacun sur son PC. Suivre les numéros du dessin, et montrer chaque zone en une phrase: 1) les conversations et les projets, 2) la conversation, 3) la zone de saisie, pour écrire, dicter, joindre un fichier, avec ses réglages (slide suivante), 4) les artefacts: un document, une présentation, un tableau, 5) les paramètres: les connecteurs, les skills, la mémoire. Le dessin est un plan: l'écran réel change un peu selon la version. À dire pour la zone 4: un artefact reste dans l'application, chez Anthropic. C'est très bien pour un essai. Pour ce qui doit durer, on demande un fichier dans le dossier de travail (partie 6). Montrer le micro de la zone de saisie et dicter une demande en direct: c'est souvent ce qui surprend le plus. Ouvrir les paramètres et montrer Connecteurs et Skills sans rien changer. Montrer aussi l'extension Claude in Chrome dans Chrome.
+Note: TOUR DE L'APPLICATION (4 min), chacun sur son PC. Suivre les numéros du dessin, et montrer chaque zone en une phrase: 1) les conversations et les projets, 2) la conversation, 3) la zone de saisie, pour écrire, dicter, joindre un fichier, avec ses réglages (slide suivante), 4) les artefacts: un document, une présentation, un tableau, 5) les paramètres: les connecteurs, les skills, la mémoire. Le dessin est un plan: l'écran réel change un peu selon la version. À dire pour la zone 4: un artefact reste dans l'application, chez Anthropic. C'est très bien pour un essai. Pour ce qui doit durer, on demande un fichier dans le dossier de travail (partie 6). Montrer le micro de la zone de saisie et dicter une demande en direct: c'est souvent ce qui surprend le plus. Ouvrir les paramètres et montrer Connecteurs et Skills sans rien changer. Montrer aussi l'extension Claude in Chrome dans Chrome. La dictée: la documentation la décrit pour l'application mobile, où elle marche en français (en bêta).
 
 ---
 ## Les réglages sous la zone de saisie
@@ -70,7 +70,9 @@ Note: TOUR DE L'APPLICATION (4 min), chacun sur son PC. Suivre les numéros du d
 - **Le mode rapide**: des réponses plus rapides, qui consomment plus de budget
 - **Le mode de travail**: comment Claude vous demande la permission avant d'agir
 
-Note: Montrer chaque réglage en direct, chacun sur son PC. Les noms exacts peuvent changer selon la version et la langue de l'application: vérifier avant la séance.
+Documentation: [Commencer avec Claude Cowork](https://support.claude.com/fr/articles/13345190)
+
+Note: Montrer chaque réglage en direct, chacun sur son PC. Les noms exacts peuvent changer selon la version et la langue de l'application: vérifier avant la séance. Selon le centre d'aide (lu le 13/11/2026), Claude ne lit et n'écrit que dans les dossiers que vous lui avez ouverts; l'application les liste dans ses paramètres ("Trusted folders" dans la version en anglais). La documentation ne nomme pas le bouton qui sert à choisir le dossier: le montrer en direct.
 
 ---
 ## Les modes de travail
@@ -81,7 +83,7 @@ Note: Montrer chaque réglage en direct, chacun sur son PC. Les noms exacts peuv
 
 Mon conseil: **Plan** pour une grosse tâche, **Manuel** au début, et **Auto** seulement sur une copie.
 
-Note: Lien avec la partie 8: plus le mode est automatique, plus il faut un dossier de travail limité et une copie des fichiers. Pour la démo du rangement du dossier (partie 6), utiliser le mode Plan: Claude montre son plan, vous dites oui, puis il range.
+Note: À VÉRIFIER sur leur PC avant la séance: le centre d'aide (lu le 13/11/2026) nomme trois modes pour Cowork, dans le sélecteur de la zone de saisie: "Manuel", "Auto" et "Ignorer" (il agit sans demander). Sur Entreprise, le mode de départ est "Manuel", et l'admin peut couper "Auto". Les quatre modes de cette slide viennent de mon application: si la leur montre d'autres noms, adapter la slide. Lien avec la partie 8: plus le mode est automatique, plus il faut un dossier de travail limité et une copie des fichiers. Pour la démo du rangement du dossier (partie 6), utiliser le mode Plan: Claude montre son plan, vous dites oui, puis il range.
 
 ---
 ## Claude s'adapte à la tâche

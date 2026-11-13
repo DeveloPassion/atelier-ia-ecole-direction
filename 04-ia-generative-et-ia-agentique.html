@@ -149,7 +149,7 @@ html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reve
       <section data-markdown data-separator="^---$" data-separator-vertical="^----$" data-separator-notes="^Note:">
         <textarea data-template>
 <!-- .slide: class="hero" data-background-gradient="radial-gradient(1100px 560px at 85% 10%, rgba(168,85,247,0.20), transparent 60%), radial-gradient(900px 500px at 8% 92%, rgba(229,0,125,0.18), transparent 60%), #37404c" -->
-<p class="eyebrow">Partie 4 sur 9 · 10 min</p>
+<p class="eyebrow">Partie 4 sur 9 · 9 min</p>
 
 <h2>4. Comprendre ce qu'on vient de <span class="gradient">voir</span></h2>
 
@@ -259,7 +259,7 @@ Note: À PASSER si le temps manque. Quatre idées en une image. La demande: vos 
 </g>
 </svg></div>
 
-- Un LLM (grand modèle de langage) **prédit la suite la plus probable**, un morceau à la fois: un **token** (environ trois quarts d'un mot)
+- Un LLM (grand modèle de langage) **prédit la suite la plus probable**, un morceau à la fois: un **token** (un morceau de mot: en français, un mot fait souvent plus d'un token)
 - Il a appris sur une énorme quantité de textes, jusqu'à une date limite
 - Il ne "sait" rien de votre école, **sauf ce que vous lui donnez**
 
@@ -279,7 +279,7 @@ Le prompt, c'est la demande que vous écrivez: **une partie du contexte**, pas t
 
 Note: ESSENTIEL. C'est la même recette partout dans le cours: ici, dans "votre vraie tâche" (partie 9), dans le bonus 11 et sur l'aide-mémoire. Pourquoi commencer simple: les modèles ont besoin de moins en moins d'aide (bonus 11).
 ---
-## Deux astuces pour vos demandes
+## Trois astuces pour vos demandes
 - Mettez **les informations et les règles importantes à la fin**: la fin d'un long texte est mieux lue que le milieu
 - Demandez-lui de **vous poser des questions** avant de commencer: <span class="cp">"Pose-moi les questions qui te manquent."</span> Il propose souvent des choix à cliquer: c'est très rapide
 - Les techniques de prompting (exemples, rôles, étapes, critères): **bonus 11**
@@ -331,8 +331,8 @@ Note: À PASSER si le temps manque.
 ---
 ## Pas seulement du texte
 - **Lire des images**: une photo d'une page écrite à la main, une capture d'écran, un tableau photographié deviennent du texte ou un tableau
-- **Créer des visuels**: un schéma, une affiche simple, une infographie. Pour des images réalistes, d'autres outils existent (ChatGPT, Gemini)
-- **Créer des animations et des vidéos courtes**, à partir d'un texte ou d'un tableau
+- **Créer des visuels**: un schéma, une affiche simple, une infographie. Pour des images réalistes, d'autres outils existent, mais **jamais avec des données de l'école**
+- **Créer des animations courtes**, si le collège a activé cette fonction
 - **Créer des petits jeux et des applications**: un quiz pour une classe, un jeu de calcul mental, un outil de tirage au sort, en quelques minutes
 
 Note: À PASSER si le temps manque. Exemple à dire: "Crée un jeu de calcul mental pour des élèves de 2e primaire, avec un score." Claude le construit dans un artefact, et on peut y jouer tout de suite. Pour les animations: Claude Motion existe sur Team et Enterprise, mais il est désactivé par défaut sur Enterprise.
@@ -386,7 +386,7 @@ Ce que vous pouvez faire sur votre ordinateur, dans le navigateur ou sur le rés
 
 La limite n'est plus ce que l'IA sait faire, mais **ce que vous lui permettez** de faire.
 
-Note: ESSENTIEL. Dire que c'est le grand changement de 2025-2026: on passe d'une IA qui répond à une IA qui fait. Donner un exemple de la matinée: la circulaire, Claude l'a lue et en a fait un tableau. Annoncer les démos de la partie 6 (fichiers, dossier, navigateur, présentation). Faire le lien avec la partie 8: plus un agent peut faire, plus il faut choisir ce qu'on lui permet.
+Note: À PASSER si le temps manque. Dire que c'est le grand changement de 2025-2026: on passe d'une IA qui répond à une IA qui fait. Donner un exemple de la matinée: la circulaire, Claude l'a lue et en a fait un tableau. Annoncer les démos de la partie 6 (fichiers, dossier, navigateur, présentation). Faire le lien avec la partie 8: plus un agent peut faire, plus il faut choisir ce qu'on lui permet.
 ---
 ## La boucle d'un agent
 <div class="loop">
@@ -408,7 +408,7 @@ Note: À PASSER si le temps manque. Laisser l'animation tourner une fois. Exempl
 <text x="480" y="256" font-size="15" fill="#ff4fa8" font-weight="700" text-anchor="middle">modèle + application + contexte</text>
 <circle cx="30" cy="46" r="8" fill="#a855f7"/>
 <text x="48" y="52" font-size="18" fill="#fff" font-weight="700" text-anchor="start">Les modes</text>
-<text x="48" y="76" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">comment il se comporte: Manuel, Plan, Auto</text>
+<text x="48" y="76" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">combien il demande avant d'agir: Manuel, Auto</text>
 <circle cx="30" cy="136" r="8" fill="#fbbf24"/>
 <text x="48" y="142" font-size="18" fill="#fff" font-weight="700" text-anchor="start">Un rôle</text>
 <text x="48" y="166" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">des règles, un style, un ton</text>
@@ -444,7 +444,7 @@ flowchart LR
 Note: À PASSER si le temps manque.
 ---
 ## Les skills
-- Une skill, c'est **une façon de faire**, écrite une fois, que Claude suit chaque fois
+- Une skill, c'est **une façon de faire**, écrite une fois, que Claude suit chaque fois. Dans l'application en français: une "compétence"
 - Exemples pour l'école
     - "Comment j'écris aux parents": le ton, la longueur, la signature
     - "Comment je trie une circulaire": ce qui concerne mon niveau, le format du tableau
@@ -453,14 +453,28 @@ Note: À PASSER si le temps manque.
 
 <p class="system"><b>Pour un système qui vous connaît:</b> les skills appliquent vos processus écrits. C'est le cœur d'un système qui vous connaît. Le détail: bonus 14.</p>
 
-Note: ESSENTIEL.
+Note: À PASSER si le temps manque.
 ---
-## L'humain reste dans la boucle
-- Claude demande la permission avant les actions importantes
-- Envoyer, supprimer, payer, publier: **c'est vous qui validez**
-- Lisez la demande de permission avant de dire oui
+## Quand Claude demande la permission
+<div class="chart"><svg viewBox="0 0 960 176" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dessin: une demande de permission, avec trois boutons: refuser, autoriser une fois, toujours autoriser">
+<rect x="150" y="8" width="660" height="160" rx="14" fill="#2b323c" stroke="rgba(255,255,255,0.45)" stroke-width="2"/>
+<text x="180" y="44" font-size="19" fill="#fff" font-weight="700" text-anchor="start">Claude veut modifier un fichier</text>
+<text x="180" y="72" font-size="16" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">Sorties pédagogiques 2026-2027.xlsx</text>
+<rect x="180" y="100" width="150" height="44" rx="22" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+<text x="255" y="128" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Refuser</text>
+<rect x="346" y="100" width="210" height="44" rx="22" fill="#e5007d"/>
+<text x="451" y="128" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Autoriser une fois</text>
+<rect x="572" y="100" width="210" height="44" rx="22" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="677" y="128" font-size="16" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Toujours autoriser</text>
+<text x="677" y="160" font-size="13" fill="#fbbf24" font-weight="700" text-anchor="middle">pas pour l'instant</text>
+</svg></div>
 
-Note: ESSENTIEL.
+- **Lisez** ce qu'il veut faire: quelle action, sur quel fichier ou sur quel site
+- **Autoriser une fois**: oui, si c'est bien ce que vous avez demandé. **Toujours autoriser**: pas pour l'instant
+- Un doute? **Refusez**, et demandez-lui d'expliquer ce qu'il voulait faire
+- Envoyer, supprimer, payer, publier: **c'est vous qui validez**
+
+Note: ESSENTIEL. Le dessin montre le principe: l'écran réel change selon la version, et les boutons peuvent s'appeler autrement. La première vraie demande de permission arrive pendant la démo 2: s'arrêter dessus avec la salle, et la lire à voix haute. Refuser n'abîme rien: Claude explique, et on recommence. Pour supprimer un fichier pour de bon, Claude demande toujours.
         </textarea>
       </section>
     </div>

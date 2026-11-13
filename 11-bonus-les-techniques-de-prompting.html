@@ -165,7 +165,7 @@ La même recette que dans la partie 4, en six points:
 5. **Un exemple**, si la forme compte
 6. **Les règles et les critères**: ce qu'il ne doit pas faire, et comment vous allez juger la réponse
 
-Mettez **les règles importantes à la fin**. En option, une approche: <span class="cp">"Aborde ce travail comme le ferait une directrice expérimentée"</span>
+Mettez **les règles importantes à la fin**: la fin d'un long texte est mieux lue que le milieu.
 ---
 ## Sans exemple, ou avec quelques exemples
 - **Sans exemple**: pour les tâches simples. <span class="cp">"Résume ce mail en trois points"</span>
@@ -175,11 +175,13 @@ Mettez **les règles importantes à la fin**. En option, une approche: <span cla
 ---
 ## Donner un rôle
 - Un rôle **ne rend pas l'IA meilleure**: "Tu es un juriste" ne lui donne pas de compétences en droit
-- Sans rôle, le résultat est **aussi bon**, parfois **meilleur**
+- D'après mon expérience avec les modèles récents: sans rôle, le résultat est **aussi bon**, parfois meilleur
 - Un rôle oriente surtout **le vocabulaire, les outils, le niveau et le point de vue**
 - Utile pour **une manière de travailler**: <span class="cp">"Aborde ce dossier comme un conseiller pédagogique le ferait"</span>
 - Utile aussi **pour relire**: <span class="cp">"Lis ce mot comme un parent pressé, sur son téléphone. Qu'est-ce qui n'est pas clair?"</span>
 - Le contexte compte bien plus que le rôle. Et les faits se vérifient toujours
+
+Note: C'est mon expérience, pas une règle. La documentation d'Anthropic conseille encore de donner un rôle dans les instructions: le mieux est de tester avec et sans.
 ---
 ## Les modèles ont besoin de moins en moins d'aide
 - Chaque nouvelle version **comprend mieux** une demande simple et claire
@@ -190,6 +192,22 @@ Mettez **les règles importantes à la fin**. En option, une approche: <span cla
 - Commencez **simple**. Ajoutez des consignes seulement quand le résultat ne convient pas
 ---
 ## Enchaîner les demandes
+<div class="chart strip"><svg viewBox="0 0 960 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: une grosse tâche en trois petites demandes, avec une vérification entre deux">
+<rect x="20" y="30" width="240" height="80" rx="14" fill="#475363"/>
+<text x="140" y="64" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">1. Chercher</text>
+<text x="140" y="90" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">les informations</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(284,54) scale(1.0)" fill="#e5007d"/>
+<text x="297" y="134" font-size="13.5" fill="#4ade80" font-weight="700" text-anchor="middle">vous vérifiez</text>
+<rect x="360" y="30" width="240" height="80" rx="14" fill="#475363"/>
+<text x="480" y="64" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">2. Résumer</text>
+<text x="480" y="90" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">l'essentiel</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(624,54) scale(1.0)" fill="#e5007d"/>
+<text x="637" y="134" font-size="13.5" fill="#4ade80" font-weight="700" text-anchor="middle">vous vérifiez</text>
+<rect x="700" y="30" width="240" height="80" rx="14" fill="#e5007d"/>
+<text x="820" y="64" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">3. Écrire</text>
+<text x="820" y="90" font-size="14.5" fill="#fff" font-weight="400" text-anchor="middle">le texte final</text>
+</svg></div>
+
 Une grosse tâche = **plusieurs petites demandes**, chacune avec son résultat.
 
 1. **Chercher, résumer, écrire**: les informations, puis l'essentiel, puis le texte

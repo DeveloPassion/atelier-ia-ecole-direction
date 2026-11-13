@@ -61,8 +61,8 @@ Note: Pourquoi faire d'abord: les petites décisions qu'on prend sans y penser n
 - Au premier test, l'IA **se trompe**. C'est normal, et c'est ce qu'on cherche
 - Chaque erreur montre **une chose qui n'est pas écrite**: une étape sautée, une valeur par défaut, un choix que vous faites sans y penser
 - Quand l'IA se trompe, on **corrige le texte**. On n'accuse pas l'IA
-- **3 à 5 essais** suffisent en général
-- Un chemin plus court existe: demander à Claude de **vous poser des questions** sur votre façon de faire. C'est la démo de la partie 7
+- D'après mon expérience, **3 à 5 essais** suffisent en général
+- Un chemin plus court existe: demander à Claude de **vous poser des questions** sur votre façon de faire. C'est plus rapide, mais il oublie plus de choses
 
 Note: La demande du chemin court: "Aide-moi à créer une skill pour écrire aux parents, en respectant la spécification des skills IA: https://agentskills.io/specification.md. Pose-moi des questions sur ma façon de faire." Elle marche, mais elle oublie plus de choses: on ne pense pas à dire ce qu'on fait sans y penser.
 
@@ -79,6 +79,16 @@ Dans l'application en français, les skills s'appellent des **"compétences"**.
 Documentation: [Utiliser les compétences dans Claude](https://support.claude.com/fr/articles/12512180) · [Skills overview (en anglais)](https://claude.com/docs/skills/overview)
 
 Note: Lu le 13/11/2026 dans la documentation de Claude. Dans la version en anglais: "Customize > Skills", l'onglet "Your skills" ("Created by you", "From your organization", "Shared with you", "From Anthropic & Partners"), l'onglet "Discover" pour en ajouter, et le bouton "Turn on". Une condition: la création de fichiers et l'exécution de code sont activées ("Settings > Capabilities"; sur Entreprise, c'est un propriétaire de l'organisation qui l'active). Pour ajouter une skill à soi: un fichier ZIP qui contient le dossier de la skill, avec son fichier SKILL.md dedans. La skill de création de skills (skill-creator) est une skill d'Anthropic: on l'active dans cette liste, puis on demande à Claude de créer ou d'évaluer une skill. Les skills d'Anthropic qui créent des fichiers Excel, Word, PowerPoint et PDF s'activent seules quand il le faut. Pour le point 5, Claude lit simplement le fichier SKILL.md du dossier de travail, comme n'importe quel fichier: c'est la voie de la démo de la partie 7, et celle qui garde vos skills chez vous.
+
+---
+## Une skill bien construite
+Toujours **selon la spécification** (https://agentskills.io/specification.md):
+
+- **Un dossier** au nom de la skill, en minuscules et avec des tirets: `ecrire-aux-parents`
+- Dedans, **un fichier SKILL.md**: en haut, le **nom** et une **description** (ce qu'elle fait, et quand l'utiliser)
+- Puis **les instructions**: les étapes, les règles, un exemple, les critères
+- Si besoin, des dossiers à côté: des documents de référence, des modèles
+- Court: **moins de 500 lignes**. Le détail va dans les documents de référence
 
 ---
 ## Exemple: écrire aux parents

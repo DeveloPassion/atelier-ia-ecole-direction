@@ -5,6 +5,15 @@
 Et qui vous appartient.
 
 ---
+## Ce que vous faites seuls, et ce qu'on construit ensemble
+- **Seuls, dès cette semaine**: un dossier, quelques fichiers texte, et le journal du jour. Rien à installer
+- **Ensemble, en phase 2**: un système complet, construit pour chacun de vous, avec ses projets, ses tâches et ses recettes
+- Cette partie montre **où on va**. Les démos se font sur mon écran, avec une direction fictive
+- Deux mots nouveaux: une **note** est un fichier texte. **Obsidian** est une application qui sert à lire et à écrire ces notes
+
+Note: ESSENTIEL. La phase 2: après cet atelier, je construis avec chaque personne son système personnel, à son rythme. Le système de démo est fait avec AI Kit for Obsidian, mon kit pour Obsidian: le dire une fois, sans insister. Le message: ce qu'ils peuvent faire seuls est simple, et le reste se fait avec moi.
+
+---
 ## Le constat
 - La limite n'est plus l'IA
 - La limite, c'est **ce qu'elle sait de vous**
@@ -16,43 +25,22 @@ Note: ESSENTIEL.
 ## Décharger son cerveau
 - Tout ce que vous gardez en tête **vous pèse**: le car à confirmer, le parent à rappeler, le dossier à corriger
 - Écrit dans un endroit fiable, ça ne vous pèse plus: **votre tête se libère**
-- C'est votre **second cerveau digital**: d'abord pour vous, et en bonus pour l'IA
 - **Double gain**: vous vous déchargez aujourd'hui, et chaque note rend l'IA plus utile demain
+- L'habitude à prendre: noter **tout de suite**, noter **ce qui compte**, et noter **le contexte** (pourquoi, avec qui, quelle suite)
 
-- Attention au revers: l'IA produit vite, et on peut **vite en faire trop**. Vous faites travailler l'IA, ou est-ce l'IA qui vous fait travailler?
-
-Note: ESSENTIEL. Message clé: on ne note pas "pour l'IA". On note d'abord pour soi, pour se décharger. L'IA en profite en plus. Le plus simple pour commencer: tout noter dans le journal du jour, et ranger plus tard.
-
----
-## L'habitude de noter
-Les paroles s'envolent, les écrits restent.
-
-- Noter **tout de suite**: une idée, une décision, un appel, une chose à faire
-- Noter **ce qui compte**, pas tout
-- Noter aussi **le contexte**: pourquoi, avec qui, et quelle est la suite
-- Relire au moins **une fois par semaine**
-
-Note: À PASSER si le temps manque. Exemple: un parent appelle pour la sortie P4. On note tout de suite ce qui est dit, ce qui est décidé et la suite. Les gens savent qu'on reviendra vers eux, parce que c'est écrit. Sans cette habitude, le reste ne marche pas: on ne peut ni ranger, ni relier, ni donner à l'IA ce qu'on n'a pas noté.
+Note: ESSENTIEL. Message clé: on ne note pas "pour l'IA". On note d'abord pour soi, pour se décharger. L'IA en profite en plus. Le plus simple pour commencer: tout noter dans le journal du jour, et ranger plus tard. Exemple: un parent appelle pour la sortie P4. On note tout de suite ce qui est dit, ce qui est décidé et la suite. Les gens savent qu'on reviendra vers eux, parce que c'est écrit. Sans cette habitude, le reste ne marche pas: on ne peut ni ranger, ni relier, ni donner à l'IA ce qu'on n'a pas noté. Le revers à dire: l'IA produit vite, et on peut vite en faire trop. Vous faites travailler l'IA, ou est-ce l'IA qui vous fait travailler?
 
 ---
 ## Le journal du jour
 Le plus simple pour commencer: **une seule note par jour**.
 
-- Tout y va: les appels, les idées, les décisions, les choses à faire
-- **Rien à décider** sur le moment: pas de titre, pas de dossier
+- Tout y va: les appels, les idées, les décisions, les choses à faire. **Rien à décider** sur le moment
+- On capture partout: au bureau, sur le téléphone, en dictant. Tout finit **au même endroit**
 - Une fois par semaine, **on range**: une tâche, un projet, une note sur une personne
 - Pour l'IA, c'est **une mine d'or**: "Qu'est-ce que j'ai promis cette semaine?"{copy}, "Qu'est-ce qui est resté en suspens?"{copy}
+- Dans vos notes comme ailleurs: **pas de nom d'élève, pas de santé, pas de dossier**. Une tâche, une classe, une date, un montant: oui
 
-Note: ESSENTIEL. Dans la démo Saint-Exemple, montrer la note du jour du 09/11. Avant la phase 2: un dossier "Journal" dans votre base de connaissances, avec un fichier texte par jour (2026-11-17.md).
-
----
-## Capturer partout, une seule source de vérité
-- Un système pour **toujours pouvoir capturer** une information ou une idée, vite: au bureau, sur le téléphone, en dictant
-- Tout finit au même endroit: **votre base de connaissances**. Une seule source de vérité
-- Plus de post-it, de mails à soi-même et de carnets dispersés
-- **Organiser la base** est un objectif à très long terme: c'est **le cœur du système**. On commence simple, on range un peu chaque semaine
-
-Note: À PASSER si le temps manque.
+Note: ESSENTIEL. Dans la démo Saint-Exemple, montrer la note du jour du 09/11. Avant la phase 2: un dossier "Journal" dans votre base de connaissances, avec un fichier texte par jour (2026-11-17.md). La règle sur les données vaut aussi pour la base: une note sur un parent ou sur un collègue est une donnée personnelle. Tant que le collège et le DPO n'ont pas validé, écrire "un parent de P4" plutôt qu'un nom.
 
 ---
 ## Deux couches
@@ -69,7 +57,7 @@ flowchart LR
   IA --> S
 ```
 
-Note: ESSENTIEL.
+Note: À PASSER si le temps manque.
 
 ---
 ## Ce qu'un système sait de vous
@@ -133,7 +121,7 @@ Note: À PASSER si le temps manque. Lien avec la démo 3: on a rangé des fichie
 <text x="202" y="160" font-size="13.5" fill="#4b5563" font-weight="400" text-anchor="start">Statut: actif</text>
 <circle cx="182" cy="180" r="11" fill="#e5007d"/><text x="182" y="184.5" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">3</text>
 <text x="202" y="185" font-size="15" fill="#1f2329" font-weight="700" text-anchor="start">La prochaine action</text>
-<text x="202" y="204" font-size="13.5" fill="#4b5563" font-weight="400" text-anchor="start">Le mot aux parents avant le 12/11, puis le car avant le 13/11</text>
+<text x="202" y="204" font-size="13.5" fill="#4b5563" font-weight="400" text-anchor="start">Le mot aux parents, puis la confirmation du car</text>
 <circle cx="182" cy="224" r="11" fill="#e5007d"/><text x="182" y="228.5" font-size="13" fill="#fff" font-weight="700" text-anchor="middle">4</text>
 <text x="202" y="229" font-size="15" fill="#1f2329" font-weight="700" text-anchor="start">Les décisions</text>
 <text x="202" y="248" font-size="13.5" fill="#4b5563" font-weight="400" text-anchor="start">12 euros par enfant, à payer avant le 19/11</text>
@@ -154,7 +142,7 @@ Les mêmes faits, dans deux dossiers:
 - **Organisé**: des notes de projet, avec un statut et des tâches datées
 - La même question aux deux: "Liste mes projets en cours, avec leur statut et leur prochaine action. Lequel est bloqué?"{copy}
 
-Note: ESSENTIEL. DÉMO EN VRAC OU ORGANISÉ (5 min), à l'écran. Dézipper avant la séance "Système Direction Saint-Exemple en vrac (démo).zip" et "Système Direction Saint-Exemple - notes seules (démo).zip".
+Note: À PASSER si le temps manque. DÉMO EN VRAC OU ORGANISÉ (5 min), à l'écran. Dézipper avant la séance "Système Direction Saint-Exemple en vrac (démo).zip" et "Système Direction Saint-Exemple - notes seules (démo).zip".
 1. Ouvrir Claude sur le dossier en vrac. Poser la question.
 2. Ouvrir Claude sur le dossier organisé. Poser la même question.
 3. Montrer dans la réponse du vrac la phrase où Claude dit qu'il a déduit les statuts lui-même, et les tâches qu'il compte comme des projets (les bancs, la photocopieuse).
@@ -204,45 +192,13 @@ Avec un système, la demande tient en une ligne: "Prépare la sortie P4 du 26 no
 Note: ESSENTIEL.
 
 ---
-## Quatre façons de travailler
-| | Le chat seul | Un projet Claude | La mémoire de Claude | Votre base |
-|---|---|---|---|---|
-| Ce qu'il sait de vous | Rien | Ce que vous y avez mis | Quelques éléments, peu visibles | **Tout ce qui compte, rangé** |
-| Où c'est gardé | Chez Anthropic | Chez Anthropic | Chez Anthropic | **Chez vous** |
-| Si vous changez d'IA | Rien à perdre | Tout à refaire | Perdu | **Rien à refaire** |
-| Partagé avec l'équipe | Non | Un peu | Non | **Oui, si vous voulez** |
+## Démo: Direction Saint-Exemple
+Un système construit sur AI Kit for Obsidian, avec une direction fictive.
 
-Note: À PASSER si le temps manque.
+- Les mêmes demandes que tout à l'heure, **en une ligne**
+- Puis la même question dans un chat vide, pour comparer
 
----
-## Souverain: ce que ça veut dire
-1. **Ne pas dépendre** de Claude seul, ni de ses projets, ni de sa mémoire
-2. Une base de connaissances **à vous**: des fichiers texte, sur votre PC ou votre OneDrive, lisibles sans aucun outil
-3. **Personnelle et partagée**: chaque direction a la sienne, et une partie commune peut servir à toute l'école
-4. **Libre de changer de fournisseur**: la même base sert avec Claude aujourd'hui, et avec un autre demain
-5. **Vous décidez** ce que l'IA voit, dossier par dossier
-6. **Des fichiers, plutôt que des artefacts**: un artefact reste chez Anthropic. Ce qui doit durer devient un fichier, chez vous
-
-Note: ESSENTIEL.
-
----
-## Sauvegardez votre base
-- Votre base de connaissances devient **précieuse**: des années de travail
-- **Au moins deux copies**, dont une hors de votre PC (un disque externe, un autre cloud)
-- La synchronisation n'est pas une sauvegarde: une erreur ou une suppression se synchronise aussi
-- Avant de laisser un agent travailler seul dans la base: **une sauvegarde récente**
-- Testez de temps en temps: **savez-vous restaurer** un fichier?
-
-Note: À PASSER si le temps manque.
-
----
-## Ce qu'il faut savoir
-- Le modèle reste un **service externe**
-- Chaque demande passe chez le fournisseur choisi
-- Ce qui ne dépend plus de lui: vos connaissances, votre organisation, vos processus
-- Si demain un autre modèle est meilleur, ou européen, ou local, vous changez **sans rien perdre**
-
-Note: À PASSER si le temps manque.
+Note: ESSENTIEL. DÉMO SYSTÈME (5 min), à l'écran. Ouvrir le dossier "Système Direction Saint-Exemple - notes seules (démo)" (dézippé avant la séance) dans Obsidian, et Claude sur ce dossier. Les demandes et les réponses attendues sont dans "DEMO - À demander.txt", à la racine du système. Pour chaque demande, montrer la réponse, puis poser la même question dans un chat vide. Les cinq demandes: 1) "Prépare la sortie P4 du 26 novembre." 2) "Fais ma revue du lundi." 3) "Écris aux parents de P4 que le paiement est attendu avant le 19/11." 4) "Qu'est-ce que j'attends des autres, et qui dois-je relancer cette semaine?" 5) "Quelles actions de la circulaire 9847 touchent mes projets?" (joindre le PDF). En 5 minutes: faire 1 et 2. Les autres si le temps le permet. Le fichier finit par un tableau qui compare le chat, un projet Claude, la mémoire de Claude et ce système. Si le temps le permet, 2 minutes dans mon propre système: le genre de demandes que je lui fais chaque jour.
 
 ---
 ## Louer ou posséder
@@ -267,13 +223,34 @@ Note: À PASSER si le temps manque.
 Note: ESSENTIEL.
 
 ---
-## Démo: Direction Saint-Exemple
-Un système construit sur AI Kit for Obsidian, avec une direction fictive.
+## Garder la maîtrise
+1. **Ne pas dépendre** de Claude seul, ni de ses projets, ni de sa mémoire
+2. Une base de connaissances **à vous**: des fichiers texte, sur votre PC ou votre OneDrive, lisibles sans aucun outil
+3. **Personnelle et partagée**: chaque direction a la sienne, et une partie commune peut servir à toute l'école
+4. **Libre de changer de fournisseur**: la même base sert avec Claude aujourd'hui, et avec un autre demain
+5. **Vous décidez** ce que l'IA voit, dossier par dossier. Ce qu'elle lit part chez le fournisseur; vos fichiers, eux, restent chez vous
+6. **Des fichiers, plutôt que des artefacts**: un artefact reste chez Anthropic. Ce qui doit durer devient un fichier, chez vous
 
-- Les mêmes demandes que tout à l'heure, **en une ligne**
-- Puis la même question dans un chat vide, pour comparer
+Note: À PASSER si le temps manque.
 
-Note: ESSENTIEL. DÉMO SYSTÈME (5 min), à l'écran. Ouvrir le dossier "Système Direction Saint-Exemple - notes seules (démo)" (dézippé avant la séance) dans Obsidian, et Claude sur ce dossier. Les demandes et les réponses attendues sont dans "DEMO - À demander.txt", à la racine du système. Pour chaque demande, montrer la réponse, puis poser la même question dans un chat vide. Les cinq demandes: 1) "Prépare la sortie P4 du 26 novembre." 2) "Fais ma revue du lundi." 3) "Écris aux parents de P4 que le paiement est attendu avant le 19/11." 4) "Qu'est-ce que j'attends des autres, et qui dois-je relancer cette semaine?" 5) "Quelles actions de la circulaire 9847 touchent mes projets?" (joindre le PDF). En 5 minutes: faire 1 et 2. Les autres si le temps le permet. Le fichier finit par un tableau qui compare le chat, un projet Claude, la mémoire de Claude et ce système. Si le temps le permet, 2 minutes dans mon propre système: le genre de demandes que je lui fais chaque jour.
+---
+## Sauvegardez votre base
+- Votre base de connaissances devient **précieuse**: des années de travail
+- **Au moins deux copies**, dont une hors de votre PC (un disque externe, un autre cloud)
+- La synchronisation n'est pas une sauvegarde: une erreur ou une suppression se synchronise aussi
+- Avant de laisser un agent travailler seul dans la base: **une sauvegarde récente**
+- Testez de temps en temps: **savez-vous restaurer** un fichier?
+
+Note: À PASSER si le temps manque.
+
+---
+## Ce qui passe quand même chez le fournisseur
+- Le modèle reste un **service externe**
+- Chaque demande passe chez le fournisseur choisi
+- Ce qui ne dépend plus de lui: vos connaissances, votre organisation, vos processus
+- Si demain un autre modèle est meilleur, ou européen, ou local, vous changez **sans rien perdre**
+
+Note: À PASSER si le temps manque.
 
 ---
 ## Démo: créer une skill ensemble
@@ -285,19 +262,7 @@ Puis on la teste: "Écris le mot aux parents pour la sortie P4 du 26 novembre."{
 
 Ensuite, on change **une ligne du processus**, et on relance: le mot change, sans toucher à la skill.
 
-Note: ESSENTIEL. DÉMO SKILL (5 min), à l'écran, Claude ouvert sur une copie du dossier "Direction Saint-Exemple" (le système de démo). 1) Coller la demande. 2) Montrer le résultat: un dossier "ecrire-aux-parents" avec un fichier SKILL.md (name, description, puis l'instruction de lire la note du processus). 3) Tester avec la sortie P4, dans une nouvelle conversation. 4) Ouvrir la note "Écrire aux parents (Processus)" (dossier Actions/Processus), changer "150 mots maximum" en "80 mots maximum", et enregistrer. 5) Nouvelle conversation, même demande: le mot est plus court. Message: on a changé le processus, pas la skill (bonus 14, "Le processus et la skill: deux choses"). Si quelque chose ne va pas: corriger le texte, pas la réponse. La skill vit dans le dossier de travail (la base de connaissances): rien à installer dans l'application. Pour s'en servir, Claude ouvert sur ce dossier: "Utilise la skill ecrire-aux-parents pour...". La spécification vient de agentskills.io, un format ouvert que d'autres outils IA lisent aussi.
-
----
-## Une skill bien construite
-Toujours **selon la spécification** (https://agentskills.io/specification.md):
-
-- **Un dossier** au nom de la skill, en minuscules et avec des tirets: `ecrire-aux-parents`
-- Dedans, **un fichier SKILL.md**: en haut, le **nom** et une **description** (ce qu'elle fait, et quand l'utiliser)
-- Puis **les instructions**: les étapes, les règles, un exemple, les critères
-- Si besoin, des dossiers à côté: des documents de référence, des modèles
-- Court: **moins de 500 lignes**. Le détail va dans les documents de référence
-
-Note: À PASSER si le temps manque.
+Note: À PASSER si le temps manque. DÉMO SKILL (5 min), à l'écran, Claude ouvert sur une copie du dossier "Direction Saint-Exemple" (le système de démo). 1) Coller la demande. 2) Montrer le résultat: un dossier "ecrire-aux-parents" avec un fichier SKILL.md (name, description, puis l'instruction de lire la note du processus). 3) Tester avec la sortie P4, dans une nouvelle conversation. 4) Ouvrir la note "Écrire aux parents (Processus)" (dossier Actions/Processus), changer "150 mots maximum" en "80 mots maximum", et enregistrer. 5) Nouvelle conversation, même demande: le mot est plus court. Message: on a changé le processus, pas la skill (bonus 14, "Le processus et la skill: deux choses"). Si quelque chose ne va pas: corriger le texte, pas la réponse. La skill vit dans le dossier de travail (la base de connaissances): rien à installer dans l'application. Pour s'en servir, Claude ouvert sur ce dossier: "Utilise la skill ecrire-aux-parents pour...". La spécification vient de agentskills.io, un format ouvert que d'autres outils IA lisent aussi. Cette démo passe en deuxième séance si le temps manque: elle demande cinq minutes.
 
 ---
 ## Avec votre système, une phrase suffit

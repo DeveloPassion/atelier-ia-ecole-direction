@@ -95,17 +95,35 @@ STARTER_URL_TEXT = "developassion.github.io/atelier-ia-ecole-direction/documents
 STARTER_URL = "https://developassion.github.io/atelier-ia-ecole-direction/documents/" + quote(STARTER_NAME)
 
 
-def starter(path):
+EXAMPLE = {
+    "role": "Je suis directrice de la section primaire de l'École fondamentale Saint-Exemple, depuis septembre 2024. 9 classes, 13 enseignants, environ 190 élèves.",
+    "perimetre": "Je gère l'équipe, les parents, les sorties, les inscriptions et le plan de pilotage. La secrétaire gère le dossier des élèves et l'encodage sur IT School. Le pouvoir organisateur valide le budget et les travaux.",
+    "ton": "Je vouvoie les parents. J'écris court et simple: 120 mots au plus pour un mot aux parents. Je signe \"Hélène Dufour, directrice de la section primaire\".",
+    "priorites": "1. Le plan de pilotage. 2. Les sorties et les classes de neige. 3. Moins de doublons entre le cahier et les dossiers.",
+    "projets": "La sortie de P4 au musée des Sciences naturelles, le 26 novembre. Le plan de pilotage. Les classes de neige de P5.",
+    "attente": "La décision du pouvoir organisateur sur le prix des classes de neige. La confirmation du car pour le 26 novembre.",
+    "personnes": "La secrétaire. L'instituteur de P4, pour la sortie. Le pouvoir organisateur.",
+    "outils": "mAGEordome, GEDI-PRO, RAVEL, IT School, OneDrive, Outlook. Je dois aller voir moi-même les nouvelles circulaires: je ne reçois pas de notification.",
+    "annee": "La rentrée, les réunions de parents, les bulletins, le CEB en juin. Septembre et juin sont mes mois les plus chargés.",
+    "repetitif": "Les mots aux parents. Le tri des circulaires. Le suivi des sorties: réservé, payé, encodé.",
+    "processus": "Organiser une sortie: 1. choisir la date avec l'enseignant. 2. réserver le lieu et le car. 3. écrire le mot aux parents. 4. suivre les paiements. 5. faire encoder la sortie sur IT School.",
+    "jamais": "Envoyer un mail ou un formulaire. Supprimer ou déplacer un fichier. Décider à propos d'un élève.",
+    "interdit": "Le dossier ELEVES, et tout ce qui contient des données de santé ou des données de parents.",
+}
+
+
+def starter(path, answers=None):
     """Starter text file with the same questions as the context sheet.
     Plain text, not Markdown: the participants are not technical. Windows line ends and a BOM so Notepad opens it well."""
-    out = ["À PROPOS DE MOI", "",
-           "Ma fiche de contexte pour l'IA. Formation IA, Collège de Bonne-Espérance.",
+    out = ["À PROPOS DE MOI" + (" (EXEMPLE)" if answers else ""), "",
+           ("Un exemple rempli, pour une direction fictive: Hélène Dufour, de l'École fondamentale Saint-Exemple. Personne n'est réel."
+            if answers else "Ma fiche de contexte pour l'IA. Formation IA, Collège de Bonne-Espérance."),
            "Écrivez votre réponse sous chaque question. Écrivez comme vous parlez: des phrases courtes suffisent.",
            "Ne mettez aucune donnée d'élève. Ensuite, donnez ce fichier à l'IA au début d'une conversation.", ""]
     for title, questions in SECTIONS:
         out += ["", title.upper(), "=" * len(title), ""]
-        for _, q, _ in questions:
-            out += [q, "", "", ""]
+        for name, q, _ in questions:
+            out += [q, ""] + ([answers[name], ""] if answers else ["", ""])
     with open(path, "w", encoding="utf-8-sig", newline="\r\n") as f:
         f.write("\n".join(out).rstrip() + "\n")
 
@@ -210,6 +228,7 @@ def regles(path):
 
 p = fiche(os.path.join(out_dir, "Fiche de contexte pour l'IA.pdf"))
 starter(os.path.join(out_dir, STARTER_NAME))
+starter(os.path.join(out_dir, "À propos de moi (exemple).txt"), EXAMPLE)
 regles(os.path.join(out_dir, "Projet de règles d'usage de l'IA.pdf"))
 print("fiche pages", p, "font", REG)
 
@@ -235,9 +254,12 @@ STEPS = [
         "Téléchargez le zip: developassion.github.io/atelier-ia-ecole-direction/documents/fichiers-de-demo.zip",
         "Dézippez-le sur le Bureau, pas dans OneDrive. Tous les fichiers sont fictifs.",
     ]),
-    ("Un test de deux minutes", [
+    ("Un test de cinq minutes", [
         "Dans l'application Claude: \"Bonjour, dis-moi en une phrase ce que tu peux faire.\"",
         "Dans Chrome: ouvrez une page web, cliquez sur Claude et demandez \"Résume cette page en trois points.\"",
+        "Dans la zone de saisie de Claude: voyez-vous le choix \"Cowork\", et le modèle \"Opus 5.5\" dans la liste des modèles?",
+        "Le dossier \"Fichiers de démo\" s'ouvre-t-il depuis le Bureau?",
+        "Si une de ces quatre choses ne marche pas, dites-le-moi par mail: on la règle avant l'atelier.",
     ]),
 ]
 

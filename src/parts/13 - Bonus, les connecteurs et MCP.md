@@ -23,6 +23,7 @@ flowchart LR
 - **Chercher**: "Retrouve le dernier mail de l'inspection sur le CEB"{copy}
 - **Agir**: créer un rendez-vous, préparer un brouillon de mail, ajouter une ligne dans un tableau
 - Exemples pour l'école: Microsoft 365 (Outlook, OneDrive, Teams), Google Drive, un agenda
+- Attention: une boîte mail ou un dossier partagé contient des données d'élèves et de parents. **Pas de connecteur dessus avant l'accord du collège et du DPO**
 
 ---
 ## Les connecteurs utiles pour une école
@@ -37,7 +38,7 @@ Pour utiliser un fichier précis de Google Drive dans une conversation: le bouto
 
 Documentation: [Google Drive (en anglais)](https://claude.com/docs/connectors/google/drive) · [Microsoft 365 (en anglais)](https://claude.com/docs/connectors/microsoft/365)
 
-Note: Lu le 13/11/2026 dans la documentation de Claude. Google Drive: le connecteur est fait par Google. Deux limites: un très gros fichier peut arriver incomplet, et Claude ne lit pas les commentaires ni les suggestions d'un document. Dans le menu "+", le choix s'appelle "Add from Google Drive" dans la version en anglais. Microsoft 365: sur Team et Entreprise, seulement les comptes professionnels ou scolaires. Tout se fait avec les droits de la personne: Claude ne lit et ne change que ce que son compte peut déjà lire et changer. Les actions d'écriture (envoyer un mail, créer un rendez-vous, modifier un fichier, écrire dans Teams) sont réglées par les administrateurs. À ne pas confondre avec "Claude for Microsoft 365", les compléments qui mettent Claude dans Word, Excel, PowerPoint et Outlook: bonus 16.
+Note: Lu le 13/11/2026 dans la documentation de Claude. Google Drive: le connecteur est fait par Google. Deux limites: un très gros fichier peut arriver incomplet, et Claude ne lit pas les commentaires ni les suggestions d'un document. Dans le menu "+", le choix s'appelle "Add from Google Drive" dans la version en anglais. Microsoft 365: sur Team et Entreprise, seulement les comptes professionnels ou scolaires. Tout se fait avec les droits de la personne: Claude ne lit et ne change que ce que son compte peut déjà lire et changer. Les actions d'écriture (envoyer un mail, créer un rendez-vous, modifier un fichier, écrire dans Teams) sont réglées par les administrateurs. À ne pas confondre avec "Claude for Microsoft 365", les compléments qui mettent Claude dans Word, Excel, PowerPoint et Outlook: à la fin de ce bonus.
 
 ---
 ## Ajouter un connecteur
@@ -73,3 +74,31 @@ Note: Dans la version en anglais: "Allow once" et "Always allow" au moment de l'
 1. **Le connecteur**: le plus rapide et le plus fiable. Le premier choix quand il existe
 2. **Le navigateur** (Claude in Chrome): pour les sites sans connecteur
 3. **L'ordinateur**: Claude clique à votre place. Le dernier recours: plus lent, à surveiller, et pas encore sur l'abonnement Entreprise
+
+---
+## Claude dans Word, Excel, PowerPoint et Outlook
+Des compléments mettent Claude **dans vos applications Microsoft 365**. Vous lui parlez du fichier ou du mail qui est ouvert.
+
+| L'application | Ce que Claude y fait |
+|---|---|
+| **Word** | Répondre à vos questions sur le document, réécrire un passage, travailler en **suivi des modifications**, traiter les commentaires |
+| **Excel** | Lire et écrire des cellules, des formules, des tableaux croisés et des graphiques |
+| **PowerPoint** | Lire, modifier et créer des slides, avec vos modèles |
+| **Outlook** (en test) | Trier la boîte de réception, résumer un long échange, préparer une réponse. **Il n'envoie jamais**: le brouillon reste à relire |
+
+Documentation: [Claude for M365 (en anglais)](https://claude.com/docs/office-agents/overview)
+
+Note: Lu le 13/11/2026 dans la documentation de Claude. Le nom du produit: "Claude for Microsoft 365". À ne pas confondre avec le connecteur Microsoft 365, plus haut dans ce bonus: le connecteur donne à l'application Claude un accès à vos fichiers et à vos mails; les compléments, eux, mettent Claude dans Word, Excel, PowerPoint et Outlook. Les quatre compléments partagent la conversation: on peut passer d'un mail à un document. La dictée existe aussi. Disponible sur les abonnements Pro, Max, Team et Entreprise; Outlook est en bêta.
+
+---
+## Claude dans Office: l'obtenir, et rester prudent
+1. Pour vous: la page **"Claude for Microsoft 365"** de la boutique de Microsoft, bouton **"Get it now"**. Puis ouvrez Word, activez le complément (onglet Accueil, Compléments), et connectez-vous avec **le compte Claude du collège**
+2. Pour tout le collège: l'administrateur Microsoft 365 le déploie, dans son centre d'administration
+3. Pour Outlook: cet administrateur donne aussi **un accord, une seule fois**, pour la lecture des boîtes mail
+
+- Claude lit **le document ou le mail ouvert**, et ce contenu part chez Anthropic: pas de données d'élèves sans l'accord du collège et du DPO (partie 8)
+- Un document reçu de l'extérieur peut cacher **des instructions pour l'IA**: relisez chaque modification avant de l'accepter
+
+Documentation: [Claude for Word (en anglais)](https://claude.com/docs/office-agents/word) · [Claude for Outlook (en anglais)](https://claude.com/docs/office-agents/outlook)
+
+Note: Lu le 13/11/2026. Versions: Word sur le web, Word pour Windows avec un abonnement Microsoft 365 (version 2205 ou plus récente), Word pour Mac (16.61 ou plus récente). Pas Word 2016 ou 2019, ni iPad, ni Android. Outlook: seulement une boîte Exchange Online (Microsoft 365), et pas les boîtes partagées. Côté administrateur: centre d'administration Microsoft 365, "Settings", "Integrated apps", chercher "Claude for Microsoft 365". Pour Outlook, l'accord est un consentement Microsoft Graph, donné par un administrateur général. L'usage compte sur le même compte Claude, avec les mêmes limites. Les données: supprimées chez Anthropic dans les 30 jours; le complément ne reprend pas les réglages de conservation particuliers de l'organisation. Problème connu: après les mises à jour de Microsoft 365 de septembre et d'octobre 2026 sur Windows, certaines personnes ne voient plus leur historique dans le complément.

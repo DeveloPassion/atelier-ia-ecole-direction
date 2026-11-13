@@ -46,6 +46,10 @@ QUOTE = ParagraphStyle("quote", parent=BODY, fontName="NSI", leftIndent=8, bulle
 SMALL = ParagraphStyle("small", parent=BODY, fontSize=6.6, leading=8.2, textColor=GREY)
 CELL = ParagraphStyle("cell", parent=BODY, fontSize=6.6, leading=7.9, spaceAfter=0)
 CELLB = ParagraphStyle("cellb", parent=CELL, fontName="NSB")
+SCALE = 1.04  # the largest value that keeps the sheet on 2 pages; found by trying
+for _st in (H3, BODY, BUL, QUOTE, SMALL, CELL, CELLB):
+    _st.fontSize *= SCALE
+    _st.leading *= SCALE
 
 
 def b(text):
@@ -98,12 +102,13 @@ def decorate(c, doc):
 
 
 story = [
-    box("Les cinq règles d'or", [
+    box("Les six règles d'or", [
         b("<b>L'IA prédit, elle ne sait pas.</b> Les faits, les chiffres, les dates et les sources se vérifient toujours."),
         b("<b>Le contexte fait la qualité.</b> Résultat = modèle × contexte. Le contexte est le seul facteur que vous contrôlez."),
         b("<b>Une conversation = un sujet</b>, et une conversation courte."),
         b("<b>Elle propose, vous décidez.</b> Envoyer, supprimer, payer, publier: c'est vous qui validez."),
         b("<b>Votre contexte est votre actif.</b> Gardez-le dans votre base de connaissances, à vous, et sauvegardée."),
+        b("<b>Écrivez vos processus</b>, et laissez l'IA les améliorer avec vous."),
     ]),
     box("La recette d'une bonne demande", [
         p("Dites, dans cet ordre si possible:"),
@@ -126,7 +131,7 @@ story = [
         q("Qu'est-ce qui cloche dans ce plan? Donne-moi les trois meilleures objections."),
         q("Joue l'avocat du diable."),
         q("Essaie de démolir ta propre réponse: failles, dates fausses, oublis."),
-        q("Demande à un autre agent de relire ton travail et d'y chercher les erreurs."),
+        q("Relis ce travail avec un regard neuf, et cherche les erreurs."),
         q("Vérifie chaque date dans le texte."),
         q("Garde le début, refais seulement la fin."),
         q("Plus court. Moins formel. Coupe la slide 4 en deux."),
@@ -151,19 +156,19 @@ story = [
         b("<b>Haut</b>: ce qui doit être juste (les dates d'une circulaire, les chiffres d'un tableau). Plus long et plus cher."),
         b("Une <b>demande précise</b> est le levier le moins cher: moins vous précisez, plus Claude décide à votre place."),
     ]),
-    box("Les modes de travail", [
-        b("<b>Manuel</b>: il demande votre accord avant chaque action. Le plus sûr pour commencer."),
-        b("<b>Accepter les modifications</b>: il modifie les fichiers du dossier sans demander chaque fois."),
-        b("<b>Plan</b>: il lit et propose un plan, sans rien changer. Vous validez, puis il travaille."),
-        b("<b>Auto</b>: il avance seul, et ne demande que pour les actions risquées."),
-        p("Conseil: <b>Plan</b> pour une grosse tâche, <b>Manuel</b> au début, <b>Auto</b> seulement sur une copie. Dossier de travail: <b>votre base de connaissances</b> (une copie pour les essais), jamais tout votre OneDrive."),
+    box("Combien Claude demande avant d'agir", [
+        b("<b>Manuel</b>: il demande votre accord avant chaque action. Le réglage de départ, et le bon choix."),
+        b("<b>Auto</b>: il avance seul, et bloque ce qui lui paraît dangereux. Seulement sur une copie."),
+        b("<b>Ignorer</b>: il ne demande rien et ne vérifie rien. À ne jamais utiliser."),
+        b("<b>Une demande de permission</b>: lisez-la, autorisez une fois, et refusez si vous avez un doute."),
+        p("Pour une grosse tâche: demandez d'abord <b>un plan</b>. Dossier de travail: <b>votre base de connaissances</b> (une copie pour les essais), jamais tout votre OneDrive."),
     ]),
     box("Le contexte, sans se piéger", [
         b("Le contexte, c'est <b>tout ce que Claude voit</b>: vos instructions, la conversation, les documents joints, les pages lues. Le reste, il ne le connaît pas."),
         b("À chaque message, il <b>relit toute la conversation</b>. Entre deux conversations, il ne se souvient de rien, sauf ce qu'il va lire: <b>les fichiers de votre base</b>."),
-        b("La fenêtre est grande (environ un million de tokens; un token vaut environ trois quarts d'un mot), mais <b>ce qui y tient n'est pas forcément bien lu</b>. Le milieu d'un long texte est moins bien utilisé que le début et la fin."),
+        b("La fenêtre est grande (environ un million de tokens; un token est un morceau de mot), mais <b>ce qui y tient n'est pas forcément bien lu</b>. Le milieu d'un long texte est moins bien utilisé que le début et la fin."),
         b("Le contexte est <b>limité</b>. Donnez <b>ce qui sert à la tâche</b>, pas tout ce que vous avez: un document inutile peut faire baisser la qualité."),
-        b("<b>Signes qu'il faut repartir</b>: il oublie une consigne, se répète, se contredit, invente. Alors: un prompt de passage pour un autre agent, puis une nouvelle conversation."),
+        b("<b>Signes qu'il faut repartir</b>: il oublie une consigne, se répète, mélange les sujets, invente. Alors: un prompt de passage pour un autre agent, puis une nouvelle conversation."),
         b("<b>La compaction</b> (Claude résume le début d'une conversation trop longue) est <b>peu fiable</b>: beaucoup d'informations se perdent, et les erreurs augmentent. Repartez avant. Ce qui compte va dans votre base."),
         b("Mieux vaut <b>dix conversations courtes</b> qu'une seule longue. Vous pouvez en mener <b>plusieurs en parallèle</b>, une par tâche."),
     ]),
@@ -188,7 +193,7 @@ story = [
         b("Elle contient le contexte de vos <b>rôles</b>, <b>projets</b>, <b>personnes</b> et <b>processus</b>. La fiche de contexte sert juste de point de départ."),
         b("<b>D'abord pour vous</b>, en bonus pour l'IA: c'est votre second cerveau digital. L'organiser est un travail de long terme, le cœur du système."),
         b("<b>Capturez partout</b> (bureau, téléphone, dictée), puis rangez dans la base. Un journal du jour: un fichier texte par jour."),
-        b("<b>La mémoire de Claude: à proscrire.</b> Elle ne vous appartient pas vraiment, elle est peu fiable, et elle retient et ressort des choses un peu au hasard. Désactivez-la."),
+        b("<b>La mémoire de Claude: mon choix est de la couper.</b> Elle reste chez Anthropic, et elle ressort des choses là où on ne les attend pas."),
     ]),
     box("Sauvegardes", [
         b("<b>Au moins deux copies</b> de la base, dont une hors du PC."),
@@ -202,12 +207,6 @@ story = [
         b("<b>Documentez vos processus</b>: l'IA ne fait bien que ce qui est bien décrit."),
         b("<b>Tapez « / »</b> pour la liste des skills et des commandes. En français: « compétences »."),
     ]),
-    box("Plusieurs agents, plusieurs regards", [
-        b("<b>Diverger, puis converger</b>: « 20 idées, sans juger », puis « classe-les selon ces trois critères, garde les trois meilleures »."),
-        b("<b>Débat</b>: un agent défend, un autre attaque, un troisième tranche. Vous décidez."),
-        b("<b>Panel</b>: « Relis comme un parent pressé, un parent qui lit mal le français, l'inspection »."),
-        b("<b>L'IA comme juge</b>: un agent note le travail d'un autre avec votre grille. Il préfère les réponses longues: gardez le dernier mot."),
-    ]),
     box("Prudence: les données de l'école", [
         b("<b>Jamais d'outil gratuit ou personnel</b> (ChatGPT, Gemini, Claude gratuit) pour un document de l'école: aucun contrat, et les données peuvent servir à entraîner les modèles. C'est une fuite de données (RGPD)."),
         b("Seulement <b>le compte Claude du collège</b>. Vérifiez le nom de l'organisation en bas à gauche de l'application."),
@@ -217,13 +216,8 @@ story = [
     box("Vos données chez le fournisseur", [
         b("Chez Anthropic, les données sont <b>stockées aux États-Unis</b>; pas d'option Europe dans l'abonnement Entreprise, selon sa documentation."),
         b("Le <b>DPA</b> (accord de traitement des données, RGPD) encadre ce que le fournisseur fait des données. Le <b>ZDR</b> (zéro conservation) existe pour certains usages, pas avec Fable."),
-        b("Le collège reste <b>responsable</b> (RGPD). L'<b>AI Act</b> impose la formation du personnel et encadre les usages à haut risque."),
-        b("Un <b>pouce levé ou baissé</b> peut autoriser une conservation plus longue: évitez-le avec des données sensibles."),
-    ]),
-    box("Claude sur le téléphone", [
-        b("Le même compte, les mêmes conversations. Idéal pour <b>capturer</b> en dictant."),
-        b("Le téléphone <b>n'a pas accès à votre base</b> sur le PC: capturez, puis rangez au bureau. Ou donnez la tâche à Claude sur le PC (Dispatch, selon l'abonnement; le PC reste allumé)."),
-        b("<b>Compte du collège</b>, code de verrouillage, pas de photo de documents d'élèves, pas de documents sensibles enregistrés."),
+        b("Le collège reste <b>responsable</b> (RGPD). L'<b>AI Act</b> demande de développer la culture IA du personnel, et encadre les usages à haut risque."),
+        b("Un <b>pouce levé ou baissé</b> fait garder l'échange 5 ans: jamais avec des données personnelles."),
     ]),
     box("Prudence: les agents", [
         b("<b>La triple menace</b>: un agent devient dangereux quand il a les trois en même temps: des <b>données privées</b>, du <b>contenu non fiable</b> (page web, mail reçu, PDF inconnu) et un moyen d'<b>envoyer dehors</b> (mail, formulaire). Ne donnez jamais les trois sans regarder."),
@@ -301,24 +295,16 @@ story = [
     ]),
     box("Les mots à connaître", [
         table([
-            ["Token", "Un morceau de texte, environ trois quarts d'un mot. L'unité de mesure et de prix."],
+            ["Token", "Un morceau de mot. L'unité de mesure et de prix."],
             ["Prompt", "Votre demande. Une partie du contexte, pas tout le contexte."],
             ["Contexte", "Tout ce que Claude voit au moment de répondre."],
             ["Hallucination", "Un fait inventé, dit avec aplomb."],
-            ["Complaisance", "Sa tendance à vous donner raison. Demandez-lui de critiquer."],
             ["Agent", "Une IA qui agit (fichiers, web, applications), pas seulement qui répond."],
             ["Artefact", "Ce que Claude crée: document, tableau, présentation, petit jeu."],
-            ["Compaction", "Le résumé automatique du début d'une longue conversation."],
-            ["Cache", "Claude garde le début de la conversation quelques minutes: plus rapide, moins cher."],
             ["Connecteur", "Un accès à un autre outil (agenda, mails), par MCP."],
-            ["Fenêtre", "La fenêtre de contexte: le maximum de texte lu en une fois (environ un million de tokens)."],
             ["Effort", "Combien de travail Claude met dans une tâche: bas, moyen, haut."],
             ["Base de connaissances", "Votre dossier de fichiers texte: la source unique de contexte, pour vous et pour l'IA."],
-            ["Markdown", "Du texte simple, avec # pour les titres. Lisible par vous et par toutes les IA."],
-            ["DPA", "L'accord de traitement des données entre le collège et le fournisseur (RGPD)."],
-            ["ZDR", "Zéro conservation: le fournisseur ne garde rien après la réponse."],
             ["Skill", "Une façon de faire écrite une fois, que Claude suit chaque fois."],
-            ["LLM", "Grand modèle de langage: il prédit la suite la plus probable d'un texte."],
         ], [CW * 0.33, CW * 0.67]),
     ]),
 ]

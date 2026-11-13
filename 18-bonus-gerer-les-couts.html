@@ -175,27 +175,62 @@ Note: Source: "the seat fee covers access only, and all usage is billed separate
 Note: Ordre de grandeur pour la salle, sans chiffres précis: une question courte coûte très peu; une circulaire de 20 pages lue en effort haut coûte bien plus. Le message: ce n'est pas cher pour une vraie tâche, mais les longues conversations qui traînent coûtent sans rien rapporter.
 ---
 ## Le modèle change tout
-Le prix d'un token, comparé à Sonnet 5.5:
-
-| Modèle | Prix | Pour quoi |
-|---|---|---|
-| Haiku 5.5 | **20 fois moins** | Le très simple, très vite |
-| **Sonnet 5.5** | la référence | Le simple: un mail, une reformulation, un résumé court |
-| **Opus 5.5** | **2 fois plus** | Le gros du travail: une circulaire, un tableau, un dossier |
-| Fable 5.2 | **4 fois plus** | Seulement une tâche qui le justifie |
+<div class="chart"><svg viewBox="0 0 960 232" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graphique: le prix d'un token par modèle, comparé à Sonnet 5.5">
+<text x="20" y="26" font-size="14" fill="#ff4fa8" font-weight="700" text-anchor="start">LE PRIX D'UN TOKEN, COMPARÉ À SONNET 5.5</text>
+<text x="140" y="64" font-size="16" fill="#fff" font-weight="700" text-anchor="end">Haiku 5.5</text>
+<rect x="155" y="44" width="8" height="28" rx="5" fill="#475363"/>
+<text x="175" y="58" font-size="15" fill="#fff" font-weight="700" text-anchor="start">jusqu'à 20 fois moins</text>
+<text x="175" y="75" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">le très simple, très vite</text>
+<text x="140" y="110" font-size="16" fill="#fff" font-weight="700" text-anchor="end">Sonnet 5.5</text>
+<rect x="155" y="90" width="120" height="28" rx="5" fill="#4ade80"/>
+<text x="287" y="104" font-size="15" fill="#fff" font-weight="700" text-anchor="start">la référence</text>
+<text x="287" y="121" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">le simple: un mail, un résumé court</text>
+<text x="140" y="156" font-size="16" fill="#fff" font-weight="700" text-anchor="end">Opus 5.5</text>
+<rect x="155" y="136" width="240" height="28" rx="5" fill="#ff4fa8"/>
+<text x="407" y="150" font-size="15" fill="#fff" font-weight="700" text-anchor="start">2 fois plus</text>
+<text x="407" y="167" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">le gros du travail: une circulaire, un dossier</text>
+<text x="140" y="202" font-size="16" fill="#fff" font-weight="700" text-anchor="end">Fable 5.2</text>
+<rect x="155" y="182" width="480" height="28" rx="5" fill="#e5007d"/>
+<text x="647" y="196" font-size="15" fill="#fff" font-weight="700" text-anchor="start">4 fois plus</text>
+<text x="647" y="213" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">seulement une tâche qui le justifie</text>
+</svg></div>
 
 - En pratique, l'écart est **plus grand**: un gros modèle réfléchit et écrit davantage
 - Le bon modèle pour la tâche est **le premier levier**. Il se choisit **à chaque conversation**
 
-Note: Les prix publics d'Anthropic, par million de tokens lus et par million de tokens écrits (page "Pricing" de la documentation, lue le 12/11/2026): Haiku 5.5: 0,10 et 0,50 dollar (pour les demandes de moins de 100 000 tokens). Sonnet 5.5: 2 et 10 dollars. Opus 5.5: 4 et 20 dollars. Fable 5.2: 8 et 40 dollars. Selon la documentation, un contrat Entreprise à l'usage paie ces tarifs: à confirmer pour le collège. Le message: un mauvais choix se paie à chaque message. Tout faire avec Fable coûte au moins quatre fois plus que tout faire avec Sonnet, pour un résultat souvent identique sur une tâche simple. Mais l'inverse coûte aussi: un modèle trop léger sur une tâche difficile, et on recommence. L'effort haut et le mode rapide augmentent encore la facture.
+Note: Les prix publics d'Anthropic, par million de tokens lus et par million de tokens écrits (page "Pricing" de la documentation, lue le 12/11/2026): Haiku 5.5: 0,10 et 0,50 dollar (pour les demandes de moins de 100 000 tokens). Sonnet 5.5: 2 et 10 dollars. Opus 5.5: 4 et 20 dollars. Fable 5.2: 8 et 40 dollars. Selon la documentation, un contrat Entreprise à l'usage paie ces tarifs: à confirmer pour le collège. Le message: un mauvais choix se paie à chaque message. Tout faire avec Fable coûte au moins quatre fois plus que tout faire avec Sonnet, pour un résultat souvent identique sur une tâche simple. Mais l'inverse coûte aussi: un modèle trop léger sur une tâche difficile, et on recommence. L'effort haut et le mode rapide augmentent encore la facture. Deux précisions: "20 fois moins" pour Haiku vaut pour les demandes de moins de 100 000 tokens (au-delà, 4 fois moins que Sonnet), et "4 fois plus" vaut pour Fable 5.2 (les versions 5 et 5.1 coûtent 5 fois plus).
 ---
 ## Une longue conversation coûte de plus en plus
+<div class="chart"><svg viewBox="0 0 960 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graphique: à chaque message, Claude relit plus de texte">
+<text x="20" y="24" font-size="14" fill="#ff4fa8" font-weight="700" text-anchor="start">CE QUE CLAUDE RELIT, MESSAGE APRÈS MESSAGE</text>
+<rect x="60" y="138" width="44" height="12" rx="4" fill="#475363"/>
+<text x="82" y="170" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">1</text>
+<rect x="122" y="126" width="44" height="24" rx="4" fill="#475363"/>
+<text x="144" y="170" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">2</text>
+<rect x="184" y="114" width="44" height="36" rx="4" fill="#475363"/>
+<text x="206" y="170" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">3</text>
+<rect x="246" y="102" width="44" height="48" rx="4" fill="#475363"/>
+<text x="268" y="170" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">4</text>
+<rect x="308" y="90" width="44" height="60" rx="4" fill="#475363"/>
+<text x="330" y="170" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">5</text>
+<rect x="370" y="78" width="44" height="72" rx="4" fill="#475363"/>
+<text x="392" y="170" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">6</text>
+<rect x="432" y="66" width="44" height="84" rx="4" fill="#475363"/>
+<text x="454" y="170" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">7</text>
+<rect x="494" y="54" width="44" height="96" rx="4" fill="#475363"/>
+<text x="516" y="170" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">8</text>
+<rect x="556" y="42" width="44" height="108" rx="4" fill="#475363"/>
+<text x="578" y="170" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">9</text>
+<rect x="618" y="30" width="44" height="120" rx="4" fill="#ff4fa8"/>
+<text x="640" y="170" font-size="13" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">10</text>
+<text x="690" y="70" font-size="15" fill="#fff" font-weight="700" text-anchor="start">1 conversation de 100 messages</text>
+<text x="690" y="92" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">relit environ 9 fois plus de texte</text>
+<text x="690" y="112" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">que 10 conversations de 10 messages</text>
+</svg></div>
+
 - À chaque message, Claude **relit tout** ce qui précède: vos messages, ses réponses, les documents, les pages lues
-- Le premier message lit quelques lignes. Le quarantième relit **les 39 échanges d'avant**
-- Le coût ne grandit donc pas en ligne droite: une conversation deux fois plus longue coûte **bien plus que deux fois plus**
-- Avec un agent, c'est plus fort encore: chaque étape (un fichier lu, une page ouverte) **s'ajoute au contexte**, et tout est relu à l'étape suivante
-- Et la fiabilité baisse en même temps (partie 5): on paie **plus** pour **moins bien**
-- La parade: **une conversation par sujet**, et un prompt de passage pour continuer ailleurs
+- Avec un agent, c'est plus fort encore: chaque étape **s'ajoute au contexte**, et tout est relu à l'étape suivante
+- La parade: **une conversation par sujet**. La fiabilité baisse aussi avec la longueur (partie 5): on paie plus, pour moins bien
 
 Note: Un calcul simple pour la salle: dix conversations de 10 messages font relire environ neuf fois moins de texte qu'une seule conversation de 100 messages. Le cache réduit le prix de ce qui est relu, mais il expire après quelques minutes, et il ne change pas la logique: plus c'est long, plus chaque message coûte.
 ---
@@ -208,23 +243,14 @@ Note: Un calcul simple pour la salle: dix conversations de 10 messages font reli
 
 Note: Les trois premières lignes viennent du guide de consommation d'Anthropic pour Claude Entreprise (Fable "Very High", Opus "High", Sonnet "Moderate", Haiku "Low"). Les deux dernières viennent de la documentation de Claude Code, l'outil des développeurs: la logique est la même, mais ce n'est pas écrit pour l'application de bureau.
 ---
-## Sous le capot: le cache
-- Claude garde le début de la conversation pendant quelques minutes
-- Il ne retraite donc pas tout à chaque message: c'est plus rapide et moins cher
-- Après une longue pause, il doit tout relire
-- Conséquence: une très longue conversation reprise le lendemain **coûte plus**
-- Le cache change **le coût et la vitesse**, pas la qualité des réponses
-
-Note: Le cache est documenté pour Claude Code. Je n'ai rien trouvé d'officiel pour l'application de bureau: le principe est le même, les détails peuvent être différents.
----
-## Sous le capot: la compaction
-- Quand une conversation devient trop longue, Claude **résume le début**
-- Il continue à partir de ce résumé
-- C'est **peu fiable**: énormément d'informations se perdent, et le risque d'erreurs augmente
-- N'attendez pas la compaction: repartez avant, avec un prompt de passage
+## Sous le capot: le cache et la compaction
+- **Le cache**: Claude garde le début de la conversation pendant quelques minutes. Il ne retraite pas tout à chaque message: c'est plus rapide et moins cher
+- Après une longue pause, il doit tout relire: une longue conversation reprise le lendemain **coûte plus**. La qualité, elle, ne change pas
+- **La compaction**: quand une conversation devient trop longue, Claude **résume le début**, et il continue à partir de ce résumé
+- C'est **peu fiable**: beaucoup d'informations se perdent. N'attendez pas la compaction: repartez avant, avec un prompt de passage
 - Si une consigne compte, mettez-la **dans votre base de connaissances**
 
-Note: La compaction existe aussi dans l'application Claude (Claude Desktop). Montrer une longue conversation déjà compactée, préparée avant la séance. Image utile: un PV de réunion garde les décisions et perd les détails.
+Note: Le cache est documenté pour Claude Code. Je n'ai rien trouvé d'officiel pour l'application de bureau: le principe est le même, les détails peuvent être différents. La compaction existe aussi dans l'application Claude (Claude Desktop). Montrer une longue conversation déjà compactée, préparée avant la séance. Image utile: un PV de réunion garde les décisions et perd les détails.
 ---
 ## Ce que chacun fait
 1. **Le bon modèle pour la tâche**, choisi à chaque conversation: Sonnet pour le simple, Opus pour le gros travail. Fable seulement pour une tâche qui le justifie
@@ -248,7 +274,7 @@ Note: Chaque membre voit sa propre consommation si les propriétaires de l'organ
 
 Note: Dans la documentation en anglais: les limites sont dans "Organization settings > Usage", les modèles dans "Organization settings > Models", et les rôles dans "Organization settings > Roles". Attention: selon la documentation, la restriction des modèles n'est pas encore appliquée dans Claude in Chrome. Une personne peut dépasser un peu sa limite: l'usage est compté après chaque demande.
 ---
-## Suivre les dépenses
+## Pour l'admin: suivre les dépenses
 - L'admin voit la dépense **par personne, par modèle et par produit**, avec un export en tableau (CSV)
 - Il voit aussi qui est **bloqué** et qui est **proche de sa limite**
 - Chaque personne voit **sa propre consommation**, si l'admin l'a permis
@@ -264,7 +290,7 @@ Note: Dans la documentation en anglais: "Analytics" (initiales en bas à gauche)
 
 Note: Le bouton s'appelle "Request more usage" dans la documentation en anglais. Remise à zéro: le 1er du mois à minuit, heure UTC. Sur un ancien contrat avec quota, c'est différent: des limites par session de quelques heures et par semaine.
 ---
-## Les réglages du premier jour
+## Pour l'admin: les réglages du premier jour
 Pour la direction et l'admin:
 
 1. **Une limite pour le collège**, et **une limite par personne**
@@ -272,6 +298,7 @@ Pour la direction et l'admin:
 3. **Le modèle par défaut**: Sonnet ou Opus. Fable retiré, ou réservé à quelques personnes
 4. **La consommation visible** pour chacun
 5. Une personne qui regarde la dépense **une fois par mois**: par personne, par modèle, et ce qui a changé
+6. **Couper ce qui ne sert pas**: la mémoire pour tout le collège, et le réglage "Auto" tant que personne n'en a besoin
 
 Une limite n'est pas une punition: c'est **une ceinture de sécurité**. Elle arrête un agent qui tourne seul, ou une tâche oubliée, avant la facture.
 ---

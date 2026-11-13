@@ -1,0 +1,73 @@
+﻿À PROPOS DE MOI (EXEMPLE)
+
+Un exemple rempli, pour une direction fictive: Hélène Dufour, de l'École fondamentale Saint-Exemple. Personne n'est réel.
+Écrivez votre réponse sous chaque question. Écrivez comme vous parlez: des phrases courtes suffisent.
+Ne mettez aucune donnée d'élève. Ensuite, donnez ce fichier à l'IA au début d'une conversation.
+
+
+1. QUI JE SUIS
+==============
+
+Mon rôle et mon école: niveau, nombre de classes et d'élèves, depuis quand.
+
+Je suis directrice de la section primaire de l'École fondamentale Saint-Exemple, depuis septembre 2024. 9 classes, 13 enseignants, environ 190 élèves.
+
+Ce qui fait partie de mon rôle, et ce qui revient à d'autres (secrétariat, pouvoir organisateur, autre direction).
+
+Je gère l'équipe, les parents, les sorties, les inscriptions et le plan de pilotage. La secrétaire gère le dossier des élèves et l'encodage sur IT School. Le pouvoir organisateur valide le budget et les travaux.
+
+Mon ton quand j'écris: tutoiement ou vouvoiement, court ou détaillé, formules que j'utilise. Si possible, collez un texte dont vous êtes content.
+
+Je vouvoie les parents. J'écris court et simple: 120 mots au plus pour un mot aux parents. Je signe "Hélène Dufour, directrice de la section primaire".
+
+
+2. MES OBJECTIFS ET MES PROJETS
+===============================
+
+Mes trois priorités pour cette année scolaire.
+
+1. Le plan de pilotage. 2. Les sorties et les classes de neige. 3. Moins de doublons entre le cahier et les dossiers.
+
+Les projets en cours (par exemple le plan de pilotage, une sortie, un projet numérique).
+
+La sortie de P4 au musée des Sciences naturelles, le 26 novembre. Le plan de pilotage. Les classes de neige de P5.
+
+Ce que j'attends des autres en ce moment: une réponse, un document, une validation.
+
+La décision du pouvoir organisateur sur le prix des classes de neige. La confirmation du car pour le 26 novembre.
+
+
+3. MON ENVIRONNEMENT
+====================
+
+Les personnes avec qui je travaille le plus, et leur rôle.
+
+La secrétaire. L'instituteur de P4, pour la sortie. Le pouvoir organisateur.
+
+Mes outils et applications (mAGEordome, GEDI-PRO, RAVEL, IT School, OneDrive, Outlook...). Ce que je dois aller vérifier moi-même, sans notification.
+
+mAGEordome, GEDI-PRO, RAVEL, IT School, OneDrive, Outlook. Je dois aller voir moi-même les nouvelles circulaires: je ne reçois pas de notification.
+
+Les grands moments de l'année scolaire pour moi, et ceux qui me surchargent.
+
+La rentrée, les réunions de parents, les bulletins, le CEB en juin. Septembre et juin sont mes mois les plus chargés.
+
+
+4. MES PROCESSUS ET MES RÈGLES
+==============================
+
+Les tâches répétitives qui me prennent le plus de temps.
+
+Les mots aux parents. Le tri des circulaires. Le suivi des sorties: réservé, payé, encodé.
+
+Une tâche que je fais souvent, expliquée étape par étape (par exemple: organiser une sortie).
+
+Organiser une sortie: 1. choisir la date avec l'enseignant. 2. réserver le lieu et le car. 3. écrire le mot aux parents. 4. suivre les paiements. 5. faire encoder la sortie sur IT School.
+
+Ce que l'IA ne doit jamais faire sans me demander (envoyer, supprimer, répondre à un parent...).
+
+Envoyer un mail ou un formulaire. Supprimer ou déplacer un fichier. Décider à propos d'un élève.
+
+Les dossiers et les données que l'IA ne doit pas voir (par exemple ELEVES).
+
+Le dossier ELEVES, et tout ce qui contient des données de santé ou des données de parents.

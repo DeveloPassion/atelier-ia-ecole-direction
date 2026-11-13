@@ -9,7 +9,7 @@ Chacun la même circulaire, chacun sa question.
 - Secrétariat: ce qui touche le secrétariat
 - Le résultat: un tableau **à vérifier, pas à recopier**
 
-Note: DÉMO CIRCULAIRE (10 min), chacun sur son PC. D'abord la fictive: "Circulaire 9847 - Organisation de l'année scolaire 2026-2027.pdf" (20 pages, des actions claires pour chaque niveau, avec des pièges). Ensuite, 2 minutes, "essayons une vraie": la circulaire 9757 (document public: [gallilex.cfwb.be](https://gallilex.cfwb.be/sites/default/files/circulaires/2026-07/53257_0001.pdf)). Elle est adressée aux pouvoirs organisateurs: la bonne réponse est "presque rien ici n'est pour vous". Leçon: savoir en une minute qu'une circulaire ne vous concerne pas, c'est déjà du temps gagné.
+Note: ESSENTIEL. DÉMO CIRCULAIRE (10 min), chacun sur son PC. D'abord la fictive: "Circulaire 9847 - Organisation de l'année scolaire 2026-2027.pdf" (20 pages, des actions claires pour chaque niveau, avec des pièges). Ensuite, 2 minutes, "essayons une vraie": la circulaire 9757 (document public: [gallilex.cfwb.be](https://gallilex.cfwb.be/sites/default/files/circulaires/2026-07/53257_0001.pdf)). Elle est adressée aux pouvoirs organisateurs: la bonne réponse est "presque rien ici n'est pour vous". Leçon: savoir en une minute qu'une circulaire ne vous concerne pas, c'est déjà du temps gagné.
 1. Nouvelle conversation, modèle Opus 5.5. Joindre le PDF.
 2. Chacun copie la demande de son rôle sur la slide suivante ("La circulaire: la demande à copier"): un clic sur "Copier", puis coller dans Claude.
 3. Comparer les trois tableaux. Vérifier deux lignes dans le PDF (page citée).
@@ -17,11 +17,11 @@ Note: DÉMO CIRCULAIRE (10 min), chacun sur son PC. D'abord la fictive: "Circula
 5. Toujours faire la deuxième circulaire, même si le temps est court: joindre la circulaire 9757 dans une nouvelle conversation, même demande. Claude doit dire que presque rien ne concerne la direction.
 Corrigé 9847: CEB dans CEBSI le 05/03/2027 (piège: l'ancienne date 19/02 est reportée); FUI aux parents de 6e du 11/01 au 22/01/2027; liste au centre PSE le 30/11/2026; EENC 3e et 5e primaire le 20/11/2026. Pièges secondaires: CE1D et CESS le 26/02/2027, relevé mensuel des absences le 10, section 14 et annexe 2.
 Corrigé 9757: moyens 2025-2026 à dépenser avant le 31/12/2026; moyens 2026-2027 avant le 31/12/2027; annexe de rachat de périodes pour le 24/08/2026 (date passée, Claude doit le signaler); périodes valables du 24/08/2026 au 02/07/2027; subvention fin janvier ou début février 2027; une période en primaire coûte 2.641,53 euros; identification dans PRIMVER (section 6). Pièges: GOSS (secondaire), SPES (spécialisé), règles des 3%. Pour la direction du secondaire: section 8 (GOSS) et règles des 3%.
-Plan B: "Plan B - résultats attendus/Démo 1 - Actions primaire circulaire 9847.pdf".
+Plan B: "Plan B - résultats attendus/Démo 1 - Actions primaire circulaire 9847.pdf". Pour tenir le temps: vérifier en direct un seul des trois tableaux, celui du primaire, avec le corrigé. Les deux autres se comparent à la pause.
 
 ---
 ## La circulaire: la demande à copier
-Nouvelle conversation. Joignez "Circulaire 9847" (dossier "Fichiers de démo"), puis copiez la demande de votre rôle.
+1\. Nouvelle conversation, avec le modèle **Opus 5.5**. 2\. Bouton **"+"**: joignez le PDF "Circulaire 9847" (dossier "Fichiers de démo"). 3\. Copiez la demande de votre rôle, collez-la, envoyez.
 
 Direction du primaire:
 
@@ -34,6 +34,8 @@ Direction du secondaire:
 Secrétariat:
 
 > Je travaille au secrétariat de l'école. Lis cette circulaire et fais-moi un tableau des actions qui concernent le secrétariat: action, date limite, qui doit le faire, page. Signale les dates déjà passées.
+
+Note: ESSENTIEL.
 
 ---
 ## Ce qu'on vient de voir
@@ -68,3 +70,5 @@ Secrétariat:
 - Avec plus d'effort, il vérifie plus
 
 Pour un système qui vous connaît: il sait déjà quel est votre niveau et vos projets, et il relie chaque action à la bonne tâche.
+
+Note: ESSENTIEL.

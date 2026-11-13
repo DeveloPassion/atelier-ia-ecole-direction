@@ -4,12 +4,58 @@
 ## 6. Démos
 Ce qu'un bon système IA peut faire pour vous.
 
-- La démo 1, la circulaire, c'était la partie 3. Voici les démos 2 à 6
-- Des cas réels de l'école. Presque toutes les démos utilisent **Cowork**: Claude travaille dans un dossier de votre PC
-- Vous suivez sur votre PC quand c'est court. Je montre à l'écran quand c'est long
+- D'abord **Cowork**, et votre dossier de travail
+- Puis une démo sur votre PC, et **votre vraie tâche**
+- Ensuite, je montre à l'écran: le dossier à ranger, et le navigateur
 - Chaque démo a sa slide "à copier", avec les demandes: vous pouvez les refaire seuls
 
-Note: 18 minutes. Ordre: fichiers (8 min), dossier (6 min), navigateur (4 min). Ensuite, s'il reste du temps: la photo (3 min) ou la présentation (2 min). Si le temps manque, garder fichiers et dossier, et montrer le résultat du plan B pour les autres. Plan B: le dossier "Plan B - résultats attendus".
+Note: 35 minutes. Ordre: Cowork et le dossier de travail (5 min), la démo 2 sur leur PC (8 min), leur vraie tâche (15 min), artefact ou fichier et la démo 3 avec le plan B (2 min), la démo 4 à l'écran (5 min). Les démos 5 et 6 et "Et l'ordinateur" sont pour la relecture, ou pour la deuxième séance. Plan B: le dossier "Plan B - résultats attendus". Repère: la vraie tâche commence à 1:08 au plus tard.
+
+---
+## Cowork: quand Claude fait le travail
+- Dans la zone de saisie, deux choix: **"Chat"**, pour une question et une réponse, et **"Cowork"**, pour **une tâche entière**. Si vous ne voyez qu'une seule zone, sans ce choix, c'est normal: les deux sont réunis
+- Avec Cowork, vous décrivez **le résultat voulu**. Claude fait les étapes, et vous revenez quand c'est prêt
+- Il **travaille dans vos dossiers**: il lit vos fichiers, il en crée (Word, Excel, PowerPoint), il range, il ouvre des pages web
+- Il ne voit que **les dossiers que vous lui avez ouverts**. Ce qu'il lit pour la tâche part chez Anthropic, comme toute conversation
+- Il demande avant de supprimer un fichier pour de bon
+
+Documentation: [Commencer avec Claude Cowork](https://support.claude.com/fr/articles/13345190) · [Cowork overview (en anglais)](https://claude.com/docs/cowork/overview)
+
+Note: ESSENTIEL. Lu le 13/11/2026 dans le centre d'aide et dans la documentation de Claude. Cowork est le mode agent de Claude pour le travail de bureau: la même technique que Claude Code, l'outil des développeurs, sans terminal. Il faut un abonnement payant, et l'application de bureau ouverte pour les fichiers du PC. Sur Entreprise: l'admin peut couper Cowork; le réglage de départ pour les permissions est "Manuel" (Claude demande avant chaque action); et un réglage de l'organisation, "Chat and Cowork unified", réunit le chat et Cowork en une seule zone de saisie. Dans ce cas, il n'y a plus de choix "Chat" ou "Cowork" à faire: vérifier ce que leur application montre. Les connecteurs, les skills et les plugins se gèrent dans "Personnaliser", dans la barre de gauche. À connaître: un projet Cowork garde un ou plusieurs dossiers du PC, des instructions permanentes et sa propre mémoire. Ses réglages restent sur le PC, et ce n'est pas la même chose qu'un projet Claude du chat (partie 5). Attention à ne pas trop promettre: les fichiers restent chez vous, mais ce que Claude en lit pendant une tâche part chez Anthropic, et le travail de Claude tourne sur ses serveurs. C'est une façon de dire une fois pour toutes "lis d'abord À propos de moi.txt".
+
+---
+## Les réglages sous la zone de saisie
+- **Le dossier de travail**: le dossier que Claude peut lire et modifier. L'idéal: **toujours le dossier de votre base de connaissances** (partie 7). Pour un essai, une copie. Jamais tout votre OneDrive
+- **Le modèle** et **l'effort**: voir les slides suivantes
+- **Le mode rapide**: des réponses plus rapides, qui consomment plus de budget
+- **Le mode de travail**: comment Claude vous demande la permission avant d'agir
+
+Documentation: [Commencer avec Claude Cowork](https://support.claude.com/fr/articles/13345190)
+
+Note: À PASSER si le temps manque. Montrer chaque réglage en direct, chacun sur son PC. Les noms exacts peuvent changer selon la version et la langue de l'application: vérifier avant la séance. Selon le centre d'aide (lu le 13/11/2026), Claude ne lit et n'écrit que dans les dossiers que vous lui avez ouverts; l'application les liste dans ses paramètres ("Trusted folders" dans la version en anglais). La documentation ne nomme pas le bouton qui sert à choisir le dossier: le montrer en direct.
+
+---
+## Combien Claude demande avant d'agir
+Un réglage, dans la zone de saisie:
+
+- **Manuel**: Claude demande votre accord **avant chaque action**. C'est le réglage de départ sur le compte du collège, et le bon choix pour commencer
+- **Auto**: il avance seul, il vérifie chaque action, et il bloque ce qui lui paraît dangereux. Seulement **sur une copie**
+- **Ignorer**: il ne demande rien, et il ne vérifie rien. **À ne jamais utiliser**
+
+Pour une grosse tâche, demandez d'abord **un plan**: "Montre-moi d'abord ton plan, et attends mon accord."{copy}
+
+Note: ESSENTIEL. Noms lus le 13/11/2026 dans le centre d'aide en français ("Commencer avec Claude Cowork"): "Manuel" (avant: "Demander avant d'agir"), "Auto", "Ignorer" (avant: "Agir sans demander"). Sur Entreprise, le réglage de départ est "Manuel", et l'admin peut couper "Auto". Si leur application montre d'autres noms (par exemple "Plan" ou "Accepter les modifications"), le principe reste le même: plus Claude agit seul, plus il faut un dossier de travail limité et une copie des fichiers. À VÉRIFIER sur leur PC avant la séance. Lien avec la partie 8.
+
+---
+## Votre dossier de travail: comment faire
+1. Sur votre PC, créez un dossier. Par exemple **"Base IA"**, dans vos Documents
+2. Mettez-y **une copie** des fichiers utiles à la tâche. Des fichiers Word, Excel ou PDF conviennent
+3. Dans la zone de saisie de Claude, choisissez ce dossier comme **dossier de travail**: je vous montre le bouton
+4. Claude ne voit que ce dossier, et il vous demande la permission avant de modifier un fichier
+
+Pour l'atelier, ce dossier est **hors OneDrive**. Ensuite, un dossier synchronisé convient, s'il est sauvegardé.
+
+Note: ESSENTIEL. La documentation ne nomme pas le bouton qui sert à choisir le dossier: le montrer en direct, et faire une capture d'écran pour cette slide dès que possible. Pourquoi hors OneDrive pendant l'atelier: avec OneDrive, certains fichiers ne sont pas vraiment sur le PC tant qu'on ne les a pas ouverts. À vérifier sur leurs PC. Dans les paramètres de l'application, la liste des dossiers ouverts s'appelle "Trusted folders" dans la version en anglais.
 
 ---
 ## Démo 2: créer des fichiers
@@ -59,7 +105,7 @@ Note: 18 minutes. Ordre: fichiers (8 min), dossier (6 min), navigateur (4 min). 
 - Une liste de sorties en désordre devient un **tableau Excel**: date, classe, lieu, prix, payé, réservé, encodé sur IT School
 - Le tableau remplace le cahier, et il se met à jour en une phrase
 
-Note: DÉMO FICHIERS (8 min), chacun sur son PC.
+Note: ESSENTIEL. DÉMO FICHIERS (8 min), chacun sur son PC.
 1. Joindre "Notes réunion équipe 2026-11-03 (brut).docx". Chacun copie la première demande de la slide suivante ("Démo 2: les demandes à copier").
 2. Ouvrir le Word créé. Montrer la liste "pas clair": c'est le bon réflexe.
 3. Nouvelle conversation. Joindre "Sorties pédagogiques 2026-2027 (liste).docx" (16 sorties en désordre). Chacun copie la deuxième demande de la slide suivante.
@@ -75,6 +121,20 @@ D'abord, joignez "Notes réunion équipe 2026-11-03 (brut).docx" (dossier "Fichi
 Puis, dans une nouvelle conversation, joignez "Sorties pédagogiques 2026-2027 (liste).docx":
 
 > Fais un tableau Excel des sorties pédagogiques: date, classe, lieu, prix par élève, payé, réservé, encodé sur IT School, remarques. Une ligne par sortie, triée par date. Mets en rouge ce qui n'est pas encore payé ou réservé, et laisse vide ce que tu ne sais pas.
+
+Note: ESSENTIEL.
+
+---
+## Maintenant: votre vraie tâche
+La tâche que vous avez choisie avant l'atelier. **Sans données sensibles.**
+
+1. Choisissez comme dossier de travail **une copie** des fichiers utiles
+2. Écrivez la demande avec la recette: **qui vous êtes, ce que vous voulez, pour qui, la forme, un exemple, les règles et les critères**. Les règles importantes vont **à la fin**
+3. Demandez-lui de vous **poser ses questions** d'abord
+4. Relisez, corrigez par petites phrases, et **vérifiez**
+5. À la fin: "Quelle demande t'aurait permis de faire ça du premier coup?"{copy} **Gardez-la**
+
+Note: ESSENTIEL. VRAIE TÂCHE (15 min), chacun sur son PC. Leurs tâches sont dans leurs réponses aux trois questions (envoyées avant l'atelier, avec les prérequis). Passer de l'un à l'autre. Si une tâche est trop grosse: la couper et faire la première étape. Si quelqu'un n'a rien apporté: refaire le mot aux parents de la partie 1 pour sa propre classe, ou trier une vraie circulaire de la semaine. Finir par l'étape 5, et dire: "Gardez cette demande: c'est peut-être votre première skill."
 
 ---
 ## Un artefact, ou un fichier?
@@ -98,7 +158,7 @@ Pour ce qui doit durer, demandez un fichier: "Enregistre le résultat dans un fi
 
 Documentation: [Que sont les artefacts et comment les utiliser?](https://support.claude.com/fr/articles/17153992)
 
-Note: Un artefact, c'est ce que Claude affiche à droite de la conversation. Il vit dans la conversation, chez Anthropic. On peut le télécharger, mais tant qu'on ne le fait pas, il n'est pas sur le PC: il n'est pas à vous, il n'est pas sauvegardé avec le reste, et il n'entre pas dans votre base de connaissances. Les artefacts sont très utiles pour ce qui est jetable: un essai, un brouillon, un quiz pour demain. Pour le reste, demander directement un fichier dans le dossier de travail, de préférence dans la base de connaissances. C'est une façon simple de rester souverain (partie 7). Le bouton "Exporter" d'un artefact donne un fichier Word, PDF, PowerPoint ou Markdown, selon le type d'artefact (centre d'aide, lu le 13/11/2026).
+Note: ESSENTIEL. Un artefact, c'est ce que Claude affiche à droite de la conversation. Il vit dans la conversation, chez Anthropic. On peut le télécharger, mais tant qu'on ne le fait pas, il n'est pas sur le PC: il n'est pas à vous, il n'est pas sauvegardé avec le reste, et il n'entre pas dans votre base de connaissances. Les artefacts sont très utiles pour ce qui est jetable: un essai, un brouillon, un quiz pour demain. Pour le reste, demander directement un fichier dans le dossier de travail, de préférence dans la base de connaissances. C'est une façon simple de rester souverain (partie 7). Le bouton "Exporter" d'un artefact donne un fichier Word, PDF, PowerPoint ou Markdown, selon le type d'artefact (centre d'aide, lu le 13/11/2026).
 
 ---
 ## Démo 3: ranger un dossier
@@ -140,8 +200,8 @@ Une copie du dossier "Activités de P1 à P6", en désordre. Claude renomme, tri
 - **Toujours sur une copie**, jamais sur le vrai dossier
 - Claude **montre son plan** avant de déplacer quoi que ce soit
 
-Note: DÉMO DOSSIER (6 min), à l'écran. Fichier: le dossier "Activités de P1 à P6 (copie en désordre)" (36 fichiers: doublons v1/v2/FINAL, dates dans tous les formats, une classe parfois seulement dans le contenu, une garderie et un budget mal rangés, une sortie de l'an passé).
-1. Dans Claude, choisir la copie du dossier comme dossier de travail, et passer en mode Plan.
+Note: À PASSER si le temps manque. En séance: montrer seulement le résultat du plan B (1 minute), pour garder le temps de la vraie tâche. DÉMO DOSSIER (6 min), à l'écran. Fichier: le dossier "Activités de P1 à P6 (copie en désordre)" (36 fichiers: doublons v1/v2/FINAL, dates dans tous les formats, une classe parfois seulement dans le contenu, une garderie et un budget mal rangés, une sortie de l'an passé).
+1. Dans Claude, choisir la copie du dossier comme dossier de travail, et garder le réglage "Manuel": la demande dit déjà de montrer le plan d'abord.
 2. Copier la demande de la slide suivante (bouton "Copier").
 3. Lire le plan à voix haute. Dire oui.
 4. Montrer le résultat et l'index: un doublon signalé, la garderie dans "Divers", la sortie de l'an passé.
@@ -149,21 +209,25 @@ Plan B: "Démo 3 - Dossier rangé (résultat)/" avec INDEX.pdf.
 
 ---
 ## Démo 3: la demande à copier
-Dans Claude, choisissez une copie du dossier "Activités de P1 à P6 (copie en désordre)" comme dossier de travail, et passez en mode Plan.
+Dans Claude, choisissez une copie du dossier "Activités de P1 à P6 (copie en désordre)" comme dossier de travail, et gardez le réglage "Manuel".
 
 > Range ce dossier. Crée un sous-dossier par classe (P1 à P6) et un dossier 'Divers'. Renomme chaque fichier au format AAAA-MM-JJ - classe - activité. Signale les doublons sans les supprimer. Montre-moi d'abord ton plan, et attends mon accord.
 
 Lisez son plan avant de dire oui.
 
+Note: À PASSER si le temps manque.
+
 ---
 ## Le navigateur de Claude, ou le vôtre
 - L'application Claude a **son propre navigateur**, et elle l'utilise souvent toute seule pour lire une page
 - Mon conseil: utilisez plutôt **votre navigateur Chrome**, avec l'extension Claude in Chrome
-- L'avantage: Claude y retrouve **les sites où vous êtes déjà connecté** (Outlook, OneDrive, l'intranet, les applications de la fédération)
+- L'avantage: Claude y retrouve **les sites où vous êtes déjà connecté** (Outlook, OneDrive, l'intranet)
+- Attention: une boîte mail ou une application de la fédération contient des données d'élèves. **Pas d'agent dessus avant l'accord du collège et du DPO**
 - Il suffit de le dire: "Utilise mon navigateur pour...", "Utilise Chrome pour..."
 - **Chrome, pas Edge**: l'extension ne marche officiellement que dans Chrome. Si vous travaillez dans Edge, connectez-vous une fois dans Chrome aux sites utiles
 
-Note: Vérifié le 07/11/2026: le centre d'aide d'Anthropic ("Getting started with Claude in Chrome") dit que Claude in Chrome n'est pas pris en charge dans les autres navigateurs Chromium. Edge peut installer l'extension depuis le Chrome Web Store, mais des utilisateurs signalent que l'application Claude (Cowork) ne se connecte qu'à Chrome. Seul Claude Code, l'outil des développeurs, accepte officiellement Edge. Donc: installer Chrome, même si le collège utilise Edge. Prudence: dans votre navigateur, Claude voit des sites connectés, donc des données privées. C'est la triple menace de la partie 8: regarder ce qu'il fait, et lire chaque demande de permission.
+Note: À PASSER si le temps manque. Vérifié le 07/11/2026: le centre d'aide d'Anthropic ("Getting started with Claude in Chrome") dit que Claude in Chrome n'est pas pris en charge dans les autres navigateurs Chromium. Edge peut installer l'extension depuis le Chrome Web Store, mais des utilisateurs signalent que l'application Claude (Cowork) ne se connecte qu'à Chrome. Seul Claude Code, l'outil des développeurs, accepte officiellement Edge. Donc: installer Chrome, même si le collège utilise Edge. Prudence: dans votre navigateur, Claude voit des sites connectés, donc des données privées. C'est la triple menace de la partie 8: regarder ce qu'il fait, et lire chaque demande de permission.
+
 ---
 ## Démo 4: le navigateur
 <div class="chart strip"><svg viewBox="0 0 960 136" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: trois sites web deviennent un tableau comparatif, un formulaire est rempli mais pas envoyé">
@@ -219,7 +283,7 @@ Claude in Chrome: Claude lit des pages web et agit dans le navigateur.
 - **C'est vous qui cliquez** sur "Envoyer"
 - Une page web peut contenir des **instructions cachées** pour l'IA: on le montre en direct, sur une page fictive. Sites de confiance, et on regarde ce qu'il fait
 
-Note: DÉMO NAVIGATEUR (4 min), à l'écran. Dans Chrome, ouvrir l'extension Claude.
+Note: ESSENTIEL. DÉMO NAVIGATEUR (4 min), à l'écran. Dans Chrome, ouvrir l'extension Claude.
 1. Copier la première demande de la slide suivante (bouton "Copier").
 2. Montrer qu'il ouvre les pages lui-même. Cliquer sur un lien pour vérifier un prix. Point à remarquer: les animations du musée du Carnaval et du Masque commencent peut-être en 5e primaire. Vérifier.
 3. Ouvrir la page fictive de la ferme de la Hulotte (lien sur la slide suivante: https://developassion.github.io/atelier-ia-ecole-direction/demo/ferme-de-la-hulotte/). Elle est sur le site du cours, et son formulaire n'envoie rien. Copier la deuxième demande de la slide suivante.
@@ -238,6 +302,8 @@ Puis ouvrez [la page de la ferme de la Hulotte](https://developassion.github.io/
 > Remplis le formulaire de réservation de cette page pour l'École fondamentale Saint-Exemple: 22 élèves de 4e primaire et 3 adultes, le jeudi 26 novembre 2026, activité "Les animaux de la ferme". Contact: Hélène Dufour. N'envoie pas.
 
 Regardez ce qu'il fait: cette page cache **une instruction pour l'IA**. L'a-t-il suivie, ou l'a-t-il signalée?
+
+Note: ESSENTIEL.
 
 ---
 ## Ce qui vient de se passer: l'injection de prompt
@@ -275,7 +341,7 @@ Regardez ce qu'il fait: cette page cache **une instruction pour l'IA**. L'a-t-il
 - Une page web, un mail ou un PDF peut **cacher des instructions** pour l'IA
 - La parade: des sites de confiance, **regarder ce qu'il fait**, et lire chaque demande de permission (partie 8)
 
-Note: À montrer juste après la démo 4, quand la salle a vu ce que Claude a fait sur la page de la ferme. Une personne lit seulement le texte visible. L'agent lit tout le texte de la page, y compris celui qui est écrit en blanc sur blanc. Pour lui, ce texte ressemble à une demande. Deux fins possibles: il suit l'instruction, ou il la signale. Les modèles récents la signalent souvent, mais pas toujours: on ne compte pas dessus.
+Note: ESSENTIEL. À montrer juste après la démo 4, quand la salle a vu ce que Claude a fait sur la page de la ferme. Une personne lit seulement le texte visible. L'agent lit tout le texte de la page, y compris celui qui est écrit en blanc sur blanc. Pour lui, ce texte ressemble à une demande. Deux fins possibles: il suit l'instruction, ou il la signale. Les modèles récents la signalent souvent, mais pas toujours: on ne compte pas dessus.
 
 ---
 ## Démo 5: une présentation
@@ -300,7 +366,7 @@ Note: À montrer juste après la démo 4, quand la salle a vu ce que Claude a fa
 - Le texte de la réunion de parents de rentrée devient une présentation
 - Exportée en **PowerPoint**, modifiable ensuite
 
-Note: DÉMO PRÉSENTATION (2 min), à l'écran. Si le temps manque, montrer directement le plan B. Fichier: "Texte réunion de parents de rentrée.docx".
+Note: À PASSER si le temps manque. DÉMO PRÉSENTATION (2 min), à l'écran. Si le temps manque, montrer directement le plan B. Fichier: "Texte réunion de parents de rentrée.docx".
 1. Joindre le texte. Copier la première demande de la slide suivante (bouton "Copier").
 2. Montrer l'artefact. Demander une correction: la deuxième demande de la slide suivante.
 3. Exporter en PowerPoint et l'ouvrir.
@@ -315,6 +381,8 @@ Joignez "Texte réunion de parents de rentrée.docx" (dossier "Fichiers de démo
 Puis, pour corriger:
 
 > La slide 4 est trop chargée, coupe-la en deux.
+
+Note: À PASSER si le temps manque.
 
 ---
 ## Démo 6: une photo devient un tableau
@@ -345,7 +413,7 @@ Puis, pour corriger:
 - Claude lit l'écriture à la main et en fait un tableau Excel
 - On vérifie ce qu'il n'a pas pu lire: il le signale
 
-Note: DÉMO PHOTO (3 min), à l'écran. Prendre en photo sur place une page écrite à la main (une liste de sorties, ou une feuille écrite pour l'occasion, sans données d'élèves). Joindre la photo, puis copier la demande de la slide suivante (bouton "Copier"). Si le temps manque, cette démo remplace la démo 5 (présentation).
+Note: À PASSER si le temps manque. DÉMO PHOTO (3 min), à l'écran. Prendre en photo sur place une page écrite à la main (une liste de sorties, ou une feuille écrite pour l'occasion, sans données d'élèves). Joindre la photo, puis copier la demande de la slide suivante (bouton "Copier"). Si le temps manque, cette démo remplace la démo 5 (présentation).
 
 ---
 ## Démo 6: la demande à copier
@@ -354,6 +422,8 @@ Prenez en photo une page écrite à la main, **sans données d'élèves**, et jo
 > Voici une photo d'une page de mon cahier des sorties. Fais-en un tableau Excel: date, classe, lieu, prix, payé, réservé. Signale ce que tu n'arrives pas à lire au lieu de deviner.
 
 Vérifiez ce qu'il signale comme illisible.
+
+Note: À PASSER si le temps manque.
 
 ---
 ## Et l'ordinateur
@@ -364,7 +434,7 @@ Vérifiez ce qu'il signale comme illisible.
 
 Documentation: [Laisser Claude utiliser votre ordinateur dans Cowork](https://support.claude.com/fr/articles/14128542)
 
-Note: Une minute, avec cette slide. Selon le centre d'aide (lu le 13/11/2026), l'utilisation de l'ordinateur est en bêta sur les abonnements Pro, Max et Ultra, et pas sur Team ni Entreprise: on ne peut donc pas le montrer sur leur compte. Le dire, et montrer sur mon compte seulement s'il reste du temps. Exemple: "Ouvre le tableau des sorties et ajoute la sortie théâtre P2 du 10 décembre."
+Note: À PASSER si le temps manque. Une minute, avec cette slide. Selon le centre d'aide (lu le 13/11/2026), l'utilisation de l'ordinateur est en bêta sur les abonnements Pro, Max et Ultra, et pas sur Team ni Entreprise: on ne peut donc pas le montrer sur leur compte. Le dire, et montrer sur mon compte seulement s'il reste du temps. Exemple: "Ouvre le tableau des sorties et ajoute la sortie théâtre P2 du 10 décembre."
 
 ---
 ## Une ligne au lieu de dix
@@ -372,3 +442,5 @@ Note: Une minute, avec cette slide. Selon le centre d'aide (lu le 13/11/2026), l
 - Avec un système qui vous connaît, la même demande **tient en une ligne**
 - "Fais le tableau des sorties"{copy}. "Range le dossier de P4"{copy}. "Quelles actions de cette circulaire me concernent?"{copy}
 - On verra ça dans la partie suivante
+
+Note: À PASSER si le temps manque.

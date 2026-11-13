@@ -449,6 +449,7 @@ kbd {{ background: rgba(255,255,255,0.1); border-radius: 6px; padding: 1px 7px; 
 <a class="card" href="documents/Slides%20%C3%A0%20imprimer.pdf" target="_blank" rel="noopener"><span class="t">Slides à imprimer</span><span class="meta">PDF: toutes les slides, deux par page A4, sur fond clair pour économiser l'encre</span></a>
 <a class="card" href="documents/Fiche%20de%20contexte%20pour%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Fiche de contexte pour l'IA</span><span class="meta">PDF, 2 pages: les questions, à remplir ou à imprimer</span></a>
 <a class="card" href="documents/%C3%80%20propos%20de%20moi.txt" download><span class="t">À propos de moi (fichier texte)</span><span class="meta">Les mêmes questions dans un fichier texte: vos réponses, à donner à l'IA</span></a>
+<a class="card" href="documents/%C3%80%20propos%20de%20moi%20(exemple).txt" download><span class="t">À propos de moi: un exemple</span><span class="meta">Le même fichier, rempli pour une direction fictive</span></a>
 <a class="card" href="documents/Projet%20de%20r%C3%A8gles%20d%27usage%20de%20l%27IA.pdf" target="_blank" rel="noopener"><span class="t">Projet de règles d'usage de l'IA</span><span class="meta">PDF, 1 page, à compléter</span></a>
 <a class="card" href="documents/fichiers-de-demo.zip"><span class="t">Fichiers de démo</span><span class="meta">Un zip à télécharger, tous fictifs, avec un LISEZ-MOI</span></a>
 </div>
@@ -456,5 +457,7 @@ kbd {{ background: rgba(255,255,255,0.1); border-radius: 6px; padding: 1px 7px; 
 </main></body></html>
 """
 open(os.path.join(outdir, "index.html"), "w", encoding="utf-8").write(index)
+# keep the slide counts of src/parts.json up to date
+open(os.path.join(ROOT, "src", "parts.json"), "w", encoding="utf-8", newline="\n").write(json.dumps(meta, ensure_ascii=False, indent=1) + "\n")
 open(os.path.join(outdir, "notes.html"), "w", encoding="utf-8").write(notes_page(notes_parts))
 print(f"parts={len(meta)} slides={total} out={outdir}")

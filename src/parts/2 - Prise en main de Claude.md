@@ -5,7 +5,7 @@
 Claude est l'IA de la société Anthropic. Le collège l'utilise en abonnement Entreprise.
 
 - D'autres IA existent: GPT (ChatGPT), Gemini, Mistral, DeepSeek, Qwen, ...
-- Elles fonctionnent toutes de la même façon: **ce que vous apprenez ici vaut aussi pour elles**
+- Elles fonctionnent toutes sur le même principe: **ce que vous apprenez ici vaut aussi pour elles**
 
 ---
 ## L'application Claude
@@ -61,71 +61,20 @@ Claude est l'IA de la société Anthropic. Le collège l'utilise en abonnement E
 
 Mon conseil: **dictez**. On parle bien plus vite qu'on écrit, et on donne naturellement plus de contexte.
 
-Note: TOUR DE L'APPLICATION (4 min), chacun sur son PC. Suivre les numéros du dessin, et montrer chaque zone en une phrase: 1) les conversations et les projets, 2) la conversation, 3) la zone de saisie, pour écrire, dicter, joindre un fichier, avec ses réglages (slide suivante), 4) les artefacts: un document, une présentation, un tableau, 5) les paramètres: les connecteurs, les skills, la mémoire. Le dessin est un plan: l'écran réel change un peu selon la version. À dire pour la zone 4: un artefact reste dans l'application, chez Anthropic. C'est très bien pour un essai. Pour ce qui doit durer, on demande un fichier dans le dossier de travail (partie 6). Montrer le micro de la zone de saisie et dicter une demande en direct: c'est souvent ce qui surprend le plus. Ouvrir les paramètres et montrer Connecteurs et Skills sans rien changer. Montrer aussi l'extension Claude in Chrome dans Chrome. La dictée: la documentation la décrit pour l'application mobile, où elle marche en français (en bêta).
-
----
-## Cowork: quand Claude fait le travail
-- Dans la zone de saisie, deux choix: **"Chat"**, pour une question et une réponse, et **"Cowork"**, pour **une tâche entière**. Sur certains comptes, les deux sont réunis: Claude choisit seul
-- Avec Cowork, vous décrivez **le résultat voulu**. Claude fait les étapes, et vous revenez quand c'est prêt
-- Il **travaille dans vos dossiers**: il lit vos fichiers, il en crée (Word, Excel, PowerPoint), il range, il ouvre des pages web
-- Il ne voit que **les dossiers que vous lui avez ouverts**, et il demande avant de supprimer un fichier pour de bon
-- Le dossier de travail, les démos de la partie 6 et les tâches planifiées: **c'est Cowork**
-
-Documentation: [Commencer avec Claude Cowork](https://support.claude.com/fr/articles/13345190) · [Cowork overview (en anglais)](https://claude.com/docs/cowork/overview)
-
-Note: Lu le 13/11/2026 dans le centre d'aide et dans la documentation de Claude. Cowork est le mode agent de Claude pour le travail de bureau: la même technique que Claude Code, l'outil des développeurs, sans terminal. Il faut un abonnement payant, et l'application de bureau ouverte pour les fichiers du PC. Sur Entreprise: l'admin peut couper Cowork; le réglage de départ pour les permissions est "Manuel" (Claude demande avant chaque action); et un réglage de l'organisation, "Chat and Cowork unified", réunit le chat et Cowork en une seule zone de saisie. Dans ce cas, il n'y a plus de choix "Chat" ou "Cowork" à faire: vérifier ce que leur application montre. Les connecteurs, les skills et les plugins se gèrent dans "Personnaliser", dans la barre de gauche. À connaître: un projet Cowork garde un ou plusieurs dossiers du PC, des instructions permanentes et sa propre mémoire. Il reste sur le PC, il n'est pas synchronisé chez Anthropic: ce n'est pas la même chose qu'un projet du chat (partie 5). C'est une façon de dire une fois pour toutes "lis d'abord À propos de moi.txt".
-
----
-## Les réglages sous la zone de saisie
-- **Le dossier de travail**: le dossier que Claude peut lire et modifier. L'idéal: **toujours le dossier de votre base de connaissances** (partie 7). Pour un essai, une copie. Jamais tout votre OneDrive
-- **Le modèle** et **l'effort**: voir les slides suivantes
-- **Le mode rapide**: des réponses plus rapides, qui consomment plus de budget
-- **Le mode de travail**: comment Claude vous demande la permission avant d'agir
-
-Documentation: [Commencer avec Claude Cowork](https://support.claude.com/fr/articles/13345190)
-
-Note: Montrer chaque réglage en direct, chacun sur son PC. Les noms exacts peuvent changer selon la version et la langue de l'application: vérifier avant la séance. Selon le centre d'aide (lu le 13/11/2026), Claude ne lit et n'écrit que dans les dossiers que vous lui avez ouverts; l'application les liste dans ses paramètres ("Trusted folders" dans la version en anglais). La documentation ne nomme pas le bouton qui sert à choisir le dossier: le montrer en direct.
-
----
-## Les modes de travail
-- **Manuel**: Claude demande votre accord **avant chaque action**. Le plus sûr pour commencer
-- **Accepter les modifications**: il modifie les fichiers du dossier **sans demander à chaque fois**
-- **Plan**: il lit, réfléchit et **propose un plan**, sans rien changer. Vous validez, puis il travaille
-- **Auto**: il avance seul, et ne demande que pour **les actions risquées**
-
-Mon conseil: **Plan** pour une grosse tâche, **Manuel** au début, et **Auto** seulement sur une copie.
-
-Note: À VÉRIFIER sur leur PC avant la séance: le centre d'aide (lu le 13/11/2026) nomme trois modes pour Cowork, dans le sélecteur de la zone de saisie: "Manuel", "Auto" et "Ignorer" (il agit sans demander). Sur Entreprise, le mode de départ est "Manuel", et l'admin peut couper "Auto". Les quatre modes de cette slide viennent de mon application: si la leur montre d'autres noms, adapter la slide. Lien avec la partie 8: plus le mode est automatique, plus il faut un dossier de travail limité et une copie des fichiers. Pour la démo du rangement du dossier (partie 6), utiliser le mode Plan: Claude montre son plan, vous dites oui, puis il range.
-
----
-## Claude s'adapte à la tâche
-- Vous écrivez ce que vous voulez. **Claude choisit**: répondre vite, ou faire un travail plus long
-- Vous pouvez l'arrêter, le corriger, ou changer l'effort à tout moment
-- Il peut continuer une tâche longue pendant que vous faites autre chose
-
----
-## Les commandes
-- Tapez **"/"** dans la zone de saisie
-- Une liste s'ouvre: les skills et les commandes disponibles
-- Choisissez-en une **au lieu de tout réexpliquer**
-- Exemple: une skill "mot aux parents" écrit toujours dans le ton de l'école
-
-Note: Montrer le menu "/" en direct. Si aucune skill n'est installée sur leur compte, le dire et revenir aux skills dans la partie 4.
+Note: ESSENTIEL. TOUR DE L'APPLICATION (4 min), chacun sur son PC. Suivre les numéros du dessin, et montrer chaque zone en une phrase: 1) les conversations et les projets, 2) la conversation, 3) la zone de saisie, pour écrire, dicter, joindre un fichier, avec ses réglages (slide suivante), 4) les artefacts: un document, une présentation, un tableau, 5) les paramètres: les connecteurs, les skills, la mémoire. Le dessin est un plan: l'écran réel change un peu selon la version. À dire pour la zone 4: un artefact reste dans l'application, chez Anthropic. C'est très bien pour un essai. Pour ce qui doit durer, on demande un fichier dans le dossier de travail (partie 6). Montrer le micro de la zone de saisie et dicter une demande en direct: c'est souvent ce qui surprend le plus. Ouvrir les paramètres et montrer Connecteurs et Skills sans rien changer. Montrer aussi l'extension Claude in Chrome dans Chrome. La dictée: la documentation la décrit pour l'application mobile, où elle marche en français (en bêta). Si la dictée ne marche pas dans leur application: le raccourci de Windows pour dicter, touche Windows + H, marche dans toutes les zones de saisie. Le tester avant la séance.
 
 ---
 ## Les modèles
 | Modèle | Pour quoi |
 |---|---|
-| **Sonnet 5.5** | Les tâches simples: un mail, une reformulation, un résumé court |
+| **Sonnet 5.5** | Le choix de tous les jours: un mail, une reformulation, un résumé |
 | **Opus 5.5** | Le gros du travail: une circulaire, un tableau, un dossier |
-| Haiku | Rapide et léger |
-| Fable | Le plus puissant, mais **très coûteux**, et vos données sont **gardées au moins 30 jours** (voir la partie 8) |
 
-Le modèle est **le premier levier de coût**: Opus coûte 2 fois plus que Sonnet, et Fable 4 fois plus (bonus 18).
+- Le modèle est **le premier levier de coût**: Opus coûte environ 2 fois plus que Sonnet
+- Deux autres existent: Haiku, rapide et léger, et Fable, le plus puissant et le plus cher. Pas besoin d'eux pour commencer (bonus 18)
+- De nouveaux modèles sortent **très souvent**: cette recommandation date de novembre 2026
 
-**Ça bouge très vite**: de nouveaux modèles sortent **toutes les semaines**. Cette recommandation date de novembre 2026.
-
-Note: Sur Entreprise, l'usage se paie au volume (bonus 18). Vérifier avant la séance que l'admin autorise Sonnet 5.5 et Opus 5.5. Fable 5, 5.1 et 5.2 (la version actuelle, ajoutée à la liste le 09/11/2026) sont des "Covered Models" chez Anthropic: conservation des données d'au moins 30 jours, examinées par des systèmes de sécurité automatiques, et pas de zéro conservation (ZDR) pour les organisations Claude Enterprise (centre d'aide d'Anthropic, article "Covered Models", vérifié le 12/11/2026). L'article parle d'une option ZDR limitée dans le temps pour certains clients: à voir avec Anthropic, ne pas compter dessus. Conseil: Fable seulement pour une tâche qui le justifie, et jamais avec des données personnelles.
+Note: ESSENTIEL. Sur Entreprise, l'usage se paie au volume (bonus 18). Vérifier avant la séance que l'admin autorise Sonnet 5.5 et Opus 5.5. Fable 5, 5.1 et 5.2 (la version actuelle, ajoutée à la liste le 09/11/2026) sont des "Covered Models" chez Anthropic: conservation des données d'au moins 30 jours, examinées par des systèmes de sécurité automatiques, et pas de zéro conservation (ZDR) pour les organisations Claude Enterprise (centre d'aide d'Anthropic, article "Covered Models", vérifié le 12/11/2026). L'article parle d'une option ZDR limitée dans le temps pour certains clients: à voir avec Anthropic, ne pas compter dessus. Conseil: Fable seulement pour une tâche qui le justifie, et jamais avec des données personnelles.
 
 ---
 ## Le niveau d'effort
@@ -134,10 +83,10 @@ L'effort dit **combien de travail** Claude met dans une tâche.
 - **Effort bas**: rapide. Une première version, à corriger ensemble
 - **Effort haut**: plus long. Il vérifie, il teste, il décide plus de choses seul
 - Sur une grosse tâche, Claude peut **travailler des heures sans s'arrêter**: il lit, essaie, vérifie et recommence, pendant que vous faites autre chose
-- Plus d'effort prend plus de temps et plus de **tokens**, donc plus de budget (voir la partie 5)
+- Plus d'effort prend plus de temps et plus de **tokens**, donc plus de budget
 - On donne 1 heure pour une tâche: on rend une première version. On donne 12 heures: on vérifie tout. Claude lit l'effort de la même façon
 
-Note: Analogie de Thariq Shihipar (Anthropic), article "Spending your effort", 2026-09-25. Dans ses tests, une même demande a pris 1 minute et demie en effort bas, et plus d'une heure en effort maximum.
+Note: ESSENTIEL. Analogie de Thariq Shihipar (Anthropic), article "Spending your effort", 2026-09-25. Dans ses tests, une même demande a pris 1 minute et demie en effort bas, et plus d'une heure en effort maximum.
 
 ---
 ## Quel effort choisir
@@ -146,4 +95,13 @@ Note: Analogie de Thariq Shihipar (Anthropic), article "Spending your effort", 2
 - Effort haut: **ce qui doit être juste** (les dates d'une circulaire, les chiffres d'un tableau)
 - Moins vous précisez, plus Claude décide à votre place. **Une demande précise** est le levier le moins cher
 
-Pour un système qui vous connaît: le modèle et l'effort comptent moins quand Claude sait déjà ce que vous voulez.
+Note: À PASSER si le temps manque.
+
+---
+## Les commandes
+- Tapez **"/"** dans la zone de saisie
+- Une liste s'ouvre: les **skills** et les commandes disponibles. Une skill est une façon de faire, écrite une fois (dans l'application en français: une "compétence")
+- Choisissez-en une **au lieu de tout réexpliquer**
+- Exemple: une skill "mot aux parents" écrit toujours dans le ton de l'école
+
+Note: À PASSER si le temps manque. Montrer le menu "/" en direct. Si aucune skill n'est installée sur leur compte, le dire et revenir aux skills dans la partie 4.

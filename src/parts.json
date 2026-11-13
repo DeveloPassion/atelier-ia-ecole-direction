@@ -10,8 +10,8 @@
  {
   "n": 2,
   "name": "Prise en main de Claude",
-  "dur": "10 min",
-  "slides": 7,
+  "dur": "8 min",
+  "slides": 6,
   "file": "2 - Prise en main de Claude.md",
   "html": "02-prise-en-main-de-claude.html"
  },
@@ -19,55 +19,55 @@
   "n": 3,
   "name": "Première démo, la circulaire",
   "dur": "10 min",
-  "slides": 2,
+  "slides": 3,
   "file": "3 - Première démo, la circulaire.md",
   "html": "03-premiere-demo-la-circulaire.html"
  },
  {
   "n": 4,
   "name": "IA générative et IA agentique",
-  "dur": "10 min",
-  "slides": 13,
+  "dur": "9 min",
+  "slides": 16,
   "file": "4 - IA générative et IA agentique.md",
   "html": "04-ia-generative-et-ia-agentique.html"
  },
  {
   "n": 5,
   "name": "Le contexte et sa gestion",
-  "dur": "12 min + pause",
-  "slides": 17,
+  "dur": "10 min + pause",
+  "slides": 18,
   "file": "5 - Le contexte et sa gestion.md",
   "html": "05-le-contexte-et-sa-gestion.html"
  },
  {
   "n": 6,
   "name": "Démos, fichiers, dossier, navigateur",
-  "dur": "18 min",
-  "slides": 8,
+  "dur": "35 min",
+  "slides": 21,
   "file": "6 - Démos, fichiers, dossier, navigateur.md",
   "html": "06-demos-fichiers-dossier-navigateur.html"
  },
  {
   "n": 7,
   "name": "Un système qui vous connaît",
-  "dur": "26 min",
-  "slides": 19,
+  "dur": "12 min",
+  "slides": 21,
   "file": "7 - Un système qui vous connaît.md",
   "html": "07-un-systeme-qui-vous-connait.html"
  },
  {
   "n": 8,
   "name": "Prudence et règles d'usage",
-  "dur": "4 min",
-  "slides": 5,
+  "dur": "5 min",
+  "slides": 9,
   "file": "8 - Prudence et règles d'usage.md",
   "html": "08-prudence-et-regles-d-usage.html"
  },
  {
   "n": 9,
   "name": "Démarrer demain",
-  "dur": "10 min",
-  "slides": 6,
+  "dur": "11 min",
+  "slides": 10,
   "file": "9 - Démarrer demain.md",
   "html": "09-demarrer-demain.html"
  },
@@ -75,7 +75,7 @@
   "n": 10,
   "name": "Trucs et astuces",
   "dur": "bonus",
-  "slides": 6,
+  "slides": 7,
   "file": "10 - Trucs et astuces.md",
   "html": "10-trucs-et-astuces.html",
   "bonus": true
@@ -84,7 +84,7 @@
   "n": 11,
   "name": "Bonus, les techniques de prompting",
   "dur": "bonus",
-  "slides": 0,
+  "slides": 10,
   "file": "11 - Bonus, les techniques de prompting.md",
   "html": "11-bonus-les-techniques-de-prompting.html",
   "bonus": true
@@ -93,7 +93,7 @@
   "n": 12,
   "name": "Bonus, plusieurs agents",
   "dur": "bonus",
-  "slides": 0,
+  "slides": 6,
   "file": "12 - Bonus, plusieurs agents.md",
   "html": "12-bonus-plusieurs-agents.html",
   "bonus": true
@@ -102,7 +102,7 @@
   "n": 13,
   "name": "Bonus, les connecteurs et MCP",
   "dur": "bonus",
-  "slides": 0,
+  "slides": 10,
   "file": "13 - Bonus, les connecteurs et MCP.md",
   "html": "13-bonus-les-connecteurs-et-mcp.html",
   "bonus": true
@@ -111,7 +111,7 @@
   "n": 14,
   "name": "Bonus, les skills",
   "dur": "bonus",
-  "slides": 0,
+  "slides": 12,
   "file": "14 - Bonus, les skills.md",
   "html": "14-bonus-les-skills.html",
   "bonus": true
@@ -120,7 +120,7 @@
   "n": 15,
   "name": "Bonus, l'IA et les élèves",
   "dur": "bonus",
-  "slides": 0,
+  "slides": 5,
   "file": "15 - Bonus, l'IA et les élèves.md",
   "html": "15-bonus-l-ia-et-les-eleves.html",
   "bonus": true
@@ -129,7 +129,7 @@
   "n": 16,
   "name": "Bonus, pour aller plus loin",
   "dur": "bonus",
-  "slides": 0,
+  "slides": 7,
   "file": "16 - Bonus, pour aller plus loin.md",
   "html": "16-bonus-pour-aller-plus-loin.html",
   "bonus": true
@@ -138,7 +138,7 @@
   "n": 17,
   "name": "Bonus, questions fréquentes",
   "dur": "bonus",
-  "slides": 0,
+  "slides": 13,
   "file": "17 - Bonus, questions fréquentes.md",
   "html": "17-bonus-questions-frequentes.html",
   "bonus": true
@@ -147,7 +147,7 @@
   "n": 18,
   "name": "Bonus, gérer les coûts",
   "dur": "bonus",
-  "slides": 0,
+  "slides": 13,
   "file": "18 - Bonus, gérer les coûts.md",
   "html": "18-bonus-gerer-les-couts.html",
   "bonus": true

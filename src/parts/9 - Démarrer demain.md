@@ -55,7 +55,7 @@ Note: Documents: "Fiche de contexte pour l'IA.pdf" (les champs se remplissent, l
 
 Refaites aussi les démos: les demandes à copier sont sur les slides des parties 3 et 6. Et gardez **l'aide-mémoire** (PDF de deux pages, à imprimer) à côté de votre PC.
 
-Note: Pour le fichier "À propos de moi": l'application peut aussi lire seule un fichier d'instructions placé dans le dossier de travail. Le nom et le réglage dépendent de la version: à vérifier sur leur PC avant d'en parler. La phrase "Lis d'abord..." marche toujours. En phase 2, le système s'en occupe.
+Note: Pour le fichier "À propos de moi": l'application peut aussi lire seule un fichier d'instructions placé dans le dossier de travail. Le nom et le réglage dépendent de la version: à vérifier sur leur PC avant d'en parler. La phrase "Lis d'abord..." marche toujours. Dans Cowork, un projet peut aussi garder le dossier de la base et des instructions permanentes, sur le PC (documentation de Claude, lue le 13/11/2026): à essayer avant d'en parler. En phase 2, le système s'en occupe.
 
 ---
 ## Et après?

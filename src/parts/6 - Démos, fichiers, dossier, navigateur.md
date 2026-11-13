@@ -5,7 +5,7 @@
 Ce qu'un bon système IA peut faire pour vous.
 
 - La démo 1, la circulaire, c'était la partie 3. Voici les démos 2 à 6
-- Des cas réels de l'école
+- Des cas réels de l'école. Presque toutes les démos utilisent **Cowork**: Claude travaille dans un dossier de votre PC
 - Vous suivez sur votre PC quand c'est court. Je montre à l'écran quand c'est long
 - Chaque démo a sa slide "à copier", avec les demandes: vous pouvez les refaire seuls
 

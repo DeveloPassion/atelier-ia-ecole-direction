@@ -153,17 +153,18 @@ html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reve
 
 <h2>13. Bonus: les connecteurs et <span class="gradient">MCP</span></h2>
 
-Brancher l'IA sur vos outils.
+Brancher Claude sur vos outils: Google Drive, Microsoft 365, votre agenda.
 ---
-## MCP, une prise standard
-- MCP (Model Context Protocol) est **une prise standard** entre une IA et un outil, comme une prise USB
-- Un **connecteur** est un serveur MCP: il donne à l'IA un accès à un outil (agenda, mails, fichiers, une application)
-- Le même standard fonctionne avec Claude, ChatGPT et d'autres IA
+## Brancher Claude sur vos outils
+- Un **connecteur** relie Claude à un service que vous utilisez déjà: vos documents en ligne, vos mails, votre agenda
+- Claude peut alors **y chercher, y lire, et parfois y agir** pour vous
+- Vous vous connectez avec **votre propre compte**: Claude ne voit que ce que vous pouvez déjà voir
 - Sans connecteur, l'IA ne voit que ce que vous lui donnez
+- Derrière, il y a **une prise standard**, MCP (Model Context Protocol), comme une prise USB. Le même standard fonctionne avec Claude, ChatGPT et d'autres IA
 
 ```mermaid
 flowchart LR
-  C[Claude] --- M[Connecteur MCP] --- O[Outil: Outlook, OneDrive, agenda]
+  C[Claude] --- M[Connecteur MCP] --- O[Outil: Google Drive, OneDrive, Outlook, agenda]
 ```
 ---
 ## Ce qu'un connecteur permet
@@ -172,17 +173,39 @@ flowchart LR
 - **Agir**: créer un rendez-vous, préparer un brouillon de mail, ajouter une ligne dans un tableau
 - Exemples pour l'école: Microsoft 365 (Outlook, OneDrive, Teams), Google Drive, un agenda
 ---
+## Les connecteurs utiles pour une école
+| Le service | Ce que Claude peut y faire |
+|---|---|
+| **Microsoft 365**: SharePoint, OneDrive, Outlook, Teams | Chercher et lire vos documents, vos mails, vos réunions. Écrire, envoyer ou planifier: **seulement si l'admin l'a permis** |
+| **Google Drive** | Chercher dans votre Drive, lire des Docs, des Sheets, des Slides, des PDF et des fichiers Office, et y créer des fichiers |
+| **Gmail** | Chercher dans vos mails, et répondre à vos questions en citant le mail d'origine |
+| **Google Agenda** | Vos réunions, les participants, vos disponibilités |
+
+Pour utiliser un fichier précis de Google Drive dans une conversation: le bouton **"+"**, puis l'ajout depuis Google Drive.
+
+<p class="doc"><b>Documentation:</b> <a href="https://claude.com/docs/connectors/google/drive">Google Drive (en anglais)</a> · <a href="https://claude.com/docs/connectors/microsoft/365">Microsoft 365 (en anglais)</a></p>
+
+Note: Lu le 13/11/2026 dans la documentation de Claude. Google Drive: le connecteur est fait par Google. Deux limites: un très gros fichier peut arriver incomplet, et Claude ne lit pas les commentaires ni les suggestions d'un document. Dans le menu "+", le choix s'appelle "Add from Google Drive" dans la version en anglais. Microsoft 365: sur Team et Entreprise, seulement les comptes professionnels ou scolaires. Tout se fait avec les droits de la personne: Claude ne lit et ne change que ce que son compte peut déjà lire et changer. Les actions d'écriture (envoyer un mail, créer un rendez-vous, modifier un fichier, écrire dans Teams) sont réglées par les administrateurs. À ne pas confondre avec "Claude for Microsoft 365", les compléments qui mettent Claude dans Word, Excel, PowerPoint et Outlook: bonus 16.
+---
 ## Ajouter un connecteur
-1. D'abord **l'admin**: il ajoute le connecteur pour le collège, dans les paramètres de l'organisation
-2. Vous: **Personnaliser > Connecteurs**. Trouvez le service (par exemple Microsoft 365), et cliquez sur **"Connecter"**
-3. Choisissez **"Compte professionnel ou scolaire"**, et connectez-vous avec votre compte du collège
+1. D'abord **l'admin**: il ajoute le connecteur pour le collège. Tant que ce n'est pas fait, vous voyez un bouton pour **le demander**, à la place du bouton de connexion
+2. Vous: **Personnaliser > Connecteurs**. Parcourez l'annuaire, et choisissez le service (par exemple Microsoft 365 ou Google Drive)
+3. Cliquez sur **"Connecter"**, et connectez-vous au service avec **votre compte du collège**
 4. Lisez **les autorisations demandées**: lecture seule, ou aussi écriture et envoi?
-5. Dans une conversation: **"+"** ou **"/"**, puis "Connecteurs", et activez le service
+5. Dans une conversation: **"+"**, puis **"Connecteurs"**, et activez le service pour cette conversation
 6. Testez sur une demande simple: <span class="cp">"Quels sont mes rendez-vous demain?"</span>
 
-<p class="doc"><b>Documentation:</b> <a href="https://support.claude.com/fr/articles/11176164">Utiliser les connecteurs</a> · <a href="https://support.claude.com/fr/articles/12542951">Configurer le connecteur Microsoft 365</a></p>
+<p class="doc"><b>Documentation:</b> <a href="https://support.claude.com/fr/articles/11176164">Utiliser les connecteurs</a> · <a href="https://support.claude.com/fr/articles/12542951">Configurer le connecteur Microsoft 365</a> · <a href="https://claude.com/docs/connectors/getting-started">Get started with connectors (en anglais)</a></p>
 
-Note: Étapes lues le 13/11/2026 dans le centre d'aide, en français: à vérifier sur leur PC avant la séance 2. Côté admin (propriétaire de l'organisation): "Paramètres de l'organisation > Connecteurs", puis "Parcourir les connecteurs", choisir Microsoft 365, et "Ajouter à votre équipe". Pour Microsoft 365, un administrateur général du collège (Microsoft Entra) doit aussi donner son accord une fois. Ajouter un connecteur pour le collège ne donne pas l'accès: chaque personne se connecte elle-même. Sur Entreprise, un membre ne peut demander un connecteur que si un propriétaire a activé cette possibilité.
+Note: Étapes lues le 13/11/2026 dans le centre d'aide en français et dans la documentation de Claude en anglais: à vérifier sur leur PC avant la séance 2. Dans la version en anglais: "Customize > Connectors", l'onglet "Discover" pour l'annuaire, le bouton "Connect to Claude", et "Request" quand le connecteur n'est pas encore ajouté pour l'organisation. Quand la connexion a réussi, le connecteur est dans "Your connectors", avec l'état "Connected". Côté admin (propriétaire de l'organisation): "Paramètres de l'organisation > Connecteurs", choisir le service, et "Ajouter à votre équipe". Pour Microsoft 365, un administrateur général du collège (Microsoft Entra) doit aussi donner son accord une fois. Ajouter un connecteur pour le collège ne donne pas l'accès: chaque personne se connecte elle-même, avec son compte.
+---
+## Garder la main sur un connecteur
+- Un connecteur connecté **n'est pas actif partout**: vous l'activez conversation par conversation, dans le menu **"+"**
+- Avant d'utiliser un outil du connecteur, Claude **demande votre accord**: pour une fois, ou pour toujours. Au début, choisissez **une fois**
+- Pour chaque outil d'un connecteur, vous choisissez: toujours permis, **accord demandé**, ou **bloqué**
+- **Déconnecter** un connecteur: Claude n'a plus accès au service. Vous pouvez vous reconnecter plus tard
+
+Note: Dans la version en anglais: "Allow once" et "Always allow" au moment de l'accord. Sur la page du connecteur ("Customize > Connectors", puis le connecteur sous "Your connectors"): "Tool permissions", avec "Always allow", "Needs approval" ou "Blocked", et les boutons "Disconnect" et "Remove". Conseil pour une école: bloquer les outils qui envoient (mail, message Teams) tant qu'on n'en a pas besoin.
 ---
 ## Les risques d'un connecteur
 - Chaque connecteur est **une porte de plus** vers vos données

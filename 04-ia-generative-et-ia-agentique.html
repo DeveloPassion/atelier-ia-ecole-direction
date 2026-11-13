@@ -430,15 +430,15 @@ Tout cela existe dans Claude: les modes (partie 2), les connecteurs et les skill
 
 Note: À PASSER si le temps manque. La carte de ce qui entoure un agent. À gauche, ce qui règle sa façon de travailler: les modes (combien il demande avant d'agir), un rôle (des règles, un style, un ton), les skills (ses recettes). À droite, ce qu'il peut atteindre: les permissions (ce qu'il peut toucher), les connecteurs (avec quoi il travaille), et la délégation: l'agent confie une tâche précise à un sous-agent, qui est un autre agent avec son propre contexte, et qui rend seulement son résultat. C'est utile pour ne pas encombrer le contexte de l'agent principal.
 ---
-## Les connecteurs et MCP
-- MCP (Model Context Protocol) est une **prise standard** entre une IA et un autre outil
-- Un connecteur, c'est un serveur MCP: il donne à l'IA l'accès à un outil (agenda, mails, fichiers)
-- Le même standard marche pour Claude, ChatGPT et d'autres
+## Les connecteurs: brancher vos outils
+- Un **connecteur** relie Claude à un service que vous utilisez déjà: Google Drive, OneDrive, Outlook, votre agenda
+- Claude peut alors **y chercher et y lire**, et parfois y agir, avec **votre propre compte**
+- Derrière: MCP (Model Context Protocol), une **prise standard** que Claude, ChatGPT et d'autres IA utilisent
 - Chaque connecteur ajoute des possibilités, et aussi des risques: **n'activez que ce qui sert** (détail: bonus 13)
 
 ```mermaid
 flowchart LR
-  C[Claude] --- M[Connecteurs MCP] --- O[Outlook, OneDrive, agenda]
+  C[Claude] --- M[Connecteurs MCP] --- O[Google Drive, OneDrive, Outlook, agenda]
 ```
 
 Note: À PASSER si le temps manque.

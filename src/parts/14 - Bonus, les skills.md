@@ -70,14 +70,15 @@ Note: La demande du chemin court: "Aide-moi à créer une skill pour écrire aux
 ## Une skill dans l'application: comment faire
 Dans l'application en français, les skills s'appellent des **"compétences"**.
 
-1. **Personnaliser > Compétences**: la liste de vos skills. Vous les activez ou vous les coupez
-2. Pour en ajouter une: **"+"**, puis **"Créer une compétence"**, puis **"Télécharger une compétence"**, et choisissez le dossier de la skill, en fichier ZIP
-3. Deux conditions: la **création de fichiers** est activée (Paramètres > Capacités), et l'admin permet les skills créées par les membres
-4. Avec votre base, c'est plus simple: la skill reste **un dossier de votre base de connaissances**. Dans ce dossier de travail, dites: "Utilise la skill ecrire-aux-parents pour la sortie P4."{copy}
+1. **Personnaliser > Compétences**: vos skills, rangées par origine (créées par vous, de votre organisation, partagées avec vous, d'Anthropic)
+2. **Activer ou couper** une skill: le bouton sur sa ligne, ou l'interrupteur en haut de sa page
+3. L'utiliser: décrivez la tâche, et Claude charge la skill qui convient. Ou tapez **"/"**, et choisissez-la
+4. Avant d'activer une skill qu'on vous a donnée: **ouvrez-la et lisez-la**. Personne ne l'a vérifiée pour vous
+5. Avec votre base, la skill peut aussi rester **un dossier de votre base de connaissances**: "Utilise la skill ecrire-aux-parents pour la sortie P4."{copy}
 
-Documentation: [Utiliser les compétences dans Claude](https://support.claude.com/fr/articles/12512180) · [Créer des compétences personnalisées](https://support.claude.com/fr/articles/12512198)
+Documentation: [Utiliser les compétences dans Claude](https://support.claude.com/fr/articles/12512180) · [Skills overview (en anglais)](https://claude.com/docs/skills/overview)
 
-Note: Étapes lues le 13/11/2026 dans le centre d'aide: les noms des boutons sont à vérifier sur leur PC. "Télécharger une compétence" veut dire l'envoyer dans l'application, pas la récupérer. Côté admin: "Paramètres de l'organisation > Plugins et compétences", onglet "Politique". Le centre d'aide ne parle ni de la skill de création de skills (skill-creator), ni des skills gardées dans le dossier de travail: pour le point 4, Claude lit simplement le fichier SKILL.md du dossier, comme n'importe quel fichier. C'est la voie de la démo de la partie 7, et celle qui garde vos skills chez vous.
+Note: Lu le 13/11/2026 dans la documentation de Claude. Dans la version en anglais: "Customize > Skills", l'onglet "Your skills" ("Created by you", "From your organization", "Shared with you", "From Anthropic & Partners"), l'onglet "Discover" pour en ajouter, et le bouton "Turn on". Une condition: la création de fichiers et l'exécution de code sont activées ("Settings > Capabilities"; sur Entreprise, c'est un propriétaire de l'organisation qui l'active). Pour ajouter une skill à soi: un fichier ZIP qui contient le dossier de la skill, avec son fichier SKILL.md dedans. La skill de création de skills (skill-creator) est une skill d'Anthropic: on l'active dans cette liste, puis on demande à Claude de créer ou d'évaluer une skill. Les skills d'Anthropic qui créent des fichiers Excel, Word, PowerPoint et PDF s'activent seules quand il le faut. Pour le point 5, Claude lit simplement le fichier SKILL.md du dossier de travail, comme n'importe quel fichier: c'est la voie de la démo de la partie 7, et celle qui garde vos skills chez vous.
 
 ---
 ## Exemple: écrire aux parents

@@ -64,6 +64,18 @@ Mon conseil: **dictez**. On parle bien plus vite qu'on écrit, et on donne natur
 Note: TOUR DE L'APPLICATION (4 min), chacun sur son PC. Suivre les numéros du dessin, et montrer chaque zone en une phrase: 1) les conversations et les projets, 2) la conversation, 3) la zone de saisie, pour écrire, dicter, joindre un fichier, avec ses réglages (slide suivante), 4) les artefacts: un document, une présentation, un tableau, 5) les paramètres: les connecteurs, les skills, la mémoire. Le dessin est un plan: l'écran réel change un peu selon la version. À dire pour la zone 4: un artefact reste dans l'application, chez Anthropic. C'est très bien pour un essai. Pour ce qui doit durer, on demande un fichier dans le dossier de travail (partie 6). Montrer le micro de la zone de saisie et dicter une demande en direct: c'est souvent ce qui surprend le plus. Ouvrir les paramètres et montrer Connecteurs et Skills sans rien changer. Montrer aussi l'extension Claude in Chrome dans Chrome. La dictée: la documentation la décrit pour l'application mobile, où elle marche en français (en bêta).
 
 ---
+## Cowork: quand Claude fait le travail
+- Dans la zone de saisie, deux choix: **"Chat"**, pour une question et une réponse, et **"Cowork"**, pour **une tâche entière**. Sur certains comptes, les deux sont réunis: Claude choisit seul
+- Avec Cowork, vous décrivez **le résultat voulu**. Claude fait les étapes, et vous revenez quand c'est prêt
+- Il **travaille dans vos dossiers**: il lit vos fichiers, il en crée (Word, Excel, PowerPoint), il range, il ouvre des pages web
+- Il ne voit que **les dossiers que vous lui avez ouverts**, et il demande avant de supprimer un fichier pour de bon
+- Le dossier de travail, les démos de la partie 6 et les tâches planifiées: **c'est Cowork**
+
+Documentation: [Commencer avec Claude Cowork](https://support.claude.com/fr/articles/13345190) · [Cowork overview (en anglais)](https://claude.com/docs/cowork/overview)
+
+Note: Lu le 13/11/2026 dans le centre d'aide et dans la documentation de Claude. Cowork est le mode agent de Claude pour le travail de bureau: la même technique que Claude Code, l'outil des développeurs, sans terminal. Il faut un abonnement payant, et l'application de bureau ouverte pour les fichiers du PC. Sur Entreprise: l'admin peut couper Cowork; le réglage de départ pour les permissions est "Manuel" (Claude demande avant chaque action); et un réglage de l'organisation, "Chat and Cowork unified", réunit le chat et Cowork en une seule zone de saisie. Dans ce cas, il n'y a plus de choix "Chat" ou "Cowork" à faire: vérifier ce que leur application montre. Les connecteurs, les skills et les plugins se gèrent dans "Personnaliser", dans la barre de gauche. À connaître: un projet Cowork garde un ou plusieurs dossiers du PC, des instructions permanentes et sa propre mémoire. Il reste sur le PC, il n'est pas synchronisé chez Anthropic: ce n'est pas la même chose qu'un projet du chat (partie 5). C'est une façon de dire une fois pour toutes "lis d'abord À propos de moi.txt".
+
+---
 ## Les réglages sous la zone de saisie
 - **Le dossier de travail**: le dossier que Claude peut lire et modifier. L'idéal: **toujours le dossier de votre base de connaissances** (partie 7). Pour un essai, une copie. Jamais tout votre OneDrive
 - **Le modèle** et **l'effort**: voir les slides suivantes

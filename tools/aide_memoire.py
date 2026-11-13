@@ -175,7 +175,7 @@ story = [
     ]),
     box("Ce que Claude peut faire pour vous", [
         b("<b>Lire</b>: une circulaire de 20 pages, un PDF, une photo d'une page écrite à la main, une capture d'écran."),
-        b("<b>Créer des fichiers</b>: un compte rendu Word, un tableau Excel, une présentation PowerPoint, un PDF."),
+        b("<b>Créer des fichiers</b> (avec « Cowork », dans la zone de saisie): un compte rendu Word, un tableau Excel, une présentation PowerPoint, un PDF."),
         b("<b>Ranger un dossier</b>: renommer, trier, écrire un index. Toujours sur une copie, avec le mode Plan."),
         b("<b>Le navigateur</b> (Claude in Chrome): comparer des sites, lire des pages, remplir un formulaire sans l'envoyer."),
         b("<b>L'ordinateur</b>: cliquer et taper dans une application. Pas encore sur l'abonnement Entreprise."),

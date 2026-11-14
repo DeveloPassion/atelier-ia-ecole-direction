@@ -6,7 +6,6 @@ Et qui vous appartient.
 
 ---
 ## Un système à vous, avec des fichiers à vous
-- **Dès cette semaine**: un dossier, quelques fichiers texte, et le journal du jour. Rien à installer
 - **Des fichiers locaux, à vous**: c'est votre liberté. Vous pouvez changer d'IA ou de fournisseur sans rien perdre
 - Cette partie montre **où on va**. Les démos se font sur mon écran, avec une direction fictive
 - Deux mots nouveaux: une **note** est un fichier texte. **Obsidian** est une application qui sert à lire et à écrire ces notes

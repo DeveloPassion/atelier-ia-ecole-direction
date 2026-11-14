@@ -68,7 +68,7 @@ Une grosse tâche = **plusieurs petites demandes**, chacune avec son résultat.
 2. **Produire, critiquer, améliorer**: un brouillon, une critique selon vos critères, une meilleure version
 3. **Planifier, faire, vérifier**: un plan validé, le travail, une relecture
 
-Vous **vérifiez entre deux étapes**: une erreur ne passe pas à la suite.
+Vous **vérifiez entre les étapes** pour éviter que les erreurs s'accumulent.
 
 ---
 ## Régler la longueur et le ton

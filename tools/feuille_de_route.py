@@ -139,7 +139,7 @@ rows = [
     (85, where(6, "Démo 4: le navigateur"), "<b>Démo 4: le navigateur et l'injection de prompt</b> (écran, 5 min, Chrome)",
      "Aucun fichier. La page fictive de la ferme de la Hulotte (lien sur la slide « à copier »): son formulaire n'envoie rien, et elle cache une instruction pour l'IA",
      q(quoted(6, "Démo 4: les demandes à copier")) + "<br/>(slide suivante, bouton « Copier »)",
-     "Formulaire rempli, <b>pas envoyé</b>. Injection: l'a-t-il suivie ou signalée? Bouton « Afficher » en bas de la page. Si le wifi ou l'extension bloque: passer à la slide « Ce qui vient de se passer », puis au plan B.<br/>Plan B: Démo 4 - Comparaison lieux d'excursion (exemple).pdf"),
+     "Formulaire rempli, <b>pas envoyé</b>. Injection: l'a-t-il suivie ou signalée? Puis la 3e demande: Claude recopie le texte caché. Bouton « Afficher » en bas de la page. Si le wifi ou l'extension bloque: passer à la slide « Ce qui vient de se passer », puis au plan B.<br/>Plan B: Démo 4 - Comparaison lieux d'excursion (exemple).pdf"),
     (90, where(7, "Démo: Direction Saint-Exemple"), "<b>Partie 7: les slides essentielles</b>, le journal du jour (1 min) et <b>la démo du système</b> (5 min)",
      "Le système Saint-Exemple dans Obsidian (Journal/Quotidien/2026/46/2026-11-09.md), et Claude sur ce dossier",
      q(system_q[:2]) + "<br/>Puis la même question dans un chat vide",

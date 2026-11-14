@@ -14,7 +14,7 @@ Aucun fichier supprimé: les doublons et les anciennes versions sont gardés et 
   2027-04-23 - P1-P2 - ferme de la Hulotte (mail).txt
       Échange de mails avec la ferme, réservation pour le 23/04. (ancien nom: Re_ Réservation ferme - confirmation.txt)
   2027-06 - P1 - excursion de fin d'année (idée parc animalier).docx
-      Idée à discuter en janvier, environ 22 € + car. Date à fixer. (ancien nom: excursion fin d'année P1 - parc animalier ?.docx)
+      Idée à discuter en janvier, environ 22 € + car. Date à fixer. (ancien nom: excursion fin d'année P1 - parc animalier.docx)
 
 == P2
   2027-04-23 - P2 - ferme de la Hulotte (autorisation parentale).pdf

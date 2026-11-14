@@ -35,7 +35,7 @@ Les questions qui reviennent, et mes réponses.
 ## Et sur le téléphone?
 - La même application, **le même compte**: idéal pour capturer en dictant
 - Le téléphone **n'a pas accès à votre base de connaissances**: on capture, puis on range au bureau
-- Compte de l'école, code de verrouillage, pas de photo de documents d'élèves (bonus 16)
+- Compte de l'école et code de verrouillage (bonus 16)
 
 ---
 ## Claude peut-il assister à nos réunions en ligne?

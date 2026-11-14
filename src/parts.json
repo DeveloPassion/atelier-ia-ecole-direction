@@ -50,8 +50,8 @@
  {
   "n": 7,
   "name": "Un système qui vous connaît",
-  "dur": "12 min",
-  "slides": 22,
+  "dur": "14 min",
+  "slides": 20,
   "file": "7 - Un système qui vous connaît.md",
   "html": "07-un-systeme-qui-vous-connait.html"
  },
@@ -111,7 +111,7 @@
   "n": 14,
   "name": "Bonus, les skills",
   "dur": "bonus",
-  "slides": 13,
+  "slides": 15,
   "file": "14 - Bonus, les skills.md",
   "html": "14-bonus-les-skills.html",
   "bonus": true

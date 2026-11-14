@@ -121,6 +121,27 @@ Critères: la date, le prix et l'échéance sont exacts et visibles.
 ```
 
 ---
+## Démo: créer une skill ensemble
+Notre première recette: **écrire aux parents**. Le processus est déjà écrit dans la base: la skill **le lit**.
+
+> Aide-moi à créer une skill pour écrire les mots aux parents de mon école, en respectant la spécification des skills IA: https://agentskills.io/specification.md. La skill ne recopie pas mon processus: elle lit d'abord la note "Écrire aux parents (Processus)" de ma base de connaissances, puis elle la suit. Enregistre la skill dans le dossier "Skills" de ma base de connaissances.
+
+Puis on la teste: "Écris le mot aux parents pour la sortie P4 du 26 novembre."{copy}
+
+Ensuite, on change **une ligne du processus**, et on relance: le mot change, sans toucher à la skill.
+
+Note: DÉMO SKILL (5 min), à l'écran, Claude ouvert sur une copie du dossier "Direction Saint-Exemple" (le système de démo). 1) Coller la demande. 2) Montrer le résultat: un dossier "ecrire-aux-parents" avec un fichier SKILL.md (name, description, puis l'instruction de lire la note du processus). 3) Tester avec la sortie P4, dans une nouvelle conversation. 4) Ouvrir la note "Écrire aux parents (Processus)" (dossier Actions/Processus), changer "150 mots maximum" en "80 mots maximum", et enregistrer. 5) Nouvelle conversation, même demande: le mot est plus court. Message: on a changé le processus, pas la skill (bonus 14, "Le processus et la skill: deux choses"). Si quelque chose ne va pas: corriger le texte, pas la réponse. La skill vit dans le dossier de travail (la base de connaissances): rien à installer dans l'application. Pour s'en servir, Claude ouvert sur ce dossier: "Utilise la skill ecrire-aux-parents pour...". La spécification vient de agentskills.io, un format ouvert que d'autres outils IA lisent aussi. Cette démo passe en deuxième séance si le temps manque: elle demande cinq minutes.
+
+---
+## Avec votre système, une phrase suffit
+- Un système comme celui de la démo **connaît déjà la spécification** et l'endroit où ranger vos skills
+- Vous dites simplement: **"Crée-moi une skill pour..."**
+- Ou, après une conversation réussie: **"skillify"**. Il transforme ce que vous venez de faire en skill
+- Vos recettes s'accumulent dans **votre base de connaissances**: elles vous appartiennent
+
+Note: 
+
+---
 ## Une skill vit, le processus aussi
 - Un résultat ne va pas? **Corrigez la recette**, pour que l'erreur ne revienne pas
 - Les deux s'améliorent avec le temps: **le processus** (votre façon de faire) et **la skill** (les instructions pour l'IA)

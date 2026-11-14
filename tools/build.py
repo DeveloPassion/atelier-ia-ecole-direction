@@ -127,6 +127,13 @@ html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reve
 .reveal .me { display: flex; gap: 40px; align-items: center; margin-top: 0.5em; }
 .reveal .me img { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; flex: none; margin: 0; border: 5px solid var(--dp-magenta); }
 .reveal .me ul { flex: 1; margin: 0; }
+/* A drawing next to a list, and the small 'where we are' line of part 7 */
+.reveal .side { display: flex; gap: 40px; align-items: flex-start; margin-top: 0.5em; }
+.reveal .side svg { width: 430px; flex: none; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+.reveal .side ul { flex: 1; margin: 0; }
+.reveal p.step { font-size: 0.56em; margin: 0 0 0.6em 0; }
+.reveal p.step span { opacity: 0.55; } .reveal p.step b { color: var(--dp-pink); }
+html.print-pdf .reveal p.step b { color: #c4006a; }
 /* Nav pill */
 .nav-home { position: fixed; top: 14px; left: 16px; z-index: 30; font: 600 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
   background: rgba(255,255,255,0.1); border-radius: 8px; padding: 6px 12px; }

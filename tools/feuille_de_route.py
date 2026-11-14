@@ -93,7 +93,7 @@ def q(texts):
 FD = "Fichiers de démo/"
 PB = "Fichiers de démo/Plan B - résultats attendus/"
 system_q = re.findall(r'\d\) "(.+?)"', note(find(7, "Démo: Direction Saint-Exemple")[1]))
-skill_q = re.search(r"^> (.+)$", find(7, "Démo: créer une skill")[1], re.M).group(1)
+skill_q = re.search(r"^> (.+)$", find(14, "Démo: créer une skill")[1], re.M).group(1)
 vrac_q = re.search(r'La même question aux deux: "(.+?)"', find(7, "Démo: en vrac ou organisé")[1]).group(1)
 rows = [
     (-30, where(1, "Avant de commencer: les prérequis"), "<b>Prérequis</b> sur chaque PC (10 min), avec une liste imprimée",
@@ -144,16 +144,16 @@ rows = [
      "Le système Saint-Exemple dans Obsidian (Journal/Quotidien/2026/46/2026-11-09.md), et Claude sur ce dossier",
      q(system_q[:2]) + "<br/>Puis la même question dans un chat vide",
      "Réponses attendues: « DEMO - À demander.txt », à la racine du système. Si la démo bloque: lire les réponses attendues à voix haute. <b>Repère: la partie 8 commence à 1:42</b>"),
-    (102, where(8, "Lundi: trois gestes, trois interdits"), "<b>Partie 8: les cinq slides essentielles</b>, et le projet de règles d'usage",
+    (104, where(8, "Lundi: trois gestes, trois interdits"), "<b>Partie 8: les cinq slides essentielles</b>, et le projet de règles d'usage",
      "Documents à remettre/Projet de règles d'usage de l'IA.pdf", "",
      "Si l'école a déjà une politique, partir de la sienne. Finir sur « Lundi: trois gestes, trois interdits »"),
-    (107, where(9, "Un seul pas pour demain"), "<b>Partie 9: à retenir, un seul pas, les documents</b> (5 min)",
+    (109, where(9, "Un seul pas pour demain"), "<b>Partie 9: à retenir, un seul pas, les documents</b> (5 min)",
      "L'aide-mémoire imprimé (un par personne), la fiche de contexte (PDF), les prérequis",
      "", "Dire qui est l'admin de l'école, et qui est le DPO"),
-    (112, where(9, "Vos questions"), "<b>Leurs questions</b> (6 min)",
+    (114, where(9, "Vos questions"), "<b>Leurs questions</b> (6 min)",
      "La feuille des questions notées pendant la séance", "",
      "Réponses prêtes dans le bonus 17 (fiabilité, remplacement, coût, données, téléphone, ChatGPT ou Copilot, triche, énergie, responsabilité). Coûts: bonus 18"),
-    (118, "Fin", "<b>Marge (2 min)</b>", "", "",
+    (120, "Fin", "<b>Fin de la séance</b> (plus de marge: la partie 7 prend 14 min)", "", "",
      "Leurs réponses aux trois questions (avant l'atelier): à garder pour la suite, hors du cours"),
     ("option", where(5, "Plusieurs conversations en parallèle"), "Deux gestes en direct, s'il y a de l'avance",
      "Conversations en parallèle. Slide « Des conversations courtes »: la longue conversation compactée, préparée avant",
@@ -167,7 +167,7 @@ rows = [
      "Les deux dossiers dézippés: le système « en vrac » et le système « notes seules »",
      q([vrac_q]) + "<br/>Au vrac, puis à l'organisé, puis une 2e fois au vrac",
      "Organisé: Sortie P4 (active), Plan de pilotage (actif), Classes de neige P5 (en pause, bloqué: 690 euros &gt; plafond de 485), photos terminées. Vrac: statuts devinés, la liste change.<br/>Corrigé: question 6 de « DEMO - À demander.txt »"),
-    ("plus tard", where(7, "Démo: créer une skill"), "Démo: créer une skill ensemble (5 min)",
+    ("plus tard", where(14, "Démo: créer une skill"), "Démo: créer une skill ensemble (5 min)",
      "Claude ouvert sur une copie du système « notes seules ». La note « Écrire aux parents (Processus) », dossier Actions/Processus",
      q([skill_q]) + "<br/>Puis: « Écris le mot aux parents pour la sortie P4 du 26 novembre. »",
      "Résultat: un dossier « ecrire-aux-parents » avec SKILL.md (name, description, puis « lis la note du processus »). Puis changer « 150 mots » en « 80 mots » dans le processus, et relancer: le mot change, pas la skill"),
@@ -209,7 +209,7 @@ before = KeepTogether([
     b("Dans chaque partie, les notes marquent les slides «\u00a0ESSENTIEL\u00a0» ou «\u00a0À PASSER\u00a0». En séance, je montre les slides essentielles. À passer: "
       + " ".join(f"<b>partie {n}</b>, slides {', '.join(skippable(n))}." for n in range(1, 10) if skippable(n))),
     Paragraph("Trois repères à tenir", H2),
-    b("<b>0:45</b>: la pause commence. <b>1:08</b>: leur vraie tâche a commencé. <b>1:42</b>: la partie 8 commence. En retard à un repère: passer tout de suite à la slide essentielle suivante."),
+    b("<b>0:45</b>: la pause commence. <b>1:08</b>: leur vraie tâche a commencé. <b>1:44</b>: la partie 8 commence. En retard à un repère: passer tout de suite à la slide essentielle suivante."),
     Paragraph("La veille et le matin", H2),
     b("Dézipper les deux systèmes de démo, ouvrir « Direction Saint-Exemple » dans Obsidian, ouvrir une fois les slides sans internet."),
     b("Imprimer l'aide-mémoire (un par personne). Préparer la feuille « parking ». Option: une longue conversation compactée."),

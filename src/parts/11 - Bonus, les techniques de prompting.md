@@ -31,7 +31,7 @@ Mettez **les règles importantes à la fin**: la fin d'un long texte est mieux l
 - Un rôle oriente surtout **le vocabulaire, les outils, le niveau et le point de vue**
 - Utile pour **une manière de travailler**: "Aborde ce dossier comme un conseiller pédagogique le ferait"{copy}
 - Utile aussi **pour relire**: "Lis ce mot comme un parent pressé, sur son téléphone. Qu'est-ce qui n'est pas clair?"{copy}
-- Le contexte compte bien plus que le rôle. Et les faits se vérifient toujours
+- Le contexte compte bien plus que le rôle
 
 Note: C'est mon expérience, pas une règle. La documentation d'Anthropic conseille encore de donner un rôle dans les instructions: le mieux est de tester avec et sans.
 

@@ -16,6 +16,7 @@ Note: ESSENTIEL. Le système de démo est fait avec AI Kit for Obsidian, mon kit
 
 ---
 ## Ce qui cloche dans toutes ces démos
+- Le problème, c'est **le (manque de) contexte**
 - La limite n'est plus l'IA
 - La limite, c'est **ce qu'elle sait de vous**
 - Chaque conversation **repart de zéro**, ou presque

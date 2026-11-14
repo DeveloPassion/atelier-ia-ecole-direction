@@ -69,6 +69,5 @@ Note: ESSENTIEL.
 - Il peut se tromper: **les dates se vérifient toujours**
 - Avec plus d'effort, il vérifie plus
 
-Pour un système qui vous connaît: il sait déjà quel est votre niveau et vos projets, et il relie chaque action à la bonne tâche.
 
 Note: ESSENTIEL.

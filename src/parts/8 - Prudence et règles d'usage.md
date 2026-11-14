@@ -46,7 +46,7 @@ Note: ESSENTIEL. Lire le dessin de gauche à droite. À gauche, ce qui reste che
 ---
 ## Où vont vos données
 - Chez Anthropic, vos données sont **stockées aux États-Unis**, et elles peuvent être traitées dans d'autres régions aussi. Pas d'option Europe dans l'abonnement Entreprise, selon sa documentation
-- Le **DPA** (accord de traitement des données, RGPD article 28) est le contrat qui encadre ce que le fournisseur en fait. À demander à l'école
+- Le **DPA** (accord de traitement des données, RGPD article 28) est le contrat qui encadre ce que le fournisseur en fait
 - Une conversation est gardée **tant que vous ne la supprimez pas**. Supprimée, elle quitte les systèmes d'Anthropic dans les 30 jours. Avec **Fable**: 30 jours au moins, dans tous les cas
 - Un pouce levé ou baissé envoie **toute la conversation** à Anthropic. Elle est gardée 5 ans, et elle peut servir à l'entraînement: **n'en donnez pas**
 - Le **RGPD** s'applique toujours: l'école reste responsable
@@ -57,11 +57,9 @@ Note: À PASSER si le temps manque. Vérifié le 07/11/2026 dans la documentatio
 ## Pour l'admin: les réglages de confidentialité
 Par un propriétaire de l'organisation, dans **Paramètres de l'organisation > Données et confidentialité**:
 
-1. **Couper les pouces**: le réglage **"Évaluer les conversations"**, sur arrêt
+1. **Désactiver les évaluations**: le réglage **"Évaluer les conversations"**, sur arrêt
 2. **Fixer une durée de conservation**: sans réglage, les conversations sont gardées **sans limite**. Le minimum est de 30 jours
-3. Ailleurs dans les réglages de l'organisation: **couper la mémoire**, et retirer ce qui ne sert pas (les connecteurs non utilisés, le modèle Fable)
-
-La télémétrie de l'application (rapports de plantage, statistiques d'usage): **pas de réglage documenté** sur votre abonnement.
+3. Ailleurs dans les réglages de l'organisation: **désactiver la mémoire**, et retirer ce qui ne sert pas (les connecteurs non utilisés, le modèle Fable)
 
 Documentation: [Gérer les paramètres de retours utilisateur](https://support.claude.com/fr/articles/10504844) · [Configurer la durée de conservation](https://support.claude.com/fr/articles/10440198)
 
@@ -70,7 +68,7 @@ Note: À PASSER si le temps manque. Lu le 13/11/2026 dans le centre d'aide en fr
 ---
 ## Pour chacun: trois gestes de confidentialité
 1. **Pas de pouce**, ni levé ni baissé. Si une réponse est mauvaise, dites-le à Claude dans la conversation
-2. **Coupez votre mémoire**: Paramètres > Votre Claude (partie 5)
+2. **Désactivez votre mémoire**: Paramètres > Votre Claude (partie 5)
 3. **Supprimez** les conversations dont vous n'avez plus besoin. Une conversation supprimée quitte les systèmes d'Anthropic dans les 30 jours
 
 Ce qui doit durer est **dans votre base de connaissances**, pas dans une vieille conversation.

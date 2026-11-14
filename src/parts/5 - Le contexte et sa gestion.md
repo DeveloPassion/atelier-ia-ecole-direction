@@ -213,7 +213,7 @@ Note: ESSENTIEL.
 - Les deux **vivent chez Anthropic**: ils ne passent pas dans un autre outil, et chacun refait le sien
 - Mon conseil: **pas de projet Claude**, mais **un seul dossier de travail** pour l'IA, votre base de connaissances
 - **La mémoire: mon choix est de la couper.** On peut la consulter et la modifier, mais elle retient des choses un peu au hasard, et elle les ressort là où on ne les attend pas
-- Comment: **Paramètres > Votre Claude** (ou Paramètres > Mémoire). Coupez la mémoire, et aussi la recherche dans les anciennes conversations
+- Comment: **Paramètres > Votre Claude** (ou Paramètres > Mémoire). Désactivez la mémoire, et aussi la recherche dans les anciennes conversations
 
 Documentation: [La recherche de chat et la mémoire de Claude](https://support.claude.com/fr/articles/11817273)
 

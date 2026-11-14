@@ -45,8 +45,6 @@ Note: ESSENTIEL.
 - Le contexte, c'est vous qui le donnez
 - C'est **le seul facteur que vous contrôlez**
 
-Pour un système qui vous connaît: il choisit le bon contexte pour chaque demande, au lieu de tout mettre. Et ce contexte est à vous.
-
 Note: ESSENTIEL.
 
 ---

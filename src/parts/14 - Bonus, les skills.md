@@ -26,7 +26,7 @@ Deux façons de les relier:
 En pratique, le résultat est presque le même. Séparés, le processus est **plus facile à modifier**: il n'est pas emmêlé avec les instructions pour l'IA.
 
 ---
-## Trouver vos skills
+## Identifier les skills à créer pour vous
 Cherchez les tâches **répétitives et fréquentes**:
 
 1. Le mot aux parents

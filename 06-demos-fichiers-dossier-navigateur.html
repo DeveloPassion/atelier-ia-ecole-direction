@@ -69,7 +69,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 /* Print view (?print-pdf, used by tools/slides_pdf.py): light pages to save ink, the visuals keep a dark card */
 html.print-pdf, html.print-pdf body, html.print-pdf .reveal-viewport { background: #fff !important; }
 html.print-pdf * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-html.print-pdf .nav-home, html.print-pdf .particles, html.print-pdf .reveal blockquote .copy-btn, html.print-pdf .reveal .cp .copy-ico { display: none !important; }
+html.print-pdf .nav-home, html.print-pdf .nav-next, html.print-pdf .particles, html.print-pdf .reveal blockquote .copy-btn, html.print-pdf .reveal .cp .copy-ico { display: none !important; }
 html.print-pdf .reveal .slides .pdf-page { background: #fff; box-shadow: inset 0 0 0 2px #cfd4da; }
 html.print-pdf .reveal .slide-background, html.print-pdf .reveal .slide-background-content { background: none !important; }
 html.print-pdf .reveal, html.print-pdf .reveal p, html.print-pdf .reveal li, html.print-pdf .reveal h1, html.print-pdf .reveal h2,
@@ -111,6 +111,10 @@ html.print-pdf .reveal .slide-number { color: #4b5563 !important; background: no
 .reveal p.doc { font-size: 0.62em; margin-top: 1.1em; padding-top: 0.55em; border-top: 1px solid rgba(255,255,255,0.22); color: rgba(255,255,255,0.8); }
 .reveal p.doc b { color: var(--dp-pink); } .reveal a { color: #ff4fa8; }
 html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reveal p.doc b { color: #c4006a; }
+/* Link to the next part: shown on the last slide of a part only */
+.nav-next { position: fixed; top: 14px; right: 16px; z-index: 30; font: 700 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
+  background: var(--dp-magenta); border-radius: 8px; padding: 6px 12px; display: none; }
+.nav-next.show { display: block; } .nav-next:hover { background: #ff4fa8; }
 /* Nav pill */
 .nav-home { position: fixed; top: 14px; left: 16px; z-index: 30; font: 600 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
   background: rgba(255,255,255,0.1); border-radius: 8px; padding: 6px 12px; }
@@ -144,6 +148,7 @@ html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reve
 </head>
 <body>
   <a class="nav-home" href="index.html">&#8592; Sommaire</a>
+  <a class="nav-next" href="07-un-systeme-qui-vous-connait.html">Suite: 7. Un système qui vous connaît &#8594;</a>
   <div class="reveal">
     <div class="slides">
       <section data-markdown data-separator="^---$" data-separator-vertical="^----$" data-separator-notes="^Note:">
@@ -390,13 +395,13 @@ Note: À PASSER si le temps manque.
 ---
 ## Le navigateur de Claude, ou le vôtre
 - L'application Claude a **son propre navigateur**, et elle l'utilise souvent toute seule pour lire une page
-- Mon conseil: utilisez plutôt **votre navigateur Chrome**, avec l'extension Claude in Chrome
+- Mon conseil: utilisez plutôt **votre navigateur** (Edge ou Chrome), avec l'extension Claude in Chrome
 - L'avantage: Claude y retrouve **les sites où vous êtes déjà connecté** (Outlook, OneDrive, l'intranet)
 - Attention: une boîte mail ou une application de la fédération contient des données d'élèves. **Pas d'agent dessus avant l'accord du collège et du DPO**
-- Il suffit de le dire: "Utilise mon navigateur pour...", "Utilise Chrome pour..."
-- **Chrome, pas Edge**: l'extension ne marche officiellement que dans Chrome. Si vous travaillez dans Edge, connectez-vous une fois dans Chrome aux sites utiles
+- Il suffit de le dire: "Utilise mon navigateur pour..."
+- **Edge ou Chrome**: l'extension s'installe dans les deux. Si elle ne répond pas dans Edge, essayez dans Chrome
 
-Note: À PASSER si le temps manque. Vérifié le 07/11/2026: le centre d'aide d'Anthropic ("Getting started with Claude in Chrome") dit que Claude in Chrome n'est pas pris en charge dans les autres navigateurs Chromium. Edge peut installer l'extension depuis le Chrome Web Store, mais des utilisateurs signalent que l'application Claude (Cowork) ne se connecte qu'à Chrome. Seul Claude Code, l'outil des développeurs, accepte officiellement Edge. Donc: installer Chrome, même si le collège utilise Edge. Prudence: dans votre navigateur, Claude voit des sites connectés, donc des données privées. C'est la triple menace de la partie 8: regarder ce qu'il fait, et lire chaque demande de permission.
+Note: À PASSER si le temps manque. Lu le 14/11/2026. Deux sources ne disent pas la même chose. La documentation de Claude Code: l'intégration marche avec Google Chrome et Microsoft Edge. Le centre d'aide d'Anthropic ("Getting started with Claude in Chrome"): l'extension n'est pas prise en charge dans les autres navigateurs Chromium. Edge installe l'extension depuis le Chrome Web Store. Le 07/11/2026, des utilisateurs signalaient que l'application Claude (Cowork) ne se connectait qu'à Chrome: à tester avant la séance. Plan B: Google Chrome. Prudence: dans votre navigateur, Claude voit des sites connectés, donc des données privées. C'est la triple menace de la partie 8: regarder ce qu'il fait, et lire chaque demande de permission.
 ---
 ## Démo 4: le navigateur
 <div class="chart strip"><svg viewBox="0 0 960 136" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: trois sites web deviennent un tableau comparatif, un formulaire est rempli mais pas envoyé">
@@ -674,7 +679,9 @@ Note: À PASSER si le temps manque.
       show(); setInterval(() => { step += 1; show(); }, 3000);
     }
     Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
-      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); animateFrames(); Reveal.layout(); });
+      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); animateFrames(); Reveal.layout();
+        const next = () => document.querySelector('.nav-next').classList.toggle('show', Reveal.isLastSlide());
+        next(); Reveal.on('slidechanged', next); });
   </script>
 </body>
 </html>

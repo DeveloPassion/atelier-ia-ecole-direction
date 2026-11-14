@@ -2,7 +2,7 @@
 
 ---
 ## 2. Prise en main
-Claude est l'IA de la société Anthropic. Le collège l'utilise en abonnement Entreprise.
+Claude est l'IA de la société Anthropic.
 
 - D'autres IA existent: GPT (ChatGPT), Gemini, Mistral, DeepSeek, Qwen, ...
 - Elles fonctionnent toutes sur le même principe: **ce que vous apprenez ici vaut aussi pour elles**

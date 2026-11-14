@@ -243,14 +243,14 @@ STEPS = [
         "Cliquez sur \"Se connecter\" et utilisez votre compte Claude Entreprise du collège.",
         "En bas à gauche, vérifiez votre nom et l'organisation du collège: pas un compte personnel.",
     ]),
-    ("Google Chrome et l'extension Claude in Chrome", [
-        "Utilisez Google Chrome, même si vous travaillez dans Edge: l'extension ne marche officiellement que dans Chrome. "
-        "Si Chrome n'est pas sur votre PC, installez-le: google.com/chrome",
-        "Dans Chrome, allez sur claude.com/chrome et cliquez sur \"Ajouter à Chrome\".",
-        "Épinglez l'extension: l'icône en forme de pièce de puzzle, puis la punaise à côté de Claude.",
+    ("L'extension Claude in Chrome, dans Edge ou dans Chrome", [
+        "L'extension s'installe dans Microsoft Edge ou dans Google Chrome: prenez votre navigateur de tous les jours. "
+        "Si elle ne répond pas dans Edge, essayez dans Chrome.",
+        "Dans ce navigateur, allez sur claude.com/chrome et cliquez sur \"Ajouter à Chrome\". Si Edge le demande, autorisez d'abord les extensions d'autres magasins.",
+        "Épinglez l'extension: l'icône en forme de pièce de puzzle, puis la punaise (Chrome) ou l'œil (Edge) à côté de Claude.",
         "Cliquez sur l'icône Claude et connectez-vous avec le même compte.",
         "Acceptez les permissions demandées.",
-        "Dans Chrome, connectez-vous une fois aux sites que vous utilisez avec Claude (Outlook, OneDrive).",
+        "Dans ce navigateur, vérifiez que vous êtes connecté aux sites que vous utilisez avec Claude (Outlook, OneDrive).",
     ]),
     ("Les fichiers de démo", [
         "Téléchargez le zip: developassion.github.io/atelier-ia-ecole-direction/documents/fichiers-de-demo.zip",
@@ -258,7 +258,7 @@ STEPS = [
     ]),
     ("Un test de cinq minutes", [
         "Dans l'application Claude: \"Bonjour, dis-moi en une phrase ce que tu peux faire.\"",
-        "Dans Chrome: ouvrez une page web, cliquez sur Claude et demandez \"Résume cette page en trois points.\"",
+        "Dans votre navigateur: ouvrez une page web, cliquez sur Claude et demandez \"Résume cette page en trois points.\"",
         "Dans la zone de saisie de Claude: voyez-vous le choix \"Cowork\", et le modèle \"Opus 5.5\" dans la liste des modèles?",
         "Le dossier \"Fichiers de démo\" s'ouvre-t-il depuis le Bureau?",
         "Si une de ces quatre choses ne marche pas, dites-le-moi par mail: on la règle avant l'atelier.",

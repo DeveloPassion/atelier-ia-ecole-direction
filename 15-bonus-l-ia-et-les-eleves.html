@@ -69,7 +69,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 /* Print view (?print-pdf, used by tools/slides_pdf.py): light pages to save ink, the visuals keep a dark card */
 html.print-pdf, html.print-pdf body, html.print-pdf .reveal-viewport { background: #fff !important; }
 html.print-pdf * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-html.print-pdf .nav-home, html.print-pdf .particles, html.print-pdf .reveal blockquote .copy-btn, html.print-pdf .reveal .cp .copy-ico { display: none !important; }
+html.print-pdf .nav-home, html.print-pdf .nav-next, html.print-pdf .particles, html.print-pdf .reveal blockquote .copy-btn, html.print-pdf .reveal .cp .copy-ico { display: none !important; }
 html.print-pdf .reveal .slides .pdf-page { background: #fff; box-shadow: inset 0 0 0 2px #cfd4da; }
 html.print-pdf .reveal .slide-background, html.print-pdf .reveal .slide-background-content { background: none !important; }
 html.print-pdf .reveal, html.print-pdf .reveal p, html.print-pdf .reveal li, html.print-pdf .reveal h1, html.print-pdf .reveal h2,
@@ -111,6 +111,10 @@ html.print-pdf .reveal .slide-number { color: #4b5563 !important; background: no
 .reveal p.doc { font-size: 0.62em; margin-top: 1.1em; padding-top: 0.55em; border-top: 1px solid rgba(255,255,255,0.22); color: rgba(255,255,255,0.8); }
 .reveal p.doc b { color: var(--dp-pink); } .reveal a { color: #ff4fa8; }
 html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reveal p.doc b { color: #c4006a; }
+/* Link to the next part: shown on the last slide of a part only */
+.nav-next { position: fixed; top: 14px; right: 16px; z-index: 30; font: 700 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
+  background: var(--dp-magenta); border-radius: 8px; padding: 6px 12px; display: none; }
+.nav-next.show { display: block; } .nav-next:hover { background: #ff4fa8; }
 /* Nav pill */
 .nav-home { position: fixed; top: 14px; left: 16px; z-index: 30; font: 600 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
   background: rgba(255,255,255,0.1); border-radius: 8px; padding: 6px 12px; }
@@ -144,6 +148,7 @@ html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reve
 </head>
 <body>
   <a class="nav-home" href="index.html">&#8592; Sommaire</a>
+  <a class="nav-next" href="16-bonus-pour-aller-plus-loin.html">Suite: 16. Bonus, pour aller plus loin &#8594;</a>
   <div class="reveal">
     <div class="slides">
       <section data-markdown data-separator="^---$" data-separator-vertical="^----$" data-separator-notes="^Note:">
@@ -246,7 +251,9 @@ Note: Hors sujet pour cet atelier, mais la question viendra. Une suite possible:
       show(); setInterval(() => { step += 1; show(); }, 3000);
     }
     Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
-      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); animateFrames(); Reveal.layout(); });
+      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); animateFrames(); Reveal.layout();
+        const next = () => document.querySelector('.nav-next').classList.toggle('show', Reveal.isLastSlide());
+        next(); Reveal.on('slidechanged', next); });
   </script>
 </body>
 </html>

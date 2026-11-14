@@ -69,7 +69,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 /* Print view (?print-pdf, used by tools/slides_pdf.py): light pages to save ink, the visuals keep a dark card */
 html.print-pdf, html.print-pdf body, html.print-pdf .reveal-viewport { background: #fff !important; }
 html.print-pdf * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-html.print-pdf .nav-home, html.print-pdf .particles, html.print-pdf .reveal blockquote .copy-btn, html.print-pdf .reveal .cp .copy-ico { display: none !important; }
+html.print-pdf .nav-home, html.print-pdf .nav-next, html.print-pdf .particles, html.print-pdf .reveal blockquote .copy-btn, html.print-pdf .reveal .cp .copy-ico { display: none !important; }
 html.print-pdf .reveal .slides .pdf-page { background: #fff; box-shadow: inset 0 0 0 2px #cfd4da; }
 html.print-pdf .reveal .slide-background, html.print-pdf .reveal .slide-background-content { background: none !important; }
 html.print-pdf .reveal, html.print-pdf .reveal p, html.print-pdf .reveal li, html.print-pdf .reveal h1, html.print-pdf .reveal h2,
@@ -111,6 +111,10 @@ html.print-pdf .reveal .slide-number { color: #4b5563 !important; background: no
 .reveal p.doc { font-size: 0.62em; margin-top: 1.1em; padding-top: 0.55em; border-top: 1px solid rgba(255,255,255,0.22); color: rgba(255,255,255,0.8); }
 .reveal p.doc b { color: var(--dp-pink); } .reveal a { color: #ff4fa8; }
 html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reveal p.doc b { color: #c4006a; }
+/* Link to the next part: shown on the last slide of a part only */
+.nav-next { position: fixed; top: 14px; right: 16px; z-index: 30; font: 700 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
+  background: var(--dp-magenta); border-radius: 8px; padding: 6px 12px; display: none; }
+.nav-next.show { display: block; } .nav-next:hover { background: #ff4fa8; }
 /* Nav pill */
 .nav-home { position: fixed; top: 14px; left: 16px; z-index: 30; font: 600 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
   background: rgba(255,255,255,0.1); border-radius: 8px; padding: 6px 12px; }
@@ -144,6 +148,7 @@ html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reve
 </head>
 <body>
   <a class="nav-home" href="index.html">&#8592; Sommaire</a>
+  <a class="nav-next" href="02-prise-en-main-de-claude.html">Suite: 2. Prise en main de Claude &#8594;</a>
   <div class="reveal">
     <div class="slides">
       <section data-markdown data-separator="^---$" data-separator-vertical="^----$" data-separator-notes="^Note:">
@@ -154,14 +159,14 @@ html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reve
 <h2>L'IA au service de <span class="gradient">l'école</span></h2>
 
 - Claude Entreprise: comprendre, démarrer, **rester maître de ses données**
-- Environ 2 heures, avec une pause
+- Environ 2 heures
 - Ce support se relit seul, après la séance
 - Les personnes et les documents de démo sont fictifs: ce support sert à apprendre
 
 Note: Se présenter en une phrase. Dire que le support est fait pour continuer seuls: chaque slide porte une idée complète, et la fin dit quoi faire dès demain. Ce qu'on ne voit pas aujourd'hui passe en séance 2.
 ---
 ## Trois objectifs pour aujourd'hui
-1. **Démarrer rapidement avec Claude**: faire une vraie tâche, lui donner le bon contexte, et **vérifier** ce qu'il rend
+1. **Démarrer rapidement avec Claude**: faire une vraie tâche, lui donner le bon contexte, et **vérifier** ce qu'il délivre
 2. **Comprendre l'IA agentique et les possibilités de Claude**: ce qu'il peut faire pour vous, et les règles à suivre avec les données de l'école
 3. **Comprendre la valeur d'un système IA souverain**: un système qui vous connaît, et **qui vous appartient**
 
@@ -186,20 +191,20 @@ Note: À PASSER si le temps manque. Timing visé (début à 10h): 0:08 fin de la
 - **Chacun sur son PC**: vous faites les démos avec moi
 - Le dossier "Fichiers de démo" est sur votre PC. **Tout y est fictif**
 - Pendant l'atelier: **aucune donnée d'élève**, aucune donnée sensible
-- **N'hésitez pas à m'interrompre.** Si une réponse prend trop de temps, on la note, et on y revient à la fin
+- **N'hésitez pas à m'interrompre**
 
 Note: ESSENTIEL. Dire la règle sur les données maintenant, avant la première démo. Le détail (l'accord du collège et du DPO, le compte Claude du collège) est en partie 8. Poser une feuille sur la table pour noter les questions à reprendre à la fin, ou par la suite (par mail ou en séance 2). Vérifier que chacun a ouvert l'application Claude et le dossier "Fichiers de démo".
 ---
 ## Avant de commencer: les prérequis
 1. **L'application Claude** est ouverte. En bas à gauche, vous voyez **le nom du collège**: c'est le bon compte
-2. **Google Chrome** est ouvert, avec l'extension **Claude in Chrome** connectée au même compte. Chrome, même si vous utilisez Edge: l'extension ne marche que dans Chrome
+2. **Microsoft Edge** (ou Google Chrome) est ouvert, avec l'extension **Claude in Chrome** connectée au même compte
 3. Le dossier **"Fichiers de démo"** est sur votre Bureau, **hors OneDrive**: pour l'atelier, il nous faut des fichiers qui sont vraiment sur le PC
 4. Modèle sélectionné: **Opus 5.5**
 
 Note: À PASSER si le temps manque. VÉRIFICATION DES PRÉREQUIS (10 minutes avant le début, ou la veille par mail).
 Claude Desktop: 1) Aller sur [claude.ai/download](https://claude.ai/download) et choisir Windows (ou Mac). 2) Lancer l'installateur. 3) Ouvrir Claude, cliquer sur "Se connecter", et choisir la connexion du collège (connexion unique si l'admin l'a activée, sinon l'adresse mail du collège). 4) En bas à gauche, vérifier le nom et l'organisation du collège: pas un compte personnel.
-Claude in Chrome: 0) Si le PC n'a que Edge, installer Google Chrome ([google.com/chrome](https://www.google.com/chrome/)). Le centre d'aide d'Anthropic dit que Claude in Chrome n'est pas pris en charge dans les autres navigateurs Chromium, donc pas dans Edge (seul Claude Code, l'outil des développeurs, accepte Edge). Garder Edge pour le reste si on veut, et se connecter une fois dans Chrome aux sites utiles (Outlook, OneDrive). 1) Dans Chrome, aller sur [claude.com/chrome](https://claude.com/chrome) et cliquer sur "Ajouter à Chrome" (Chrome Web Store). 2) Épingler l'extension: icône en forme de pièce de puzzle, puis la punaise à côté de Claude. 3) Cliquer sur l'icône Claude et se connecter avec le même compte. 4) Accepter les permissions demandées. Si l'extension est bloquée, l'admin doit l'activer pour l'organisation.
-Test rapide: dans l'application, "Bonjour, dis-moi en une phrase ce que tu peux faire". Dans Chrome, ouvrir une page web et demander "Résume cette page en trois points".
+Claude in Chrome: on part du principe que le collège utilise Microsoft Edge. L'extension s'installe dans Edge ou dans Google Chrome. Deux sources, lues le 14/11/2026, ne disent pas la même chose. La documentation de Claude Code: l'intégration marche avec Google Chrome et Microsoft Edge. Le centre d'aide ("Getting started with Claude in Chrome"): l'extension n'est pas prise en charge dans les autres navigateurs Chromium. Donc tester dans Edge avant la séance, y compris depuis l'application Claude (Cowork). Plan B si elle ne répond pas dans Edge: Google Chrome ([google.com/chrome](https://www.google.com/chrome/)). 1) Dans Edge ou Chrome, aller sur [claude.com/chrome](https://claude.com/chrome) et cliquer sur "Ajouter à Chrome" (Chrome Web Store). Si Edge le demande, autoriser d'abord les extensions d'autres magasins. 2) Épingler l'extension: icône en forme de pièce de puzzle, puis la punaise (Chrome) ou l'œil (Edge) à côté de Claude. 3) Cliquer sur l'icône Claude et se connecter avec le même compte. 4) Accepter les permissions demandées. Si l'extension est bloquée, l'admin doit l'activer pour l'organisation.
+Test rapide: dans l'application, "Bonjour, dis-moi en une phrase ce que tu peux faire". Dans le navigateur, ouvrir une page web et demander "Résume cette page en trois points".
 Si un PC bloque l'installation: travailler à deux sur un PC, ou utiliser [claude.ai](https://claude.ai) dans le navigateur (sans les démos sur un dossier). À vérifier en plus sur chaque PC, avec une liste imprimée: Cowork n'est pas coupé par l'admin, Opus 5.5 est permis, l'extension est bien reliée à l'application, et un dossier hors OneDrive s'ouvre comme dossier de travail. Si Cowork est coupé: faire les démos de la partie 6 sur mon écran, et leur vraie tâche dans le chat, avec des fichiers joints.
 ---
 <!-- .slide: class="hero" data-background-gradient="radial-gradient(1100px 560px at 85% 10%, rgba(168,85,247,0.20), transparent 60%), radial-gradient(900px 500px at 8% 92%, rgba(229,0,125,0.18), transparent 60%), #37404c" -->
@@ -296,7 +301,9 @@ Note: ESSENTIEL.
       show(); setInterval(() => { step += 1; show(); }, 3000);
     }
     Reveal.initialize({ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
-      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); animateFrames(); Reveal.layout(); });
+      plugins: [ RevealMarkdown, RevealNotes ] }).then(() => { drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; }); addCopyButtons(); animateFrames(); Reveal.layout();
+        const next = () => document.querySelector('.nav-next').classList.toggle('show', Reveal.isLastSlide());
+        next(); Reveal.on('slidechanged', next); });
   </script>
 </body>
 </html>

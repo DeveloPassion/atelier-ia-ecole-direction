@@ -77,7 +77,7 @@ html, body, .reveal-viewport { background: var(--dp-slate); }
 /* Print view (?print-pdf, used by tools/slides_pdf.py): light pages to save ink, the visuals keep a dark card */
 html.print-pdf, html.print-pdf body, html.print-pdf .reveal-viewport { background: #fff !important; }
 html.print-pdf * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-html.print-pdf .nav-home, html.print-pdf .particles, html.print-pdf .reveal blockquote .copy-btn, html.print-pdf .reveal .cp .copy-ico { display: none !important; }
+html.print-pdf .nav-home, html.print-pdf .nav-next, html.print-pdf .particles, html.print-pdf .reveal blockquote .copy-btn, html.print-pdf .reveal .cp .copy-ico { display: none !important; }
 html.print-pdf .reveal .slides .pdf-page { background: #fff; box-shadow: inset 0 0 0 2px #cfd4da; }
 html.print-pdf .reveal .slide-background, html.print-pdf .reveal .slide-background-content { background: none !important; }
 html.print-pdf .reveal, html.print-pdf .reveal p, html.print-pdf .reveal li, html.print-pdf .reveal h1, html.print-pdf .reveal h2,
@@ -119,6 +119,10 @@ html.print-pdf .reveal .slide-number { color: #4b5563 !important; background: no
 .reveal p.doc { font-size: 0.62em; margin-top: 1.1em; padding-top: 0.55em; border-top: 1px solid rgba(255,255,255,0.22); color: rgba(255,255,255,0.8); }
 .reveal p.doc b { color: var(--dp-pink); } .reveal a { color: #ff4fa8; }
 html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reveal p.doc b { color: #c4006a; }
+/* Link to the next part: shown on the last slide of a part only */
+.nav-next { position: fixed; top: 14px; right: 16px; z-index: 30; font: 700 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
+  background: var(--dp-magenta); border-radius: 8px; padding: 6px 12px; display: none; }
+.nav-next.show { display: block; } .nav-next:hover { background: #ff4fa8; }
 /* Nav pill */
 .nav-home { position: fixed; top: 14px; left: 16px; z-index: 30; font: 600 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
   background: rgba(255,255,255,0.1); border-radius: 8px; padding: 6px 12px; }
@@ -186,7 +190,8 @@ def transform(md, part_no, part_name, dur):
     return "\n---\n".join(out)
 
 
-def page(title, body_md, part_no):
+def page(title, body_md, part_no, next_part=None):
+    next_href, next_label = (next_part["html"], f'Suite: {next_part["n"]}. {next_part["name"]}') if next_part else ("index.html", "Retour au sommaire")
     assert "</textarea>" not in body_md and "</script>" not in body_md
     particles = "".join(f'<i style="left:{x}%;top:{y}%;animation-delay:{d}s"></i>' for x, y, d in
                         [(8, 18, 0), (22, 72, 1.5), (40, 12, 3), (63, 80, 0.8), (78, 30, 2.2), (90, 62, 4), (52, 46, 5)])
@@ -203,6 +208,7 @@ def page(title, body_md, part_no):
 </head>
 <body>
   <a class="nav-home" href="index.html">&#8592; Sommaire</a>
+  <a class="nav-next" href="{next_href}">{html.escape(next_label)} &#8594;</a>
   <div class="reveal">
     <div class="slides">
       <section data-markdown data-separator="^---$" data-separator-vertical="^----$" data-separator-notes="^Note:">
@@ -275,7 +281,9 @@ def page(title, body_md, part_no):
       show(); setInterval(() => {{ step += 1; show(); }}, 3000);
     }}
     Reveal.initialize({{ hash: true, slideNumber: 'c/t', transition: 'fade', width: 1280, height: 720, margin: 0.06, center: false,
-      plugins: [ RevealMarkdown, RevealNotes ] }}).then(() => {{ drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => {{ a.target = '_blank'; a.rel = 'noopener'; }}); addCopyButtons(); animateFrames(); Reveal.layout(); }});
+      plugins: [ RevealMarkdown, RevealNotes ] }}).then(() => {{ drawDiagrams(); document.querySelectorAll('.reveal a[href^="http"]').forEach((a) => {{ a.target = '_blank'; a.rel = 'noopener'; }}); addCopyButtons(); animateFrames(); Reveal.layout();
+        const next = () => document.querySelector('.nav-next').classList.toggle('show', Reveal.isLastSlide());
+        next(); Reveal.on('slidechanged', next); }});
   </script>
 </body>
 </html>
@@ -391,7 +399,8 @@ for m in meta:
     body = src[src.index("\n---\n") + 5:]  # drop the H1 line
     out_name = m["html"]
     open(os.path.join(outdir, out_name), "w", encoding="utf-8").write(
-        page(f"{m['n']}. {m['name']} - L'IA au service de l'école", transform(body, m["n"], m["name"], m["dur"]), m["n"]))
+        page(f"{m['n']}. {m['name']} - L'IA au service de l'école",
+             transform(body, m["n"], m["name"], m["dur"]), m["n"], meta[meta.index(m) + 1] if meta.index(m) + 1 < len(meta) else None))
     m["slides"] = body.count("\n---\n") + 1
     rows = []
     for k, sl in enumerate(body.split("\n---\n"), 1):

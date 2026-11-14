@@ -249,13 +249,13 @@ Note: À PASSER si le temps manque.
 ---
 ## Le navigateur de Claude, ou le vôtre
 - L'application Claude a **son propre navigateur**, et elle l'utilise souvent toute seule pour lire une page
-- Mon conseil: utilisez plutôt **votre navigateur Chrome**, avec l'extension Claude in Chrome
+- Mon conseil: utilisez plutôt **votre navigateur** (Edge ou Chrome), avec l'extension Claude in Chrome
 - L'avantage: Claude y retrouve **les sites où vous êtes déjà connecté** (Outlook, OneDrive, l'intranet)
 - Attention: une boîte mail ou une application de la fédération contient des données d'élèves. **Pas d'agent dessus avant l'accord du collège et du DPO**
-- Il suffit de le dire: "Utilise mon navigateur pour...", "Utilise Chrome pour..."
-- **Chrome, pas Edge**: l'extension ne marche officiellement que dans Chrome. Si vous travaillez dans Edge, connectez-vous une fois dans Chrome aux sites utiles
+- Il suffit de le dire: "Utilise mon navigateur pour..."
+- **Edge ou Chrome**: l'extension s'installe dans les deux. Si elle ne répond pas dans Edge, essayez dans Chrome
 
-Note: À PASSER si le temps manque. Vérifié le 07/11/2026: le centre d'aide d'Anthropic ("Getting started with Claude in Chrome") dit que Claude in Chrome n'est pas pris en charge dans les autres navigateurs Chromium. Edge peut installer l'extension depuis le Chrome Web Store, mais des utilisateurs signalent que l'application Claude (Cowork) ne se connecte qu'à Chrome. Seul Claude Code, l'outil des développeurs, accepte officiellement Edge. Donc: installer Chrome, même si le collège utilise Edge. Prudence: dans votre navigateur, Claude voit des sites connectés, donc des données privées. C'est la triple menace de la partie 8: regarder ce qu'il fait, et lire chaque demande de permission.
+Note: À PASSER si le temps manque. Lu le 14/11/2026. Deux sources ne disent pas la même chose. La documentation de Claude Code: l'intégration marche avec Google Chrome et Microsoft Edge. Le centre d'aide d'Anthropic ("Getting started with Claude in Chrome"): l'extension n'est pas prise en charge dans les autres navigateurs Chromium. Edge installe l'extension depuis le Chrome Web Store. Le 07/11/2026, des utilisateurs signalaient que l'application Claude (Cowork) ne se connectait qu'à Chrome: à tester avant la séance. Plan B: Google Chrome. Prudence: dans votre navigateur, Claude voit des sites connectés, donc des données privées. C'est la triple menace de la partie 8: regarder ce qu'il fait, et lire chaque demande de permission.
 
 ---
 ## Démo 4: le navigateur

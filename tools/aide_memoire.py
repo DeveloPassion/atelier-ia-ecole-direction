@@ -270,7 +270,7 @@ story = [
         b("<b>Désactiver la mémoire</b> de Claude: Paramètres &gt; Votre Claude."),
         b("Créer le dossier de <b>votre base de connaissances</b>, et le choisir comme <b>dossier de travail</b>. Mettre en place sa <b>sauvegarde</b>."),
         b("Décrire <b>votre ton</b>, une fois, dans votre base."),
-        b("Installer <b>Google Chrome</b> (même si vous utilisez Edge: l'extension ne marche officiellement que dans Chrome), puis l'extension Claude in Chrome, <b>épinglée</b> et connectée au <b>même compte</b>."),
+        b("Dans <b>Microsoft Edge</b> ou <b>Google Chrome</b>: l'extension Claude in Chrome, <b>épinglée</b> et connectée au <b>même compte</b>. Si elle ne répond pas dans Edge, essayer dans Chrome."),
     ]),
     box("Quand ça ne va pas", [
         b("<b>Réponse générique</b>: il manque du contexte. Dites qui, pour qui, quelle forme, avec un exemple."),

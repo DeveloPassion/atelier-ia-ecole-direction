@@ -349,11 +349,61 @@ Pour essayer vous-mêmes: dézippez "Système Direction Saint-Exemple - notes se
 Note: ESSENTIEL. DÉMO SYSTÈME (5 min), à l'écran. Ouvrir le dossier "Système Direction Saint-Exemple - notes seules (démo)" (dézippé avant la séance) dans Obsidian, et Claude sur ce dossier. Les demandes et les réponses attendues sont dans "DEMO - À demander.txt", à la racine du système. Pour chaque demande, montrer la réponse, puis poser la même question dans un chat vide. Les cinq demandes: 1) "Prépare la sortie P4 du 26 novembre." 2) "Fais ma revue du lundi." 3) "Écris aux parents de P4 que le paiement est attendu avant le 19/11." 4) "Qu'est-ce que j'attends des autres, et qui dois-je relancer cette semaine?" 5) "Quelles actions de la circulaire 9847 touchent mes projets?" (joindre le PDF). En 5 minutes: faire 1 et 2. Les autres si le temps le permet. Le fichier finit par un tableau qui compare le chat, un projet Claude, la mémoire de Claude et ce système. Si le temps le permet, 2 minutes dans mon propre système: le genre de demandes que je lui fais chaque jour.
 
 ---
-## Une note, un type, une place
-<div class="chart"><svg viewBox="0 0 960 282" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: une note de type sortie, rangée à une seule place, avec ses propriétés et ses liens">
+## Les types de notes
+<div class="chart strip"><svg viewBox="0 0 960 122" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dessin: six notes de types différents: projet, tâche, sortie, contact, processus, journal. Chaque type a ses propres informations">
+<rect x="22" y="8" width="140" height="104" rx="10" fill="#faf7f0"/>
+<rect x="22" y="8" width="140" height="30" rx="10" fill="#a855f7"/>
+<rect x="22" y="26" width="140" height="12" rx="0" fill="#a855f7"/>
+<text x="92" y="29" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Projet</text>
+<text x="34" y="62" font-size="12.5" fill="#1f2329" font-weight="400" text-anchor="start">statut: en cours</text>
+<text x="34" y="86" font-size="12.5" fill="#1f2329" font-weight="400" text-anchor="start">échéance: 26/11</text>
+<rect x="178" y="8" width="140" height="104" rx="10" fill="#faf7f0"/>
+<rect x="178" y="8" width="140" height="30" rx="10" fill="#a855f7"/>
+<rect x="178" y="26" width="140" height="12" rx="0" fill="#a855f7"/>
+<text x="248" y="29" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Tâche</text>
+<text x="190" y="62" font-size="12.5" fill="#1f2329" font-weight="400" text-anchor="start">pour: lundi</text>
+<text x="190" y="86" font-size="12.5" fill="#1f2329" font-weight="400" text-anchor="start">faite: non</text>
+<rect x="334" y="8" width="140" height="104" rx="10" fill="#faf7f0"/>
+<rect x="334" y="8" width="140" height="30" rx="10" fill="#e5007d"/>
+<rect x="334" y="26" width="140" height="12" rx="0" fill="#e5007d"/>
+<text x="404" y="29" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Sortie</text>
+<text x="346" y="62" font-size="12.5" fill="#1f2329" font-weight="400" text-anchor="start">classe: P4</text>
+<text x="346" y="86" font-size="12.5" fill="#1f2329" font-weight="400" text-anchor="start">prix: 12 €</text>
+<rect x="490" y="8" width="140" height="104" rx="10" fill="#faf7f0"/>
+<rect x="490" y="8" width="140" height="30" rx="10" fill="#2f9e5b"/>
+<rect x="490" y="26" width="140" height="12" rx="0" fill="#2f9e5b"/>
+<text x="560" y="29" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Contact</text>
+<text x="502" y="62" font-size="12.5" fill="#1f2329" font-weight="400" text-anchor="start">société: Fictibus</text>
+<text x="502" y="86" font-size="12.5" fill="#1f2329" font-weight="400" text-anchor="start">rôle: le car</text>
+<rect x="646" y="8" width="140" height="104" rx="10" fill="#faf7f0"/>
+<rect x="646" y="8" width="140" height="30" rx="10" fill="#2f9e5b"/>
+<rect x="646" y="26" width="140" height="12" rx="0" fill="#2f9e5b"/>
+<text x="716" y="29" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Processus</text>
+<text x="658" y="62" font-size="12.5" fill="#1f2329" font-weight="400" text-anchor="start">étapes: 6</text>
+<text x="658" y="86" font-size="12.5" fill="#1f2329" font-weight="400" text-anchor="start">revu: sept. 2026</text>
+<rect x="802" y="8" width="140" height="104" rx="10" fill="#faf7f0"/>
+<rect x="802" y="8" width="140" height="30" rx="10" fill="#3b82f6"/>
+<rect x="802" y="26" width="140" height="12" rx="0" fill="#3b82f6"/>
+<text x="872" y="29" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Journal</text>
+<text x="814" y="62" font-size="12.5" fill="#1f2329" font-weight="400" text-anchor="start">date: 17/11</text>
+<text x="814" y="86" font-size="12.5" fill="#1f2329" font-weight="400" text-anchor="start">semaine: 47</text>
+</svg></div>
+
+- Un **type de note**, c'est une famille: un projet, une tâche, un contact, une sortie
+- **Identifier et organiser** l'information: on sait tout de suite ce qu'est une note
+- **Ajouter des métadonnées**, les informations propres au type: une date, un statut, une classe, un montant
+- **Savoir où tout se range**, et où tout se trouve
+- **Créer des bases de données**: la liste des sorties, les tâches en retard, les contacts
+- Au final: **mieux exploiter** l'information, vous et l'IA
+
+Note: À PASSER si le temps manque. L'idée: sans type, une note est juste un texte. Avec un type, elle a une forme connue (les mêmes informations pour toutes les sorties), une place connue, et on peut en faire des listes et des tableaux. Pour l'IA, c'est précieux: elle sait ce qu'elle va trouver dans une note, et où chercher. La slide suivante montre un exemple: une note de type "sortie".
+
+---
+## Une note, un type, un espace dédié
+<div class="chart"><svg viewBox="0 0 960 282" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: une note de type sortie, rangée dans son espace dédié, avec ses propriétés et ses liens">
 <rect x="40" y="12" width="150" height="44" rx="8" fill="#475363"/>
 <text x="115" y="36" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">Sorties</text>
-<text x="204" y="36" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">une seule place</text>
+<text x="204" y="36" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">un espace dédié</text>
 <rect x="40" y="44" width="430" height="226" rx="12" fill="#2b323c" stroke="rgba(255,255,255,0.45)" stroke-width="2"/>
 <text x="62" y="82" font-size="20" fill="#fff" font-weight="700" text-anchor="start">Sortie P4 au musée</text>
 <rect x="62" y="96" width="126" height="28" rx="14" fill="#e5007d"/>

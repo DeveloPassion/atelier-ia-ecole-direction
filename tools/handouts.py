@@ -244,8 +244,7 @@ STEPS = [
         "En bas à gauche, vérifiez votre nom et l'organisation de l'école: pas un compte personnel.",
     ]),
     ("L'extension Claude in Chrome, dans Edge ou dans Chrome", [
-        "L'extension s'installe dans Microsoft Edge ou dans Google Chrome: prenez votre navigateur de tous les jours. "
-        "Si elle ne répond pas dans Edge, essayez dans Chrome.",
+        "L'extension s'installe dans Microsoft Edge ou dans Google Chrome: prenez votre navigateur de tous les jours.",
         "Dans ce navigateur, allez sur claude.com/chrome et cliquez sur \"Ajouter à Chrome\". Si Edge le demande, autorisez d'abord les extensions d'autres magasins.",
         "Épinglez l'extension: l'icône en forme de pièce de puzzle, puis la punaise (Chrome) ou l'œil (Edge) à côté de Claude.",
         "Cliquez sur l'icône Claude et connectez-vous avec le même compte.",

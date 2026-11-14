@@ -95,7 +95,7 @@ Note: Lu le 13/11/2026 dans la documentation de Claude. Le nom du produit: "Clau
 1. Pour vous: la page **"Claude for Microsoft 365"** de la boutique de Microsoft, bouton **"Get it now"**. Dans Word: Accueil, Compléments, avec **le compte de l'école**
 2. Pour toute l'école: l'administrateur Microsoft 365 le déploie. Pour Outlook, il donne aussi **un accord, une seule fois**, pour la lecture des boîtes mail
 
-- Claude lit **le document ou le mail ouvert**, et ce contenu part chez Anthropic: pas de données d'élèves sans l'accord de l'école et du DPO (partie 8)
+- Claude lit **le document ou le mail ouvert**, et ce contenu part chez Anthropic
 - Un document reçu de l'extérieur peut cacher **des instructions pour l'IA**: relisez chaque modification avant de l'accepter
 - La durée de conservation réglée par l'école **ne s'applique pas** aux compléments
 

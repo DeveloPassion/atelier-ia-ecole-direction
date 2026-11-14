@@ -436,7 +436,7 @@ Note: À PASSER si le temps manque. L'idée: sans type, une note est juste un te
 Note: À PASSER si le temps manque. Lien avec la démo 3: on a rangé des fichiers existants par classe. Pour des documents, c'est très bien, et la plupart ne doivent plus bouger. Dans le système, chaque sortie est une note de type "sortie" avec "classe: P4". On n'a plus à choisir un dossier: la liste par classe, par mois ou "pas encore payé" se fait toute seule. Et l'IA sait où chercher et ce qu'elle va trouver.
 
 ---
-## Ce que l'IA lit d'abord
+## Exemple: une note de type projet
 **La note de projet**, en une page:
 
 <div class="chart"><svg viewBox="0 0 960 316" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: une note de projet en une page, avec cinq rubriques numérotées">

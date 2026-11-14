@@ -41,9 +41,10 @@ Pour obtenir de bons résultats, plus vite.
 - **Toujours le même dossier de travail**: votre base de connaissances
 - **Votre ton**: décrivez-le une fois, dans un fichier de votre base ("Mon profil d'écriture") ou dans une skill. Claude écrit alors comme vous, sans le redire
 - Gardez vos **meilleures demandes** dans un document, et réutilisez-les
-- Les tâches **répétitives et fréquentes** deviennent des **skills**: une façon de faire, écrite une fois. Utilisez **la skill de création de skills** (bonus 14)
+- **Documentez vos processus**: l'IA suit votre façon de faire (bonus 11)
+- Les tâches **répétitives et fréquentes** deviennent des **skills**, avec **la skill de création de skills** (bonus 14)
 - **Le modèle**: Sonnet pour le simple, Opus pour le gros travail
-- **Depuis le téléphone**: une conversation lancée sur le PC se continue sur le téléphone. Avec **Dispatch**, vous donnez même des ordres à Claude sur le PC, à distance (bonus 16, pas encore sur Entreprise)
+- **Depuis le téléphone**: continuez une conversation du PC. Avec **Dispatch**, donnez des ordres à Claude sur le PC (bonus 16, pas encore sur Entreprise)
 
 ---
 ## Ce qu'il faut éviter

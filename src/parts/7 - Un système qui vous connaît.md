@@ -524,28 +524,3 @@ Note: À PASSER si le temps manque.
 - Si demain un autre modèle est meilleur, ou européen, ou local, vous changez **sans rien perdre**
 
 Note: À PASSER si le temps manque.
-
----
-## Le chemin
-<div class="chart"><svg viewBox="0 0 960 208" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: cinq marches: la clarté, le système, l'habitude de noter, les projets et les tâches, puis le reste, une étape à la fois">
-<rect x="20" y="138" width="176" height="62" rx="10" fill="#e5007d"/>
-<text x="108" y="165" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">1 · La clarté</text>
-<text x="108" y="186" font-size="12.5" fill="#fff" font-weight="400" text-anchor="middle">rôle, priorités</text>
-<rect x="206" y="106" width="176" height="94" rx="10" fill="#475363" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
-<text x="294" y="133" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">2 · Le système</text>
-<text x="294" y="154" font-size="12.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">votre base, sauvegardée</text>
-<rect x="392" y="74" width="176" height="126" rx="10" fill="#475363" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
-<text x="480" y="101" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">3 · Noter</text>
-<text x="480" y="122" font-size="12.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">le journal du jour</text>
-<rect x="578" y="42" width="176" height="158" rx="10" fill="#475363" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
-<text x="666" y="69" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">4 · Projets</text>
-<text x="666" y="90" font-size="12.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">et tâches</text>
-<rect x="764" y="10" width="176" height="190" rx="10" fill="#475363" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
-<text x="852" y="37" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">5 · Le reste</text>
-<text x="852" y="58" font-size="12.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">une étape à la fois</text>
-</svg></div>
-
-- La fiche de contexte sert de **point de départ**
-- Les objectifs viennent d'en haut. Ce que vous notez chaque jour vient d'en bas. Les deux se rejoignent **pendant les revues**
-
-Note: ESSENTIEL. D'abord une carte du dossier OneDrive, sans rien déplacer. La nouvelle information entre dans le système, les anciens dossiers suivent quand on travaille dessus.

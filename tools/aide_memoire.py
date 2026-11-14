@@ -196,7 +196,7 @@ story = [
         b("<b>La mémoire de Claude: mon choix est de la couper.</b> Elle reste chez Anthropic, et elle ressort des choses là où on ne les attend pas."),
     ]),
     box("Sauvegardes", [
-        b("<b>Au moins deux copies</b> de la base, dont une hors du PC."),
+        b("<b>Au moins trois copies</b> de la base: une dans le cloud, une en lieu sûr."),
         b("La synchronisation <b>n'est pas une sauvegarde</b>: une suppression se synchronise aussi."),
         b("Une sauvegarde récente <b>avant</b> de laisser un agent travailler seul. Testez une restauration de temps en temps."),
     ]),

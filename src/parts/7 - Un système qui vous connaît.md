@@ -431,7 +431,6 @@ Note: À PASSER si le temps manque. L'idée: sans type, une note est juste un te
 </svg></div>
 
 - Le type dit **où la note est rangée** et **ce qu'elle contient**
-- La liste "toutes les sorties de P4" **se fait toute seule**: pas besoin d'un dossier par classe
 
 Note: À PASSER si le temps manque. Lien avec la démo 3: on a rangé des fichiers existants par classe. Pour des documents, c'est très bien, et la plupart ne doivent plus bouger. Dans le système, chaque sortie est une note de type "sortie" avec "classe: P4". On n'a plus à choisir un dossier: la liste par classe, par mois ou "pas encore payé" se fait toute seule. Et l'IA sait où chercher et ce qu'elle va trouver.
 

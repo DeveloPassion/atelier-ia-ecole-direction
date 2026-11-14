@@ -235,7 +235,7 @@ story = [
     ]),
     box("Gagner du temps chaque semaine", [
         b("Gardez vos <b>meilleures demandes</b> dans un document, et réutilisez-les."),
-        b("Pour une grosse tâche: <b>d'abord un plan</b>, validez-le, puis lancez le travail. Faites autre chose pendant qu'il travaille."),
+        b("Pour une grosse tâche: utilisez <b>le mode Plan</b>. Faites autre chose pendant qu'il travaille."),
         b("Commencez par les tâches <b>faciles à vérifier</b>: un tableau tiré d'un document, un résumé que vous pouvez relire."),
         b("Corrigez par <b>petites phrases</b> au lieu de tout réécrire. Si ça part mal: nouvelle conversation, avec une demande plus précise."),
         b("<b>Tâches planifiées</b> (« Planifiées »): une seule pour commencer, par exemple la revue du lundi à 7h. Relisez ses résultats."),

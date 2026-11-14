@@ -68,16 +68,16 @@ Note: À PASSER si le temps manque. Lu le 13/11/2026 dans le centre d'aide en fr
 ---
 ## Pour chacun: trois gestes de confidentialité
 1. **Pas de pouce**, ni levé ni baissé. Si une réponse est mauvaise, dites-le à Claude dans la conversation
-2. **Désactivez votre mémoire**: Paramètres > Votre Claude (partie 5)
+2. **Désactivez la mémoire de Claude**: Paramètres > Votre Claude (partie 5)
 3. **Supprimez** les conversations dont vous n'avez plus besoin. Une conversation supprimée quitte les systèmes d'Anthropic dans les 30 jours
 
-Ce qui doit durer est **dans votre base de connaissances**, pas dans une vieille conversation.
+Ce qui doit durer devrait être **dans votre base de connaissances**, pas dans une vieille conversation.
 
 Note: ESSENTIEL. Trois gestes simples, à faire dès aujourd'hui. Le premier ne dépend pas de l'admin: même si le réglage des pouces n'est pas encore coupé, on n'en donne pas.
 
 ---
 ## La triple menace
-Un agent devient dangereux quand il a **les trois en même temps**:
+Un agent devient dangereux quand il a **les trois éléments suivants en même temps**:
 
 1. Accès à des **données privées** (dossiers d'élèves, boîte mail)
 2. Contact avec du **contenu non fiable** (page web, mail reçu, PDF inconnu)

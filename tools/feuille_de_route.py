@@ -99,7 +99,7 @@ rows = [
     (-30, where(1, "Avant de commencer: les prérequis"), "<b>Prérequis</b> sur chaque PC (10 min), avec une liste imprimée",
      "Application Claude, Chrome et l'extension, le même compte de l'école. Le dossier « Fichiers de démo » sur le Bureau, hors OneDrive",
      q(["Bonjour, dis-moi en une phrase ce que tu peux faire.", "Résume cette page en trois points."]),
-     "À voir sur chaque PC: le nom de l'école en bas à gauche, le choix « Cowork », le modèle Opus 5.5, l'extension reliée à l'application, un dossier hors OneDrive qui s'ouvre comme dossier de travail. Si Cowork est coupé: démos de la partie 6 sur mon écran, et vraie tâche dans le chat"),
+     "À voir sur chaque PC: le nom de l'école en bas à gauche, le modèle Opus 5.5, l'extension reliée à l'application, un dossier hors OneDrive qui s'ouvre comme dossier de travail. Si Cowork est coupé: démos de la partie 6 sur mon écran, et vraie tâche dans le chat"),
     (0, where(1, "1. Le même Claude, deux réponses"), "<b>Exercice: le même Claude, deux réponses</b> (leur PC)",
      "Aucun fichier. Le texte « avec contexte » est sur la slide suivante (à copier tel quel)",
      q(["Écris un mot aux parents pour la sortie scolaire."]) + "<br/>puis le texte de la slide « Avec contexte »",

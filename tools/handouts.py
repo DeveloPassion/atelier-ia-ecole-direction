@@ -259,7 +259,7 @@ STEPS = [
     ("Un test de cinq minutes", [
         "Dans l'application Claude: \"Bonjour, dis-moi en une phrase ce que tu peux faire.\"",
         "Dans votre navigateur: ouvrez une page web, cliquez sur Claude et demandez \"Résume cette page en trois points.\"",
-        "Dans la zone de saisie de Claude: voyez-vous le choix \"Cowork\", et le modèle \"Opus 5.5\" dans la liste des modèles?",
+        "Dans la zone de saisie de Claude: voyez-vous le modèle \"Opus 5.5\" dans la liste des modèles?",
         "Le dossier \"Fichiers de démo\" s'ouvre-t-il depuis le Bureau?",
         "Si une de ces quatre choses ne marche pas, dites-le-moi par mail: on la règle avant l'atelier.",
     ]),

@@ -41,7 +41,7 @@ Note: Question probable. Dispatch (dans Cowork, application de bureau): une conv
 
 ---
 ## Le téléphone et vos données
-- **Le compte du collège**, pas un compte personnel, même sur le téléphone
+- **Le compte de l'école**, pas un compte personnel, même sur le téléphone
 - Un téléphone se perd: **code de verrouillage**, et pas de documents sensibles enregistrés dessus
 - **Pas de photo** d'un document avec des données d'élèves
 - Si le téléphone peut donner des ordres au PC, il peut aussi y **lire, déplacer ou supprimer** des fichiers: même prudence qu'au bureau

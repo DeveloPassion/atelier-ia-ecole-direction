@@ -203,12 +203,12 @@ Note: ESSENTIEL.
 Note: ESSENTIEL.
 ---
 ## La conversation grandit à chaque tour
-<div class="chart tall"><svg viewBox="0 0 960 346" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: à chaque tour, Claude relit tous les messages et toutes les réponses d'avant, et la conversation remplit la fenêtre">
+<div class="chart tall"><svg viewBox="0 0 960 346" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: à chaque tour, Claude relit tous les messages et toutes les réponses d'avant, et la conversation s'approche de sa limite">
 <line x1="150" y1="40" x2="940" y2="40" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="6 6"/>
 <text x="20" y="45" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">0 token</text>
 <line x1="150" y1="328" x2="940" y2="328" stroke="#fbbf24" stroke-width="2" stroke-dasharray="6 6"/>
 <text x="20" y="322" font-size="14" fill="#fbbf24" font-weight="700" text-anchor="start">La limite de</text>
-<text x="20" y="341" font-size="14" fill="#fbbf24" font-weight="700" text-anchor="start">la fenêtre</text>
+<text x="20" y="341" font-size="14" fill="#fbbf24" font-weight="700" text-anchor="start">la conversation</text>
 <text x="295" y="26" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">Tour 1</text>
 <rect x="208" y="50" width="174" height="42" rx="10" fill="rgba(255,255,255,0.07)"/>
 <text x="196" y="71.0" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="700" text-anchor="middle" transform="rotate(-90 196 71.0)">lu</text>
@@ -252,12 +252,12 @@ Note: ESSENTIEL.
 <polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(658,110)" fill="rgba(255,255,255,0.5)"/>
 </svg></div>
 
-À chaque tour, Claude **relit tout**, puis il écrit. La fenêtre se remplit, et chaque message **coûte plus** que le précédent.
+À chaque tour, Claude **relit tout**, puis il écrit. La conversation s'allonge, et chaque message **coûte plus** que le précédent.
 
-Note: ESSENTIEL. Montrer les trois colonnes de gauche à droite. Tour 1: il lit votre message, il écrit sa réponse. Tour 2: il relit le premier message et sa première réponse, plus le nouveau message. Tour 3: il relit tout, encore. Deux conséquences, qui reviennent dans toute la partie: la conversation finit par remplir la fenêtre (la ligne du bas), et chaque message coûte plus cher que le précédent.
+Note: ESSENTIEL. Montrer les trois colonnes de gauche à droite. Tour 1: il lit votre message, il écrit sa réponse. Tour 2: il relit le premier message et sa première réponse, plus le nouveau message. Tour 3: il relit tout, encore. Deux conséquences, qui reviennent dans toute la partie: la conversation finit par atteindre sa limite (la ligne du bas), et chaque message coûte plus cher que le précédent.
 ---
 ## Plus c'est long, moins c'est fiable
-- La fiabilité **baisse peu à peu** quand la conversation s'allonge, bien avant que la fenêtre soit pleine
+- La fiabilité **baisse peu à peu** quand la conversation s'allonge, bien avant qu'elle n'atteigne sa limite
 - Ce qui est **au milieu** d'un long contexte est moins bien utilisé que le début et la fin
 - **Plus n'est pas mieux**: chaque document ajouté rapporte un peu moins, et un document inutile peut faire baisser la qualité. Donnez **ce qui sert à la tâche**
 - Les signes: il **oublie une consigne**, il **se répète**, il **mélange les sujets**, il **invente davantage**. Alors: nouvelle conversation
@@ -365,7 +365,7 @@ Note: ESSENTIEL.
 
 <p class="doc"><b>Documentation:</b> <a href="https://support.claude.com/fr/articles/11817273">La recherche de chat et la mémoire de Claude</a></p>
 
-Note: ESSENTIEL. C'est ici qu'on parle de la mémoire, une seule fois. C'est mon choix, d'après mon expérience, et pas une règle d'Anthropic: le dire comme cela. Chemin lu le 13/11/2026 dans le centre d'aide; le nom exact de l'interrupteur est à vérifier sur leur PC. Sur Entreprise, un propriétaire de l'organisation peut couper la mémoire pour tout le monde: à proposer à l'admin du collège. Un projet Cowork, lui, reste sur le PC: ce n'est pas un projet Claude du chat (partie 6).
+Note: ESSENTIEL. C'est ici qu'on parle de la mémoire, une seule fois. C'est mon choix, d'après mon expérience, et pas une règle d'Anthropic: le dire comme cela. Chemin lu le 13/11/2026 dans le centre d'aide; le nom exact de l'interrupteur est à vérifier sur leur PC. Sur Entreprise, un propriétaire de l'organisation peut couper la mémoire pour tout le monde: à proposer à l'admin de l'école. Un projet Cowork, lui, reste sur le PC: ce n'est pas un projet Claude du chat (partie 6).
 ---
 ## Le niveau 5: votre base de connaissances
 - Une **source de contexte** facile d'accès, pour vous et pour l'IA
@@ -499,7 +499,7 @@ Note: À PASSER si le temps manque.
 ---
 ## Le coût, en bref
 - L'IA se paie en **tokens**: tout ce que Claude lit, plus tout ce qu'il écrit
-- Avec Claude Entreprise, le collège paie **un siège par personne, plus l'usage**
+- Avec Claude Entreprise, l'école paie **un siège par personne, plus l'usage**
 - **Voir sa consommation**: **Paramètres > Utilisation**. Regardez-la de temps en temps
 - Si une limite est atteinte, Claude s'arrête et le dit: **demander plus à l'admin**, ou attendre
 - Premier levier: **le bon modèle pour la tâche**. Opus coûte 2 fois plus que Sonnet, et Fable 4 fois plus

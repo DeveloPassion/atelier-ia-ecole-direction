@@ -35,10 +35,10 @@ Note: ESSENTIEL. Un seul pas, pour que ce soit fait. Remettre ici les documents:
 - **La réponse est fausse, ou à côté**: dites-le-lui en une phrase. Si ça ne s'arrange pas: **nouvelle conversation**, avec une demande plus courte et plus précise
 - **Il tourne en rond**: arrêtez-le. Demandez un prompt de passage, puis repartez dans une nouvelle conversation
 - **Il demande une permission que vous ne comprenez pas**: refusez, et demandez-lui d'expliquer
-- **Une limite est atteinte**, ou Claude est bloqué: c'est l'admin du collège qui peut agir
+- **Une limite est atteinte**, ou Claude est bloqué: c'est l'admin de l'école qui peut agir
 - **Un doute sur des données**: on ne met rien, et on demande au DPO
 
-Note: À PASSER si le temps manque. Dire qui est l'admin du collège, et qui est le DPO: ce sont les deux personnes à appeler.
+Note: À PASSER si le temps manque. Dire qui est l'admin de l'école, et qui est le DPO: ce sont les deux personnes à appeler.
 
 ---
 ## La fiche de contexte
@@ -46,10 +46,10 @@ Note: À PASSER si le temps manque. Dire qui est l'admin du collège, et qui est
 - Elle donne à l'IA **un petit point de départ**: qui vous êtes, ce que vous faites, comment vous travaillez. L'IA comprend mieux ce que vous lui demandez
 - Les réponses vont dans le fichier texte **"À propos de moi.txt"** (sur la page d'accueil du support, avec les mêmes questions): l'IA lit un fichier texte bien plus facilement qu'un PDF
 - Un exemple rempli, pour une direction fictive: **"À propos de moi (exemple).txt"**, sur la page d'accueil du support
-- Ce fichier sert aussi à initialiser votre base de connaissances, et le système de la phase 2
+- Ce fichier sert aussi à initialiser votre base de connaissances
 - Ensuite, c'est **la base** qui grandit: vos rôles, vos projets, vos personnes, vos processus
 
-Note: À PASSER si le temps manque. Documents: "Fiche de contexte pour l'IA.pdf" (les champs se remplissent, le PDF donne le lien du fichier texte) et "À propos de moi.txt" (les mêmes questions, à remplir dans le Bloc-notes). En phase 2, le builder d'AI Kit for Obsidian demande d'abord si la personne a écrit ses réponses, lit le fichier là où il est (.docx, .pdf, .txt), montre un résumé à confirmer, et ne pose que les questions qui restent. Le fichier doit être sur le PC: un lien OneDrive ne s'ouvre pas, il faut d'abord le télécharger.
+Note: À PASSER si le temps manque. Documents: "Fiche de contexte pour l'IA.pdf" (les champs se remplissent, le PDF donne le lien du fichier texte) et "À propos de moi.txt" (les mêmes questions, à remplir dans le Bloc-notes). Plus tard, avec AI Kit for Obsidian, le builder demande d'abord si la personne a écrit ses réponses, lit le fichier là où il est (.docx, .pdf, .txt), montre un résumé à confirmer, et ne pose que les questions qui restent. Le fichier doit être sur le PC: un lien OneDrive ne s'ouvre pas, il faut d'abord le télécharger.
 
 ---
 ## Pour continuer seuls
@@ -60,7 +60,7 @@ Note: À PASSER si le temps manque. Documents: "Fiche de contexte pour l'IA.pdf"
 
 Refaites aussi les démos: les demandes à copier sont sur les slides des parties 3 et 6. Et gardez **l'aide-mémoire** (PDF de deux pages, à imprimer) à côté de votre PC.
 
-Note: À PASSER si le temps manque. Pour le fichier "À propos de moi": l'application peut aussi lire seule un fichier d'instructions placé dans le dossier de travail. Le nom et le réglage dépendent de la version: à vérifier sur leur PC avant d'en parler. La phrase "Lis d'abord..." marche toujours. Dans Cowork, un projet peut aussi garder le dossier de la base et des instructions permanentes, sur le PC (documentation de Claude, lue le 13/11/2026): à essayer avant d'en parler. En phase 2, le système s'en occupe.
+Note: À PASSER si le temps manque. Pour le fichier "À propos de moi": l'application peut aussi lire seule un fichier d'instructions placé dans le dossier de travail. Le nom et le réglage dépendent de la version: à vérifier sur leur PC avant d'en parler. La phrase "Lis d'abord..." marche toujours. Dans Cowork, un projet peut aussi garder le dossier de la base et des instructions permanentes, sur le PC (documentation de Claude, lue le 13/11/2026): à essayer avant d'en parler. Un système complet s'en occupe.
 
 ---
 ## Les mots à connaître
@@ -75,13 +75,13 @@ Note: À PASSER si le temps manque. Pour le fichier "À propos de moi": l'applic
 | **Connecteur** | Un accès de Claude à un de vos outils (agenda, mails, documents) |
 | **Base de connaissances** | Votre dossier de fichiers texte, pour vous et pour l'IA |
 | **Prompt de passage** | Un résumé, pour continuer dans une nouvelle conversation |
-| **Phase 2** | La suite: votre système personnel, construit ensemble |
+| **Souverain** | Vos fichiers sont chez vous: vous pouvez changer d'IA ou de fournisseur |
 
 Note: À PASSER si le temps manque. La liste complète est sur l'aide-mémoire.
 
 ---
 ## Et après?
-- **La phase 2**: je construis avec chacun de vous son système personnel. Vos réponses aux trois questions d'avant l'atelier servent de point de départ: votre tâche la plus répétitive, ce que vous avez déjà essayé, ce qui vous freine
+- **Gardez vos fichiers chez vous**: une base de connaissances en fichiers texte, c'est votre liberté. Vous pouvez changer d'IA ou de fournisseur sans tout refaire
 - **Une deuxième séance** est possible: pratique guidée, les questions notées aujourd'hui, les skills de l'école, les connecteurs Microsoft 365
 - Ce qui vous a manqué aujourd'hui: dites-le-moi, par mail
 

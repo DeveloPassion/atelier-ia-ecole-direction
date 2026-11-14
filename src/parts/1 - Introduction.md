@@ -7,7 +7,7 @@
 - Ce support se relit seul, après la séance
 - Les personnes et les documents de démo sont fictifs: ce support sert à apprendre
 
-Note: Se présenter en une phrase. Dire que le support est fait pour continuer seuls: chaque slide porte une idée complète, et la fin dit quoi faire dès demain. Ce qu'on ne voit pas aujourd'hui passe en séance 2.
+Note: Se présenter en une phrase. Dire que le support est fait pour continuer seuls: chaque slide porte une idée complète, et la fin dit quoi faire dès demain. Ce qu'on ne voit pas aujourd'hui se relit seul.
 
 ---
 ## Trois objectifs pour aujourd'hui
@@ -40,18 +40,18 @@ Note: À PASSER si le temps manque. Timing visé (début à 10h): 0:08 fin de la
 - Pendant l'atelier: **aucune donnée d'élève**, aucune donnée sensible
 - **N'hésitez pas à m'interrompre**
 
-Note: ESSENTIEL. Dire la règle sur les données maintenant, avant la première démo. Le détail (l'accord du collège et du DPO, le compte Claude du collège) est en partie 8. Poser une feuille sur la table pour noter les questions à reprendre à la fin, ou par la suite (par mail ou en séance 2). Vérifier que chacun a ouvert l'application Claude et le dossier "Fichiers de démo".
+Note: ESSENTIEL. Dire la règle sur les données maintenant, avant la première démo. Le détail (l'accord de l'école et du DPO, le compte Claude de l'école) est en partie 8. Poser une feuille sur la table pour noter les questions à reprendre à la fin, ou par la suite (par mail, ou dans une deuxième séance). Vérifier que chacun a ouvert l'application Claude et le dossier "Fichiers de démo".
 
 ---
 ## Avant de commencer: les prérequis
-1. **L'application Claude** est ouverte. En bas à gauche, vous voyez **le nom du collège**: c'est le bon compte
+1. **L'application Claude** est ouverte. En bas à gauche, vous voyez **le nom de l'école**: c'est le bon compte
 2. **Microsoft Edge** (ou Google Chrome) est ouvert, avec l'extension **Claude in Chrome** connectée au même compte
 3. Le dossier **"Fichiers de démo"** est sur votre Bureau, **hors OneDrive**: pour l'atelier, il nous faut des fichiers qui sont vraiment sur le PC
 4. Modèle sélectionné: **Opus 5.5**
 
 Note: À PASSER si le temps manque. VÉRIFICATION DES PRÉREQUIS (10 minutes avant le début, ou la veille par mail).
-Claude Desktop: 1) Aller sur [claude.ai/download](https://claude.ai/download) et choisir Windows (ou Mac). 2) Lancer l'installateur. 3) Ouvrir Claude, cliquer sur "Se connecter", et choisir la connexion du collège (connexion unique si l'admin l'a activée, sinon l'adresse mail du collège). 4) En bas à gauche, vérifier le nom et l'organisation du collège: pas un compte personnel.
-Claude in Chrome: on part du principe que le collège utilise Microsoft Edge. L'extension s'installe dans Edge ou dans Google Chrome. Deux sources, lues le 14/11/2026, ne disent pas la même chose. La documentation de Claude Code: l'intégration marche avec Google Chrome et Microsoft Edge. Le centre d'aide ("Getting started with Claude in Chrome"): l'extension n'est pas prise en charge dans les autres navigateurs Chromium. Donc tester dans Edge avant la séance, y compris depuis l'application Claude (Cowork). Plan B si elle ne répond pas dans Edge: Google Chrome ([google.com/chrome](https://www.google.com/chrome/)). 1) Dans Edge ou Chrome, aller sur [claude.com/chrome](https://claude.com/chrome) et cliquer sur "Ajouter à Chrome" (Chrome Web Store). Si Edge le demande, autoriser d'abord les extensions d'autres magasins. 2) Épingler l'extension: icône en forme de pièce de puzzle, puis la punaise (Chrome) ou l'œil (Edge) à côté de Claude. 3) Cliquer sur l'icône Claude et se connecter avec le même compte. 4) Accepter les permissions demandées. Si l'extension est bloquée, l'admin doit l'activer pour l'organisation.
+Claude Desktop: 1) Aller sur [claude.ai/download](https://claude.ai/download) et choisir Windows (ou Mac). 2) Lancer l'installateur. 3) Ouvrir Claude, cliquer sur "Se connecter", et choisir la connexion de l'école (connexion unique si l'admin l'a activée, sinon l'adresse mail de l'école). 4) En bas à gauche, vérifier le nom et l'organisation de l'école: pas un compte personnel.
+Claude in Chrome: on part du principe que l'école utilise Microsoft Edge. L'extension s'installe dans Edge ou dans Google Chrome. Deux sources, lues le 14/11/2026, ne disent pas la même chose. La documentation de Claude Code: l'intégration marche avec Google Chrome et Microsoft Edge. Le centre d'aide ("Getting started with Claude in Chrome"): l'extension n'est pas prise en charge dans les autres navigateurs Chromium. Donc tester dans Edge avant la séance, y compris depuis l'application Claude (Cowork). Plan B si elle ne répond pas dans Edge: Google Chrome ([google.com/chrome](https://www.google.com/chrome/)). 1) Dans Edge ou Chrome, aller sur [claude.com/chrome](https://claude.com/chrome) et cliquer sur "Ajouter à Chrome" (Chrome Web Store). Si Edge le demande, autoriser d'abord les extensions d'autres magasins. 2) Épingler l'extension: icône en forme de pièce de puzzle, puis la punaise (Chrome) ou l'œil (Edge) à côté de Claude. 3) Cliquer sur l'icône Claude et se connecter avec le même compte. 4) Accepter les permissions demandées. Si l'extension est bloquée, l'admin doit l'activer pour l'organisation.
 Test rapide: dans l'application, "Bonjour, dis-moi en une phrase ce que tu peux faire". Dans le navigateur, ouvrir une page web et demander "Résume cette page en trois points".
 Si un PC bloque l'installation: travailler à deux sur un PC, ou utiliser [claude.ai](https://claude.ai) dans le navigateur (sans les démos sur un dossier). À vérifier en plus sur chaque PC, avec une liste imprimée: Cowork n'est pas coupé par l'admin, Opus 5.5 est permis, l'extension est bien reliée à l'application, et un dossier hors OneDrive s'ouvre comme dossier de travail. Si Cowork est coupé: faire les démos de la partie 6 sur mon écran, et leur vraie tâche dans le chat, avec des fichiers joints.
 

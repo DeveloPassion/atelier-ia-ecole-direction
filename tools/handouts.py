@@ -187,8 +187,8 @@ def fiche(path):
 
 # ---------- Règles d'usage ----------
 RULES = [
-    ("Les outils autorisés", "Claude Entreprise, avec le compte du collège. Pas de compte personnel ni d'outil gratuit pour des documents de l'école."),
-    ("Les données interdites sans accord", "Les données de santé des élèves (bilans logo, rapports médicaux), les dossiers DACCE, les données des parents. Ces données restent hors de portée de l'IA tant que le collège n'a pas validé."),
+    ("Les outils autorisés", "Claude Entreprise, avec le compte de l'école. Pas de compte personnel ni d'outil gratuit pour des documents de l'école."),
+    ("Les données interdites sans accord", "Les données de santé des élèves (bilans logo, rapports médicaux), les dossiers DACCE, les données des parents. Ces données restent hors de portée de l'IA tant que l'école n'a pas validé."),
     ("Ce que l'IA ne fait jamais seule", "Envoyer un message, supprimer un fichier, décider pour un élève. L'IA prépare et résume, une personne décide. Évaluer des élèves peut être un usage à haut risque au sens de l'AI Act."),
     ("Toujours vérifier", "Les faits, les chiffres, les dates et les sources se vérifient dans le document d'origine avant tout usage. La personne qui signe reste responsable."),
     ("Un registre simple", "Pour chaque usage régulier: quel outil, pour quoi faire, quelles données. Une page partagée suffit."),
@@ -211,7 +211,7 @@ def regles(path):
     c = canvas.Canvas(path, pagesize=A4)
     c.setTitle("Projet de règles d'usage de l'IA")
     c.setAuthor("Sébastien Dubois")
-    header(c, "Projet de règles d'usage de l'IA", "Formation IA, Collège de Bonne-Espérance. Un point de départ, à compléter par le collège.")
+    header(c, "Projet de règles d'usage de l'IA", "Formation IA, Collège de Bonne-Espérance. Un point de départ, à compléter par l'école.")
     y = H - 108
     for k, (t, d) in enumerate(RULES, 1):
         c.setFillColor(ORANGE); c.setFont(BOLD, 12); c.drawString(M, y, f"{k}.")
@@ -219,7 +219,7 @@ def regles(path):
         y = para(c, d, M + 20, y2 - 1, W - 2 * M - 20, REG, 9.5) - 9
     y -= 4
     c.setStrokeColor(NAVY); c.setLineWidth(1); c.line(M, y + 6, W - M, y + 6)
-    y = para(c, "À compléter par le collège, pour éviter les problèmes d'audit", M, y - 10, W - 2 * M, BOLD, 11, NAVY) - 2
+    y = para(c, "À compléter par l'école, pour éviter les problèmes d'audit", M, y - 10, W - 2 * M, BOLD, 11, NAVY) - 2
     for t in TODO:
         y = para(c, "•  " + t, M + 6, y, W - 2 * M - 6, REG, 9.5) - 2
     y = para(c, "Ce document n'est pas un avis juridique. Il sert de base de discussion avec le pouvoir organisateur et le DPO.",
@@ -240,8 +240,8 @@ STEPS = [
     ("L'application Claude (Claude Desktop)", [
         "Allez sur claude.ai/download et choisissez Windows (ou Mac).",
         "Lancez l'installateur, puis ouvrez Claude.",
-        "Cliquez sur \"Se connecter\" et utilisez votre compte Claude Entreprise du collège.",
-        "En bas à gauche, vérifiez votre nom et l'organisation du collège: pas un compte personnel.",
+        "Cliquez sur \"Se connecter\" et utilisez votre compte Claude Entreprise de l'école.",
+        "En bas à gauche, vérifiez votre nom et l'organisation de l'école: pas un compte personnel.",
     ]),
     ("L'extension Claude in Chrome, dans Edge ou dans Chrome", [
         "L'extension s'installe dans Microsoft Edge ou dans Google Chrome: prenez votre navigateur de tous les jours. "
@@ -275,7 +275,7 @@ def prerequis(path):
     c = canvas.Canvas(path, pagesize=A4)
     c.setTitle("Avant l'atelier IA du mardi 17 novembre")
     c.setAuthor("Sébastien Dubois")
-    header(c, "Avant l'atelier IA", "Mardi 17 novembre 2026 à 10h, au collège. Environ 15 minutes de préparation.")
+    header(c, "Avant l'atelier IA", "Mardi 17 novembre 2026 à 10h, à l'école. Environ 15 minutes de préparation.")
     y = H - 108
     y = para(c, "Merci de faire ces étapes avant mardi. Si quelque chose bloque, ce n'est pas grave: on le règle ensemble "
              "juste avant le début.", M, y, W - 2 * M, REG, 10.5, HexColor("#222222")) - 8

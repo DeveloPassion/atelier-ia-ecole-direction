@@ -209,14 +209,14 @@ story = [
     ]),
     box("Prudence: les données de l'école", [
         b("<b>Jamais d'outil gratuit ou personnel</b> (ChatGPT, Gemini, Claude gratuit) pour un document de l'école: aucun contrat, et les données peuvent servir à entraîner les modèles. C'est une fuite de données (RGPD)."),
-        b("Seulement <b>le compte Claude du collège</b>. Vérifiez le nom de l'organisation en bas à gauche de l'application."),
+        b("Seulement <b>le compte Claude de l'école</b>. Vérifiez le nom de l'organisation en bas à gauche de l'application."),
         b("<b>Interdit sans accord</b>: la santé des élèves, les dossiers DACCE, les données des parents. Le DPO du pouvoir organisateur valide les usages avec des données personnelles."),
         b("<b>Les biais</b>: les réponses reflètent les préjugés des textes d'entraînement. Prudence avec tout ce qui juge une personne (un élève, un candidat)."),
     ]),
     box("Vos données chez le fournisseur", [
         b("Chez Anthropic, les données sont <b>stockées aux États-Unis</b>; pas d'option Europe dans l'abonnement Entreprise, selon sa documentation."),
         b("Le <b>DPA</b> (accord de traitement des données, RGPD) encadre ce que le fournisseur fait des données. Le <b>ZDR</b> (zéro conservation) existe pour certains usages, pas avec Fable."),
-        b("Le collège reste <b>responsable</b> (RGPD). L'<b>AI Act</b> demande de développer la culture IA du personnel, et encadre les usages à haut risque."),
+        b("L'école reste <b>responsable</b> (RGPD). L'<b>AI Act</b> demande de développer la culture IA du personnel, et encadre les usages à haut risque."),
         b("Un <b>pouce levé ou baissé</b> envoie toute la conversation, gardée 5 ans: n'en donnez pas. L'admin peut les couper."),
     ]),
     box("Prudence: les agents", [
@@ -266,7 +266,7 @@ story = [
         q("Voici une photo de ma page de notes. Fais-en un tableau, et signale ce que tu ne lis pas."),
     ]),
     box("Les réglages à faire une fois", [
-        b("Vérifier que l'application est connectée au <b>compte du collège</b> (nom de l'organisation en bas à gauche)."),
+        b("Vérifier que l'application est connectée au <b>compte de l'école</b> (nom de l'organisation en bas à gauche)."),
         b("<b>Désactiver la mémoire</b> de Claude: Paramètres &gt; Votre Claude."),
         b("Créer le dossier de <b>votre base de connaissances</b>, et le choisir comme <b>dossier de travail</b>. Mettre en place sa <b>sauvegarde</b>."),
         b("Décrire <b>votre ton</b>, une fois, dans votre base."),
@@ -289,7 +289,7 @@ story = [
     ]),
     box("Quand ne pas utiliser l'IA", [
         b("Pour <b>décider à la place</b> d'une personne au sujet d'un élève, d'un parent ou d'un membre de l'équipe."),
-        b("Avec des <b>données sensibles</b> sans accord du collège et du DPO."),
+        b("Avec des <b>données sensibles</b> sans accord de l'école et du DPO."),
         b("Quand vous <b>ne pouvez pas vérifier</b> le résultat et qu'il engage l'école."),
         b("Quand un échange humain compte plus qu'un texte bien écrit."),
     ]),

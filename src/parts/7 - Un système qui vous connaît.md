@@ -5,13 +5,13 @@
 Et qui vous appartient.
 
 ---
-## Ce que vous faites seuls, et ce qu'on construit ensemble
-- **Seuls, dès cette semaine**: un dossier, quelques fichiers texte, et le journal du jour. Rien à installer
-- **Ensemble, en phase 2**: un système complet, construit pour chacun de vous, avec ses projets, ses tâches et ses recettes
+## Un système à vous, avec des fichiers à vous
+- **Dès cette semaine**: un dossier, quelques fichiers texte, et le journal du jour. Rien à installer
+- **Des fichiers locaux, à vous**: c'est votre liberté. Vous pouvez changer d'IA ou de fournisseur sans rien perdre
 - Cette partie montre **où on va**. Les démos se font sur mon écran, avec une direction fictive
 - Deux mots nouveaux: une **note** est un fichier texte. **Obsidian** est une application qui sert à lire et à écrire ces notes
 
-Note: ESSENTIEL. La phase 2: après cet atelier, je construis avec chaque personne son système personnel, à son rythme. Le système de démo est fait avec AI Kit for Obsidian, mon kit pour Obsidian: le dire une fois, sans insister. Le message: ce qu'ils peuvent faire seuls est simple, et le reste se fait avec moi.
+Note: ESSENTIEL. Le système de démo est fait avec AI Kit for Obsidian, mon kit pour Obsidian: le dire une fois, sans insister. Le message: ce qu'ils peuvent faire seuls est simple, et des fichiers locaux gardent leur liberté (changer d'IA, changer de fournisseur). Le système personnel de chacun est hors du cours: à dire à l'oral, si besoin.
 
 ---
 ## Le constat
@@ -40,7 +40,7 @@ Le plus simple pour commencer: **une seule note par jour**.
 - Pour l'IA, c'est **une mine d'or**: "Qu'est-ce que j'ai promis cette semaine?"{copy}, "Qu'est-ce qui est resté en suspens?"{copy}
 - Dans vos notes comme ailleurs: **pas de nom d'élève, pas de santé, pas de dossier**. Une tâche, une classe, une date, un montant: oui
 
-Note: ESSENTIEL. Dans la démo Saint-Exemple, montrer la note du jour du 09/11. Avant la phase 2: un dossier "Journal" dans votre base de connaissances, avec un fichier texte par jour (2026-11-17.md). La règle sur les données vaut aussi pour la base: une note sur un parent ou sur un collègue est une donnée personnelle. Tant que le collège et le DPO n'ont pas validé, écrire "un parent de P4" plutôt qu'un nom.
+Note: ESSENTIEL. Dans la démo Saint-Exemple, montrer la note du jour du 09/11. Pour commencer: un dossier "Journal" dans votre base de connaissances, avec un fichier texte par jour (2026-11-17.md). La règle sur les données vaut aussi pour la base: une note sur un parent ou sur un collègue est une donnée personnelle. Tant que l'école et le DPO n'ont pas validé, écrire "un parent de P4" plutôt qu'un nom.
 
 ---
 ## Deux couches
@@ -266,7 +266,7 @@ Note: À PASSER si le temps manque. DÉMO SKILL (5 min), à l'écran, Claude ouv
 
 ---
 ## Avec votre système, une phrase suffit
-- Le système de la phase 2 **connaît déjà la spécification** et l'endroit où ranger vos skills
+- Un système comme celui de la démo **connaît déjà la spécification** et l'endroit où ranger vos skills
 - Vous dites simplement: **"Crée-moi une skill pour..."**
 - Ou, après une conversation réussie: **"skillify"**. Il transforme ce que vous venez de faire en skill
 - Vos recettes s'accumulent dans **votre base de connaissances**: elles vous appartiennent
@@ -304,7 +304,5 @@ Note: À PASSER si le temps manque.
 5. Le reste, une étape à la fois
 
 Les objectifs viennent d'en haut. Ce que vous notez chaque jour vient d'en bas. Les deux se rejoignent pendant les revues.
-
-La phase 2: un système de base pour chacun, construit ensemble, à ce rythme.
 
 Note: ESSENTIEL. D'abord une carte du dossier OneDrive, sans rien déplacer. La nouvelle information entre dans le système, les anciens dossiers suivent quand on travaille dessus.

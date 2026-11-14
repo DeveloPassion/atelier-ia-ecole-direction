@@ -23,7 +23,7 @@ flowchart LR
 - **Chercher**: "Retrouve le dernier mail de l'inspection sur le CEB"{copy}
 - **Agir**: créer un rendez-vous, préparer un brouillon de mail, ajouter une ligne dans un tableau
 - Exemples pour l'école: Microsoft 365 (Outlook, OneDrive, Teams), Google Drive, un agenda
-- Attention: une boîte mail ou un dossier partagé contient des données d'élèves et de parents. **Pas de connecteur dessus avant l'accord du collège et du DPO**
+- Attention: une boîte mail ou un dossier partagé contient des données d'élèves et de parents. **Pas de connecteur dessus avant l'accord de l'école et du DPO**
 
 ---
 ## Les connecteurs utiles pour une école
@@ -42,16 +42,16 @@ Note: Lu le 13/11/2026 dans la documentation de Claude. Google Drive: le connect
 
 ---
 ## Ajouter un connecteur
-1. D'abord **l'admin**: il ajoute le connecteur pour le collège. Tant que ce n'est pas fait, vous voyez un bouton pour **le demander**, à la place du bouton de connexion
+1. D'abord **l'admin**: il ajoute le connecteur pour l'école. Tant que ce n'est pas fait, vous voyez un bouton pour **le demander**, à la place du bouton de connexion
 2. Vous: **Personnaliser > Connecteurs**. Parcourez l'annuaire, et choisissez le service (par exemple Microsoft 365 ou Google Drive)
-3. Cliquez sur **"Connecter"**, et connectez-vous au service avec **votre compte du collège**
+3. Cliquez sur **"Connecter"**, et connectez-vous au service avec **votre compte de l'école**
 4. Lisez **les autorisations demandées**: lecture seule, ou aussi écriture et envoi?
 5. Dans une conversation: **"+"**, puis **"Connecteurs"**, et activez le service pour cette conversation
 6. Testez sur une demande simple: "Quels sont mes rendez-vous demain?"{copy}
 
 Documentation: [Utiliser les connecteurs](https://support.claude.com/fr/articles/11176164) · [Configurer le connecteur Microsoft 365](https://support.claude.com/fr/articles/12542951) · [Get started with connectors (en anglais)](https://claude.com/docs/connectors/getting-started)
 
-Note: Étapes lues le 13/11/2026 dans le centre d'aide en français et dans la documentation de Claude en anglais: à vérifier sur leur PC avant la séance 2. Dans la version en anglais: "Customize > Connectors", l'onglet "Discover" pour l'annuaire, le bouton "Connect to Claude", et "Request" quand le connecteur n'est pas encore ajouté pour l'organisation. Quand la connexion a réussi, le connecteur est dans "Your connectors", avec l'état "Connected". Côté admin (propriétaire de l'organisation): "Paramètres de l'organisation > Connecteurs", choisir le service, et "Ajouter à votre équipe". Pour Microsoft 365, un administrateur général du collège (Microsoft Entra) doit aussi donner son accord une fois. Ajouter un connecteur pour le collège ne donne pas l'accès: chaque personne se connecte elle-même, avec son compte.
+Note: Étapes lues le 13/11/2026 dans le centre d'aide en français et dans la documentation de Claude en anglais: à vérifier sur leur PC avant d'en parler. Dans la version en anglais: "Customize > Connectors", l'onglet "Discover" pour l'annuaire, le bouton "Connect to Claude", et "Request" quand le connecteur n'est pas encore ajouté pour l'organisation. Quand la connexion a réussi, le connecteur est dans "Your connectors", avec l'état "Connected". Côté admin (propriétaire de l'organisation): "Paramètres de l'organisation > Connecteurs", choisir le service, et "Ajouter à votre équipe". Pour Microsoft 365, un administrateur général de l'école (Microsoft Entra) doit aussi donner son accord une fois. Ajouter un connecteur pour l'école ne donne pas l'accès: chaque personne se connecte elle-même, avec son compte.
 
 ---
 ## Garder la main sur un connecteur
@@ -92,13 +92,13 @@ Note: Lu le 13/11/2026 dans la documentation de Claude. Le nom du produit: "Clau
 
 ---
 ## Claude dans Office: l'obtenir, et rester prudent
-1. Pour vous: la page **"Claude for Microsoft 365"** de la boutique de Microsoft, bouton **"Get it now"**. Dans Word: Accueil, Compléments, avec **le compte du collège**
-2. Pour tout le collège: l'administrateur Microsoft 365 le déploie. Pour Outlook, il donne aussi **un accord, une seule fois**, pour la lecture des boîtes mail
+1. Pour vous: la page **"Claude for Microsoft 365"** de la boutique de Microsoft, bouton **"Get it now"**. Dans Word: Accueil, Compléments, avec **le compte de l'école**
+2. Pour toute l'école: l'administrateur Microsoft 365 le déploie. Pour Outlook, il donne aussi **un accord, une seule fois**, pour la lecture des boîtes mail
 
-- Claude lit **le document ou le mail ouvert**, et ce contenu part chez Anthropic: pas de données d'élèves sans l'accord du collège et du DPO (partie 8)
+- Claude lit **le document ou le mail ouvert**, et ce contenu part chez Anthropic: pas de données d'élèves sans l'accord de l'école et du DPO (partie 8)
 - Un document reçu de l'extérieur peut cacher **des instructions pour l'IA**: relisez chaque modification avant de l'accepter
-- La durée de conservation réglée par le collège **ne s'applique pas** aux compléments
+- La durée de conservation réglée par l'école **ne s'applique pas** aux compléments
 
 Documentation: [Claude for Word (en anglais)](https://claude.com/docs/office-agents/word) · [Claude for Outlook (en anglais)](https://claude.com/docs/office-agents/outlook)
 
-Note: Lu le 13/11/2026. Versions: Word sur le web, Word pour Windows avec un abonnement Microsoft 365 (version 2205 ou plus récente), Word pour Mac (16.61 ou plus récente). Pas Word 2016 ou 2019, ni iPad, ni Android. Outlook: seulement une boîte Exchange Online (Microsoft 365), et pas les boîtes partagées. Côté administrateur: centre d'administration Microsoft 365, "Settings", "Integrated apps", chercher "Claude for Microsoft 365". Pour Outlook, l'accord est un consentement Microsoft Graph, donné par un administrateur général. L'usage compte sur le même compte Claude, avec les mêmes limites. Les données: supprimées chez Anthropic dans les 30 jours; le complément ne reprend pas les réglages de conservation particuliers de l'organisation. Problème connu: après les mises à jour de Microsoft 365 de septembre et d'octobre 2026 sur Windows, certaines personnes ne voient plus leur historique dans le complément. Lu le 14/11/2026 (pages "Claude for Excel" et "Data storage and retention"): Anthropic supprime sa copie des données dans les 30 jours, quel que soit le réglage du collège. L'historique des conversations des compléments est gardé sur le PC, dans le stockage du navigateur intégré à Office (les 50 dernières conversations par application), sans synchronisation ni sauvegarde. Pour Excel, la documentation ajoute que l'activité n'apparaît pas dans les journaux d'audit de l'abonnement Entreprise.
+Note: Lu le 13/11/2026. Versions: Word sur le web, Word pour Windows avec un abonnement Microsoft 365 (version 2205 ou plus récente), Word pour Mac (16.61 ou plus récente). Pas Word 2016 ou 2019, ni iPad, ni Android. Outlook: seulement une boîte Exchange Online (Microsoft 365), et pas les boîtes partagées. Côté administrateur: centre d'administration Microsoft 365, "Settings", "Integrated apps", chercher "Claude for Microsoft 365". Pour Outlook, l'accord est un consentement Microsoft Graph, donné par un administrateur général. L'usage compte sur le même compte Claude, avec les mêmes limites. Les données: supprimées chez Anthropic dans les 30 jours; le complément ne reprend pas les réglages de conservation particuliers de l'organisation. Problème connu: après les mises à jour de Microsoft 365 de septembre et d'octobre 2026 sur Windows, certaines personnes ne voient plus leur historique dans le complément. Lu le 14/11/2026 (pages "Claude for Excel" et "Data storage and retention"): Anthropic supprime sa copie des données dans les 30 jours, quel que soit le réglage de l'école. L'historique des conversations des compléments est gardé sur le PC, dans le stockage du navigateur intégré à Office (les 50 dernières conversations par application), sans synchronisation ni sauvegarde. Pour Excel, la documentation ajoute que l'activité n'apparaît pas dans les journaux d'audit de l'abonnement Entreprise.

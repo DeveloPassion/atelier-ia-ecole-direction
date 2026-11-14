@@ -5,7 +5,7 @@
 L'IA est un outil puissant. Quelques règles évitent les vrais problèmes.
 
 ---
-## Jamais d'outil gratuit pour les données de l'école
+## Jamais d'outil IA gratuit pour les données de l'école
 - Les versions gratuites ou personnelles (ChatGPT, Gemini, Claude...) n'ont **aucun contrat** de protection des données avec l'école
 - Ce que vous y collez peut être gardé, relu, ou servir à **entraîner** les modèles
 - Un nom d'élève, un bilan, un mail de parent dans un outil gratuit: c'est une **fuite de données** (RGPD)

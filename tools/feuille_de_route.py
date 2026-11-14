@@ -124,7 +124,7 @@ rows = [
      "", "Comparer les deux autres tableaux de la circulaire avec ceux qui le veulent"),
     (55, where(6, "Cowork: quand Claude fait le travail"), "<b>Cowork, les permissions, le dossier de travail</b> (leur PC, 5 min)",
      "Chacun crée un dossier « Base IA » et le choisit comme dossier de travail",
-     "", "Bouton « Choose folder », sous la zone de saisie, puis « Open folder... » (dessin sur la slide « Votre dossier de travail »). Réglage « Manuel »"),
+     "", "Bouton « Choisir un dossier » (en anglais: « Choose folder »), sous la zone de saisie, puis « Ouvrir un dossier... » (« Open folder... ») (dessin sur la slide « Votre dossier de travail »). Réglage « Manuel »"),
     (60, where(6, "Démo 2: créer des fichiers"), "<b>Démo 2: créer des fichiers</b> (leur PC, 8 min)",
      FD + "Notes réunion équipe 2026-11-03 (brut).docx<br/>" + FD + "Sorties pédagogiques 2026-2027 (liste).docx",
      q(quoted(6, "Démo 2: les demandes à copier")) + "<br/>(slide suivante, bouton « Copier »)",

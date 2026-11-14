@@ -5,16 +5,6 @@
 Et qui vous appartient.
 
 ---
-## Un système à vous, avec des fichiers à vous
-- **Des fichiers locaux, à vous**: c'est votre liberté. Vous pouvez changer d'IA ou de fournisseur sans rien perdre
-- Dans cette partie, je vous montre **ce qui est possible**
-- Deux mots nouveaux: une **note** est un fichier texte. **Obsidian** est une application qui sert à lire et à écrire ces notes
-
-Documentation: [Le site d'Obsidian (en anglais)](https://obsidian.md)
-
-Note: ESSENTIEL. Le système de démo est fait avec AI Kit for Obsidian, mon kit pour Obsidian: le dire une fois, sans insister. Le message: ce qu'ils peuvent faire seuls est simple, et des fichiers locaux gardent leur liberté (changer d'IA, changer de fournisseur). Le système personnel de chacun est hors du cours: à dire à l'oral, si besoin.
-
----
 ## Ce qui cloche dans toutes ces démos
 - La limite n'est plus l'IA
 - La limite, c'est **ce qu'elle sait de vous**
@@ -22,6 +12,17 @@ Note: ESSENTIEL. Le système de démo est fait avec AI Kit for Obsidian, mon kit
 - Chaque conversation **repart de zéro**, ou presque
 
 Note: ESSENTIEL.
+
+---
+## Un système à vous, avec des fichiers à vous
+- La solution: **construire votre base de connaissances**, avec ce que l'IA doit savoir de vous et de votre travail
+- **Des fichiers locaux, à vous**: c'est votre liberté. Vous pouvez changer d'IA ou de fournisseur sans rien perdre
+- Dans cette partie, je vous montre **ce qui est possible**
+- Deux mots nouveaux: une **note** est un fichier texte. **Obsidian** est une application qui sert à lire et à écrire ces notes
+
+Documentation: [Le site d'Obsidian (en anglais)](https://obsidian.md)
+
+Note: ESSENTIEL. Le système de démo est fait avec AI Kit for Obsidian, mon kit pour Obsidian: le dire une fois, sans insister. Le message: ce qu'ils peuvent faire seuls est simple, et des fichiers locaux gardent leur liberté (changer d'IA, changer de fournisseur). Le système personnel de chacun est hors du cours: à dire à l'oral, si besoin.
 
 ---
 ## Décharger son cerveau

@@ -73,7 +73,7 @@ Note: Dans la version en anglais: "Allow once" et "Always allow" au moment de l'
 ## Connecteur, navigateur ou ordinateur?
 1. **Le connecteur**: le plus rapide et le plus fiable. Le premier choix quand il existe
 2. **Le navigateur** (Claude in Chrome): pour les sites sans connecteur
-3. **L'ordinateur**: Claude clique à votre place. Le dernier recours: plus lent, à surveiller, et pas encore sur Team ni Entreprise (partie 6)
+3. **L'ordinateur**: Claude clique à votre place. Le dernier recours: plus lent, à surveiller, et pas encore sur Team ni Entreprise
 
 ---
 ## Claude dans Word, Excel, PowerPoint et Outlook

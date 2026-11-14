@@ -30,7 +30,7 @@ Note: ESSENTIEL.
 </svg></div>
 
 - **Votre base de connaissances**: toute l'information utile pour vous et/ou pour l'IA
-- Dans cette partie, je vous montre **ce qui est possible**, en trois temps
+- Dans cette partie, je vous montre **ce qui est possible**
 - Deux mots nouveaux: une **note** est un fichier texte. **Obsidian** est une application qui sert à lire et à écrire ces notes
 
 Documentation: [Le site d'Obsidian (en anglais)](https://obsidian.md)

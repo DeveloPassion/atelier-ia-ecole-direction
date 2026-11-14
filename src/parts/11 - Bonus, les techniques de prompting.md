@@ -79,7 +79,7 @@ Vous **vérifiez entre deux étapes**: une erreur ne passe pas à la suite.
 
 ---
 ## Faire travailler l'IA sur la demande elle-même
-- "**Pose-moi les questions** qui te manquent avant de commencer"{copy}
+- "**Pose-moi des questions** si besoin"{copy}
 - "**Améliore ma demande** avant de la faire: qu'est-ce qui manque?"{copy}
 - Après un bon résultat: "**Quelle demande** t'aurait permis de faire ça du premier coup?"{copy} Gardez-la
 - Pour continuer ailleurs: "Donne-moi **un prompt que je peux passer à un autre agent** pour continuer"{copy}

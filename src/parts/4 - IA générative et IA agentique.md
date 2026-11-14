@@ -134,7 +134,7 @@ Note: ESSENTIEL. C'est la même recette partout dans le cours: ici, dans "votre 
 ---
 ## Trois astuces pour vos demandes
 - Mettez **les informations et les règles importantes à la fin**: la fin d'un long texte est mieux lue que le milieu
-- Demandez-lui de **vous poser des questions** avant de commencer: "Pose-moi les questions qui te manquent."{copy} Il propose souvent des choix à cliquer: c'est très rapide
+- Demandez-lui de **vous poser des questions** avant de commencer: "Pose-moi des questions si besoin."{copy} Il propose souvent des choix à cliquer: c'est très rapide
 - Les techniques de prompting (exemples, rôles, étapes, critères): **bonus 11**
 
 Note: À PASSER si le temps manque.

@@ -122,7 +122,7 @@ story = [
         p("<b>Dictez</b> (le micro de la zone de saisie): on parle plus vite qu'on écrit, et on donne plus de contexte. Dites beaucoup, quitte à vous répéter: Claude fait le tri."),
     ]),
     box("Des phrases à réutiliser", [
-        q("Pose-moi les questions qui te manquent avant de commencer."),
+        q("Pose-moi des questions si besoin."),
         q("Signale ce que tu ne sais pas au lieu de deviner."),
         q("Pour chaque information, cite la phrase exacte et la page."),
         q("Qu'est-ce qu'on améliore dans ce processus? Mets-le à jour."),

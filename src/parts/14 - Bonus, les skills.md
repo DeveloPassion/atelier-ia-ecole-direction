@@ -84,7 +84,7 @@ Un **plugin** est un paquet: des skills, des connecteurs et des commandes, ajout
 | **De l'école** | Le propriétaire de l'organisation, qui l'a choisi |
 | **D'Internet**: un fichier ZIP, une adresse | **Personne** |
 
-- Une skill, ce sont **des instructions que Claude suit**. Dans Cowork, un plugin peut aussi **lancer des commandes sur votre PC**
+- Une skill, ce sont **des instructions que Claude suit**. Un plugin peut aussi **lancer des commandes sur votre PC**
 - Trouvé sur Internet: **vous ne l'ajoutez pas vous-même**. Montrez-le à l'admin, ou écrivez votre propre recette
 
 Documentation: [Plugins (en anglais)](https://claude.com/docs/plugins/overview) · [Claude Marketplace (en anglais)](https://claude.com/marketplace)

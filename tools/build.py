@@ -180,7 +180,7 @@ def transform(md, part_no, part_name, dur):
             words = title.split(" ")
             # gradient on the key word: the last word of the title
             title_html = " ".join(words[:-1]) + (" " if len(words) > 1 else "") + f'<span class="gradient">{words[-1]}</span>'
-            eyebrow = ("Bonus" if "bonus" in dur else f"Partie {part_no} sur {MAIN} · {dur}") if part_no > 1 or i > 0 else "Atelier IA · Direction d'école"
+            eyebrow = ("Bonus" if "bonus" in dur else f"Partie {part_no} sur {MAIN}") if part_no > 1 or i > 0 else "Atelier IA · Direction d'école"
             s = f'<!-- .slide: class="hero" data-background-gradient="radial-gradient(1100px 560px at 85% 10%, rgba(168,85,247,0.20), transparent 60%), radial-gradient(900px 500px at 8% 92%, rgba(229,0,125,0.18), transparent 60%), #37404c" -->\n<p class="eyebrow">{eyebrow}</p>\n\n<h2>{title_html}</h2>\n\n{rest}'
         out.append(s)
     return "\n---\n".join(out)
@@ -401,7 +401,7 @@ for m in meta:
     notes_parts.append((m, rows))
     total += m["slides"]
     cards.append(f'<a class="card" href="{out_name}" target="_blank" rel="noopener"><span class="num">{m["n"]}</span>'
-                 f'<span class="t">{html.escape(m["name"])}</span><span class="meta">{html.escape(m["dur"])} · {m["slides"]} slides</span></a>')
+                 f'<span class="t">{html.escape(m["name"])}</span><span class="meta">{"Bonus · " if "bonus" in m["dur"] else ""}{m["slides"]} slides</span></a>')
 
 index = f"""<!doctype html>
 <html lang="fr">

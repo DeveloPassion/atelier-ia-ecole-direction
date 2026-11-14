@@ -159,7 +159,7 @@ story = [
     box("Le niveau de liberté de Claude", [
         b("<b>Manuel</b>: il demande votre accord avant chaque action. Le réglage de départ, et le bon choix."),
         b("<b>Auto</b>: il avance seul, et bloque ce qui lui paraît dangereux. Seulement sur une copie."),
-        b("<b>Ignorer</b>: il ne demande rien et ne vérifie rien. À ne jamais utiliser."),
+        b("<b>Ignorer</b>: il ne demande rien et ne vérifie rien. Gain de temps, mais plus risqué."),
         b("<b>Une demande de permission</b>: lisez-la, autorisez une fois, et refusez si vous avez un doute."),
         p("Pour une grosse tâche: demandez d'abord <b>un plan</b>. Dossier de travail: <b>votre base de connaissances</b> (une copie pour les essais), jamais tout votre OneDrive."),
     ]),

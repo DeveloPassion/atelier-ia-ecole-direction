@@ -225,9 +225,8 @@ story = [
         b("<b>Lisez chaque demande de permission</b> avant de dire oui."),
         b("Travaillez sur <b>une copie</b> des fichiers, surtout en mode Auto."),
     ]),
-    box("Sept erreurs courantes", [
+    box("Six erreurs courantes", [
         b("Croire la réponse sans vérifier."),
-        b("Mettre des données d'élèves ou de parents sans règle claire."),
         b("Donner trop peu de contexte, puis conclure que « l'IA est nulle »."),
         b("Garder une seule conversation interminable pour tout."),
         b("Laisser un agent agir sur un site web sans regarder."),

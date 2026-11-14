@@ -51,10 +51,9 @@ Note: À PASSER si le temps manque. Documents: "Fiche de contexte pour l'IA.pdf"
 
 ---
 ## Pour continuer seuls
-1. Le mot aux parents: sans contexte, puis avec contexte. Comparez
-2. Votre base de connaissances: le fichier "À propos de moi.txt" (l'école, votre rôle, votre ton, ce que Claude ne doit jamais faire) et deux documents. Ouvrez Claude sur ce dossier, et posez-lui trois questions de votre semaine
-3. Claude ne lit pas ce fichier tout seul. Commencez chaque conversation par: "Lis d'abord le fichier À propos de moi.txt."{copy}
-4. Préparer une réunion: joignez "Notes réunion équipe 2026-11-03 (brut)", demandez un ordre du jour et les points d'action, puis ce qui manque pour que chaque action soit claire
+1. Votre base de connaissances: le fichier "À propos de moi.txt" (l'école, votre rôle, votre ton, ce que Claude ne doit jamais faire) et deux documents. Ouvrez Claude sur ce dossier, et posez-lui trois questions de votre semaine
+2. Claude ne lit pas ce fichier tout seul. Commencez chaque conversation par: "Lis d'abord le fichier À propos de moi.txt."{copy}
+3. Préparer une réunion: joignez "Notes réunion équipe 2026-11-03 (brut)", demandez un ordre du jour et les points d'action, puis ce qui manque pour que chaque action soit claire
 
 Refaites aussi les démos: les demandes à copier sont sur les slides des parties 3 et 6. Et gardez **l'aide-mémoire** (PDF de deux pages, à imprimer) à côté de votre PC.
 

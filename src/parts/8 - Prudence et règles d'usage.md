@@ -2,7 +2,7 @@
 
 ---
 ## 8. Prudence
-L'IA est un outil puissant. Quelques règles évitent les vrais problèmes.
+L'IA est un outil puissant. Quelques règles pour éviter les soucis.
 
 ---
 ## Jamais d'outil IA gratuit pour les données de l'école

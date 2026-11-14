@@ -1,11 +1,11 @@
 [
  {
   "n": 1,
-  "name": "Introduction et accroche",
+  "name": "Introduction",
   "dur": "8 min",
   "slides": 8,
-  "file": "1 - Introduction et accroche.md",
-  "html": "01-introduction-et-accroche.html"
+  "file": "1 - Introduction.md",
+  "html": "01-introduction.html"
  },
  {
   "n": 2,

@@ -1,9 +1,7 @@
-# 1 - Introduction et accroche
+# 1 - Introduction
 
 ---
 ## L'IA au service de l'école
-Atelier pour une direction d'école
-
 - Claude Entreprise: comprendre, démarrer, **rester maître de ses données**
 - Environ 2 heures, avec une pause
 - Ce support se relit seul, après la séance
@@ -12,15 +10,16 @@ Atelier pour une direction d'école
 Note: Se présenter en une phrase. Dire que le support est fait pour continuer seuls: chaque slide porte une idée complète, et la fin dit quoi faire dès demain. Ce qu'on ne voit pas aujourd'hui passe en séance 2.
 
 ---
-## Deux objectifs pour aujourd'hui
-1. **Faire une vraie tâche avec Claude**: lui donner le bon contexte, et **vérifier** ce qu'il rend
-2. **Connaître les règles**: les données de l'école, et ce que Claude peut faire sans vous
+## Trois objectifs pour aujourd'hui
+1. **Démarrer rapidement avec Claude**: faire une vraie tâche, lui donner le bon contexte, et **vérifier** ce qu'il rend
+2. **Comprendre l'IA agentique et les possibilités de Claude**: ce qu'il peut faire pour vous, et les règles à suivre avec les données de l'école
+3. **Comprendre la valeur d'un système IA souverain**: un système qui vous connaît, et **qui vous appartient**
 
-Et pour la suite: un système qui vous connaît, et **qui vous appartient**. On en voit un aperçu aujourd'hui (partie 7). On le construit ensuite, avec chacun de vous: c'est **la phase 2**.
+De ce système, on voit un aperçu aujourd'hui (partie 7). On le construit ensuite, avec chacun de vous: c'est **la phase 2**.
 
 La loi européenne sur l'IA demande au collège de **développer la culture IA** de son personnel: cet atelier en fait partie.
 
-Note: ESSENTIEL. Deux objectifs seulement: on ne peut pas tout faire en deux heures. Le reste du support se relit seul. Pour la loi: l'article 4 de l'AI Act a été modifié en 2026. Il demande aux organisations de prendre des mesures pour développer la culture IA de leur personnel; il n'impose pas une formation obligatoire (page de la Commission européenne sur la culture IA, lue le 13/11/2026). Ne pas dire que cet atelier "met le collège en règle".
+Note: ESSENTIEL. Trois objectifs seulement: on ne peut pas tout faire en deux heures. Le reste du support se relit seul. Pour la loi: l'article 4 de l'AI Act a été modifié en 2026. Il demande aux organisations de prendre des mesures pour développer la culture IA de leur personnel; il n'impose pas une formation obligatoire (page de la Commission européenne sur la culture IA, lue le 13/11/2026). Ne pas dire que cet atelier "met le collège en règle".
 
 ---
 ## Au programme

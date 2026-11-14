@@ -201,7 +201,7 @@ TODO = [
     "Choisir la base légale de chaque traitement de données personnelles (RGPD).",
     "Faire une analyse d'impact (AIPD) avant tout usage avec des données sensibles.",
     "Décider s'il faut informer les parents, et comment.",
-    "Régler la confidentialité dans la console: couper les retours par pouces (\"Évaluer les conversations\"), fixer une durée de conservation, désactiver la mémoire.",
+    "Régler la confidentialité dans la console: désactiver l'évaluation des conversations, fixer une durée de conservation, désactiver la mémoire.",
     "Désigner qui tient le registre et qui le revoit, par exemple une fois par an.",
     "Faire valider ces règles par le pouvoir organisateur.",
 ]

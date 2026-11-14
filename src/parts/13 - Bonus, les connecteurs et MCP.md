@@ -86,7 +86,7 @@ Des compléments mettent Claude **dans vos applications Microsoft 365**. Vous lu
 | **PowerPoint** | Lire, modifier et créer des slides, avec vos modèles |
 | **Outlook** (en test) | Trier la boîte de réception, résumer un long échange, préparer une réponse. **Il n'envoie jamais**: le brouillon reste à relire |
 
-Documentation: [Claude for M365 (en anglais)](https://claude.com/docs/office-agents/overview)
+Documentation: [Claude for M365 (en anglais)](https://claude.com/docs/office-agents/overview) · [Claude for Excel (en anglais)](https://claude.com/docs/office-agents/excel)
 
 Note: Lu le 13/11/2026 dans la documentation de Claude. Le nom du produit: "Claude for Microsoft 365". À ne pas confondre avec le connecteur Microsoft 365, plus haut dans ce bonus: le connecteur donne à l'application Claude un accès à vos fichiers et à vos mails; les compléments, eux, mettent Claude dans Word, Excel, PowerPoint et Outlook. Les quatre compléments partagent la conversation: on peut passer d'un mail à un document. La dictée existe aussi. Disponible sur les abonnements Pro, Max, Team et Entreprise; Outlook est en bêta.
 

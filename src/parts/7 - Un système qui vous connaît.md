@@ -64,7 +64,7 @@ Note: ESSENTIEL. Une minute. La gestion des connaissances n'est pas un outil: c'
 
 ---
 ## Décharger son cerveau
-<div class="chart"><svg viewBox="0 0 960 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dessin: à gauche, une tête pleine de choses à ne pas oublier; à droite, la même tête libre, et les mêmes choses notées dans un endroit fiable">
+<div class="chart"><svg viewBox="0 0 960 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dessin: à gauche, une tête pleine de choses à ne pas oublier; à droite, l'esprit libre, et les mêmes choses notées dans un endroit fiable">
 <circle cx="170" cy="88" r="74" fill="#2b323c" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
 <path d="M150,124 q10,-8 20,0 t20,0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
 <g transform="rotate(-14 152 62)"><rect x="118" y="52" width="78" height="21" rx="10" fill="#e5007d"/><text x="157" y="67" font-size="11.5" fill="#fff" font-weight="700" text-anchor="middle">le car</text></g>
@@ -78,7 +78,7 @@ Note: ESSENTIEL. Une minute. La gestion des connaissances n'est pas un outil: c'
 <path d="M500,118 q20,16 40,0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
 <circle cx="496" cy="74" r="5" fill="#fff"/>
 <circle cx="544" cy="74" r="5" fill="#fff"/>
-<text x="520" y="190" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">La tête libre</text>
+<text x="520" y="190" font-size="16" fill="#fff" font-weight="700" text-anchor="middle">L'esprit libre</text>
 <rect x="660" y="14" width="270" height="150" rx="10" fill="#faf7f0"/>
 <rect x="660" y="14" width="270" height="30" rx="10" fill="#4ade80"/>
 <rect x="660" y="34" width="270" height="10" rx="0" fill="#4ade80"/>

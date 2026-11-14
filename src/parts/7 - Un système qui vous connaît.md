@@ -6,7 +6,7 @@ Et qui vous appartient.
 
 ---
 ## Ce qui cloche dans toutes ces démos
-- La limite n'est plus l'IA
+- En fait, la limite, ce n'est plus l'IA...
 - La limite, c'est **ce qu'elle sait de vous**
 - Le problème, c'est **le (manque de) contexte**
 - Chaque conversation **repart de zéro**, ou presque

@@ -94,7 +94,6 @@ FD = "Fichiers de démo/"
 PB = "Fichiers de démo/Plan B - résultats attendus/"
 system_q = re.findall(r'\d\) "(.+?)"', note(find(7, "Démo: Direction Saint-Exemple")[1]))
 skill_q = re.search(r"^> (.+)$", find(14, "Démo: créer une skill")[1], re.M).group(1)
-vrac_q = re.search(r'La même question aux deux: "(.+?)"', find(7, "Démo: en vrac ou organisé")[1]).group(1)
 rows = [
     (-30, where(1, "Avant de commencer: les prérequis"), "<b>Prérequis</b> sur chaque PC (10 min), avec une liste imprimée",
      "Application Claude, Chrome et l'extension, le même compte de l'école. Le dossier « Fichiers de démo » sur le Bureau, hors OneDrive",
@@ -163,10 +162,6 @@ rows = [
      "La photo prise sur place, déjà sur le PC. Ou " + FD + "Texte réunion de parents de rentrée.docx",
      q(quoted(6, "Démo 6: la demande à copier") + quoted(6, "Démo 5: les demandes à copier")[:1]) + "<br/>(slides suivantes, bouton « Copier »)",
      "Plan B: Démo 5 - Réunion de parents de rentrée (pptx)"),
-    ("option", where(7, "Démo: en vrac ou organisé"), "Démo: en vrac ou organisé (5 min)",
-     "Les deux dossiers dézippés: le système « en vrac » et le système « notes seules »",
-     q([vrac_q]) + "<br/>Au vrac, puis à l'organisé, puis une 2e fois au vrac",
-     "Organisé: Sortie P4 (active), Plan de pilotage (actif), Classes de neige P5 (en pause, bloqué: 690 euros &gt; plafond de 485), photos terminées. Vrac: statuts devinés, la liste change.<br/>Corrigé: question 6 de « DEMO - À demander.txt »"),
     ("plus tard", where(14, "Démo: créer une skill"), "Démo: créer une skill ensemble (5 min)",
      "Claude ouvert sur une copie du système « notes seules ». La note « Écrire aux parents (Processus) », dossier Actions/Processus",
      q([skill_q]) + "<br/>Puis: « Écris le mot aux parents pour la sortie P4 du 26 novembre. »",
@@ -202,7 +197,7 @@ before = KeepTogether([
     Paragraph("Où trouver quoi", H2),
     b("<b>Les étapes de chaque démo</b>: les notes de l'orateur de la slide (touche <b>S</b> dans la partie). Cette feuille en reprend l'essentiel."),
     b("<b>Plan B sans écran d'orateur</b> (projecteur en mode dupliqué): la page « Notes de l'orateur » (notes.html, sur le sommaire) sur le téléphone ou la tablette, ou le PDF « Notes de l'orateur » imprimé (documents/)."),
-    b("<b>Les fichiers</b>: le dossier « Fichiers de démo », copié hors OneDrive (aussi sur le site: documents/fichiers-de-demo.zip). Les résultats attendus: « Plan B - résultats attendus ». Les systèmes de démo: les zips «\u00a0notes seules\u00a0» et «\u00a0en vrac\u00a0» (le système complet avec AI Kit for Obsidian, un produit payant, n'est pas public)."),
+    b("<b>Les fichiers</b>: le dossier « Fichiers de démo », copié hors OneDrive (aussi sur le site: documents/fichiers-de-demo.zip). Les résultats attendus: « Plan B - résultats attendus ». Le système de démo: le zip «\u00a0notes seules\u00a0» (le système complet avec AI Kit for Obsidian, un produit payant, n'est pas public)."),
     b("<b>Les corrigés</b>: « DEMO - À demander.txt » à la racine du système Saint-Exemple, et les sections « Corrigé » du plan de cours."),
     b("<b>Les slides</b>: le sommaire (index.html) de la copie locale, hors ligne. Toutes les slides restent: je choisis en direct ce que je passe."),
     Paragraph("Les slides à passer en séance", H2),
@@ -211,7 +206,7 @@ before = KeepTogether([
     Paragraph("Trois repères à tenir", H2),
     b("<b>0:45</b>: la pause commence. <b>1:08</b>: leur vraie tâche a commencé. <b>1:44</b>: la partie 8 commence. En retard à un repère: passer tout de suite à la slide essentielle suivante."),
     Paragraph("La veille et le matin", H2),
-    b("Dézipper les deux systèmes de démo, ouvrir « Direction Saint-Exemple » dans Obsidian, ouvrir une fois les slides sans internet."),
+    b("Dézipper le système de démo, ouvrir « Direction Saint-Exemple » dans Obsidian, ouvrir une fois les slides sans internet."),
     b("Imprimer l'aide-mémoire (un par personne). Préparer la feuille « parking ». Option: une longue conversation compactée."),
     b("Arriver vers 9h30. Écran ou projecteur, wifi, chargeur."),
     b("<b>Avant le jour J</b>: lire les réponses au test des prérequis (Cowork, Opus 5.5, extension, dossier hors OneDrive). Tester la page de la ferme le matin même."),

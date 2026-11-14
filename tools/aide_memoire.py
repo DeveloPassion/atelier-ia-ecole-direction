@@ -156,7 +156,7 @@ story = [
         b("<b>Haut</b>: ce qui doit être juste (les dates d'une circulaire, les chiffres d'un tableau). Plus long et plus cher."),
         b("Une <b>demande précise</b> est le levier le moins cher: moins vous précisez, plus Claude décide à votre place."),
     ]),
-    box("Combien Claude demande avant d'agir", [
+    box("Ce que Claude demande avant d'agir", [
         b("<b>Manuel</b>: il demande votre accord avant chaque action. Le réglage de départ, et le bon choix."),
         b("<b>Auto</b>: il avance seul, et bloque ce qui lui paraît dangereux. Seulement sur une copie."),
         b("<b>Ignorer</b>: il ne demande rien et ne vérifie rien. À ne jamais utiliser."),

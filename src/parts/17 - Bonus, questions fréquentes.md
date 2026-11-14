@@ -97,11 +97,4 @@ Note: Sources: Google (août 2025): 0,24 Wh pour une demande de texte médiane �
 ## Qui est responsable en cas d'erreur?
 - **La personne qui signe.** L'IA prépare, une personne vérifie et décide
 - L'école reste responsable des données (RGPD)
-- D'où les **règles d'usage** et le registre (partie 8)
-
----
-## Combien de temps pour être à l'aise?
-- L'aisance vient **avec la pratique**, pas avec la théorie
-- Une vraie tâche **chaque jour**, et le journal du jour
-- Gardez l'aide-mémoire à côté du PC, et vos meilleures demandes dans votre base
-- Une deuxième séance est possible, avec vos questions
+- D'où les **règles d'usage** et le registre

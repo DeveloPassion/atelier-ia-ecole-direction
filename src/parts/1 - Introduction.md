@@ -36,13 +36,13 @@ Note: À PASSER si le temps manque. Timing visé (début à 10h): 0:08 fin de la
 ---
 ## Qui suis-je?
 <div class="me"><img src="lib/img/sebastien-dubois.jpg" alt="Portrait de Sébastien Dubois"><ul>
-<li><strong>Sébastien Dubois</strong>. Depuis environ 20 ans: expert en <strong>développement</strong>, en <strong>infrastructure</strong> et en <strong>sécurité IT</strong></li>
-<li>À la tête du groupe de travail <strong>IA agentique et gouvernance</strong> de la Banque nationale de Belgique, où je travaille à temps partiel</li>
-<li>J'utilise l'IA <strong>tous les jours</strong>, depuis bientôt 4 ans</li>
+<li><strong>Sébastien Dubois</strong>. <strong>Professionnel de l'IT</strong> depuis 20 ans (développement, infrastructure, sécurité, ...)</li>
 <li>Je dirige aussi une société IT, <strong>DeveloPassion</strong></li>
-<li>Expert en <strong>gestion des connaissances</strong></li>
+<li>J'utilise l'IA <strong>tous les jours</strong>, depuis bientôt 4 ans</li>
+<li>À la tête du groupe de travail <strong>IA Agentique</strong> de la Banque nationale de Belgique, où je travaille à temps partiel</li>
+<li><strong>Expert et coach</strong> en <strong>gestion des connaissances</strong></li>
 </ul></div>
-<p class="doc"><b>Me retrouver:</b> <a href="https://www.dsebastien.net">dsebastien.net</a> · <a href="https://www.youtube.com/@dsebastien">YouTube</a> · <a href="https://store.dsebastien.net">Mon magasin en ligne</a> · <a href="https://notes.dsebastien.net">Mes notes publiques</a></p>
+<p class="doc"><b>Me retrouver:</b> <a href="https://www.dsebastien.net">dsebastien.net</a> · <a href="https://www.youtube.com/@dsebastien">YouTube</a> · <a href="https://notes.dsebastien.net">Mes notes publiques</a></p>
 
 Note: ESSENTIEL. Une minute, pas plus. Le but: dire d'où je parle (l'IT, la sécurité, l'IA au quotidien, la gestion des connaissances), pas raconter mon parcours.
 

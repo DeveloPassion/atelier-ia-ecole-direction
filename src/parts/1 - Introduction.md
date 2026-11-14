@@ -23,12 +23,13 @@ Note: Se présenter en une phrase. Dire que le support est fait pour continuer s
 Note: ESSENTIEL. Une minute, pas plus. Le but: dire d'où je parle (l'IT, la sécurité, l'IA au quotidien, la gestion des connaissances), pas raconter mon parcours.
 
 ---
-## Trois objectifs pour aujourd'hui
+## Quatre objectifs pour aujourd'hui
 1. **Démarrer rapidement avec Claude**: faire une vraie tâche, lui donner le bon contexte, et **vérifier** ce qu'il délivre
 2. **Comprendre l'IA agentique et les possibilités de Claude**: ce qu'il peut faire pour vous, et les règles à suivre avec les données de l'école
-3. **Comprendre la valeur d'un système IA souverain**: un système qui vous connaît, et **qui vous appartient**
+3. **Découvrir la gestion des connaissances**, et sa valeur pour l'humain et pour l'IA
+4. **Comprendre la valeur d'un système IA souverain**: un système qui vous connaît, et **qui vous appartient**
 
-Note: ESSENTIEL. Trois objectifs seulement: on ne peut pas tout faire en deux heures. Le reste du support se relit seul.
+Note: ESSENTIEL. Quatre objectifs seulement: on ne peut pas tout faire en deux heures. Le reste du support se relit seul.
 
 ---
 ## Au programme

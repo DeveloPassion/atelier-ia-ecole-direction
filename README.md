@@ -5,12 +5,12 @@ Atelier d'environ 2 heures pour une direction d'école: comprendre l'IA généra
 Les personnes et les documents de démo sont fictifs: ce support sert à apprendre.
 
 - Le cours en ligne: https://developassion.github.io/atelier-ia-ecole-direction/
-- 18 parties: 9 pour l'atelier, une par bloc, et 9 bonus (gérer les coûts, trucs et astuces, techniques de prompting, plusieurs agents, connecteurs et MCP, skills, l'IA et les élèves, pour aller plus loin, questions fréquentes). Chaque partie s'ouvre dans son onglet. Dans une partie: `S` pour les notes de l'orateur (les étapes des démos), `F` pour le plein écran, `Échap` pour la vue d'ensemble
+- 18 parties: 9 pour l'atelier, une par bloc, et 9 bonus (trucs et astuces, techniques de prompting, plusieurs agents, connecteurs et MCP, skills, l'IA et les élèves, pour aller plus loin, questions fréquentes, gérer les coûts). Chaque partie s'ouvre dans son onglet. Dans une partie: `S` pour les notes de l'orateur (les étapes des démos), `F` pour le plein écran, `Échap` pour la vue d'ensemble
 
 ## Contenu
 
 - `index.html` et `01-...html` à `18-...html`: les slides (reveal.js), qui marchent aussi hors ligne. `notes.html`: toutes les notes de l'orateur sur une page (téléphone, tablette ou papier), le plan B sans écran d'orateur
-- `documents/`: l'aide-mémoire à imprimer, la feuille de route de l'animateur, les prérequis, la fiche de contexte (PDF à remplir) et un projet de règles d'usage de l'IA
+- `documents/`: l'aide-mémoire à imprimer, la feuille de route de l'animateur, les notes de l'orateur, les slides à imprimer, les prérequis, la fiche de contexte (PDF à remplir) avec son fichier de départ `À propos de moi.txt` et un exemple rempli, et un projet de règles d'usage de l'IA
 - `documents/fichiers-de-demo.zip`: les mêmes fichiers de démo, en un seul zip à télécharger (https://developassion.github.io/atelier-ia-ecole-direction/documents/fichiers-de-demo.zip)
 - `fichiers-de-demo/`: les fichiers des démos, tous fictifs (voir `LISEZ-MOI.txt`), les résultats attendus (plan B) et deux dossiers de démo: "en vrac" et "notes seules"
 
@@ -19,7 +19,7 @@ Les personnes et les documents de démo sont fictifs: ce support sert à apprend
 - `src/parts/`: les textes des slides, un fichier Markdown par partie (`---` sépare les slides, `Note:` commence les notes de l'orateur; dans les parties 1 à 9, une note commence par `ESSENTIEL.` ou `À PASSER si le temps manque.`, et la feuille de route liste les slides à passer). Une ligne `Documentation: [titre](url)` donne une petite ligne de liens. Une demande à copier: une ligne `> ...` donne un encadré avec un bouton "Copier", et `"..."{copy}` dans une phrase donne une icône de copie. L'ordre, les durées et les noms des fichiers HTML sont dans `src/parts.json`
 - `src/demo/`: les deux systèmes de démo, "notes seules" et "en vrac", en clair. Les dossiers vides gardent un fichier `.gitkeep`
 - `tools/build.py`: les slides et `index.html`. `lib/` et `theme.css` ne changent pas
-- `tools/handouts.py`: les PDF de `documents/` (prérequis, fiche de contexte, règles d'usage)
+- `tools/handouts.py`: les PDF de `documents/` (prérequis, fiche de contexte, règles d'usage) et les deux fichiers `À propos de moi`. Il refait tous les PDF: remettre avec `git checkout` ceux dont le texte n'a pas changé
 - `tools/aide_memoire.py`: l'aide-mémoire (deux pages, à garder en phase avec les slides)
 - `tools/notes_orateur.py`: les notes de l'orateur en PDF dans `documents/`, à imprimer (le plan B sur papier). Il lit les slides: le reconstruire après chaque changement des notes
 - `tools/slides_pdf.py`: toutes les slides en PDF à imprimer dans `documents/` (fond clair, deux slides par page A4; `--per-page 1` ou `4` pour changer). Il pilote Chrome ou Edge sans fenêtre: à relancer après `tools/build.py`
@@ -40,7 +40,9 @@ uv run --with websocket-client --with pypdf python tools/slides_pdf.py
 python3 tools/build_demo.py
 ```
 
-Publier: commit, puis push sur `main`. GitHub Pages met le site à jour en une minute environ.
+Après un changement d'une slide, `tools/build.py` puis `tools/slides_pdf.py` suffisent. Les autres outils servent quand leur document change: les notes ou les titres (notes de l'orateur, feuille de route), l'aide-mémoire, les documents à remettre.
+
+Publier: commit, un tag `vX.Y.Z`, puis push sur `main` avec les tags. GitHub Pages met le site à jour en une minute environ.
 
 ## Licence
 

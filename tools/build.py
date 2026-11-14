@@ -123,6 +123,10 @@ html.print-pdf .reveal p.doc { border-top-color: #cfd4da; } html.print-pdf .reve
 .nav-next { position: fixed; top: 14px; right: 16px; z-index: 30; font: 700 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
   background: var(--dp-magenta); border-radius: 8px; padding: 6px 12px; display: none; }
 .nav-next.show { display: block; } .nav-next:hover { background: #ff4fa8; }
+/* 'Who am I' slide: a round portrait next to a list */
+.reveal .me { display: flex; gap: 40px; align-items: center; margin-top: 0.5em; }
+.reveal .me img { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; flex: none; margin: 0; border: 5px solid var(--dp-magenta); }
+.reveal .me ul { flex: 1; margin: 0; }
 /* Nav pill */
 .nav-home { position: fixed; top: 14px; left: 16px; z-index: 30; font: 600 14px "Noto Sans", sans-serif; color: #fff; text-decoration: none;
   background: rgba(255,255,255,0.1); border-radius: 8px; padding: 6px 12px; }

@@ -34,6 +34,19 @@ Et 9 parties bonus, à parcourir après la séance.
 Note: À PASSER si le temps manque. Timing visé (début à 10h): 0:08 fin de la partie 1, 0:16 fin de la partie 2, 0:26 fin de la circulaire, 0:35 fin de la partie 4, 0:45 fin de la partie 5, pause jusqu'à 0:55, 1:30 fin de la partie 6 (avec leur vraie tâche, 15 minutes), 1:42 fin de la partie 7, 1:47 fin de la partie 8, 1:58 fin de la partie 9 (avec leurs questions). Trois repères à tenir: la pause commence à 0:45; la vraie tâche commence à 1:08 au plus tard; la partie 8 commence à 1:42. Dans chaque partie, les notes disent "ESSENTIEL" ou "À PASSER": en séance, je montre seulement les slides essentielles. Le reste est pour la relecture.
 
 ---
+## Qui suis-je?
+<div class="me"><img src="lib/img/sebastien-dubois.jpg" alt="Portrait de Sébastien Dubois"><ul>
+<li><strong>Sébastien Dubois</strong>. Depuis environ 20 ans: expert en <strong>développement</strong>, en <strong>infrastructure</strong> et en <strong>sécurité IT</strong></li>
+<li>À la tête du groupe de travail <strong>IA agentique et gouvernance</strong> de la Banque nationale de Belgique, où je travaille à temps partiel</li>
+<li>J'utilise l'IA <strong>tous les jours</strong>, depuis bientôt 4 ans</li>
+<li>Je dirige aussi une société IT, <strong>DeveloPassion</strong></li>
+<li>Expert en <strong>gestion des connaissances</strong></li>
+</ul></div>
+<p class="doc"><b>Me retrouver:</b> <a href="https://www.dsebastien.net">dsebastien.net</a> · <a href="https://www.youtube.com/@dsebastien">YouTube</a> · <a href="https://store.dsebastien.net">Mon magasin en ligne</a> · <a href="https://notes.dsebastien.net">Mes notes publiques</a></p>
+
+Note: ESSENTIEL. Une minute, pas plus. Le but: dire d'où je parle (l'IT, la sécurité, l'IA au quotidien, la gestion des connaissances), pas raconter mon parcours.
+
+---
 ## Organisation de l'atelier
 - **Chacun sur son PC**: vous faites les démos avec moi
 - Le dossier "Fichiers de démo" est sur votre PC. **Tout y est fictif**

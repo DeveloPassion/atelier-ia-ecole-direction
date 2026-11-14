@@ -15,7 +15,7 @@ Pour obtenir de bons résultats, plus vite.
 - Donnez **des règles et des critères d'évaluation clairs**, et mettez **les règles importantes à la fin** de la demande
 
 ---
-## Obtenir du juste
+## Obtenir des résultats plus fiables
 - Demandez **la phrase exacte et la page** du document: "Pour chaque information, cite la phrase exacte et la page"{copy}. Vous vérifiez en un coup d'œil
 - Son **niveau de confiance** est un indice, **pas une preuve**: il peut être sûr de lui et se tromper
 - Demandez ce dont il **n'est pas sûr**: "Signale ce que tu ne sais pas au lieu de deviner"{copy}

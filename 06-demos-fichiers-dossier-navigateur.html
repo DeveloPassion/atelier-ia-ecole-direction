@@ -195,14 +195,43 @@ Pour une grosse tâche, demandez d'abord **un plan**: <span class="cp">"Montre-m
 Note: ESSENTIEL. Noms lus le 13/11/2026 dans le centre d'aide en français ("Commencer avec Claude Cowork"): "Manuel" (avant: "Demander avant d'agir"), "Auto", "Ignorer" (avant: "Agir sans demander"). Sur Entreprise, le réglage de départ est "Manuel", et l'admin peut couper "Auto". Si leur application montre d'autres noms (par exemple "Plan" ou "Accepter les modifications"), le principe reste le même: plus Claude agit seul, plus il faut un dossier de travail limité et une copie des fichiers. À VÉRIFIER sur leur PC avant la séance. Lien avec la partie 8.
 ---
 ## Votre dossier de travail: comment faire
-1. Sur votre PC, créez un dossier. Par exemple **"Base IA"**, dans vos Documents
-2. Mettez-y **une copie** des fichiers utiles à la tâche. Des fichiers Word, Excel ou PDF conviennent
-3. Dans la zone de saisie de Claude, choisissez ce dossier comme **dossier de travail**: je vous montre le bouton
-4. Claude ne voit que ce dossier, et il vous demande la permission avant de modifier un fichier
+<div class="chart"><svg viewBox="0 0 960 212" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dessin: sous la zone de saisie, le bouton Choose folder ouvre un menu; Open folder permet de choisir le dossier de travail">
+<rect x="30" y="70" width="470" height="52" rx="14" fill="#2b323c" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+<text x="56" y="103" font-size="24" fill="#fff" font-weight="400" text-anchor="start">+</text>
+<text x="92" y="102" font-size="17" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">Describe a task</text>
+<rect x="30" y="134" width="190" height="40" rx="10" fill="none"/>
+<text x="46" y="160" font-size="16" fill="#fff" font-weight="400" text-anchor="start">▭</text>
+<text x="70" y="160" font-size="16" fill="#fff" font-weight="400" text-anchor="start">This computer</text>
+<text x="196" y="160" font-size="16" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="start">⌄</text>
+<rect x="232" y="134" width="196" height="40" rx="10" fill="rgba(229,0,125,0.18)" stroke="#ff4fa8" stroke-width="2.5"/>
+<path d="M0,3 h7 l3,3 h10 v12 h-20 z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round" transform="translate(246,143)"/>
+<text x="276" y="160" font-size="16" fill="#fff" font-weight="700" text-anchor="start">Choose folder</text>
+<text x="404" y="160" font-size="16" fill="#fff" font-weight="400" text-anchor="start">⌄</text>
+<circle cx="446" cy="154" r="13" fill="#e5007d"/>
+<text x="446" y="159" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">1</text>
+<path d="M462,154 C500,154 520,150 548,128" fill="none" stroke="#ff4fa8" stroke-width="2.5" stroke-dasharray="6 5"/>
+<rect x="560" y="8" width="370" height="196" rx="14" fill="#2a2f36" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+<text x="584" y="40" font-size="16" fill="#fff" font-weight="400" text-anchor="start">No folder</text>
+<text x="900" y="40" font-size="16" fill="#60a5fa" font-weight="700" text-anchor="end">✓</text>
+<line x1="572" y1="54" x2="918" y2="54" stroke="rgba(255,255,255,0.18)"/>
+<text x="584" y="78" font-size="13.5" fill="rgba(255,255,255,0.74)" font-weight="700" text-anchor="start">Recent</text>
+<text x="584" y="106" font-size="16" fill="#fff" font-weight="400" text-anchor="start">Base IA</text>
+<text x="584" y="134" font-size="16" fill="#fff" font-weight="400" text-anchor="start">Fichiers de démo</text>
+<line x1="572" y1="148" x2="918" y2="148" stroke="rgba(255,255,255,0.18)"/>
+<rect x="570" y="156" width="350" height="38" rx="9" fill="rgba(229,0,125,0.18)" stroke="#ff4fa8" stroke-width="2.5"/>
+<text x="584" y="181" font-size="16" fill="#fff" font-weight="700" text-anchor="start">Open folder...</text>
+<circle cx="892" cy="175" r="13" fill="#e5007d"/>
+<text x="892" y="180" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">2</text>
+<text x="30" y="40" font-size="14" fill="#ff4fa8" font-weight="700" text-anchor="start">SOUS LA ZONE DE SAISIE</text>
+</svg></div>
 
-Pour l'atelier, ce dossier est **hors OneDrive**. Ensuite, un dossier synchronisé convient, s'il est sauvegardé.
+1. Créez un dossier sur votre PC, par exemple **"Base IA"**, avec **une copie** des fichiers utiles
+2. Sous la zone de saisie de Claude, cliquez sur **"Choose folder"**
+3. Dans le menu, cliquez sur **"Open folder..."**, et choisissez votre dossier
 
-Note: ESSENTIEL. La documentation ne nomme pas le bouton qui sert à choisir le dossier: le montrer en direct, et faire une capture d'écran pour cette slide dès que possible. Pourquoi hors OneDrive pendant l'atelier: avec OneDrive, certains fichiers ne sont pas vraiment sur le PC tant qu'on ne les a pas ouverts. À vérifier sur leurs PC. Dans les paramètres de l'application, la liste des dossiers ouverts s'appelle "Trusted folders" dans la version en anglais.
+Claude ne voit que ce dossier. Pour l'atelier, il est **hors OneDrive**.
+
+Note: ESSENTIEL. Le dessin reprend le menu de mon application, vu le 14/11/2026, en anglais: "Choose folder", "No folder", "Recent", "Open folder...". Dans une application en français, les noms sont traduits: le bouton porte une icône de dossier, juste sous la zone de saisie. À gauche, "This computer" dit où la tâche tourne: sur ce PC. "No folder" veut dire que Claude n'a accès à aucun dossier. Des fichiers Word, Excel ou PDF conviennent. Pourquoi hors OneDrive pendant l'atelier: avec OneDrive, certains fichiers ne sont pas vraiment sur le PC tant qu'on ne les a pas ouverts. Ensuite, un dossier synchronisé convient, s'il est sauvegardé. Dans les paramètres de l'application, la liste des dossiers ouverts s'appelle "Trusted folders". Le dossier choisi reste ensuite dans la liste "Recent" du menu.
 ---
 ## Démo 2: créer des fichiers
 <div class="chart strip"><svg viewBox="0 0 960 136" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: des notes en vrac deviennent un compte rendu, une liste en désordre devient un tableau">

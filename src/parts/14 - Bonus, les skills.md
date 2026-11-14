@@ -81,6 +81,24 @@ Documentation: [Utiliser les compétences dans Claude](https://support.claude.co
 Note: Lu le 13/11/2026 dans la documentation de Claude. Dans la version en anglais: "Customize > Skills", l'onglet "Your skills" ("Created by you", "From your organization", "Shared with you", "From Anthropic & Partners"), l'onglet "Discover" pour en ajouter, et le bouton "Turn on". Une condition: la création de fichiers et l'exécution de code sont activées ("Settings > Capabilities"; sur Entreprise, c'est un propriétaire de l'organisation qui l'active). Pour ajouter une skill à soi: un fichier ZIP qui contient le dossier de la skill, avec son fichier SKILL.md dedans. La skill de création de skills (skill-creator) est une skill d'Anthropic: on l'active dans cette liste, puis on demande à Claude de créer ou d'évaluer une skill. Les skills d'Anthropic qui créent des fichiers Excel, Word, PowerPoint et PDF s'activent seules quand il le faut. Pour le point 5, Claude lit simplement le fichier SKILL.md du dossier de travail, comme n'importe quel fichier: c'est la voie de la démo de la partie 7, et celle qui garde vos skills chez vous.
 
 ---
+## Skills et plugins tout faits: d'où viennent-ils?
+Un **plugin** est un paquet: des skills, des connecteurs et des commandes, ajoutés en une fois (**Personnaliser > Plugins**).
+
+| D'où ça vient | Qui l'a vérifié |
+|---|---|
+| **De vous** | Vous: vous savez ce qu'il y a dedans |
+| **D'Anthropic**, ou de son annuaire de plugins | Anthropic: un contrôle de sécurité à chaque version |
+| **Du collège** | Le propriétaire de l'organisation, qui l'a choisi |
+| **D'Internet**: un fichier ZIP, une adresse | **Personne** |
+
+- Une skill, ce sont **des instructions que Claude suit**. Dans Cowork, un plugin peut aussi **lancer des commandes sur votre PC**
+- Trouvé sur Internet: **vous ne l'ajoutez pas vous-même**. Montrez-le à l'admin, ou écrivez votre propre recette
+
+Documentation: [Plugins (en anglais)](https://claude.com/docs/plugins/overview) · [Claude Marketplace (en anglais)](https://claude.com/marketplace)
+
+Note: Lu le 14/11/2026 dans la documentation de Claude. Le lien avec la démo 4: une skill ou un plugin d'une source inconnue, c'est une instruction cachée que l'on installe soi-même. Ce que dit la documentation: Anthropic contrôle les plugins de son annuaire (validation automatique et contrôle de sécurité à chaque version, et une personne relit chaque nouvelle fiche). Ce contrôle ne couvre pas un plugin ajouté depuis une adresse ou envoyé en fichier: "seulement depuis des sources de confiance". Une skill partagée par quelqu'un, ou envoyée en fichier, n'est pas vérifiée par Anthropic non plus: l'ouvrir et la lire avant de l'activer (slide précédente). Un plugin peut aussi contenir des agents. Dans la version en anglais: "Customize > Plugins", avec "Discover", "Add > Add marketplace" et "Add > Upload plugin"; le nom dans l'application en français est à vérifier. Deux choses portent le nom "marketplace". Dans l'application, une "marketplace" de plugins est un dépôt de code qui contient des plugins. "Claude Marketplace" (claude.com/marketplace) est la vitrine d'Anthropic: des connecteurs et des plugins, des agents et des produits de partenaires, et des sociétés de service. Elle ne liste pas de skills. Sur Entreprise, c'est un propriétaire de l'organisation qui choisit les sources visibles et qui décide si les membres peuvent en ajouter (bonus 18).
+
+---
 ## Une skill bien construite
 Toujours **selon la spécification** (https://agentskills.io/specification.md):
 

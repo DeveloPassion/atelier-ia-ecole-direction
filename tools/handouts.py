@@ -193,6 +193,7 @@ RULES = [
     ("Toujours vérifier", "Les faits, les chiffres, les dates et les sources se vérifient dans le document d'origine avant tout usage. La personne qui signe reste responsable."),
     ("Un registre simple", "Pour chaque usage régulier: quel outil, pour quoi faire, quelles données. Une page partagée suffit."),
     ("Le DPO valide", "Le délégué à la protection des données (DPO) du pouvoir organisateur valide les usages qui touchent des données personnelles. La circulaire 9757 finance cette mission."),
+    ("Les skills, les plugins et les connecteurs", "Seulement les nôtres, ceux d'Anthropic, et ceux que l'admin a approuvés. Rien de trouvé sur Internet sans son accord: une skill ou un plugin inconnu peut cacher des instructions pour l'IA."),
     ("La prudence avec les agents", "Ne jamais donner en même temps à un agent l'accès à des données privées, du contenu non fiable (pages web, mails reçus) et un moyen d'envoyer des données dehors. Lire chaque demande de permission avant de dire oui."),
 ]
 TODO = [

@@ -194,7 +194,7 @@ RULES = [
     ("Un registre simple", "Pour chaque usage régulier: quel outil, pour quoi faire, quelles données. Une page partagée suffit."),
     ("Le DPO valide", "Le délégué à la protection des données (DPO) du pouvoir organisateur valide les usages qui touchent des données personnelles. La circulaire 9757 finance cette mission."),
     ("Les skills, les plugins et les connecteurs", "Seulement les nôtres, ceux d'Anthropic, et ceux que l'admin a approuvés. Rien de trouvé sur Internet sans son accord: une skill ou un plugin inconnu peut cacher des instructions pour l'IA."),
-    ("La prudence avec les agents", "Ne jamais donner en même temps à un agent l'accès à des données privées, du contenu non fiable (pages web, mails reçus) et un moyen d'envoyer des données dehors. Lire chaque demande de permission avant de dire oui."),
+    ("La prudence avec les agents", "Ne jamais donner en même temps à un agent l'accès à des données privées, du contenu non fiable (pages web, mails reçus) et un accès à Internet. Lire chaque demande de permission avant de dire oui."),
 ]
 TODO = [
     "Vérifier le contrat avec Anthropic: l'accord de traitement des données (DPA), le lieu de traitement et de stockage (États-Unis), la durée de conservation, et les modèles à éviter avec des données personnelles (Fable: 30 jours de conservation au moins).",

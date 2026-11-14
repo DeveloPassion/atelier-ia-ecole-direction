@@ -220,7 +220,7 @@ story = [
         b("Un <b>pouce levé ou baissé</b> envoie toute la conversation, gardée 5 ans: n'en donnez pas. L'admin peut les couper."),
     ]),
     box("Prudence: les agents", [
-        b("<b>La triple menace</b>: un agent devient dangereux quand il a les trois en même temps: des <b>données privées</b>, du <b>contenu non fiable</b> (page web, mail reçu, PDF inconnu) et un moyen d'<b>envoyer dehors</b> (mail, formulaire). Ne donnez jamais les trois sans regarder."),
+        b("<b>La triple menace</b>: un agent devient dangereux quand il a les trois en même temps: des <b>données privées</b>, du <b>contenu non fiable</b> (page web, mail reçu, PDF inconnu) et un <b>accès à Internet</b> (mail, formulaire). Ne donnez jamais les trois sans regarder."),
         b("Une page web peut cacher des <b>instructions pour l'IA</b>. Sites de confiance, et regardez ce qu'il fait."),
         b("<b>Lisez chaque demande de permission</b> avant de dire oui."),
         b("Travaillez sur <b>une copie</b> des fichiers, surtout en mode Auto."),

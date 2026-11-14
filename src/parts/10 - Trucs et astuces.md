@@ -20,6 +20,7 @@ Pour obtenir de bons résultats, plus vite.
 - Son **niveau de confiance** est un indice, **pas une preuve**: il peut être sûr de lui et se tromper
 - Demandez ce dont il **n'est pas sûr**: "Signale ce que tu ne sais pas au lieu de deviner"{copy}
 - Demandez **une critique**: "Qu'est-ce qui cloche?"{copy}, "Joue l'avocat du diable"{copy}
+- Demandez à Claude de **vérifier la fiabilité des sources** et de l'information: "Vérifie la fiabilité de tes sources et de chaque information."{copy}
 
 ---
 ## Vérifier sans y passer des heures

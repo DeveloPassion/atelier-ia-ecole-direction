@@ -90,7 +90,7 @@ Note: ESSENTIEL. Une minute. La gestion des connaissances n'est pas un outil: c'
 - Et le reste: **tout ce qui est utile**, pour vous ou pour l'IA
 - Pas tout d'un coup: la base **grandit avec le temps**
 
-Note: ESSENTIEL. Une minute. Lire les quatre familles, avec un exemple de leur quotidien pour chacune: le ton de mes mots aux parents (vous); la sortie de P4 et ce que j'ai promis (ce que vous faites); l'idée d'un mot type, le problème du car (ce que vous savez); les personnes, les outils de l'école, la façon d'organiser une sortie (votre environnement). Le détail pour une école est sur la slide "Ce qu'un système sait de vous", plus loin dans la partie.
+Note: ESSENTIEL. Une minute. Lire les quatre familles, avec un exemple de leur quotidien pour chacune: le ton de mes mots aux parents (vous); la sortie de P4 et ce que j'ai promis (ce que vous faites); l'idée d'un mot type, le problème du car (ce que vous savez); les personnes, les outils de l'école, la façon d'organiser une sortie (votre environnement). Pour une école, en détail. Qui vous êtes: votre rôle, votre école, vos valeurs, votre ton. Vos objectifs et vos projets: les priorités de l'année, les projets en cours, ce que vous attendez des autres. Votre environnement: les personnes, les outils (mAGEordome, GEDI-PRO, RAVEL, OneDrive, IT School), le calendrier scolaire. Vos processus: comment vous organisez une sortie, une inscription, la revue du lundi.
 
 ---
 ## Décharger son cerveau
@@ -201,7 +201,7 @@ Note: ESSENTIEL. C'est la réponse à l'objectif 3: la gestion des connaissances
 <text x="480" y="63" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">elle comprend votre système, et travaille avec vous</text>
 <rect x="40" y="96" width="880" height="84" rx="12" fill="#475363"/>
 <text x="480" y="128" font-size="20" fill="#fff" font-weight="700" text-anchor="middle">Votre système</text>
-<text x="480" y="154" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">le journal, les projets, les tâches, les personnes, les processus</text>
+<text x="480" y="154" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">le journal, les projets, les tâches, les contacts, les processus</text>
 <rect x="742" y="104" width="164" height="26" rx="13" fill="none" stroke="#4ade80" stroke-width="2"/>
 <text x="824" y="122" font-size="13" fill="#4ade80" font-weight="700" text-anchor="middle">fonctionne sans IA</text>
 </svg></div>
@@ -259,15 +259,6 @@ Un système construit sur AI Kit for Obsidian, avec une direction fictive.
 - Puis la même question dans un chat vide, pour comparer
 
 Note: ESSENTIEL. DÉMO SYSTÈME (5 min), à l'écran. Ouvrir le dossier "Système Direction Saint-Exemple - notes seules (démo)" (dézippé avant la séance) dans Obsidian, et Claude sur ce dossier. Les demandes et les réponses attendues sont dans "DEMO - À demander.txt", à la racine du système. Pour chaque demande, montrer la réponse, puis poser la même question dans un chat vide. Les cinq demandes: 1) "Prépare la sortie P4 du 26 novembre." 2) "Fais ma revue du lundi." 3) "Écris aux parents de P4 que le paiement est attendu avant le 19/11." 4) "Qu'est-ce que j'attends des autres, et qui dois-je relancer cette semaine?" 5) "Quelles actions de la circulaire 9847 touchent mes projets?" (joindre le PDF). En 5 minutes: faire 1 et 2. Les autres si le temps le permet. Le fichier finit par un tableau qui compare le chat, un projet Claude, la mémoire de Claude et ce système. Si le temps le permet, 2 minutes dans mon propre système: le genre de demandes que je lui fais chaque jour.
-
----
-## Ce qu'un système sait de vous
-1. Qui vous êtes: votre rôle, votre école, vos valeurs, votre ton
-2. Vos objectifs et vos projets: les priorités de l'année, les projets en cours, ce que vous attendez des autres
-3. Votre environnement: les personnes, les outils (mAGEordome, GEDI-PRO, RAVEL, OneDrive, IT School), le calendrier scolaire
-4. Vos processus: comment vous organisez une sortie, une inscription, la revue du lundi
-
-Note: À PASSER si le temps manque.
 
 ---
 ## Une note, un type, une place

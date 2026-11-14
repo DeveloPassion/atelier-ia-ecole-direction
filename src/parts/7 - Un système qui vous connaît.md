@@ -15,7 +15,7 @@ Documentation: [Le site d'Obsidian (en anglais)](https://obsidian.md)
 Note: ESSENTIEL. Le système de démo est fait avec AI Kit for Obsidian, mon kit pour Obsidian: le dire une fois, sans insister. Le message: ce qu'ils peuvent faire seuls est simple, et des fichiers locaux gardent leur liberté (changer d'IA, changer de fournisseur). Le système personnel de chacun est hors du cours: à dire à l'oral, si besoin.
 
 ---
-## Le constat
+## Ce qui cloche dans toutes ces démos
 - La limite n'est plus l'IA
 - La limite, c'est **ce qu'elle sait de vous**
 - Chaque conversation **repart de zéro**, ou presque

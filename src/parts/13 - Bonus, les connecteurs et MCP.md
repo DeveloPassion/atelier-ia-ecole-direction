@@ -73,7 +73,7 @@ Note: Dans la version en anglais: "Allow once" et "Always allow" au moment de l'
 ## Connecteur, navigateur ou ordinateur?
 1. **Le connecteur**: le plus rapide et le plus fiable. Le premier choix quand il existe
 2. **Le navigateur** (Claude in Chrome): pour les sites sans connecteur
-3. **L'ordinateur**: Claude clique à votre place. Le dernier recours: plus lent, à surveiller, et pas encore sur Team ni Entreprise
+3. **L'ordinateur**: Claude clique à votre place. Le dernier recours: plus lent, et à surveiller
 
 ---
 ## Claude dans Word, Excel, PowerPoint et Outlook
@@ -96,7 +96,7 @@ Note: Lu le 13/11/2026 dans la documentation de Claude. Le nom du produit: "Clau
 2. Pour toute l'école: l'administrateur Microsoft 365 le déploie. Pour Outlook, il donne aussi **un accord, une seule fois**, pour la lecture des boîtes mail
 
 - Claude lit **le document ou le mail ouvert**, et ce contenu part chez Anthropic
-- Un document reçu de l'extérieur peut cacher **des instructions pour l'IA**: relisez chaque modification avant de l'accepter (**avec les mails: jamais de mode automatique!**)
+- Un document ou un mail reçu de l'extérieur peut cacher **des instructions pour l'IA**: relisez chaque modification avant de l'accepter (**avec les mails: jamais de mode automatique!**)
 - La durée de conservation réglée par l'école **ne s'applique pas** aux compléments
 
 Documentation: [Claude for Word (en anglais)](https://claude.com/docs/office-agents/word) · [Claude for Outlook (en anglais)](https://claude.com/docs/office-agents/outlook)

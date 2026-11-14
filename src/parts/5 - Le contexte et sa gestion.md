@@ -41,7 +41,7 @@ Note: ESSENTIEL.
 ## L'idée centrale
 **Résultat = modèle × contexte**
 
-- Le modèle est le même pour vous trois: Claude Entreprise
+- Le modèle est le même pour vous tous: Claude Entreprise
 - Le contexte, c'est vous qui le donnez
 - C'est **le seul facteur que vous contrôlez**
 

@@ -14,13 +14,6 @@ Une façon de faire, écrite une fois.
 - Claude la charge **seulement quand il en a besoin**: elle ne prend pas de place le reste du temps
 
 ---
-## Documenter vos processus
-- Ce qui est clair dans votre tête **ne l'est pas pour l'IA**, ni pour un remplaçant
-- Un processus écrit se **transmet**, s'**améliore** et se **vérifie**
-- L'IA ne fait bien que ce qui est **bien décrit**: un processus flou donne un résultat flou
-- Vos processus écrits sont une partie de **votre base de connaissances**
-
----
 ## Le processus et la skill: deux choses
 - **Le processus**: la description de votre façon de faire. Les étapes, les critères, vos préférences. Écrit pour vous et pour votre équipe
 - **La skill**: les instructions pour l'IA. Quand l'utiliser, quoi lire, quoi vérifier, quoi ne jamais faire

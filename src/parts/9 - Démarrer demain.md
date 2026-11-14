@@ -21,8 +21,9 @@ Note: ESSENTIEL.
 **Cette semaine**, quand vous avez une demi-heure:
 
 1. Créez le dossier de **votre base de connaissances**, sur votre PC, sauvegardé
-2. Écrivez-y **"À propos de moi.txt"**, en trois lignes pour commencer: votre rôle, votre école, votre ton. La fiche de contexte complète vient plus tard
-3. Ouvrez Claude **sur ce dossier**, et commencez par: "Lis d'abord le fichier À propos de moi.txt."{copy}
+2. Ouvrez Claude **sur ce dossier**
+3. Donnez-lui **votre fiche de contexte complétée**: "Voici ma fiche de contexte. Range-la dans mon dossier, dans un fichier À propos de moi.txt."{copy}
+4. Ensuite, commencez vos conversations par: "Lis d'abord le fichier À propos de moi.txt."{copy}
 
 Et chaque jour, 2 minutes: le **journal du jour**, un fichier texte par jour.
 

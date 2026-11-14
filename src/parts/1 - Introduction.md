@@ -37,9 +37,10 @@ Note: À PASSER si le temps manque. Timing visé (début à 10h): 0:08 fin de la
 ## Organisation de l'atelier
 - **Chacun sur son PC**: vous faites les démos avec moi
 - Le dossier "Fichiers de démo" est sur votre PC. **Tout y est fictif**
+- Pendant l'atelier: **aucune donnée d'élève**, aucune donnée sensible
 - **N'hésitez pas à m'interrompre.** Si une réponse prend trop de temps, on la note, et on y revient à la fin
 
-Note: ESSENTIEL. La règle sur les données n'est plus sur cette slide: la dire à voix haute avant la première démo (pendant l'atelier, aucune donnée d'élève), le détail est en partie 8. Poser une feuille sur la table pour noter les questions à reprendre à la fin, ou par la suite (par mail ou en séance 2). Vérifier que chacun a ouvert l'application Claude et le dossier "Fichiers de démo".
+Note: ESSENTIEL. Dire la règle sur les données maintenant, avant la première démo. Le détail (l'accord du collège et du DPO, le compte Claude du collège) est en partie 8. Poser une feuille sur la table pour noter les questions à reprendre à la fin, ou par la suite (par mail ou en séance 2). Vérifier que chacun a ouvert l'application Claude et le dossier "Fichiers de démo".
 
 ---
 ## Avant de commencer: les prérequis

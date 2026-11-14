@@ -6,7 +6,7 @@ Demander mieux, pour obtenir mieux.
 
 ---
 ## La recette d'une bonne demande, en détail
-La même recette que dans la partie 4, en six points:
+La même recette:
 
 1. **Qui vous êtes**: votre rôle, l'école, la classe, la situation
 2. **Ce que vous voulez**: un verbe clair (résume, compare, rédige, classe), et le document à traiter

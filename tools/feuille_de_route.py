@@ -107,7 +107,7 @@ rows = [
     (8, where(2, "L'application Claude"), "<b>Tour de l'application</b> (leur PC, 4 min), puis les modèles et l'effort",
      "Aucun fichier",
      "Dicter une demande au micro. Taper « / »",
-     "Si la dictée ne marche pas: touche Windows + H. Montrer aussi l'extension Claude in Chrome dans Chrome"),
+     "Montrer aussi l'extension Claude in Chrome dans Chrome"),
     (16, where(3, "3. Première démo"), "<b>Démo 1: la circulaire</b> (leur PC, 10 min, Opus 5.5)",
      FD + "Circulaire 9847 - Organisation de l'année scolaire 2026-2027.pdf<br/>Puis la vraie: circulaire 9757 (lien dans les notes de la slide)",
      q(quoted(3, "La circulaire: la demande à copier")[:1]) + "<br/>(slide suivante: une demande par rôle, bouton « Copier »)<br/>Effort haut: pas en direct, montrer le plan B. Toujours faire la 2e circulaire",
@@ -149,7 +149,7 @@ rows = [
      "Si le collège a déjà une politique, partir de la sienne. Finir sur « Lundi: trois gestes, trois interdits »"),
     (107, where(9, "Un seul pas pour demain"), "<b>Partie 9: à retenir, un seul pas, les documents</b> (5 min)",
      "L'aide-mémoire imprimé (un par personne), la fiche de contexte (PDF), les prérequis",
-     "", "Écrire sur chaque aide-mémoire le nom de l'admin du collège et celui du DPO"),
+     "", "Dire qui est l'admin du collège, et qui est le DPO"),
     (112, where(9, "Vos questions"), "<b>Leurs questions</b> (6 min)",
      "La feuille des questions notées pendant la séance", "",
      "Réponses prêtes dans le bonus 17 (fiabilité, remplacement, coût, données, téléphone, ChatGPT ou Copilot, triche, énergie, responsabilité). Coûts: bonus 18"),
@@ -214,7 +214,7 @@ before = KeepTogether([
     b("Dézipper les deux systèmes de démo, ouvrir « Direction Saint-Exemple » dans Obsidian, ouvrir une fois les slides sans internet."),
     b("Imprimer l'aide-mémoire (un par personne). Préparer la feuille « parking ». Option: une longue conversation compactée."),
     b("Arriver vers 9h30. Écran ou projecteur, wifi, chargeur."),
-    b("<b>Avant le jour J</b>: lire les réponses au test des prérequis (Cowork, Opus 5.5, extension, dossier hors OneDrive). Tester la page de la ferme le matin même. Tester la dictée, et Windows + H."),
+    b("<b>Avant le jour J</b>: lire les réponses au test des prérequis (Cowork, Opus 5.5, extension, dossier hors OneDrive). Tester la page de la ferme le matin même."),
 ])
 
 doc = SimpleDocTemplate(OUT, pagesize=landscape(A4), leftMargin=M, rightMargin=M, topMargin=48, bottomMargin=26,

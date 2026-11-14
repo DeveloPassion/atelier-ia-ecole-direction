@@ -38,7 +38,7 @@ Note: ESSENTIEL. Un seul pas, pour que ce soit fait. Remettre ici les documents:
 - **Une limite est atteinte**, ou Claude est bloqué: c'est l'admin du collège qui peut agir
 - **Un doute sur des données**: on ne met rien, et on demande au DPO
 
-Note: À PASSER si le temps manque. Écrire sur l'aide-mémoire de chacun le nom de l'admin du collège et celui du DPO: aujourd'hui, ils ne sont écrits nulle part dans le support.
+Note: À PASSER si le temps manque. Dire qui est l'admin du collège, et qui est le DPO: ce sont les deux personnes à appeler.
 
 ---
 ## La fiche de contexte

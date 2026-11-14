@@ -7,8 +7,8 @@ Faire débattre, diverger, converger et juger.
 ---
 ## Pourquoi plusieurs agents
 - Un seul agent a **un seul point de vue**, et il a tendance à vous donner raison
-- Plusieurs agents, chacun avec **un rôle**, voient ce qu'un seul rate
-- Dans l'application, il suffit de le demander: "Lance trois agents: ..." Ou ouvrez **plusieurs conversations**
+- Plusieurs agents, chacun avec **un rôle, un objectif ou un point de vue spécifique**, voient ce qu'un seul rate
+- Dans l'application, il suffit de le demander: "Lance trois agents: ..." ou "Lance trois sous‑agents: ...". Ou ouvrez **plusieurs conversations**
 - Ça coûte plus de tokens: gardez-le pour **ce qui compte** (une décision, un texte important)
 
 ---

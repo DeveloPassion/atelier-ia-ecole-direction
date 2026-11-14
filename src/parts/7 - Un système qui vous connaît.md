@@ -508,7 +508,7 @@ Note: À PASSER si le temps manque.
 
 ---
 ## Sauvegardez votre base
-- Votre base de connaissances devient **précieuse**: des années de travail
+- Votre base de connaissances deviendra vite **très précieuse**
 - **Au moins deux copies**, dont une hors de votre PC (un disque externe, un autre cloud)
 - La synchronisation n'est pas une sauvegarde: une erreur ou une suppression se synchronise aussi
 - Avant de laisser un agent travailler seul dans la base: **une sauvegarde récente**

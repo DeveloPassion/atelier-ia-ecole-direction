@@ -43,7 +43,7 @@ La question à se poser: **qu'est-ce que je refais chaque semaine**, de la même
 2. **Écrire**: "Écris la marche à suivre de ce qu'on vient de faire: les étapes, les règles, les critères."{copy} Vous relisez
 3. **Tester**, dans une **nouvelle conversation**, sans contexte: "Lis ce processus et exécute-le."{copy} La conversation d'origine cache les trous (partie 5)
 4. **Corriger** le texte, pas seulement la réponse. Puis retester
-5. **Transformer en skill**, avec la skill de création de skills: "Transforme ce processus en skill, en respectant la spécification des skills IA: https://agentskills.io/specification.md"{copy}
+5. **Transformer en skill**: "Transforme ce processus en skill, en respectant la spécification des skills IA: https://agentskills.io/specification.md"{copy}
 
 La spécification sert à ceci: la skill marche avec **d'autres outils d'IA**, sans dépendre d'un fournisseur.
 

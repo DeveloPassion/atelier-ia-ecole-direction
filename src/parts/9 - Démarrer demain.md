@@ -18,14 +18,14 @@ Note: ESSENTIEL.
 
 ---
 ## Un seul pas pour demain
-**Cette semaine**, quand vous avez une demi-heure:
+**Le but**: donner à l'IA **un minimum d'informations sur vous**, pour ne plus tout lui répéter. Cette semaine, quand vous avez une demi-heure:
 
 1. Créez le dossier de **votre base de connaissances**, sur votre PC, sauvegardé
 2. Ouvrez Claude **sur ce dossier**
 3. Donnez-lui **votre fiche de contexte complétée**: "Voici ma fiche de contexte. Range-la dans mon dossier, dans un fichier À propos de moi.txt."{copy}
 4. Ensuite, commencez vos conversations par: "Lis d'abord le fichier À propos de moi.txt."{copy}
 
-Et chaque jour, 2 minutes: le **journal du jour**, un fichier texte par jour.
+La vraie base de connaissances se construit **ensuite**, quand vous aurez l'habitude de l'IA.
 
 Note: ESSENTIEL. Un seul pas, pour que ce soit fait. Remettre ici les documents: l'aide-mémoire imprimé, la fiche de contexte, le projet de règles d'usage. Comment choisir le dossier de travail: la slide "Votre dossier de travail: comment faire" de la partie 6.
 

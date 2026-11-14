@@ -460,7 +460,7 @@ Note: À PASSER si le temps manque. Lien avec la démo 3: on a rangé des fichie
 <text x="202" y="292" font-size="13.5" fill="#4b5563" font-weight="400" text-anchor="start">Thibault Marchal, instituteur · le devis du car</text>
 </svg></div>
 
-Pour l'IA, ce sont des informations à lire, **pas un texte à deviner**.
+Toute l'information utile est **facilement accessible**, pour vous et pour l'IA.
 
 Note: À PASSER si le temps manque.
 

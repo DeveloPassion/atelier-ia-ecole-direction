@@ -63,6 +63,36 @@ Note: ESSENTIEL. Les trois temps se lisent comme une phrase: 1) un système, pou
 Note: ESSENTIEL. Une minute. La gestion des connaissances n'est pas un outil: c'est une habitude. En une phrase: appliquer à ses propres informations les principes de la gestion des connaissances, pour mieux apprendre, mieux travailler et mieux décider. Le message: un seul endroit fiable, pour vous et pour l'IA. Les slides suivantes montrent comment commencer: décharger son cerveau, puis le journal du jour.
 
 ---
+## Ce qu'on met dans sa base de connaissances
+<div class="chart"><svg viewBox="0 0 960 284" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: quatre familles de contenu pour une base de connaissances: vous, ce que vous faites, ce que vous savez, votre environnement">
+<rect x="20" y="10" width="450" height="124" rx="12" fill="#475363"/>
+<rect x="20" y="10" width="8" height="124" rx="4" fill="#e5007d"/>
+<text x="48" y="46" font-size="20" fill="#ff4fa8" font-weight="700" text-anchor="start">Vous</text>
+<text x="48" y="78" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">qui vous êtes, votre travail</text>
+<text x="48" y="106" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos préférences, votre style</text>
+<rect x="490" y="10" width="450" height="124" rx="12" fill="#475363"/>
+<rect x="490" y="10" width="8" height="124" rx="4" fill="#e5007d"/>
+<text x="518" y="46" font-size="20" fill="#ff4fa8" font-weight="700" text-anchor="start">Ce que vous faites</text>
+<text x="518" y="78" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos projets, vos plans, vos tâches</text>
+<text x="518" y="106" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos engagements, ce dont vous êtes responsable</text>
+<rect x="20" y="148" width="450" height="124" rx="12" fill="#475363"/>
+<rect x="20" y="148" width="8" height="124" rx="4" fill="#e5007d"/>
+<text x="48" y="184" font-size="20" fill="#ff4fa8" font-weight="700" text-anchor="start">Ce que vous savez</text>
+<text x="48" y="216" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos idées, vos références</text>
+<text x="48" y="244" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos problèmes à résoudre</text>
+<rect x="490" y="148" width="450" height="124" rx="12" fill="#475363"/>
+<rect x="490" y="148" width="8" height="124" rx="4" fill="#e5007d"/>
+<text x="518" y="184" font-size="20" fill="#ff4fa8" font-weight="700" text-anchor="start">Votre environnement</text>
+<text x="518" y="216" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos contacts, ce que vous attendez des autres</text>
+<text x="518" y="244" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos outils (sites, programmes), vos processus</text>
+</svg></div>
+
+- Et le reste: **tout ce qui est utile**, pour vous ou pour l'IA
+- Pas tout d'un coup: la base **grandit avec le temps**
+
+Note: ESSENTIEL. Une minute. Lire les quatre familles, avec un exemple de leur quotidien pour chacune: le ton de mes mots aux parents (vous); la sortie de P4 et ce que j'ai promis (ce que vous faites); l'idée d'un mot type, le problème du car (ce que vous savez); les personnes, les outils de l'école, la façon d'organiser une sortie (votre environnement). Le détail pour une école est sur la slide "Ce qu'un système sait de vous", plus loin dans la partie.
+
+---
 ## Décharger son cerveau
 <div class="chart"><svg viewBox="0 0 960 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dessin: à gauche, une tête pleine de choses à ne pas oublier; à droite, l'esprit libre, et les mêmes choses notées dans un endroit fiable">
 <circle cx="170" cy="88" r="74" fill="#2b323c" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>

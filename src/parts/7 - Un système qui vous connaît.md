@@ -129,8 +129,7 @@ Note: ESSENTIEL. Message clé: on ne note pas "pour l'IA". On note d'abord pour 
 <li><strong>Une seule note par jour</strong>. Tout y va, et il n'y a <strong>rien à décider</strong> sur le moment</li>
 <li>On capture partout: au bureau, sur le téléphone, en dictant</li>
 <li>Une fois par semaine, <strong>on range</strong> (tâches, projets, notes, ...)</li>
-<li>Pour l'IA, c'est <strong>une mine d'or</strong>: "Qu'est-ce que j'ai promis cette semaine?"{copy}</li>
-<li><strong>Pas de nom d'élève, pas de santé, pas de dossier</strong></li>
+<li>Pour l'IA, c'est <strong>une mine d'or</strong>: "Qu'est-ce que j'ai encore à faire cette semaine?"{copy}</li>
 </ul></div>
 
 Note: ESSENTIEL. Dans la démo Saint-Exemple, montrer la note du jour du 09/11. Pour commencer: un dossier "Journal" dans votre base de connaissances, avec un fichier texte par jour (2026-11-17.md). La règle sur les données vaut aussi pour la base: une note sur un parent ou sur un collègue est une donnée personnelle. Tant que l'école et le DPO n'ont pas validé, écrire "un parent de P4" plutôt qu'un nom.

@@ -82,7 +82,7 @@ Note: ESSENTIEL. 6 minutes. Reprendre d'abord les questions notées sur la feuil
 
 ---
 ## Merci
-Questions?
+**Explorez les parties bonus** du cours: j'y ai mis énormément d'informations pratiques.
 
 Sébastien Dubois
 

@@ -128,7 +128,7 @@ Note: ESSENTIEL. Message clé: on ne note pas "pour l'IA". On note d'abord pour 
 </svg><ul>
 <li><strong>Une seule note par jour</strong>. Tout y va, et il n'y a <strong>rien à décider</strong> sur le moment</li>
 <li>On capture partout: au bureau, sur le téléphone, en dictant</li>
-<li>Une fois par semaine, <strong>on range</strong>: une tâche, un projet, une personne</li>
+<li>Une fois par semaine, <strong>on range</strong> (tâches, projets, notes, ...)</li>
 <li>Pour l'IA, c'est <strong>une mine d'or</strong>: "Qu'est-ce que j'ai promis cette semaine?"{copy}</li>
 <li><strong>Pas de nom d'élève, pas de santé, pas de dossier</strong></li>
 </ul></div>

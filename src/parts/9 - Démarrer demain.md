@@ -18,9 +18,7 @@ Note: ESSENTIEL.
 
 ---
 ## Un seul pas pour demain
-**Demain, 15 minutes**: refaites votre vraie tâche d'aujourd'hui, avec la demande que vous avez gardée.
-
-Puis, cette semaine, quand vous avez une demi-heure:
+**Cette semaine**, quand vous avez une demi-heure:
 
 1. Créez le dossier de **votre base de connaissances**, sur votre PC, sauvegardé
 2. Écrivez-y **"À propos de moi.txt"**, en trois lignes pour commencer: votre rôle, votre école, votre ton. La fiche de contexte complète vient plus tard

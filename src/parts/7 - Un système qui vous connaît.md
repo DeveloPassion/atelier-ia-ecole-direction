@@ -462,7 +462,7 @@ Note: ESSENTIEL.
 
 ---
 ## Démo: Direction Saint-Exemple
-Un système construit sur AI Kit for Obsidian, avec une direction fictive. Les demandes tiennent **en une ligne**:
+Un système basique mais qui permet déjà beaucoup. Les demandes tiennent **en une ligne**:
 
 > Prépare la sortie P4 du 26 novembre.
 

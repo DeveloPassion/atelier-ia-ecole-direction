@@ -23,6 +23,16 @@ Note: Se présenter en une phrase. Dire que le support est fait pour continuer s
 Note: ESSENTIEL. Une minute, pas plus. Le but: dire d'où je parle (l'IT, la sécurité, l'IA au quotidien, la gestion des connaissances), pas raconter mon parcours.
 
 ---
+## Et vous?
+**Votre expérience avec l'IA**, en quelques mots chacun:
+
+- L'utilisez-vous déjà? **Jamais, parfois, tous les jours?**
+- **Quels outils**: Claude, ChatGPT, Copilot, Gemini, ...?
+- **Pour faire quoi**: des mails, des résumés, des idées, des documents, ...?
+
+Note: ESSENTIEL. Tour de table: 20 secondes par personne, 2 à 3 minutes en tout. Le but: connaître leur niveau, pour choisir en direct ce que je passe et ce que je détaille. Repérer ceux qui ont déjà de l'expérience: ils aideront leurs voisins pendant les démos. Ne pas commenter les réponses maintenant.
+
+---
 ## Quatre objectifs pour aujourd'hui
 1. **Démarrer rapidement avec Claude**: faire une vraie tâche, lui donner le bon contexte, et **vérifier** ce qu'il délivre
 2. **Comprendre l'IA agentique et les possibilités de Claude**: ce qu'il peut faire pour vous, et les règles à suivre avec les données de l'école

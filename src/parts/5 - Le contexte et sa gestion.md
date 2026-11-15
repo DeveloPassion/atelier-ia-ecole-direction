@@ -76,6 +76,29 @@ Note: ESSENTIEL.
 Note: ESSENTIEL.
 
 ---
+## Le bon dosage de contexte
+<div class="chart"><svg viewBox="0 0 960 296" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: la qualité de la réponse monte avec le contexte, puis baisse quand il y en a trop">
+<rect x="80" y="30" width="210" height="220" rx="0" fill="rgba(255,255,255,0.05)"/>
+<rect x="290" y="30" width="420" height="220" rx="0" fill="rgba(74,222,128,0.12)"/>
+<rect x="710" y="30" width="190" height="220" rx="0" fill="rgba(255,20,147,0.13)"/>
+<line x1="80" y1="250" x2="900" y2="250" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+<line x1="80" y1="30" x2="80" y2="250" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+<path d="M80,236 C240,232 320,64 500,58 C690,54 780,150 900,214" fill="none" stroke="#ff4fa8" stroke-width="5" stroke-linecap="round"/>
+<text x="185" y="110" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">Trop peu</text>
+<text x="185" y="134" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">réponse générique</text>
+<text x="185" y="152" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">ou vague</text>
+<text x="500" y="150" font-size="21" fill="#4ade80" font-weight="700" text-anchor="middle">Le bon contexte</text>
+<text x="500" y="176" font-size="15" fill="#fff" font-weight="400" text-anchor="middle">réponse précise et utile</text>
+<text x="805" y="76" font-size="18" fill="#ff4fa8" font-weight="700" text-anchor="middle">Trop</text>
+<text x="805" y="98" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">confusion,</text>
+<text x="805" y="116" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">erreurs</text>
+<text x="490" y="284" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Quantité de contexte</text>
+<text x="46" y="140" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle" transform="rotate(-90 46 140)">Qualité de la réponse</text>
+</svg></div>
+
+Note: À PASSER si le temps manque.
+
+---
 ## La conversation grandit à chaque tour
 <div class="chart tall"><svg viewBox="0 0 960 346" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: à chaque tour, Claude relit tous les messages et toutes les réponses d'avant, et la conversation s'approche de sa limite">
 <line x1="150" y1="40" x2="940" y2="40" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="6 6"/>
@@ -129,101 +152,6 @@ Note: ESSENTIEL.
 À chaque tour, Claude **relit tout**, puis il écrit. La conversation s'allonge, et chaque message **coûte plus** que le précédent.
 
 Note: ESSENTIEL. Montrer les trois colonnes de gauche à droite. Tour 1: il lit votre message, il écrit sa réponse. Tour 2: il relit le premier message et sa première réponse, plus le nouveau message. Tour 3: il relit tout, encore. Deux conséquences, qui reviennent dans toute la partie: la conversation finit par atteindre sa limite (la ligne du bas), et chaque message coûte plus cher que le précédent.
-
----
-## Plus c'est long, moins c'est fiable
-- La fiabilité **baisse peu à peu** quand la conversation s'allonge, bien avant qu'elle n'atteigne sa limite
-- Ce qui est **au milieu** d'un long contexte est moins bien utilisé que le début et la fin
-- **Plus n'est pas mieux**: chaque document ajouté rapporte un peu moins, et un document inutile peut faire baisser la qualité. Donnez **ce qui sert à la tâche**
-- Les signes: il **oublie une consigne**, il **se répète**, il **mélange les sujets**, il **invente davantage**. Alors: nouvelle conversation
-- Ce n'est pas vous: c'est **la limite du contexte**
-
-Note: ESSENTIEL. Il n'y a pas de seuil précis: cela dépend de la tâche et du modèle. Repère pratique avec Opus 5.5 (fenêtre d'un million de tokens): très fiable jusqu'à environ 500 000 à 600 000 tokens. Ce repère vient de l'expérience de Sébastien, pas d'une mesure. On n'approche presque jamais cette taille dans une conversation normale, mais une très longue conversation avec beaucoup de documents peut y arriver. Sources: l'étude "Context Rot" de Chroma (2025, https://www.trychroma.com/research/context-rot): pour la même question, la qualité baisse quand le texte autour s'allonge; et "Lost in the Middle" (2023): le début et la fin d'un long texte sont mieux utilisés que le milieu. La phrase à retenir: la taille de la fenêtre dit combien de texte tient, pas comment il est lu.
-
----
-## Une longue conversation, ou dix courtes
-<div class="chart tall"><svg viewBox="0 0 960 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: une longue conversation mélange les sujets, des conversations courtes gardent un sujet chacune">
-<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0.25" stop-color="#37404c" stop-opacity="0"/><stop offset="1" stop-color="#b3003c" stop-opacity="0.55"/></linearGradient></defs>
-<text x="230" y="28" font-size="15" fill="#fbbf24" font-weight="700" text-anchor="middle">UNE LONGUE CONVERSATION</text>
-<line x1="480" y1="14" x2="480" y2="322" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
-<rect x="70" y="44" width="160" height="23" rx="11" fill="#60a5fa" opacity="0.8"/>
-<text x="150" y="60" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">le mail</text>
-<rect x="230" y="72" width="160" height="23" rx="11" fill="#4ade80" opacity="0.8"/>
-<text x="310" y="88" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">le tableau</text>
-<rect x="70" y="100" width="160" height="23" rx="11" fill="#60a5fa" opacity="0.8"/>
-<text x="150" y="116" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">encore le mail</text>
-<rect x="230" y="128" width="160" height="23" rx="11" fill="#a855f7" opacity="0.8"/>
-<text x="310" y="144" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">la circulaire</text>
-<rect x="70" y="156" width="160" height="23" rx="11" fill="#4ade80" opacity="0.8"/>
-<text x="150" y="172" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">le tableau?</text>
-<rect x="230" y="184" width="160" height="23" rx="11" fill="#60a5fa" opacity="0.8"/>
-<text x="310" y="200" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">le mail, version 4</text>
-<rect x="70" y="212" width="160" height="23" rx="11" fill="#a855f7" opacity="0.8"/>
-<text x="150" y="228" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">et la circulaire</text>
-<rect x="230" y="240" width="160" height="23" rx="11" fill="#4ade80" opacity="0.8"/>
-<text x="310" y="256" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">quel tableau?</text>
-<rect x="70" y="268" width="160" height="23" rx="11" fill="#60a5fa" opacity="0.8"/>
-<text x="150" y="284" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">...</text>
-<rect x="50" y="40" width="360" height="256" rx="12" fill="url(#fade)"/>
-<text x="230" y="318" font-size="14.5" fill="#fbbf24" font-weight="700" text-anchor="middle">tout se mélange, tout est relu, il invente</text>
-<text x="730" y="28" font-size="15" fill="#4ade80" font-weight="700" text-anchor="middle">DES CONVERSATIONS COURTES</text>
-<text x="590" y="60" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Le mail</text>
-<rect x="530" y="70" width="120" height="23" rx="11" fill="#60a5fa" opacity="0.9"/>
-<rect x="530" y="98" width="120" height="23" rx="11" fill="#60a5fa" opacity="0.9"/>
-<rect x="530" y="126" width="120" height="23" rx="11" fill="#60a5fa" opacity="0.9"/>
-<text x="590" y="180" font-size="24" fill="#4ade80" font-weight="700" text-anchor="middle">✓</text>
-<text x="730" y="60" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Le tableau</text>
-<rect x="670" y="70" width="120" height="23" rx="11" fill="#4ade80" opacity="0.9"/>
-<rect x="670" y="98" width="120" height="23" rx="11" fill="#4ade80" opacity="0.9"/>
-<rect x="670" y="126" width="120" height="23" rx="11" fill="#4ade80" opacity="0.9"/>
-<text x="730" y="180" font-size="24" fill="#4ade80" font-weight="700" text-anchor="middle">✓</text>
-<text x="870" y="60" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">La circulaire</text>
-<rect x="810" y="70" width="120" height="23" rx="11" fill="#a855f7" opacity="0.9"/>
-<rect x="810" y="98" width="120" height="23" rx="11" fill="#a855f7" opacity="0.9"/>
-<rect x="810" y="126" width="120" height="23" rx="11" fill="#a855f7" opacity="0.9"/>
-<text x="870" y="180" font-size="24" fill="#4ade80" font-weight="700" text-anchor="middle">✓</text>
-<text x="730" y="222" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Pour continuer un travail:</text>
-<rect x="530" y="236" width="210" height="36" rx="18" fill="none" stroke="#ff4fa8" stroke-width="2" stroke-dasharray="6 5"/>
-<text x="635" y="259" font-size="14.5" fill="#ff4fa8" font-weight="700" text-anchor="middle">un prompt de passage</text>
-<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(748,238) scale(1.0)" fill="#e5007d"/>
-<rect x="782" y="236" width="150" height="36" rx="18" fill="#a855f7"/>
-<text x="857" y="259" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">nouvelle conversation</text>
-<text x="730" y="318" font-size="14.5" fill="#4ade80" font-weight="700" text-anchor="middle">un sujet, un résultat, puis on repart</text>
-</svg></div>
-
-Note: À PASSER si le temps manque. À gauche, une seule conversation pour tout: les sujets se mélangent, Claude relit tout à chaque message, et il finit par inventer. À droite, une conversation par sujet: elle est courte, elle donne un résultat, et on repart. Pour continuer un travail ailleurs: un prompt de passage. Les règles sont sur la slide suivante.
-
----
-## Des conversations courtes, sur un seul point
-**Évitez à tout prix les conversations longues et "fourre-tout".**
-
-1. **Une conversation = un sujet**: un mail, un tableau, une circulaire. Mieux vaut **dix conversations courtes** qu'une seule longue
-2. Nouvelle conversation quand vous **changez de sujet**, ou quand les réponses se dégradent
-3. Ce qui doit durer va **dans votre base de connaissances**
-4. Pour garder la suite d'un travail: **"Donne-moi un prompt que je peux passer à un autre agent pour continuer."{copy}** Collez-le dans une nouvelle conversation
-5. N'attendez pas que Claude **résume lui-même** le début d'une conversation trop longue (la compaction): il perd beaucoup d'informations (bonus 18)
-
-Note: ESSENTIEL. C'est la règle la plus importante de la partie: la dire avec force. D'après mon expérience, les longues conversations sont la cause la plus fréquente des mauvaises réponses et des inventions. Dévier un peu, c'est permis. Si le temps le permet, montrer une longue conversation déjà compactée, préparée avant la séance. Image utile: un PV de réunion garde les décisions et perd les détails. Les slides qui suivent, jusqu'à "Le coût, en bref", sont des compléments pour la relecture: la session, les conversations en parallèle, la fenêtre, les tokens, la courbe, le dosage et le coût. En séance, passer directement à "La mémoire et les projets Claude: un contexte loué": les deux dernières slides avant la pause sont essentielles.
-
----
-## La session
-- Une session, c'est une conversation
-- À chaque message, Claude **relit toute la conversation** depuis le début
-- Entre deux conversations, **il ne se souvient de rien**
-- Sauf ce qui est **écrit quelque part**: les fichiers de votre base de connaissances, un projet Claude, sa mémoire, ...
-- Dans votre base, il ne relit pas tout: il lit **ce qu'il y trouve intéressant** pour la tâche en cours
-
-Note: À PASSER si le temps manque. Précision utile si la question vient: Claude ne charge pas toute la base à chaque conversation. Il cherche et il ouvre les fichiers dont il a besoin. D'où l'intérêt d'une base bien rangée, avec des noms clairs.
-
----
-## Plusieurs conversations en parallèle
-- Vous pouvez donner **plusieurs tâches en même temps**: une conversation par tâche
-- Par exemple: le tableau des sorties dans l'une, la circulaire dans une autre, un mail aux parents dans une troisième
-- Chaque conversation **avance à son rythme**, et vous passez de l'une à l'autre
-- Vous relisez et vous corrigez quand une tâche est prête
-- Vous pouvez aussi donner **plusieurs objectifs ou sous-tâches dans une même conversation**, si l'ensemble est fortement lié
-
-Note: À PASSER si le temps manque. Le montrer en direct: lancer une tâche longue (par exemple ranger le dossier), puis ouvrir une nouvelle conversation pour un mail court pendant que la première travaille. C'est aussi une bonne raison de faire des conversations courtes: une tâche, une conversation.
 
 ---
 ## La fenêtre de contexte
@@ -296,6 +224,28 @@ Note: À PASSER si le temps manque.
 Note: À PASSER si le temps manque. Lire l'image de gauche à droite. Tout ce qui entre (la demande, la conversation, les fichiers, les résultats des outils) est coupé en tokens. Ces tokens remplissent la fenêtre de contexte: on y trouve l'utile, et aussi du bruit et du contexte périmé. Le modèle écrit ensuite sa réponse, en tokens aussi. Le coût: les tokens lus et les tokens écrits, chacun à son prix, et ce prix dépend du modèle (bonus 18). Gérer le contexte, c'est choisir ce qui entre, le structurer, le résumer, et le rafraîchir: donner au modèle la bonne information, au bon moment. C'est ce que fait une base de connaissances bien rangée.
 
 ---
+## Le coût, en bref
+- L'IA se paie en **tokens**: tout ce que Claude lit, plus tout ce qu'il écrit
+- Avec Claude Entreprise, l'école paie **un siège par personne, plus l'usage**
+- **Voir sa consommation**: **Paramètres > Utilisation**. Regardez-la de temps en temps
+- Si une limite est atteinte, Claude s'arrête et le dit: **demander plus à l'admin**, ou attendre
+- Premier levier: **le bon modèle pour la tâche**. Opus coûte 2 fois plus que Sonnet, et Fable 4 fois plus
+- Deuxième levier: **des conversations courtes**. Claude relit tout à chaque message: une longue conversation coûte de plus en plus
+- Le détail (les prix, les limites, le suivi): **bonus 18**
+
+Note: À PASSER si le temps manque. L'écran de l'utilisation vaut d'être montré en direct, s'il reste une minute (dans les paramètres; la documentation en anglais dit "Settings > Usage", le nom exact dépend de la version et de la langue). À vérifier avec l'admin avant la séance: le contrat exact (usage au volume, ou ancien contrat avec un quota inclus), les limites par personne, et si chacun voit bien sa consommation. Si le contrat est un ancien contrat avec quota, adapter la deuxième ligne: "les tokens comptent dans votre quota". Ordre de grandeur pour la salle, sans chiffres précis: une question courte coûte très peu; une circulaire de 20 pages lue en effort haut coûte bien plus.
+
+---
+## Plus c'est long, moins c'est fiable
+- La fiabilité **baisse peu à peu** quand la conversation s'allonge, bien avant qu'elle n'atteigne sa limite
+- Ce qui est **au milieu** d'un long contexte est moins bien utilisé que le début et la fin
+- **Plus n'est pas mieux**: chaque document ajouté rapporte un peu moins, et un document inutile peut faire baisser la qualité. Donnez **ce qui sert à la tâche**
+- Les signes: il **oublie une consigne**, il **se répète**, il **mélange les sujets**, il **invente davantage**. Alors: nouvelle conversation
+- Ce n'est pas vous: c'est **la limite du contexte**
+
+Note: ESSENTIEL. Il n'y a pas de seuil précis: cela dépend de la tâche et du modèle. Repère pratique avec Opus 5.5 (fenêtre d'un million de tokens): très fiable jusqu'à environ 500 000 à 600 000 tokens. Ce repère vient de l'expérience de Sébastien, pas d'une mesure. On n'approche presque jamais cette taille dans une conversation normale, mais une très longue conversation avec beaucoup de documents peut y arriver. Sources: l'étude "Context Rot" de Chroma (2025, https://www.trychroma.com/research/context-rot): pour la même question, la qualité baisse quand le texte autour s'allonge; et "Lost in the Middle" (2023): le début et la fin d'un long texte sont mieux utilisés que le milieu. La phrase à retenir: la taille de la fenêtre dit combien de texte tient, pas comment il est lu.
+
+---
 ## La fiabilité selon la longueur
 <div class="chart"><svg viewBox="0 0 960 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: la fiabilité baisse quand la conversation s'allonge">
 <rect x="80" y="20" width="480" height="240" fill="rgba(74,222,128,0.13)"/><rect x="560" y="20" width="160" height="240" fill="rgba(251,191,36,0.15)"/><rect x="720" y="20" width="160" height="240" fill="rgba(255,20,147,0.15)"/>
@@ -311,39 +261,89 @@ Note: À PASSER si le temps manque. Lire l'image de gauche à droite. Tout ce qu
 Note: À PASSER si le temps manque. Ce schéma n'est pas un résultat de benchmark: Anthropic n'a pas publié de courbe de contexte long pour Opus 5.5. La forme (stable, puis une baisse) suit les études "Context Rot" de Chroma (2025) et "Lost in the Middle" (2023). Le repère de 500 000 à 600 000 tokens est dans les notes de la slide "Plus c'est long, moins c'est fiable".
 
 ---
-## Le bon dosage de contexte
-<div class="chart"><svg viewBox="0 0 960 296" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: la qualité de la réponse monte avec le contexte, puis baisse quand il y en a trop">
-<rect x="80" y="30" width="210" height="220" rx="0" fill="rgba(255,255,255,0.05)"/>
-<rect x="290" y="30" width="420" height="220" rx="0" fill="rgba(74,222,128,0.12)"/>
-<rect x="710" y="30" width="190" height="220" rx="0" fill="rgba(255,20,147,0.13)"/>
-<line x1="80" y1="250" x2="900" y2="250" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
-<line x1="80" y1="30" x2="80" y2="250" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
-<path d="M80,236 C240,232 320,64 500,58 C690,54 780,150 900,214" fill="none" stroke="#ff4fa8" stroke-width="5" stroke-linecap="round"/>
-<text x="185" y="110" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">Trop peu</text>
-<text x="185" y="134" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">réponse générique</text>
-<text x="185" y="152" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">ou vague</text>
-<text x="500" y="150" font-size="21" fill="#4ade80" font-weight="700" text-anchor="middle">Le bon contexte</text>
-<text x="500" y="176" font-size="15" fill="#fff" font-weight="400" text-anchor="middle">réponse précise et utile</text>
-<text x="805" y="76" font-size="18" fill="#ff4fa8" font-weight="700" text-anchor="middle">Trop</text>
-<text x="805" y="98" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">confusion,</text>
-<text x="805" y="116" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">erreurs</text>
-<text x="490" y="284" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Quantité de contexte</text>
-<text x="46" y="140" font-size="15" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle" transform="rotate(-90 46 140)">Qualité de la réponse</text>
+## Une longue conversation, ou dix courtes
+<div class="chart tall"><svg viewBox="0 0 960 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: une longue conversation mélange les sujets, des conversations courtes gardent un sujet chacune">
+<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0.25" stop-color="#37404c" stop-opacity="0"/><stop offset="1" stop-color="#b3003c" stop-opacity="0.55"/></linearGradient></defs>
+<text x="230" y="28" font-size="15" fill="#fbbf24" font-weight="700" text-anchor="middle">UNE LONGUE CONVERSATION</text>
+<line x1="480" y1="14" x2="480" y2="322" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+<rect x="70" y="44" width="160" height="23" rx="11" fill="#60a5fa" opacity="0.8"/>
+<text x="150" y="60" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">le mail</text>
+<rect x="230" y="72" width="160" height="23" rx="11" fill="#4ade80" opacity="0.8"/>
+<text x="310" y="88" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">le tableau</text>
+<rect x="70" y="100" width="160" height="23" rx="11" fill="#60a5fa" opacity="0.8"/>
+<text x="150" y="116" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">encore le mail</text>
+<rect x="230" y="128" width="160" height="23" rx="11" fill="#a855f7" opacity="0.8"/>
+<text x="310" y="144" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">la circulaire</text>
+<rect x="70" y="156" width="160" height="23" rx="11" fill="#4ade80" opacity="0.8"/>
+<text x="150" y="172" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">le tableau?</text>
+<rect x="230" y="184" width="160" height="23" rx="11" fill="#60a5fa" opacity="0.8"/>
+<text x="310" y="200" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">le mail, version 4</text>
+<rect x="70" y="212" width="160" height="23" rx="11" fill="#a855f7" opacity="0.8"/>
+<text x="150" y="228" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">et la circulaire</text>
+<rect x="230" y="240" width="160" height="23" rx="11" fill="#4ade80" opacity="0.8"/>
+<text x="310" y="256" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">quel tableau?</text>
+<rect x="70" y="268" width="160" height="23" rx="11" fill="#60a5fa" opacity="0.8"/>
+<text x="150" y="284" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">...</text>
+<rect x="50" y="40" width="360" height="256" rx="12" fill="url(#fade)"/>
+<text x="230" y="318" font-size="14.5" fill="#fbbf24" font-weight="700" text-anchor="middle">tout se mélange, tout est relu, il invente</text>
+<text x="730" y="28" font-size="15" fill="#4ade80" font-weight="700" text-anchor="middle">DES CONVERSATIONS COURTES</text>
+<text x="590" y="60" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Le mail</text>
+<rect x="530" y="70" width="120" height="23" rx="11" fill="#60a5fa" opacity="0.9"/>
+<rect x="530" y="98" width="120" height="23" rx="11" fill="#60a5fa" opacity="0.9"/>
+<rect x="530" y="126" width="120" height="23" rx="11" fill="#60a5fa" opacity="0.9"/>
+<text x="590" y="180" font-size="24" fill="#4ade80" font-weight="700" text-anchor="middle">✓</text>
+<text x="730" y="60" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">Le tableau</text>
+<rect x="670" y="70" width="120" height="23" rx="11" fill="#4ade80" opacity="0.9"/>
+<rect x="670" y="98" width="120" height="23" rx="11" fill="#4ade80" opacity="0.9"/>
+<rect x="670" y="126" width="120" height="23" rx="11" fill="#4ade80" opacity="0.9"/>
+<text x="730" y="180" font-size="24" fill="#4ade80" font-weight="700" text-anchor="middle">✓</text>
+<text x="870" y="60" font-size="14.5" fill="#fff" font-weight="700" text-anchor="middle">La circulaire</text>
+<rect x="810" y="70" width="120" height="23" rx="11" fill="#a855f7" opacity="0.9"/>
+<rect x="810" y="98" width="120" height="23" rx="11" fill="#a855f7" opacity="0.9"/>
+<rect x="810" y="126" width="120" height="23" rx="11" fill="#a855f7" opacity="0.9"/>
+<text x="870" y="180" font-size="24" fill="#4ade80" font-weight="700" text-anchor="middle">✓</text>
+<text x="730" y="222" font-size="14" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Pour continuer un travail:</text>
+<rect x="530" y="236" width="210" height="36" rx="18" fill="none" stroke="#ff4fa8" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="635" y="259" font-size="14.5" fill="#ff4fa8" font-weight="700" text-anchor="middle">un prompt de passage</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(748,238) scale(1.0)" fill="#e5007d"/>
+<rect x="782" y="236" width="150" height="36" rx="18" fill="#a855f7"/>
+<text x="857" y="259" font-size="12.5" fill="#1f2329" font-weight="700" text-anchor="middle">nouvelle conversation</text>
+<text x="730" y="318" font-size="14.5" fill="#4ade80" font-weight="700" text-anchor="middle">un sujet, un résultat, puis on repart</text>
 </svg></div>
 
-Note: À PASSER si le temps manque.
+Note: À PASSER si le temps manque. À gauche, une seule conversation pour tout: les sujets se mélangent, Claude relit tout à chaque message, et il finit par inventer. À droite, une conversation par sujet: elle est courte, elle donne un résultat, et on repart. Pour continuer un travail ailleurs: un prompt de passage. Les règles sont sur la slide suivante.
 
 ---
-## Le coût, en bref
-- L'IA se paie en **tokens**: tout ce que Claude lit, plus tout ce qu'il écrit
-- Avec Claude Entreprise, l'école paie **un siège par personne, plus l'usage**
-- **Voir sa consommation**: **Paramètres > Utilisation**. Regardez-la de temps en temps
-- Si une limite est atteinte, Claude s'arrête et le dit: **demander plus à l'admin**, ou attendre
-- Premier levier: **le bon modèle pour la tâche**. Opus coûte 2 fois plus que Sonnet, et Fable 4 fois plus
-- Deuxième levier: **des conversations courtes**. Claude relit tout à chaque message: une longue conversation coûte de plus en plus
-- Le détail (les prix, les limites, le suivi): **bonus 18**
+## Des conversations courtes, sur un seul point
+**Évitez à tout prix les conversations longues et "fourre-tout".**
 
-Note: À PASSER si le temps manque. L'écran de l'utilisation vaut d'être montré en direct, s'il reste une minute (dans les paramètres; la documentation en anglais dit "Settings > Usage", le nom exact dépend de la version et de la langue). À vérifier avec l'admin avant la séance: le contrat exact (usage au volume, ou ancien contrat avec un quota inclus), les limites par personne, et si chacun voit bien sa consommation. Si le contrat est un ancien contrat avec quota, adapter la deuxième ligne: "les tokens comptent dans votre quota". Ordre de grandeur pour la salle, sans chiffres précis: une question courte coûte très peu; une circulaire de 20 pages lue en effort haut coûte bien plus.
+1. **Une conversation = un sujet**: un mail, un tableau, une circulaire. Mieux vaut **dix conversations courtes** qu'une seule longue
+2. Nouvelle conversation quand vous **changez de sujet**, ou quand les réponses se dégradent
+3. Ce qui doit durer va **dans votre base de connaissances**
+4. Pour garder la suite d'un travail: **"Donne-moi un prompt que je peux passer à un autre agent pour continuer."{copy}** Collez-le dans une nouvelle conversation
+5. N'attendez pas que Claude **résume lui-même** le début d'une conversation trop longue (la compaction): il perd beaucoup d'informations (bonus 18)
+
+Note: ESSENTIEL. C'est la règle la plus importante de la partie: la dire avec force. D'après mon expérience, les longues conversations sont la cause la plus fréquente des mauvaises réponses et des inventions. Dévier un peu, c'est permis. Si le temps le permet, montrer une longue conversation déjà compactée, préparée avant la séance. Image utile: un PV de réunion garde les décisions et perd les détails. En séance, passer ensuite à "La mémoire et les projets Claude: un contexte loué": les deux slides entre les deux sont des compléments.
+
+---
+## Plusieurs conversations en parallèle
+- Vous pouvez donner **plusieurs tâches en même temps**: une conversation par tâche
+- Par exemple: le tableau des sorties dans l'une, la circulaire dans une autre, un mail aux parents dans une troisième
+- Chaque conversation **avance à son rythme**, et vous passez de l'une à l'autre
+- Vous relisez et vous corrigez quand une tâche est prête
+- Vous pouvez aussi donner **plusieurs objectifs ou sous-tâches dans une même conversation**, si l'ensemble est fortement lié
+
+Note: À PASSER si le temps manque. Le montrer en direct: lancer une tâche longue (par exemple ranger le dossier), puis ouvrir une nouvelle conversation pour un mail court pendant que la première travaille. C'est aussi une bonne raison de faire des conversations courtes: une tâche, une conversation.
+
+---
+## La session
+- Une session, c'est une conversation
+- À chaque message, Claude **relit toute la conversation** depuis le début
+- Entre deux conversations, **il ne se souvient de rien**
+- Sauf ce qui est **écrit quelque part**: les fichiers de votre base de connaissances, un projet Claude, sa mémoire, ...
+- Dans votre base, il ne relit pas tout: il lit **ce qu'il y trouve intéressant** pour la tâche en cours
+
+Note: À PASSER si le temps manque. Elle fait le lien avec les deux slides suivantes: des conversations courtes, donc ce qui doit durer est écrit ailleurs. Précision utile si la question vient: Claude ne charge pas toute la base à chaque conversation. Il cherche et il ouvre les fichiers dont il a besoin. D'où l'intérêt d'une base bien rangée, avec des noms clairs.
 
 ---
 ## La mémoire et les projets Claude: un contexte loué

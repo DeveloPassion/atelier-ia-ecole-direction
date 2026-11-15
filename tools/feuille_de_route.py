@@ -117,7 +117,7 @@ rows = [
      "Mettre les deux réponses côte à côte: laquelle est utilisable telle quelle?"),
     (35, where(5, "Ce que Claude voit"), "<b>Partie 5, la suite: les sept slides essentielles</b>",
      "Option: l'écran de l'utilisation, dans les paramètres (slide « Le coût, en bref »)", "",
-     "<b>Repère: la pause commence à 0:45.</b> Les compléments (de « La session » à « Le coût, en bref ») sont pour la relecture. Finir sur les deux dernières slides avant la pause: la mémoire et les projets Claude, puis la base de connaissances"),
+     "<b>Repère: la pause commence à 0:45.</b> Chaque slide essentielle est suivie de ses compléments, à passer (numéros sous ce tableau). Finir sur les deux dernières slides avant la pause: la mémoire et les projets Claude, puis la base de connaissances"),
     (45, "Pause (10 min)", "<b>Préparer la suite</b>",
      "Ouvrir « Fichiers de démo » et le dossier « Plan B ». Chrome avec l'extension, et la page de la ferme ouverte",
      "", "Comparer les deux autres tableaux de la circulaire avec ceux qui le veulent"),

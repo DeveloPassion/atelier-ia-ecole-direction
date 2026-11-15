@@ -35,7 +35,7 @@ Note: ESSENTIEL. Tour de table: 20 secondes par personne, 2 à 3 minutes en tout
 ---
 ## Quatre objectifs pour aujourd'hui
 1. **Démarrer rapidement avec Claude**: faire une vraie tâche, lui donner le bon contexte, et **vérifier** ce qu'il délivre
-2. **Comprendre l'IA agentique et les possibilités de Claude**: ce qu'il peut faire pour vous, et les règles à suivre avec les données de l'école
+2. **Comprendre l'IA agentique et les possibilités de Claude**: ce qu'il peut faire pour vous
 3. **Découvrir la gestion des connaissances**, et sa valeur pour l'humain et pour l'IA
 4. **Comprendre la valeur d'un système IA souverain**: un système qui vous connaît, et **qui vous appartient**
 
@@ -59,7 +59,7 @@ Note: À PASSER si le temps manque. Timing visé (début à 10h): 0:04 fin de la
 
 ---
 ## Organisation de l'atelier
-- **Chacun sur son PC**: vous faites les démos avec moi
+- **Chacun sur son PC**: vous faites les démos avec moi si vous le souhaitez
 - Le dossier "Fichiers de démo" est sur votre PC. **Tout y est fictif**
 - Pendant l'atelier: **aucune donnée d'élève**, aucune donnée sensible
 - **N'hésitez pas à m'interrompre**

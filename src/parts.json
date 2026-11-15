@@ -2,16 +2,16 @@
  {
   "n": 1,
   "name": "Introduction",
-  "dur": "8 min",
-  "slides": 9,
+  "dur": "4 min",
+  "slides": 6,
   "file": "1 - Introduction.md",
   "html": "01-introduction.html"
  },
  {
   "n": 2,
   "name": "Prise en main de Claude",
-  "dur": "8 min",
-  "slides": 6,
+  "dur": "12 min",
+  "slides": 9,
   "file": "2 - Prise en main de Claude.md",
   "html": "02-prise-en-main-de-claude.html"
  },

@@ -10,8 +10,8 @@
  {
   "n": 2,
   "name": "Prise en main de Claude",
-  "dur": "12 min",
-  "slides": 8,
+  "dur": "8 min",
+  "slides": 5,
   "file": "2 - Prise en main de Claude.md",
   "html": "02-prise-en-main-de-claude.html"
  },
@@ -34,8 +34,8 @@
  {
   "n": 5,
   "name": "Le contexte et sa gestion",
-  "dur": "10 min + pause",
-  "slides": 17,
+  "dur": "14 min + pause",
+  "slides": 20,
   "file": "5 - Le contexte et sa gestion.md",
   "html": "05-le-contexte-et-sa-gestion.html"
  },

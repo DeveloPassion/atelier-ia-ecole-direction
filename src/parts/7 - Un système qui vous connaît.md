@@ -63,40 +63,6 @@ Note: ESSENTIEL. Les trois temps se lisent comme une phrase: 1) un système, pou
 Note: ESSENTIEL. Une minute. La gestion des connaissances n'est pas un outil: c'est une habitude. En une phrase: appliquer à ses propres informations les principes de la gestion des connaissances, pour mieux apprendre, mieux travailler et mieux décider. Le message: un seul endroit fiable, pour vous et pour l'IA. Les slides suivantes montrent comment commencer: décharger son cerveau, puis le journal du jour.
 
 ---
-## Ce qu'on met dans sa base de connaissances
-<div class="chart"><svg viewBox="0 0 960 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: cinq familles de contenu pour une base de connaissances: vous, ce que vous faites, ce que vous savez, votre environnement, et votre journal">
-<rect x="20" y="8" width="450" height="116" rx="12" fill="#475363"/>
-<rect x="20" y="8" width="8" height="116" rx="4" fill="#e5007d"/>
-<text x="48" y="42" font-size="20" fill="#ff4fa8" font-weight="700" text-anchor="start">Vous</text>
-<text x="48" y="72" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">qui vous êtes, votre travail</text>
-<text x="48" y="99" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos préférences, votre style</text>
-<rect x="490" y="8" width="450" height="116" rx="12" fill="#475363"/>
-<rect x="490" y="8" width="8" height="116" rx="4" fill="#a855f7"/>
-<text x="518" y="42" font-size="20" fill="#c9a2ff" font-weight="700" text-anchor="start">Ce que vous faites</text>
-<text x="518" y="72" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos projets, vos plans, vos tâches</text>
-<text x="518" y="99" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos engagements, ce dont vous êtes responsable</text>
-<rect x="20" y="136" width="450" height="116" rx="12" fill="#475363"/>
-<rect x="20" y="136" width="8" height="116" rx="4" fill="#fbbf24"/>
-<text x="48" y="170" font-size="20" fill="#fbbf24" font-weight="700" text-anchor="start">Ce que vous savez</text>
-<text x="48" y="200" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos idées, vos références</text>
-<text x="48" y="227" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos problèmes à résoudre</text>
-<rect x="490" y="136" width="450" height="116" rx="12" fill="#475363"/>
-<rect x="490" y="136" width="8" height="116" rx="4" fill="#4ade80"/>
-<text x="518" y="170" font-size="20" fill="#4ade80" font-weight="700" text-anchor="start">Votre environnement</text>
-<text x="518" y="200" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos contacts, ce que vous attendez des autres</text>
-<text x="518" y="227" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos outils (sites, programmes), vos processus</text>
-<rect x="20" y="264" width="920" height="58" rx="12" fill="#475363"/>
-<rect x="20" y="264" width="8" height="58" rx="4" fill="#60a5fa"/>
-<text x="48" y="300" font-size="20" fill="#60a5fa" font-weight="700" text-anchor="start">Votre journal</text>
-<text x="214" y="300" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">les notes du jour, de la semaine, du mois: ce qui s'est passé, ce qui a été décidé</text>
-</svg></div>
-
-- Et le reste: **tout ce qui est utile**, pour vous ou pour l'IA
-- Pas tout d'un coup: la base **grandit avec le temps**
-
-Note: ESSENTIEL. Une minute. Lire les cinq familles, avec un exemple de leur quotidien pour chacune: le ton de mes mots aux parents (vous); la sortie de P4 et ce que j'ai promis (ce que vous faites); l'idée d'un mot type, le problème du car (ce que vous savez); les personnes, les outils de l'école, la façon d'organiser une sortie (votre environnement); la note du jour, et la revue de la semaine (votre journal). Pour une école, en détail. Qui vous êtes: votre rôle, votre école, vos valeurs, votre ton. Vos objectifs et vos projets: les priorités de l'année, les projets en cours, ce que vous attendez des autres. Votre environnement: les personnes, les outils (mAGEordome, GEDI-PRO, RAVEL, OneDrive, IT School), le calendrier scolaire. Vos processus: comment vous organisez une sortie, une inscription, la revue du lundi.
-
----
 ## Décharger son cerveau
 <div class="chart"><svg viewBox="0 0 960 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dessin: à gauche, une tête pleine de choses à ne pas oublier; à droite, l'esprit libre, et les mêmes choses notées dans un endroit fiable">
 <circle cx="170" cy="88" r="74" fill="#2b323c" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
@@ -169,52 +135,38 @@ Note: ESSENTIEL. Message clé: on ne note pas "pour l'IA". On note d'abord pour 
 Note: ESSENTIEL. Dans la démo Saint-Exemple, montrer la note du jour du 09/11. Pour commencer: un dossier "Journal" dans votre base de connaissances, avec un fichier texte par jour (2026-11-17.md). La règle sur les données vaut aussi pour la base: une note sur un parent ou sur un collègue est une donnée personnelle. Tant que l'école et le DPO n'ont pas validé, écrire "un parent de P4" plutôt qu'un nom.
 
 ---
-## Le cercle vertueux
-<div class="chart"><svg viewBox="0 0 960 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma en boucle: vos notes deviennent le contexte de l'IA, qui donne de meilleures réponses, qui deviennent de nouvelles notes">
-<rect x="70" y="16" width="250" height="70" rx="12" fill="#475363" stroke="#ff4fa8" stroke-width="2"/>
-<text x="195" y="46" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">Vos notes</text>
-<text x="195" y="69" font-size="13.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">ce que vous écrivez chaque jour</text>
-<rect x="640" y="16" width="250" height="70" rx="12" fill="#475363"/>
-<text x="765" y="46" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">Le contexte de l'IA</text>
-<text x="765" y="69" font-size="13.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">elle sait de quoi vous parlez</text>
-<rect x="640" y="170" width="250" height="70" rx="12" fill="#475363"/>
-<text x="765" y="200" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">De meilleures réponses</text>
-<text x="765" y="223" font-size="13.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">justes, et dans votre ton</text>
-<rect x="70" y="170" width="250" height="70" rx="12" fill="#475363" stroke="#ff4fa8" stroke-width="2"/>
-<text x="195" y="200" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">De nouvelles notes</text>
-<text x="195" y="223" font-size="13.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">ce qui est utile reste</text>
-<line x1="336" y1="51" x2="612" y2="51" stroke="#e5007d" stroke-width="5" stroke-linecap="round"/><polygon points="624,51 610,42 610,60" fill="#e5007d"/>
-<line x1="765" y1="100" x2="765" y2="144" stroke="#e5007d" stroke-width="5" stroke-linecap="round"/><polygon points="765,156 756,142 774,142" fill="#e5007d"/>
-<line x1="624" y1="205" x2="348" y2="205" stroke="#e5007d" stroke-width="5" stroke-linecap="round"/><polygon points="336,205 350,196 350,214" fill="#e5007d"/>
-<line x1="195" y1="156" x2="195" y2="112" stroke="#e5007d" stroke-width="5" stroke-linecap="round"/><polygon points="195,100 186,114 204,114" fill="#e5007d"/>
-<text x="480" y="122" font-size="17" fill="#ff4fa8" font-weight="700" text-anchor="middle">À chaque tour,</text>
-<text x="480" y="146" font-size="17" fill="#ff4fa8" font-weight="700" text-anchor="middle">l'IA vous est plus utile</text>
+## Ce qu'on met dans sa base de connaissances
+<div class="chart"><svg viewBox="0 0 960 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: cinq familles de contenu pour une base de connaissances: vous, ce que vous faites, ce que vous savez, votre environnement, et votre journal">
+<rect x="20" y="8" width="450" height="116" rx="12" fill="#475363"/>
+<rect x="20" y="8" width="8" height="116" rx="4" fill="#e5007d"/>
+<text x="48" y="42" font-size="20" fill="#ff4fa8" font-weight="700" text-anchor="start">Vous</text>
+<text x="48" y="72" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">qui vous êtes, votre travail</text>
+<text x="48" y="99" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos préférences, votre style</text>
+<rect x="490" y="8" width="450" height="116" rx="12" fill="#475363"/>
+<rect x="490" y="8" width="8" height="116" rx="4" fill="#a855f7"/>
+<text x="518" y="42" font-size="20" fill="#c9a2ff" font-weight="700" text-anchor="start">Ce que vous faites</text>
+<text x="518" y="72" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos projets, vos plans, vos tâches</text>
+<text x="518" y="99" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos engagements, ce dont vous êtes responsable</text>
+<rect x="20" y="136" width="450" height="116" rx="12" fill="#475363"/>
+<rect x="20" y="136" width="8" height="116" rx="4" fill="#fbbf24"/>
+<text x="48" y="170" font-size="20" fill="#fbbf24" font-weight="700" text-anchor="start">Ce que vous savez</text>
+<text x="48" y="200" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos idées, vos références</text>
+<text x="48" y="227" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos problèmes à résoudre</text>
+<rect x="490" y="136" width="450" height="116" rx="12" fill="#475363"/>
+<rect x="490" y="136" width="8" height="116" rx="4" fill="#4ade80"/>
+<text x="518" y="170" font-size="20" fill="#4ade80" font-weight="700" text-anchor="start">Votre environnement</text>
+<text x="518" y="200" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos contacts, ce que vous attendez des autres</text>
+<text x="518" y="227" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">vos outils (sites, programmes), vos processus</text>
+<rect x="20" y="264" width="920" height="58" rx="12" fill="#475363"/>
+<rect x="20" y="264" width="8" height="58" rx="4" fill="#60a5fa"/>
+<text x="48" y="300" font-size="20" fill="#60a5fa" font-weight="700" text-anchor="start">Votre journal</text>
+<text x="214" y="300" font-size="16.5" fill="#fff" font-weight="400" text-anchor="start">les notes du jour, de la semaine, du mois: ce qui s'est passé, ce qui a été décidé</text>
 </svg></div>
 
-- **Pour l'IA**: vos notes deviennent son contexte
-- **Pour vous**: toutes vos connaissances sont accessibles **depuis un seul endroit**, ...
+- Et le reste: **tout ce qui est utile**, pour vous ou pour l'IA
+- Pas tout d'un coup: la base **grandit avec le temps**
 
-Note: ESSENTIEL. C'est la réponse à l'objectif 3: la gestion des connaissances a une valeur pour vous (une tête libre, moins d'oublis) et pour l'IA (le contexte). Les deux se nourrissent. Dire: au début, la base est petite et l'IA aide peu; après quelques semaines de journal, elle connaît vos projets.
-
----
-## Deux couches
-<p class="step"><span>1 · Un système</span> &#8250; <b>2 · Qui vous connaît</b> &#8250; <span>3 · Et qui vous appartient</span></p>
-<div class="chart"><svg viewBox="0 0 960 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: deux couches. En bas, votre système, qui fonctionne sans IA. Au-dessus, l'IA, qui comprend ce système">
-<rect x="110" y="8" width="740" height="74" rx="12" fill="rgba(229,0,125,0.18)" stroke="#ff4fa8" stroke-width="2.5"/>
-<text x="480" y="38" font-size="20" fill="#fff" font-weight="700" text-anchor="middle">L'IA</text>
-<text x="480" y="63" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">elle comprend votre système, et travaille avec vous</text>
-<rect x="40" y="96" width="880" height="84" rx="12" fill="#475363"/>
-<text x="480" y="128" font-size="20" fill="#fff" font-weight="700" text-anchor="middle">Votre système</text>
-<text x="480" y="154" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">le journal, les projets, les tâches, les contacts, les processus</text>
-<rect x="742" y="104" width="164" height="26" rx="13" fill="none" stroke="#4ade80" stroke-width="2"/>
-<text x="824" y="122" font-size="13" fill="#4ade80" font-weight="700" text-anchor="middle">fonctionne sans IA</text>
-</svg></div>
-
-- Plus votre système s'améliore, plus l'IA **s'adapte à vous et à vos besoins**
-- **D'abord pour vous, en bonus pour l'IA**: c'est votre second cerveau digital
-- Des fichiers texte, chez vous: ils fonctionnent avec **n'importe quelle IA**
-
-Note: ESSENTIEL. Le pont entre les deux objectifs: la couche du bas, c'est la gestion des connaissances (elle fonctionne sans IA); la couche du haut, c'est l'IA qui lit ce système. Obsidian sert à lire et à écrire les fichiers de la couche du bas.
+Note: ESSENTIEL. Une minute. Lire les cinq familles, avec un exemple de leur quotidien pour chacune: le ton de mes mots aux parents (vous); la sortie de P4 et ce que j'ai promis (ce que vous faites); l'idée d'un mot type, le problème du car (ce que vous savez); les personnes, les outils de l'école, la façon d'organiser une sortie (votre environnement); la note du jour, et la revue de la semaine (votre journal). Pour une école, en détail. Qui vous êtes: votre rôle, votre école, vos valeurs, votre ton. Vos objectifs et vos projets: les priorités de l'année, les projets en cours, ce que vous attendez des autres. Votre environnement: les personnes, les outils (mAGEordome, GEDI-PRO, RAVEL, OneDrive, IT School), le calendrier scolaire. Vos processus: comment vous organisez une sortie, une inscription, la revue du lundi.
 
 ---
 ## Votre système, concrètement
@@ -293,60 +245,7 @@ Note: ESSENTIEL. Le pont entre les deux objectifs: la couche du bas, c'est la ge
 - **Un dossier** sur votre PC. Dedans, **des notes**: des fichiers texte, rangés par type
 - C'est le dossier de travail que vous ouvrez dans Claude: il y lit, et **il y range avec vous**
 
-Note: ESSENTIEL. Une minute. Rendre "votre système" concret: ce n'est pas un logiciel, c'est un dossier avec des notes. Montrer que les couleurs sont celles de la slide "Ce qu'on met dans sa base de connaissances": vous (rose), ce que vous faites (mauve), ce que vous savez (jaune), votre environnement (vert), votre journal (bleu). Les noms des dossiers sont des exemples: chacun choisit les siens. La démo qui suit montre le même dossier dans Obsidian, pour une direction fictive.
-
----
-## Avant et après
-La sortie de P4 au musée, le 26 novembre.
-
-<div class="chart"><svg viewBox="0 0 960 258" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: sans système, dix lignes de contexte à chaque demande; avec un système, une seule ligne">
-<text x="230" y="24" font-size="15" fill="#fbbf24" font-weight="700" text-anchor="middle">SANS SYSTÈME</text>
-<rect x="30" y="38" width="400" height="184" rx="14" fill="#475363"/>
-<rect x="50" y="56" width="340" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
-<rect x="50" y="74" width="360" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
-<rect x="50" y="92" width="300" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
-<rect x="50" y="110" width="350" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
-<rect x="50" y="128" width="330" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
-<rect x="50" y="146" width="360" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
-<rect x="50" y="164" width="280" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
-<rect x="50" y="182" width="345" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
-<rect x="50" y="200" width="220" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
-<text x="230" y="246" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">dix lignes de contexte, à chaque demande</text>
-<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(462,112) scale(1.0)" fill="#e5007d"/>
-<text x="730" y="24" font-size="15" fill="#4ade80" font-weight="700" text-anchor="middle">AVEC UN SYSTÈME</text>
-<rect x="520" y="38" width="420" height="46" rx="14" fill="#e5007d"/>
-<text x="730" y="67" font-size="16.5" fill="#fff" font-weight="700" text-anchor="middle">Prépare la sortie P4 du 26 novembre</text>
-<text x="730" y="114" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Il connaît déjà:</text>
-<rect x="528" y="126" width="112" height="32" rx="16" fill="#475363"/>
-<text x="584.0" y="147" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">la classe</text>
-<rect x="650" y="126" width="130" height="32" rx="16" fill="#475363"/>
-<text x="715.0" y="147" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">l'instituteur</text>
-<rect x="790" y="126" width="142" height="32" rx="16" fill="#475363"/>
-<text x="861.0" y="147" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">le budget</text>
-<rect x="545" y="166" width="190" height="32" rx="16" fill="#475363"/>
-<text x="640.0" y="187" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">le plafond des frais</text>
-<rect x="745" y="166" width="170" height="32" rx="16" fill="#475363"/>
-<text x="830.0" y="187" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">le modèle de mot</text>
-<text x="730" y="246" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">et il ajoute l'encodage sur IT School à vos tâches</text>
-</svg></div>
-
-Avec un système, la demande tient en une ligne: "Prépare la sortie P4 du 26 novembre"{copy}
-
-Note: ESSENTIEL.
-
----
-## Démo: Direction Saint-Exemple
-Un système construit sur AI Kit for Obsidian, avec une direction fictive. Les demandes tiennent **en une ligne**:
-
-> Prépare la sortie P4 du 26 novembre.
-
-> Fais ma revue du lundi.
-
-Puis la même demande **dans un chat vide**, pour comparer.
-
-Pour essayer vous-mêmes: dézippez "Système Direction Saint-Exemple - notes seules (démo).zip" (dans "Fichiers de démo"), et choisissez ce dossier comme dossier de travail.
-
-Note: ESSENTIEL. DÉMO SYSTÈME (5 min), à l'écran. Ouvrir le dossier "Système Direction Saint-Exemple - notes seules (démo)" (dézippé avant la séance) dans Obsidian, et Claude sur ce dossier. Les demandes et les réponses attendues sont dans "DEMO - À demander.txt", à la racine du système. Pour chaque demande, montrer la réponse, puis poser la même question dans un chat vide. Les cinq demandes: 1) "Prépare la sortie P4 du 26 novembre." 2) "Fais ma revue du lundi." 3) "Écris aux parents de P4 que le paiement est attendu avant le 19/11." 4) "Qu'est-ce que j'attends des autres, et qui dois-je relancer cette semaine?" 5) "Quelles actions de la circulaire 9847 touchent mes projets?" (joindre le PDF). En 5 minutes: faire 1 et 2. Les autres si le temps le permet. Le fichier finit par un tableau qui compare le chat, un projet Claude, la mémoire de Claude et ce système. Si le temps le permet, 2 minutes dans mon propre système: le genre de demandes que je lui fais chaque jour.
+Note: ESSENTIEL. Une minute. Rendre "votre système" concret: ce n'est pas un logiciel, c'est un dossier avec des notes. Montrer que les couleurs sont celles de la slide "Ce qu'on met dans sa base de connaissances": vous (rose), ce que vous faites (mauve), ce que vous savez (jaune), votre environnement (vert), votre journal (bleu). Les noms des dossiers sont des exemples: chacun choisit les siens. La démo, un peu plus loin, montre le même dossier dans Obsidian, pour une direction fictive. Les trois slides suivantes (les types de notes) sont des compléments: en séance, passer à "Le cercle vertueux".
 
 ---
 ## Les types de notes
@@ -464,6 +363,107 @@ Toute l'information utile est **facilement accessible**, pour vous et pour l'IA.
 Note: À PASSER si le temps manque.
 
 ---
+## Le cercle vertueux
+<div class="chart"><svg viewBox="0 0 960 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma en boucle: vos notes deviennent le contexte de l'IA, qui donne de meilleures réponses, qui deviennent de nouvelles notes">
+<rect x="70" y="16" width="250" height="70" rx="12" fill="#475363" stroke="#ff4fa8" stroke-width="2"/>
+<text x="195" y="46" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">Vos notes</text>
+<text x="195" y="69" font-size="13.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">ce que vous écrivez chaque jour</text>
+<rect x="640" y="16" width="250" height="70" rx="12" fill="#475363"/>
+<text x="765" y="46" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">Le contexte de l'IA</text>
+<text x="765" y="69" font-size="13.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">elle sait de quoi vous parlez</text>
+<rect x="640" y="170" width="250" height="70" rx="12" fill="#475363"/>
+<text x="765" y="200" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">De meilleures réponses</text>
+<text x="765" y="223" font-size="13.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">justes, et dans votre ton</text>
+<rect x="70" y="170" width="250" height="70" rx="12" fill="#475363" stroke="#ff4fa8" stroke-width="2"/>
+<text x="195" y="200" font-size="18" fill="#fff" font-weight="700" text-anchor="middle">De nouvelles notes</text>
+<text x="195" y="223" font-size="13.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">ce qui est utile reste</text>
+<line x1="336" y1="51" x2="612" y2="51" stroke="#e5007d" stroke-width="5" stroke-linecap="round"/><polygon points="624,51 610,42 610,60" fill="#e5007d"/>
+<line x1="765" y1="100" x2="765" y2="144" stroke="#e5007d" stroke-width="5" stroke-linecap="round"/><polygon points="765,156 756,142 774,142" fill="#e5007d"/>
+<line x1="624" y1="205" x2="348" y2="205" stroke="#e5007d" stroke-width="5" stroke-linecap="round"/><polygon points="336,205 350,196 350,214" fill="#e5007d"/>
+<line x1="195" y1="156" x2="195" y2="112" stroke="#e5007d" stroke-width="5" stroke-linecap="round"/><polygon points="195,100 186,114 204,114" fill="#e5007d"/>
+<text x="480" y="122" font-size="17" fill="#ff4fa8" font-weight="700" text-anchor="middle">À chaque tour,</text>
+<text x="480" y="146" font-size="17" fill="#ff4fa8" font-weight="700" text-anchor="middle">l'IA vous est plus utile</text>
+</svg></div>
+
+- **Pour l'IA**: vos notes deviennent son contexte
+- **Pour vous**: toutes vos connaissances sont accessibles **depuis un seul endroit**, ...
+
+Note: ESSENTIEL. C'est la réponse à l'objectif 3: la gestion des connaissances a une valeur pour vous (une tête libre, moins d'oublis) et pour l'IA (le contexte). Les deux se nourrissent. Dire: au début, la base est petite et l'IA aide peu; après quelques semaines de journal, elle connaît vos projets.
+
+---
+## Deux couches
+<p class="step"><span>1 · Un système</span> &#8250; <b>2 · Qui vous connaît</b> &#8250; <span>3 · Et qui vous appartient</span></p>
+<div class="chart"><svg viewBox="0 0 960 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: deux couches. En bas, votre système, qui fonctionne sans IA. Au-dessus, l'IA, qui comprend ce système">
+<rect x="110" y="8" width="740" height="74" rx="12" fill="rgba(229,0,125,0.18)" stroke="#ff4fa8" stroke-width="2.5"/>
+<text x="480" y="38" font-size="20" fill="#fff" font-weight="700" text-anchor="middle">L'IA</text>
+<text x="480" y="63" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">elle comprend votre système, et travaille avec vous</text>
+<rect x="40" y="96" width="880" height="84" rx="12" fill="#475363"/>
+<text x="480" y="128" font-size="20" fill="#fff" font-weight="700" text-anchor="middle">Votre système</text>
+<text x="480" y="154" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">le journal, les projets, les tâches, les contacts, les processus</text>
+<rect x="742" y="104" width="164" height="26" rx="13" fill="none" stroke="#4ade80" stroke-width="2"/>
+<text x="824" y="122" font-size="13" fill="#4ade80" font-weight="700" text-anchor="middle">fonctionne sans IA</text>
+</svg></div>
+
+- Plus votre système s'améliore, plus l'IA **s'adapte à vous et à vos besoins**
+- **D'abord pour vous, en bonus pour l'IA**: c'est votre second cerveau digital
+- Des fichiers texte, chez vous: ils fonctionnent avec **n'importe quelle IA**
+
+Note: ESSENTIEL. Le pont entre les deux objectifs: la couche du bas, c'est la gestion des connaissances (elle fonctionne sans IA); la couche du haut, c'est l'IA qui lit ce système. Obsidian sert à lire et à écrire les fichiers de la couche du bas.
+
+---
+## Avant et après
+La sortie de P4 au musée, le 26 novembre.
+
+<div class="chart"><svg viewBox="0 0 960 258" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: sans système, dix lignes de contexte à chaque demande; avec un système, une seule ligne">
+<text x="230" y="24" font-size="15" fill="#fbbf24" font-weight="700" text-anchor="middle">SANS SYSTÈME</text>
+<rect x="30" y="38" width="400" height="184" rx="14" fill="#475363"/>
+<rect x="50" y="56" width="340" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="74" width="360" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="92" width="300" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="110" width="350" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="128" width="330" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="146" width="360" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="164" width="280" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="182" width="345" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<rect x="50" y="200" width="220" height="9" rx="4" fill="rgba(255,255,255,0.38)"/>
+<text x="230" y="246" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">dix lignes de contexte, à chaque demande</text>
+<polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(462,112) scale(1.0)" fill="#e5007d"/>
+<text x="730" y="24" font-size="15" fill="#4ade80" font-weight="700" text-anchor="middle">AVEC UN SYSTÈME</text>
+<rect x="520" y="38" width="420" height="46" rx="14" fill="#e5007d"/>
+<text x="730" y="67" font-size="16.5" fill="#fff" font-weight="700" text-anchor="middle">Prépare la sortie P4 du 26 novembre</text>
+<text x="730" y="114" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">Il connaît déjà:</text>
+<rect x="528" y="126" width="112" height="32" rx="16" fill="#475363"/>
+<text x="584.0" y="147" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">la classe</text>
+<rect x="650" y="126" width="130" height="32" rx="16" fill="#475363"/>
+<text x="715.0" y="147" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">l'instituteur</text>
+<rect x="790" y="126" width="142" height="32" rx="16" fill="#475363"/>
+<text x="861.0" y="147" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">le budget</text>
+<rect x="545" y="166" width="190" height="32" rx="16" fill="#475363"/>
+<text x="640.0" y="187" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">le plafond des frais</text>
+<rect x="745" y="166" width="170" height="32" rx="16" fill="#475363"/>
+<text x="830.0" y="187" font-size="14" fill="#fff" font-weight="700" text-anchor="middle">le modèle de mot</text>
+<text x="730" y="246" font-size="14.5" fill="rgba(255,255,255,0.74)" font-weight="400" text-anchor="middle">et il ajoute l'encodage sur IT School à vos tâches</text>
+</svg></div>
+
+Avec un système, la demande tient en une ligne: "Prépare la sortie P4 du 26 novembre"{copy}
+
+Note: ESSENTIEL.
+
+---
+## Démo: Direction Saint-Exemple
+Un système construit sur AI Kit for Obsidian, avec une direction fictive. Les demandes tiennent **en une ligne**:
+
+> Prépare la sortie P4 du 26 novembre.
+
+> Fais ma revue du lundi.
+
+Puis la même demande **dans un chat vide**, pour comparer.
+
+Pour essayer vous-mêmes: dézippez "Système Direction Saint-Exemple - notes seules (démo).zip" (dans "Fichiers de démo"), et choisissez ce dossier comme dossier de travail.
+
+Note: ESSENTIEL. DÉMO SYSTÈME (5 min), à l'écran. Ouvrir le dossier "Système Direction Saint-Exemple - notes seules (démo)" (dézippé avant la séance) dans Obsidian, et Claude sur ce dossier. Les demandes et les réponses attendues sont dans "DEMO - À demander.txt", à la racine du système. Pour chaque demande, montrer la réponse, puis poser la même question dans un chat vide. Les cinq demandes: 1) "Prépare la sortie P4 du 26 novembre." 2) "Fais ma revue du lundi." 3) "Écris aux parents de P4 que le paiement est attendu avant le 19/11." 4) "Qu'est-ce que j'attends des autres, et qui dois-je relancer cette semaine?" 5) "Quelles actions de la circulaire 9847 touchent mes projets?" (joindre le PDF). En 5 minutes: faire 1 et 2. Les autres si le temps le permet. Le fichier finit par un tableau qui compare le chat, un projet Claude, la mémoire de Claude et ce système. Si le temps le permet, 2 minutes dans mon propre système: le genre de demandes que je lui fais chaque jour.
+
+---
 ## L'IA qui prend l'initiative
 - Aujourd'hui: vous allez vers l'IA, et vous lui réexpliquez tout
 - Demain: l'IA connaît vos projets, vos tâches et vos priorités, et **elle propose**
@@ -495,7 +495,7 @@ Note: À PASSER si le temps manque.
 
 **Des fichiers locaux, qui vous appartiennent**: c'est votre liberté. Vous pouvez changer d'IA ou de fournisseur **sans rien perdre**.
 
-Note: ESSENTIEL.
+Note: ESSENTIEL. C'est un rappel de la fin de la partie 5 (un contexte loué, un contexte à vous), avec une image: le meublé et la maison. Le dire comme un rappel, en une phrase.
 
 ---
 ## Garder la maîtrise
@@ -507,20 +507,20 @@ Note: ESSENTIEL.
 Note: À PASSER si le temps manque.
 
 ---
+## Ce qui passe quand même chez le fournisseur
+- Le modèle reste un **service externe**
+- Chaque demande passe chez le fournisseur choisi
+- Ce qui ne dépend plus de lui: vos connaissances, votre organisation, vos processus
+- Si demain un autre modèle est meilleur, ou européen, ou local, vous changez **sans rien perdre**
+
+Note: À PASSER si le temps manque.
+
+---
 ## Sauvegardez votre base
 - Votre base de connaissances deviendra vite **très précieuse**
 - **Au moins trois copies**, dont une dans le cloud et une dans un endroit sécurisé
 - La synchronisation n'est pas une sauvegarde: une erreur ou une suppression se synchronise aussi
 - Avant de laisser un agent travailler seul dans la base: **une sauvegarde récente**
 - Testez de temps en temps: **êtes-vous en mesure de restaurer** vos fichiers?
-
-Note: À PASSER si le temps manque.
-
----
-## Ce qui passe quand même chez le fournisseur
-- Le modèle reste un **service externe**
-- Chaque demande passe chez le fournisseur choisi
-- Ce qui ne dépend plus de lui: vos connaissances, votre organisation, vos processus
-- Si demain un autre modèle est meilleur, ou européen, ou local, vous changez **sans rien perdre**
 
 Note: À PASSER si le temps manque.

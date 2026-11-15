@@ -308,7 +308,7 @@ Note: À PASSER si le temps manque.
 <polygon points="0,0 12,0 26,16 12,32 0,32 14,16" transform="translate(658,110)" fill="rgba(255,255,255,0.5)"/>
 </svg></div>
 
-À chaque tour, Claude **relit tout**, puis il écrit. La conversation s'allonge, et chaque message **coûte plus** que le précédent.
+À chaque message, Claude **relit toute la conversation depuis le début**, puis il écrit. La conversation s'allonge, et chaque message **coûte plus** que le précédent.
 
 Note: ESSENTIEL. Montrer les trois colonnes de gauche à droite. Tour 1: il lit votre message, il écrit sa réponse. Tour 2: il relit le premier message et sa première réponse, plus le nouveau message. Tour 3: il relit tout, encore. Deux conséquences, qui reviennent dans toute la partie: la conversation finit par atteindre sa limite (la ligne du bas), et chaque message coûte plus cher que le précédent.
 ---
@@ -475,7 +475,7 @@ Note: À PASSER si le temps manque. À gauche, une seule conversation pour tout:
 4. Pour garder la suite d'un travail: **<span class="cp">"Donne-moi un prompt que je peux passer à un autre agent pour continuer."</span>** Collez-le dans une nouvelle conversation
 5. N'attendez pas que Claude **résume lui-même** le début d'une conversation trop longue (la compaction): il perd beaucoup d'informations (bonus 18)
 
-Note: ESSENTIEL. C'est la règle la plus importante de la partie: la dire avec force. D'après mon expérience, les longues conversations sont la cause la plus fréquente des mauvaises réponses et des inventions. Dévier un peu, c'est permis. Si le temps le permet, montrer une longue conversation déjà compactée, préparée avant la séance. Image utile: un PV de réunion garde les décisions et perd les détails. En séance, passer ensuite à "La mémoire et les projets Claude: un contexte loué": les deux slides entre les deux sont des compléments.
+Note: ESSENTIEL. C'est la règle la plus importante de la partie: la dire avec force. D'après mon expérience, les longues conversations sont la cause la plus fréquente des mauvaises réponses et des inventions. Dévier un peu, c'est permis. Si le temps le permet, montrer une longue conversation déjà compactée, préparée avant la séance. Image utile: un PV de réunion garde les décisions et perd les détails. En séance, passer ensuite à "La mémoire et les projets Claude: un contexte loué": la slide entre les deux est un complément.
 ---
 ## Plusieurs conversations en parallèle
 - Vous pouvez donner **plusieurs tâches en même temps**: une conversation par tâche
@@ -486,17 +486,9 @@ Note: ESSENTIEL. C'est la règle la plus importante de la partie: la dire avec f
 
 Note: À PASSER si le temps manque. Le montrer en direct: lancer une tâche longue (par exemple ranger le dossier), puis ouvrir une nouvelle conversation pour un mail court pendant que la première travaille. C'est aussi une bonne raison de faire des conversations courtes: une tâche, une conversation.
 ---
-## La session
-- Une session, c'est une conversation
-- À chaque message, Claude **relit toute la conversation** depuis le début
-- Entre deux conversations, **il ne se souvient de rien**
-- Sauf ce qui est **écrit quelque part**: les fichiers de votre base de connaissances, un projet Claude, sa mémoire, ...
-- Dans votre base, il ne relit pas tout: il lit **ce qu'il y trouve intéressant** pour la tâche en cours
-
-Note: À PASSER si le temps manque. Elle fait le lien avec les deux slides suivantes: des conversations courtes, donc ce qui doit durer est écrit ailleurs. Précision utile si la question vient: Claude ne charge pas toute la base à chaque conversation. Il cherche et il ouvre les fichiers dont il a besoin. D'où l'intérêt d'une base bien rangée, avec des noms clairs.
----
 ## La mémoire et les projets Claude: un contexte loué
-- Un projet Claude garde des instructions et des documents. La mémoire de Claude retient des éléments sur vous
+Entre deux conversations, Claude **ne se souvient de rien**. Sauf avec un projet Claude (des instructions, des documents), ou avec sa mémoire (des éléments sur vous).
+
 - Les deux **vivent chez Anthropic**: ils ne passent pas dans un autre outil, et chacun refait le sien
 - Mon conseil: **pas de projet Claude**, mais **un seul dossier de travail** pour l'IA, votre base de connaissances
 - **La mémoire: mon choix est de la couper.** On peut la consulter et la modifier, mais elle retient des choses un peu au hasard, et elle les ressort là où on ne les attend pas
@@ -513,7 +505,7 @@ Note: ESSENTIEL. C'est ici qu'on parle de la mémoire, une seule fois. C'est mon
 - L'idéal: **démarrer chaque conversation dans le dossier** de votre base de connaissances
 - Tout ce qui doit durer y va. **Une seule source de vérité**, pour vous et pour l'IA!
 
-Note: ESSENTIEL. C'est le fil rouge de la suite: la partie 7 montre à quoi ressemble cette base. Dans l'application Claude, "démarrer dans le dossier" = choisir ce dossier comme dossier de travail.
+Note: ESSENTIEL. C'est le fil rouge de la suite: la partie 7 montre à quoi ressemble cette base. Dans l'application Claude, "démarrer dans le dossier" = choisir ce dossier comme dossier de travail. Précision utile si la question vient: Claude ne charge pas toute la base à chaque conversation. Il cherche et il ouvre les fichiers dont il a besoin pour la tâche en cours. D'où l'intérêt d'une base bien rangée, avec des noms clairs.
 ---
 ## Pause
 10 minutes

@@ -4,9 +4,6 @@
 ## 6. Démos
 Ce qu'un bon système IA peut faire pour vous.
 
-- D'abord **Cowork**, et votre dossier de travail
-- Puis une démo sur votre PC, et **votre vraie tâche**
-- Ensuite, je montre à l'écran: le dossier à ranger, et le navigateur
 - Chaque démo a sa slide "à copier", avec les demandes: vous pouvez les refaire seuls
 
 Note: 35 minutes. Ordre: Cowork et le dossier de travail (5 min), la démo 2 sur leur PC (8 min), leur vraie tâche (15 min), artefact ou fichier et la démo 3 avec le plan B (2 min), la démo 4 à l'écran (5 min). Les démos 5 et 6 et "Et l'ordinateur" sont pour la relecture, ou pour la deuxième séance. Plan B: le dossier "Plan B - résultats attendus". Repère: la vraie tâche commence à 1:08 au plus tard.
@@ -26,8 +23,8 @@ Note: ESSENTIEL. Lu le 13/11/2026 dans le centre d'aide et dans la documentation
 
 ---
 ## Les réglages sous la zone de saisie
-- **Le dossier de travail**: le dossier que Claude peut lire et modifier. L'idéal: **toujours le dossier de votre base de connaissances** (partie 7). Pour un essai, une copie. Jamais tout votre OneDrive
-- **Le modèle** et **l'effort**: voir les slides suivantes
+- **Le dossier de travail**: le dossier que Claude peut lire et modifier. L'idéal: **toujours le dossier de votre base de connaissances** (partie 7)
+- **Le modèle** et **l'effort**
 - **Le mode rapide**: des réponses plus rapides, qui consomment plus de budget
 - **Le mode de travail**: comment Claude vous demande la permission avant d'agir
 

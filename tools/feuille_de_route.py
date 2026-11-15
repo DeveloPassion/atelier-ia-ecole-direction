@@ -115,7 +115,7 @@ rows = [
      "Aucun fichier",
      "Proposer une idée discutable, puis: « Qu'est-ce qui cloche? »",
      "Finir sur la slide de la permission: elle sert dès la démo 2"),
-    (35, where(5, "Ce que Claude voit"), "<b>Partie 5: les huit slides essentielles</b>",
+    (35, where(5, "Ce que Claude voit"), "<b>Partie 5: les sept slides essentielles</b>",
      "Option: l'écran de l'utilisation, dans les paramètres (slide « Le coût, en bref »)", "",
      "<b>Repère: la pause commence à 0:45.</b> Les compléments de la partie 5 sont pour la relecture"),
     (45, "Pause (10 min)", "<b>Préparer la suite</b>",

@@ -38,7 +38,7 @@ Un réglage, dans la zone de saisie:
 
 - **Manuel**: Claude demande votre accord **avant chaque action**. C'est le réglage de départ sur le compte de l'école, et le bon choix pour commencer
 - **Auto**: il avance seul, il vérifie chaque action, et il bloque ce qui lui paraît dangereux. Seulement **sur une copie**
-- **Ignorer**: il ne demande rien, et il ne vérifie rien. Permet de gagner du temps, mais **plus risqué**
+- **Ignorer**: il ne demande rien. Permet de gagner du temps, mais **plus risqué**
 
 Pour une grosse tâche, demandez d'abord **un plan**: "Montre-moi d'abord ton plan, et attends mon accord."{copy}
 

@@ -509,7 +509,7 @@ Ma base contient mes notes, mes projets et mes façons de faire. Avec elle et av
 - Des **cours**, comme **celui-ci**
 - ...
 
-L'IA ne part jamais de zéro: elle part de **ce que je sais déjà**.
+L'IA **ne part jamais de zéro**. Elle connaît mes objectifs, mes projets, mes priorités, mes produits, mes idées, etc.
 
 Note: ESSENTIEL. 30 secondes. Des exemples vécus, après la démo sur une école fictive: c'est ce que la base permet après quelques années. Ce cours en est un: les slides, les documents et les fichiers de démo ont été faits avec Claude, à partir de mes notes. Ce n'est pas une offre: ne rien proposer ici. Pour eux, la même logique vaut à leur échelle: les mots aux parents, les circulaires, les sorties, les comptes rendus.
 

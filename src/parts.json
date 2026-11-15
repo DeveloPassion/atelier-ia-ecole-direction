@@ -11,7 +11,7 @@
   "n": 2,
   "name": "Prise en main de Claude",
   "dur": "12 min",
-  "slides": 9,
+  "slides": 8,
   "file": "2 - Prise en main de Claude.md",
   "html": "02-prise-en-main-de-claude.html"
  },
@@ -111,7 +111,7 @@
   "n": 14,
   "name": "Bonus, les skills",
   "dur": "bonus",
-  "slides": 14,
+  "slides": 15,
   "file": "14 - Bonus, les skills.md",
   "html": "14-bonus-les-skills.html",
   "bonus": true

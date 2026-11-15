@@ -101,7 +101,7 @@ rows = [
      "À voir sur chaque PC: le nom de l'école en bas à gauche, le modèle Opus 5.5, l'extension reliée à l'application, un dossier hors OneDrive qui s'ouvre comme dossier de travail. Si Cowork est coupé: démos de la partie 6 sur mon écran, et vraie tâche dans le chat"),
     (4, where(2, "L'application Claude"), "<b>Tour de l'application</b> (leur PC, 4 min), puis les modèles et l'effort",
      "Aucun fichier",
-     "Dicter une demande au micro. Taper « / »",
+     "Dicter une demande au micro",
      "Montrer aussi l'extension Claude in Chrome dans Chrome"),
     (12, where(2, "Le même Claude, deux réponses"), "<b>Exercice: le même Claude, deux réponses</b> (leur PC)",
      "Aucun fichier. Le texte « avec contexte » est sur la slide suivante (à copier tel quel)",

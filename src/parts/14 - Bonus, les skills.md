@@ -74,6 +74,23 @@ Documentation: [Utiliser les compétences dans Claude](https://support.claude.co
 Note: Lu le 13/11/2026 dans la documentation de Claude. Dans la version en anglais: "Customize > Skills", l'onglet "Your skills" ("Created by you", "From your organization", "Shared with you", "From Anthropic & Partners"), l'onglet "Discover" pour en ajouter, et le bouton "Turn on". Une condition: la création de fichiers et l'exécution de code sont activées ("Settings > Capabilities"; sur Entreprise, c'est un propriétaire de l'organisation qui l'active). Pour ajouter une skill à soi: un fichier ZIP qui contient le dossier de la skill, avec son fichier SKILL.md dedans. La skill de création de skills (skill-creator) est une skill d'Anthropic: on l'active dans cette liste, puis on demande à Claude de créer ou d'évaluer une skill. Les skills d'Anthropic qui créent des fichiers Excel, Word, PowerPoint et PDF s'activent seules quand il le faut. Pour le point 5, Claude lit simplement le fichier SKILL.md du dossier de travail, comme n'importe quel fichier: c'est la voie de la démo de la partie 7, et celle qui garde vos skills chez vous.
 
 ---
+## Les commandes
+Tapez **"/"** dans la zone de saisie: la liste de vos **skills** et de vos commandes s'ouvre. Quelques lettres suffisent pour filtrer.
+
+| Vous tapez | Ce que Claude fait |
+|---|---|
+| **/ecrire-aux-parents** sortie P4, le 26 novembre | Le mot aux parents, dans le ton de l'école, avec le talon-réponse |
+| **/trier-une-circulaire**, avec le PDF joint | Le tableau des actions pour votre niveau, avec les dates |
+| **/compte-rendu**, avec vos notes brutes | Le compte rendu de la réunion, toujours dans la même forme |
+| **/skill-creator** | Il vous aide à créer une skill (skill d'Anthropic, à activer) |
+| **/nom-du-plugin:commande** | Dans Cowork: une commande ajoutée par un plugin |
+
+- Les trois premières sont **des exemples**: elles existent une fois que vous les avez créées
+- Une commande, c'est **une ligne au lieu de tout réexpliquer**
+
+Note: Montrer le menu "/" en direct. Si aucune skill n'est installée sur leur compte, le dire: le menu se remplit avec leurs skills. Lu le 15/11/2026 dans la documentation de Claude (page "Plugins", "Use a plugin"): dans le chat, on tape "/" dans la zone de saisie, et le menu liste les skills, avec le nom du plugin d'où chacune vient; les commandes d'un plugin sont dans le même menu; on tape le nom pour filtrer. Dans Cowork: "/nom-du-plugin:commande" lance une commande, ou on décrit la tâche et Claude charge la skill qui convient. Dans le chat, une commande de plugin se charge comme une skill. La documentation ne donne pas de liste de commandes intégrées à l'application: les commandes comme "/clear" ou "/compact" sont celles de Claude Code, l'outil des développeurs. À vérifier sur leur PC: que "skill-creator" apparaît bien dans le menu "/" une fois activée.
+
+---
 ## Skills et plugins tout faits: d'où viennent-ils?
 Un **plugin** est un paquet: des skills, des connecteurs et des commandes, ajoutés en une fois (**Personnaliser > Plugins**).
 

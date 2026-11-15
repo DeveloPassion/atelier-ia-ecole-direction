@@ -99,15 +99,6 @@ Note: ESSENTIEL. Analogie de Thariq Shihipar (Anthropic), article "Spending your
 Note: À PASSER si le temps manque.
 
 ---
-## Les commandes
-- Tapez **"/"** dans la zone de saisie
-- Une liste s'ouvre: les **skills** et les commandes disponibles. Une skill est une façon de faire, écrite une fois (dans l'application en français: une "compétence")
-- Choisissez-en une **au lieu de tout réexpliquer**
-- Exemple: une skill "mot aux parents" écrit toujours dans le ton de l'école
-
-Note: À PASSER si le temps manque. Montrer le menu "/" en direct. Si aucune skill n'est installée sur leur compte, le dire et revenir aux skills dans la partie 4.
-
----
 ## Le même Claude, deux réponses
 Même machine, même question. **Une seule différence**.
 

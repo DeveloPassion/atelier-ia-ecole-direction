@@ -76,6 +76,21 @@ Ce qui doit durer devrait être **dans votre base de connaissances**, pas dans u
 Note: ESSENTIEL. Trois gestes simples, à faire dès aujourd'hui. Le premier ne dépend pas de l'admin: même si le réglage des pouces n'est pas encore coupé, on n'en donne pas.
 
 ---
+## Quand l'IA agit, elle peut se tromper
+Une erreur dans un texte se corrige. Une erreur dans **une action** peut coûter cher:
+
+- Des fichiers **supprimés** ou écrasés par erreur
+- Un formulaire **envoyé avec une donnée fausse**
+- Un mail parti **au mauvais destinataire**
+
+**Plus la tâche est importante, plus vous contrôlez vous-même.**
+
+- Claude prépare, et **vous faites le dernier geste**: "Remplis le formulaire, mais ne l'envoie pas: je l'envoie moi-même."{copy}
+- Avant de le laisser agir dans vos fichiers: **une sauvegarde**, ou une copie
+
+Note: ESSENTIEL. 30 secondes. Ici, personne n'attaque: l'IA se trompe de bonne foi, comme un nouveau collègue qui va trop vite. C'est le risque le plus courant. La slide suivante (la triple menace) parle du cas où quelqu'un cherche à la tromper. Le lien avec la démo 4: le formulaire de la ferme était rempli, pas envoyé, et c'est vous qui cliquez sur "Envoyer". Le lien avec la partie 6: le réglage "Manuel" fait demander l'accord avant chaque action, et Claude demande avant de supprimer un fichier pour de bon. La règle à retenir: ce qui ne peut pas être annulé (un envoi, un paiement, une suppression) reste un geste humain.
+
+---
 ## La triple menace
 Un agent devient dangereux quand il a **les trois éléments suivants en même temps**:
 

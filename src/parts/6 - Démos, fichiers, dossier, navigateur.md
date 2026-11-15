@@ -26,7 +26,7 @@ Note: ESSENTIEL. Lu le 13/11/2026 dans le centre d'aide et dans la documentation
 - **Le dossier de travail**: le dossier que Claude peut lire et modifier. L'idéal: **toujours le dossier de votre base de connaissances** (partie 7)
 - **Le modèle** et **l'effort**
 - **Le mode rapide**: des réponses plus rapides, qui consomment plus de budget
-- **Le mode de travail**: comment Claude vous demande la permission avant d'agir
+- **Le mode de travail**: le niveau de liberté de Claude
 
 Documentation: [Commencer avec Claude Cowork](https://support.claude.com/fr/articles/13345190)
 

@@ -69,6 +69,7 @@ Note: À PASSER si le temps manque. Pour le fichier "À propos de moi": l'applic
 | **Agent** | Une IA qui agit (fichiers, web), pas seulement qui répond |
 | **Skill** | Une façon de faire, écrite une fois. Dans l'application: une "compétence" |
 | **Connecteur** | Un accès de Claude à un de vos outils (agenda, mails, documents) |
+| **MCP** | La prise standard derrière les connecteurs, pour Claude, ChatGPT et d'autres IA |
 | **Base de connaissances** | Votre dossier de fichiers texte, pour vous et pour l'IA |
 | **Souverain** | Vos fichiers sont chez vous: vous pouvez changer d'IA ou de fournisseur |
 

@@ -117,29 +117,6 @@ Note: À PASSER si le temps manque. Quatre idées en une image. La demande: vos 
 Note: ESSENTIEL.
 
 ---
-## Le prompt
-Le prompt, c'est la demande que vous écrivez: **une partie du contexte**, pas tout. La recette, en six points:
-
-1. **Qui vous êtes**
-2. **Ce que vous voulez**
-3. **Pour qui**
-4. **Sous quelle forme** (longueur, ton, liste ou texte)
-5. **Un exemple**, si vous en avez un
-6. **Les règles et les critères** d'un bon résultat
-
-**Commencez simple**: ajoutez des consignes seulement si le résultat ne convient pas.
-
-Note: ESSENTIEL. C'est la même recette partout dans le cours: ici, dans "votre vraie tâche" (partie 9), dans le bonus 11 et sur l'aide-mémoire. Pourquoi commencer simple: les modèles ont besoin de moins en moins d'aide (bonus 11).
-
----
-## Trois astuces pour vos demandes
-- Mettez **les informations et les règles importantes à la fin**: la fin d'un long texte est mieux lue que le milieu
-- Demandez-lui de **vous poser des questions** avant de commencer: "Pose-moi des questions si besoin."{copy} Il propose souvent des choix à cliquer: c'est très rapide
-- Les techniques de prompting (exemples, rôles, étapes, critères): **bonus 11**
-
-Note: À PASSER si le temps manque.
-
----
 ## L'hallucination
 <div class="chart"><svg viewBox="0 0 960 168" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: trois dates probables, le modèle choisit la plus probable, qui n'est pas forcément la vraie">
 <text x="20" y="40" font-size="23" fill="#fff" font-weight="700">La circulaire a été publiée le<tspan fill="#ff4fa8"> 3 juillet 2026</tspan><tspan fill="#fbbf24"> ?</tspan></text>
@@ -197,6 +174,29 @@ Note: À PASSER si le temps manque.
 Note: À PASSER si le temps manque. Exemple à dire: "Crée un jeu de calcul mental pour des élèves de 2e primaire, avec un score." Claude le construit dans un artefact, et on peut y jouer tout de suite. Pour les animations: Claude Motion existe sur Team et Enterprise, mais il est désactivé par défaut sur Enterprise. Pour les vidéos: Claude les construit comme une animation, par du code, puis les exporte en fichier vidéo; ce ne sont pas des vidéos réalistes créées par une IA d'images. Pour les sites Web: une page ou un petit site complet, à voir tout de suite dans un artefact, ou en fichiers dans votre dossier de travail.
 
 ---
+## Le prompt
+Le prompt, c'est la demande que vous écrivez: **une partie du contexte**, pas tout. La recette, en six points:
+
+1. **Qui vous êtes**
+2. **Ce que vous voulez**
+3. **Pour qui**
+4. **Sous quelle forme** (longueur, ton, liste ou texte)
+5. **Un exemple**, si vous en avez un
+6. **Les règles et les critères** d'un bon résultat
+
+**Commencez simple**: ajoutez des consignes seulement si le résultat ne convient pas.
+
+Note: ESSENTIEL. C'est la même recette partout dans le cours: ici, dans "votre vraie tâche" (partie 9), dans le bonus 11 et sur l'aide-mémoire. Pourquoi commencer simple: les modèles ont besoin de moins en moins d'aide (bonus 11).
+
+---
+## Trois astuces pour vos demandes
+- Mettez **les informations et les règles importantes à la fin**: la fin d'un long texte est mieux lue que le milieu
+- Demandez-lui de **vous poser des questions** avant de commencer: "Pose-moi des questions si besoin."{copy} Il propose souvent des choix à cliquer: c'est très rapide
+- Les techniques de prompting (exemples, rôles, étapes, critères): **bonus 11**
+
+Note: À PASSER si le temps manque.
+
+---
 ## L'IA agentique
 <div class="chart"><svg viewBox="0 0 960 306" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma: le chat répond en une passe, l'agent recommence jusqu'à atteindre son objectif">
 <text x="20" y="30" font-size="18" fill="#ff4fa8" font-weight="700" text-anchor="start">LE CHAT</text>
@@ -236,6 +236,19 @@ Un chatbot répond. Un agent **agit**: une application + un modèle + des instru
 Note: ESSENTIEL.
 
 ---
+## La boucle d'un agent
+<div class="loop">
+<div class="loop-step s1">1. Plan</div>
+<div class="loop-step s2">2. Action (un outil)</div>
+<div class="loop-step s3">3. Observation du résultat</div>
+<div class="loop-step s4">4. On recommence, ou c'est fini</div>
+</div>
+
+C'est ce qu'il a fait avec la circulaire: lire, trier, vérifier, faire le tableau.
+
+Note: À PASSER si le temps manque. Laisser l'animation tourner une fois. Exemple parlé avec la circulaire: plan (lire les sections), action (lire le PDF), observation (des actions pour plusieurs niveaux), recommencer (trier, vérifier les dates), fini (le tableau).
+
+---
 ## Tout ce que vous faites sur votre PC, Claude peut le faire
 Ce que vous pouvez faire sur votre ordinateur, dans le navigateur ou sur le réseau, un agent peut le faire aussi. **Avec votre accord.**
 
@@ -248,19 +261,6 @@ Ce que vous pouvez faire sur votre ordinateur, dans le navigateur ou sur le rés
 La limite n'est plus ce que l'IA sait faire, mais **ce que vous lui permettez** de faire.
 
 Note: À PASSER si le temps manque. Dire que c'est le grand changement de 2025-2026: on passe d'une IA qui répond à une IA qui fait. Donner un exemple de la matinée: la circulaire, Claude l'a lue et en a fait un tableau. Annoncer les démos de la partie 6 (fichiers, dossier, navigateur, présentation). Faire le lien avec la partie 8: plus un agent peut faire, plus il faut choisir ce qu'on lui permet.
-
----
-## La boucle d'un agent
-<div class="loop">
-<div class="loop-step s1">1. Plan</div>
-<div class="loop-step s2">2. Action (un outil)</div>
-<div class="loop-step s3">3. Observation du résultat</div>
-<div class="loop-step s4">4. On recommence, ou c'est fini</div>
-</div>
-
-C'est ce qu'il a fait avec la circulaire: lire, trier, vérifier, faire le tableau.
-
-Note: À PASSER si le temps manque. Laisser l'animation tourner une fois. Exemple parlé avec la circulaire: plan (lire les sections), action (lire le PDF), observation (des actions pour plusieurs niveaux), recommencer (trier, vérifier les dates), fini (le tableau).
 
 ---
 ## Autour d'un agent

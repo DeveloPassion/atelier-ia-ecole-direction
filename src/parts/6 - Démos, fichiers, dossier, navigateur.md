@@ -6,7 +6,7 @@ Ce qu'un bon système IA peut faire pour vous.
 
 - Chaque démo a sa slide "à copier", avec les demandes: vous pouvez les refaire seuls
 
-Note: 35 minutes. Ordre: Cowork et le dossier de travail (5 min), la démo 2 sur leur PC (8 min), leur vraie tâche (15 min), artefact ou fichier et la démo 3 avec le plan B (2 min), la démo 4 à l'écran (5 min). Les démos 5 et 6 et "Et l'ordinateur" sont pour la relecture, ou pour la deuxième séance. Plan B: le dossier "Plan B - résultats attendus". Repère: la vraie tâche commence à 1:08 au plus tard.
+Note: 33 minutes. Ordre: Cowork et le dossier de travail (3 min), la démo 2 sur leur PC (8 min), leur vraie tâche (15 min), artefact ou fichier et la démo 3 avec le plan B (2 min), la démo 4 à l'écran (5 min). Les démos 5 et 6 et "Et l'ordinateur" sont pour la relecture, ou pour la deuxième séance. Plan B: le dossier "Plan B - résultats attendus". Repère: la vraie tâche commence à 1:08 au plus tard.
 
 ---
 ## Cowork: quand Claude fait le travail
@@ -20,29 +20,6 @@ Note: 35 minutes. Ordre: Cowork et le dossier de travail (5 min), la démo 2 sur
 Documentation: [Commencer avec Claude Cowork](https://support.claude.com/fr/articles/13345190) · [Cowork overview (en anglais)](https://claude.com/docs/cowork/overview)
 
 Note: ESSENTIEL. Lu le 13/11/2026 dans le centre d'aide et dans la documentation de Claude. Cowork est le mode agent de Claude pour le travail de bureau: la même technique que Claude Code, l'outil des développeurs, sans terminal. Il faut un abonnement payant, et l'application de bureau ouverte pour les fichiers du PC. Sur Entreprise: l'admin peut couper Cowork; le réglage de départ pour les permissions est "Manuel" (Claude demande avant chaque action); et un réglage de l'organisation, "Chat and Cowork unified", réunit le chat et Cowork en une seule zone de saisie. Dans ce cas, il n'y a plus de choix "Chat" ou "Cowork" à faire: vérifier ce que leur application montre. Les connecteurs, les skills et les plugins se gèrent dans "Personnaliser", dans la barre de gauche. À connaître: un projet Cowork garde un ou plusieurs dossiers du PC, des instructions permanentes et sa propre mémoire. Ses réglages restent sur le PC, et ce n'est pas la même chose qu'un projet Claude du chat (partie 5). Attention à ne pas trop promettre: les fichiers restent chez vous, mais ce que Claude en lit pendant une tâche part chez Anthropic, et le travail de Claude tourne sur ses serveurs. C'est une façon de dire une fois pour toutes "lis d'abord À propos de moi.txt". Les questions avant la tâche, lu le 14/11/2026 dans le cours d'Anthropic "Introduction to Claude Cowork" (Claude Academy) et dans le guide de Cowork: la plupart des tâches qui ne sont pas simples commencent par une ou deux questions (le public, la longueur, les sources à préférer). Claude propose quelques choix; si aucun ne convient, on répond avec ses propres mots. Ces questions comblent ce qui manque dans la demande: y répondre avec précision donne un meilleur résultat. On peut aussi les demander soi-même: "Pose-moi des questions si besoin" (bonus 11). Les deux écrans possibles, lu le 14/11/2026 dans le centre d'aide ("Claude Cowork and chat are one Claude"). Ancien écran: la zone de saisie montre deux choix, "Chat" et "Cowork", et on choisit "Cowork" pour une tâche. Nouvel écran: une seule zone, sans choix; on écrit sa demande, et Claude décide de répondre vite ou de faire une tâche plus longue. Sur Entreprise, le nouvel écran n'apparaît que si un propriétaire de l'organisation a activé "Chat and Cowork unified". La slide décrit le nouvel écran. Si leur écran montre encore les deux choix: dire de choisir "Cowork" pour les démos.
-
----
-## Les réglages sous la zone de saisie
-- **Le dossier de travail**: le dossier que Claude peut lire et modifier. L'idéal: **toujours le dossier de votre base de connaissances** (partie 7)
-- **Le modèle** et **l'effort**
-- **Le mode rapide**: des réponses plus rapides, qui consomment plus de budget
-- **Le mode de travail**: le niveau de liberté de Claude
-
-Documentation: [Commencer avec Claude Cowork](https://support.claude.com/fr/articles/13345190)
-
-Note: À PASSER si le temps manque. Montrer chaque réglage en direct, chacun sur son PC. Les noms exacts peuvent changer selon la version et la langue de l'application: vérifier avant la séance. Selon le centre d'aide (lu le 13/11/2026), Claude ne lit et n'écrit que dans les dossiers que vous lui avez ouverts; l'application les liste dans ses paramètres ("Trusted folders" dans la version en anglais). La documentation ne nomme pas le bouton qui sert à choisir le dossier: le montrer en direct.
-
----
-## Le niveau de liberté de Claude
-Un réglage, dans la zone de saisie:
-
-- **Manuel**: Claude demande votre accord **avant chaque action**. C'est le réglage de départ sur le compte de l'école, et le bon choix pour commencer
-- **Auto**: il avance seul, il vérifie chaque action, et il bloque ce qui lui paraît dangereux. Seulement **sur une copie**
-- **Ignorer**: il ne demande rien. Permet de gagner du temps, mais **plus risqué**
-
-Pour une grosse tâche, demandez d'abord **un plan**: "Montre-moi d'abord ton plan, et attends mon accord."{copy}
-
-Note: ESSENTIEL. Noms lus le 13/11/2026 dans le centre d'aide en français ("Commencer avec Claude Cowork"): "Manuel" (avant: "Demander avant d'agir"), "Auto", "Ignorer" (avant: "Agir sans demander"). Sur Entreprise, le réglage de départ est "Manuel", et l'admin peut couper "Auto". Si leur application montre d'autres noms (par exemple "Plan" ou "Accepter les modifications"), le principe reste le même: plus Claude agit seul, plus il faut un dossier de travail limité et une copie des fichiers. À VÉRIFIER sur leur PC avant la séance. Lien avec la partie 8.
 
 ---
 ## Votre dossier de travail: comment faire

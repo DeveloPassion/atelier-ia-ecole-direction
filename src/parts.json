@@ -10,8 +10,8 @@
  {
   "n": 2,
   "name": "Prise en main de Claude",
-  "dur": "9 min",
-  "slides": 6,
+  "dur": "11 min",
+  "slides": 8,
   "file": "2 - Prise en main de Claude.md",
   "html": "02-prise-en-main-de-claude.html"
  },
@@ -42,8 +42,8 @@
  {
   "n": 6,
   "name": "Démos, fichiers, dossier, navigateur",
-  "dur": "35 min",
-  "slides": 21,
+  "dur": "33 min",
+  "slides": 19,
   "file": "6 - Démos, fichiers, dossier, navigateur.md",
   "html": "06-demos-fichiers-dossier-navigateur.html"
  },

@@ -48,7 +48,7 @@ Note: ESSENTIEL. Quatre objectifs seulement: on ne peut pas tout faire en deux h
 3. Première démo, sur votre PC: la circulaire
 4. Comprendre ce qu'on vient de voir
 5. Le contexte et sa gestion
-6. Cowork, les démos, et **votre vraie tâche**
+6. Les démos, et **une vraie tâche**
 7. Un système qui vous connaît, et qui vous appartient
 8. Prudence et règles d'usage
 9. Démarrer demain, et vos questions

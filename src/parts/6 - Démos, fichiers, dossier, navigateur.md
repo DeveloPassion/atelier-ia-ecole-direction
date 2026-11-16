@@ -6,11 +6,11 @@ Ce qu'un bon système IA peut faire pour vous.
 
 - Chaque démo a sa slide "à copier", avec les demandes: vous pouvez les refaire seuls
 
-Note: 33 minutes. Ordre: Cowork et le dossier de travail (3 min), la démo 2 sur leur PC (8 min), leur vraie tâche (15 min), artefact ou fichier et la démo 3 avec le plan B (2 min), la démo 4 à l'écran (5 min). Les démos 5 et 6 et "Et l'ordinateur" sont pour la relecture, ou pour la deuxième séance. Plan B: le dossier "Plan B - résultats attendus". Repère: la vraie tâche commence à 1:08 au plus tard.
+Note: 33 minutes. Ordre: Claude qui fait le travail, et le dossier de travail (3 min), la démo 2 sur leur PC (8 min), leur vraie tâche (15 min), artefact ou fichier et la démo 3 avec le plan B (2 min), la démo 4 à l'écran (5 min). Les démos 5 et 6 et "Et l'ordinateur" sont pour la relecture, ou pour la deuxième séance. Plan B: le dossier "Plan B - résultats attendus". Repère: la vraie tâche commence à 1:08 au plus tard.
 
 ---
-## Cowork: quand Claude fait le travail
-- **Cowork**, c'est Claude qui fait **une tâche entière**: vous décrivez le résultat voulu, il fait les étapes
+## Quand Claude fait le travail
+- Claude peut faire **une tâche entière**: vous décrivez le résultat voulu, il fait les étapes
 - Vous écrivez votre demande: Claude décide de **répondre** ou de **faire la tâche**
 - Avant de commencer, il pose souvent **une ou deux questions**, avec des choix: cliquez sur une réponse, ou écrivez la vôtre
 - Il **travaille dans vos dossiers**: il lit, il crée (Word, Excel, PowerPoint), il range

@@ -55,7 +55,7 @@ Note: À PASSER si le temps manque. Documents: "Fiche de contexte pour l'IA.pdf"
 2. Claude ne lit pas ce fichier tout seul. Commencez chaque conversation par: "Lis d'abord le fichier À propos de moi.txt."{copy}
 3. Pour ne plus le répéter: écrivez cette phrase dans un fichier **AGENTS.md**, à la racine de votre dossier. Claude lit ce fichier au début de chaque tâche
 
-Refaites aussi les démos: les demandes à copier sont sur les slides des parties 3 et 6. Et gardez **l'aide-mémoire** (PDF de deux pages, à imprimer) à côté de votre PC.
+Refaites aussi les démos: les demandes à copier sont sur les slides des parties 3, 5 et 6. Et gardez **l'aide-mémoire** (PDF de deux pages, à imprimer) à côté de votre PC.
 
 Note: À PASSER si le temps manque. Pour le fichier "À propos de moi": l'application peut aussi lire seule un fichier d'instructions placé dans le dossier de travail. Le nom et le réglage dépendent de la version: à vérifier sur leur PC avant d'en parler. La phrase "Lis d'abord..." marche toujours. Dans Cowork, un projet peut aussi garder le dossier de la base et des instructions permanentes, sur le PC (documentation de Claude, lue le 13/11/2026): à essayer avant d'en parler. Un système complet s'en occupe. Le fichier AGENTS.md, lu le 14/11/2026: la documentation de Claude Code dit que Claude lit AGENTS.md quand le dossier n'a pas de fichier CLAUDE.md. Pour Cowork, la documentation décrit un autre moyen, les "instructions de dossier" (dans "Personnaliser"), que Claude applique quand on choisit un dossier du PC. Tester AGENTS.md dans Cowork sur mon PC avant d'en parler; si cela ne marche pas chez eux, utiliser les instructions de dossier.
 

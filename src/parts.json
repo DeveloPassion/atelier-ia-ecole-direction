@@ -2,7 +2,7 @@
  {
   "n": 1,
   "name": "Introduction",
-  "dur": "4 min",
+  "dur": "7 min",
   "slides": 7,
   "file": "1 - Introduction.md",
   "html": "01-introduction.html"
@@ -50,7 +50,7 @@
  {
   "n": 7,
   "name": "Un système qui vous connaît",
-  "dur": "14 min",
+  "dur": "15 min",
   "slides": 23,
   "file": "7 - Un système qui vous connaît.md",
   "html": "07-un-systeme-qui-vous-connait.html"

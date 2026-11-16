@@ -6,7 +6,7 @@ Le contexte, c'est **tout ce que Claude voit** au moment de répondre.
 
 ---
 ## Le même Claude, deux réponses
-Même machine, même question. **Une seule différence**.
+Même moteur, même question. **Une seule différence**.
 
 Faites-le sur votre PC, dans une nouvelle conversation:
 
@@ -23,7 +23,7 @@ Note: ESSENTIEL.
 Note: ESSENTIEL. Chacun copie le texte tel quel, sans rien modifier: l'école et les personnes sont fictives. Laisser 2 minutes. Pour la direction du secondaire: remplacer par une classe de 2e secondaire. Puis mettre les deux réponses côte à côte: laquelle est utilisable telle quelle?
 
 ---
-## Ce qu'on vient de voir
+## Ce que l'exercice montre
 - La première réponse est **générique**: Claude ne sait rien de votre école
 - La deuxième est **utilisable**: elle a l'école, la classe, la date, le prix, le ton
 - Le moteur est le même. **Seul le contexte change**

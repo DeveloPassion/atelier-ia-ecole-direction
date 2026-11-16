@@ -30,9 +30,7 @@ Note: ESSENTIEL.
 </svg></div>
 
 - **Votre base de connaissances**: toute l'information utile pour vous et/ou pour l'IA
-- Deux mots nouveaux: une **note** est un fichier texte. **Obsidian** est une application qui sert à lire et à écrire ces notes
-
-Documentation: [Le site d'Obsidian (en anglais)](https://obsidian.md)
+- Un mot nouveau: une **note** est un fichier texte
 
 Note: ESSENTIEL. Les trois temps se lisent comme une phrase: 1) un système, pour gérer vos connaissances (les capturer et les organiser, pour mieux les utiliser et vous décharger); 2) qui vous connaît, parce qu'il est nourri par vos notes; 3) et qui vous appartient, parce que ce sont vos fichiers. Le système de démo est fait avec AI Kit for Obsidian, mon kit pour Obsidian: le dire une fois, sans insister. Le message: ce qu'ils peuvent faire seuls est simple, et des fichiers locaux gardent leur liberté (changer d'IA, changer de fournisseur). Le système personnel de chacun est hors du cours: à dire à l'oral, si besoin.
 
@@ -242,7 +240,7 @@ Note: ESSENTIEL. Une minute. Lire les cinq familles, avec un exemple de leur quo
 </svg></div>
 
 - **Un dossier** sur votre PC. Dedans, **des notes**: des fichiers texte, rangés par type
-- C'est **le point de départ** pour toutes vos sessions avec l'IA. Elle y lit et elle y écrit
+- C'est **le point de départ** pour toutes vos conversations avec l'IA. Elle y lit et elle y écrit
 
 Note: ESSENTIEL. Une minute. Rendre "votre système" concret: ce n'est pas un logiciel, c'est un dossier avec des notes. Montrer que les couleurs sont celles de la slide "Ce qu'on met dans sa base de connaissances": vous (rose), ce que vous faites (mauve), ce que vous savez (jaune), votre environnement (vert), votre journal (bleu). Les noms des dossiers sont des exemples: chacun choisit les siens. La démo, un peu plus loin, montre le même dossier dans Obsidian, pour une direction fictive. La slide suivante présente Obsidian, l'outil pour lire et écrire ces notes.
 
@@ -256,7 +254,7 @@ Note: ESSENTIEL. Une minute. Rendre "votre système" concret: ce n'est pas un lo
 
 Documentation: [Le site d'Obsidian (en anglais)](https://obsidian.md)
 
-Note: ESSENTIEL. 30 secondes. Obsidian est l'outil pour la couche du bas: lire, écrire et relier ses notes. La démo, un peu plus loin, le montre avec le système Saint-Exemple. Vérifié le 15/11/2026 sur obsidian.md: l'application est gratuite sans limite ("Free without limits"), sans inscription ("No sign-up required"), et les notes sont des fichiers texte Markdown gardés sur l'appareil. La licence commerciale, pour un usage au travail, est facultative. Deux services payants, facultatifs eux aussi: Obsidian Sync (la synchronisation entre appareils) et Obsidian Publish. Sans Sync, le dossier peut être dans OneDrive.
+Note: ESSENTIEL. 30 secondes. Obsidian est l'outil pour la couche du bas: lire, écrire et relier ses notes. La démo, un peu plus loin, le montre avec le système Saint-Exemple. Vérifié le 15/11/2026 sur obsidian.md: l'application est gratuite sans limite ("Free without limits"), sans inscription ("No sign-up required"), et les notes sont des fichiers texte Markdown gardés sur l'appareil. La licence commerciale, pour un usage au travail, est facultative. Deux services payants, facultatifs eux aussi: Obsidian Sync (la synchronisation entre appareils) et Obsidian Publish. Sans Sync, le dossier peut être dans OneDrive. Les quatre slides suivantes (les défis, puis les types de notes) sont des compléments: en séance, passer à "Le cercle vertueux".
 
 ---
 ## Créer sa base de connaissances: les défis
@@ -271,7 +269,7 @@ Démarrer est simple. **Faire durer** la base demande quelques choix:
 
 Pas besoin de tout décider le premier jour: **commencez simple**, et améliorez avec le temps.
 
-Note: ESSENTIEL. 30 secondes. Le but: dire honnêtement que le dossier et les fichiers sont la partie facile. Ce qui demande de la réflexion, c'est la structure, l'organisation, les noms, les métadonnées, les sauvegardes et l'habitude. Ne pas répondre à tout ici. Les réponses sont plus loin: les types de notes pour la structure, l'organisation et les métadonnées (les trois slides suivantes); "Le journal du jour" pour l'habitude; "Sauvegardez votre base" à la fin de la partie. Les trois slides suivantes (les types de notes) sont des compléments: en séance, passer à "Le cercle vertueux".
+Note: À PASSER si le temps manque. Le but: dire honnêtement que le dossier et les fichiers sont la partie facile. Ce qui demande de la réflexion, c'est la structure, l'organisation, les noms, les métadonnées, les sauvegardes et l'habitude. Ne pas répondre à tout ici. Les réponses sont plus loin: les types de notes pour la structure, l'organisation et les métadonnées (les trois slides suivantes); "Le journal du jour" pour l'habitude; "Sauvegardez votre base" à la fin de la partie.
 
 ---
 ## Les types de notes
@@ -414,7 +412,7 @@ Note: À PASSER si le temps manque.
 - **Pour l'IA**: vos notes deviennent son contexte
 - **Pour vous**: toutes vos connaissances sont accessibles **depuis un seul endroit**, ...
 
-Note: ESSENTIEL. C'est la réponse à l'objectif 3: la gestion des connaissances a une valeur pour vous (une tête libre, moins d'oublis) et pour l'IA (le contexte). Les deux se nourrissent. Dire: au début, la base est petite et l'IA aide peu; après quelques semaines de journal, elle connaît vos projets.
+Note: ESSENTIEL. C'est la réponse à l'objectif 3: la gestion des connaissances a une valeur pour vous (une tête libre, moins d'oublis) et pour l'IA (le contexte). Les deux se nourrissent. Dire: au début, la base est petite et l'IA aide peu; après quelques semaines de journal, elle connaît vos projets. Les deux slides suivantes ("Deux couches", "Avant et après") sont des compléments: en séance, passer à la démo.
 
 ---
 ## Deux couches
@@ -434,7 +432,7 @@ Note: ESSENTIEL. C'est la réponse à l'objectif 3: la gestion des connaissances
 - **D'abord pour vous, en bonus pour l'IA**: c'est votre second cerveau digital
 - Des fichiers texte, chez vous: ils fonctionnent avec **n'importe quelle IA**
 
-Note: ESSENTIEL. Le pont entre les deux objectifs: la couche du bas, c'est la gestion des connaissances (elle fonctionne sans IA); la couche du haut, c'est l'IA qui lit ce système. Obsidian sert à lire et à écrire les fichiers de la couche du bas.
+Note: À PASSER si le temps manque. Le pont entre les deux objectifs: la couche du bas, c'est la gestion des connaissances (elle fonctionne sans IA); la couche du haut, c'est l'IA qui lit ce système. Obsidian sert à lire et à écrire les fichiers de la couche du bas.
 
 ---
 ## Avant et après
@@ -473,7 +471,7 @@ La sortie de P4 au musée, le 26 novembre.
 
 Avec un système, la demande tient en une ligne: "Prépare la sortie P4 du 26 novembre"{copy}
 
-Note: ESSENTIEL.
+Note: À PASSER si le temps manque. La démo qui suit montre la même chose en vrai.
 
 ---
 ## Démo: Direction Saint-Exemple

@@ -50,7 +50,7 @@ Note: Question probable. Dispatch (dans Cowork, application de bureau): une conv
 ## La documentation d'Anthropic, en français
 | Pour | La page du centre d'aide |
 |---|---|
-| Cowork | [Commencer avec Claude Cowork](https://support.claude.com/fr/articles/13345190) |
+| Faire une tâche entière | [Commencer avec Claude Cowork](https://support.claude.com/fr/articles/13345190) |
 | Planifier une tâche | [Planifier des tâches récurrentes dans Claude Cowork](https://support.claude.com/fr/articles/13854387) |
 | Désactiver la mémoire | [La recherche de chat et la mémoire de Claude](https://support.claude.com/fr/articles/11817273) |
 | Ajouter un connecteur | [Utiliser les connecteurs](https://support.claude.com/fr/articles/11176164), [Configurer le connecteur Microsoft 365](https://support.claude.com/fr/articles/12542951) |
@@ -68,7 +68,7 @@ Plus détaillée que le centre d'aide, mais en anglais. Demandez à Claude de vo
 
 | Pour | La page de la documentation |
 |---|---|
-| Cowork | [Cowork overview](https://claude.com/docs/cowork/overview) |
+| Faire une tâche entière | [Cowork overview](https://claude.com/docs/cowork/overview) |
 | Les connecteurs | [Get started with connectors](https://claude.com/docs/connectors/getting-started), [Google Drive](https://claude.com/docs/connectors/google/drive), [Microsoft 365](https://claude.com/docs/connectors/microsoft/365) |
 | Les skills | [Skills overview](https://claude.com/docs/skills/overview), [Create custom skills](https://claude.com/docs/skills/how-to) |
 | Claude dans Office | [Claude for M365 overview](https://claude.com/docs/office-agents/overview) |

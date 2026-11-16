@@ -157,7 +157,7 @@ Le prompt, c'est la demande que vous écrivez: **une partie du contexte**, pas t
 
 **Commencez simple**: ajoutez des consignes seulement si le résultat ne convient pas.
 
-Note: ESSENTIEL. C'est la même recette partout dans le cours: ici, dans "votre vraie tâche" (partie 9), dans le bonus 11 et sur l'aide-mémoire. Pourquoi commencer simple: les modèles ont besoin de moins en moins d'aide (bonus 11).
+Note: ESSENTIEL. C'est la même recette partout dans le cours: ici, dans "votre vraie tâche" (partie 6), dans le bonus 11 et sur l'aide-mémoire. Pourquoi commencer simple: les modèles ont besoin de moins en moins d'aide (bonus 11).
 
 ---
 ## Trois astuces pour vos demandes

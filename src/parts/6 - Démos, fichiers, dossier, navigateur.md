@@ -136,7 +136,7 @@ La tâche que vous avez choisie avant l'atelier. **Sans données sensibles.**
 4. Relisez, corrigez par petites phrases, et **vérifiez**
 5. À la fin: "Quelle demande t'aurait permis de faire ça du premier coup?"{copy} **Gardez-la**
 
-Note: ESSENTIEL. VRAIE TÂCHE (15 min), chacun sur son PC. Leurs tâches sont dans leurs réponses aux trois questions (envoyées avant l'atelier, avec les prérequis). Passer de l'un à l'autre. Si une tâche est trop grosse: la couper et faire la première étape. Si quelqu'un n'a rien apporté: refaire le mot aux parents de la partie 1 pour sa propre classe, ou trier une vraie circulaire de la semaine. Finir par l'étape 5, et dire: "Gardez cette demande: c'est peut-être votre première skill."
+Note: ESSENTIEL. VRAIE TÂCHE (15 min), chacun sur son PC. Leurs tâches sont dans leurs réponses aux trois questions (envoyées avant l'atelier, avec les prérequis). Passer de l'un à l'autre. Si une tâche est trop grosse: la couper et faire la première étape. Si quelqu'un n'a rien apporté: refaire le mot aux parents de la partie 5 pour sa propre classe, ou trier une vraie circulaire de la semaine. Finir par l'étape 5, et dire: "Gardez cette demande: c'est peut-être votre première skill."
 
 ---
 ## Un artefact, ou un fichier?

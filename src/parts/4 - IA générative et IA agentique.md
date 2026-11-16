@@ -55,6 +55,31 @@ L'IA générative: une IA qui **crée du contenu** (texte, image, son, vidéo, c
 Note: À PASSER si le temps manque. Quatre idées en une image. La demande: vos instructions, plus le contexte. Le fournisseur: la société qui fait tourner le modèle (ici Anthropic); c'est par lui que passent votre compte, vos données et la facture. Le modèle: des milliards de paramètres, réglés pendant l'entraînement; il calcule la suite la plus probable, donc il ne donne pas deux fois exactement la même réponse. La réponse: du texte, mais aussi une image, du code, une vidéo. Les tailles sont des ordres de grandeur, d'un petit modèle qui tourne sur un PC aux plus gros modèles.
 
 ---
+## Pas seulement du texte
+- **Lire des images**: une photo d'une page écrite à la main, une capture d'écran, un tableau photographié deviennent du texte ou un tableau
+- **Créer des visuels**: un schéma, une affiche simple, une infographie. Pour des images réalistes, d'autres outils existent
+- **Créer des animations courtes**
+- **Créer des vidéos**
+- **Créer des sites Web**
+- **Créer des petits jeux et des applications**: un quiz pour une classe, un jeu de calcul mental, un outil de tirage au sort, en quelques minutes
+
+Note: À PASSER si le temps manque. Exemple à dire: "Crée un jeu de calcul mental pour des élèves de 2e primaire, avec un score." Claude le construit dans un artefact, et on peut y jouer tout de suite. Pour les animations: Claude Motion existe sur Team et Enterprise, mais il est désactivé par défaut sur Enterprise. Pour les vidéos: Claude les construit comme une animation, par du code, puis les exporte en fichier vidéo; ce ne sont pas des vidéos réalistes créées par une IA d'images. Pour les sites Web: une page ou un petit site complet, à voir tout de suite dans un artefact, ou en fichiers dans votre dossier de travail.
+
+---
+## Tout ce que vous faites sur votre PC, Claude peut le faire
+Ce que vous pouvez faire sur votre ordinateur, dans le navigateur ou sur le réseau, un agent peut le faire aussi. **Avec votre accord.**
+
+- **Fichiers**: lire, écrire, renommer, ranger un dossier entier
+- **Documents**: créer des Word, des Excel, des PDF, des présentations
+- **Web**: ouvrir des pages, les lire, chercher, remplir un formulaire
+- **Messages**: préparer et envoyer des mails, lire un agenda (avec un connecteur)
+- **Applications**: cliquer et taper dans une application, comme vous (pas encore sur l'abonnement Entreprise)
+
+La limite n'est plus ce que l'IA sait faire, mais **ce que vous lui permettez** de faire.
+
+Note: À PASSER si le temps manque. Dire que c'est le grand changement de 2025-2026: on passe d'une IA qui répond à une IA qui fait. Donner un exemple de la matinée: la circulaire, Claude l'a lue et en a fait un tableau. Annoncer les démos de la partie 6 (fichiers, dossier, navigateur, présentation). Faire le lien avec la partie 8: plus un agent peut faire, plus il faut choisir ce qu'on lui permet.
+
+---
 ## Comment ça marche, sans maths
 <div class="chart"><svg viewBox="0 0 960 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animation: le modèle ajoute le morceau le plus probable, puis il recommence">
 <text x="740" y="138" font-size="19" fill="#ff4fa8" font-weight="700" text-anchor="start">Il choisit,</text>
@@ -163,17 +188,6 @@ Attention: il peut être brillant sur une tâche et rater la tâche voisine. **T
 Note: À PASSER si le temps manque.
 
 ---
-## Pas seulement du texte
-- **Lire des images**: une photo d'une page écrite à la main, une capture d'écran, un tableau photographié deviennent du texte ou un tableau
-- **Créer des visuels**: un schéma, une affiche simple, une infographie. Pour des images réalistes, d'autres outils existent
-- **Créer des animations courtes**
-- **Créer des vidéos**
-- **Créer des sites Web**
-- **Créer des petits jeux et des applications**: un quiz pour une classe, un jeu de calcul mental, un outil de tirage au sort, en quelques minutes
-
-Note: À PASSER si le temps manque. Exemple à dire: "Crée un jeu de calcul mental pour des élèves de 2e primaire, avec un score." Claude le construit dans un artefact, et on peut y jouer tout de suite. Pour les animations: Claude Motion existe sur Team et Enterprise, mais il est désactivé par défaut sur Enterprise. Pour les vidéos: Claude les construit comme une animation, par du code, puis les exporte en fichier vidéo; ce ne sont pas des vidéos réalistes créées par une IA d'images. Pour les sites Web: une page ou un petit site complet, à voir tout de suite dans un artefact, ou en fichiers dans votre dossier de travail.
-
----
 ## Le prompt
 Le prompt, c'est la demande que vous écrivez: **une partie du contexte**, pas tout. La recette, en six points:
 
@@ -247,20 +261,6 @@ Note: ESSENTIEL.
 C'est ce qu'il a fait avec la circulaire: lire, trier, vérifier, faire le tableau.
 
 Note: À PASSER si le temps manque. Laisser l'animation tourner une fois. Exemple parlé avec la circulaire: plan (lire les sections), action (lire le PDF), observation (des actions pour plusieurs niveaux), recommencer (trier, vérifier les dates), fini (le tableau).
-
----
-## Tout ce que vous faites sur votre PC, Claude peut le faire
-Ce que vous pouvez faire sur votre ordinateur, dans le navigateur ou sur le réseau, un agent peut le faire aussi. **Avec votre accord.**
-
-- **Fichiers**: lire, écrire, renommer, ranger un dossier entier
-- **Documents**: créer des Word, des Excel, des PDF, des présentations
-- **Web**: ouvrir des pages, les lire, chercher, remplir un formulaire
-- **Messages**: préparer et envoyer des mails, lire un agenda (avec un connecteur)
-- **Applications**: cliquer et taper dans une application, comme vous (pas encore sur l'abonnement Entreprise)
-
-La limite n'est plus ce que l'IA sait faire, mais **ce que vous lui permettez** de faire.
-
-Note: À PASSER si le temps manque. Dire que c'est le grand changement de 2025-2026: on passe d'une IA qui répond à une IA qui fait. Donner un exemple de la matinée: la circulaire, Claude l'a lue et en a fait un tableau. Annoncer les démos de la partie 6 (fichiers, dossier, navigateur, présentation). Faire le lien avec la partie 8: plus un agent peut faire, plus il faut choisir ce qu'on lui permet.
 
 ---
 ## Autour d'un agent

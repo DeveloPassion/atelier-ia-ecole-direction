@@ -44,10 +44,10 @@ Note: ESSENTIEL. Quatre objectifs seulement: on ne peut pas tout faire en deux h
 ---
 ## Au programme
 1. Introduction
-2. Prise en main: l'application, les modèles, l'effort
+2. Prise en main: l'application et ses réglages (modèle, effort, permissions)
 3. Première démo, sur votre PC: la circulaire
-4. Comprendre ce qu'on vient de voir
-5. Le contexte et sa gestion
+4. Comprendre ce qu'on vient de voir: l'IA générative et l'IA agentique
+5. Le contexte et sa gestion, avec un exercice sur votre PC
 6. Les démos, et **une vraie tâche**
 7. Un système qui vous connaît, et qui vous appartient
 8. Prudence et règles d'usage

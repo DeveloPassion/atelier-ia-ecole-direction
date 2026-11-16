@@ -10,8 +10,8 @@
  {
   "n": 2,
   "name": "Prise en main de Claude",
-  "dur": "8 min",
-  "slides": 5,
+  "dur": "9 min",
+  "slides": 6,
   "file": "2 - Prise en main de Claude.md",
   "html": "02-prise-en-main-de-claude.html"
  },
@@ -26,8 +26,8 @@
  {
   "n": 4,
   "name": "IA générative et IA agentique",
-  "dur": "9 min",
-  "slides": 16,
+  "dur": "8 min",
+  "slides": 15,
   "file": "4 - IA générative et IA agentique.md",
   "html": "04-ia-generative-et-ia-agentique.html"
  },

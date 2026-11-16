@@ -143,10 +143,10 @@ story = [
     ]),
     box("Choisir le modèle", [
         table([
-            ["Sonnet 5.5", "Le simple: un mail, une reformulation, un résumé court."],
+            ["Fable 5.2", "Le plus puissant, et le plus cher. Données gardées au moins 30 jours, sans zéro conservation: jamais de données sensibles."],
             ["Opus 5.5", "Le gros du travail: une circulaire, un tableau, un dossier."],
-            ["Haiku", "Rapide et léger."],
-            ["Fable", "Le plus puissant, mais très coûteux. Données gardées au moins 30 jours, sans zéro conservation: jamais de données personnelles."],
+            ["Sonnet 5.5", "Le choix de tous les jours: un mail, une reformulation, un résumé."],
+            ["Haiku 5.5", "Rapide et léger: une question simple, une tâche basique."],
         ], [CW * 0.27, CW * 0.73]),
         p("De nouveaux modèles sortent très souvent: cette liste date de novembre 2026.", SMALL),
     ]),

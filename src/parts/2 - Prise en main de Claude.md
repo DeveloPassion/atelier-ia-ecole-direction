@@ -111,6 +111,15 @@ Note: ESSENTIEL. Analogie de Thariq Shihipar (Anthropic), article "Spending your
 Note: À PASSER si le temps manque.
 
 ---
+## Le mode rapide
+- **Le même modèle, la même qualité**, mais des réponses jusqu'à **2,5 fois plus rapides**
+- Le prix: **2 fois plus cher**. Seulement avec **Opus 5.5** et **Fable 5.2**
+- Sur un compte d'école, il est **coupé au départ**: c'est un propriétaire de l'organisation qui l'active
+- Mon conseil: **vous n'en avez pas besoin** pour commencer. Pour aller plus vite, prenez plutôt Sonnet, ou un effort plus bas
+
+Note: À PASSER si le temps manque. Lu le 16/11/2026 dans la documentation de Claude Code ("Speed up responses with fast mode"): le mode rapide garde le même modèle et la même qualité, il répond jusqu'à 2,5 fois plus vite, et il coûte plus cher par token (Opus 5.5: 8 et 40 dollars par million de tokens lus et écrits, contre 4 et 20; Fable 5.2: 16 et 80). Il n'existe pas pour Sonnet ni pour Haiku. Sur Team et Entreprise, il est coupé par défaut: un propriétaire de l'organisation l'active, et il se paie sur les crédits d'usage de l'organisation. La documentation décrit ce mode pour Claude Code (un interrupteur dans le menu du modèle). Elle ne le décrit pas pour le chat de l'application: à vérifier sur leur PC. S'ils ne voient pas ce réglage, passer la slide, et dire que c'est normal.
+
+---
 ## Le niveau de liberté de Claude
 Un réglage, dans la zone de saisie:
 

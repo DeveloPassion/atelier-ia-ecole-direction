@@ -441,12 +441,3 @@ Note: À PASSER si le temps manque.
 Documentation: [Laisser Claude utiliser votre ordinateur dans Cowork](https://support.claude.com/fr/articles/14128542)
 
 Note: À PASSER si le temps manque. Une minute, avec cette slide. Selon le centre d'aide (lu le 13/11/2026), l'utilisation de l'ordinateur est en bêta sur les abonnements Pro, Max et Ultra, et pas sur Team ni Entreprise: on ne peut donc pas le montrer sur leur compte. Le dire, et montrer sur mon compte seulement s'il reste du temps. Exemple: "Ouvre le tableau des sorties et ajoute la sortie théâtre P2 du 10 décembre." L'activation, lue le 14/11/2026 dans le centre d'aide en français: "Paramètres > Capacités"; si la section "Utilisation de l'ordinateur" n'y est pas, "Paramètres > Système", sous "Cet ordinateur". Dans l'application de bureau, pour Windows et macOS. Sur un compte Team ou Entreprise, la fonction n'existe pas pour le moment: ce n'est pas un réglage que l'admin a coupé. Il n'y a pas de bac à sable entre Claude et les applications. Les applications d'investissement et de cryptomonnaie sont bloquées par défaut. Le centre d'aide déconseille les applications avec des données de santé, de finances ou d'autres dossiers personnels.
-
----
-## Une ligne au lieu de dix
-- Chaque démo demandait plusieurs lignes d'explication
-- Avec un système qui vous connaît, la même demande **tient en une ligne**
-- "Fais le tableau des sorties"{copy}. "Range le dossier de P4"{copy}. "Quelles actions de cette circulaire me concernent?"{copy}
-- On verra ça dans la partie suivante
-
-Note: À PASSER si le temps manque.
